@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Skill id="10201" buff_target="1" skill_id1="10211" skill_id2="10221" skill_id3="10222" />
+    <Skill id="10210" buff_target="0" skill_id1="10220" />
+    <Skill id="10234" buff_target="0" skill_id1="10228" />
+    <Skill id="10220" buff_target="1" skill_id1="10227" />
+    <Skill id="10304" buff_target="1" skill_id1="10309" />
+    <Skill id="10306" buff_target="1" skill_id1="10324" />
+    <Skill id="10308" buff_target="0" skill_id1="10316" />
+    <Skill id="10311" buff_target="1" skill_id1="10321" />
+    <Skill id="10316" buff_target="0" skill_id1="10326" skill_id2="10327" />
+    <Skill id="10402" buff_target="1" skill_id1="10408" />
+    <Skill id="10416" buff_target="0" skill_id1="10416" skill_id2="10424" />
+    <Skill id="10424" buff_target="1" skill_id1="10429" />
+    <Skill id="10504" buff_target="0" skill_id1="10509" />
+    <Skill id="10507" buff_target="1" skill_id1="10512" />
+    <Skill id="10510" buff_target="1" skill_id1="10516" skill_id2="10517" />
+    <Skill id="10603" buff_target="0" skill_id1="10611" />
+    <Skill id="10606" buff_target="0" skill_id1="10616" />
+    <Skill id="10613" buff_target="0" skill_id1="10624" />
+    <Skill id="10617" buff_target="0" skill_id1="10627" />
+    <Skill id="10639" buff_target="1" skill_id1="10608" />
+    <Skill id="10705" buff_target="1" skill_id1="10711" />
+    <Skill id="10707" buff_target="1" skill_id1="10714" />
+    <Skill id="10712" buff_target="0" skill_id1="10721" />
+    <Skill id="10709" buff_target="0" skill_id1="10717" />
+    <Skill id="10801" buff_target="1" skill_id1="10805" skill_id2="10806" />
+    <Skill id="10805" buff_target="1" skill_id1="10810" />
+    <Skill id="10815" buff_target="1" skill_id1="10823" />
+    <Skill id="10818" buff_target="1" skill_id1="10825" skill_id2="10826" />
+    <Skill id="10924" buff_target="1" skill_id1="10919" />
+    <Skill id="10928" buff_target="1" skill_id1="10924" />
+    <Skill id="10907" buff_target="1" skill_id1="10926" skill_id2="10927" skill_id3="10915" />
+    <Skill id="10908" buff_target="1" skill_id1="10926" skill_id2="10927" skill_id3="10916" />
+    <Skill id="10909" buff_target="1" skill_id1="10926" skill_id2="10927" skill_id3="10925" />
+    <Skill id="10242" buff_target="0" skill_id1="10243" />
+    <Skill id="10243" buff_target="0" skill_id1="10244" />
+    <Skill id="10244" buff_target="0" skill_id1="10245" />
+    <Skill id="10343" buff_target="0" skill_id1="10343" />
+    <Skill id="10344" buff_target="0" skill_id1="10344" />
+    <Skill id="10345" buff_target="0" skill_id1="10345" />
+    <Skill id="10445" buff_target="0" skill_id1="10443" />
+    <Skill id="10446" buff_target="0" skill_id1="10444" />
+    <Skill id="10447" buff_target="0" skill_id1="10445" />
+    <Skill id="10538" buff_target="0" skill_id1="10543" />
+    <Skill id="10539" buff_target="0" skill_id1="10544" />
+    <Skill id="10540" buff_target="0" skill_id1="10545" />
+    <Skill id="10643" buff_target="0" skill_id1="10643" />
+    <Skill id="10644" buff_target="0" skill_id1="10644" />
+    <Skill id="10645" buff_target="0" skill_id1="10645" />
+    <Skill id="10739" buff_target="0" skill_id1="10743" />
+    <Skill id="10740" buff_target="0" skill_id1="10744" />
+    <Skill id="10741" buff_target="0" skill_id1="10745" />
+    <Skill id="10842" buff_target="0" skill_id1="10843" />
+    <Skill id="10843" buff_target="0" skill_id1="10844" />
+    <Skill id="10844" buff_target="0" skill_id1="10845" />
+    <Skill id="10947" buff_target="1" skill_id1="10943" skill_id2="10944" skill_id3="10945" />
+</root>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 配置文件 -->
+<root>
+    <item name="m01" start="7000" end="40000" r="27" g="42" b="64" value="1" />
+    <item name="m02" start="7000" end="40000" r="27" g="42" b="64" />
+</root>
+
+
+<!-- 注意:
+1.<root> 该节点为配置文件根节点,名称必须为root;
+2.<item name="m01" ....../> 该段中,item名字可变,但必须有name属性,其他属性名可修改;
+3.name字段对应的值必须是唯一;
+4.如果要把记录全部导出，则xml中至少要写2条记录
+-->
+
+<!-- 使用:
+TObjRef<VarContainer> pVar;
+
+pVar.Load(NULL, "filename");
+
+pVar->GetString("m01", "start");
+
+pVar->Clear();
+-->

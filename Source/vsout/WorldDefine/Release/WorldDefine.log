@@ -1,0 +1,18 @@
+﻿  解析SVN版本
+  SVN░ц▒╛║┼╠с╚б:
+  ▓╗─▄┤Є┐к../Client/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../Beton/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../Cool3D/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../LoongDB/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../LoongLogin/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../LoongWorld/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../Lua/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../ServerDefine/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../vEngine/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../WorldBase/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../WorldDefine/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ▓╗─▄┤Є┐к../XMLReader/.svn/entries╬─╝■! SVN╩╟╖ё▒╗╝ь│Ў?
+  ╧╓╘┌┐к╩╝╔·│╔ svn_revision.h ╬─╝■ ...
+  ╔·│╔ svn_revision.h ╬─╝■
+D:\programms\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1397,5): warning MSB8012: TargetPath(D:\other\LoongRework\Sourcev2\Source\WorldDefine\..\Game\Release\WorldDefine.lib) does not match the Library's OutputFile property value (D:\other\LoongRework\Sourcev2\Source\vsout\WorldDefine\Release\WorldDefine.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  WorldDefine.vcxproj -> D:\other\LoongRework\Sourcev2\Source\WorldDefine\..\Game\Release\WorldDefine.lib

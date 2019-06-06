@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <easybuyitem id="1" typeid="1320001" type="1" />
+    <easybuyitem id="2" typeid="1300000" type="2" />
+    <easybuyitem id="3" typeid="1300100" type="2" />
+    <easybuyitem id="4" typeid="1360001" type="2" />
+    <easybuyitem id="5" typeid="1360004" type="3" />
+    <easybuyitem id="6" typeid="1360002" type="3" />
+    <easybuyitem id="7" typeid="1220021" type="3" />
+    <easybuyitem id="8" typeid="1320011" type="2" />
+    <easybuyitem id="9" typeid="1140002" type="4" />
+    <easybuyitem id="10" typeid="1340001" type="4" />
+    <easybuyitem id="11" typeid="4100309" type="5" />
+    <easybuyitem id="12" typeid="2000304" type="5" />
+    <easybuyitem id="13" typeid="4100312" type="5" />
+    <easybuyitem id="14" typeid="2005201" type="6" />
+    <easybuyitem id="15" typeid="2005301" type="6" />
+    <easybuyitem id="16" typeid="1360103" type="6" />
+    <easybuyitem id="17" typeid="1360003" type="7" />
+    <easybuyitem id="18" typeid="1340011" type="7" />
+    <easybuyitem id="19" typeid="3200710" type="7" />
+    <easybuyitem id="20" typeid="1360004" type="8" />
+    <easybuyitem id="21" typeid="1360005" type="8" />
+    <easybuyitem id="22" typeid="2220401" type="8" />
+    <easybuyitem id="23" typeid="3000011" type="9" />
+    <easybuyitem id="24" typeid="3000012" type="9" />
+    <easybuyitem id="25" typeid="1361106" type="9" />
+    <easybuyitem id="26" typeid="3304165" type="10" />    
+    <easybuyitem id="27" typeid="3304164" type="10" />
+    <easybuyitem id="28" typeid="3304163" type="10" />  
+</root>

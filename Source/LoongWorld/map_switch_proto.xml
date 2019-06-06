@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 场景传送表xml映射 -->
+<root>
+    <Dak id="" map1="" x_map1="" y_map1="" z_map1="" cost_type_map1="" cost_num_map1="" map2="" x_map2="" y_map2="" z_map2="" cost_type_map2="" cost_num_map2="" map3="" x_map3="" y_map3="" z_map3="" cost_type_map3="" cost_num_map3="" map4="" x_map4="" y_map4="" z_map4="" cost_type_map4="" cost_num_map4="" map5="" x_map5="" y_map5="" z_map5="" cost_type_map5="" cost_num_map5="" map6="" x_map6="" y_map6="" z_map6="" cost_type_map6="" cost_num_map6="" map7="" x_map7="" y_map7="" z_map7="" cost_type_map7="" cost_num_map7="" map8="" x_map8="" y_map8="" z_map8="" cost_type_map8="" cost_num_map8="" />
+    <Dak id="" map1="" x_map1="" y_map1="" z_map1="" cost_type_map1="" cost_num_map1="" map2="" x_map2="" y_map2="" z_map2="" cost_type_map2="" cost_num_map2="" map3="" x_map3="" y_map3="" z_map3="" cost_type_map3="" cost_num_map3="" map4="" x_map4="" y_map4="" z_map4="" cost_type_map4="" cost_num_map4="" map5="" x_map5="" y_map5="" z_map5="" cost_type_map5="" cost_num_map5="" map6="" x_map6="" y_map6="" z_map6="" cost_type_map6="" cost_num_map6="" map7="" x_map7="" y_map7="" z_map7="" cost_type_map7="" cost_num_map7="" map8="" x_map8="" y_map8="" z_map8="" cost_type_map8="" cost_num_map8="" />
+</root>

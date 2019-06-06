@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<item name="IP" value="172.17.3.24" />
+	<item name="Port" value="7100" />
+	<item name="Account" value="帐号:" />
+	<item name="PassWord" value="密码:" />
+	<item name="OK" value="确定" />
+	<item name="Cancel" value="取消" />
+	<item name="Connecting" value="正在登录中, 请等候..." />
+	<item name="Server" value="服务器" />
+	<item name="SelectAll" value="全选" />
+	<item name="DoublePage" value="开放双倍" />
+	<item name="PmdPage" value="跑马灯公告" />
+	<item name="ZdxhPage" value="自动循环跑马灯" />
+	<item name="YxjPage" value="右下角公告" />
+	<item name="Param" value="参数" />
+	<item name="DoubleType" value="双倍类型" />
+	<item name="LastTime" value="开放时间" />
+	<item name="Minius" value="分钟" />
+	<item name="Ratio" value="比例" />
+	<item name="InputScript" value="导入自动运行脚本" />
+	<item name="ExamineRecord" value="查看历史操作记录" />
+	<item name="AddIP" value="添加IP" />
+	<item name="AddTime" value="添加时间" />
+	<item name="DoubleState" value="双倍状态" />
+	<item name="Execute" value="执行人" />
+	<item name="Type" value="类别" />
+	<item name="State" value="状态" />
+	<item name="OpenTime" value="开始时间" />
+	<item name="OverTime" value="结束时间" />
+	<item name="AutoCircle" value="自动循环公告" />
+	<item name="AfficheTime" value="公告内容" />
+	<item name="TimeInterval" value="时间间隔" />
+	<item name="CircleInterval" value="一次循环时间" />
+	<item name="CircleNum" value="循环次数" />
+	<item name="Color" value="颜色" />
+	<item name="Add" value="填加" />
+	<item name="AfficheContent" value="公告内容" />
+	<item name="FontColor" value="字体颜色" />
+	<item name="IssueTime" value="发布时间" />
+	<item name="CirOverTime" value="循环结束时间" />
+	<item name="RunHorse" value="跑马灯" />
+	<item name="Issue" value="发布" />
+	<item name="RightAffiche" value="右下角公告" />
+	<item name="Title" value="标题" />
+	<item name="Connect" value="连接" />
+	<item name="LoginHint" value="上线提示" />
+	<item name="Year" value="开始时间  年" />
+	<item name="Month" value="月" />
+	<item name="Date" value="日" />
+	<item name="Hour" value="小时" />
+	<item name="Minute" value="分" />
+	<item name="Second" value="秒" />
+	<item name="Content" value="内容" />
+	<item name="CancelDouble" value="取消所有已设定双倍" />
+	<item name="ConfirmCancelDouble" value="确定取消所有已设定双倍吗？" />
+	<item name="CancelDoubleDone" value="已经成功取消所有已设定双倍" />
+	<item name="ConnectFail" value="连接服务器失败" />
+	<item name="Yes" value="是" />
+	<item name="No" value="否" />
+	<item name="Delete" value="删除" />
+	<item name="IssueSuccess" value="发布成功" />
+	<item name="IssueYxj" value="是否要发布右下角公告?" />
+	<item name="IssuePmd" value="是否要发布跑马灯?" />
+	<item name="IssueZdxh" value="是否要发布自动循环公告?" />
+	<item name="EDoubleType1" value="双倍经验" />
+	<item name="EDoubleType2" value="双倍掉宝" />
+	<item name="EColorType1" value="红色" />
+	<item name="EColorType2" value="黄色" />
+	<item name="EColorType3" value="绿色" />
+	<item name="EColorType4" value="蓝色" />
+	<item name="EColorType5" value="橙色" />
+	<item name="NoSelectWorld" value="没有选择游戏世界" />
+	<item name="ServerNoWell" value="服务器:%s故障,不能选择" />
+	<item name="UserOrPswError" value="用户名或密码错误" />
+	<item name="NoContent" value="内容不能为空" />
+	<item name="GMMgrPage" value="GM管理" />
+	<item name="GMCreate" value="线下GM创建" />
+	<item name="GMModify" value="线下GM修改" />
+	<item name="GMDelete" value="线下GM删除" />
+	<item name="GMPrivilege" value="权限" />
+	<item name="EPrivilege0" value="1级权限" />
+	<item name="EPrivilege1" value="2级权限" />
+	<item name="EPrivilege2" value="3级权限" />
+	<item name="EPrivilege3" value="4级权限" />
+	<item name="EPrivilege4" value="5级权限" />
+	<item name="GMCreateMsg0" value="创建GM成功" />
+	<item name="GMCreateMsg_NameIs" value="同名GM已存在,新重新创建" />
+	<item name="GMCreateMsg_Error" value="创建GM失败" />
+	<item name="GMModifyMsg0" value="修改GM权限成功" />
+	<item name="GMModifyMsg_Error" value="修改GM权限失败" />
+	<item name="GMDeleteMsg0" value="删除GM成功" />
+	<item name="GMDeleteMsg_Error" value="删除GM失败" />
+	<item name="GMNotExist" value="该GM不存在" />
+	<item name="GMPrivilegeForbit" value="你的权限没有达到条件,不能这样做" />
+	<item name="RolePage" value="角色信息" />
+	<item name="MorethanWorld" value="只能选择一个游戏世界" />
+	<item name="RoleResume" value="角色恢复" />
+	<item name="RoleOldName" value="要恢复的角色ID" />
+	<item name="RoleNewName" value="恢复后角色新名字" />
+	<item name="OkResume" value="确定恢复" />
+	<item name="ProModify" value="属性修改" />
+	<item name="RoleName" value="角色名字" />
+	<item name="Level" value="等级" />
+	<item name="Exp" value="经验" />
+	<item name="SkillNum" value="天资点" />
+	<item name="Money" value="金钱" />
+	<item name="Yuanbao" value="元宝" />
+	<item name="OkModify" value="确定修改" />
+	<item name="ItemProduce" value="道具生成" />
+	<item name="RoleNoExist" value="角色不存在" />
+	<item name="ItemNotExist" value="物品不存在" />
+	<item name="EquipNumErr" value="装备数量只能为1" />
+	<item name="ItemQualityErr" value="物品不能指定品质" />
+	<item name="RoleResumeMsg0" value="角色恢复成功" />
+	<item name="RoleResumeMsg1" value="角色名已存在,重新起个名" />
+	<item name="RoleResumeMsg2" value="恢复的角色不存在" />
+	<item name="RoleResumeMsg3" value="恢复角色操作失败" />	
+	<item name="RoleProModifyMsg0" value="角色属性修改成功" />	
+	<item name="RoleProModifyMsg1" value="角色不存在" />
+	<item name="RoleProModifyMsg2" value="角色属性修改操作失败" />	
+	<item name="ItemCreate0" value="道具生成成功" />
+	<item name="ItemCreate1" value="道具生成失败" />
+	<item name="ItemDelete0" value="道具删除成功" />
+	<item name="ItemDelete1" value="道具删除失败" />	
+	<item name="OpenDouble0" value="%s 开放双倍成功" />
+	<item name="OpenDouble1" value="%s 开放双倍失败" />	
+	<item name="OpenDouble2" value="%s 开放双倍时间错误" />	
+	<item name="AutoCast0" value="%s 发布跑马灯消息成功" />
+	<item name="AutoCast1" value="%s 发布跑马灯消息失败" />	
+	<item name="AutoCast2" value="%s 发布跑马灯消息时间错误" />	
+	<item name="YxjNotice0" value="%s 发布公告成功" />
+	<item name="YxjNotice1" value="%s 发布公告失败" />	
+	<item name="YxjNotice2" value="%s 发布公告时间错误" />
+	<item name="IssueTimeError" value="发布的时间不正确" />	
+	<item name="ItemProduce1" value="生成数量" />
+	<item name="ItemQuality" value="物品品质" />
+	<item name="OkItemProduce" value="确定生成" />
+	<item name="NoSelectItem" value="没有选择物品" />
+	<item name="ItemDelete" value="道具删除" />
+	<item name="ItemGlobalID" value="物品全局ID" />
+	<item name="OkItemDelete" value="确定删除" />
+	<item name="ItemDelete" value="道具删除" />
+	<item name="ClearBaibao" value="清空其百宝袋" />
+	<item name="ClearBaibaoDone" value="清空百宝袋成功" />
+	<item name="ItemResume" value="道具恢复" />
+	<item name="ItemSerialNum" value="物品全局ID" />
+	<item name="TargrtRoleName" value="目标角色名" />
+	<item name="OkItemResume" value="确定恢复" />
+	<item name="ItemResume0" value="道具恢复成功" />	
+	<item name="ItemResume1" value="要恢复的道具无效" />	
+	<item name="ItemResume2" value="只有装备可恢复，其他物品不可恢复" />		
+	
+	<item name="AccountPage" value="账号管理" />
+	<item name="WhetherSuspend" value="账号封停" />
+	<item name="AccountFile" value="帐号文件:" />
+	<item name="SectionName" value="大区:" />
+	<item name="WorldName" value="游戏世界:" />
+	<item name="Suspend" value="封停" />
+	<item name="ReadFileFail" value="读取文件失败" />
+	<item name="WorldNameError" value="大区名字或游戏世界名字输入错误" />
+	<item name="Unsuspend" value="解封" />
+	<item name="SuspendOK" value="操作成功" />
+	<item name="ConfirmSuspend" value="确定要封停这些账号吗？" />
+	<item name="ConfirmUnSuspend" value="确定要解封这些账号吗？" />
+	<item name="ConfirmFileSuspend" value="确定要封停文件中的所有账号吗？" />
+	<item name="ConfirmFileUnSuspend" value="确定要解封文件中的所有账号吗？" />
+	<item name="AlreadyFreed" value="账号%s已经处于解封状态" />
+	<item name="AlreadySuspend" value="账号%s已经被封停" />
+	<item name="NoAccount" value="账号%s不存在" />
+	<item name="ErrorDone" value="操作失败" />
+	<item name="OperationType" value="操作类型" />
+	<item name="Result" value="操作结果" />
+	<item name="TypeSuspend" value="账号封停" />
+	<item name="TypeUnsuspend" value="账号解封" />
+	
+	<item name="Blacklist" value="IP黑名单" />
+	<item name="BlackIP" value="IP:" />
+	<item name="AddBlacklist" value="加入" />
+	<item name="DelFromBlack" value="删除" />
+	
+	<item name="AutoChatPage" value="聊天频道公告" />
+	<item name="ReadFile" value="文件导入" />
+	<item name="InputPara" value="指定参数" />
+	<item name="File" value="文件" />
+	<item name="SetOK" value="设定" />
+	<item name="SetCancelAutoChat" value="取消所有已设定的聊天频道公告" />
+	<item name="ConfirmFileAutoChat" value="确定设定文件中指定的聊天频道公告吗？" />
+	<item name="ConfirmCancelAutoChat" value="确定取消所有设定的聊天频道公告吗？" />
+	<item name="NoticeContent" value="公告内容" />
+	<item name="Hour" value="小时" />
+	<item name="Minute" value="分" />
+	<item name="AutoChatNotice0" value="%s 设定每日定点聊天频道公告成功" />
+	<item name="AutoChatNotice1" value="%s 设定每日定点聊天频道公告失败" />	
+	<item name="AutoChatNotice2" value="%s 设定每日定点聊天频道公告时间错误" />
+	<item name="AutoChatStatus" value="已设定公告列表" />
+	<item name="CancelDone" value="取消成功" />
+	
+	<item name="SetCancelRightNotice" value="取消所有已设定的右下角公告" />
+	<item name="ConfirmCancelRightNotice" value="确定取消所有设定的右下角公告吗？" />
+	<item name="CancelRightNoticeDone" value="已成功取消所有已设定的右下角公告" />
+</root>

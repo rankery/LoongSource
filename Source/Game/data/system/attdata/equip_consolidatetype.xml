@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <equipconsolidatetype id="1" consolidatetype="0" att="33" low="189" lowreturn="1" middle="378" middlereturn="2" high="756" highreturn="3" />
+    <equipconsolidatetype id="2" consolidatetype="0" att="34" low="189" lowreturn="1" middle="378" middlereturn="2" high="756" highreturn="3" />
+    <equipconsolidatetype id="3" consolidatetype="0" att="35" low="232" lowreturn="1" middle="465" middlereturn="2" high="620" highreturn="3" />
+    <equipconsolidatetype id="4" consolidatetype="1" att="8" low="2835" lowreturn="1" middle="5670" middlereturn="2" high="11460" highreturn="3" />
+    <equipconsolidatetype id="5" consolidatetype="1" att="10" low="2835" lowreturn="1" middle="5670" middlereturn="2" high="11460" highreturn="3" />
+    <equipconsolidatetype id="6" consolidatetype="1" att="12" low="504" lowreturn="1" middle="1008" middlereturn="2" high="1856" highreturn="3" />
+    <equipconsolidatetype id="7" consolidatetype="1" att="14" low="504" lowreturn="1" middle="1008" middlereturn="2" high="1856" highreturn="3" />
+    <equipconsolidatetype id="8" consolidatetype="1" att="13" low="693" lowreturn="1" middle="1386" middlereturn="2" high="2772" highreturn="3" />
+    <equipconsolidatetype id="9" consolidatetype="1" att="15" low="693" lowreturn="1" middle="1386" middlereturn="2" high="2772" highreturn="3" />
+    <equipconsolidatetype id="10" consolidatetype="2" att="37" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="11" consolidatetype="2" att="36" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="12" consolidatetype="2" att="39" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="13" consolidatetype="2" att="38" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="14" consolidatetype="2" att="42" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="15" consolidatetype="2" att="40" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="16" consolidatetype="2" att="41" low="100" lowreturn="1" middle="400" middlereturn="2" high="500" highreturn="3" />
+    <equipconsolidatetype id="17" consolidatetype="2" att="44" low="140" lowreturn="1" middle="270" middlereturn="2" high="340" highreturn="3" />
+    <equipconsolidatetype id="18" consolidatetype="2" att="45" low="140" lowreturn="1" middle="270" middlereturn="2" high="340" highreturn="3" />
+    <equipconsolidatetype id="19" consolidatetype="2" att="43" low="140" lowreturn="1" middle="270" middlereturn="2" high="340" highreturn="3" />
+    <equipconsolidatetype id="20" consolidatetype="3" att="0" low="100" lowreturn="1" middle="225" middlereturn="2" high="300" highreturn="3" />
+    <equipconsolidatetype id="21" consolidatetype="3" att="1" low="100" lowreturn="1" middle="225" middlereturn="2" high="300" highreturn="3" />
+    <equipconsolidatetype id="22" consolidatetype="3" att="2" low="100" lowreturn="1" middle="225" middlereturn="2" high="300" highreturn="3" />
+    <equipconsolidatetype id="23" consolidatetype="3" att="3" low="100" lowreturn="1" middle="225" middlereturn="2" high="300" highreturn="3" />
+    <equipconsolidatetype id="24" consolidatetype="3" att="4" low="100" lowreturn="1" middle="225" middlereturn="2" high="300" highreturn="3" />
+    <equipconsolidatetype id="25" consolidatetype="3" att="5" low="100" lowreturn="1" middle="225" middlereturn="2" high="300" highreturn="3" />
+    <equipconsolidatetype id="26" consolidatetype="5" att="83" low="2400" lowreturn="1" middle="4800" middlereturn="2" high="6400" highreturn="3" />
+    <equipconsolidatetype id="27" consolidatetype="5" att="16" low="1800" lowreturn="1" middle="3600" middlereturn="2" high="4800" highreturn="3" />
+</root>

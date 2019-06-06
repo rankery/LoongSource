@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<motion id="1" type="0" friendval="0"/>
+	<motion id="2" type="0" friendval="0"/>
+	<motion id="3" type="0" friendval="0"/>
+	<motion id="4" type="0" friendval="0"/>
+	<motion id="5" type="0" friendval="0"/>
+	<motion id="6" type="0" friendval="0"/>
+	<motion id="7" type="0" friendval="0"/>
+	<motion id="8" type="0" friendval="0"/>
+	<motion id="9" type="0" friendval="0"/>
+	<motion id="10" type="0" friendval="0"/>
+	<motion id="11" type="0" friendval="0"/>
+	<motion id="12" type="0" friendval="0"/>
+	<motion id="13" type="0" friendval="0"/>
+	<motion id="14" type="1" friendval="20"/>
+	<motion id="15" type="1" friendval="70"/>
+	<motion id="16" type="1" friendval="170"/>
+	<motion id="17" type="1" friendval="70"/>
+	<motion id="18" type="1" friendval="320"/>
+	<motion id="19" type="1" friendval="520"/>
+	<motion id="20" type="1" friendval="0"/>
+</root>

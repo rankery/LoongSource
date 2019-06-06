@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<!-- 登陆消息的xml定义 -->
+<!--<login name="NLC_Proof" description="登陆">
+  <szUserName name="用户名"/>
+  <dwType name="第三方"/>
+  <dwPsdCrc name="密码CRC值"/>
+  <dwMBCrc name="密保CRC值"/>
+  <dwCurVerSionID name="当前版本ID"/>
+  <dwWorldNameCrc name="游戏世界名的CRC"/>
+</login>
+-->
+<action>
+  <鼠标行走 name="NC_MouseWalk">
+    <开始坐标 type="Vector3"></开始坐标>
+    <结束坐标 type="Vector3"></结束坐标>
+  </鼠标行走>
+  <键盘行走 name="NC_KeyboardWalk">
+    <结束坐标 type="Vector3"></结束坐标>
+  </键盘行走>
+  <停止键盘行走 name="NC_StopKeyboardWalk">
+    <当前坐标 type="Vector3"></当前坐标>
+  </停止键盘行走>
+  <跳跃 name="NC_Jump">
+    <开始坐标 type="Vector3"></开始坐标>
+    <方向 type="Vector3"></方向>
+    <跳跃时间 type="FLOAT"></跳跃时间>
+  </跳跃>
+  <掉落 name="NC_Drop">
+    <开始坐标 type="Vector3"></开始坐标>
+    <方向 type="Vector3"></方向>
+    <跳跃时间 type="FLOAT"></跳跃时间>
+  </掉落>
+  <垂直掉落 name="NC_VDrop">
+    <开始坐标 type="Vector3"></开始坐标>
+    <跳跃时间 type="FLOAT"></跳跃时间>
+  </垂直掉落>
+  <滑落 name="NC_Slide">
+    <开始坐标 type="Vector3"></开始坐标>
+    <结束坐标 type="Vector3"></结束坐标>
+  </滑落>
+
+
+  <得到角色ID name="NC_RoleGetID">
+    <角色名字CRC type="DWORD"></角色名字CRC>
+  </得到角色ID>
+  <得到某角色name name="NC_RoleGetName">
+    <角色ID type="DWORD"></角色ID>
+  </得到某角色name>
+
+  <请求角色列表 name="NC_EnumRole">
+  </请求角色列表>
+  
+  <创建角色 name="NC_CreateRole">
+    <角色名称 type="TCHAR"></角色名称>
+    <安全码 type="DWORD"></安全码>
+    <状态 type="EPreChapStatus"></状态>
+    <角色属性 type="tagAvatarAtt"></角色属性>
+  </创建角色>
+
+  <删除角色 name="NC_DeleteRole">
+    <角色ID type="DWORD"></角色ID>
+    <安全码 type="DWORD"></安全码>
+  </删除角色>
+
+  <选择角色 name="NC_SelectRole">
+    <角色ID type="DWORD"></角色ID>
+  </选择角色>
+
+  <对某人说话 name="NC_RoleChat">
+    <对谁说 type="DWORD"></对谁说>
+    <发言频道 type="BYTE"></发言频道>
+    <内容 type="TCHAR"></内容>
+  </对某人说话>
+
+  <玩家初始结构 name="NC_GetRoleInitState">
+  </玩家初始结构>
+
+  <远程玩家当前属性 name="NC_GetRemoteRoleState">
+    <角色ID type="DWORD"></角色ID>
+  </远程玩家当前属性>
+
+  <装备 name="NC_Equip">
+    <装备部位 type="EEquipPos"></装备部位>
+    <装备64位序列号 type="INT64"></装备64位序列号>
+  </装备>
+
+  
+  <放下装备 name="NC_Unequip">
+    <待放入背包中位置 type="INT16"></待放入背包中位置>
+    <对齐字段 type="INT16"></对齐字段>
+    <装备64位序列号 type="INT64"></装备64位序列号>
+  </放下装备>
+
+  <同一个容器内物品移动 name="NC_ItemPosChange">
+    <容器类型 type="EItemConType"></容器类型>
+    <移动位置的物品 type="INT64"></移动位置的物品>
+    <目标位置 type="INT16"></目标位置>
+  </同一个容器内物品移动>
+
+  <不同容器内物品移动 name="NC_ItemPosChangeEx">
+    <源容器类型 type="EItemConType"></源容器类型>
+    <目标容器类型 type="EItemConType"></目标容器类型>
+    <移动位置的物品 type="INT64"></移动位置的物品>
+    <目标位置 type="INT16"></目标位置>
+  </不同容器内物品移动>
+  <是否可以接取此任务 name="NC_CanTakeQuest">
+    <任务ID type="DWORD"></任务ID>
+  </是否可以接取此任务>
+  <是否可以完成此任务 name="NC_CanCompleteQuest">
+    <任务ID type="DWORD"></任务ID>
+  </是否可以完成此任务>
+
+  <玩家请求交换物品 name="NC_ExchangeReq">
+    <消息目标ID type="DWORD"></消息目标ID>
+  </玩家请求交换物品>
+
+  <目标玩家交易请求反馈 name="NC_ExchangeReqRes">
+    <错误码 type="DWORD"></错误码>
+    <消息目标ID type="DWORD"></消息目标ID>
+  </目标玩家交易请求反馈>
+
+  <添加交易的物品装备 name="NC_ExchangeAdd">
+    <序号 type="INT64"></序号>
+  </添加交易的物品装备>
+
+  <取消交易的物品装备 name="NC_ExchangeDec">
+    <序号 type="INT64"></序号>
+  </取消交易的物品装备>
+
+  <金钱发生改变 name="NC_ExchangeMoney">
+    <金钱 type="INT64"></金钱>
+  </金钱发生改变>
+
+  <锁定交易物品 name="NC_ExchangeLock">
+  </锁定交易物品>
+
+  <取消交易 name="NC_ExchangeCancel">
+  </取消交易>
+
+  <玩家确认交易 name="NC_ExchangeVerify">
+  </玩家确认交易>
+
+ 
+</action>

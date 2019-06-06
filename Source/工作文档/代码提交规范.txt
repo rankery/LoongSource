@@ -1,0 +1,56 @@
+svn日志格式：
+	所属版本-涉及工程-内容类型:工作-模块-详细log
+
+1.所属版本(如1.2.4,1.2.5,1.3.0等)：
+	内容涉及到的版本号，即内容是哪个版本的内容。(可以参考工作计划表.xml)
+	1)比较老的bug，不再当前分支控制的版本的bug；很早以前的内容的bug，可是到最近才被改过来；不知道该内容的版本，这些情况下就用×.*.*来表示版本号，这个内容要被合到所有的分支版本
+		x.x.x-s-bug:-任务-修改了任务中怪物被重复统计的bug					#意为很早以前某个版本的内容，涉及到服务器，工作内容分不清，任务模块，具体内容是修改了任务中怪物被重复统计的bug
+
+2.涉及工程(可选s,c,p,sp,cp,scp其一)：
+	其中s即server，包括如下工程：
+		Beton, LocalRtService, LoongBillServer, LoongDB, LoongGMServer, 
+		LoongGMTool, LoongLogin, LoongWorld, RTClient, ServerCfgDesTool, 
+		ServerDefine, ServerIpDesTool, ServerMergeTool, SumShower, Virtual_Client
+	c即client，包括如下工程：（客户端的同事帮看一下，是不是太多了？）
+		Client, Cool3D, Cool3DView, Cpack2009, CSExport, DummyClient, 
+		Dxt, EffectAttacher, F3DMaxExp, GamePack, Launcher, LoongQuestEditor, 
+		LoongQuestEditor-wx, MapEditor, MaxPublic, MeshExporter, SelfExtract, 
+		SFXEditor, TerrainEditor, vChatClient, vChatServer, vChatTest, vEngineTest, 
+		vServerTest, VUIEditor, WorldEditor, XMLNullAttributeRemover,
+	p即public，包括如下工程：
+		LoongTest, Lua, vEngine, WorldBase, WorldDefine, XMLReader,
+		
+3.更新属性(new, fix选其一)：
+	其中new即新内容
+	chg为原内容修改
+	fix即修改bug
+		(1)如果所修改bug是ttp上的bug，要注明ttpbug编号
+			1.2.5-s-fix(4206):-灵兽-修改了灵兽骑乘速度都显示为0的bug			#意为1.2.5的内容，涉及到服务器，灵兽模块，修正了ttp上4206的bug，具体内容为修改了灵兽骑乘速度都显示为0的bug
+		(2)如果不是ttp上的，要有恰当的描述
+			1.2.5-s-fix:-灵兽-修改初始化灵兽失败可能导致服务器宕机的bug		#意为1.2.5的内容，涉及到服务器，灵兽模块，修改了初始化灵兽失败可能导致服务器宕机的bug
+
+4.工作(详见《工作计划表.xls》)
+	为工作计划表中对应的工作名称，如果表中没有，则不填
+
+5.模块(详见《各系统测试点.doc》)
+	为此次更改所涉及的模块名称
+		1.2.5-s-fix:-灵兽-修改初始化灵兽失败可能导致服务器宕机的bug			#意为1.2.5的内容，涉及到服务器，灵兽模块，修改了初始化灵兽失败可能导致服务器宕机的bug
+
+svn代码提交规范：
+1.每次提交保证每个功能提交内容的原子性(每次提交只有一个内容，每个内容只有一次提交)
+	做到这点可能有点困难，因为同事们有可能同时进行很多项工作，不过这可以通过获取多个工作版本来解决。
+	比如当正在做背包扩容时，同时又要修改以前称号的一个bug，这是背包扩容的工程不用动，先从版本库里checkout一份代码，然后修改，测试提交。
+	
+2.如果该内容客户端和服务器都需要提交的话，提交的间隔要尽量的小，即工作内容完成后，客户端和服务器一起提交代码，比如客户端提交3978，服务器提交3979
+	
+	例子：
+		1.2.5-s-fix(4206):-灵兽-修改了灵兽骑乘速度都显示为0的bug				#意为1.2.5的内容，涉及到服务器，灵兽模块，修正了ttp上4206的bug，具体内容为修改了灵兽骑乘速度都显示为0的bug
+	
+3.如果客户端和服务器开发涉及到一些公共结构（消息或枚举）的定义需要在没有完成工作内容时提交，应该添加工作内容名称和具体内容注释，
+其中工作内容名称以策划所提供的工作内容表为准（alex可以提供一份大家的工作安排表，大家跟据表来命名）
+	例子：
+		1.3.0-p-new:行囊扩容-行囊仓库-增加了物品特殊公用枚举				#意为1.3.0的内容，涉及到服务器和公共工程，工作内容名称是行囊扩容，行囊仓库模块，具体内容是增加了物品的特殊公用枚举
+		1.3.0-s-new:行囊扩容-行囊仓库-服务器端实现						#意为1.3.0的内容，涉及到服务器，工作内容名称是行囊扩容，行囊仓库模块，具体内容是服务器端的实现
+
+建议：
+1.相应部门在ttp上指派bug时最好同时标注bug出现的版本号。

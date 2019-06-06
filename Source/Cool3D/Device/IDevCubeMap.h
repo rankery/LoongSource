@@ -1,0 +1,14 @@
+#pragma once
+
+namespace Cool3D
+{
+	/**	\class IDevCubeMap
+		\brief Ó²¼þcube map¶ÔÏó
+	*/
+	class IDevCubeMap
+	{
+	public:
+		IDevCubeMap(void);
+		virtual ~IDevCubeMap(void);
+	};
+}//namespace Cool3D

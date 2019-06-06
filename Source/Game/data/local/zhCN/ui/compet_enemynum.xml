@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="compet_enemy_win" ClassName="CGUIWindow" LogicPos_x="530" LogicPos_y="117" Size_x="249" Size_y="96" PopupSound="window_popup">
+        <UIControl Name="compet_enemy_pic" ClassName="CGUIStatic" Size_x="249" Size_y="96" Font="小三楷体" TextRect_right="128" TextRect_bottom="128" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicFileName="data\ui\compose\l-compose.bmp" PicRect_left="256" PicRect_top="541" PicRect_right="505" PicRect_bottom="638" PicColor="0xFFFFFFFF" AlphaWrite="Write">
+            <UIControl Name="num" ClassName="CGUIStatic" BottomMost="yes" LogicPos_x="6" Size_x="40" Size_y="40" Font="小黑雅黑" FontHeight="60" TextRect_right="60" TextRect_bottom="40" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="Center" PicColor="0xFFFFFF" />
+        </UIControl>
+    </UIControl>
+</desktop>

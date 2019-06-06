@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by Cool3DView.rc
+//
+#define IDD_ABOUTBOX                    100
+#define IDP_OLE_INIT_FAILED             100
+#define IDD_Cool3DVIEW_FORM             101
+#define IDR_HTML_BLADEGLOWDLG           103
+#define IDR_HTML_BLADEGLOW              104
+#define IDR_HTML_DYEALPHAMAPDLG         105
+#define IDR_HTML_DYEALPHAMAPDLG1        107
+#define IDD_SELUPPERSKEANIDLG           109
+#define IDR_MAINFRAME                   128
+#define IDR_Cool3DViewTYPE              129
+#define IDD_SkelDlg                     130
+#define IDD_AttachMdl                   131
+#define IDD_ActMsgTable                 132
+#define IDD_BladeGlow                   133
+#define IDD_DyeAlphaMap                 138
+#define IDD_BlendTrack                  139
+#define IDD_ModifyAttr                  140
+#define IDC_DrawWnd                     1000
+#define IDC_BKCOLOR                     1001
+#define IDC_CHECK1                      1002
+#define IDC_WIREFRAME                   1002
+#define IDC_CHECKALL                    1002
+#define IDC_ArcBall                     1003
+#define IDC_Ambient                     1007
+#define IDC_Diffuse                     1008
+#define IDC_ChildList                   1009
+#define IDC_RemoveChild                 1010
+#define IDC_TrackList                   1011
+#define IDC_Fov                         1012
+#define IDC_ShowSkel                    1013
+#define IDC_TagNodeName                 1013
+#define IDC_MsgTable                    1014
+#define IDC_TagNodes                    1015
+#define IDC_AniPlayTime                 1015
+#define IDC_MdlFile                     1016
+#define IDC_MsgTable2                   1016
+#define IDC_AniPause                    1016
+#define IDC_MdlPath                     1017
+#define IDC_Specular                    1017
+#define IDC_MsgList                     1019
+#define IDC_AniTimeScale                1020
+#define IDC_AniLoop                     1021
+#define IDC_EDIT1                       1022
+#define IDC_BUTTON1                     1023
+#define IDDELETE                        1023
+#define IDC_SAVE                        1023
+#define IDC_Browse                      1023
+#define IDC_BUTTON_COLOR                1023
+#define IDC_PITCH                       1023
+#define IDC_LIST1                       1024
+#define IDC_HEADPITCH                   1024
+#define IDC_EDIT_Y                      1025
+#define IDC_EDIT_Z                      1026
+#define IDC_EDIT_Radius                 1027
+#define IDC_Refresh                     1028
+#define IDC_EDIT_X                      1029
+#define IDC_AlphaMapWidth               1033
+#define IDC_AlphaMapHeight              1034
+#define IDC_BaseTexPath                 1035
+#define IDC_LumMask                     1036
+#define IDC_EDIT_MODEL                  1038
+#define IDC_STATIC_COLOR                1039
+#define IDC_UpperSkeAniName             1040
+#define IDC_LowerSkeAniName             1041
+#define IDC_AllSkeAniName               1042
+#define IDC_YAW                         1043
+#define IDC_UpperWeight                 1043
+#define IDC_HEADYAW                     1044
+#define IDC_LowerWeight                 1044
+#define IDC_CHECK2                      1045
+#define IDC_DrawSkeleton                1045
+#define IDC_AllWeight                   1045
+#define IDC_EnableSnapshoter            1046
+#define IDC_SavePhoto                   1047
+#define IDC_SavePhotoInfo               1050
+#define IDC_PhotoUseMdlPath             1051
+#define IDC_SavePhotoInfo2              1052
+#define IDC_LightmapSize                1052
+#define ID_BladeGlow                    32774
+#define ID_AttachMdl                    32775
+#define ID_DyeAlphaMap                  32778
+#define ID_ShowNormal                   32780
+#define ID_ShowTangent                  32782
+#define ID_SelectHorseman               32784
+#define ID_SelectHorse                  32785
+#define ID_SelUpperSkeAni               32787
+#define ID_LOADDEFAULTMANSKIN           32790
+#define ID_LOADDEFAULTWOMANSKIN         32791
+#define ID_Menu                         32792
+#define ID_SEM                          32794
+#define ID_CEM                          32796
+#define ID_32797                        32797
+#define ID_BlendTrack                   32798
+#define ID_32799                        32799
+#define ID_32800                        32800
+#define ID_ModifyLightmap               32801
+#define ID_32803                        32803
+#define ID_SplitSkel                    32804
+#define ID_32806                        32806
+#define ID_UpdateAABBTree               32807
+#define ID_32808                        32808
+#define ID_ModifySkin                   32809
+#define ID_32810                        32810
+#define ID_CHECKSKEL                    32811
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        142
+#define _APS_NEXT_COMMAND_VALUE         32812
+#define _APS_NEXT_CONTROL_VALUE         1053
+#define _APS_NEXT_SYMED_VALUE           110
+#endif
+#endif

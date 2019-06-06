@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <engrave_pos id="1" right_hand="1" />
+    <engrave_pos id="2" right_hand="1" />
+    <engrave_pos id="3" head="1" body="1" leg="1" wrist="1" feet="1" back="1" />
+    <engrave_pos id="4" neck="1" finger1="1" waist="1" />
+</root>

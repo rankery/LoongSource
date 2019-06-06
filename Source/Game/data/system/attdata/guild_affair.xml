@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <facilities id="6000101" guild_level="1" hold_city="0" fund="10000" material="100" />
+    <facilities id="6000201" guild_level="1" hold_city="0" fund="10000" material="100" />
+    <facilities id="6000301" guild_level="1" hold_city="0" fund="20000" material="200" />
+    <facilities id="6000401" guild_level="3" hold_city="0" fund="80000" material="300" />
+    <facilities id="6000501" guild_level="3" hold_city="0" fund="120000" material="400" />
+    <facilities id="6000601" guild_level="4" hold_city="0" fund="100000" material="400" />
+    <facilities id="6000701" guild_level="4" hold_city="0" fund="100000" material="400" />
+    <facilities id="6000801" guild_level="4" hold_city="0" fund="140000" material="500" />
+    <facilities id="6000901" guild_level="6" hold_city="0" fund="180000" material="600" />
+    <facilities id="6001001" guild_level="6" hold_city="0" fund="250000" material="700" />
+    <facilities id="6001101" guild_level="8" hold_city="0" fund="220000" material="700" />
+    <facilities id="6001201" guild_level="8" hold_city="0" fund="220000" material="700" />
+    <facilities id="6001301" guild_level="8" hold_city="0" fund="300000" material="800" />
+    <facilities id="6001401" guild_level="9" hold_city="0" fund="350000" material="900" />
+    <facilities id="6001501" guild_level="9" hold_city="0" fund="400000" material="1000" />
+    <facilities id="6001601" guild_level="10" hold_city="0" fund="500000" material="1500" />
+    <facilities id="6001701" guild_level="2" hold_city="3" fund="250000" material="750" />
+    <facilities id="6001801" guild_level="2" hold_city="4" fund="250000" material="750" />
+    <facilities id="6001901" guild_level="2" hold_city="5" fund="250000" material="750" />
+    <facilities id="6002001" guild_level="2" hold_city="6" fund="250000" material="750" />
+</root>

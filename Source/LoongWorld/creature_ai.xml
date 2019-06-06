@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 属性升级表xml映射 -->
+<root>
+    <AI id="" name="" group_id="" flag="" buff_1="" buff_2="" buff_3="" skill1_id="" event1_id="" skill2_id="" event2_id="" skill3_id="" event3_id="" skill4_id="" event4_id="" skill5_id="" event5_id="" target1_type="" target2_type="" target3_type="" target4_type="" target5_type=""/>
+    <AI id="" ai_action="" name="" group_id="" flag="" buff_1="" buff_2="" buff_3="" skill1_id="" event1_id="" skill2_id="" event2_id="" skill3_id="" event3_id="" skill4_id="" event4_id="" skill5_id="" event5_id="" target1_type="" target2_type="" target3_type="" target4_type="" target5_type=""/>
+</root>
+
+

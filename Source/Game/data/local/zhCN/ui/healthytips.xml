@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="heathytipswin" ClassName="CGUIWindow" Movable="yes" CanMoveOutOfFather="yes" LogicPos_x="764" LogicPos_y="55" Size_x="110" Size_y="55" AlignControl="\desktop\sclfatherwnd" AlignType="OuterBottomRight" AlignOffset_x="-210" PopupSound="notify">
+        <UIControl Name="healthytips" ClassName="CGUIStatic" MoveFather="yes" Size_x="104" Size_y="52" AlignControl="\desktop\heathytipswin" Font="小三楷体" TextRect_right="181" TextRect_bottom="170" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFFFF" />
+    </UIControl>
+</desktop>

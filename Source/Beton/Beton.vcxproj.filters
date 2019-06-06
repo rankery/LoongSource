@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sorce Files">
+      <UniqueIdentifier>{abe2621e-a8d3-404f-a015-cf6557acd166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sorce Files\Database">
+      <UniqueIdentifier>{a646cb97-8abc-421e-a157-9f3bbf330e5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="MysqlStream.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryResult.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeStreamQueue.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamPool.h">
+      <Filter>Sorce Files\Database</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Database.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="MysqlStream.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryResult.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeStreamQueue.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamPool.cpp">
+      <Filter>Sorce Files\Database</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

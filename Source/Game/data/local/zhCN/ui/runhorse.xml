@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="sclfatherwnd" ClassName="CGUIStatic" LogicPos_x="-830" Size_x="3100" Size_y="22" AlignControl="\desktop" AlignType="InnerTop" Font="小白雅黑" TextRect_right="3100" TextRect_bottom="22" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicFileName="data\ui\main\l_main-gonggao.bmp" PicColor="0xFFFFFFFF" AlphaWrite="Write">
+        <UIControl Name="sclricheditbox" ClassName="CGUIRichEditBox" CanMoveOutOfFather="yes" Size_x="3100" Size_y="20" AlignControl="\desktop\sclfatherwnd" Text="&lt;=(146,243,255)&gt;Series Quest: Sansheng Stone - The Truth in Dreams (2/8)&#x0D;&#x0A;    Fortuneteller Chunyun said you need to find the Sansheng Stone to help Zhou Lingyun. Bring this information to Zhou Lingyun in Liuhe (531,470).Yicheng Yamen Watchman (2/3)&#x0D;&#x0A;Return to the Yicheng Yamen Watchman &lt;&lt;=(85,245,183)&gt;&lt;linkstart=0&gt;Yicheng,662,261&lt;linkend&gt;&lt;=(146,243,255)&gt;&gt;.&#x0D;&#x0A;" Font="小白雅黑" FontHeight="20" TextRect_right="3096" TextRect_bottom="20" TextColor="0xFFFF80FF" ShadeColor="0xFF290404" PicFileName="data\ui\chat\l_chat-diban-diwen.bmp" PicRect_right="3096" PicColor="0x435E2F00" AlphaWrite="Add" ReadOnly="yes" CursorColor="0xFF000000" CursorTimer="0x64" RowSpacing="16" MaxEditTextCount="20480" />
+    </UIControl>
+</desktop>

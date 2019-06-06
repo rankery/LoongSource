@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  XMLReader.cpp
+  XMLReader_Dll.cpp
+     Creating library ..\vsout\XMLReader\Release\XMLReader.lib and object ..\vsout\XMLReader\Release\XMLReader.exp
+  Generating code
+  Finished generating code
+  XMLReader.vcxproj -> D:\other\LoongRework\Sourcev2\Source\XMLReader\..\Game\Release\XMLReader.dll

@@ -1,0 +1,55 @@
+
+ 此文档主要说明开发网络功能需要注意的地方
+
+ 
+  [功夫世界服务器稳定性及压力处理]
+
+1、如果本tick收到客户端的包，不马上return unit,而是记录到此客户端，当需要向此客户端发送消息时，直接使用此unit。
+此优化能减少一次内存拷贝，减少一次Get unit的调用，get unit以及return unit会对网络底层unit池进行锁定。
+
+2、使用GetUnitWritePos函数，当unit内信息堆满，或者本tick完成，才发送出包。包堆满发出能减少网络IO请求的数量
+
+3、SendCast单客户端检测，如果发现某个客户端的send cast数量大于800，立即踢掉此客户端
+
+4、SendCast全局检测，每个tick统计SendCast最大的玩家，当服务器进入资源紧张状态时，踢掉此玩家。服务器资源紧张状态定义如下：
+A空闲物理内存少于总物理内存的10% B非分页内存大于空闲物理内存的10%  C数据库服务器发送缓冲队列缓冲数大于500
+当服务器进入资源紧张状态时，服务器会有显示
+
+5、Recv队列单客户端检查，如果某客户端的RECV队列内包数量大于96，立即踢掉此客户端
+
+6、服务器超载状态检查，当服务器进入超载状态时，会通知主控服务器，可以进一步采取不让玩家继续登入的措施。超载状态的定义：
+A服务器当前未发出包总数持续4秒不断增长，B服务器的TickIdle与TimePerTick 比例小于一定数量
+
+7、尽量少使用SendLargeMsg函数，这样可以减少内存拷贝的次数
+
+
+  [包泄露检查]
+  
+因为完成端口网络底层采用unit的发包机制，所以网络底层还提供一个防止上层泄露unit的机制。
+因为上层需要和unit打交道的也就4种情况：
+
+1、   通过GetFreeUnit得到空包以便填写网络消息
+2、   通过ReturnUnit向网络底层提交废弃的包
+3、   通过Send来发送包
+4、   通过RecvUnit来接收包
+
+上面四种情况，应该是  Get + Recv = Return + Send, 如果此等式成立，那么说明上层没有包泄露。
+所以建议服务器应该显示一下此等式是否成立，可以参考功夫世界区域服务器的代码：
+
+         DWORD dwGetFree = m_NetSession.GetCounterOfGetFreeUnit();
+         DWORD dwRet = m_NetSession.GetCounterOfReturnUnit();
+         DWORD dwSend = m_NetSession.GetCounterOfSendUnit();
+         DWORD dwRecv = m_NetSession.GetCounterOfRecvUnit();
+         Interface(ISimpleConsole, "server_state")->
+                   Print("unit:out%d[%dwait %dcast] in%d[%dwait] leak:%d, db: save%d[%dok] unsend%d unrecv%d", 
+                            m_nUnitSendThisTick, m_NetSession.GetUnsendUnitNum(), m_nSendCast,
+                            dwProceedMsg, dwRecvedMsgWait,
+                            dwSend + dwRet - dwGetFree - dwRecv,
+                            m_nDBSaveCounter, m_nDBSaveOKCounter, m_pDbSession->GetUnsendPackageNum(),
+                            m_pDbSession->GetReceivedPackageNum());
+
+其中 dwSend + dwRet - dwGetFree – dwRecv  就是这个东西，如果值一直在0左右徘徊，说明上层没有包泄露。
+
+
+另外网络底层也有包泄露的检测机制，就是_DEBUG_UNIT宏，不过现在因为网络底层已经经过长时间的测试和正式运营，可以排除包泄露的可能性。
+

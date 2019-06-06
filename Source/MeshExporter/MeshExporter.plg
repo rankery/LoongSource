@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MeshExporter - Win32 Hybrid--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"MeshExporter___Win32_Hybrid/MeshExporter.res" /d "_DEBUG" "D:\Work\MeshExporter\MeshExporter.rc"" 
+Creating temporary file "C:\DOCUME~1\BWEN~1.TWB\LOCALS~1\Temp\RSP117.tmp" with contents
+[
+/nologo /G6 /MD /W3 /Gm /GX /ZI /Od /I "E:\3dsmax5\maxsdk\\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"MeshExporter___Win32_Hybrid/" /Fp"MeshExporter___Win32_Hybrid/MeshExporter.pch" /YX /Fo"MeshExporter___Win32_Hybrid/" /Fd"MeshExporter___Win32_Hybrid/" /FD /LD /c 
+"D:\Work\MeshExporter\Actor\ActorKeyFrameExporter.cpp"
+"D:\Work\MeshExporter\Actor\ActorKeyFrameFile.cpp"
+"D:\Work\MeshExporter\Math\GeomDefine.cpp"
+"D:\Work\MeshExporter\Math\math.cpp"
+"D:\Work\MeshExporter\ExpLight.cpp"
+"D:\Work\MeshExporter\ExpMesh.cpp"
+"D:\Work\MeshExporter\ExpMtl.cpp"
+"D:\Work\MeshExporter\SceneContext.cpp"
+"D:\Work\MeshExporter\SceneEnumProc.cpp"
+"D:\Work\MeshExporter\SceneWriter.cpp"
+"D:\Work\MeshExporter\StaticMesh\StaticMeshWriter.cpp"
+"D:\Work\MeshExporter\SceneMesh\AABBTreeBuilder.cpp"
+"D:\Work\MeshExporter\SceneMesh\SceneMeshExporter.cpp"
+"D:\Work\MeshExporter\SceneMesh\SceneMeshFile.cpp"
+"D:\Work\MeshExporter\DllEntry.cpp"
+"D:\Work\MeshExporter\MeshExporter.cpp"
+"D:\Work\MeshExporter\msgbox.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BWEN~1.TWB\LOCALS~1\Temp\RSP117.tmp" 
+Creating temporary file "C:\DOCUME~1\BWEN~1.TWB\LOCALS~1\Temp\RSP118.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib core.lib geom.lib gfx.lib mesh.lib maxutil.lib maxscrpt.lib paramblk2.lib F3DMaxExp.lib /nologo /base:"0x54420000" /subsystem:windows /dll /incremental:yes /pdb:"MeshExporter___Win32_Hybrid/MeshExporter.pdb" /debug /machine:I386 /def:".\MeshExporter.def" /out:"E:\3dsmax5\plugins\MeshExporter.dle" /implib:"MeshExporter___Win32_Hybrid/MeshExporter.lib" /pdbtype:sept /libpath:"E:\3dsmax5\maxsdk\\lib" 
+.\MeshExporter___Win32_Hybrid\ActorKeyFrameExporter.obj
+.\MeshExporter___Win32_Hybrid\ActorKeyFrameFile.obj
+.\MeshExporter___Win32_Hybrid\GeomDefine.obj
+.\MeshExporter___Win32_Hybrid\math.obj
+.\MeshExporter___Win32_Hybrid\ExpLight.obj
+.\MeshExporter___Win32_Hybrid\ExpMesh.obj
+.\MeshExporter___Win32_Hybrid\ExpMtl.obj
+.\MeshExporter___Win32_Hybrid\SceneContext.obj
+.\MeshExporter___Win32_Hybrid\SceneEnumProc.obj
+.\MeshExporter___Win32_Hybrid\SceneWriter.obj
+.\MeshExporter___Win32_Hybrid\StaticMeshWriter.obj
+.\MeshExporter___Win32_Hybrid\AABBTreeBuilder.obj
+.\MeshExporter___Win32_Hybrid\SceneMeshExporter.obj
+.\MeshExporter___Win32_Hybrid\SceneMeshFile.obj
+.\MeshExporter___Win32_Hybrid\DllEntry.obj
+.\MeshExporter___Win32_Hybrid\MeshExporter.obj
+.\MeshExporter___Win32_Hybrid\msgbox.obj
+.\MeshExporter___Win32_Hybrid\MeshExporter.res
+]
+Creating command line "link.exe @C:\DOCUME~1\BWEN~1.TWB\LOCALS~1\Temp\RSP118.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ActorKeyFrameExporter.cpp
+d:\work\f3dmaxexp\anitrackdlg.h(19) : warning C4251: 'm_tracks' : class 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' needs to have dll-interface to be used by clients of class 'AniTrackDlg'
+ActorKeyFrameFile.cpp
+e:\program files\microsoft visual studio\vc98\include\utility(17) : warning C4786: '?$pair@Viterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U_Kfn@?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@_N' : identifier was truncated to '255' characters in the browser information
+        d:\work\meshexporter\actor\actorkeyframefile.cpp(139) : see reference to class template instantiation 'std::pair<class std::_Tree<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::set<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::_Kfn,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::iterator,bool>' being compiled
+e:\program files\microsoft visual studio\vc98\include\utility(21) : warning C4786: '??0?$pair@Viterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U_Kfn@?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@_N@std@@QAE@XZ' : identifier was truncated to '255' characters in the browser information
+        d:\work\meshexporter\actor\actorkeyframefile.cpp(139) : see reference to class template instantiation 'std::pair<class std::_Tree<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::set<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::_Kfn,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::iterator,bool>' being compiled
+e:\program files\microsoft visual studio\vc98\include\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U_Kfn@?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U_Kfn@?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        d:\work\meshexporter\actor\actorkeyframefile.cpp(139) : see reference to class template instantiation 'std::pair<class std::_Tree<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::set<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::_Kfn,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::iterator,bool>' being compiled
+e:\program files\microsoft visual studio\vc98\include\utility(25) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::set<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::iterator' : identifier was truncated to '255' characters in the debug information
+        d:\work\meshexporter\actor\actorkeyframefile.cpp(139) : see reference to class template instantiation 'std::pair<std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::set<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::iterator,bool>' being compiled
+e:\program files\microsoft visual studio\vc98\include\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U_Kfn@?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        d:\work\meshexporter\actor\actorkeyframefile.cpp(139) : see reference to class template instantiation 'std::pair<class std::_Tree<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::set<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::_Kfn,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >::iterator,bool>' being compiled
+GeomDefine.cpp
+e:\program files\microsoft visual studio\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::set<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::iterator,bool>::pair<std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::set<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+math.cpp
+ExpLight.cpp
+ExpMesh.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+ExpMtl.cpp
+SceneContext.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+SceneEnumProc.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+SceneWriter.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+StaticMeshWriter.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+AABBTreeBuilder.cpp
+SceneMeshExporter.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+SceneMeshFile.cpp
+DllEntry.cpp
+MeshExporter.cpp
+d:\work\f3dmaxexp\tagnodeexp.h(22) : warning C4251: 'm_maxNodes' : class 'std::vector<class INode *,class std::allocator<class INode *> >' needs to have dll-interface to be used by clients of class 'TagNodeExp'
+msgbox.cpp
+Linking...
+   Creating library MeshExporter___Win32_Hybrid/MeshExporter.lib and object MeshExporter___Win32_Hybrid/MeshExporter.exp
+Creating temporary file "C:\DOCUME~1\BWEN~1.TWB\LOCALS~1\Temp\RSP11C.tmp" with contents
+[
+/nologo /o"MeshExporter___Win32_Hybrid/MeshExporter.bsc" 
+.\MeshExporter___Win32_Hybrid\ActorKeyFrameExporter.sbr
+.\MeshExporter___Win32_Hybrid\ActorKeyFrameFile.sbr
+.\MeshExporter___Win32_Hybrid\GeomDefine.sbr
+.\MeshExporter___Win32_Hybrid\math.sbr
+.\MeshExporter___Win32_Hybrid\ExpLight.sbr
+.\MeshExporter___Win32_Hybrid\ExpMesh.sbr
+.\MeshExporter___Win32_Hybrid\ExpMtl.sbr
+.\MeshExporter___Win32_Hybrid\SceneContext.sbr
+.\MeshExporter___Win32_Hybrid\SceneEnumProc.sbr
+.\MeshExporter___Win32_Hybrid\SceneWriter.sbr
+.\MeshExporter___Win32_Hybrid\StaticMeshWriter.sbr
+.\MeshExporter___Win32_Hybrid\AABBTreeBuilder.sbr
+.\MeshExporter___Win32_Hybrid\SceneMeshExporter.sbr
+.\MeshExporter___Win32_Hybrid\SceneMeshFile.sbr
+.\MeshExporter___Win32_Hybrid\DllEntry.sbr
+.\MeshExporter___Win32_Hybrid\MeshExporter.sbr
+.\MeshExporter___Win32_Hybrid\msgbox.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\BWEN~1.TWB\LOCALS~1\Temp\RSP11C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MeshExporter.dle - 0 error(s), 14 warning(s)
+</pre>
+</body>
+</html>

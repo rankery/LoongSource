@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- id 类型id  -->
+<!-- item1 物品1  -->
+<!-- prob1 概率1  -->
+<!-- notice1 公告1  -->
+
+<root>
+  <WuXing id="" item1="" prob1="" num1="" notice1="" item2="" prob2="" num2="" notice2="" item3="" prob3="" num3="" notice3="" item4="" prob4="" num4="" notice4="" item5="" prob5="" num5="" notice5="" item6="" prob6="" num6="" notice6="" item7="" prob7="" num7="" notice7="" item8="" prob8="" num8="" notice8="" item9="" prob9="" num9="" notice9="" item10="" prob10="" num10="" notice10=""/>
+  <WuXing id="" item1="" prob1="" num1="" notice1="" item2="" prob2="" num2="" notice2="" item3="" prob3="" num3="" notice3="" item4="" prob4="" num4="" notice4="" item5="" prob5="" num5="" notice5="" item6="" prob6="" num6="" notice6="" item7="" prob7="" num7="" notice7="" item8="" prob8="" num8="" notice8="" item9="" prob9="" num9="" notice9="" item10="" prob10="" num10="" notice10=""/>
+ </root>

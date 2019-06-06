@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<quest id="10847" QuestName="恢复状态每日领取" Introduction="凡是达到15级的玩家每天都可以从回复状态领取人那里领取可以持续恢复体力以及真气的状态。" Npcid="4001111" PrevQuestID="" MinLevel="15" MaxLevel="" TimesOneDay="1"/>
+	<quest id="10848" QuestName="双倍经验每日领取" Introduction="凡是达到15级的玩家每天都可以从双倍经验领取人那里领取可以使杀怪经验翻倍的状态。" Npcid="4001057" PrevQuestID="" MinLevel="15" MaxLevel="" TimesOneDay="1"/>
+	<quest id="79" QuestName="普通鱼饵每日领取" Introduction="达到20级的玩家每天都可以从龙隐村的姜子牙那里领取一个普通鱼饵。" Npcid="3000022" PrevQuestID="" MinLevel="20" MaxLevel="" TimesOneDay="1"/>
+	<quest id="20033" QuestName="七星迷踪双倍经验" Introduction="七星真君每天会向玩家发布20个挖宝任务，想碰碰运气的朋友可千万不要错过哦！" Npcid="4500001" PrevQuestID="" MinLevel="40" MaxLevel="" TimesOneDay="20"/>
+	<quest id="20077" QuestName="侠义门之修行（双倍经验）" Introduction="侠义门是一个遍布各地的神秘组织，玩家每天可以从他们那领取很多的可重复任务。其中修行任务的前20环会有双倍的经验奖励。" Npcid="4500301" PrevQuestID="" MinLevel="25" MaxLevel="" TimesOneDay="20"/>
+	<quest id="20078" QuestName="侠义门之诛恶" Introduction="侠义门是一个遍布各地的神秘组织，玩家每天可以从他们那领取很多的可重复任务。其中诛恶任务每天可以完成20次。" Npcid="4500302" PrevQuestID="" MinLevel="25" MaxLevel="" TimesOneDay="50"/>
+	<quest id="20079" QuestName="侠义门之除魔（高经验）" Introduction="侠义门是一个遍布各地的神秘组织，玩家每天可以从他们那领取很多的可重复任务。其中除魔任务每天可以接取50次，需要玩家组队完成。" Npcid="4500303" PrevQuestID="" MinLevel="40" MaxLevel="" TimesOneDay="10"/>
+	<quest id="20080" QuestName="侠义门之济世" Introduction="侠义门是一个遍布各地的神秘组织，玩家每天可以从他们那领取很多的可重复任务。其中济世任务每天可以接取10次，可以获得不菲的经验奖励。" Npcid="4500304" PrevQuestID="" MinLevel="25" MaxLevel="" TimesOneDay="10"/>
+	<quest id="20081" QuestName="侠义门之兵备（双倍经验）" Introduction="侠义门是一个遍布各地的神秘组织，玩家每天可以从他们那领取很多的可重复任务。其中兵备任务的前10环会有双倍的经验奖励。" Npcid="4500305" PrevQuestID="" MinLevel="25" MaxLevel="" TimesOneDay="10"/>
+	<quest id="4134" QuestName="氏族之源" Introduction="氏族之源任务是为想要和八大氏族搞好关系的玩家准备的，它每天可以完成30次。" Npcid="3600015" PrevQuestID="" MinLevel="30" MaxLevel="" TimesOneDay="30"/>
+	<quest id="30001" QuestName="帮派历练" Introduction="只有加入了帮派的玩家在可以接取的任务。此任务每天可以完成100次。" Npcid="4001060" PrevQuestID="" MinLevel="30" MaxLevel="" TimesOneDay="100"/>
+	<quest id="20167" QuestName="菩提叶兑换经验" Introduction="如果你手上有菩提叶的话，可以找战神化身说明人来换取经验。（70至79级的玩家每天可以兑换经验20次，80至89级的玩家每天可以换取经验40次，90级以上的玩家每天可以兑换80次。）" Npcid="3021015" PrevQuestID="" MinLevel="70" MaxLevel="" TimesOneDay="20"/>
+</root>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 装备属性品质影响xml映射 -->
+<root>
+    <EquipQltyEffect id="" WeaponFactor="" ArmorFactor="" AttAFactor1="" AttAFactor2="" AttANumEffect="" PotFactor="" HolePct0="" HolePct1="" HolePct2="" HolePct3="" HolePct4="" HolePct5="" LonghunPctOuter="" LonghunPctInner="" SpecAttPct="" />
+    <EquipQltyEffect id="" WeaponFactor="" ArmorFactor="" AttAFactor1="" AttAFactor2="" AttANumEffect="" PotFactor="" HolePct0="" HolePct1="" HolePct2="" HolePct3="" HolePct4="" HolePct5="" LonghunPctOuter="" LonghunPctInner="" SpecAttPct="" />
+</root>
+
+<!-- 注：
+1.id中记录的是品级颜色；
+2.xxxFactor为影响系数；
+3.xxxPct为百分比。如5%，记为500；
+-->

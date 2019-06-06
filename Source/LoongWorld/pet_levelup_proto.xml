@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- id 虚拟等级  -->
+<!-- step 所在阶 -->
+<!-- grade 所在等-->
+<!-- exp 升级需要经验-->
+<!-- money 灌注需要金钱-->
+
+<root>
+  <Pet id="" step="" grade="" exp="" money=""/>
+  <Pet id="" step="" grade="" exp="" money=""/>
+</root>

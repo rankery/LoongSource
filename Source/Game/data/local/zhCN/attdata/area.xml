@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <area id="1" name="【华  北】" />
+    <area id="2" name="【东  北】" />
+    <area id="3" name="【华  东】" />
+    <area id="4" name="【中  南】" />
+    <area id="5" name="【西  南】" />
+    <area id="6" name="【西  北】" />
+    <area id="7" name="【港澳台】" />
+    <area id="8" name="【海  外】" />
+    <area id="9" name="【其  它】" />
+</root>

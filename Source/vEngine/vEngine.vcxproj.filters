@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{e6190af1-9b73-4251-aab5-c657abef7829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\console">
+      <UniqueIdentifier>{8cf2aaaf-6d2a-493e-b6f0-db08263239d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\document">
+      <UniqueIdentifier>{51626d6d-ac32-4708-a315-f4d197873e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\filter">
+      <UniqueIdentifier>{9764ec94-e396-40cc-8e37-8aa1f0c24592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\filter\minilzo">
+      <UniqueIdentifier>{047f00f5-5d92-4cbb-b27f-c4a3684878e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\filter\zlib">
+      <UniqueIdentifier>{dd474af1-b726-4e2d-870e-5777f603f7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frame">
+      <UniqueIdentifier>{938c3efe-3da8-4841-923d-13ad9f1123d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\globe">
+      <UniqueIdentifier>{1c38e205-0079-458d-bc36-635ac99f94a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{0fa309ee-b00b-4584-90ff-3e949e6ea350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\control">
+      <UniqueIdentifier>{0a6ac94a-f168-4580-8a7c-23823dcdfa42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\image">
+      <UniqueIdentifier>{1be74839-5021-4d51-8493-0e7e1c1b39ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\input">
+      <UniqueIdentifier>{b648367f-0cf6-453c-8a14-07a5a69f39fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{4be23079-ad84-4d0f-9a18-2c004425a80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network">
+      <UniqueIdentifier>{8966d634-e3e6-455d-a0f7-9361f0a10138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network\iocp_server">
+      <UniqueIdentifier>{3c184073-0b0e-4daa-a283-7338c15a0d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network\x_server">
+      <UniqueIdentifier>{a78a34c1-5e60-4db3-b2c5-dfccb3f4739a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network\x_server\ftp">
+      <UniqueIdentifier>{1f117682-dfe4-4950-8ee1-a3cf040c396b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{e97080db-c3eb-43c4-989f-48c896252dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\variable">
+      <UniqueIdentifier>{2dd117b3-40c8-4520-9858-92bb00cabc1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{40621709-1226-46a7-be37-733e67521ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{e7885d0c-9ec9-445b-b7ca-32de4c52a1c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vfs">
+      <UniqueIdentifier>{4da67237-d924-4c37-a123-05eb03959fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{35ba7f5b-eff1-43df-8046-bf5ec12f5c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\script">
+      <UniqueIdentifier>{86c528d4-b320-42e1-9dd2-1147f2000f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\script\lua">
+      <UniqueIdentifier>{d51fbe8d-d44c-4544-b3c1-2cf14688ff35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{0472e873-6110-47eb-818a-70ddd1d1f9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\resource">
+      <UniqueIdentifier>{2724a3f8-29ec-4680-99d5-29a256ba1ddf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\audio.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\fmod_support.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="console\console_command.cpp">
+      <Filter>Source Files\console</Filter>
+    </ClCompile>
+    <ClCompile Include="console\console_gui.cpp">
+      <Filter>Source Files\console</Filter>
+    </ClCompile>
+    <ClCompile Include="filter\FilterMgr.cpp">
+      <Filter>Source Files\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="filter\minilzo\MINILZO.C">
+      <Filter>Source Files\filter\minilzo</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\msg_queue.cpp">
+      <Filter>Source Files\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\msg_queue_ts.cpp">
+      <Filter>Source Files\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="globe\globe_function.cpp">
+      <Filter>Source Files\globe</Filter>
+    </ClCompile>
+    <ClCompile Include="globe\globe_table.cpp">
+      <Filter>Source Files\globe</Filter>
+    </ClCompile>
+    <ClCompile Include="globe\interfacemgr.cpp">
+      <Filter>Source Files\globe</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_editor.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_render.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_system.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_wnd.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_button.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_combobox.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_editbox.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_editboxex.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_frame.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_framemutex.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_httppic.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_listbox.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_patch.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_progress.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_pushbutton.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_richeditbox.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_scrollbar.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_static.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_staticex.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_tab.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_tree.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_virtual.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui_window.cpp">
+      <Filter>Source Files\gui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="image\image_bmp.cpp">
+      <Filter>Source Files\image</Filter>
+    </ClCompile>
+    <ClCompile Include="image\image_codec.cpp">
+      <Filter>Source Files\image</Filter>
+    </ClCompile>
+    <ClCompile Include="image\image_jpeg.cpp">
+      <Filter>Source Files\image</Filter>
+    </ClCompile>
+    <ClCompile Include="image\image_obj.cpp">
+      <Filter>Source Files\image</Filter>
+    </ClCompile>
+    <ClCompile Include="image\image_png.cpp">
+      <Filter>Source Files\image</Filter>
+    </ClCompile>
+    <ClCompile Include="image\image_tga.cpp">
+      <Filter>Source Files\image</Filter>
+    </ClCompile>
+    <ClCompile Include="input\input_dx8.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="input\input_map.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\mem_map.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\mem_pool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\new_protect.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\safe_mem_pool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="network\broadcast.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\HttpDownload.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_cmd_mgr.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ping.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\stream_server.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\stream_transport.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\crypt.cpp">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\session.cpp">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\transport.cpp">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\unit_pool.cpp">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\x_client.cpp">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\x_server.cpp">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\BlockingSocket.cpp">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="network\FTPClient.cpp">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="network\FTPDataTypes.cpp">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="network\FTPFileState.cpp">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="network\FTPListParse.cpp">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClCompile>
+    <ClCompile Include="render\d3d_interface.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\gdi_interface.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\render.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="variable\ini_obj.cpp">
+      <Filter>Source Files\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="variable\var_container.cpp">
+      <Filter>Source Files\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="variable\var_mgr.cpp">
+      <Filter>Source Files\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="system\cpu_usage.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\DiscIOMgr.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\process.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\stdio_redir.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\sysinfo.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\system_tray.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\thread.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\window_wrap.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="util\des.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\util.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\vector.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\CPKFast.cpp">
+      <Filter>Source Files\vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\vfs.cpp">
+      <Filter>Source Files\vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\zipreader.cpp">
+      <Filter>Source Files\vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxml.cpp">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlerror.cpp">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlparser.cpp">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="script\lua_manager.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\lua_script.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\exception.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\log.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\mini_dump.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\xzip.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vEngine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\audio.h">
+      <Filter>Source Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\audio_port.h">
+      <Filter>Source Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\fmod_support.h">
+      <Filter>Source Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="console\console_command.h">
+      <Filter>Source Files\console</Filter>
+    </ClInclude>
+    <ClInclude Include="console\console_gui.h">
+      <Filter>Source Files\console</Filter>
+    </ClInclude>
+    <ClInclude Include="filter\FilterMgr.h">
+      <Filter>Source Files\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="filter\minilzo\LZOCONF.H">
+      <Filter>Source Files\filter\minilzo</Filter>
+    </ClInclude>
+    <ClInclude Include="filter\minilzo\lzodefs.h">
+      <Filter>Source Files\filter\minilzo</Filter>
+    </ClInclude>
+    <ClInclude Include="filter\minilzo\MINILZO.H">
+      <Filter>Source Files\filter\minilzo</Filter>
+    </ClInclude>
+    <ClInclude Include="filter\zlib\zconf.h">
+      <Filter>Source Files\filter\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="filter\zlib\zlib.h">
+      <Filter>Source Files\filter\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\auto_factory.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\binder.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\msg_queue.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\msg_queue_ts.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\rect.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\safe_list.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\safe_map.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\sfp_trunk.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\simple_list.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\simple_map.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\simple_task.h">
+      <Filter>Source Files\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="globe\globe_define.h">
+      <Filter>Source Files\globe</Filter>
+    </ClInclude>
+    <ClInclude Include="globe\globe_function.h">
+      <Filter>Source Files\globe</Filter>
+    </ClInclude>
+    <ClInclude Include="globe\globe_table.h">
+      <Filter>Source Files\globe</Filter>
+    </ClInclude>
+    <ClInclude Include="globe\globe_typedefine.h">
+      <Filter>Source Files\globe</Filter>
+    </ClInclude>
+    <ClInclude Include="globe\interface_helper.h">
+      <Filter>Source Files\globe</Filter>
+    </ClInclude>
+    <ClInclude Include="globe\interfacemgr.h">
+      <Filter>Source Files\globe</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_define.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_editor.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_event_define.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_render.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_system.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_wnd.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_button.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_combobox.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_editbox.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_editboxex.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_frame.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_framemutex.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_httppic.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_listbox.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_patch.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_progress.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_pushbutton.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_richeditbox.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_scrollbar.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_static.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_staticex.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_tab.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_tree.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_virtual.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui_window.h">
+      <Filter>Source Files\gui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="image\ijl.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_bmp.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_codec.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_jpeg.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_obj.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_pixel_format.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_png.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image_tga.h">
+      <Filter>Source Files\image</Filter>
+    </ClInclude>
+    <ClInclude Include="input\input_dx8.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="input\input_map.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\mem_map.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\mem_pool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\new_protect.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\safe_mem_pool.h">
+      <Filter>Source Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="network\broadcast.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\HttpDownload.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\mapi_email.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net_cmd_mgr.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net_define.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ping.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\stream_server.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\stream_transport.h">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\crypt.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\safe_mutex_list.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\safe_unit_queue.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\server_define.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\session.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\transport.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\unit_pool.h">
+      <Filter>Source Files\network\iocp_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\x_client.h">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\x_define.h">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\x_list.h">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\x_queue.h">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\x_server.h">
+      <Filter>Source Files\network\x_server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\BlockingSocket.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\Definements.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\FTPClient.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\FTPDataTypes.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\FTPFileState.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\FTPListParse.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\rc_smart_ptr.h">
+      <Filter>Source Files\network\x_server\ftp</Filter>
+    </ClInclude>
+    <ClInclude Include="render\d3d_interface.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\gdi_interface.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\render.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="variable\ini_obj.h">
+      <Filter>Source Files\variable</Filter>
+    </ClInclude>
+    <ClInclude Include="variable\var_container.h">
+      <Filter>Source Files\variable</Filter>
+    </ClInclude>
+    <ClInclude Include="variable\var_mgr.h">
+      <Filter>Source Files\variable</Filter>
+    </ClInclude>
+    <ClInclude Include="system\cpu_usage.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\process.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\stdio_redir.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\sysinfo.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\system_tray.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\thread.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\window_wrap.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="util\des.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\fastcode.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\safe_counter.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vector.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="vfs\CPKDefine.h">
+      <Filter>Source Files\vfs</Filter>
+    </ClInclude>
+    <ClInclude Include="vfs\CPKFast.h">
+      <Filter>Source Files\vfs</Filter>
+    </ClInclude>
+    <ClInclude Include="vfs\package.h">
+      <Filter>Source Files\vfs</Filter>
+    </ClInclude>
+    <ClInclude Include="vfs\vfs.h">
+      <Filter>Source Files\vfs</Filter>
+    </ClInclude>
+    <ClInclude Include="vfs\zipdefine.h">
+      <Filter>Source Files\vfs</Filter>
+    </ClInclude>
+    <ClInclude Include="vfs\zipreader.h">
+      <Filter>Source Files\vfs</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinyxml.h">
+      <Filter>Source Files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="system\DiscIOMgr.h">
+      <Filter>Source Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua_manager.h">
+      <Filter>Source Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua_script.h">
+      <Filter>Source Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua\lauxlib.h">
+      <Filter>Source Files\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua\lua.h">
+      <Filter>Source Files\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua\lua.hpp">
+      <Filter>Source Files\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua\luaconf.h">
+      <Filter>Source Files\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="script\lua\lualib.h">
+      <Filter>Source Files\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\dbghelp.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\debug.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\exception.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\log.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\mini_dump.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\xzip.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="resource\resource.h">
+      <Filter>Source Files\resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="document\attention.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\engine_design.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\network.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\origin_code.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\technic_paper.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\thinking_in_design.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\todo.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="document\VUI_program.txt">
+      <Filter>Source Files\document</Filter>
+    </None>
+    <None Include="xml\tinyxml.txt">
+      <Filter>Source Files\xml</Filter>
+    </None>
+    <None Include="script\scrip_demo.txt">
+      <Filter>Source Files\script</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="filter\zlib\zdll.lib">
+      <Filter>Source Files\filter\zlib</Filter>
+    </Library>
+    <Library Include="image\ijl15.lib">
+      <Filter>Source Files\image</Filter>
+    </Library>
+    <Library Include="debug\dbghelp.lib">
+      <Filter>Source Files\debug</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\Script1.rc">
+      <Filter>Source Files\resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

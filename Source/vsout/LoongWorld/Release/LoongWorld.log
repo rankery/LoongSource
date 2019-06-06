@@ -1,0 +1,61 @@
+﻿  StdAfx.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(162): note: see previous definition of 'FACILITY_DIRECTMUSIC'
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared
+  activity_mgr.cpp
+  ai_transition.cpp
+  ai_trigger.cpp
+  ApexProxy.cpp
+  att_res.cpp
+  baibao_handler.cpp
+  bill_session.cpp
+d:\other\loongrework\sourcev2\source\loongworld\ai_trigger.cpp(118): warning C4244: 'argument': conversion from 'DWORD' to 'FLOAT', possible loss of data
+d:\other\loongrework\sourcev2\source\loongworld\ai_trigger.cpp(121): warning C4244: 'argument': conversion from 'DWORD' to 'FLOAT', possible loss of data
+  buff.cpp
+  buff_effect.cpp
+  channel_mgr.cpp
+  character_handler.cpp
+  chat_data.cpp
+  chat_handler.cpp
+  chat_logger.cpp
+  chat_mgr.cpp
+  clandata.cpp
+  clan_treasury.cpp
+  class_handler.cpp
+  combat_hander.cpp
+  combat_handler.cpp
+  consolidate_handler.cpp
+  container.cpp
+d:\other\loongrework\sourcev2\source\loongworld\combat_handler.cpp(1847): warning C4244: 'return': conversion from 'double' to 'FLOAT', possible loss of data
+d:\other\loongrework\sourcev2\source\loongworld\consolidate_handler.cpp(393): warning C4244: 'argument': conversion from 'INT16' to 'INT8', possible loss of data
+  creature.cpp
+  creature_ai.cpp
+  creature_order.cpp
+  currency.cpp
+  db_session.cpp
+d:\other\loongrework\sourcev2\source\loongworld\db_session.cpp(1444): warning C4018: '<': signed/unsigned mismatch
+  exchange.cpp
+  exchange_handler.cpp
+  exit_game_handle.cpp
+  external_links.cpp
+  famehall.cpp
+  famehall_handler.cpp
+  famehall_part.cpp
+  fatigue_guarder.cpp
+  fatigue_guarder_handler.cpp
+  func_npc_handler.cpp
+  game_guarder.cpp
+  game_guarder_handler.cpp
+  gm_cmd_handler.cpp
+  gm_net_cmd_mgr.cpp
+d:\other\loongrework\sourcev2\source\loongworld\gm_cmd_handler.cpp(643): warning C4244: 'argument': conversion from 'LONG' to 'INT16', possible loss of data
+d:\other\loongrework\sourcev2\source\loongworld\gm_cmd_handler.cpp(647): warning C4244: 'argument': conversion from 'LONG' to 'INT16', possible loss of data
+d:\other\loongrework\sourcev2\source\loongworld\gm_cmd_handler.cpp(1023): warning C4244: '=': conversion from 'DWORD' to 'BYTE', possible loss of data
+  gm_policy.cpp
+  gm_session.cpp
+  group_mgr.cpp
+  guild.cpp
+  guild_affair.cpp
+  guild_CofC.cpp
+  Compiler terminating.  Please wait........... Abort complete.

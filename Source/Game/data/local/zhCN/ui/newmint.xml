@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="newmint_win" ClassName="CGUIWindow" LogicPos_x="1663" LogicPos_y="100" Size_x="27" Size_y="52" AlignControl="\desktop" AlignType="InnerRightTop" AlignOffset_x="-230" AlignOffset_y="100" PopupSound="window_popup">
+        <UIControl Name="img" ClassName="CGUIStatic" MoveFather="yes" Size_x="27" Size_y="52" AlignControl="\desktop\newmint_win" AlignType="Center" Font="小白雅黑" TextRect_right="27" TextRect_bottom="52" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicRect_left="44" PicRect_top="7" PicRect_right="17" PicRect_bottom="59" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+    </UIControl>
+</desktop>

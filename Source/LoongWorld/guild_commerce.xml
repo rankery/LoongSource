@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 帮派跑商信息表xml映射 -->
+<root>
+  <commerce id="" deposit="" beginning_tael="" purpose_tael="" max_tael="" exp="" contribution="" exploit=""/>
+  <commerce id="" deposit="" beginning_tael="" purpose_tael="" max_tael="" exp="" contribution="" exploit=""/>
+</root>
+
+<!-- 注：
+1.id为玩家等级范围:id值 = 等级下限*1000+等级上限
+2.等级范围的划分最好不要出现重叠或缺失
+3.等级范围都是闭区间
+-->

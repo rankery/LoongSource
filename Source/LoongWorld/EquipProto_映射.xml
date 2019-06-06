@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 装备静态属性xml映射 -->
+<root>
+    <EquipProto id="" Type="" TypeEx="" TypeReserved="" Level="" Quality="" BindType="" BasePrice="" TimeLimit="" MaxLapNum="" MaxHoldNum="" MinUseLevel="" MaxUseLevel="" ClassFlagID="" SexLimit="" PhysiqueLim="" StrengthLim="" PneumaLim="" InnerForceLim="" TechniqueLim="" AgilityLim="" SuitID1="" SuitID2="" SuitID3="" SuitMinQlty1="" SuitMinQlty2="" SuitMinQlty3="" EquipPos="" WeaponPos="" WuHun="" MinDmg="" MaxDmg="" Armor="" MaxPotval="" Potval="" MaxNewness="" ZoneRepType="" ZoneRepVal="" OtherRepType="" OtherRepVal="" NeedBroadcast="" CanSell="" TriggerID0="" BuffID0="" TriggerID1="" BuffID1="" TriggerID2="" BuffID2="" TransTriggerID="" TransID="" RoleAttType0="" RoleAttVal0="" RoleAttType1="" RoleAttVal1="" RoleAttType2="" RoleAttVal2="" RoleAttType3="" RoleAttVal3="" RoleAttType4="" RoleAttVal4="" RoleAttType5="" RoleAttVal5="" Metal="" Wood="" Water="" Fire="" Soil="" IdentifyProduct="" IdentifyLoot="" Corlor="" CanDye="" />
+    <EquipProto id="" Type="" TypeEx="" TypeReserved="" Level="" Quality="" BindType="" BasePrice="" TimeLimit="" MaxLapNum="" MaxHoldNum="" MinUseLevel="" MaxUseLevel="" ClassFlagID="" SexLimit="" PhysiqueLim="" StrengthLim="" PneumaLim="" InnerForceLim="" TechniqueLim="" AgilityLim="" SuitID1="" SuitID2="" SuitID3="" SuitMinQlty1="" SuitMinQlty2="" SuitMinQlty3="" EquipPos="" WeaponPos="" WuHun="" MinDmg="" MaxDmg="" Armor="" MaxPotval="" Potval="" MaxNewness="" ZoneRepType="" ZoneRepVal="" OtherRepType="" OtherRepVal="" NeedBroadcast="" CanSell="" TriggerID0="" BuffID0="" TriggerID1="" BuffID1="" TriggerID2="" BuffID2="" TransTriggerID="" TransID="" RoleAttType0="" RoleAttVal0="" RoleAttType1="" RoleAttVal1="" RoleAttType2="" RoleAttVal2="" RoleAttType3="" RoleAttVal3="" RoleAttType4="" RoleAttVal4="" RoleAttType5="" RoleAttVal5="" Metal="" Wood="" Water="" Fire="" Soil="" IdentifyProduct="" IdentifyLoot="" Corlor="" CanDye="" />
+</root>
+
+<!-- 注：
+1.id中记录的是装备TypeID；
+-->
+

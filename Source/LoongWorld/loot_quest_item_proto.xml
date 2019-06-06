@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 任务掉落xml映射 -->
+<root>
+	<loot_quest_item id="" item_1_id="" item_1_chance="" item_1_team_chance="" item_2_id="" item_2_chance="" item_2_team_chance="" item_3_id="" item_3_chance="" item_3_team_chance="" item_4_id="" item_4_chance="" item_4_team_chance="" item_5_id="" item_5_chance="" item_5_team_chance="" />
+  <loot_quest_item id="" item_1_id="" item_1_chance="" item_1_team_chance="" item_2_id="" item_2_chance="" item_2_team_chance="" item_3_id="" item_3_chance="" item_3_team_chance="" item_4_id="" item_4_chance="" item_4_team_chance="" item_5_id="" item_5_chance="" item_5_team_chance="" />
+</root>
+

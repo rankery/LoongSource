@@ -1,0 +1,1852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{7f11f406-cadf-4516-80bb-c697a4ae4436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{b76673e1-bd65-4ffb-9f7b-78bd121c9098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderSys">
+      <UniqueIdentifier>{b6cfa455-ea6d-477d-be52-e5ced227bc96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneGraph">
+      <UniqueIdentifier>{277b62e3-f425-495c-a906-cf1d0dff7b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device">
+      <UniqueIdentifier>{63c1121c-cfb2-47d6-a117-9779d42ad41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device\DX9Device">
+      <UniqueIdentifier>{8812d37e-afc2-4548-a582-1e572d13cbd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResSys">
+      <UniqueIdentifier>{8e6737cf-42e0-407a-b1b7-9994a86c0d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFS">
+      <UniqueIdentifier>{bff7a5d8-8ddc-41c6-91dd-a3dbfd8d4105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{71f15708-62ec-44b2-8841-291e594364eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{48bb57ce-6bc0-48a0-8483-02e259f89873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image\IL">
+      <UniqueIdentifier>{abd9027b-2f26-4901-ae40-039288348c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{c318c70a-bea8-4e12-977c-62c700203657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{7e8fdbb3-341c-4eba-a7c9-d665524c357f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderMtl">
+      <UniqueIdentifier>{606a424a-b811-464e-8f05-f7d568795be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Draw2D">
+      <UniqueIdentifier>{40dc7e57-898e-4215-a705-a48f70176fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorSupport">
+      <UniqueIdentifier>{4c12ff1a-00aa-4670-9abb-53daecaafe96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Polygon">
+      <UniqueIdentifier>{8b96a400-a079-4924-909f-b22180766e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpecialEffect">
+      <UniqueIdentifier>{630885b1-9f87-4354-b4c9-0f7f1102bd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcess">
+      <UniqueIdentifier>{9094a222-0cc1-423d-9576-d71d484aa986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{430476e4-b250-4edd-b958-82aa196d97d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{09b36a23-57f5-4138-9c53-e795ceb12c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\FmodEx">
+      <UniqueIdentifier>{bf6c6d89-8367-4ae2-9c03-660a2e4848eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\ArcBall.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CameraBase.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CameraEuler.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Frustum.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\GeomDefine.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\math.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Noise.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\perlin.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Ray.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Transform.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\CmdDispatch.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\CmdTarget.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\ConfigFile.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\CSVFile.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\DebugMisc.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Exception.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\FArchive.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\FileUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\FMemory.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\PlugIn.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\RefObj.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\RTTInfo.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\RTTIObj.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\SpeedAnalyser.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Timer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\DevPixelStageFixed.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\DynamicMesh.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\DynamicMeshIndexed.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\IRenderCallBack.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\MtlRenderCache.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\MtlRenderCacheFixed.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Occluder.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RBillboards.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RCloth.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RenderNode.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RenderSubMesh.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RenderSys.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RenderSysFixed.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RenderSysPS_20.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RKeyFrame.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RLensFlare.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RPointSprites.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RSkin.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RSkyBox.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RStatic.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RStaticMesh.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\RVizQuery.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\SortByMtlAndZVal.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\StaticMeshIndexed.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\WaterReflectMapRender.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\WaterRefractMapRender.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSys\WaterRender.cpp">
+      <Filter>RenderSys</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\AvatarNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\EntityNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\HugeQuadTreeSG.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\ISGNodeVisableCallBack.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\NullSceneGraph.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\OcclusionCull.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\OCQuad.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\QuadTreeData.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\QuadTreeDataBuilder.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SceneDecal.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SceneEffect.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SceneGraph.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SceneNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SceneProjector.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGAvatarAttachment.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGBladeFlare.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGBladeGlow.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGClothNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGLensFlare.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGLightFlare.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGLightNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGQuadTreeNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGRoleGlow.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGSkinNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGSkyBox.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGSkyNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGStaticProjector.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGSunFlare.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SGSunNode.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DrawX.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IDepthFont.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IDevCubeMap.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IDevice.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IDeviceTex.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IDeviceVizQuery.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IFont.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IIndexBuffer.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IPixelShader.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IRenderCubeTexture.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IRenderTexture.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IRenderToEnvMap.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IStreamDefine.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IVertBuffer.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\IVertShader.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\Light.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\RenderStatus.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\RenderTexChain.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\StateBlock.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9DepthFont.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9Device.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9Font.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9IB.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9Init.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9PS.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9RenderCubeTex.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9RenderTex.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9RenderToEnvMap.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9Tex.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9VB.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9VertDecl.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9VizQuery.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Device\DX9Device\DX9VS.cpp">
+      <Filter>Device\DX9Device</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\AABBTreeCollider.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ActTimeTable.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\AniMsgTable.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\AsyncResIO.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResBase.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResCloth.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResKeyFrame.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResMgr.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResPixelShader.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResRenderable.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResRequestQueueTS.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResSceneMesh.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResSkeleton.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResSkeletonAction.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResSkin.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResSpecialEffect.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResStaticMesh.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResTexture.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\ResVertShader.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\UserResMgr.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="ResSys\VertStream.cpp">
+      <Filter>ResSys</Filter>
+    </ClCompile>
+    <ClCompile Include="Vfs\IFS.cpp">
+      <Filter>VFS</Filter>
+    </ClCompile>
+    <ClCompile Include="Vfs\MemFS.cpp">
+      <Filter>VFS</Filter>
+    </ClCompile>
+    <ClCompile Include="Vfs\StdFS.cpp">
+      <Filter>VFS</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AniCloth_SW.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AnimationCtrl.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AnimationMixer.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AnimationState.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AnimationTrack.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AniSkin_SW.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\KeyFrame.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Image.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Image32Blender.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\ImageGDI.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\ImageTGA.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\BitMap.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\GrassPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\Heightmap.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\ResGrass.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\ResRiver.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\ResRiverPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\RRiverPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\RSimpleTerrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\RSimpleTerrainPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\SGGrassPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\SGRiverPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\SGSimpleTerrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\SGSimpleTerrainPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\SGTrnDecoPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\SimpleTerrainMtl.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainMtlMultiLayers.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainMtlPrecombine.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainMtlTwoLayers.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainMultiLayersRender.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainPatch.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainPatchRender.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainPatchRenderGroupsRes.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainPatchRes.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainRes.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TPatchLodTable.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TPatchTriangulationDynamic.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TPatchTriangulationStatic.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRiverPatchTriangulationDynamic.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\IMaterial.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\IMtlModifier.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\IRenderMtl.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MBitmap.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MBitmapFrames.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MColorTex.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MConstColor.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MDyeTex.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MGeneral.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MKeyFrame.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMAlphaMask.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMColor.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMColorWriteControl.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMDepthFrame.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMFrameBlend.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMTransparent.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMUsingMtlColor.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMUVPage.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MMUVTrans.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MPreCombineBitmap.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MRenderTex.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MSEMTex.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MSkin.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MSky.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MStatic.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MtlCombiner.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MTwoLayers.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MWater.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MWaterReflect.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMtl\MWaterRefract.cpp">
+      <Filter>RenderMtl</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2D\AviPlayer.cpp">
+      <Filter>Draw2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2D\Draw2DImp.cpp">
+      <Filter>Draw2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2D\IDraw2D.cpp">
+      <Filter>Draw2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2D\PicFont.cpp">
+      <Filter>Draw2D</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\AmbientOcclusion.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\BrushOPRecorder.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\EditorDecoFile.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\ISGVisitorCallBack.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\IUICallBack .cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\LightMapBlur.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\LightMapping.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\LightMapTempGen.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\Radiosity.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\ResDynaAlphaMap.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\SceneEditor.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\SGVisitor.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\SimpleView.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TEditorMtl.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TEditorPatch.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TEditorPatchProxy.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TerrainEditor.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TMtlEditor.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TQuadTreeTriangulation.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TRiverEditor.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TRiverEditorMtl.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TRiverPatchProxy.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSupport\TRiverRealPatch.cpp">
+      <Filter>EditorSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon\MeshTopo.cpp">
+      <Filter>Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon\PMesh.cpp">
+      <Filter>Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectBase.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectBeam.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectBladeFlare.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectCamera.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectCross.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectCylinder.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectExplosive.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectGrid.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectMesh.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectMotion.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectMsg.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectParticleEmitter.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectPathCtrl.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectQuad.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectSceneDecal.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectSound.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectSphere.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EffectTarget.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\EftQuadDef.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\SGAttachableEffectNode.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect\SGEffectNode.cpp">
+      <Filter>SpecialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess\PostProcess.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess\PostProcessBlur.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess\PostProcessHeatHaze.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioSystem.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioSystemMember.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Cool3D.cpp" />
+    <ClCompile Include="Cool3DOption.cpp" />
+    <ClCompile Include="Kernel.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math\ArcBall.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CameraBase.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\cameraEuler.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Color.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Frustum.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\GeomDefine.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Noise.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\perlin.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Ray.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Transform.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\CmdDispatch.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\CmdTarget.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\ConfigFile.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\CSVFile.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\DebugMisc.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Exception.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\FArchive.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\FArchiveAdv.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\fast_vector.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Filename.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\FileUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\FMemory.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\MemPool.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Noncopyable.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\ObjectPool.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\PlugIn.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\RefObj.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\RTTInfo.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\RTTIObj.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\SharedPtr.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\SpeedAnalyser.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\StlExt.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Timer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\UnicodeUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\DevPixelStageFixed.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\DynamicMesh.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\DynamicMeshIndexed.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\IRenderCallBack.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\MtlRenderCache.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\MtlRenderCacheFixed.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RBillboards.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RCloth.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RenderNode.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RenderSubMesh.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RenderSys.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RenderSysFixed.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RenderSysPS_20.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RKeyFrame.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RLensFlare.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RPointSprites.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RSkin.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RSkyBox.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RStatic.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RStaticMesh.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\RVizQuery.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\SortByMtlAndZVal.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\StaticMeshIndexed.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\WaterReflectMapRender.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\WaterRefractMapRender.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\WaterRender.h">
+      <Filter>RenderSys</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\AvatarNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\EntityNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\HugeQuadTreeSG.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\ISGEnumProc.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\ISGNodeVisableCallBack.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\NullSceneGraph.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Occluder.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\OcclusionCull.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\OCQuad.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\QuadTreeData.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\QuadTreeDataBuilder.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SceneDecal.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SceneEffect.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SceneGraph.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SceneNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SceneProjector.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGAvatarAttachment.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGBladeFlare.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGBladeGlow.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGClothNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGLensFlare.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGLightFlare.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGLightNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGQuadTreeNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGRoleGlow.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGSkinNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGSkyBox.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGSkyNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGStaticProjector.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGSunFlare.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SGSunNode.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DrawX.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\FogDefine.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSys\HardwareBufferPool.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IDepthFont.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IDevCubeMap.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IDevice.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IDeviceTex.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IDeviceVizQuery.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IFont.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IIndexBuffer.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IPixelShader.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IRenderCubeTexture.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IRenderTexture.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IRenderToEnvMap.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IStreamDefine.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IVertBuffer.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\IVertShader.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\Light.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\RenderStatus.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\RenderTexChain.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\StateBlock.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9BaseDef.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9DepthFont.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9Device.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9Font.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9IB.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9Init.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9PS.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9RenderCubeTex.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9RenderTex.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9RenderToEnvMap.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9Tex.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9VB.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9VertDecl.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9VizQuery.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Device\DX9Device\DX9VS.h">
+      <Filter>Device\DX9Device</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\AABBTreeCollider.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ActTimeTable.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\AniMsgTable.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\AsyncResIO.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResBase.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResCloth.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResKeyFrame.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResMgr.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResPixelShader.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResPool.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResRenderable.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResRequestQueueTS.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResSceneMesh.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResSkeleton.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResSkeletonAction.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResSkin.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResSpecialEffect.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResStaticMesh.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResTexture.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\ResVertShader.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\UserResMgr.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="ResSys\VertStream.h">
+      <Filter>ResSys</Filter>
+    </ClInclude>
+    <ClInclude Include="Vfs\FileUtil.h">
+      <Filter>VFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Vfs\IFS.h">
+      <Filter>VFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Vfs\MemFS.h">
+      <Filter>VFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Vfs\StdFS.h">
+      <Filter>VFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AniCloth_SW.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationCtrl.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationMixer.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationState.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationTrack.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AniSkin_SW.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\KeyFrame.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Image.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Image32Blender.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\ImageGDI.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\ImageTGA.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\config.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\devil_internal_exports.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\il.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\il_wrap.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\ilu.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\ilu_region.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Il\ilut.h">
+      <Filter>Image\IL</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\BitMap.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\GrassPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\Heightmap.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\ResGrass.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\ResRiver.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\ResRiverPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\RRiverPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\RSimpleTerrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\RSimpleTerrainPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\SGGrassPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\SGRiverPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\SGSimpleTerrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\SGSimpleTerrainPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\SGTrnDecoPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\SimpleTerrainMtl.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainMtlMultiLayers.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainMtlPrecombine.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainMtlTwoLayers.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainMultiLayersRender.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainPatch.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainPatchRender.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainPatchRenderGroupsRes.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainPatchRes.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainRes.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TPatchLodTable.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TPatchTriangulationDynamic.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TPatchTriangulationStatic.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRiverPatchTriangulationDynamic.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\AABBTree.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\AKFile.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\FileUtil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\IPlugEditor.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\MathBaseDefine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\MtlDesc.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\SkinBoneDefine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\SkinSubMesh.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\StaticMeshFile.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\SubMesh.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\TagNodeDefine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\VertexDefine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\IMaterial.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\IMtlModifier.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\IRenderMtl.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MBitmap.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MBitmapFrames.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MColorTex.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MConstColor.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MDyeTex.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MGeneral.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MKeyFrame.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMAlphaMask.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMColor.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMColorWriteControl.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMDepthFrame.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMFrameBlend.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMTransparent.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMUsingMtlColor.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMUVPage.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MMUVTrans.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MPreCombineBitmap.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MRenderTex.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MSEMTex.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MSkin.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MSky.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MStatic.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MtlCombiner.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MTwoLayers.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MWater.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MWaterReflect.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMtl\MWaterRefract.h">
+      <Filter>RenderMtl</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2D\AviPlayer.h">
+      <Filter>Draw2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2D\Draw2DImp.h">
+      <Filter>Draw2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2D\IDraw2D.h">
+      <Filter>Draw2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2D\PicFont.h">
+      <Filter>Draw2D</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\AmbientOcclusion.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\BrushOp.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\BrushOPRecorder.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\EditorDecoFile.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\ISGVisitorCallBack.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\IUICallBack.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\LightMapBlur.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\LightMapping.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\LightMapTempGen.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\Radiosity.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\ResDynaAlphaMap.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\safe_list.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\SceneEditor.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\SGVisitor.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\SimpleView.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TEditorMtl.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TEditorPatch.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TEditorPatchProxy.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TerrainEditor.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TMapLayerExt.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TMtlEditor.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TQuadTreeTriangulation.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TRiverEditor.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TRiverEditorMtl.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TRiverPatchProxy.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSupport\TRiverRealPatch.h">
+      <Filter>EditorSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon\MeshTopo.h">
+      <Filter>Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon\PMesh.h">
+      <Filter>Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectAll.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectBase.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectBeam.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectBladeFlare.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectCamera.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectCross.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectCylinder.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectExplosive.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectGrid.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectMesh.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectMotion.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectMsg.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectParticleEmitter.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectPathCtrl.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectQuad.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectSceneDecal.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectSound.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectSphere.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EffectTarget.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\EftQuadDef.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\SGAttachableEffectNode.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect\SGEffectNode.h">
+      <Filter>SpecialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcess\PostProcess.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcess\PostProcessBlur.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcess\PostProcessHeatHaze.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\CriticalSection.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\FastLock.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\LockableObject.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadLock.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\TSList.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioSystem.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioSystemMember.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\fmodex\fmod.h">
+      <Filter>Audio\FmodEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\fmodex\fmod.hpp">
+      <Filter>Audio\FmodEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\fmodex\fmod_codec.h">
+      <Filter>Audio\FmodEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\fmodex\fmod_dsp.h">
+      <Filter>Audio\FmodEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\fmodex\fmod_errors.h">
+      <Filter>Audio\FmodEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\fmodex\fmod_output.h">
+      <Filter>Audio\FmodEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Cool3D.h" />
+    <ClInclude Include="Cool3DEngine.h" />
+    <ClInclude Include="Cool3DEngineEditor.h" />
+    <ClInclude Include="Cool3DOption.h" />
+    <ClInclude Include="Kernel.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Il\DevIL.dll">
+      <Filter>Image\IL</Filter>
+    </None>
+    <None Include="Image\Il\ILU.dll">
+      <Filter>Image\IL</Filter>
+    </None>
+    <None Include="Image\Il\ILUT.dll">
+      <Filter>Image\IL</Filter>
+    </None>
+    <None Include="Audio\fmodex\fmodex.dll">
+      <Filter>Audio\FmodEx</Filter>
+    </None>
+    <None Include="Cool3D_todo.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Image\Il\DevIL.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\DevIL_DBG.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\DevILU.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\DevILU_DBG.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\DevILUT.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\DevILUT_DBG.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\ILU.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Image\Il\ILUT.lib">
+      <Filter>Image\IL</Filter>
+    </Library>
+    <Library Include="Audio\fmodex\fmodex_vc.lib">
+      <Filter>Audio\FmodEx</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

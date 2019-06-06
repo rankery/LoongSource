@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <SuitProto id="1001" TriggerID1="1240020" BuffID1="3600101" ActiveNum1="3" SpecEffectNum="5" />
+    <SuitProto id="1002" TriggerID1="1240020" BuffID1="3600201" ActiveNum1="3" SpecEffectNum="5" />
+    <SuitProto id="1003" TriggerID1="1240020" BuffID1="3600301" ActiveNum1="3" SpecEffectNum="5" />
+    <SuitProto id="1101" TriggerID1="1240020" BuffID1="3601301" ActiveNum1="3" SpecEffectNum="5" />
+    <SuitProto id="1102" TriggerID1="1240020" BuffID1="3601401" ActiveNum1="3" SpecEffectNum="5" />
+    <SuitProto id="1103" TriggerID1="1240020" BuffID1="3601501" ActiveNum1="3" SpecEffectNum="5" />
+    <SuitProto id="1303" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3610101" BuffID2="3610201" BuffID3="3610301" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1304" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3610401" BuffID2="3610501" BuffID3="3610601" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1305" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3610701" BuffID2="3610801" BuffID3="3610901" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1306" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3611001" BuffID2="3611101" BuffID3="3611201" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1307" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3611301" BuffID2="3611401" BuffID3="3611501" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1308" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3611601" BuffID2="3611701" BuffID3="3611801" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1309" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3611901" BuffID2="3612001" BuffID3="3612101" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1310" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3612201" BuffID2="3612301" BuffID3="3612401" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1311" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3612501" BuffID2="3612601" BuffID3="3612701" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1403" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3612801" BuffID2="3612901" BuffID3="3613001" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1404" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3613101" BuffID2="3613201" BuffID3="3613301" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1405" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3613401" BuffID2="3613501" BuffID3="3613601" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1406" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3613701" BuffID2="3613801" BuffID3="3613901" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1407" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3614001" BuffID2="3614101" BuffID3="3614201" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1408" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3614301" BuffID2="3614401" BuffID3="3614501" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1409" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3614601" BuffID2="3614701" BuffID3="3614801" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1410" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3614901" BuffID2="3615001" BuffID3="3615101" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="1411" TriggerID1="1020000" TriggerID2="1240050" TriggerID3="1020000" BuffID1="3615201" BuffID2="3615301" BuffID3="3615401" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="2001" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3630101" BuffID2="3630201" ActiveNum1="3" ActiveNum2="5" SpecEffectNum="5" />
+    <SuitProto id="2002" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3630301" BuffID2="3630401" ActiveNum1="3" ActiveNum2="5" SpecEffectNum="5" />
+    <SuitProto id="2003" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3634901" BuffID2="3635001" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="2004" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3635101" BuffID2="3635201" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3001" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3630501" BuffID2="3630601" BuffID3="3630701" ActiveNum1="2" ActiveNum2="3" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="3002" TriggerID1="1020000" BuffID1="3630801" ActiveNum1="2" />
+    <SuitProto id="3003" TriggerID1="1020000" BuffID1="3630901" ActiveNum1="2" />
+    <SuitProto id="3004" TriggerID1="1020000" BuffID1="3631001" ActiveNum1="2" />
+    <SuitProto id="3005" TriggerID1="1020000" BuffID1="3631101" ActiveNum1="3" />
+    <SuitProto id="3006" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3633701" BuffID2="3633801" ActiveNum1="3" ActiveNum2="4" SpecEffectNum="2" />
+    <SuitProto id="3007" TriggerID1="1020000" BuffID1="3641701" ActiveNum1="3" />
+    <SuitProto id="3008" TriggerID1="1020000" BuffID1="3641801" ActiveNum1="3" />
+    <SuitProto id="3101" TriggerID1="1020000" BuffID1="3643801" ActiveNum1="2" />
+    <SuitProto id="3102" TriggerID1="1020000" BuffID1="3643901" ActiveNum1="2" />
+    <SuitProto id="3103" TriggerID1="1020000" BuffID1="3644001" ActiveNum1="2" />
+    <SuitProto id="3104" TriggerID1="1020000" BuffID1="3644101" ActiveNum1="2" />
+    <SuitProto id="3105" TriggerID1="1020000" BuffID1="3644201" ActiveNum1="2" />
+    <SuitProto id="3106" TriggerID1="1020000" BuffID1="3644301" ActiveNum1="2" />
+    <SuitProto id="3107" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607901" BuffID2="3608101" ActiveNum1="5" ActiveNum2="6" />
+    <SuitProto id="3108" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607901" BuffID2="3608201" ActiveNum1="5" ActiveNum2="6" />
+    <SuitProto id="3109" TriggerID1="1020000" BuffID1="3647401" ActiveNum1="2" SpecEffectNum="2" />
+    <SuitProto id="3201" TriggerID1="1050015" BuffID1="3641901" ActiveNum1="2" />
+    <SuitProto id="3202" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607001" BuffID2="3606901" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3203" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3606801" BuffID2="3606901" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3204" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607701" BuffID2="3607901" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3205" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607501" BuffID2="3607901" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3206" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607801" BuffID2="3608001" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3207" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3607601" BuffID2="3608001" ActiveNum1="3" ActiveNum2="5" />
+    <SuitProto id="3301" TriggerID1="1020000" BuffID1="3644901" ActiveNum1="5" />
+    <SuitProto id="3302" TriggerID1="1020000" BuffID1="3645001" ActiveNum1="5" />
+    <SuitProto id="3303" TriggerID1="1020000" BuffID1="3646401" ActiveNum1="5" />
+    <SuitProto id="3304" TriggerID1="1020000" BuffID1="3646501" ActiveNum1="5" />
+    <SuitProto id="3208" TriggerID1="1020000" BuffID1="3608101" ActiveNum1="2" />
+    <SuitProto id="3209" TriggerID1="1020000" BuffID1="3608201" ActiveNum1="2" />
+    <SuitProto id="3210" TriggerID1="1020000" BuffID1="3608701" ActiveNum1="2" />
+    <SuitProto id="3211" TriggerID1="1020000" BuffID1="3608801" ActiveNum1="2" />
+    <SuitProto id="3212" TriggerID1="1020000" BuffID1="3608901" ActiveNum1="2" />
+    <SuitProto id="3213" TriggerID1="1020000" BuffID1="3609001" ActiveNum1="2" />
+    <SuitProto id="3214" TriggerID1="1020000" TriggerID2="1020000" BuffID1="3609101" BuffID2="3609201" ActiveNum1="7" ActiveNum2="10" />
+    <SuitProto id="3215" TriggerID1="1020000" BuffID1="3609501" ActiveNum1="5" />
+    <SuitProto id="3216" TriggerID1="1020000" BuffID1="3609601" ActiveNum1="5" />
+    <SuitProto id="3217" TriggerID1="1020000" BuffID1="3609701" ActiveNum1="5" />
+    <SuitProto id="3218" TriggerID1="1020000" BuffID1="3609801" ActiveNum1="5" />
+    <SuitProto id="4001" TriggerID1="1020000" BuffID1="3631201" ActiveNum1="6" />
+    <SuitProto id="4002" TriggerID1="1020000" BuffID1="3631301" ActiveNum1="6" />
+    <SuitProto id="4003" TriggerID1="1020000" BuffID1="3631401" ActiveNum1="6" />
+    <SuitProto id="4004" TriggerID1="1020000" BuffID1="3631501" ActiveNum1="6" />
+    <SuitProto id="4005" TriggerID1="1020000" BuffID1="3631601" ActiveNum1="6" />
+    <SuitProto id="4006" TriggerID1="1020000" BuffID1="3631701" ActiveNum1="6" />
+    <SuitProto id="4007" TriggerID1="1020000" BuffID1="3631801" ActiveNum1="6" />
+    <SuitProto id="4008" TriggerID1="1020000" BuffID1="3631901" ActiveNum1="6" />
+    <SuitProto id="4009" TriggerID1="1020000" BuffID1="3632001" ActiveNum1="6" />
+    <SuitProto id="4010" TriggerID1="1020000" BuffID1="3632101" ActiveNum1="5" />
+    <SuitProto id="4011" TriggerID1="1020000" BuffID1="3632201" ActiveNum1="5" />
+    <SuitProto id="4012" TriggerID1="1020000" BuffID1="3632301" ActiveNum1="5" />
+    <SuitProto id="4013" TriggerID1="1020000" BuffID1="3632401" ActiveNum1="5" />
+    <SuitProto id="4014" TriggerID1="1020000" BuffID1="3632501" ActiveNum1="6" />
+    <SuitProto id="4015" TriggerID1="1020000" BuffID1="3632601" ActiveNum1="6" />
+    <SuitProto id="4016" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4017" TriggerID1="1020000" BuffID1="3632801" ActiveNum1="5" />
+    <SuitProto id="4018" TriggerID1="1020000" BuffID1="3632901" ActiveNum1="3" />
+    <SuitProto id="4019" TriggerID1="1020000" BuffID1="3633001" ActiveNum1="5" />
+    <SuitProto id="4020" TriggerID1="1020000" BuffID1="3633101" ActiveNum1="5" />
+    <SuitProto id="4021" TriggerID1="1020000" BuffID1="3633201" ActiveNum1="5" />
+    <SuitProto id="4022" TriggerID1="1020000" BuffID1="3633301" ActiveNum1="3" />
+    <SuitProto id="4023" TriggerID1="1020000" BuffID1="3633401" ActiveNum1="5" />
+    <SuitProto id="4024" TriggerID1="1020000" BuffID1="3633501" ActiveNum1="5" />
+    <SuitProto id="4025" TriggerID1="1020000" BuffID1="3633901" ActiveNum1="4" />
+    <SuitProto id="4026" TriggerID1="1020000" BuffID1="3634001" ActiveNum1="4" />
+    <SuitProto id="4027" TriggerID1="1020000" BuffID1="3634101" ActiveNum1="4" />
+    <SuitProto id="4028" TriggerID1="1020000" BuffID1="3634201" ActiveNum1="4" />
+    <SuitProto id="4029" TriggerID1="1020000" BuffID1="3634301" ActiveNum1="4" />
+    <SuitProto id="4030" TriggerID1="1020000" BuffID1="3634401" ActiveNum1="4" />
+    <SuitProto id="4031" TriggerID1="1020000" BuffID1="3634501" ActiveNum1="5" />
+    <SuitProto id="4032" TriggerID1="1020000" BuffID1="3634601" ActiveNum1="5" />
+    <SuitProto id="4033" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="6" />
+    <SuitProto id="4034" TriggerID1="1020000" BuffID1="3634501" ActiveNum1="5" />
+    <SuitProto id="4035" TriggerID1="1020000" BuffID1="3634501" ActiveNum1="5" />
+    <SuitProto id="4036" TriggerID1="1020000" BuffID1="3634701" ActiveNum1="4" SpecEffectNum="4" />
+    <SuitProto id="4037" TriggerID1="1020000" BuffID1="3634701" ActiveNum1="4" SpecEffectNum="4" />
+    <SuitProto id="4038" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4039" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4040" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4041" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4042" TriggerID1="1020000" BuffID1="3604901" ActiveNum1="5" />
+    <SuitProto id="4043" TriggerID1="1020000" BuffID1="3605001" ActiveNum1="5" />
+    <SuitProto id="4044" TriggerID1="1020000" BuffID1="3605101" ActiveNum1="4" SpecEffectNum="6" />
+    <SuitProto id="4045" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="3" />
+    <SuitProto id="4046" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="3" />
+    <SuitProto id="4047" TriggerID1="1020000" BuffID1="3605201" ActiveNum1="5" />
+    <SuitProto id="4048" TriggerID1="1020000" BuffID1="3605301" ActiveNum1="5" />
+    <SuitProto id="4049" TriggerID1="1020000" BuffID1="3605201" ActiveNum1="5" />
+    <SuitProto id="4050" TriggerID1="1020000" BuffID1="3605301" ActiveNum1="5" />
+    <SuitProto id="4051" TriggerID1="1020000" TriggerID2="1040002" TriggerID3="1040005" BuffID1="3605401" BuffID2="3605501" BuffID3="3605601" ActiveNum1="5" ActiveNum2="5" ActiveNum3="5" SpecEffectNum="5" />
+    <SuitProto id="4052" TriggerID1="1020000" BuffID1="3605401" ActiveNum1="4" SpecEffectNum="4" />
+    <SuitProto id="4053" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4054" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4055" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4056" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="4" />
+    <SuitProto id="4057" TriggerID1="1020000" BuffID1="3632701" ActiveNum1="5" />
+    <SuitProto id="4058" TriggerID1="1020000" BuffID1="3637901" ActiveNum1="5" />
+    <SuitProto id="4059" TriggerID1="1020000" BuffID1="3638001" ActiveNum1="5" />
+    <SuitProto id="4060" TriggerID1="1020000" BuffID1="3646601" ActiveNum1="5" />
+    <SuitProto id="4061" TriggerID1="1020000" BuffID1="3646701" ActiveNum1="5" />
+    <SuitProto id="4062" TriggerID1="1020000" BuffID1="3646801" ActiveNum1="5" />
+    <SuitProto id="4063" TriggerID1="1020000" BuffID1="3646901" ActiveNum1="6" />
+    <SuitProto id="4064" TriggerID1="1020000" BuffID1="3647001" ActiveNum1="6" />
+    <SuitProto id="4065" TriggerID1="1020000" BuffID1="3647101" ActiveNum1="6" />
+    <SuitProto id="4066" TriggerID1="1020000" BuffID1="3647201" ActiveNum1="6" />
+    <SuitProto id="4067" TriggerID1="1020000" BuffID1="3647301" ActiveNum1="5" />
+    <SuitProto id="4068" TriggerID1="1020000" BuffID1="3647301" ActiveNum1="5" />
+    <SuitProto id="4069" TriggerID1="1020000" BuffID1="3647301" ActiveNum1="5" />
+    <SuitProto id="4070" TriggerID1="1020000" BuffID1="3647301" ActiveNum1="3" />
+    <SuitProto id="4071" TriggerID1="1020000" BuffID1="3647301" ActiveNum1="5" />
+    <SuitProto id="4072" TriggerID1="1020000" BuffID1="3647301" ActiveNum1="5" />
+    <SuitProto id="4101" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3638101" BuffID2="3638201" BuffID3="3638301" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4102" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3638401" BuffID2="3638501" BuffID3="3638601" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4103" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3638701" BuffID2="3638801" BuffID3="3638901" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4104" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3639001" BuffID2="3639101" BuffID3="3639201" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4105" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3639301" BuffID2="3639401" BuffID3="3639501" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4106" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3639601" BuffID2="3639701" BuffID3="3639801" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4107" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3639901" BuffID2="3640001" BuffID3="3640101" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4108" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3640201" BuffID2="3640301" BuffID3="3640401" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4109" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3640501" BuffID2="3640601" BuffID3="3640701" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4110" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3640801" BuffID2="3640901" BuffID3="3641001" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4111" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3641101" BuffID2="3641201" BuffID3="3641301" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4112" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3641401" BuffID2="3641501" BuffID3="3641601" ActiveNum1="3" ActiveNum2="5" ActiveNum3="6" SpecEffectNum="5" />
+    <SuitProto id="4113" TriggerID1="1020000" BuffID1="3644601" ActiveNum1="4" SpecEffectNum="4" />
+    <SuitProto id="4114" TriggerID1="1020000" BuffID1="3644701" ActiveNum1="4" SpecEffectNum="4" />
+    <SuitProto id="4115" TriggerID1="1020000" BuffID1="3644801" ActiveNum1="4" SpecEffectNum="4" />
+    <SuitProto id="4116" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3645501" BuffID2="3645801" BuffID3="3646101" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" />
+    <SuitProto id="4117" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3645601" BuffID2="3645901" BuffID3="3646201" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" />
+    <SuitProto id="4118" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3645701" BuffID2="3646001" BuffID3="3646301" ActiveNum1="3" ActiveNum2="4" ActiveNum3="5" />
+    <SuitProto id="5001" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1100020" BuffID1="3635301" BuffID2="3636101" BuffID3="3636901" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5002" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1040002" BuffID1="3635401" BuffID2="3636201" BuffID3="3637001" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5003" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1090020" BuffID1="3635501" BuffID2="3636301" BuffID3="3637201" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5004" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1050003" BuffID1="3635601" BuffID2="3636401" BuffID3="3637301" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5005" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1040002" BuffID1="3635701" BuffID2="3636501" BuffID3="3637401" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5006" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1040002" BuffID1="3635801" BuffID2="3636601" BuffID3="3637501" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5007" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1020000" BuffID1="3635901" BuffID2="3636701" BuffID3="3637601" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+    <SuitProto id="5008" TriggerID1="1020000" TriggerID2="1020000" TriggerID3="1040002" BuffID1="3636001" BuffID2="3636801" BuffID3="3637701" ActiveNum1="3" ActiveNum2="5" ActiveNum3="8" />
+</root>

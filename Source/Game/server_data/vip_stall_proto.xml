@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <vipstall id="0" rent="20" />
+    <vipstall id="1" rent="20" />
+    <vipstall id="2" rent="20" />
+    <vipstall id="3" rent="20" />
+    <vipstall id="4" rent="20" />
+    <vipstall id="5" rent="20" />
+    <vipstall id="6" rent="20" />
+    <vipstall id="7" rent="20" />
+    <vipstall id="8" rent="20" />
+    <vipstall id="9" rent="10" />
+    <vipstall id="10" rent="10" />
+    <vipstall id="11" rent="10" />
+    <vipstall id="12" rent="10" />
+    <vipstall id="13" rent="10" />
+    <vipstall id="14" rent="10" />
+    <vipstall id="15" rent="10" />
+    <vipstall id="16" rent="10" />
+    <vipstall id="17" rent="10" />
+    <vipstall id="18" rent="10" />
+    <vipstall id="19" rent="10" />
+    <vipstall id="20" rent="5" />
+    <vipstall id="21" rent="5" />
+    <vipstall id="22" rent="5" />
+    <vipstall id="23" rent="5" />
+    <vipstall id="24" rent="5" />
+    <vipstall id="25" rent="5" />
+    <vipstall id="26" rent="5" />
+    <vipstall id="27" rent="5" />
+    <vipstall id="28" rent="5" />
+    <vipstall id="29" rent="5" />
+    <vipstall id="30" rent="0" />
+    <vipstall id="31" rent="0" />
+    <vipstall id="32" rent="0" />
+    <vipstall id="33" rent="0" />
+    <vipstall id="34" rent="0" />
+    <vipstall id="35" rent="0" />
+    <vipstall id="36" rent="0" />
+    <vipstall id="37" rent="0" />
+    <vipstall id="38" rent="0" />
+    <vipstall id="39" rent="0" />
+</root>

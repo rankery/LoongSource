@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<commodity id="1001" holder="1" low_price="735" high_price="1365" refresh_num="120"/>
+	<commodity id="1002" holder="1" low_price="840" high_price="1560" refresh_num="120"/>
+	<commodity id="1003" holder="1" low_price="1260" high_price="2340" refresh_num="120"/>
+	<commodity id="1011" holder="2" low_price="525" high_price="975" refresh_num="120"/>
+	<commodity id="1012" holder="2" low_price="735" high_price="1365" refresh_num="120"/>
+	<commodity id="1013" holder="2" low_price="1400" high_price="2600" refresh_num="120"/>
+	<commodity id="1021" holder="3" low_price="315" high_price="585" refresh_num="120"/>
+	<commodity id="1022" holder="3" low_price="840" high_price="1560" refresh_num="120"/>
+	<commodity id="1023" holder="3" low_price="1260" high_price="2340" refresh_num="120"/>
+	<commodity id="1031" holder="4" low_price="630" high_price="1170" refresh_num="120"/>
+	<commodity id="1032" holder="4" low_price="980" high_price="1820" refresh_num="120"/>
+	<commodity id="1033" holder="4" low_price="1260" high_price="2340" refresh_num="120"/>
+	<commodity id="1041" holder="5" low_price="490" high_price="910" refresh_num="120"/>
+	<commodity id="1042" holder="5" low_price="910" high_price="1690" refresh_num="120"/>
+	<commodity id="1043" holder="5" low_price="1680" high_price="3120" refresh_num="120"/>
+	<commodity id="1051" holder="6" low_price="840" high_price="1560" refresh_num="120"/>
+	<commodity id="1052" holder="6" low_price="1120" high_price="2080" refresh_num="120"/>
+	<commodity id="1053" holder="6" low_price="1330" high_price="2470" refresh_num="120"/>
+	<commodity id="1101" holder="21" low_price="1295" high_price="2405" refresh_num="20"/>
+	<commodity id="1102" holder="21" low_price="1505" high_price="2795" refresh_num="15"/>
+	<commodity id="1111" holder="22" low_price="875" high_price="1625" refresh_num="25"/>
+	<commodity id="1112" holder="22" low_price="1680" high_price="3120" refresh_num="10"/>
+	<commodity id="1121" holder="23" low_price="1085" high_price="2015" refresh_num="20"/>
+	<commodity id="1122" holder="23" low_price="1295" high_price="2405" refresh_num="15"/>
+	<commodity id="1131" holder="24" low_price="595" high_price="1105" refresh_num="30"/>
+	<commodity id="1132" holder="24" low_price="1645" high_price="3055" refresh_num="10"/>
+	<commodity id="1141" holder="25" low_price="455" high_price="845" refresh_num="40"/>
+	<commodity id="1142" holder="25" low_price="1960" high_price="3640" refresh_num="10"/>
+	<commodity id="1201" holder="41" low_price="1400" high_price="2600" refresh_num="50"/>
+	<commodity id="1211" holder="42" low_price="1540" high_price="2860" refresh_num="50"/>
+	<commodity id="1221" holder="43" low_price="1680" high_price="3120" refresh_num="50"/>
+	<commodity id="1231" holder="44" low_price="1820" high_price="3380" refresh_num="50"/>
+	<commodity id="1241" holder="45" low_price="1960" high_price="3640" refresh_num="50"/>
+	<commodity id="1251" holder="46" low_price="2100" high_price="3900" refresh_num="50"/>
+</root>

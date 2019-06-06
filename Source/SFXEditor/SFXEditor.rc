@@ -1,0 +1,278 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SFXEditor.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SFXEditor.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "SFXEditor.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MainDlg DIALOGEX 0, 0, 435, 395
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "特效编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "特效属性",IDC_STATIC,7,8,209,251
+    GROUPBOX        "特效元素库",IDC_STATIC,224,10,204,248
+    LISTBOX         IDC_LibList,232,20,152,121,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_LibAdd,392,41,27,12
+    PUSHBUTTON      "存盘",IDC_LibSave,392,79,27,12
+    PUSHBUTTON      "读盘",IDC_LibLoad,392,98,27,12
+    PUSHBUTTON      "删除",IDC_LibDel,315,145,27,12
+    LISTBOX         IDC_PathList,232,163,152,75,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_SGEffectList,13,18,155,125,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_EftAdd,274,145,27,12
+    PUSHBUTTON      "Del",IDC_EftDel,69,147,27,12
+    LISTBOX         IDC_SGPathList,13,162,155,76,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "存盘",IDC_EftSave,182,81,27,12
+    PUSHBUTTON      "读盘",IDC_EftLoad,182,102,27,12
+    PUSHBUTTON      "Reset",IDC_EftReset,182,39,27,12
+    PUSHBUTTON      "<<",IDC_PathAdd,276,242,27,12
+    PUSHBUTTON      "Del",IDC_PathDel,68,242,27,12
+    PUSHBUTTON      "删除",IDC_LibDelPath,319,242,27,12
+    PUSHBUTTON      "播放",IDC_Play,15,278,27,12
+    PUSHBUTTON      "暂停",IDC_Pause,49,278,27,12
+    EDITTEXT        IDC_TimeS,63,303,41,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "停止",IDC_Stop,83,278,27,12
+    EDITTEXT        IDC_PlayTime,163,303,40,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "新建",IDC_EftNew,183,60,27,12
+    PUSHBUTTON      "复制",IDC_LibClone,392,60,27,12
+    PUSHBUTTON      "复制路径",IDC_LibClonePath,389,193,27,28,BS_MULTILINE
+    LTEXT           "预览位置:",IDC_STATIC,279,306,36,14,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "点选位置",IDC_Pick,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,307,48,12,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PosX,319,306,32,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_PosY,355,306,30,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_PosZ,389,306,32,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "导入",IDC_LibImport,392,117,27,12
+    PUSHBUTTON      ">>",IDC_EftClone,104,147,27,12
+    PUSHBUTTON      ">>",IDC_EftPathClone,101,242,27,12
+    PUSHBUTTON      "导入男主角",IDC_LoadBoy,227,278,45,14
+    PUSHBUTTON      "导入女主角",IDC_LoadGirl,276,278,45,14
+    COMBOBOX        IDC_PlayerAction,228,328,35,84,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "循环播放",IDC_ActLoop,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,347,48,13,WS_EX_STATICEDGE
+    PUSHBUTTON      "装备挂载",IDC_AttachMdl,293,347,46,14
+    PUSHBUTTON      "绑定到骨骼",IDC_BindToBone,92,317,45,14
+    PUSHBUTTON      "换装",IDC_ChangeAvatar,293,328,46,14
+    COMBOBOX        IDC_Comb_AvatarEle,344,329,78,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Comb_BoneTagNodesForEquip,344,348,78,90,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Comb_BoneTagNodes,139,318,72,84,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "角色",IDC_STATIC,223,292,205,96
+    PUSHBUTTON      "挂载到装备",IDC_BindToEquip,92,333,45,14
+    COMBOBOX        IDC_Comb_EquipTagNodes,139,334,72,68,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "播放速度：",IDC_STATIC,16,303,41,12,0,WS_EX_STATICEDGE
+    LTEXT           "播放时间：",IDC_STATIC,116,303,41,12,0,WS_EX_STATICEDGE
+    GROUPBOX        "特效",IDC_STATIC,7,291,208,97
+    CONTROL         "显示包围盒",IDC_DrawBox,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,280,56,10
+    LTEXT           "",IDC_FileName,7,263,404,11,0,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_Comb_LOD,139,349,40,84,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "特效细节：",IDC_STATIC,93,350,41,11,0,WS_EX_STATICEDGE
+    CONTROL         "使用动作消息点",IDC_UseActMsg,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,319,72,10
+    EDITTEXT        IDC_MsgPlay,42,332,35,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "播放",IDC_STATIC,16,332,17,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MsgStop,41,349,35,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "停止",IDC_STATIC,15,349,17,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "重新加载消息表",IDC_ReloadMsgTab,365,278,61,14
+    EDITTEXT        IDC_ActPlayTime,266,329,24,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "导入NPC",IDC_LoadNPC,326,278,34,14
+    EDITTEXT        IDC_RoleScale,42,368,35,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_LEFTSCROLLBAR
+    LTEXT           "缩放",IDC_STATIC,16,368,17,11,0,WS_EX_STATICEDGE
+END
+
+IDD_EffectProp DIALOGEX 0, 0, 624, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "特效元素属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,260,333,50,14
+    PUSHBUTTON      "取消",IDCANCEL,319,333,50,14
+    LTEXT           "预览",IDC_Preview,202,7,415,274,SS_SUNKEN
+    GROUPBOX        "属性/状态",IDC_STATIC,7,7,191,215
+    GROUPBOX        "材质属性",IDC_STATIC,7,228,191,119
+    LISTBOX         IDC_MtlProp,16,245,177,95,LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_IndexDec,16,17,22,11
+    PUSHBUTTON      ">>",IDC_IndexInc,70,17,22,11
+    EDITTEXT        IDC_Index,43,17,22,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_State,16,33,177,183,LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "应用",ID_ApplyEdit,204,333,50,14
+    PUSHBUTTON      "删除",IDC_DelState,124,17,22,11
+    PUSHBUTTON      "新增",IDC_AddState,97,17,22,11
+    RTEXT           "参考模型:",IDC_STATIC,437,333,39,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_MdlPath,479,333,109,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "Load",IDC_OpenMdl,590,333,27,14
+    CONTROL         "线框",IDC_WireFrame,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,374,315,39,14
+    PUSHBUTTON      "播放",IDC_Play,204,315,50,14
+    PUSHBUTTON      "暂停",IDC_Pause,260,315,50,14
+    EDITTEXT        IDC_Time,521,315,50,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_ActList,463,315,50,73,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TimeScale,319,315,50,14,ES_AUTOHSCROLL
+    CONTROL         "显示模型",IDC_ShowMdl,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,412,315,46,14
+    PUSHBUTTON      "背景颜色",IDC_BKColor,579,315,38,14
+    EDITTEXT        IDC_ListInfo,203,298,414,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "显示包围盒",IDC_DrawBox,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,374,334,56,10
+END
+
+IDD_ClassList DIALOGEX 0, 0, 142, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请选择一个Effect类型..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,16,154,50,14
+    PUSHBUTTON      "取消",IDCANCEL,74,154,50,14
+    LISTBOX         IDC_ClassList,7,7,128,144,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MainDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 388
+    END
+
+    IDD_EffectProp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 617
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 347
+    END
+
+    IDD_ClassList, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SFXEditor.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

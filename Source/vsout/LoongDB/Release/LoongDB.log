@@ -1,0 +1,124 @@
+﻿  main.cpp
+  rt_session.cpp
+  StdAfx.cpp
+  TimeChecker.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file StdAfx.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file StdAfx.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file main.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file main.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file rt_session.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file rt_session.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file StdAfx.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file StdAfx.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file TimeChecker.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file TimeChecker.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file main.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file main.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file rt_session.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file rt_session.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file TimeChecker.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file TimeChecker.cpp)
+  LoongDB.cpp
+  loongdb_common.cpp
+  LoongDB_famehall.cpp
+  loongdb_guild.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongDB.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongDB.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongDB.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongDB.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loongdb_common.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loongdb_common.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongDB_famehall.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongDB_famehall.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loongdb_common.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loongdb_common.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongDB_famehall.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongDB_famehall.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loongdb_guild.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loongdb_guild.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loongdb_guild.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loongdb_guild.cpp)
+  loongdb_log.cpp
+  loongdb_role.cpp
+  LoongDBLoad.cpp
+  LoongDBOther.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongDBLoad.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongDBLoad.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loongdb_role.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loongdb_role.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongDBLoad.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongDBLoad.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loongdb_log.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loongdb_log.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loongdb_role.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loongdb_role.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loongdb_log.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loongdb_log.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongDBOther.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongDBOther.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongDBOther.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongDBOther.cpp)
+  LoongDBSave.cpp
+  LoongDBTempMethod.cpp
+  Loong.cpp
+  loong_common.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongDBSave.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongDBSave.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongDBSave.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongDBSave.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongDBTempMethod.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongDBTempMethod.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file Loong.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file Loong.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongDBTempMethod.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file Loong.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongDBTempMethod.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file Loong.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_common.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_common.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_common.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_common.cpp)
+  Loong_famehall.cpp
+  loong_guild.cpp
+  loong_log.cpp
+  loong_pet.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file Loong_famehall.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file Loong_famehall.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_guild.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_guild.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file Loong_famehall.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file Loong_famehall.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_guild.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_guild.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_log.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_log.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_log.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_log.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_pet.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_pet.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_pet.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_pet.cpp)
+  loong_register.cpp
+  loong_test.cpp
+  loong_vip_netbar.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_register.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_register.cpp)
+  LoongProcMsg.cpp
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_register.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_test.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_test.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_register.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_test.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_test.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file loong_vip_netbar.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file loong_vip_netbar.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file loong_vip_netbar.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file loong_vip_netbar.cpp)
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition (compiling source file LoongProcMsg.cpp)
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC' (compiling source file LoongProcMsg.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file LoongProcMsg.cpp)
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file LoongProcMsg.cpp)
+d:\other\loongrework\sourcev2\source\loongdb\loongprocmsg.cpp(573): warning C4838: conversion from 'int' to 'DWORD' requires a narrowing conversion
+  Generating code
+  Finished generating code
+  LoongDB.vcxproj -> D:\other\LoongRework\Sourcev2\Source\LoongDB\..\Game\Release\LoongDB.exe

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 装备品级鉴定几率表xml映射 -->
+<root>
+    <EquipQltyPct id="" White="" Yellow="" Green="" Blue="" Orange=""/>
+    <EquipQltyPct id="" White="" Yellow="" Green="" Blue="" Orange=""/>
+</root>
+
+<!-- 注：
+1.id中记录的是装备的dwTypeID；
+2.其他为各品级鉴定时生成的概率.范围[0,10000),如5%，记为500
+-->

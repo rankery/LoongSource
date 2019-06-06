@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="imname_win" ClassName="CGUIWindow" LogicPos_x="2" LogicPos_y="391" Size_x="136" Size_y="54" AlignControl="\desktop\new" AlignType="OuterTopLeft" PopupSound="window_popup">
+        <UIControl Name="name1" ClassName="CGUIStatic" LogicPos_y="36" Size_x="136" Size_y="18" AlignControl="\desktop\imname_win" Font="小白雅黑" FontHeight="20" TextRect_right="136" TextRect_bottom="20" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="RightCenter" PicColor="0xFFFFFF" />
+        <UIControl Name="name3" ClassName="CGUIStatic" Size_x="136" Size_y="18" AlignControl="\desktop\imname_win" Font="小白雅黑" FontHeight="20" TextRect_right="136" TextRect_bottom="20" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="RightCenter" PicColor="0xFFFFFF" />
+        <UIControl Name="name2" ClassName="CGUIStatic" LogicPos_y="18" Size_x="136" Size_y="18" AlignControl="\desktop\imname_win" Font="小白雅黑" FontHeight="20" TextRect_right="136" TextRect_bottom="20" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="RightCenter" PicColor="0xFFFFFF" />
+    </UIControl>
+</desktop>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <bid id="1" item_id="6000107" bid_quantity="1" bid_form="0" bid_end="10000000" bid_min="1000000" />
+    <bid id="2" item_id="6000108" bid_quantity="5" bid_form="0" bid_end="30000000" bid_min="3000000" />
+    <bid id="3" item_id="6000220" bid_quantity="1" bid_form="0" bid_end="80000000" bid_min="8000000" />
+    <bid id="4" item_id="6000221" bid_quantity="1" bid_form="0" bid_end="1000000" bid_min="100000" />
+    <bid id="5" item_id="6000222" bid_quantity="1" bid_form="0" bid_end="1000000" bid_min="100000" />
+    <bid id="6" item_id="6000223" bid_quantity="1" bid_form="0" bid_end="1000000" bid_min="100000" />
+    <bid id="7" item_id="6000224" bid_quantity="5" bid_form="1" bid_end="1000000" bid_min="100000" />
+    <bid id="8" item_id="6010701" bid_quantity="1" bid_form="1" bid_end="1000000" bid_min="100000" />
+    <bid id="9" item_id="6010702" bid_quantity="1" bid_form="1" bid_end="1000000" bid_min="100000" />
+    <bid id="10" item_id="6010703" bid_quantity="1" bid_form="1" bid_end="1000000" bid_min="100000" />
+    <bid id="11" item_id="6010704" bid_quantity="1" bid_form="1" bid_end="1000000" bid_min="100000" />
+    <bid id="12" item_id="6010803" bid_quantity="1" bid_form="2" bid_end="1000000" bid_min="100000" />
+    <bid id="13" item_id="6010804" bid_quantity="1" bid_form="2" bid_end="1000000" bid_min="100000" />
+    <bid id="14" item_id="6010805" bid_quantity="1" bid_form="2" bid_end="1000000" bid_min="100000" />
+    <bid id="15" item_id="6010806" bid_quantity="1" bid_form="2" bid_end="1000000" bid_min="100000" />
+    <bid id="16" item_id="6010807" bid_quantity="5" bid_form="2" bid_end="5000000" bid_min="500000" />
+</root>

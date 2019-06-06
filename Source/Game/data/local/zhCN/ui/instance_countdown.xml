@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="countdownwin" ClassName="CGUIWindow" Movable="yes" CanMoveOutOfFather="yes" LogicPos_x="1390" LogicPos_y="4" Size_x="109" Size_y="58" AlignControl="\desktop\sclfatherwnd" AlignType="OuterBottomRight" AlignOffset_x="-210" PopupSound=" ">
+        <UIControl Name="cd_pic" ClassName="CGUIStatic" Size_x="109" Size_y="55" AlignControl="\desktop\countdownwin" Text="99:99" Font="小白雅黑" FontHeight="34" TextRect_right="109" TextRect_bottom="55" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="CenterBottom" PicFileName="data\ui\sys\l_diban-a.bmp" PicColor="0x1FFFFFFF" AlphaWrite="Write">
+            <UIControl Name="word" ClassName="CGUIStatic" MoveFather="yes" Size_x="109" Size_y="28" AlignControl="\desktop\countdownwin\cd_pic" Text="剩余时间" Font="小白雅黑" FontWidth="9" FontHeight="22" TextRect_right="109" TextRect_bottom="28" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="Center" PicColor="0xFFFFFF" />
+        </UIControl>
+    </UIControl>
+</desktop>

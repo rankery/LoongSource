@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3CB1323-2921-47CF-ABAF-BA0253C839B5}</ProjectGuid>
+    <RootNamespace>F3D</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Game\$(Configuration)\</OutDir>
+    <IntDir>..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Game\$(Configuration)\</OutDir>
+    <IntDir>..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>D3D_DEBUG_INFO WIN32;_DEBUG;_WINDOWS;_USRDLL;Cool3D_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\External\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(IntDir)$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;Cool3D_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\External\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(IntDir)$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation\AniCloth_SW.cpp" />
+    <ClCompile Include="Animation\AnimationCtrl.cpp" />
+    <ClCompile Include="Animation\AnimationMixer.cpp" />
+    <ClCompile Include="Animation\AnimationState.cpp" />
+    <ClCompile Include="Animation\AnimationTrack.cpp" />
+    <ClCompile Include="Animation\AniSkin_SW.cpp" />
+    <ClCompile Include="Animation\KeyFrame.cpp" />
+    <ClCompile Include="Audio\AudioSystem.cpp" />
+    <ClCompile Include="Audio\AudioSystemMember.cpp" />
+    <ClCompile Include="Cool3D.cpp" />
+    <ClCompile Include="Cool3DOption.cpp" />
+    <ClCompile Include="Device\DrawX.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9DepthFont.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9Device.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9Font.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9IB.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9Init.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9PS.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9RenderCubeTex.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9RenderTex.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9RenderToEnvMap.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9Tex.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9VB.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9VertDecl.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9VizQuery.cpp" />
+    <ClCompile Include="Device\DX9Device\DX9VS.cpp" />
+    <ClCompile Include="Device\IDepthFont.cpp" />
+    <ClCompile Include="Device\IDevCubeMap.cpp" />
+    <ClCompile Include="Device\IDevice.cpp" />
+    <ClCompile Include="Device\IDeviceTex.cpp" />
+    <ClCompile Include="Device\IDeviceVizQuery.cpp" />
+    <ClCompile Include="Device\IFont.cpp" />
+    <ClCompile Include="Device\IIndexBuffer.cpp" />
+    <ClCompile Include="Device\IPixelShader.cpp" />
+    <ClCompile Include="Device\IRenderCubeTexture.cpp" />
+    <ClCompile Include="Device\IRenderTexture.cpp" />
+    <ClCompile Include="Device\IRenderToEnvMap.cpp" />
+    <ClCompile Include="Device\IStreamDefine.cpp" />
+    <ClCompile Include="Device\IVertBuffer.cpp" />
+    <ClCompile Include="Device\IVertShader.cpp" />
+    <ClCompile Include="Device\Light.cpp" />
+    <ClCompile Include="Device\RenderStatus.cpp" />
+    <ClCompile Include="Device\RenderTexChain.cpp" />
+    <ClCompile Include="Device\StateBlock.cpp" />
+    <ClCompile Include="Draw2D\AviPlayer.cpp" />
+    <ClCompile Include="Draw2D\Draw2DImp.cpp" />
+    <ClCompile Include="Draw2D\IDraw2D.cpp" />
+    <ClCompile Include="Draw2D\PicFont.cpp" />
+    <ClCompile Include="EditorSupport\AmbientOcclusion.cpp" />
+    <ClCompile Include="EditorSupport\BrushOPRecorder.cpp" />
+    <ClCompile Include="EditorSupport\EditorDecoFile.cpp" />
+    <ClCompile Include="EditorSupport\ISGVisitorCallBack.cpp" />
+    <ClCompile Include="EditorSupport\IUICallBack .cpp" />
+    <ClCompile Include="EditorSupport\LightMapBlur.cpp" />
+    <ClCompile Include="EditorSupport\LightMapping.cpp" />
+    <ClCompile Include="EditorSupport\LightMapTempGen.cpp" />
+    <ClCompile Include="EditorSupport\Radiosity.cpp" />
+    <ClCompile Include="EditorSupport\ResDynaAlphaMap.cpp" />
+    <ClCompile Include="EditorSupport\SceneEditor.cpp" />
+    <ClCompile Include="EditorSupport\SGVisitor.cpp" />
+    <ClCompile Include="EditorSupport\SimpleView.cpp" />
+    <ClCompile Include="EditorSupport\TEditorMtl.cpp" />
+    <ClCompile Include="EditorSupport\TEditorPatch.cpp" />
+    <ClCompile Include="EditorSupport\TEditorPatchProxy.cpp" />
+    <ClCompile Include="EditorSupport\TerrainEditor.cpp" />
+    <ClCompile Include="EditorSupport\TMtlEditor.cpp" />
+    <ClCompile Include="EditorSupport\TQuadTreeTriangulation.cpp" />
+    <ClCompile Include="EditorSupport\TRiverEditor.cpp" />
+    <ClCompile Include="EditorSupport\TRiverEditorMtl.cpp" />
+    <ClCompile Include="EditorSupport\TRiverPatchProxy.cpp" />
+    <ClCompile Include="EditorSupport\TRiverRealPatch.cpp" />
+    <ClCompile Include="Image\Image.cpp" />
+    <ClCompile Include="Image\Image32Blender.cpp" />
+    <ClCompile Include="Image\ImageGDI.cpp" />
+    <ClCompile Include="Image\ImageTGA.cpp" />
+    <ClCompile Include="Kernel.cpp" />
+    <ClCompile Include="Math\ArcBall.cpp" />
+    <ClCompile Include="Math\CameraBase.cpp" />
+    <ClCompile Include="Math\CameraEuler.cpp" />
+    <ClCompile Include="Math\Frustum.cpp" />
+    <ClCompile Include="Math\GeomDefine.cpp" />
+    <ClCompile Include="Math\math.cpp" />
+    <ClCompile Include="Math\Noise.cpp" />
+    <ClCompile Include="Math\perlin.cpp" />
+    <ClCompile Include="Math\Ray.cpp" />
+    <ClCompile Include="Math\Transform.cpp" />
+    <ClCompile Include="Polygon\MeshTopo.cpp" />
+    <ClCompile Include="Polygon\PMesh.cpp" />
+    <ClCompile Include="PostProcess\PostProcess.cpp" />
+    <ClCompile Include="PostProcess\PostProcessBlur.cpp" />
+    <ClCompile Include="PostProcess\PostProcessHeatHaze.cpp" />
+    <ClCompile Include="RenderMtl\IMaterial.cpp" />
+    <ClCompile Include="RenderMtl\IMtlModifier.cpp" />
+    <ClCompile Include="RenderMtl\IRenderMtl.cpp" />
+    <ClCompile Include="RenderMtl\MBitmap.cpp" />
+    <ClCompile Include="RenderMtl\MBitmapFrames.cpp" />
+    <ClCompile Include="RenderMtl\MColorTex.cpp" />
+    <ClCompile Include="RenderMtl\MConstColor.cpp" />
+    <ClCompile Include="RenderMtl\MDyeTex.cpp" />
+    <ClCompile Include="RenderMtl\MGeneral.cpp" />
+    <ClCompile Include="RenderMtl\MKeyFrame.cpp" />
+    <ClCompile Include="RenderMtl\MMAlphaMask.cpp" />
+    <ClCompile Include="RenderMtl\MMColor.cpp" />
+    <ClCompile Include="RenderMtl\MMColorWriteControl.cpp" />
+    <ClCompile Include="RenderMtl\MMDepthFrame.cpp" />
+    <ClCompile Include="RenderMtl\MMFrameBlend.cpp" />
+    <ClCompile Include="RenderMtl\MMTransparent.cpp" />
+    <ClCompile Include="RenderMtl\MMUsingMtlColor.cpp" />
+    <ClCompile Include="RenderMtl\MMUVPage.cpp" />
+    <ClCompile Include="RenderMtl\MMUVTrans.cpp" />
+    <ClCompile Include="RenderMtl\MPreCombineBitmap.cpp" />
+    <ClCompile Include="RenderMtl\MRenderTex.cpp" />
+    <ClCompile Include="RenderMtl\MSEMTex.cpp" />
+    <ClCompile Include="RenderMtl\MSkin.cpp" />
+    <ClCompile Include="RenderMtl\MSky.cpp" />
+    <ClCompile Include="RenderMtl\MStatic.cpp" />
+    <ClCompile Include="RenderMtl\MtlCombiner.cpp" />
+    <ClCompile Include="RenderMtl\MTwoLayers.cpp" />
+    <ClCompile Include="RenderMtl\MWater.cpp" />
+    <ClCompile Include="RenderMtl\MWaterReflect.cpp" />
+    <ClCompile Include="RenderMtl\MWaterRefract.cpp" />
+    <ClCompile Include="RenderSys\DevPixelStageFixed.cpp" />
+    <ClCompile Include="RenderSys\DynamicMesh.cpp" />
+    <ClCompile Include="RenderSys\DynamicMeshIndexed.cpp" />
+    <ClCompile Include="RenderSys\IRenderCallBack.cpp" />
+    <ClCompile Include="RenderSys\MtlRenderCache.cpp" />
+    <ClCompile Include="RenderSys\MtlRenderCacheFixed.cpp" />
+    <ClCompile Include="RenderSys\RBillboards.cpp" />
+    <ClCompile Include="RenderSys\RCloth.cpp" />
+    <ClCompile Include="RenderSys\RenderNode.cpp" />
+    <ClCompile Include="RenderSys\RenderSubMesh.cpp" />
+    <ClCompile Include="RenderSys\RenderSys.cpp" />
+    <ClCompile Include="RenderSys\RenderSysFixed.cpp" />
+    <ClCompile Include="RenderSys\RenderSysPS_20.cpp" />
+    <ClCompile Include="RenderSys\RKeyFrame.cpp" />
+    <ClCompile Include="RenderSys\RLensFlare.cpp" />
+    <ClCompile Include="RenderSys\RPointSprites.cpp" />
+    <ClCompile Include="RenderSys\RSkin.cpp" />
+    <ClCompile Include="RenderSys\RSkyBox.cpp" />
+    <ClCompile Include="RenderSys\RStatic.cpp" />
+    <ClCompile Include="RenderSys\RStaticMesh.cpp" />
+    <ClCompile Include="RenderSys\RVizQuery.cpp" />
+    <ClCompile Include="RenderSys\SortByMtlAndZVal.cpp" />
+    <ClCompile Include="RenderSys\StaticMeshIndexed.cpp" />
+    <ClCompile Include="RenderSys\WaterReflectMapRender.cpp" />
+    <ClCompile Include="RenderSys\WaterRefractMapRender.cpp" />
+    <ClCompile Include="RenderSys\WaterRender.cpp" />
+    <ClCompile Include="ResSys\AABBTreeCollider.cpp" />
+    <ClCompile Include="ResSys\ActTimeTable.cpp" />
+    <ClCompile Include="ResSys\AniMsgTable.cpp" />
+    <ClCompile Include="ResSys\AsyncResIO.cpp" />
+    <ClCompile Include="ResSys\ResBase.cpp" />
+    <ClCompile Include="ResSys\ResCloth.cpp" />
+    <ClCompile Include="ResSys\ResKeyFrame.cpp" />
+    <ClCompile Include="ResSys\ResMgr.cpp" />
+    <ClCompile Include="ResSys\ResPixelShader.cpp" />
+    <ClCompile Include="ResSys\ResRenderable.cpp" />
+    <ClCompile Include="ResSys\ResRequestQueueTS.cpp" />
+    <ClCompile Include="ResSys\ResSceneMesh.cpp" />
+    <ClCompile Include="ResSys\ResSkeleton.cpp" />
+    <ClCompile Include="ResSys\ResSkeletonAction.cpp" />
+    <ClCompile Include="ResSys\ResSkin.cpp" />
+    <ClCompile Include="ResSys\ResSpecialEffect.cpp" />
+    <ClCompile Include="ResSys\ResStaticMesh.cpp" />
+    <ClCompile Include="ResSys\ResTexture.cpp" />
+    <ClCompile Include="ResSys\ResVertShader.cpp" />
+    <ClCompile Include="ResSys\UserResMgr.cpp" />
+    <ClCompile Include="ResSys\VertStream.cpp" />
+    <ClCompile Include="SceneGraph\AvatarNode.cpp" />
+    <ClCompile Include="SceneGraph\EntityNode.cpp" />
+    <ClCompile Include="SceneGraph\HugeQuadTreeSG.cpp" />
+    <ClCompile Include="SceneGraph\ISGNodeVisableCallBack.cpp" />
+    <ClCompile Include="SceneGraph\NullSceneGraph.cpp" />
+    <ClCompile Include="SceneGraph\Occluder.cpp" />
+    <ClCompile Include="SceneGraph\OcclusionCull.cpp" />
+    <ClCompile Include="SceneGraph\OCQuad.cpp" />
+    <ClCompile Include="SceneGraph\QuadTreeData.cpp" />
+    <ClCompile Include="SceneGraph\QuadTreeDataBuilder.cpp" />
+    <ClCompile Include="SceneGraph\SceneDecal.cpp" />
+    <ClCompile Include="SceneGraph\SceneEffect.cpp" />
+    <ClCompile Include="SceneGraph\SceneGraph.cpp" />
+    <ClCompile Include="SceneGraph\SceneNode.cpp" />
+    <ClCompile Include="SceneGraph\SceneProjector.cpp" />
+    <ClCompile Include="SceneGraph\SGAvatarAttachment.cpp" />
+    <ClCompile Include="SceneGraph\SGBladeFlare.cpp" />
+    <ClCompile Include="SceneGraph\SGBladeGlow.cpp" />
+    <ClCompile Include="SceneGraph\SGClothNode.cpp" />
+    <ClCompile Include="SceneGraph\SGLensFlare.cpp" />
+    <ClCompile Include="SceneGraph\SGLightFlare.cpp" />
+    <ClCompile Include="SceneGraph\SGLightNode.cpp" />
+    <ClCompile Include="SceneGraph\SGQuadTreeNode.cpp" />
+    <ClCompile Include="SceneGraph\SGRoleGlow.cpp" />
+    <ClCompile Include="SceneGraph\SGSkinNode.cpp" />
+    <ClCompile Include="SceneGraph\SGSkyBox.cpp" />
+    <ClCompile Include="SceneGraph\SGSkyNode.cpp" />
+    <ClCompile Include="SceneGraph\SGStaticProjector.cpp" />
+    <ClCompile Include="SceneGraph\SGSunFlare.cpp" />
+    <ClCompile Include="SceneGraph\SGSunNode.cpp" />
+    <ClCompile Include="SpecialEffect\EffectBase.cpp" />
+    <ClCompile Include="SpecialEffect\EffectBeam.cpp" />
+    <ClCompile Include="SpecialEffect\EffectBladeFlare.cpp" />
+    <ClCompile Include="SpecialEffect\EffectCamera.cpp" />
+    <ClCompile Include="SpecialEffect\EffectCross.cpp" />
+    <ClCompile Include="SpecialEffect\EffectCylinder.cpp" />
+    <ClCompile Include="SpecialEffect\EffectExplosive.cpp" />
+    <ClCompile Include="SpecialEffect\EffectGrid.cpp" />
+    <ClCompile Include="SpecialEffect\EffectMesh.cpp" />
+    <ClCompile Include="SpecialEffect\EffectMotion.cpp" />
+    <ClCompile Include="SpecialEffect\EffectMsg.cpp" />
+    <ClCompile Include="SpecialEffect\EffectParticleEmitter.cpp" />
+    <ClCompile Include="SpecialEffect\EffectPathCtrl.cpp" />
+    <ClCompile Include="SpecialEffect\EffectQuad.cpp" />
+    <ClCompile Include="SpecialEffect\EffectSceneDecal.cpp" />
+    <ClCompile Include="SpecialEffect\EffectSound.cpp" />
+    <ClCompile Include="SpecialEffect\EffectSphere.cpp" />
+    <ClCompile Include="SpecialEffect\EffectTarget.cpp" />
+    <ClCompile Include="SpecialEffect\EftQuadDef.cpp" />
+    <ClCompile Include="SpecialEffect\SGAttachableEffectNode.cpp" />
+    <ClCompile Include="SpecialEffect\SGEffectNode.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Terrain\BitMap.cpp" />
+    <ClCompile Include="Terrain\GrassPatch.cpp" />
+    <ClCompile Include="Terrain\Heightmap.cpp" />
+    <ClCompile Include="Terrain\ResGrass.cpp" />
+    <ClCompile Include="Terrain\ResRiver.cpp" />
+    <ClCompile Include="Terrain\ResRiverPatch.cpp" />
+    <ClCompile Include="Terrain\RRiverPatch.cpp" />
+    <ClCompile Include="Terrain\RSimpleTerrain.cpp" />
+    <ClCompile Include="Terrain\RSimpleTerrainPatch.cpp" />
+    <ClCompile Include="Terrain\SGGrassPatch.cpp" />
+    <ClCompile Include="Terrain\SGRiverPatch.cpp" />
+    <ClCompile Include="Terrain\SGSimpleTerrain.cpp" />
+    <ClCompile Include="Terrain\SGSimpleTerrainPatch.cpp" />
+    <ClCompile Include="Terrain\SGTrnDecoPatch.cpp" />
+    <ClCompile Include="Terrain\SimpleTerrainMtl.cpp" />
+    <ClCompile Include="Terrain\TerrainMtlMultiLayers.cpp" />
+    <ClCompile Include="Terrain\TerrainMtlPrecombine.cpp" />
+    <ClCompile Include="Terrain\TerrainMtlTwoLayers.cpp" />
+    <ClCompile Include="Terrain\TerrainMultiLayersRender.cpp" />
+    <ClCompile Include="Terrain\TerrainPatch.cpp" />
+    <ClCompile Include="Terrain\TerrainPatchRender.cpp" />
+    <ClCompile Include="Terrain\TerrainPatchRenderGroupsRes.cpp" />
+    <ClCompile Include="Terrain\TerrainPatchRes.cpp" />
+    <ClCompile Include="Terrain\TerrainRes.cpp" />
+    <ClCompile Include="Terrain\TPatchLodTable.cpp" />
+    <ClCompile Include="Terrain\TPatchTriangulationDynamic.cpp" />
+    <ClCompile Include="Terrain\TPatchTriangulationStatic.cpp" />
+    <ClCompile Include="Terrain\TRiverPatchTriangulationDynamic.cpp" />
+    <ClCompile Include="Util\CmdDispatch.cpp" />
+    <ClCompile Include="Util\CmdTarget.cpp" />
+    <ClCompile Include="Util\ConfigFile.cpp" />
+    <ClCompile Include="Util\CSVFile.cpp" />
+    <ClCompile Include="Util\DebugMisc.cpp" />
+    <ClCompile Include="Util\Exception.cpp" />
+    <ClCompile Include="Util\FArchive.cpp" />
+    <ClCompile Include="Util\FileUtil.cpp" />
+    <ClCompile Include="Util\FMemory.cpp" />
+    <ClCompile Include="Util\PlugIn.cpp" />
+    <ClCompile Include="Util\RefObj.cpp" />
+    <ClCompile Include="Util\RTTInfo.cpp" />
+    <ClCompile Include="Util\RTTIObj.cpp" />
+    <ClCompile Include="Util\SpeedAnalyser.cpp" />
+    <ClCompile Include="Util\Timer.cpp" />
+    <ClCompile Include="Vfs\IFS.cpp" />
+    <ClCompile Include="Vfs\MemFS.cpp" />
+    <ClCompile Include="Vfs\StdFS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation\AniCloth_SW.h" />
+    <ClInclude Include="Animation\AnimationCtrl.h" />
+    <ClInclude Include="Animation\AnimationMixer.h" />
+    <ClInclude Include="Animation\AnimationState.h" />
+    <ClInclude Include="Animation\AnimationTrack.h" />
+    <ClInclude Include="Animation\AniSkin_SW.h" />
+    <ClInclude Include="Animation\KeyFrame.h" />
+    <ClInclude Include="Audio\AudioSystem.h" />
+    <ClInclude Include="Audio\AudioSystemMember.h" />
+    <ClInclude Include="Audio\fmodex\fmod.h" />
+    <ClInclude Include="Audio\fmodex\fmod.hpp" />
+    <ClInclude Include="Audio\fmodex\fmod_codec.h" />
+    <ClInclude Include="Audio\fmodex\fmod_dsp.h" />
+    <ClInclude Include="Audio\fmodex\fmod_errors.h" />
+    <ClInclude Include="Audio\fmodex\fmod_output.h" />
+    <ClInclude Include="Cool3D.h" />
+    <ClInclude Include="Cool3DEngine.h" />
+    <ClInclude Include="Cool3DEngineEditor.h" />
+    <ClInclude Include="Cool3DOption.h" />
+    <ClInclude Include="Device\DrawX.h" />
+    <ClInclude Include="Device\DX9Device\DX9BaseDef.h" />
+    <ClInclude Include="Device\DX9Device\DX9DepthFont.h" />
+    <ClInclude Include="Device\DX9Device\DX9Device.h" />
+    <ClInclude Include="Device\DX9Device\DX9Font.h" />
+    <ClInclude Include="Device\DX9Device\DX9IB.h" />
+    <ClInclude Include="Device\DX9Device\DX9Init.h" />
+    <ClInclude Include="Device\DX9Device\DX9PS.h" />
+    <ClInclude Include="Device\DX9Device\DX9RenderCubeTex.h" />
+    <ClInclude Include="Device\DX9Device\DX9RenderTex.h" />
+    <ClInclude Include="Device\DX9Device\DX9RenderToEnvMap.h" />
+    <ClInclude Include="Device\DX9Device\DX9Tex.h" />
+    <ClInclude Include="Device\DX9Device\DX9VB.h" />
+    <ClInclude Include="Device\DX9Device\DX9VertDecl.h" />
+    <ClInclude Include="Device\DX9Device\DX9VizQuery.h" />
+    <ClInclude Include="Device\DX9Device\DX9VS.h" />
+    <ClInclude Include="Device\FogDefine.h" />
+    <ClInclude Include="Device\IDepthFont.h" />
+    <ClInclude Include="Device\IDevCubeMap.h" />
+    <ClInclude Include="Device\IDevice.h" />
+    <ClInclude Include="Device\IDeviceTex.h" />
+    <ClInclude Include="Device\IDeviceVizQuery.h" />
+    <ClInclude Include="Device\IFont.h" />
+    <ClInclude Include="Device\IIndexBuffer.h" />
+    <ClInclude Include="Device\IPixelShader.h" />
+    <ClInclude Include="Device\IRenderCubeTexture.h" />
+    <ClInclude Include="Device\IRenderTexture.h" />
+    <ClInclude Include="Device\IRenderToEnvMap.h" />
+    <ClInclude Include="Device\IStreamDefine.h" />
+    <ClInclude Include="Device\IVertBuffer.h" />
+    <ClInclude Include="Device\IVertShader.h" />
+    <ClInclude Include="Device\Light.h" />
+    <ClInclude Include="Device\RenderStatus.h" />
+    <ClInclude Include="Device\RenderTexChain.h" />
+    <ClInclude Include="Device\StateBlock.h" />
+    <ClInclude Include="Draw2D\AviPlayer.h" />
+    <ClInclude Include="Draw2D\Draw2DImp.h" />
+    <ClInclude Include="Draw2D\IDraw2D.h" />
+    <ClInclude Include="Draw2D\PicFont.h" />
+    <ClInclude Include="EditorSupport\AmbientOcclusion.h" />
+    <ClInclude Include="EditorSupport\BrushOp.h" />
+    <ClInclude Include="EditorSupport\BrushOPRecorder.h" />
+    <ClInclude Include="EditorSupport\EditorDecoFile.h" />
+    <ClInclude Include="EditorSupport\ISGVisitorCallBack.h" />
+    <ClInclude Include="EditorSupport\IUICallBack.h" />
+    <ClInclude Include="EditorSupport\LightMapBlur.h" />
+    <ClInclude Include="EditorSupport\LightMapping.h" />
+    <ClInclude Include="EditorSupport\LightMapTempGen.h" />
+    <ClInclude Include="EditorSupport\Radiosity.h" />
+    <ClInclude Include="EditorSupport\ResDynaAlphaMap.h" />
+    <ClInclude Include="EditorSupport\safe_list.h" />
+    <ClInclude Include="EditorSupport\SceneEditor.h" />
+    <ClInclude Include="EditorSupport\SGVisitor.h" />
+    <ClInclude Include="EditorSupport\SimpleView.h" />
+    <ClInclude Include="EditorSupport\TEditorMtl.h" />
+    <ClInclude Include="EditorSupport\TEditorPatch.h" />
+    <ClInclude Include="EditorSupport\TEditorPatchProxy.h" />
+    <ClInclude Include="EditorSupport\TerrainEditor.h" />
+    <ClInclude Include="EditorSupport\TMapLayerExt.h" />
+    <ClInclude Include="EditorSupport\TMtlEditor.h" />
+    <ClInclude Include="EditorSupport\TQuadTreeTriangulation.h" />
+    <ClInclude Include="EditorSupport\TRiverEditor.h" />
+    <ClInclude Include="EditorSupport\TRiverEditorMtl.h" />
+    <ClInclude Include="EditorSupport\TRiverPatchProxy.h" />
+    <ClInclude Include="EditorSupport\TRiverRealPatch.h" />
+    <ClInclude Include="Image\Il\config.h" />
+    <ClInclude Include="Image\Il\devil_internal_exports.h" />
+    <ClInclude Include="Image\Il\il.h" />
+    <ClInclude Include="Image\Il\ilu.h" />
+    <ClInclude Include="Image\Il\ilut.h" />
+    <ClInclude Include="Image\Il\ilu_region.h" />
+    <ClInclude Include="Image\Il\il_wrap.h" />
+    <ClInclude Include="Image\Image.h" />
+    <ClInclude Include="Image\Image32Blender.h" />
+    <ClInclude Include="Image\ImageGDI.h" />
+    <ClInclude Include="Image\ImageTGA.h" />
+    <ClInclude Include="Kernel.h" />
+    <ClInclude Include="Math\ArcBall.h" />
+    <ClInclude Include="Math\CameraBase.h" />
+    <ClInclude Include="Math\cameraEuler.h" />
+    <ClInclude Include="Math\Color.h" />
+    <ClInclude Include="Math\Frustum.h" />
+    <ClInclude Include="Math\GeomDefine.h" />
+    <ClInclude Include="Math\math.h" />
+    <ClInclude Include="Math\Noise.h" />
+    <ClInclude Include="Math\perlin.h" />
+    <ClInclude Include="Math\Ray.h" />
+    <ClInclude Include="Math\Transform.h" />
+    <ClInclude Include="Polygon\MeshTopo.h" />
+    <ClInclude Include="Polygon\PMesh.h" />
+    <ClInclude Include="PostProcess\PostProcess.h" />
+    <ClInclude Include="PostProcess\PostProcessBlur.h" />
+    <ClInclude Include="PostProcess\PostProcessHeatHaze.h" />
+    <ClInclude Include="Public\AABBTree.h" />
+    <ClInclude Include="Public\AKFile.h" />
+    <ClInclude Include="Public\FileUtil.h" />
+    <ClInclude Include="Public\IPlugEditor.h" />
+    <ClInclude Include="Public\MathBaseDefine.h" />
+    <ClInclude Include="Public\MtlDesc.h" />
+    <ClInclude Include="Public\SkinBoneDefine.h" />
+    <ClInclude Include="Public\SkinSubMesh.h" />
+    <ClInclude Include="Public\StaticMeshFile.h" />
+    <ClInclude Include="Public\SubMesh.h" />
+    <ClInclude Include="Public\TagNodeDefine.h" />
+    <ClInclude Include="Public\VertexDefine.h" />
+    <ClInclude Include="RenderMtl\IMaterial.h" />
+    <ClInclude Include="RenderMtl\IMtlModifier.h" />
+    <ClInclude Include="RenderMtl\IRenderMtl.h" />
+    <ClInclude Include="RenderMtl\MBitmap.h" />
+    <ClInclude Include="RenderMtl\MBitmapFrames.h" />
+    <ClInclude Include="RenderMtl\MColorTex.h" />
+    <ClInclude Include="RenderMtl\MConstColor.h" />
+    <ClInclude Include="RenderMtl\MDyeTex.h" />
+    <ClInclude Include="RenderMtl\MGeneral.h" />
+    <ClInclude Include="RenderMtl\MKeyFrame.h" />
+    <ClInclude Include="RenderMtl\MMAlphaMask.h" />
+    <ClInclude Include="RenderMtl\MMColor.h" />
+    <ClInclude Include="RenderMtl\MMColorWriteControl.h" />
+    <ClInclude Include="RenderMtl\MMDepthFrame.h" />
+    <ClInclude Include="RenderMtl\MMFrameBlend.h" />
+    <ClInclude Include="RenderMtl\MMTransparent.h" />
+    <ClInclude Include="RenderMtl\MMUsingMtlColor.h" />
+    <ClInclude Include="RenderMtl\MMUVPage.h" />
+    <ClInclude Include="RenderMtl\MMUVTrans.h" />
+    <ClInclude Include="RenderMtl\MPreCombineBitmap.h" />
+    <ClInclude Include="RenderMtl\MRenderTex.h" />
+    <ClInclude Include="RenderMtl\MSEMTex.h" />
+    <ClInclude Include="RenderMtl\MSkin.h" />
+    <ClInclude Include="RenderMtl\MSky.h" />
+    <ClInclude Include="RenderMtl\MStatic.h" />
+    <ClInclude Include="RenderMtl\MtlCombiner.h" />
+    <ClInclude Include="RenderMtl\MTwoLayers.h" />
+    <ClInclude Include="RenderMtl\MWater.h" />
+    <ClInclude Include="RenderMtl\MWaterReflect.h" />
+    <ClInclude Include="RenderMtl\MWaterRefract.h" />
+    <ClInclude Include="RenderSys\DevPixelStageFixed.h" />
+    <ClInclude Include="RenderSys\DynamicMesh.h" />
+    <ClInclude Include="RenderSys\DynamicMeshIndexed.h" />
+    <ClInclude Include="RenderSys\HardwareBufferPool.h" />
+    <ClInclude Include="RenderSys\IRenderCallBack.h" />
+    <ClInclude Include="RenderSys\MtlRenderCache.h" />
+    <ClInclude Include="RenderSys\MtlRenderCacheFixed.h" />
+    <ClInclude Include="RenderSys\RBillboards.h" />
+    <ClInclude Include="RenderSys\RCloth.h" />
+    <ClInclude Include="RenderSys\RenderNode.h" />
+    <ClInclude Include="RenderSys\RenderSubMesh.h" />
+    <ClInclude Include="RenderSys\RenderSys.h" />
+    <ClInclude Include="RenderSys\RenderSysFixed.h" />
+    <ClInclude Include="RenderSys\RenderSysPS_20.h" />
+    <ClInclude Include="RenderSys\RKeyFrame.h" />
+    <ClInclude Include="RenderSys\RLensFlare.h" />
+    <ClInclude Include="RenderSys\RPointSprites.h" />
+    <ClInclude Include="RenderSys\RSkin.h" />
+    <ClInclude Include="RenderSys\RSkyBox.h" />
+    <ClInclude Include="RenderSys\RStatic.h" />
+    <ClInclude Include="RenderSys\RStaticMesh.h" />
+    <ClInclude Include="RenderSys\RVizQuery.h" />
+    <ClInclude Include="RenderSys\SortByMtlAndZVal.h" />
+    <ClInclude Include="RenderSys\StaticMeshIndexed.h" />
+    <ClInclude Include="RenderSys\WaterReflectMapRender.h" />
+    <ClInclude Include="RenderSys\WaterRefractMapRender.h" />
+    <ClInclude Include="RenderSys\WaterRender.h" />
+    <ClInclude Include="ResSys\AABBTreeCollider.h" />
+    <ClInclude Include="ResSys\ActTimeTable.h" />
+    <ClInclude Include="ResSys\AniMsgTable.h" />
+    <ClInclude Include="ResSys\AsyncResIO.h" />
+    <ClInclude Include="ResSys\ResBase.h" />
+    <ClInclude Include="ResSys\ResCloth.h" />
+    <ClInclude Include="ResSys\ResKeyFrame.h" />
+    <ClInclude Include="ResSys\ResMgr.h" />
+    <ClInclude Include="ResSys\ResPixelShader.h" />
+    <ClInclude Include="ResSys\ResPool.h" />
+    <ClInclude Include="ResSys\ResRenderable.h" />
+    <ClInclude Include="ResSys\ResRequestQueueTS.h" />
+    <ClInclude Include="ResSys\ResSceneMesh.h" />
+    <ClInclude Include="ResSys\ResSkeleton.h" />
+    <ClInclude Include="ResSys\ResSkeletonAction.h" />
+    <ClInclude Include="ResSys\ResSkin.h" />
+    <ClInclude Include="ResSys\ResSpecialEffect.h" />
+    <ClInclude Include="ResSys\ResStaticMesh.h" />
+    <ClInclude Include="ResSys\ResTexture.h" />
+    <ClInclude Include="ResSys\ResVertShader.h" />
+    <ClInclude Include="ResSys\UserResMgr.h" />
+    <ClInclude Include="ResSys\VertStream.h" />
+    <ClInclude Include="SceneGraph\AvatarNode.h" />
+    <ClInclude Include="SceneGraph\EntityNode.h" />
+    <ClInclude Include="SceneGraph\HugeQuadTreeSG.h" />
+    <ClInclude Include="SceneGraph\ISGEnumProc.h" />
+    <ClInclude Include="SceneGraph\ISGNodeVisableCallBack.h" />
+    <ClInclude Include="SceneGraph\NullSceneGraph.h" />
+    <ClInclude Include="SceneGraph\Occluder.h" />
+    <ClInclude Include="SceneGraph\OcclusionCull.h" />
+    <ClInclude Include="SceneGraph\OCQuad.h" />
+    <ClInclude Include="SceneGraph\QuadTreeData.h" />
+    <ClInclude Include="SceneGraph\QuadTreeDataBuilder.h" />
+    <ClInclude Include="SceneGraph\SceneDecal.h" />
+    <ClInclude Include="SceneGraph\SceneEffect.h" />
+    <ClInclude Include="SceneGraph\SceneGraph.h" />
+    <ClInclude Include="SceneGraph\SceneNode.h" />
+    <ClInclude Include="SceneGraph\SceneProjector.h" />
+    <ClInclude Include="SceneGraph\SGAvatarAttachment.h" />
+    <ClInclude Include="SceneGraph\SGBladeFlare.h" />
+    <ClInclude Include="SceneGraph\SGBladeGlow.h" />
+    <ClInclude Include="SceneGraph\SGClothNode.h" />
+    <ClInclude Include="SceneGraph\SGLensFlare.h" />
+    <ClInclude Include="SceneGraph\SGLightFlare.h" />
+    <ClInclude Include="SceneGraph\SGLightNode.h" />
+    <ClInclude Include="SceneGraph\SGQuadTreeNode.h" />
+    <ClInclude Include="SceneGraph\SGRoleGlow.h" />
+    <ClInclude Include="SceneGraph\SGSkinNode.h" />
+    <ClInclude Include="SceneGraph\SGSkyBox.h" />
+    <ClInclude Include="SceneGraph\SGSkyNode.h" />
+    <ClInclude Include="SceneGraph\SGStaticProjector.h" />
+    <ClInclude Include="SceneGraph\SGSunFlare.h" />
+    <ClInclude Include="SceneGraph\SGSunNode.h" />
+    <ClInclude Include="SpecialEffect\EffectAll.h" />
+    <ClInclude Include="SpecialEffect\EffectBase.h" />
+    <ClInclude Include="SpecialEffect\EffectBeam.h" />
+    <ClInclude Include="SpecialEffect\EffectBladeFlare.h" />
+    <ClInclude Include="SpecialEffect\EffectCamera.h" />
+    <ClInclude Include="SpecialEffect\EffectCross.h" />
+    <ClInclude Include="SpecialEffect\EffectCylinder.h" />
+    <ClInclude Include="SpecialEffect\EffectExplosive.h" />
+    <ClInclude Include="SpecialEffect\EffectGrid.h" />
+    <ClInclude Include="SpecialEffect\EffectMesh.h" />
+    <ClInclude Include="SpecialEffect\EffectMotion.h" />
+    <ClInclude Include="SpecialEffect\EffectMsg.h" />
+    <ClInclude Include="SpecialEffect\EffectParticleEmitter.h" />
+    <ClInclude Include="SpecialEffect\EffectPathCtrl.h" />
+    <ClInclude Include="SpecialEffect\EffectQuad.h" />
+    <ClInclude Include="SpecialEffect\EffectSceneDecal.h" />
+    <ClInclude Include="SpecialEffect\EffectSound.h" />
+    <ClInclude Include="SpecialEffect\EffectSphere.h" />
+    <ClInclude Include="SpecialEffect\EffectTarget.h" />
+    <ClInclude Include="SpecialEffect\EftQuadDef.h" />
+    <ClInclude Include="SpecialEffect\SGAttachableEffectNode.h" />
+    <ClInclude Include="SpecialEffect\SGEffectNode.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Terrain\BitMap.h" />
+    <ClInclude Include="Terrain\GrassPatch.h" />
+    <ClInclude Include="Terrain\Heightmap.h" />
+    <ClInclude Include="Terrain\ResGrass.h" />
+    <ClInclude Include="Terrain\ResRiver.h" />
+    <ClInclude Include="Terrain\ResRiverPatch.h" />
+    <ClInclude Include="Terrain\RRiverPatch.h" />
+    <ClInclude Include="Terrain\RSimpleTerrain.h" />
+    <ClInclude Include="Terrain\RSimpleTerrainPatch.h" />
+    <ClInclude Include="Terrain\SGGrassPatch.h" />
+    <ClInclude Include="Terrain\SGRiverPatch.h" />
+    <ClInclude Include="Terrain\SGSimpleTerrain.h" />
+    <ClInclude Include="Terrain\SGSimpleTerrainPatch.h" />
+    <ClInclude Include="Terrain\SGTrnDecoPatch.h" />
+    <ClInclude Include="Terrain\SimpleTerrainMtl.h" />
+    <ClInclude Include="Terrain\TerrainMtlMultiLayers.h" />
+    <ClInclude Include="Terrain\TerrainMtlPrecombine.h" />
+    <ClInclude Include="Terrain\TerrainMtlTwoLayers.h" />
+    <ClInclude Include="Terrain\TerrainMultiLayersRender.h" />
+    <ClInclude Include="Terrain\TerrainPatch.h" />
+    <ClInclude Include="Terrain\TerrainPatchRender.h" />
+    <ClInclude Include="Terrain\TerrainPatchRenderGroupsRes.h" />
+    <ClInclude Include="Terrain\TerrainPatchRes.h" />
+    <ClInclude Include="Terrain\TerrainRes.h" />
+    <ClInclude Include="Terrain\TPatchLodTable.h" />
+    <ClInclude Include="Terrain\TPatchTriangulationDynamic.h" />
+    <ClInclude Include="Terrain\TPatchTriangulationStatic.h" />
+    <ClInclude Include="Terrain\TRiverPatchTriangulationDynamic.h" />
+    <ClInclude Include="Thread\CriticalSection.h" />
+    <ClInclude Include="Thread\FastLock.h" />
+    <ClInclude Include="Thread\LockableObject.h" />
+    <ClInclude Include="Thread\ThreadLock.h" />
+    <ClInclude Include="Thread\TSList.h" />
+    <ClInclude Include="Util\CmdDispatch.h" />
+    <ClInclude Include="Util\CmdTarget.h" />
+    <ClInclude Include="Util\ConfigFile.h" />
+    <ClInclude Include="Util\CSVFile.h" />
+    <ClInclude Include="Util\DebugMisc.h" />
+    <ClInclude Include="Util\Exception.h" />
+    <ClInclude Include="Util\FArchive.h" />
+    <ClInclude Include="Util\FArchiveAdv.h" />
+    <ClInclude Include="Util\fast_vector.h" />
+    <ClInclude Include="Util\Filename.h" />
+    <ClInclude Include="Util\FileUtil.h" />
+    <ClInclude Include="Util\FMemory.h" />
+    <ClInclude Include="Util\MemPool.h" />
+    <ClInclude Include="Util\Noncopyable.h" />
+    <ClInclude Include="Util\ObjectPool.h" />
+    <ClInclude Include="Util\PlugIn.h" />
+    <ClInclude Include="Util\RefObj.h" />
+    <ClInclude Include="Util\RTTInfo.h" />
+    <ClInclude Include="Util\RTTIObj.h" />
+    <ClInclude Include="Util\SharedPtr.h" />
+    <ClInclude Include="Util\SpeedAnalyser.h" />
+    <ClInclude Include="Util\StlExt.h" />
+    <ClInclude Include="Util\Timer.h" />
+    <ClInclude Include="Util\UnicodeUtil.h" />
+    <ClInclude Include="Vfs\FileUtil.h" />
+    <ClInclude Include="Vfs\IFS.h" />
+    <ClInclude Include="Vfs\MemFS.h" />
+    <ClInclude Include="Vfs\StdFS.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Audio\fmodex\fmodex.dll" />
+    <None Include="Cool3D_todo.txt" />
+    <None Include="Image\Il\DevIL.dll" />
+    <None Include="Image\Il\ILU.dll" />
+    <None Include="Image\Il\ILUT.dll" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Audio\fmodex\fmodex_vc.lib" />
+    <Library Include="Image\Il\DevIL.lib" />
+    <Library Include="Image\Il\DevILU.lib" />
+    <Library Include="Image\Il\DevILUT.lib" />
+    <Library Include="Image\Il\DevILUT_DBG.lib" />
+    <Library Include="Image\Il\DevILU_DBG.lib" />
+    <Library Include="Image\Il\DevIL_DBG.lib" />
+    <Library Include="Image\Il\ILU.lib" />
+    <Library Include="Image\Il\ILUT.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

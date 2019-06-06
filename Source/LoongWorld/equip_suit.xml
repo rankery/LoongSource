@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 套装属性xml映射 -->
+<root>
+    <SuitProto id="" TriggerID1="" TriggerID2="" TriggerID3="" TriggerID4="" TriggerID5="" BuffID1="" BuffID2="" BuffID3="" BuffID4="" BuffID5="" ActiveNum1="" ActiveNum2="" ActiveNum3="" ActiveNum4="" ActiveNum5="" SpecEffectID="" SpecEffectNum=""/>
+    <SuitProto id="" TriggerID1="" TriggerID2="" TriggerID3="" TriggerID4="" TriggerID5="" BuffID1="" BuffID2="" BuffID3="" BuffID4="" BuffID5="" ActiveNum1="" ActiveNum2="" ActiveNum3="" ActiveNum4="" ActiveNum5="" SpecEffectID="" SpecEffectNum=""/>
+</root>
+
+<!-- 注：
+1.id中记录的是套装编号；
+-->
+

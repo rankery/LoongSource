@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <quest id="10847" Npcid="4001111" MinLevel="15" MaxLevel="100" TimesOneDay="1" />
+    <quest id="10848" Npcid="4001057" MinLevel="15" MaxLevel="100" TimesOneDay="1" />
+    <quest id="79" Npcid="3000022" MinLevel="20" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20033" Npcid="4500001" MinLevel="40" MaxLevel="100" TimesOneDay="20" />
+    <quest id="20078" Npcid="4500302" MinLevel="25" MaxLevel="100" TimesOneDay="50" />
+    <quest id="20079" Npcid="4500303" MinLevel="40" MaxLevel="100" TimesOneDay="10" />
+    <quest id="20080" Npcid="4500304" MinLevel="25" MaxLevel="100" TimesOneDay="10" />
+    <quest id="20081" Npcid="4500305" MinLevel="25" MaxLevel="100" TimesOneDay="10" />
+    <quest id="4134" Npcid="3600015" MinLevel="30" MaxLevel="100" TimesOneDay="30" />
+    <quest id="30001" Npcid="4001060" MinLevel="30" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20167" Npcid="3021015" MinLevel="70" MaxLevel="100" TimesOneDay="20" />
+    <quest id="20021" Npcid="3610001" MinLevel="20" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20022" Npcid="3610002" MinLevel="15" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20023" Npcid="3610003" MinLevel="30" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20025" Npcid="3610005" MinLevel="40" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20026" Npcid="3610006" MinLevel="50" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20028" Npcid="3610008" MinLevel="40" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20029" Npcid="3610009" MinLevel="60" MaxLevel="100" TimesOneDay="1" />
+    <quest id="20031" Npcid="3610011" MinLevel="70" MaxLevel="100" TimesOneDay="1" />
+</root>

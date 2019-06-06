@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Dak id="1" name1="凤翔府" name2="黄帝城" />
+    <Dak id="2" name1="灵溪村" name2="望龙镇" />
+    <Dak id="3" name1="望龙镇" name2="玄天龙城" />
+    <Dak id="4" name1="灵溪村" name2="玄天龙城" />
+    <Dak id="11" name1="玄天龙城" name2="黄帝城" />
+    <Dak id="12" name1="集合点" name2="山野小镇" />
+    <Dak id="13" name1="凤翔府" name2="山野小镇" />
+    <Dak id="14" name1="凤翔府" name2="集合点" />
+    <Dak id="21" name1="1" />
+    <Dak id="22" name1="1" />
+    <Dak id="23" name1="1" />
+    <Dak id="31" name1="1" />
+    <Dak id="32" name1="1" />
+    <Dak id="33" name1="1" />
+    <Dak id="41" name1="玄天龙城" name2="凤翔府" />
+    <Dak id="42" name1="不岳村" name2="风山寨" name3="单桥村" name4="广盛山庄" />
+    <Dak id="43" name1="黄帝城" name2="风山寨" name3="单桥村" name4="广盛山庄" />
+    <Dak id="44" name1="黄帝城" name2="不岳村" name3="单桥村" name4="广盛山庄" />
+    <Dak id="45" name1="黄帝城" name2="不岳村" name3="风山寨" name4="广盛山庄" />
+    <Dak id="46" name1="黄帝城" name2="不岳村" name3="风山寨" name4="单桥村" />
+    <Dak id="100" name1="凤翔府(25-40级)" name2="黄帝城(40-60级)" name3="酆都(55-75级)" name4="迦叶古城(70-90级)" name5="盘龙谷(75-90级)" name6="凌霄天宫(85-100级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="101" name1="龙心岛" name2="灵溪村" name3="望龙镇" name4="不周村" name5="双塔路口" name6="巨蛛潭" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="102" name1="玄天龙城" name2="灵溪村" name3="望龙镇" name4="不周村" name5="双塔路口" name6="巨蛛潭" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="103" name1="玄天龙城" name2="龙心岛" name3="望龙镇" name4="不周村" name5="双塔路口" name6="巨蛛潭" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="104" name1="玄天龙城" name2="龙心岛" name3="灵溪村" name4="不周村" name5="双塔路口" name6="巨蛛潭" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="105" name1="玄天龙城" name2="龙心岛" name3="灵溪村" name4="望龙镇" name5="双塔路口" name6="巨蛛潭" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="106" name1="玄天龙城" name2="龙心岛" name3="灵溪村" name4="望龙镇" name5="不周村" name6="双塔路口" name7="巨蛛潭" name8="凤翔路口" />
+    <Dak id="107" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="酆都(55-75级)" name5="迦叶古城(70-90级)" name6="盘龙谷(75-90级)" name7="凌霄天宫(85-100级)" name8="姑苏城（100-120级）" />
+    <Dak id="108" name1="盼归村" />
+    <Dak id="109" name1="无名村" />
+    <Dak id="110" name1="玄天龙城" name2="龙心岛" name3="灵溪村" name4="望龙镇" name5="不周村" name6="巨蛛潭" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="111" name1="玄天龙城" name2="龙心岛" name3="灵溪村" name4="望龙镇" name5="不周村" name6="双塔路口" name7="凤翔路口" name8="无回洞穴【副本】" />
+    <Dak id="112" name1="玄天龙城" name2="龙心岛" name3="灵溪村" name4="望龙镇" name5="不周村" name6="双塔路口" name7="巨蛛潭" name8="无回洞穴【副本】" />
+    <Dak id="121" name1="玄天龙城(1-30级)" name2="黄帝城(40-60级)" name3="酆都(55-75级)" name4="迦叶古城(70-90级)" name5="盘龙谷(75-90级)" name6="凌霄天宫(85-100级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="122" name1="盘古村" name2="义阳军营" name3="落岩营地" name4="万毒谷" name5="阿房遗址" name6="碧潭" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="123" name1="凤翔府" name2="义阳军营" name3="落岩营地" name4="万毒谷" name5="阿房遗址" name6="碧潭" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="124" name1="凤翔府" name2="盘古村" name3="落岩营地" name4="万毒谷" name5="阿房遗址" name6="碧潭" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="125" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="万毒谷" name5="阿房遗址" name6="碧潭" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="126" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="落岩营地" name5="万毒谷" name6="阿房遗址" name7="碧潭" name8="落岩村" name9="枭吴祭坛【副本】" />
+    <Dak id="127" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="落岩营地" name5="万毒谷" name6="阿房遗址" name7="碧潭" name8="落岩村" name9="裕祥山麓【副本】" />
+    <Dak id="128" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="落岩营地" name5="阿房遗址" name6="碧潭" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="129" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="落岩营地" name5="万毒谷" name6="碧潭" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="130" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="落岩营地" name5="万毒谷" name6="阿房遗址" name7="落岩村" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="131" name1="凤翔府" name2="盘古村" name3="义阳军营" name4="落岩营地" name5="万毒谷" name6="阿房遗址" name7="碧潭" name8="裕祥山麓【副本】" name9="枭吴祭坛【副本】" />
+    <Dak id="140" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="酆都(55-75级)" name4="迦叶古城(70-90级)" name5="盘龙谷(75-90级)" name6="凌霄天宫(85-100级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="141" name1="黄帝城" name2="风山寨" name3="受禅阁" name4="擂鼓坊" name5="凤翔路口" name6="涿鹿之野" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="142" name1="黄帝城" name2="天一镇" name3="受禅阁" name4="擂鼓坊" name5="凤翔路口" name6="涿鹿之野" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="143" name1="黄帝城" name2="天一镇" name3="风山寨" name4="擂鼓坊" name5="凤翔路口" name6="涿鹿之野" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="144" name1="黄帝城" name2="天一镇" name3="风山寨" name4="受禅阁" name5="凤翔路口" name6="涿鹿之野" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="145" name1="天一镇" name2="风山寨" name3="受禅阁" name4="擂鼓坊" name5="凤翔路口" name6="涿鹿之野" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="146" name1="进入上古战场(需3人组队)" />
+    <Dak id="147" name1="离开上古战场" />
+    <Dak id="148" name1="礼天殿后(60级)" />
+    <Dak id="149" name1="礼天殿前(50级)" />
+    <Dak id="150" name1="东成殿顶端 " name2="西成殿顶端 " name3="东望阁顶端 " name4="西望阁顶端 " name5="承乾殿顶端 " name6="天极殿顶端 " />
+    <Dak id="151" name1="黄帝城" name2="天一镇" name3="风山寨" name4="受禅阁" name5="擂鼓坊" name6="凤翔路口" name7="涿鹿之野" name8="三塔驿" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="152" name1="黄帝城" name2="天一镇" name3="风山寨" name4="受禅阁" name5="擂鼓坊" name6="凤翔路口" name7="涿鹿之野" name8="三塔驿" name9="礼天殿【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="153" name1="黄帝城" name2="天一镇" name3="风山寨" name4="受禅阁" name5="擂鼓坊" name6="涿鹿之野" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="154" name1="姑苏路口" />
+    <Dak id="155" name1="黄帝城" name2="天一镇" name3="风山寨" name4="受禅阁" name5="擂鼓坊" name6="凤翔路口" name7="三塔驿" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="156" name1="黄帝城" name2="天一镇" name3="风山寨" name4="受禅阁" name5="擂鼓坊" name6="凤翔路口" name7="涿鹿之野" name8="礼天殿【副本】" name9="冰封魔窟【副本】" name10="镇怨石【上古战场】" />
+    <Dak id="160" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="迦叶古城(70-90级)" name5="盘龙谷(75-90级)" name6="凌霄天宫(85-100级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="161" name1="竹湖寨" name2="离愁码头" name3="紫阳观" name4="蒙蚩寨" name5="鬼军营地" name6="祭牛台" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="162" name1="酆都" name2="离愁码头" name3="紫阳观" name4="蒙蚩寨" name5="鬼军营地" name6="祭牛台" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="163" name1="酆都" name2="竹湖寨" name3="紫阳观" name4="蒙蚩寨" name5="鬼军营地" name6="祭牛台" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="164" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="蒙蚩寨" name5="鬼军营地" name6="祭牛台" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="165" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="鬼军营地" name6="祭牛台" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="166" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="鬼军营地" name7="祭牛台" name8="雾桑山林" name9="玄天龙城、昆仑路口" name10="净水湖" name11="蒙蚩石窟" />
+    <Dak id="167" name1="离开三峡幻境" />
+    <Dak id="168" name1="通冥鬼域入口" />
+    <Dak id="169" name1="通冥鬼域" />
+    <Dak id="170" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="祭牛台" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="171" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="鬼军营地" name7="雾桑山林" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="172" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="鬼军营地" name7="祭牛台" name8="玄天龙城、昆仑路口" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="173" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="鬼军营地" name7="祭牛台" name8="雾桑山林" name9="净水湖" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="174" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="鬼军营地" name7="祭牛台" name8="雾桑山林" name9="玄天龙城、昆仑路口" name10="蒙蚩石窟" name11="嫘祖之谷【副本】" />
+    <Dak id="175" name1="酆都" name2="竹湖寨" name3="离愁码头" name4="紫阳观" name5="蒙蚩寨" name6="鬼军营地" name7="祭牛台" name8="雾桑山林" name9="玄天龙城、昆仑路口" name10="净水湖" name11="嫘祖之谷【副本】" />
+    <Dak id="180" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="酆都(55-75级)" name5="盘龙谷(75-90级)" name6="凌霄天宫(85-100级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="181" name1="尤公寨" name2="饮恨滩" name3="菩提观" name4="不尘小筑" name5="明镜台" name6="莲花池" name7="百胜猎场" name8="桃源秘境【副本】" />
+    <Dak id="182" name1="迦叶古城" name2="饮恨滩" name3="菩提观" name4="不尘小筑" name5="明镜台" name6="莲花池" name7="百胜猎场" name8="桃源秘境【副本】" />
+    <Dak id="183" name1="迦叶古城" name2="尤公寨" name3="菩提观" name4="不尘小筑" name5="明镜台" name6="莲花池" name7="百胜猎场" name8="桃源秘境【副本】" />
+    <Dak id="184" name1="迦叶古城" name2="尤公寨" name3="饮恨滩" name4="不尘小筑" name5="明镜台" name6="莲花池" name7="百胜猎场" name8="桃源秘境【副本】" />
+    <Dak id="185" name1="百越村口" />
+    <Dak id="186" name1="浮水台" />
+    <Dak id="187" name1="回到副本入口" />
+    <Dak id="188" name1="桃园秘境" />
+    <Dak id="189" name1="越王寨" name2="九曲溪" name3="千回荡" name4="百转源" name5="魔王殿【副本】" />
+    <Dak id="190" name1="半路村" name2="九曲溪" name3="千回荡" name4="百转源" name5="魔王殿【副本】" />
+    <Dak id="191" name1="半路村" name2="越王寨" name3="九曲溪" name4="千回荡" name5="百转源" />
+    <Dak id="192" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="酆都(55-75级)" name5="迦叶古城(70-90级)" name6="凌霄天宫(85-100级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="193" name1="迦叶古城" name2="尤公寨" name3="饮恨滩" name4="菩提观" name5="明镜台" name6="莲花池" name7="百胜猎场" name8="桃源秘境【副本】" name9="姑苏城（100-120级）" />
+    <Dak id="194" name1="半路村" name2="越王寨" name3="千回荡" name4="百转源" name5="魔王殿【副本】" />
+    <Dak id="195" name1="迦叶古城" name2="尤公寨" name3="饮恨滩" name4="菩提观" name5="不尘小筑" name6="莲花池" name7="百胜猎场" name8="桃源秘境【副本】" />
+    <Dak id="196" name1="迦叶古城" name2="尤公寨" name3="饮恨滩" name4="菩提观" name5="不尘小筑" name6="明镜台" name7="百胜猎场" name8="桃源秘境【副本】" />
+    <Dak id="197" name1="迦叶古城" name2="尤公寨" name3="饮恨滩" name4="菩提观" name5="不尘小筑" name6="明镜台" name7="莲花池" name8="桃源秘境【副本】" />
+    <Dak id="198" name1="半路村" name2="越王寨" name3="九曲溪" name4="百转源" name5="魔王殿【副本】" />
+    <Dak id="199" name1="半路村" name2="越王寨" name3="九曲溪" name4="千回荡" name5="魔王殿【副本】" />
+    <Dak id="200" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="酆都(55-75级)" name5="迦叶古城(70-90级)" name6="盘龙谷(75-90级)" name7="盼归村(55-65级)" name8="姑苏城（100-120级）" name9="蓬莱（100-120级）" />
+    <Dak id="201" name1="羲皇庭" name2="白马原" name3="瑶池仙境" name4="玉龙镇" name5="九丈原" name6="昆仑山道" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="202" name1="凌霄天宫" name2="白马原" name3="瑶池仙境" name4="玉龙镇" name5="九丈原" name6="昆仑山道" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="203" name1="凌霄天宫" name2="羲皇庭" name3="瑶池仙境" name4="玉龙镇" name5="九丈原" name6="昆仑山道" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="204" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="玉龙镇" name5="九丈原" name6="昆仑山道" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="205" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="瑶池仙境" name5="九丈原" name6="昆仑山道" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="206" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="瑶池仙境" name5="玉龙镇" name6="九丈原" name7="昆仑山道" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="207" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="瑶池仙境" name5="玉龙镇" name6="九丈原" name7="昆仑山道" name8="青绝洞府【副本】" name9="昆仑密道【副本】" />
+    <Dak id="208" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="瑶池仙境" name5="玉龙镇" name6="九丈原" name7="昆仑山道" name8="青绝洞府【副本】" name9="天墉地宫【副本】" />
+    <Dak id="209" name1="玉龙镇" />
+    <Dak id="210" name1="天墉地宫深处" />
+    <Dak id="211" name1="天墉地宫深处" />
+    <Dak id="212" name1="天墉地宫深处" />
+    <Dak id="213" name1="回到天墉地宫入口" />
+    <Dak id="214" name1="离开天墉地宫" />
+    <Dak id="215" name1="凌霄天宫" />
+    <Dak id="216" name1="凤翔禁城" />
+    <Dak id="217" name1="离开凤翔禁城" />
+    <Dak id="218" name1="魔王殿二层" />
+    <Dak id="219" name1="魔王殿三层" />
+    <Dak id="221" name1="下一个幻灵台" />
+    <Dak id="222" name1="下一个幻灵台" />
+    <Dak id="223" name1="下一个幻灵台" />
+    <Dak id="224" name1="下一个幻灵台" />
+    <Dak id="225" name1="下一个幻灵台" />
+    <Dak id="226" name1="下一个幻灵台" />
+    <Dak id="227" name1="下一个幻灵台" />
+    <Dak id="228" name1="下一个幻灵台" />
+    <Dak id="229" name1="阴煞鬼王处" />
+    <Dak id="230" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="瑶池仙境" name5="玉龙镇" name6="昆仑山道" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="231" name1="凌霄天宫" name2="羲皇庭" name3="白马原" name4="瑶池仙境" name5="玉龙镇" name6="九丈原" name7="青绝洞府【副本】" name8="天墉地宫【副本】" name9="昆仑密道【副本】" />
+    <Dak id="232" name1="迦叶古城" name2="尤公寨" name3="饮恨滩" name4="菩提观" name5="不尘小筑" name6="明镜台" name7="莲花池" name8="百胜猎场" />
+    <Dak id="233" name1="上古无回洞窟" />
+    <Dak id="234" name1="心魔界" />
+    <Dak id="235" name1="去往城池正门" name2="去往城池东门" name3="去往城池西门" />
+    <Dak id="236" name1="姑苏城" name2="黑土村" name3="东山古陵" name4="祭天神井" />
+    <Dak id="237" name1="姑苏城" name2="碧水村" name3="东山古陵" name4="祭天神井" />
+    <Dak id="238" name1="姑苏城" name2="碧水村" name3="黑土村" name4="祭天神井" />
+    <Dak id="239" name1="姑苏城" name2="碧水村" name3="黑土村" name4="东山古陵" />
+    <Dak id="240" name1="碧水村" name2="黑土村" name3="东山古陵" name4="祭天神井" />
+    <Dak id="241" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="酆都(55-75级)" name5="迦叶古城(70-90级)" name6="盘龙谷(75-90级)" name7="盼归村(55-65级)" name8="凌霄天宫(85-100级)" name9="蓬莱（100-120级）" />
+    <Dak id="242" name1="玄天龙城(1-30级)" name2="凤翔府(25-40级)" name3="黄帝城(40-60级)" name4="酆都(55-75级)" name5="迦叶古城(70-90级)" name6="盘龙谷(75-90级)" name7="盼归村(55-65级)" name8="凌霄天宫(85-100级)" name9="姑苏城（100-120级）" />
+</root>

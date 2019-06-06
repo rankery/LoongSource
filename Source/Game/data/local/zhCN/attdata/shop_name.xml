@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Shop id="1" name="玄天龙城武器店" shelf_1="武器" />
+    <Shop id="2" name="玄天龙城铠甲店" shelf_1="铠甲" />
+    <Shop id="3" name="玄天龙城布甲店" shelf_1="布甲" />
+    <Shop id="4" name="玄天龙城饰品店" shelf_1="饰品" />
+    <Shop id="5" name="玄天龙城药品店" shelf_1="药品" />
+    <Shop id="6" name="玄天龙城食品店" shelf_1="食品" />
+    <Shop id="7" name="玄天龙城杂货店" shelf_1="杂货" />
+    <Shop id="8" name="灵溪村药品店" shelf_1="药品" />
+    <Shop id="9" name="灵溪村食品店" shelf_1="食品" />
+    <Shop id="10" name="不周山药品店" shelf_1="药品" />
+    <Shop id="11" name="不周山杂货店" shelf_1="杂货" />
+    <Shop id="12" name="凤翔武器店" shelf_1="武器" />
+    <Shop id="13" name="凤翔铠甲店" shelf_1="铠甲" />
+    <Shop id="14" name="凤翔布甲店" shelf_1="布甲" />
+    <Shop id="15" name="凤翔时装店" shelf_1="缺货" />
+    <Shop id="16" name="凤翔饰品店" shelf_1="饰品" />
+    <Shop id="17" name="凤翔药品店" shelf_1="药品" />
+    <Shop id="18" name="凤翔食品店" shelf_1="食品" />
+    <Shop id="19" name="凤翔杂货店" shelf_1="杂货" />
+    <Shop id="20" name="凤翔宝石店" shelf_1="宝石" />
+    <Shop id="21" name="涿鹿武器店" shelf_1="武器" />
+    <Shop id="22" name="涿鹿铠甲店" shelf_1="铠甲" />
+    <Shop id="23" name="涿鹿布甲店" shelf_1="布甲" />
+    <Shop id="24" name="涿鹿时装店" shelf_1="缺货" />
+    <Shop id="25" name="涿鹿饰品店" shelf_1="饰品" />
+    <Shop id="26" name="涿鹿药品店" shelf_1="药品" />
+    <Shop id="27" name="涿鹿食品店" shelf_1="食品" />
+    <Shop id="28" name="涿鹿杂货店" shelf_1="杂货" />
+    <Shop id="29" name="涿鹿宝石店" shelf_1="宝石" />
+    <Shop id="101" name="武器商人" shelf_1="武器" />
+    <Shop id="102" name="法器商人" shelf_1="法器" />
+    <Shop id="103" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="104" name="布衣商人" shelf_1="布衣" />
+    <Shop id="105" name="披风商人" shelf_1="披风" />
+    <Shop id="106" name="饰品商人" shelf_1="饰品" />
+    <Shop id="107" name="时装商人" shelf_1="时装材料" />
+    <Shop id="108" name="药品商人" shelf_1="药品" />
+    <Shop id="109" name="食品商人" shelf_1="食品" />
+    <Shop id="110" name="酒商" shelf_1="酒" />
+    <Shop id="111" name="灵兽商人" shelf_1="一级书" shelf_2="二级书" shelf_3="三级书" shelf_4="灵兽奇货" />
+    <Shop id="112" name="杂货商" shelf_1="杂货" shelf_2="异宝" shelf_3="武林秘籍" />
+    <Shop id="113" name="宝石商人" shelf_1="凿具" shelf_2="宝石" shelf_3="割刀" />
+    <Shop id="114" name="奇货商人" shelf_1="图样" />
+    <Shop id="115" name="礼品商人" shelf_1="礼品" />
+    <Shop id="116" name="杂货店" shelf_1="任务" />
+    <Shop id="117" name="杂货店" shelf_1="任务" />
+    <Shop id="118" name="狱卒" shelf_1="牢狱" />
+    <Shop id="119" name="杂货店" shelf_1="杂货" />
+    <Shop id="201" name="武器商人" shelf_1="武器" />
+    <Shop id="202" name="法器商人" shelf_1="法器" />
+    <Shop id="203" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="204" name="布衣商人" shelf_1="布衣" />
+    <Shop id="205" name="披风商人" shelf_1="披风" />
+    <Shop id="206" name="饰品商人" shelf_1="饰品" shelf_2="任务" />
+    <Shop id="207" name="时装商人" shelf_1="时装材料" />
+    <Shop id="208" name="药品商人" shelf_1="药品" />
+    <Shop id="209" name="食品商人" shelf_1="食品" shelf_2="任务" />
+    <Shop id="210" name="酒商" shelf_1="酒" />
+    <Shop id="211" name="灵兽商人" shelf_1="一级书" shelf_2="二级书" shelf_3="三级书" shelf_4="灵兽奇货" />
+    <Shop id="212" name="杂货商" shelf_1="杂货" shelf_2="异宝" />
+    <Shop id="213" name="宝石商人" shelf_1="凿具" shelf_2="宝石" shelf_3="割刀" />
+    <Shop id="214" name="奇货商人" shelf_1="图样" shelf_2="任务" />
+    <Shop id="215" name="礼品商人" shelf_1="礼品" />
+    <Shop id="216" name="神秘商人" shelf_1="任务" />
+    <Shop id="301" name="武器商人" shelf_1="武器" />
+    <Shop id="302" name="法器商人" shelf_1="法器" />
+    <Shop id="303" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="304" name="布衣商人" shelf_1="布衣" />
+    <Shop id="305" name="披风商人" shelf_1="披风" />
+    <Shop id="306" name="饰品商人" shelf_1="饰品" />
+    <Shop id="307" name="时装商人" shelf_1="时装材料" />
+    <Shop id="308" name="药品商人" shelf_1="药品" />
+    <Shop id="309" name="食品商人" shelf_1="食品" />
+    <Shop id="310" name="酒商" shelf_1="酒商" shelf_2="任务" />
+    <Shop id="311" name="灵兽商人" shelf_1="一级书" shelf_2="二级书" shelf_3="三级书" shelf_4="灵兽奇货" />
+    <Shop id="312" name="杂货商" shelf_1="杂货" shelf_2="异宝" shelf_3="武林秘籍" />
+    <Shop id="313" name="宝石商人" shelf_1="宝石" shelf_2="割刀" />
+    <Shop id="314" name="奇货商人" shelf_1="图样" />
+    <Shop id="315" name="礼品商人" shelf_1="礼品" />
+    <Shop id="316" name="胭脂商" shelf_1="任务" />
+    <Shop id="317" name="小道童" shelf_1="任务" />
+    <Shop id="318" name="灵兽技能补遗商" shelf_1="携带30" shelf_2="携带50" shelf_3="携带70" shelf_4="携带80" />
+    <Shop id="401" name="武器商人" shelf_1="武器" />
+    <Shop id="402" name="法器商人" shelf_1="法器" />
+    <Shop id="403" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="404" name="布衣商人" shelf_1="布衣" />
+    <Shop id="405" name="披风商人" shelf_1="披风" />
+    <Shop id="406" name="饰品商人" shelf_1="饰品" />
+    <Shop id="407" name="时装商人" shelf_1="时装材料" />
+    <Shop id="408" name="药品商人" shelf_1="药品" />
+    <Shop id="409" name="食品商人" shelf_1="食品" shelf_2="任务" />
+    <Shop id="410" name="酒商" shelf_1="酒商" />
+    <Shop id="411" name="灵兽商人" shelf_1="一级书" shelf_2="二级书" shelf_3="三级书" shelf_4="灵兽奇货" />
+    <Shop id="412" name="杂货商" shelf_1="杂货" shelf_2="异宝" />
+    <Shop id="413" name="宝石商人" shelf_1="宝石" shelf_2="割刀" />
+    <Shop id="414" name="奇货商人" shelf_1="图样" />
+    <Shop id="415" name="礼品商人" shelf_1="礼品" />
+    <Shop id="416" name="三峡诗人" shelf_1="诗集" />
+    <Shop id="501" name="武器商人" shelf_1="武器" />
+    <Shop id="502" name="法器商人" shelf_1="法器" />
+    <Shop id="503" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="504" name="布衣商人" shelf_1="布衣" />
+    <Shop id="505" name="披风商人" shelf_1="披风" />
+    <Shop id="506" name="饰品商人" shelf_1="饰品" />
+    <Shop id="507" name="时装商人" shelf_1="时装材料" />
+    <Shop id="508" name="药品商人" shelf_1="药品" />
+    <Shop id="509" name="食品商人" shelf_1="食品" />
+    <Shop id="510" name="酒商" shelf_1="酒商" />
+    <Shop id="511" name="灵兽商人" shelf_1="一级书" shelf_2="二级书" shelf_3="三级书" shelf_4="灵兽奇货" />
+    <Shop id="512" name="杂货商" shelf_1="杂货" shelf_2="异宝" />
+    <Shop id="513" name="宝石商人" shelf_1="宝石" shelf_2="割刀" />
+    <Shop id="514" name="奇货商人" shelf_1="图样" />
+    <Shop id="515" name="礼品商人" shelf_1="礼品" />
+    <Shop id="516" name="稀有商人" shelf_1="任务" />
+    <Shop id="517" name="杂货商" shelf_1="杂货" shelf_2="异宝" />
+    <Shop id="601" name="武器商人" shelf_1="武器" />
+    <Shop id="602" name="法器商人" shelf_1="法器" />
+    <Shop id="603" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="604" name="布衣商人" shelf_1="布衣" />
+    <Shop id="605" name="披风商人" shelf_1="披风" />
+    <Shop id="606" name="饰品商人" shelf_1="饰品" />
+    <Shop id="607" name="时装商人" shelf_1="时装材料" />
+    <Shop id="608" name="药品商人" shelf_1="药品" />
+    <Shop id="609" name="食品商人" shelf_1="食品" />
+    <Shop id="610" name="酒商" shelf_1="酒商" />
+    <Shop id="611" name="灵兽商人" shelf_1="一级书" shelf_2="二级书" shelf_3="三级书" shelf_4="灵兽奇货" />
+    <Shop id="612" name="杂货商" shelf_1="杂货" shelf_2="异宝" />
+    <Shop id="613" name="宝石商人" shelf_1="宝石" shelf_2="割刀" />
+    <Shop id="614" name="奇货商人" shelf_1="图样" />
+    <Shop id="615" name="礼品商人" shelf_1="礼品" />
+    <Shop id="701" name="武器商人" shelf_1="武器" />
+    <Shop id="702" name="法器商人" shelf_1="法器" />
+    <Shop id="703" name="铠甲商人" shelf_1="铠甲" />
+    <Shop id="704" name="布衣商人" shelf_1="布衣" />
+    <Shop id="705" name="披风商人" shelf_1="披风" />
+    <Shop id="706" name="饰品商人" shelf_1="饰品" />
+    <Shop id="707" name="药品商人" shelf_1="药品" />
+    <Shop id="1001" name="女娲氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1002" name="轩辕氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1003" name="神农氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1004" name="伏羲氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1005" name="三苗氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1006" name="九黎氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1007" name="月氏氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1008" name="共工氏族商人" shelf_1="铭纹图样" shelf_2="神兵" />
+    <Shop id="1009" name="女娲氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1010" name="轩辕氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1011" name="神农氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1012" name="伏羲氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1013" name="三苗氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1014" name="九黎氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1015" name="月氏氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1016" name="共工氏族装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1017" name="女娲氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1018" name="轩辕氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1019" name="神农氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1020" name="伏羲氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1021" name="三苗氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1022" name="九黎氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1023" name="月氏氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1024" name="共工氏族灵兽商人" shelf_1="坐骑" />
+    <Shop id="1025" name="女娲高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1026" name="轩辕高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1027" name="神农高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1028" name="伏羲高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1029" name="三苗高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1030" name="九黎高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1031" name="月氏高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1032" name="共工高级灵兽商人" shelf_1="坐骑" />
+    <Shop id="1033" name="女娲高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1034" name="轩辕高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1035" name="神农高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1036" name="伏羲高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1037" name="三苗高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1038" name="九黎高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1039" name="月氏高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1040" name="共工高级装备商" shelf_1="武器" shelf_2="防具" shelf_3="饰品" />
+    <Shop id="1101" name="女娲珍宝库" shelf_1="秘籍" />
+    <Shop id="1102" name="轩辕珍宝库" shelf_1="秘籍" />
+    <Shop id="1109" name="女娲神兵库" shelf_1="武器" />
+    <Shop id="1110" name="轩辕神兵库" shelf_1="武器" />
+    <Shop id="1201" name="女娲神迹" shelf_1="女娲神迹" shelf_2="职业套装" />
+    <Shop id="1202" name="轩辕神迹" shelf_1="轩辕神迹" shelf_2="职业套装" />
+    <Shop id="1203" name="三苗神迹" shelf_1="三苗神迹" shelf_2="职业套装" />
+    <Shop id="1204" name="九黎神迹" shelf_1="九黎神迹" shelf_2="职业套装" />
+    <Shop id="1205" name="伏羲神迹" shelf_1="伏羲神迹" shelf_2="职业套装" />
+    <Shop id="1301" name="竞技场神器商" shelf_1="神器" />
+    <Shop id="1302" name="竞技场外功防具商" shelf_1="外功防具" />
+    <Shop id="1303" name="竞技场内功防具商" shelf_1="内功防具" />
+    <Shop id="1304" name="竞技场饰品商" shelf_1="饰品" />
+    <Shop id="1305" name="竞技场宝石商" shelf_1="宝石" />
+    <Shop id="1306" name="竞技场印记商" shelf_1="印记" />
+    <Shop id="1307" name="竞技场仙令商" shelf_1="仙令" />
+    <Shop id="1308" name="竞技场低级装备商" shelf_1="武器" shelf_2="护甲" shelf_3="饰品" />
+    <Shop id="2001" name="鬼谷子" shelf_1="时装材料" shelf_2="通用材料" />
+    <Shop id="2002" name="吴道子" shelf_1="奇物" />
+    <Shop id="2003" name="祭典官员" shelf_1="奇物" />
+    <Shop id="2004" name="墨翟" shelf_1="灵兽技能" shelf_2="建设材料" shelf_3="奇物" />
+    <Shop id="2005" name="乱武商人" shelf_1="奇物" />
+    <Shop id="2006" name="阴司经略使" shelf_1="奇物" />
+    <Shop id="2007" name="降龙尊者" shelf_1="奇珍" />
+    <Shop id="2008" name="武夷代币2道具店" />
+    <Shop id="2009" name="武夷代币2稀有店" />
+    <Shop id="2010" name="武夷代币2装备店" />
+    <Shop id="2011" name="熔火堂仓库管事" shelf_1="除魔法器" shelf_2="生产心得" shelf_3="生产强化" />
+    <Shop id="2012" name="恶灵看守" shelf_1="灵药" />
+    <Shop id="2013" name="熔火堂补给商" shelf_1="妙药" shelf_2="杂货" />
+    <Shop id="2014" name="熔火堂民备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2015" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2016" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2017" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2018" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2019" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2020" name="战虚" shelf_1="搜奇猎珍" shelf_2="奇物灵兽" />
+    <Shop id="2021" name="宝石碎片兑换商" shelf_1="四级宝石" />
+    <Shop id="2022" name="战凌" shelf_1="精品军备" />
+    <Shop id="2023" name="寒玉精髓装备商" shelf_1="精品军备" />
+    <Shop id="2024" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2025" name="熔火堂军备商" shelf_1="兵备武器" shelf_2="兵备防具" shelf_3="兵备饰品" />
+    <Shop id="2026" name="鬼节商人" shelf_1="鬼节祭品" />
+    <Shop id="2027" name="神龙商人" shelf_1="神龙赐福" />
+    <Shop id="2028" name="新手界装备店" shelf_1="新手装备" />
+    <Shop id="2029" name="新手界装备店" shelf_1="新手装备" />
+    <Shop id="2030" name="新手界装备店" shelf_1="新手装备" />
+    <Shop id="2031" name="九黎财宝管事" shelf_1="九黎奇物" />
+    <Shop id="2032" name="生肖仙子" shelf_1="灵兽" />
+    <Shop id="2033" name="伏羲财宝管事" shelf_1="伏羲奇物" />
+    <Shop id="2034" name="禁城税收商店" shelf_1="禁城奇物" shelf_2="禁城珍宝" />
+    <Shop id="2035" name="演武场药品商" shelf_1="药品" />
+    <Shop id="2036" name="演武场杂货商" shelf_1="杂货" />
+    <Shop id="2037" name="演武场酒商" shelf_1="美酒" />
+    <Shop id="2038" name="宝石碎片兑换商" shelf_1="六级宝石" />
+    <Shop id="2039" name="世博纪念商人" shelf_1="世博奇物" />
+    <Shop id="2040" name="武烈" shelf_1="防" shelf_2="武" />
+    <Shop id="2041" name="禁城修炼补给商" shelf_1="妙药" />
+    <Shop id="2042" name="法宝商人" shelf_1="法宝" />
+    <Shop id="2043" name="冠军印章兑换人" shelf_1="法宝类" shelf_2="强化类" shelf_3="练级PK" shelf_4="其他类" />
+    <Shop id="2044" name="屈原的石像" shelf_1="兑换奖品" />
+    <Shop id="2045" name="冠军印章兑换人" shelf_1="法宝类" shelf_2="时限类" shelf_3="其他类" shelf_4="超绝类" />
+    <Shop id="2046" name="玉妹" shelf_1="七夕礼包" />
+    <Shop id="2047" name="吴刚" shelf_1="伐木工具" />
+    <Shop id="2048" name="下凡仙人·甲" shelf_1="重阳道具" />
+    <Shop id="2049" name="下凡仙人·乙" shelf_1="重阳道具" />
+    <Shop id="2050" name="下凡仙人·丙" shelf_1="重阳道具" />
+    <Shop id="2051" name="震珠界商店" shelf_1="奇货" />
+    <Shop id="2052" name="圣诞节特使" shelf_1="材料箱" />
+    <Shop id="2053" name="洞穴游商" shelf_1="游商道具" />
+    <Shop id="2054" name="洞穴装备商" shelf_1="外功装备" shelf_2="内功装备" shelf_3="羽灵" />
+    <Shop id="2055" name="神秘商人" shelf_1="神秘礼品" />
+    <Shop id="2056" name="魔神道具商" shelf_1="魔神礼品" />
+    <Shop id="2057" name="魔神道具商" shelf_1="魔神内丹" shelf_2="装备改造" />
+    <Shop id="2058" name="魔神外功装备商" shelf_1="70级" shelf_2="90级" shelf_3="110级" />
+    <Shop id="2059" name="魔神内功装备商" shelf_1="70级" shelf_2="90级" shelf_3="110级" />
+    <Shop id="2060" name="魔神时装商" shelf_1="时装(男)" shelf_2="时装(女)" />
+    <Shop id="2061" name="魔神宝石商" shelf_1="魔神宝石" />
+    <Shop id="2062" name="夺旗比赛商" shelf_1="魔神激斗" />
+    <Shop id="2063" name="五级凝石碎片兑换商" shelf_1="五级宝石" />
+    <Shop id="2064" name="六级凝石碎片兑换商" shelf_1="六级宝石" />
+    <Shop id="2065" name="七级凝石碎片兑换商" shelf_1="七级宝石" />
+    <Shop id="2066" name="阳神灵符商人" shelf_1="阳神灵符" />
+    <Shop id="2067" name="阳神使者商人" shelf_1="杂货" />
+    <Shop id="2068" name="宠物消耗品商人" shelf_1="宠物商品" />
+    <Shop id="2069" name="羽灵消耗商人" shelf_1="羽灵商品" />
+    <Shop id="2070" name="宝石消耗商人" shelf_1="宝石消耗" shelf_2="神石消耗" />
+    <Shop id="2071" name="时装消耗商人" shelf_1="时装染色" />
+    <Shop id="2072" name="药品消耗商人" shelf_1="药品" />
+    <Shop id="2073" name="超神装备商人" shelf_1="神衣碎片" />
+    <Shop id="2074" name="超神武器商人" shelf_1="仿神器" />
+    <Shop id="2075" name="生产强化消耗商人" shelf_1="生产材料" shelf_2="熔剂" />
+    <Shop id="2076" name="帮派消耗商人" shelf_1="帮派资材" />
+    <Shop id="2077" name="元神装备商人" shelf_1="元神装备" />
+    <Shop id="2078" name="神秘仙人" shelf_1="国庆活动" />
+    <Shop id="2079" name="元神契合商人" shelf_1="契合石" />
+    <Shop id="2080" name="杂货商人" shelf_1="药品" shelf_2="杂货" shelf_3="强化" />
+    <Shop id="2081" name="装备商人" shelf_1="装备" />
+    <Shop id="2082" name="武器商人" shelf_1="武器" />
+    <Shop id="2083" name="秘踪商人" shelf_1="特殊" />
+    <Shop id="2084" name="守卫龙珠兑换人" shelf_1="道具" />
+    <Shop id="2085" name="守卫龙珠兑换人" shelf_1="装备" />
+    <Shop id="2086" name="守卫龙珠兑换人" shelf_1="道具" />
+    <Shop id="2087" name="杂货商人" shelf_1="药品" shelf_2="杂货" shelf_3="强化" />
+    <Shop id="2088" name="杂货商人" shelf_1="药品" shelf_2="杂货" shelf_3="强化" />
+    <Shop id="2089" name="一级凝神碎片兑换商" shelf_1="一级宝石" />
+    <Shop id="2090" name="二级凝神碎片兑换商" shelf_1="二级宝石" />
+    <Shop id="2091" name="三级凝神碎片兑换商" shelf_1="三级宝石" />
+    <Shop id="2092" name="四级凝神碎片兑换商" shelf_1="四级宝石" />
+    <Shop id="2093" name="五级凝神碎片兑换商" shelf_1="五级宝石" />
+    <Shop id="2101" name="女娲元神使者" shelf_1="元神装备" />
+    <Shop id="2102" name="轩辕元神使者" shelf_1="元神装备" />
+    <Shop id="2103" name="三苗元神使者" shelf_1="元神装备" />
+    <Shop id="2104" name="九黎元神使者" shelf_1="元神装备" />
+    <Shop id="2105" name="伏羲元神使者" shelf_1="元神装备" />
+    <Shop id="9901" name="送福使者" shelf_1="新春福礼" />
+    <Shop id="9902" name="时装兑换" shelf_1="短暂惊喜" shelf_2="地老天荒" />
+    <Shop id="9903" name="伊人坊" shelf_1="女生专用" shelf_2="鲜花礼品" />
+    <Shop id="9904" name="仙器店" />
+    <Shop id="9905" name="仙器店" />
+    <Shop id="9906" name="仙器店" />
+    <Shop id="9907" name="仙器店" />
+</root>

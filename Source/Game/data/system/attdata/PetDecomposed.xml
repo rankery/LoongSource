@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <PetD id="0" itemid1="3304156" probability1="15000" itemid2="3304157" probability2="30" itemid3="-1" probability3="0" />
+    <PetD id="1" itemid1="3304156" probability1="45000" itemid2="3304157" probability2="80" itemid3="-1" probability3="0" />
+    <PetD id="2" itemid1="3304156" probability1="85000" itemid2="3304157" probability2="200" itemid3="-1" probability3="0" />
+    <PetD id="3" itemid1="3304156" probability1="125000" itemid2="3304157" probability2="1000" itemid3="-1" probability3="0" />
+    <PetD id="4" itemid1="3304156" probability1="185000" itemid2="3304157" probability2="5000" itemid3="-1" probability3="0" />
+</root>

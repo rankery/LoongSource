@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <enhance id="1" success_rate="10000" effect="400" fail_level="0" />
+    <enhance id="2" success_rate="9000" effect="800" fail_level="1" />
+    <enhance id="3" success_rate="7500" effect="1200" fail_level="1" />
+    <enhance id="4" success_rate="5500" effect="1600" fail_level="2" />
+    <enhance id="5" success_rate="3300" effect="2000" fail_level="3" />
+    <enhance id="6" success_rate="3300" effect="2600" fail_level="5" />
+    <enhance id="7" success_rate="3300" effect="3200" fail_level="5" />
+    <enhance id="8" success_rate="3300" effect="3800" fail_level="6" />
+    <enhance id="9" success_rate="3300" effect="4400" fail_level="7" />
+    <enhance id="10" success_rate="3300" effect="5000" fail_level="8" />
+    <enhance id="11" success_rate="2900" effect="6000" fail_level="10" />
+    <enhance id="12" success_rate="2900" effect="7000" fail_level="10" />
+    <enhance id="13" success_rate="2900" effect="8000" fail_level="11" />
+    <enhance id="14" success_rate="2900" effect="9000" fail_level="12" />
+    <enhance id="15" success_rate="2900" effect="10000" fail_level="13" />
+</root>

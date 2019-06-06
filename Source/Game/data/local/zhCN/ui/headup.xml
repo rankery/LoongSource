@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="headup" ClassName="CGUIStatic" LogicPos_x="340" LogicPos_y="272" Size_x="16" Size_y="16" Font="小三楷体" TextRect_right="16" TextRect_bottom="16" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFFFF" />
+</desktop>

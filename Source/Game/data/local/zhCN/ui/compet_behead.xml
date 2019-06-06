@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="try_behead_win" ClassName="CGUIWindow" LogicPos_x="228" LogicPos_y="230" Size_x="554" Size_y="283" PopupSound="window_popup">
+        <UIControl Name="try_behead_pic" ClassName="CGUIStatic" LogicPos_y="2" Size_x="553" Size_y="281" Font="小三楷体" TextRect_right="128" TextRect_bottom="128" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicFileName="data\ui\compose\l-compose.bmp" PicRect_top="643" PicRect_right="553" PicRect_bottom="926" PicColor="0xFFFFFFFF" AlphaWrite="Write">
+            <UIControl Name="num" ClassName="CGUIStatic" BottomMost="yes" LogicPos_x="65" LogicPos_y="23" Size_x="201" Size_y="243" Font="小三楷体" TextRect_right="114" TextRect_bottom="164" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+        </UIControl>
+    </UIControl>
+</desktop>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <city id="3" clan_type="6" shell_city="m03" kernel_city="c03" min_sigfare="1000000" default_defence="3000" activityid="70" fund_output="600000" material_output="100" item_type_1="3300104" item_num_1="50" item_limit_1="50" item_type_2="3304004" item_num_2="3" item_limit_2="50" item_type_3="3304005" item_num_3="3" item_limit_3="50" item_type_4="3304006" item_num_4="3" item_limit_4="50" item_type_5="3304007" item_num_5="3" item_limit_5="50" />
+</root>

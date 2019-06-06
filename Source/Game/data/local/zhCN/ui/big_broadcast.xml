@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="broadcast_win" ClassName="CGUIWindow" CanMoveOutOfFather="yes" BottomMost="yes" LogicPos_x="365" LogicPos_y="225" Size_x="860" Size_y="140" AlignControl="\desktop" AlignType="Center" AlignOffset_x="75" AlignOffset_y="-130" PopupSound="window_popup">
+        <UIControl Name="broadword1" ClassName="CGUIStaticEx" CanMoveOutOfFather="yes" LogicPos_x="-2" LogicPos_y="55" Size_x="860" Size_y="55" Font="小黑雅黑" FontHeight="20" TextRect_right="860" TextRect_bottom="55" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextWriteAlpha="yes" PicColor="0xFFFFFF" RowHeight="2" />
+        <UIControl Name="broadword2" ClassName="CGUIStaticEx" CanMoveOutOfFather="yes" LogicPos_x="-3" LogicPos_y="59" Size_x="860" Size_y="25" Font="小黑雅黑" FontHeight="20" TextRect_right="860" TextRect_bottom="25" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="Center" PicColor="0xFFFFFF" RowHeight="2" />
+        <UIControl Name="broadword0" ClassName="CGUIStaticEx" CanMoveOutOfFather="yes" LogicPos_x="-2" LogicPos_y="3" Size_x="860" Size_y="50" Font="小黑雅黑" FontHeight="20" TextRect_right="860" TextRect_bottom="50" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextWriteAlpha="yes" PicColor="0xFFFFFF" RowHeight="2" />
+    </UIControl>
+</desktop>

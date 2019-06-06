@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <GoldEgg id="1" empty_pct="0" item_pct1="1400" item_pct2="1400" item_pct3="1000" item_pct4="1000" item_pct5="1000" item_pct6="1000" item_pct7="800" item_pct8="800" item_pct9="800" item_pct10="800" />
+    <GoldEgg id="2" empty_pct="2000" item_pct1="1300" item_pct2="1300" item_pct3="1300" item_pct4="1300" item_pct5="1300" item_pct6="1000" item_pct7="1000" item_pct8="800" item_pct9="100" item_pct10="600" />
+    <GoldEgg id="3" empty_pct="4000" item_pct1="1000" item_pct2="1000" item_pct3="700" item_pct4="1400" item_pct5="1500" item_pct6="1500" item_pct7="1800" item_pct8="100" item_pct9="500" item_pct10="500" />
+    <GoldEgg id="4" empty_pct="5500" item_pct1="1200" item_pct2="1200" item_pct3="1200" item_pct4="900" item_pct5="1200" item_pct6="1200" item_pct7="1000" item_pct8="800" item_pct9="700" item_pct10="600" />
+    <GoldEgg id="5" empty_pct="7500" item_pct1="500" item_pct2="100" item_pct3="100" item_pct4="1400" item_pct5="1400" item_pct6="1400" item_pct7="1300" item_pct8="1300" item_pct9="1300" item_pct10="1200" />
+    <GoldEgg id="6" empty_pct="8500" item_pct1="100" item_pct2="100" item_pct3="100" item_pct4="100" item_pct5="600" item_pct6="3100" item_pct7="600" item_pct8="4100" item_pct9="600" item_pct10="600" />
+    <GoldEgg id="7" empty_pct="9700" item_pct1="1000" item_pct2="100" item_pct3="1000" item_pct4="100" item_pct5="100" item_pct6="2000" item_pct7="3000" item_pct8="400" item_pct9="400" item_pct10="1900" />
+</root>

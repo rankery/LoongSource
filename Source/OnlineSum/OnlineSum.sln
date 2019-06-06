@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OnlineSum", "OnlineSum\OnlineSum.vcproj", "{8367780E-0955-441E-86D0-EE46FE3A7BC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{23B484EF-96AE-4DE5-8C2D-3462F43A4FC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8367780E-0955-441E-86D0-EE46FE3A7BC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8367780E-0955-441E-86D0-EE46FE3A7BC6}.Debug|Win32.Build.0 = Debug|Win32
+		{8367780E-0955-441E-86D0-EE46FE3A7BC6}.Release|Win32.ActiveCfg = Release|Win32
+		{8367780E-0955-441E-86D0-EE46FE3A7BC6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 技能表名称xml映射 -->
+<root>
+    <Skill id="" name="" desc="" auto_normal_attack="" action_model="" icon="" prepare_action="" pre_sfx="" tag_pre_sfx="" atk_sfx="" tag_atk_sfx="" lch_sfx="" tag_lch_sfx="" batk_sfx="" num_batk_sfx="" next_desc="" sound="" action_blend=""/>
+    <Skill id="" name="" desc="" auto_normal_attack="" action_model="" icon="" prepare_action="" pre_sfx="" tag_pre_sfx="" atk_sfx="" tag_atk_sfx="" lch_sfx="" tag_lch_sfx="" batk_sfx="" num_batk_sfx="" next_desc="" sound="" action_blend=""/>
+</root>

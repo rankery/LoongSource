@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="quest_tagetwin" ClassName="CGUIWindow" Movable="yes" CanMoveOutOfFather="yes" LogicPos_x="1689" LogicPos_y="863" Size_x="226" Size_y="87" AlignControl="\desktop" AlignType="InnerRightBottom" AlignOffset_x="-5" AlignOffset_y="-80" PopupSound=" ">
+        <UIControl Name="qt_pic" ClassName="CGUIStatic" MoveFather="yes" Size_x="226" Size_y="87" AlignControl="\desktop\quest_tagetwin" Font="小白雅黑" FontHeight="18" TextRect_right="226" TextRect_bottom="87" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" TextWriteAlpha="yes" PicFileName="data\ui\sys\l_diban-a.bmp" PicColor="0x1FFFFFFF" AlphaWrite="Write">
+            <UIControl Name="outbutt" ClassName="CGUIButton" LogicPos_x="170" Size_x="56" Size_y="28" AlignControl="\desktop\quest_tagetwin\qt_pic" Text="离开" Font="小白雅黑" FontHeight="18" TextRect_right="55" TextRect_bottom="25" TextColor="0xFFFFF7E0" ShadeColor="0xFF290404" TextAlign="Center" PicFileName="data\ui\main\l-main02.bmp" PicRect_right="56" PicRect_bottom="28" PicColor="0xFFFFFFFF" AlphaWrite="Add" PushPicFileName="data\ui\main\l-main02.bmp" PushPicRect_top="56" PushPicRect_right="56" PushPicRect_bottom="84" PushPicColor="0xFFFFFFFF" PushTextColor="0xFFFFF7E0" PushShadeColor="0xFF290404" MovePicFileName="data\ui\main\l-main02.bmp" MovePicRect_top="28" MovePicRect_right="56" MovePicRect_bottom="56" MovePicColor="0xFFFFFFFF" MoveTextColor="0xFFFFF7E0" MoveShadeColor="0xFF290404" DisablePicColor="0xFFFFFFFF" DisableTextColor="0xFFC0C0C0" DisableShadeColor="0xFF290404" TopColor="0xFF000000" BottomColor="0xFFAFAFAF" />
+        </UIControl>
+    </UIControl>
+</desktop>

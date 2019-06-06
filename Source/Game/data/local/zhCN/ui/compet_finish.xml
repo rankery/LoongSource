@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="compet_finish_win" ClassName="CGUIWindow" LogicPos_x="802" LogicPos_y="346" Size_x="315" Size_y="58" AlignControl="\desktop" AlignType="Center" AlignOffset_y="-140" NotUseRenderTarget="yes" PopupSound="window_popup">
+        <UIControl Name="compet_finish_back" ClassName="CGUIStatic" Size_x="315" Size_y="58" Font="小三楷体" TextRect_right="315" TextRect_bottom="58" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicFileName="data\ui\compose\l-compose.bmp" PicRect_left="155" PicRect_top="929" PicRect_right="468" PicRect_bottom="986" PicColor="0xFFFFFFFF">
+            <UIControl Name="word" ClassName="CGUIStatic" LogicPos_x="27" LogicPos_y="10" Size_x="89" Size_y="38" Font="小白雅黑" FontHeight="27" FontWeight="1200" TextRect_right="89" TextRect_bottom="38" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" TextAlign="Center" PicColor="0xFFFFFF" />
+        </UIControl>
+    </UIControl>
+</desktop>

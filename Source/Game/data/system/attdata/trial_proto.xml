@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <trial id="1" capability="0" Item1ID="2000047" Item1Num="2" Item1Quality="0" Item2ID="2000247" Item2Num="2" Item2Quality="0" />
+    <trial id="2" capability="0" Item1ID="2000047" Item1Num="3" Item1Quality="0" Item2ID="2000247" Item2Num="3" Item2Quality="0" />
+    <trial id="3" capability="0" Item1ID="2000226" Item1Num="2" Item1Quality="0" Item2ID="2000026" Item2Num="2" Item2Quality="0" />
+    <trial id="4" capability="0" Item1ID="2000227" Item1Num="3" Item1Quality="0" Item2ID="2000027" Item2Num="3" Item2Quality="0" />
+    <trial id="5" capability="0" Item1ID="2000229" Item1Num="3" Item1Quality="0" Item2ID="2000029" Item2Num="3" Item2Quality="0" />
+    <trial id="6" capability="0" Item1ID="2220203" Item1Num="3" Item1Quality="0" Item2ID="2220204" Item2Num="1" Item2Quality="0" />
+    <trial id="7" capability="0" Item1ID="2611501" Item1Num="30" Item1Quality="0" Item2ID="2611502" Item2Num="2" Item2Quality="0" />
+    <trial id="8" capability="0" Item1ID="1350016" Item1Num="1" Item1Quality="0" Item2ID="1350001" Item2Num="2" Item2Quality="0" />
+    <trial id="9" capability="0" Item1ID="1350016" Item1Num="3" Item1Quality="0" Item2ID="1350002" Item2Num="2" Item2Quality="0" />
+    <trial id="10" capability="0" Item1ID="1350017" Item1Num="3" Item1Quality="0" Item2ID="1350002" Item2Num="5" Item2Quality="0" />
+    <trial id="11" capability="0" Item1ID="1352002" Item1Num="5" Item1Quality="0" Item2ID="1352003" Item2Num="5" Item2Quality="0" />
+    <trial id="12" capability="0" Item1ID="4300002" Item1Num="1" Item1Quality="0" Item2ID="4500001" Item2Num="1" Item2Quality="0" />
+    <trial id="13" capability="0" Item1ID="4300003" Item1Num="1" Item1Quality="0" Item2ID="4500001" Item2Num="3" Item2Quality="0" />
+    <trial id="14" capability="0" Item1ID="4300004" Item1Num="1" Item1Quality="0" Item2ID="4500002" Item2Num="1" Item2Quality="0" />
+    <trial id="15" capability="0" Item1ID="4300005" Item1Num="1" Item1Quality="0" Item2ID="4500002" Item2Num="2" Item2Quality="0" />
+    <trial id="16" capability="0" Item1ID="4300006" Item1Num="1" Item1Quality="0" Item2ID="4700004" Item2Num="10" Item2Quality="0" />
+    <trial id="17" capability="0" Item1ID="4100304" Item1Num="1" Item1Quality="0" Item2ID="4700005" Item2Num="10" Item2Quality="0" />
+    <trial id="18" capability="0" Item1ID="2005002" Item1Num="1" Item1Quality="0" Item2ID="2000243" Item2Num="2" Item2Quality="0" />
+    <trial id="19" capability="0" Item1ID="2005003" Item1Num="1" Item1Quality="0" Item2ID="2000243" Item2Num="4" Item2Quality="0" />
+    <trial id="20" capability="0" Item1ID="2005004" Item1Num="1" Item1Quality="0" Item2ID="2000243" Item2Num="6" Item2Quality="0" />
+    <trial id="21" capability="0" Item1ID="2005005" Item1Num="1" Item1Quality="0" Item2ID="2000243" Item2Num="8" Item2Quality="0" />
+    <trial id="22" capability="0" Item1ID="1230021" Item1Num="2" Item1Quality="0" Item2ID="2005201" Item2Num="3" Item2Quality="0" />
+    <trial id="23" capability="0" Item1ID="2004001" Item1Num="1" Item1Quality="0" Item2ID="2004002" Item2Num="1" Item2Quality="0" />
+    <trial id="24" capability="0" Item1ID="2004001" Item1Num="2" Item1Quality="0" Item2ID="2004002" Item2Num="2" Item2Quality="0" />
+    <trial id="25" capability="0" Item1ID="1420008" Item1Num="1" Item1Quality="0" Item2ID="1420012" Item2Num="1" Item2Quality="0" />
+    <trial id="26" capability="0" Item1ID="2005201" Item1Num="2" Item1Quality="0" Item2ID="2005301" Item2Num="2" Item2Quality="0" />
+    <trial id="27" capability="0" Item1ID="1230021" Item1Num="2" Item1Quality="0" Item2ID="2005301" Item2Num="3" Item2Quality="0" />
+    <trial id="28" capability="0" Item1ID="1230005" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="29" capability="0" Item1ID="3200115" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="30" capability="0" Item1ID="1340001" Item1Num="1" Item1Quality="0" Item2ID="3200701" Item2Num="1" Item2Quality="0" />
+    <trial id="31" capability="0" Item1ID="1340001" Item1Num="2" Item1Quality="0" Item2ID="3200701" Item2Num="1" Item2Quality="0" />
+    <trial id="32" capability="0" Item1ID="1340001" Item1Num="2" Item1Quality="0" Item2ID="3200562" Item2Num="2" Item2Quality="0" />
+    <trial id="33" capability="0" Item1ID="1340001" Item1Num="2" Item1Quality="0" Item2ID="3200563" Item2Num="2" Item2Quality="0" />
+    <trial id="34" capability="0" Item1ID="1340003" Item1Num="1" Item1Quality="0" Item2ID="3200564" Item2Num="2" Item2Quality="0" />
+    <trial id="35" capability="0" Item1ID="1340003" Item1Num="1" Item1Quality="0" Item2ID="3200636" Item2Num="2" Item2Quality="0" />
+    <trial id="36" capability="0" Item1ID="3200721" Item1Num="5" Item1Quality="0" Item2ID="3200637" Item2Num="5" Item2Quality="0" />
+    <trial id="37" capability="0" Item1ID="1340007" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="38" capability="0" Item1ID="1340009" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="39" capability="0" Item1ID="1340016" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="40" capability="0" Item1ID="3100001" Item1Num="2" Item1Quality="0" Item2Quality="0" />
+    <trial id="41" capability="0" Item1ID="3110001" Item1Num="2" Item1Quality="0" Item2Quality="0" />
+    <trial id="42" capability="0" Item1ID="3110101" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="1" Item2Quality="0" />
+    <trial id="43" capability="0" Item1ID="3110102" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="1" Item2Quality="0" />
+    <trial id="44" capability="0" Item1ID="3110103" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="2" Item2Quality="0" />
+    <trial id="45" capability="0" Item1ID="3110104" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="2" Item2Quality="0" />
+    <trial id="46" capability="0" Item1ID="3110105" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="5" Item2Quality="0" />
+    <trial id="47" capability="0" Item1ID="1320001" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="48" capability="0" Item1ID="1340011" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="49" capability="0" Item1ID="1340009" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="50" capability="0" Item1ID="1440203" Item1Num="1" Item1Quality="0" Item2ID="1441005" Item2Num="1" Item2Quality="0" />
+    <trial id="51" capability="0" Item1ID="3200562" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="52" capability="0" Item1ID="1340007" Item1Num="1" Item1Quality="0" Item2ID="1340009" Item2Num="1" Item2Quality="0" />
+    <trial id="53" capability="0" Item1ID="3200563" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="54" capability="0" Item1ID="1340007" Item1Num="1" Item1Quality="0" Item2ID="1340009" Item2Num="1" Item2Quality="0" />
+    <trial id="55" capability="0" Item1ID="3200564" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="56" capability="0" Item1ID="1340001" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="57" capability="0" Item1ID="1340001" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="58" capability="0" Item1ID="1340001" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="59" capability="0" Item1ID="1340008" Item1Num="1" Item1Quality="0" Item2ID="1340010" Item2Num="1" Item2Quality="0" />
+    <trial id="60" capability="0" Item1ID="3200636" Item1Num="2" Item1Quality="0" Item2Quality="0" />
+    <trial id="61" capability="0" Item1ID="1340008" Item1Num="1" Item1Quality="0" Item2ID="1340010" Item2Num="1" Item2Quality="0" />
+    <trial id="62" capability="0" Item1ID="3200637" Item1Num="3" Item1Quality="0" Item2Quality="0" />
+    <trial id="63" capability="0" Item1ID="3110201" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="1" Item2Quality="0" />
+    <trial id="64" capability="0" Item1ID="3110202" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="2" Item2Quality="0" />
+    <trial id="65" capability="0" Item1ID="3110203" Item1Num="1" Item1Quality="0" Item2ID="1340005" Item2Num="5" Item2Quality="0" />
+    <trial id="73" capability="0" Item1ID="3200604" Item1Num="1" Item1Quality="0" Item2Quality="0" />
+    <trial id="74" capability="0" Item1ID="3200605" Item1Num="1" Item1Quality="0" Item2ID="2220201" Item2Num="1" Item2Quality="0" />
+    <trial id="75" capability="0" Item1ID="3200606" Item1Num="1" Item1Quality="0" Item2ID="2220202" Item2Num="1" Item2Quality="0" />
+    <trial id="76" capability="0" Item1ID="3200640" Item1Num="1" Item1Quality="0" Item2ID="2220203" Item2Num="1" Item2Quality="0" />
+    <trial id="77" capability="0" Item1ID="3200641" Item1Num="1" Item1Quality="0" Item2ID="2220204" Item2Num="1" Item2Quality="0" />
+    <trial id="78" capability="0" Item1ID="1320001" Item1Num="3" Item1Quality="0" Item2Quality="0" />
+    <trial id="79" capability="0" Item1ID="1320001" Item1Num="3" Item1Quality="0" Item2ID="4300001" Item2Num="1" Item2Quality="0" />
+    <trial id="80" capability="0" Item1ID="1340001" Item1Num="1" Item1Quality="0" Item2ID="8900116" Item2Num="1" Item2Quality="4" />
+    <trial id="81" capability="0" Item1ID="2320022" Item1Num="10" Item1Quality="0" Item2Quality="0" />
+    <trial id="82" capability="0" Item1ID="2320023" Item1Num="10" Item1Quality="0" Item2Quality="0" />
+    <trial id="83" capability="0" Item1ID="2320024" Item1Num="10" Item1Quality="0" Item2Quality="0" />
+    <trial id="84" capability="0" Item1ID="2320025" Item1Num="10" Item1Quality="0" Item2Quality="0" />
+    <trial id="85" capability="0" Item1ID="8600018" Item1Num="1" Item1Quality="4" Item2ID="8600021" Item2Num="1" Item2Quality="3" />
+    <trial id="87" capability="0" Item1ID="3304004" Item1Num="5" Item1Quality="0" />
+    <trial id="88" capability="0" Item1ID="3304005" Item1Num="5" Item1Quality="0" />
+    <trial id="89" capability="0" Item1ID="3304006" Item1Num="5" Item1Quality="0" />
+    <trial id="90" capability="0" Item1ID="3304001" Item1Num="10" Item1Quality="0" />
+    <trial id="91" capability="0" Item1ID="3304001" Item1Num="20" Item1Quality="0" />
+    <trial id="92" capability="0" Item1ID="3304001" Item1Num="30" Item1Quality="0" />
+    <trial id="93" capability="0" Item1ID="3304014" Item1Num="1" Item1Quality="0" />
+    <trial id="94" capability="0" Item1ID="3304001" Item1Num="40" Item1Quality="0" />
+    <trial id="95" capability="0" Item1ID="1230022" Item1Num="2" Item1Quality="0" Item2ID="2005201" Item2Num="3" Item2Quality="0" />
+    <trial id="96" capability="0" Item1ID="1230022" Item1Num="2" Item1Quality="0" Item2ID="2005301" Item2Num="3" Item2Quality="0" />
+</root>

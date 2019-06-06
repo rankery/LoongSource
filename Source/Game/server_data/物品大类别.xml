@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<mall_title id="1" name1="生产材料"/>
+	<mall_title id="2" name1="装备强化"/>
+	<mall_title id="3" name1="法宝神器"/>
+	<mall_title id="4" name1="灵兽坐骑"/>
+	<mall_title id="5" name1="个性时装"/>
+	<mall_title id="6" name1="练级必备"/>
+	<mall_title id="7" name1="其它道具"/>
+	<mall_title id="8" name1="社保专页"/>
+</root>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <mall_title2 id="1" name1="稀有" mall_title_id="1" />
+    <mall_title2 id="2" name1="极品" mall_title_id="1" />
+    <mall_title2 id="3" name1="超绝" mall_title_id="1" />
+    <mall_title2 id="4" name1="特殊" mall_title_id="1" />
+    <mall_title2 id="5" name1="宝石" mall_title_id="2" />
+    <mall_title2 id="6" name1="辅助" mall_title_id="2" />
+    <mall_title2 id="7" name1="凿具" mall_title_id="2" />
+    <mall_title2 id="8" name1="飞升" mall_title_id="2" />
+    <mall_title2 id="9" name1="个性" mall_title_id="2" />
+    <mall_title2 id="10" name1="材料" mall_title_id="3" />
+    <mall_title2 id="11" name1="重铸" mall_title_id="3" />
+    <mall_title2 id="12" name1="祭魔石" mall_title_id="3" />
+    <mall_title2 id="13" name1="坐骑" mall_title_id="4" />
+    <mall_title2 id="14" name1="坐骑强化" mall_title_id="4" />
+    <mall_title2 id="15" name1="辅助" mall_title_id="4" />
+    <mall_title2 id="16" name1="辅助强化" mall_title_id="4" />
+    <mall_title2 id="17" name1="通用" mall_title_id="4" />
+    <mall_title2 id="18" name1="男装" mall_title_id="5" />
+    <mall_title2 id="19" name1="女装" mall_title_id="5" />
+    <mall_title2 id="20" name1="礼盒" mall_title_id="5" />
+    <mall_title2 id="21" name1="辅助" mall_title_id="5" />
+    <mall_title2 id="22" name1="回复" mall_title_id="6" />
+    <mall_title2 id="23" name1="洗点" mall_title_id="6" />
+    <mall_title2 id="24" name1="增益" mall_title_id="6" />
+    <mall_title2 id="25" name1="修炼" mall_title_id="6" />
+    <mall_title2 id="26" name1="经验" mall_title_id="6" />
+    <mall_title2 id="27" name1="传送存储" mall_title_id="7" />
+    <mall_title2 id="28" name1="PK辅助" mall_title_id="7" />
+    <mall_title2 id="29" name1="活动" mall_title_id="7" />
+    <mall_title2 id="30" name1="帮派交友" mall_title_id="7" />
+    <mall_title2 id="31" name1="特殊" mall_title_id="7" />
+    <mall_title2 id="32" name1="法宝" mall_title_id="3" />
+</root>

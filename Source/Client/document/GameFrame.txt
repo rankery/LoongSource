@@ -1,0 +1,15 @@
+
+此文档主要说明使用GameFrame需要注意的地方
+
+[GameFrame介绍]
+GameFrame即游戏框架，游戏编写时，为了统一功能，统一接口，对事件等重要数据进行统一管理，需要一个框架系统。
+GameFrameMgr就是这个框架系统的管理器。他管理着各种GameFrame。
+GameFrame可以理解为游戏的各个功能模块。他们之间有着各种逻辑关系。最主要的就是包含以及平行关系。
+例如LoginFrame与WorldFrame平行，WorldFrame包含CombatFrame等等
+
+[游戏事件]
+游戏中有着各种逻辑模块，而各种模块之间需要协调工作，他们通过GameEvent游戏事件进行通讯。
+在GameFrameMgr的系统里，所有游戏事件是各个GameFrame通过SendEvent直接发到GameFrameMgr，然后从根Frame一层
+一层逐级往下传递。每个GameFrame都有对事件的处理机会。
+游戏事件不同于VUI中的事件，关于VUI事件的传递和处理方式请参看vEngine中关于VUI的文档。
+

@@ -1,0 +1,2324 @@
+/** @mainpage
+
+<h1> TinyXML </h1>
+
+TinyXML is a simple, small, C++ XML parser that can be easily 
+integrated into other programs.
+
+<h2> What it does. </h2>
+	
+In brief, TinyXML parses an XML document, and builds from that a 
+Document Object Model (DOM) that can be read, modified, and saved.
+
+XML stands for "eXtensible Markup Language." It allows you to create 
+your own document markups. Where HTML does a very good job of marking 
+documents for browsers, XML allows you to define any kind of document 
+markup, for example a document that describes a "to do" list for an 
+organizer application. XML is a very structured and convenient format.
+All those random file formats created to store application data can 
+all be replaced with XML. One parser for everything.
+
+The best place for the complete, correct, and quite frankly hard to
+read spec is at <a href="http://www.w3.org/TR/2004/REC-xml-20040204/">
+http://www.w3.org/TR/2004/REC-xml-20040204/</a>. An intro to XML
+(that I really like) can be found at 
+<a href="http://skew.org/xml/tutorial/">http://skew.org/xml/tutorial</a>.
+
+There are different ways to access and interact with XML data.
+TinyXML uses a Document Object Model (DOM), meaning the XML data is parsed
+into a C++ objects that can be browsed and manipulated, and then 
+written to disk or another output stream. You can also construct an XML document 
+from scratch with C++ objects and write this to disk or another output
+stream.
+
+TinyXML is designed to be easy and fast to learn. It is two headers 
+and four cpp files. Simply add these to your project and off you go. 
+There is an example file - xmltest.cpp - to get you started. 
+
+TinyXML is released under the ZLib license, 
+so you can use it in open source or commercial code. The details
+of the license are at the top of every source file.
+
+TinyXML attempts to be a flexible parser, but with truly correct and
+compliant XML output. TinyXML should compile on any reasonably C++
+compliant system. It does not rely on exceptions or RTTI. It can be 
+compiled with or without STL support. TinyXML fully supports
+the UTF-8 encoding, and the first 64k character entities.
+
+
+<h2> What it doesn't do. </h2>
+
+TinyXML doesn't parse or use DTDs (Document Type Definitions) or XSLs
+(eXtensible Stylesheet Language.) There are other parsers out there 
+(check out www.sourceforge.org, search for XML) that are much more fully
+featured. But they are also much bigger, take longer to set up in
+your project, have a higher learning curve, and often have a more
+restrictive license. If you are working with browsers or have more
+complete XML needs, TinyXML is not the parser for you.
+
+The following DTD syntax will not parse at this time in TinyXML:
+
+@verbatim
+	<!DOCTYPE Archiv [
+	 <!ELEMENT Comment (#PCDATA)>
+	]>
+@endverbatim
+
+because TinyXML sees this as a !DOCTYPE node with an illegally 
+embedded !ELEMENT node. This may be addressed in the future.
+
+<h2> Tutorials. </h2>
+
+For the impatient, here is a tutorial to get you going. A great way to get started, 
+but it is worth your time to read this (very short) manual completely.
+
+- @subpage tutorial0
+
+<h2> Code Status.  </h2>
+
+TinyXML is mature, tested code. It is very stable. If you find
+bugs, please file a bug report on the sourceforge web site
+(www.sourceforge.net/projects/tinyxml). We'll get them straightened 
+out as soon as possible.
+
+There are some areas of improvement; please check sourceforge if you are
+interested in working on TinyXML.
+
+<h2> Related Projects </h2>
+
+TinyXML projects you may find useful! (Descriptions provided by the projects.)
+
+<ul>
+<li> <b>TinyXPath</b> (http://tinyxpath.sourceforge.net). TinyXPath is a small footprint 
+     XPath syntax decoder, written in C++.</li>
+<li> <b>TinyXML++</b> (http://code.google.com/p/ticpp/). TinyXML++ is a completely new 
+     interface to TinyXML that uses MANY of the C++ strengths. Templates, 
+	 exceptions, and much better error handling.</li>
+</ul>
+
+<h2> Features </h2>
+
+<h3> Using STL </h3>
+
+TinyXML can be compiled to use or not use STL. When using STL, TinyXML
+uses the std::string class, and fully supports std::istream, std::ostream,
+operator<<, and operator>>. Many API methods have both 'const char*' and
+'const std::string&' forms.
+
+When STL support is compiled out, no STL files are included whatsoever. All
+the string classes are implemented by TinyXML itself. API methods
+all use the 'const char*' form for input.
+
+Use the compile time #define:
+
+	TIXML_USE_STL
+
+to compile one version or the other. This can be passed by the compiler,
+or set as the first line of "tinyxml.h".
+
+Note: If compiling the test code in Linux, setting the environment
+variable TINYXML_USE_STL=YES/NO will control STL compilation. In the
+Windows project file, STL and non STL targets are provided. In your project,
+It's probably easiest to add the line "#define TIXML_USE_STL" as the first
+line of tinyxml.h.
+
+<h3> UTF-8 </h3>
+
+TinyXML supports UTF-8 allowing to manipulate XML files in any language. TinyXML
+also supports "legacy mode" - the encoding used before UTF-8 support and
+probably best described as "extended ascii".
+
+Normally, TinyXML will try to detect the correct encoding and use it. However,
+by setting the value of TIXML_DEFAULT_ENCODING in the header file, TinyXML
+can be forced to always use one encoding.
+
+TinyXML will assume Legacy Mode until one of the following occurs:
+<ol>
+	<li> If the non-standard but common "UTF-8 lead bytes" (0xef 0xbb 0xbf)
+		 begin the file or data stream, TinyXML will read it as UTF-8. </li>
+	<li> If the declaration tag is read, and it has an encoding="UTF-8", then
+		 TinyXML will read it as UTF-8. </li>
+	<li> If the declaration tag is read, and it has no encoding specified, then TinyXML will 
+		 read it as UTF-8. </li>
+	<li> If the declaration tag is read, and it has an encoding="something else", then TinyXML 
+		 will read it as Legacy Mode. In legacy mode, TinyXML will work as it did before. It's 
+		 not clear what that mode does exactly, but old content should keep working.</li>
+	<li> Until one of the above criteria is met, TinyXML runs in Legacy Mode.</li>
+</ol>
+
+What happens if the encoding is incorrectly set or detected? TinyXML will try
+to read and pass through text seen as improperly encoded. You may get some strange results or 
+mangled characters. You may want to force TinyXML to the correct mode.
+
+You may force TinyXML to Legacy Mode by using LoadFile( TIXML_ENCODING_LEGACY ) or
+LoadFile( filename, TIXML_ENCODING_LEGACY ). You may force it to use legacy mode all
+the time by setting TIXML_DEFAULT_ENCODING = TIXML_ENCODING_LEGACY. Likewise, you may 
+force it to TIXML_ENCODING_UTF8 with the same technique.
+
+For English users, using English XML, UTF-8 is the same as low-ASCII. You
+don't need to be aware of UTF-8 or change your code in any way. You can think
+of UTF-8 as a "superset" of ASCII.
+
+UTF-8 is not a double byte format - but it is a standard encoding of Unicode!
+TinyXML does not use or directly support wchar, TCHAR, or Microsoft's _UNICODE at this time. 
+It is common to see the term "Unicode" improperly refer to UTF-16, a wide byte encoding
+of unicode. This is a source of confusion.
+
+For "high-ascii" languages - everything not English, pretty much - TinyXML can
+handle all languages, at the same time, as long as the XML is encoded
+in UTF-8. That can be a little tricky, older programs and operating systems
+tend to use the "default" or "traditional" code page. Many apps (and almost all
+modern ones) can output UTF-8, but older or stubborn (or just broken) ones
+still output text in the default code page. 
+
+For example, Japanese systems traditionally use SHIFT-JIS encoding. 
+Text encoded as SHIFT-JIS can not be read by TinyXML. 
+A good text editor can import SHIFT-JIS and then save as UTF-8.
+
+The <a href="http://skew.org/xml/tutorial/">Skew.org link</a> does a great
+job covering the encoding issue.
+
+The test file "utf8test.xml" is an XML containing English, Spanish, Russian,
+and Simplified Chinese. (Hopefully they are translated correctly). The file
+"utf8test.gif" is a screen capture of the XML file, rendered in IE. Note that
+if you don't have the correct fonts (Simplified Chinese or Russian) on your
+system, you won't see output that matches the GIF file even if you can parse
+it correctly. Also note that (at least on my Windows machine) console output
+is in a Western code page, so that Print() or printf() cannot correctly display
+the file. This is not a bug in TinyXML - just an OS issue. No data is lost or 
+destroyed by TinyXML. The console just doesn't render UTF-8.
+
+
+<h3> Entities </h3>
+TinyXML recognizes the pre-defined "character entities", meaning special
+characters. Namely:
+
+@verbatim
+	&amp;	&
+	&lt;	<
+	&gt;	>
+	&quot;	"
+	&apos;	'
+@endverbatim
+
+These are recognized when the XML document is read, and translated to there
+UTF-8 equivalents. For instance, text with the XML of:
+
+@verbatim
+	Far &amp; Away
+@endverbatim
+
+will have the Value() of "Far & Away" when queried from the XmlText object,
+and will be written back to the XML stream/file as an ampersand. Older versions
+of TinyXML "preserved" character entities, but the newer versions will translate
+them into characters.
+
+Additionally, any character can be specified by its Unicode code point:
+The syntax "&#xA0;" or "&#160;" are both to the non-breaking space characher.
+
+<h3> Printing </h3>
+TinyXML can print output in several different ways that all have strengths and limitations.
+
+- Print( FILE* ). Output to a std-C stream, which includes all C files as well as stdout.
+	- "Pretty prints", but you don't have control over printing options.
+	- The output is streamed directly to the FILE object, so there is no memory overhead
+	  in the TinyXML code.
+	- used by Print() and SaveFile()
+
+- operator<<. Output to a c++ stream.
+	- Integrates with standart C++ iostreams.
+	- Outputs in "network printing" mode without line breaks. Good for network transmission
+	  and moving XML between C++ objects, but hard for a human to read.
+
+- XmlPrinter. Output to a std::string or memory buffer.
+	- API is less concise
+	- Future printing options will be put here.
+	- Printing may change slightly in future versions as it is refined and expanded.
+
+<h3> Streams </h3>
+With TIXML_USE_STL on TinyXML supports C++ streams (operator <<,>>) streams as well
+as C (FILE*) streams. There are some differences that you may need to be aware of.
+
+C style output:
+	- based on FILE*
+	- the Print() and SaveFile() methods
+
+	Generates formatted output, with plenty of white space, intended to be as 
+	human-readable as possible. They are very fast, and tolerant of ill formed 
+	XML documents. For example, an XML document that contains 2 root elements 
+	and 2 declarations, will still print.
+
+C style input:
+	- based on FILE*
+	- the Parse() and LoadFile() methods
+
+	A fast, tolerant read. Use whenever you don't need the C++ streams.
+
+C++ style output:
+	- based on std::ostream
+	- operator<<
+
+	Generates condensed output, intended for network transmission rather than
+	readability. Depending on your system's implementation of the ostream class,
+	these may be somewhat slower. (Or may not.) Not tolerant of ill formed XML:
+	a document should contain the correct one root element. Additional root level
+	elements will not be streamed out.
+
+C++ style input:
+	- based on std::istream
+	- operator>>
+
+	Reads XML from a stream, making it useful for network transmission. The tricky
+	part is knowing when the XML document is complete, since there will almost
+	certainly be other data in the stream. TinyXML will assume the XML data is
+	complete after it reads the root element. Put another way, documents that
+	are ill-constructed with more than one root element will not read correctly.
+	Also note that operator>> is somewhat slower than Parse, due to both 
+	implementation of the STL and limitations of TinyXML.
+
+<h3> White space </h3>
+The world simply does not agree on whether white space should be kept, or condensed.
+For example, pretend the '_' is a space, and look at "Hello____world". HTML, and 
+at least some XML parsers, will interpret this as "Hello_world". They condense white
+space. Some XML parsers do not, and will leave it as "Hello____world". (Remember
+to keep pretending the _ is a space.) Others suggest that __Hello___world__ should become
+Hello___world.
+
+It's an issue that hasn't been resolved to my satisfaction. TinyXML supports the
+first 2 approaches. Call XmlBase::SetCondenseWhiteSpace( bool ) to set the desired behavior.
+The default is to condense white space.
+
+If you change the default, you should call XmlBase::SetCondenseWhiteSpace( bool )
+before making any calls to Parse XML data, and I don't recommend changing it after
+it has been set.
+
+
+<h3> Handles </h3>
+
+Where browsing an XML document in a robust way, it is important to check
+for null returns from method calls. An error safe implementation can
+generate a lot of code like:
+
+@verbatim
+XmlElement* root = document.FirstChildElement( "Document" );
+if ( root )
+{
+	XmlElement* element = root->FirstChildElement( "Element" );
+	if ( element )
+	{
+		XmlElement* child = element->FirstChildElement( "Child" );
+		if ( child )
+		{
+			XmlElement* child2 = child->NextSiblingElement( "Child" );
+			if ( child2 )
+			{
+				// Finally do something useful.
+@endverbatim
+
+Handles have been introduced to clean this up. Using the XmlHandle class,
+the previous code reduces to:
+
+@verbatim
+XmlHandle docHandle( &document );
+XmlElement* child2 = docHandle.FirstChild( "Document" ).FirstChild( "Element" ).Child( "Child", 1 ).ToElement();
+if ( child2 )
+{
+	// do something useful
+@endverbatim
+
+Which is much easier to deal with. See XmlHandle for more information.
+
+
+<h3> Row and Column tracking </h3>
+Being able to track nodes and attributes back to their origin location
+in source files can be very important for some applications. Additionally,
+knowing where parsing errors occured in the original source can be very
+time saving.
+
+TinyXML can tracks the row and column origin of all nodes and attributes
+in a text file. The XmlBase::Row() and XmlBase::Column() methods return
+the origin of the node in the source text. The correct tabs can be 
+configured in XmlDocument::SetTabSize().
+
+
+<h2> Using and Installing </h2>
+
+To Compile and Run xmltest:
+
+A Linux Makefile and a Windows Visual C++ .dsw file is provided. 
+Simply compile and run. It will write the file demotest.xml to your 
+disk and generate output on the screen. It also tests walking the
+DOM by printing out the number of nodes found using different 
+techniques.
+
+The Linux makefile is very generic and runs on many systems - it 
+is currently tested on mingw and
+MacOSX. You do not need to run 'make depend'. The dependecies have been
+hard coded.
+
+<h3>Windows project file for VC6</h3>
+<ul>
+<li>tinyxml:		tinyxml library, non-STL </li>
+<li>tinyxmlSTL:		tinyxml library, STL </li>
+<li>tinyXmlTest:	test app, non-STL </li>
+<li>tinyXmlTestSTL: test app, STL </li>
+</ul>
+
+<h3>Makefile</h3>
+At the top of the makefile you can set:
+
+PROFILE, DEBUG, and TINYXML_USE_STL. Details (such that they are) are in
+the makefile.
+
+In the tinyxml directory, type "make clean" then "make". The executable
+file 'xmltest' will be created.
+
+
+
+<h3>To Use in an Application:</h3>
+
+Add tinyxml.cpp, tinyxml.h, tinyxmlerror.cpp, tinyxmlparser.cpp, tinystr.cpp, and tinystr.h to your
+project or make file. That's it! It should compile on any reasonably
+compliant C++ system. You do not need to enable exceptions or
+RTTI for TinyXML.
+
+
+<h2> How TinyXML works.  </h2>
+
+An example is probably the best way to go. Take:
+@verbatim
+	<?xml version="1.0" standalone=no>
+	<!-- Our to do list data -->
+	<ToDo>
+		<Item priority="1"> Go to the <bold>Toy store!</bold></Item>
+		<Item priority="2"> Do bills</Item>
+	</ToDo>
+@endverbatim
+
+Its not much of a To Do list, but it will do. To read this file 
+(say "demo.xml") you would create a document, and parse it in:
+@verbatim
+	XmlDocument doc( "demo.xml" );
+	doc.LoadFile();
+@endverbatim
+
+And its ready to go. Now lets look at some lines and how they 
+relate to the DOM.
+
+@verbatim
+<?xml version="1.0" standalone=no>
+@endverbatim
+
+	The first line is a declaration, and gets turned into the
+	XmlDeclaration class. It will be the first child of the
+	document node.
+	
+	This is the only directive/special tag parsed by by TinyXML.
+	Generally directive tags are stored in XmlUnknown so the 
+	commands wont be lost when it is saved back to disk.
+
+@verbatim
+<!-- Our to do list data -->
+@endverbatim
+
+	A comment. Will become a XmlComment object.
+
+@verbatim
+<ToDo>
+@endverbatim
+
+	The "ToDo" tag defines a XmlElement object. This one does not have 
+	any attributes, but does contain 2 other elements.
+
+@verbatim
+<Item priority="1"> 
+@endverbatim
+
+	Creates another XmlElement which is a child of the "ToDo" element. 
+	This element has 1 attribute, with the name "priority" and the value 
+	"1".
+
+@verbatim
+Go to the
+@endverbatim 
+
+	A XmlText. This is a leaf node and cannot contain other nodes. 
+	It is a child of the "Item" XmlElement.
+
+@verbatim
+<bold>
+@endverbatim
+
+	
+	Another XmlElement, this one a child of the "Item" element.
+
+Etc.
+
+Looking at the entire object tree, you end up with:
+@verbatim
+XmlDocument					"demo.xml"
+	XmlDeclaration			"version='1.0'" "standalone=no"
+	XmlComment				" Our to do list data"
+	XmlElement				"ToDo"
+		XmlElement			"Item" Attribtutes: priority = 1
+			XmlText			"Go to the "
+			XmlElement		"bold"
+				XmlText		"Toy store!"
+		XmlElement			"Item" Attributes: priority=2
+			XmlText			"Do bills"
+@endverbatim
+
+<h2> Documentation </h2>
+
+The documentation is build with Doxygen, using the 'dox' 
+configuration file.
+
+<h2> License </h2>
+
+TinyXML is released under the zlib license:
+
+This software is provided 'as-is', without any express or implied 
+warranty. In no event will the authors be held liable for any 
+damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any 
+purpose, including commercial applications, and to alter it and 
+redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must 
+not claim that you wrote the original software. If you use this 
+software in a product, an acknowledgment in the product documentation 
+would be appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and 
+must not be misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source 
+distribution.
+
+<h2> References  </h2>
+
+The World Wide Web Consortium is the definitive standard body for 
+XML, and there web pages contain huge amounts of information. 
+
+The definitive spec: <a href="http://www.w3.org/TR/2004/REC-xml-20040204/">
+http://www.w3.org/TR/2004/REC-xml-20040204/</a>
+
+I also recommend "XML Pocket Reference" by Robert Eckstein and published by 
+OReilly...the book that got the whole thing started.
+
+<h2> Contributors, Contacts, and a Brief History </h2>
+
+Thanks very much to everyone who sends suggestions, bugs, ideas, and 
+encouragement. It all helps, and makes this project fun. A special thanks
+to the contributors on the web pages that keep it lively.
+
+So many people have sent in bugs and ideas, that rather than list here 
+we try to give credit due in the "changes.txt" file.
+
+TinyXML was originally written by Lee Thomason. (Often the "I" still
+in the documentation.) Lee reviews changes and releases new versions,
+with the help of Yves Berquin, Andrew Ellerton, and the tinyXml community.
+
+We appreciate your suggestions, and would love to know if you 
+use TinyXML. Hopefully you will enjoy it and find it useful. 
+Please post questions, comments, file bugs, or contact us at:
+
+www.sourceforge.net/projects/tinyxml
+
+Lee Thomason, Yves Berquin, Andrew Ellerton
+*/
+
+
+TinyXml 文档
+2.5.2
+
+TinyXML 
+
+TinyXML是一个简单小巧，可以很容易集成到其它程序中的C++ XML解析器。 
+
+它能做些什么
+
+简单地说，TinyXML解析一个XML文档并由此生成一个可读可修改可保存的文档对象模型（DOM）。 
+XML的意思是“可扩展标记语言“（eXtensible Markup Language）。它允许你创建你自己的文档标记。在为浏览器标记文档方面
+HTML做得很好，然而XML允许你定义任何文档标记，比如可以为一个组织者应用程序定义一个描述“to do”列表的文档。 
+XML拥有一个结构化并且方便的格式，所有为存储应用程序数据而创建的随机文件格式都可以用XML代替，而这一切只需要一个解析器。 
+
+最全面正确的说明可以在http://www.w3.org/TR/2004/REC-xml-20040204/
+找到，但坦白地说，它很晦涩难懂。事实上我喜欢http://skew.org/xml/tutorial
+上关于XML的介绍。 
+
+有不同的方法可以访问和与XML数据进行交互。TinyXML使用文档对象模型（DOM），这意味着XML数据被解析成一个可被浏览和操作的
+C++对象，然后它可以被写到磁盘或者另一个输出流中。你也可以把C++对象构造成一个XML文档然后把它写到磁盘或者另一个输出流中。 
+
+TinyXML被设计得容易快速上手。它只有两个头文件和四个cpp文件。只需要把它们简单地加到你的项目中就行了。
+有一个例子文件——xmltest.cpp来引导你该怎么做。 
+
+TinyXML以Zlib许可来发布，所以你可以在开源或者商业软件中使用它。许可证更具体的描述在每个源代码文件的顶部可以找到。 
+
+TinyXML在保证正确和恰当的XML输出的基础上尝试成为一个灵活的解析器。TinyXML可以在任何合理的C++适用系统上编译。
+它不依赖于异常或者运行时类型信息，有没有STL支持都可以编译。TinyXML完全支持UTF-8编码和前64k个字符实体
+（<i>译注：如果你不明白这句译文，可能你需要了解一下Unicode编码</i>）。 
+
+它无法做些什么
+
+TinyXML不解析不使用DTDs（文档类型定义）或者XSLs（可扩展样式表语言）。
+有其它解析器（到www.sourceforge.org搜索一下XML）具有更加全面的特性，但它们也就更大，需要花更长的时间来建立你的项目，
+有更陡的学习曲线，而且经常有一个更严格的许可协议。如果你是用于浏览器或者有更复杂的XML需要，那么TinyXML不适合你。 
+
+下面的DTD语法在TinyXML里是不做解析的： 
+
+<!DOCTYPE Archiv [
+<!ELEMENT Comment (#PCDATA)>
+]>
+因为TinyXML把它看成是一个带着非法嵌入!ELEMENT结点的!DOCTYPE结点。或许这在将来会得到支持。 
+
+指南
+
+有耐性些，这是一份能很好地指导你怎么开始的指南，它（非常短小精悍）值得你花时间完整地读上一遍。 
+
+TinyXML指南
+代码状况
+
+TinyXML是成熟且经过测试的代码，非常健壮。如果你发现了漏洞，请提交漏洞报告到sourcefore网站上 
+（www.sourceforge.net/projects/tinyxml）。 我们会尽快修正。 
+
+有些地方可以让你得到提高，如果你对TinyXML的工作感兴趣的话可以上sourceforge查找一下。 
+
+相关项目
+
+你也许会觉得TinyXML很有用！（简介由项目提供） 
+
+TinyXPath (http://tinyxpath.sourceforge.net). TinyXPath是一个小巧的XPath语法译码器脚本，用C++写成。
+TinyXML++ (http://code.google.com/p/ticpp/). TinyXML++是一个全新的TinyXML接口，使用了许多诸如模板，
+异常处理和更好的错误处理这些C++强项技术。
+特性
+
+使用STL 
+
+TinyXML可以被编译成使用或不使用STL。如果使用STL，TinyXML会使用std::string类，而且完全支持
+std::istream，std::ostream，operator<<和operator>>。许多API方法都有 ‘const char*’和’const std::string&’两个版本。 
+
+如果被编译成不使用STL，则任何STL都不会被包含。所有string类都由TinyXML它自己实现。
+所有API方法都只提供’const char*’传入参数。 
+
+使用运行时定义： 
+
+TIXML_USE_STL 
+
+来编译成不同的版本。这可以作为参数传给编译器或者在“tinyxml.h”文件的第一行进行设置。 
+
+注意：如果在Linux上编译测试代码，设置环境变量TINYXML_USE_STL=YES/NO可以控制STL的编译。而在Windows上，
+项目文件提供了STL和非STL两种目标文件。在你的项目中，在tinyxml.h的第一行添加"#define TIXML_USE_STL"应该是最简单的。 
+
+UTF-8 
+
+TinyXML支持UTF-8，所以可以处理任何语言的XML文件，而且TinyXML也支持“legacy模式”——
+一种在支持UTF-8之前使用的编码方式，可能最好的解释是“扩展的ascii”。 
+
+正常情况下，TinyXML会检测出正确的编码并使用它，然而，通过设置头文件中的TIXML_DEFAULT_ENCODING值，
+TinyXML可以被强制成总是使用某一种编码。 
+
+除非以下情况发生，否则TinyXML会默认使用Legacy模式： 
+
+如果文件或者数据流以非标准但普遍的"UTF-8引导字节" (0xef 0xbb 0xbf)开始，TinyXML会以UTF-8的方式来读取它。
+如果包含有encoding="UTF-8"的声明被读取，那么TinyXML会以UTF-8的方式来读取它。
+如果读取到没有指定编码方式的声明，那么TinyXML会以UTF-8的方式来读取它。
+如果包含有encoding=“其它编码”的声明被读取，那么TinyXML会以Legacy模式来读取它。在Legacy模式下，TinyXML
+会像以前那样工作，虽然已经不是很清楚这种模式是如何工作的了，但旧的内容还得保持能够运行。
+除了上面提到的情况，TinyXML会默认运行在Legacy模式下。
+如果编码设置错误或者检测到错误会发生什么事呢？TinyXML会尝试跳过这些看似不正确的编码，你可能会得到一些奇
+怪的结果或者乱码，你可以强制TinyXML使用正确的编码模式。 
+
+通过使用LoadFile( TIXML_ENCODING_LEGACY )或者LoadFile( filename, TIXML_ENCODING_LEGACY )， 你可以强制
+TinyXML使用Legacy模式。你也可以通过设置TIXML_DEFAULT_ENCODING = TIXML_ENCODING_LEGACY来强制一直使用Legacy模式。
+同样的，你也可以通过相同的方法来强制设置成TIXML_ENCODING_UTF8。 
+
+对于使用英文XML的英语用户来说，UTF-8跟low-ASCII是一样的。你不需要知道UTF-8或者一点也不需要修改你的代码。
+你可以把UTF-8当作是ASCII的超集。 
+
+UTF-8并不是一种双字节格式，但它是一种标准的Unicode编码！TinyXML当前不使用或者直接支持wchar，TCHAR，
+或者微软的_UNICODE。"Unicode"这个术语被普遍地认为指的是UTF-16（一种unicode的宽字节编码）是不适当的，
+这是混淆的来源。 
+
+对于“high-ascii”语言来说——几乎所有非英语语言，只要XML被编码成UTF-8， TinyXML就能够处理。
+说起来可能有点微妙，比较旧的程序和操作系统趋向于使用“默认”或者“传统”的编码方式。
+许多应用程序（和几乎所有现在的应用程序）都能够输出UTF-8，但是那些比较旧或者难处理的（或者干脆不能使用的）
+系统还是只能以默认编码来输出文本。 
+
+比如说，日本的系统传统上使用SHIFT-JIS编码，这种情况下TinyXML就无法读取了。但是一个好的文本编辑器可以
+导入SHIFT-JIS的文本然后保存成UTF-8编码格式的。 
+
+Skew.org link上关于转换编码的话题做得很好。 
+
+测试文件“utf8test.xml”包含了英文、西班牙文、俄文和简体中文（希望它们都能够被正确地转化）。
+“utf8test.gif”文件是从IE上截取的XML文件快照。请注意如果你的系统上没有正确的字体（简体中文或者俄文），
+那么即使你正确地解析了也看不到与GIF文件上一样的输出。同时要注意在一个西方编码的控制台上
+（至少我的Windows机器是这样），Print()或者printf()也无法正确地显示这个文件，这不关TinyXML的事
+——这只是操作系统的问题。TinyXML没有丢掉或者损坏数据，只是控制台无法显示UTF-8而已。 
+
+实体
+
+TinyXML认得预定义的特殊“字符实体”，即： 
+
+
+&amp; &
+&lt; <
+&gt; >
+&quot; "
+&apos; ‘ 
+这些在XML文档读取时都会被辨认出来，并会被转化成等价的UTF-8字符。比如下面的XML文本： 
+
+
+Far &amp; Away 
+从XmlText 对象查询出来时会变成"Far & Away"这样的值，而写回XML流/文件时会以“&amp;”的方式写回。
+老版本的TinyXML“保留”了字符实体，而在新版本中它们会被转化成字符串。 
+
+另外，所有字符都可以用它的Unicode编码数字来指定， "&#xA0;"和"&#160;"都表示不可分的空格字符。 
+
+打印
+
+TinyXML有几种不同的方式来打印输出，当然它们各有各的优缺点。 
+
+Print( FILE* )：输出到一个标准C流中，包括所有的C文件和标准输出。
+"相当漂亮的打印", 但你没法控制打印选项。
+输出数据直接写到FILE对象中，所以TinyXML代码没有内存负担。
+被Print()和SaveFile()调用。
+
+operator<<：输出到一个c++流中。
+与C++ iostreams集成在一起。
+在"network printing"模式下输出没有换行符，这对于网络传输和C++对象之间的XML交换有好处，但人很难阅读。
+XmlPrinter：输出到一个std::string或者内存缓冲区中。
+API还不是很简练。
+将来会增加打印选项。
+在将来的版本中可能有些细微的变化，因为它会被改进和扩展。
+流
+
+设置了TIXML_USE_STL，TinyXML就能支持C++流（operator <<，>>）和C（FILE*）流。但它们之间有些差异你需要知道： 
+
+C风格输出： 
+
+基于FILE*
+用Print()和SaveFile()方法
+生成具有很多空格的格式化过的输出，这是为了尽可能让人看得明白。它们非常快，而且能够容忍XML文档中的格式错误。
+例如一个XML文档包含两个根元素和两个声明仍然能被打印出来。 
+
+C风格输入：
+
+基于FILE*
+用Parse()和LoadFile()方法
+速度快，容错性好。当你不需要C++流时就可以使用它。 
+
+C++风格输出： 
+
+基于std::ostream
+operator<<
+生成压缩过的输出，目的是为了便于网络传输而不是为了可读性。它可能有些慢（可能不会），
+这主要跟你系统上ostream类的实现有关。无法容忍格式错误的XML：此文档只能包含一个根元素。
+另外根级别的元素无法以流形式输出。 
+
+C++风格输入： 
+
+基于std::istream
+operator>>
+从流中读取XML使其可用于网络传输。通过些小技巧，它知道当XML文档读取完毕时，流后面的就一定是其它数据了。
+TinyXML总假定当它读取到根结点后XML数据就结束了。换句话说，那些具有不止一个根元素的文档是无法被正确读取的。
+另外还要注意由于STL的实现和TinyXML的限制，operator>>会比Parse慢一些。 
+
+空格
+
+对是保留还是压缩空格这一问题人们还没达成共识。举个例子，假设‘_’代表一个空格，对于"Hello____world"，
+HTML和某些XML解析器会解释成"Hello_world"，它们压缩掉了一些空格。而有些XML解析器却不会这样，它们会保留空格，
+于是就是“Hello____world”（记住_表示一个空格）。其它的还建议__Hello___world__应该变成Hello___world 。 
+
+这是一个解决得不能让我满意的问题。TinyXML一开始就两种方式都支持。调用XmlBase::SetCondenseWhiteSpace( bool )
+来设置你想要的结果，默认是压缩掉多余的空格。 
+
+如果想要改变默认行为，你应该在解析任何XML数据之前调用XmlBase::SetCondenseWhiteSpace( bool ) ，
+而且我不建议设置之后再去改动它。 
+
+句柄
+
+想要健壮地读取一个XML文档，检查方法调用后的返回值是否为null是很重要的。一种安全的检错实现可能会产生像这样的代码： 
+
+
+XmlElement* root = document.FirstChildElement( "Document" );
+if ( root )
+{
+    XmlElement* element = root->FirstChildElement( "Element" );
+    if ( element )
+    {
+        XmlElement* child = element->FirstChildElement( "Child" );
+        if ( child )
+        {
+            XmlElement* child2 = child->NextSiblingElement( "Child" );
+            if ( child2 )
+            {
+                // Finally do something useful. 
+用句柄的话就不会这么冗长了，使用XmlHandle类，前面的代码就会变成这样： 
+
+
+XmlHandle docHandle( &document );
+XmlElement* child2 = docHandle.FirstChild( "Document" ).FirstChild( "Element" ).Child( "Child", 1 ).ToElement();
+if ( child2 )
+{
+    // do something useful 
+这处理起来容易多了。 查阅XmlHandle可以得到更多的信息。 
+
+行列追踪
+
+对于某些应用程序来说，能够追踪节点和属性在它们源文件中的原始位置是很重要的。另外，知道解析错误在源文件中
+的发生位置可以节省大量时间。 
+
+TinyXML能够追踪所有结点和属性在文本文件中的行列原始位置。XmlBase::Row() 和 XmlBase::Column() 方法返回
+结点在源文件中的原始位置。正确的制表符号可以经由XmlDocument::SetTabSize() 来配置。 
+
+使用与安装
+
+编译与运行xmltest： 
+
+提供了一个Linux Makefile和一个Windows Visual C++ .dsw 文件。只需要简单地编译和运行，它就会在你的磁盘上生成
+demotest.xml文件并在屏幕上输出。它还尝试用不同的方法遍历DOM并打印出结点数。 
+
+那个Linux makefile很通用，可以运行在很多系统上——它目前已经在mingw和MacOSX上测试过。你不需要运行 
+‘make depend’，因为那些依赖关系已经硬编码在文件里了。 
+
+用于VC6的Windows项目文件
+
+tinyxml： tinyxml 库，非STL
+tinyxmlSTL： tinyxml 库，STL
+tinyXmlTest： 用于测试的应用程序，非STL
+tinyXmlTestSTL： 用于测试的应用程序，STL
+Makefile
+
+在makefile的顶部你可以设置： 
+
+PROFILE，DEBUG，和TINYXML_USE_STL。makefile里有具体描述。 
+
+在tinyxml目录输入“make clean”然后“make”，就可以生成可执行的“xmltest”文件。 
+
+在某一应用程序中使用：
+
+把tinyxml.cpp，tinyxml.h， tinyxmlerror.cpp， tinyxmlparser.cpp， tinystr.cpp， 和 tinystr.h 添加到你的项
+目和makefile中。就这么简单，它可以在任何合理的C++适用系统上编译。不需要为TinyXML打开异常或者运行时类型信息支持。 
+
+TinyXML怎么工作
+
+举个例子可能是最好的办法，理解一下： 
+
+
+<?xml version="1.0" standalone=no>
+<!– Our to do list data –>
+<ToDo>
+<Item priority="1"> Go to the <bold>Toy store!</bold></Item>
+<Item priority="2"> Do bills</Item>
+</ToDo> 
+它称不上是一个To Do列表，但它已经足够了。像下面这样读取并解析这个文件（叫“demo.xml”）你就能创建一个文档： 
+
+XmlDocument doc( "demo.xml" );
+doc.LoadFile();
+
+现在它准备好了，让我们看看其中的某些行和它们怎么与DOM联系起来。 
+
+
+<?xml version="1.0" standalone=no> 
+第一行是一个声明，它会转化成XmlDeclaration 类，同时也是文档结点的第一个子结点。 
+
+这是TinyXML唯一能够解析的指令/特殊标签。一般来说指令标签会保存在XmlUnknown 以保证在它保存回磁盘时不会丢失这些命令。 
+
+
+<!– Our to do list data –> 
+这是一个注释，会成为一个XmlComment对象。 
+
+
+<ToDo> 
+"ToDo"标签定义了一个XmlElement 对象。它没有任何属性，但包含另外的两个元素。 
+
+
+<Item priority="1"> 
+生成另一个XmlElement对象，它是“ToDo”元素的子结点。此元素有一个名为“priority”和值为“1”的属性。 
+
+
+Go to the 
+XmlText ，这是一个叶子结点，它不能再包含其它结点，是"Item" XmlElement的子结点。 
+
+
+<bold> 
+另一个XmlElement, 这也是“Item”元素的子结点。 
+
+等等 
+
+最后，看看整个对象树： 
+
+
+XmlDocument "demo.xml"
+XmlDeclaration "version=’1.0′" "standalone=no"
+XmlComment " Our to do list data"
+XmlElement "ToDo"
+XmlElement "Item" Attribtutes: priority = 1
+XmlText "Go to the "
+XmlElement "bold"
+XmlText "Toy store!"
+XmlElement "Item" Attributes: priority=2
+XmlText "Do bills" 
+
+文档
+
+本文档由Doxygen使用‘dox’配置文件生成。 
+
+许可证
+
+TinyXML基于zlib许可证来发布： 
+
+本软件按“现状”提供（即现在你看到的样子），不做任何明确或隐晦的保证。由使用此软件所引起的任何损失都决不可能由作者承担。 
+
+只要遵循下面的限制，就允许任何人把这软件用于任何目的，包括商业软件，也允许修改它并自由地重新发布： 
+
+1. 决不能虚报软件的来源；你决不能声称是你是软件的第一作者。如果你在某个产品中使用了这个软件，那么在产品文档中加
+入一个致谢辞我们会很感激，但这并非必要。 
+
+2. 修改了源版本就应该清楚地标记出来，决不能虚报说这是原始软件。 
+
+3. 本通告不能从源发布版本中移除或做修改。 
+
+参考书目
+
+万维网联盟是定制XML的权威标准机构，它的网页上有大量的信息。 
+
+权威指南：http://www.w3.org/TR/2004/REC-xml-20040204/ 
+
+我还要推荐由OReilly出版由Robert Eckstein撰写的"XML Pocket Reference"……这本书囊括了入门所需要的一切。 
+
+捐助者，联系人，还有简史
+
+非常感谢给我们建议，漏洞报告，意见和鼓励的所有人。它们很有用，并且使得这个项目变得有趣。特别感谢那些捐助者，
+是他们让这个网站页面生机勃勃。 
+
+有很多人发来漏洞报告和意见，与其在这里一一列出来不如我们试着把它们写到“changes.txt”文件中加以赞扬。 
+
+TinyXML的原作者是Lee Thomason(文档中还经常出现“我”这个词) 。在Yves Berquin，Andrew Ellerton，
+和tinyXml社区的帮助下，Lee查阅修改和发布新版本。 
+
+我们会很感激你的建议，还有我们想知道你是否在使用TinyXML。希望你喜欢它并觉得它很有用。请邮寄问题，
+评论，漏洞报告给我们，或者你也可登录网站与我们取得联系： 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+解析XML的利器-TinyXML
+happykevins
+
+ 
+l        TinyXML简介
+TinyXML是目前非常流行的一款基于DOM模型的XML解析器，简单易用且小巧玲珑，非常适合存储简单数据，配置文件，
+对象序列化等数据量不是很大的操作，尤其适用于游戏开发，在Nebula2，CEGUI等开源项目中都有使用。
+本文的目的就是把这个好东东分享给大家：）
+
+ 
+
+l        关于DOM和SAX
+
+DOM - Document Object Model
+
+将整篇XML文档一次性解析并读入内存，保存为一个对象供用户访问。
+
+SAX - Simple API for XML
+
+SAX的XML解析方式是基于事件回调的，解析器在每遇到一个XML元素时都会产生一个事件，并执行由用户提供的处理函数。
+
+ 
+
+l        TinyXML类结构
+
+
+ 
+
+[XmlBase] 所有TinyXML类的基类，保存该结点或属性在XML原文中的信息。
+
+[XmlAttribute] XML结点属性，一个键值对
+
+[XmlNode] XML结点的基类，封装了对XML文档树形结构进行操作和维护的方法
+
+[XmlComment] XML注释结点
+
+[XmlDeclaration] XML声明结点
+
+[XmlDocument] XML文档结点（一般为一篇XML文档的根结点）
+
+[XmlElement] XML结点
+
+[XmlText] XML文本结点
+
+[XmlUnknown] 含有未知标签的XML结点
+
+[XmlHandle] 封装了一个结点的指针，在对该指针进行查询时将自动进行空指针交验
+
+[XmlVisitor] 遍历器接口，描述了每个节点的处理方法，由子类实现
+
+[XmlPrinter] Printer遍历器
+
+ 
+
+l        读取XML文件
+
+XmlDocument doc("test.xml");
+
+doc.LoadFile("test.xml");
+
+ 
+
+l        写入XML文件
+
+XmlDocument doc;
+
+……
+
+doc.SaveFile("test.xml");
+
+ 
+
+l        遍历XML文档
+
+首先以FirstChild获得第一个自节点，然后以NextSibling获取下个兄弟节点；如此递归遍历所有节点即可。
+
+XmlNode::FirstChild();
+
+XmlNode::NextSibling();
+
+ 
+
+l        构造XML文档
+
+将指定节点插入当前节点子节点队列的末尾
+
+XmlNode::LinkEndChild();
+
+设置指定节点的属性
+
+XmlElement::SetAttribute();
+
+XmlElement::SetDoubleAttribute();
+
+ 
+
+ 
+
+由于TinyXML本身就是以简单著称，所以我也不啰哩吧嗦介绍太多了，如果需要更多资料就去以下网址找吧：）
+
+
+
+
+
+
+
+/*
+   Test program for TinyXML.
+*/
+
+
+#ifdef TIXML_USE_STL
+	#include <iostream>
+	#include <sstream>
+	using namespace std;
+#else
+	#include <stdio.h>
+#endif
+
+#if defined( WIN32 ) && defined( TUNE )
+	#include <crtdbg.h>
+	_CrtMemState startMemState;
+	_CrtMemState endMemState;
+#endif
+
+#include "tinyxml.h"
+
+static int gPass = 0;
+static int gFail = 0;
+
+
+bool XmlTest (const char* testString, const char* expected, const char* found, bool noEcho = false)
+{
+	bool pass = !strcmp( expected, found );
+	if ( pass )
+		printf ("[pass]");
+	else
+		printf ("[fail]");
+
+	if ( noEcho )
+		printf (" %s\n", testString);
+	else
+		printf (" %s [%s][%s]\n", testString, expected, found);
+
+	if ( pass )
+		++gPass;
+	else
+		++gFail;
+	return pass;
+}
+
+
+bool XmlTest( const char* testString, int expected, int found, bool noEcho = false )
+{
+	bool pass = ( expected == found );
+	if ( pass )
+		printf ("[pass]");
+	else
+		printf ("[fail]");
+
+	if ( noEcho )
+		printf (" %s\n", testString);
+	else
+		printf (" %s [%d][%d]\n", testString, expected, found);
+
+	if ( pass )
+		++gPass;
+	else
+		++gFail;
+	return pass;
+}
+
+
+//
+// This file demonstrates some basic functionality of TinyXml.
+// Note that the example is very contrived. It presumes you know
+// what is in the XML file. But it does test the basic operations,
+// and show how to add and remove nodes.
+//
+
+int main()
+{
+	//
+	// We start with the 'demoStart' todo list. Process it. And
+	// should hopefully end up with the todo list as illustrated.
+	//
+	const char* demoStart =
+		"<?xml version=\"1.0\"  standalone='no' >\n"
+		"<!-- Our to do list data -->"
+		"<ToDo>\n"
+		"<!-- Do I need a secure PDA? -->\n"
+		"<Item priority=\"1\" distance='close'> Go to the <bold>Toy store!</bold></Item>"
+		"<Item priority=\"2\" distance='none'> Do bills   </Item>"
+		"<Item priority=\"2\" distance='far &amp; back'> Look for Evil Dinosaurs! </Item>"
+		"</ToDo>";
+		
+	{
+
+	#ifdef TIXML_USE_STL
+		/*	What the todo list should look like after processing.
+			In stream (no formatting) representation. */
+		const char* demoEnd =
+			"<?xml version=\"1.0\" standalone=\"no\" ?>"
+			"<!-- Our to do list data -->"
+			"<ToDo>"
+			"<!-- Do I need a secure PDA? -->"
+			"<Item priority=\"2\" distance=\"close\">Go to the"
+			"<bold>Toy store!"
+			"</bold>"
+			"</Item>"
+			"<Item priority=\"1\" distance=\"far\">Talk to:"
+			"<Meeting where=\"School\">"
+			"<Attendee name=\"Marple\" position=\"teacher\" />"
+			"<Attendee name=\"Voel\" position=\"counselor\" />"
+			"</Meeting>"
+			"<Meeting where=\"Lunch\" />"
+			"</Item>"
+			"<Item priority=\"2\" distance=\"here\">Do bills"
+			"</Item>"
+			"</ToDo>";
+	#endif
+
+		// The example parses from the character string (above):
+		#if defined( WIN32 ) && defined( TUNE )
+		_CrtMemCheckpoint( &startMemState );
+		#endif	
+
+		{
+			// Write to a file and read it back, to check file I/O.
+
+			XmlDocument doc( "demotest.xml" );
+			doc.Parse( demoStart );
+
+			if ( doc.Error() )
+			{
+				printf( "Error in %s: %s\n", doc.Value(), doc.ErrorDesc() );
+				exit( 1 );
+			}
+			doc.SaveFile();
+		}
+
+		XmlDocument doc( "demotest.xml" );
+		bool loadOkay = doc.LoadFile();
+
+		if ( !loadOkay )
+		{
+			printf( "Could not load test file 'demotest.xml'. Error='%s'. Exiting.\n", doc.ErrorDesc() );
+			exit( 1 );
+		}
+
+		printf( "** Demo doc read from disk: ** \n\n" );
+		printf( "** Printing via doc.Print **\n" );
+		doc.Print( stdout );
+
+		{
+			printf( "** Printing via XmlPrinter **\n" );
+			XmlPrinter printer;
+			doc.Accept( &printer );
+			fprintf( stdout, "%s", printer.CStr() );
+		}
+		#ifdef TIXML_USE_STL	
+		{
+			printf( "** Printing via operator<< **\n" );
+			std::cout << doc;
+		}
+		#endif
+		XmlNode* node = 0;
+		XmlElement* todoElement = 0;
+		XmlElement* itemElement = 0;
+
+
+		// --------------------------------------------------------
+		// An example of changing existing attributes, and removing
+		// an element from the document.
+		// --------------------------------------------------------
+
+		// Get the "ToDo" element.
+		// It is a child of the document, and can be selected by name.
+		node = doc.FirstChild( "ToDo" );
+		assert( node );
+		todoElement = node->ToElement();
+		assert( todoElement  );
+
+		// Going to the toy store is now our second priority...
+		// So set the "priority" attribute of the first item in the list.
+		node = todoElement->FirstChildElement();	// This skips the "PDA" comment.
+		assert( node );
+		itemElement = node->ToElement();
+		assert( itemElement  );
+		itemElement->SetAttribute( "priority", 2 );
+
+		// Change the distance to "doing bills" from
+		// "none" to "here". It's the next sibling element.
+		itemElement = itemElement->NextSiblingElement();
+		assert( itemElement );
+		itemElement->SetAttribute( "distance", "here" );
+
+		// Remove the "Look for Evil Dinosaurs!" item.
+		// It is 1 more sibling away. We ask the parent to remove
+		// a particular child.
+		itemElement = itemElement->NextSiblingElement();
+		todoElement->RemoveChild( itemElement );
+
+		itemElement = 0;
+
+		// --------------------------------------------------------
+		// What follows is an example of created elements and text
+		// nodes and adding them to the document.
+		// --------------------------------------------------------
+
+		// Add some meetings.
+		XmlElement item( "Item" );
+		item.SetAttribute( "priority", "1" );
+		item.SetAttribute( "distance", "far" );
+
+		XmlText text( "Talk to:" );
+
+		XmlElement meeting1( "Meeting" );
+		meeting1.SetAttribute( "where", "School" );
+
+		XmlElement meeting2( "Meeting" );
+		meeting2.SetAttribute( "where", "Lunch" );
+
+		XmlElement attendee1( "Attendee" );
+		attendee1.SetAttribute( "name", "Marple" );
+		attendee1.SetAttribute( "position", "teacher" );
+
+		XmlElement attendee2( "Attendee" );
+		attendee2.SetAttribute( "name", "Voel" );
+		attendee2.SetAttribute( "position", "counselor" );
+
+		// Assemble the nodes we've created:
+		meeting1.InsertEndChild( attendee1 );
+		meeting1.InsertEndChild( attendee2 );
+
+		item.InsertEndChild( text );
+		item.InsertEndChild( meeting1 );
+		item.InsertEndChild( meeting2 );
+
+		// And add the node to the existing list after the first child.
+		node = todoElement->FirstChild( "Item" );
+		assert( node );
+		itemElement = node->ToElement();
+		assert( itemElement );
+
+		todoElement->InsertAfterChild( itemElement, item );
+
+		printf( "\n** Demo doc processed: ** \n\n" );
+		doc.Print( stdout );
+
+
+	#ifdef TIXML_USE_STL
+		printf( "** Demo doc processed to stream: ** \n\n" );
+		cout << doc << endl << endl;
+	#endif
+
+		// --------------------------------------------------------
+		// Different tests...do we have what we expect?
+		// --------------------------------------------------------
+
+		int count = 0;
+		XmlElement*	element;
+
+		//////////////////////////////////////////////////////
+
+	#ifdef TIXML_USE_STL
+		cout << "** Basic structure. **\n";
+		ostringstream outputStream( ostringstream::out );
+		outputStream << doc;
+		XmlTest( "Output stream correct.",	string( demoEnd ).c_str(),
+											outputStream.str().c_str(), true );
+	#endif
+
+		node = doc.RootElement();
+		assert( node );
+		XmlTest( "Root element exists.", true, ( node != 0 && node->ToElement() ) );
+		XmlTest ( "Root element value is 'ToDo'.", "ToDo",  node->Value());
+
+		node = node->FirstChild();
+		XmlTest( "First child exists & is a comment.", true, ( node != 0 && node->ToComment() ) );
+		node = node->NextSibling();
+		XmlTest( "Sibling element exists & is an element.", true, ( node != 0 && node->ToElement() ) );
+		XmlTest ( "Value is 'Item'.", "Item", node->Value() );
+
+		node = node->FirstChild();
+		XmlTest ( "First child exists.", true, ( node != 0 && node->ToText() ) );
+		XmlTest ( "Value is 'Go to the'.", "Go to the", node->Value() );
+
+
+		//////////////////////////////////////////////////////
+		printf ("\n** Iterators. **\n");
+
+		// Walk all the top level nodes of the document.
+		count = 0;
+		for( node = doc.FirstChild();
+			 node;
+			 node = node->NextSibling() )
+		{
+			count++;
+		}
+		XmlTest( "Top level nodes, using First / Next.", 3, count );
+
+		count = 0;
+		for( node = doc.LastChild();
+			 node;
+			 node = node->PreviousSibling() )
+		{
+			count++;
+		}
+		XmlTest( "Top level nodes, using Last / Previous.", 3, count );
+
+		// Walk all the top level nodes of the document,
+		// using a different syntax.
+		count = 0;
+		for( node = doc.IterateChildren( 0 );
+			 node;
+			 node = doc.IterateChildren( node ) )
+		{
+			count++;
+		}
+		XmlTest( "Top level nodes, using IterateChildren.", 3, count );
+
+		// Walk all the elements in a node.
+		count = 0;
+		for( element = todoElement->FirstChildElement();
+			 element;
+			 element = element->NextSiblingElement() )
+		{
+			count++;
+		}
+		XmlTest( "Children of the 'ToDo' element, using First / Next.",
+			3, count );
+
+		// Walk all the elements in a node by value.
+		count = 0;
+		for( node = todoElement->FirstChild( "Item" );
+			 node;
+			 node = node->NextSibling( "Item" ) )
+		{
+			count++;
+		}
+		XmlTest( "'Item' children of the 'ToDo' element, using First/Next.", 3, count );
+
+		count = 0;
+		for( node = todoElement->LastChild( "Item" );
+			 node;
+			 node = node->PreviousSibling( "Item" ) )
+		{
+			count++;
+		}
+		XmlTest( "'Item' children of the 'ToDo' element, using Last/Previous.", 3, count );
+
+	#ifdef TIXML_USE_STL
+		{
+			cout << "\n** Parsing. **\n";
+			istringstream parse0( "<Element0 attribute0='foo0' attribute1= noquotes attribute2 = '&gt;' />" );
+			XmlElement element0( "default" );
+			parse0 >> element0;
+
+			XmlTest ( "Element parsed, value is 'Element0'.", "Element0", element0.Value() );
+			XmlTest ( "Reads attribute 'attribute0=\"foo0\"'.", "foo0", element0.Attribute( "attribute0" ));
+			XmlTest ( "Reads incorrectly formatted 'attribute1=noquotes'.", "noquotes", element0.Attribute( "attribute1" ) );
+			XmlTest ( "Read attribute with entity value '>'.", ">", element0.Attribute( "attribute2" ) );
+		}
+	#endif
+
+		{
+			const char* error =	"<?xml version=\"1.0\" standalone=\"no\" ?>\n"
+								"<passages count=\"006\" formatversion=\"20020620\">\n"
+								"    <wrong error>\n"
+								"</passages>";
+
+			XmlDocument docTest;
+			docTest.Parse( error );
+			XmlTest( "Error row", docTest.ErrorRow(), 3 );
+			XmlTest( "Error column", docTest.ErrorCol(), 17 );
+			//printf( "error=%d id='%s' row %d col%d\n", (int) doc.Error(), doc.ErrorDesc(), doc.ErrorRow()+1, doc.ErrorCol() + 1 );
+
+		}
+
+	#ifdef TIXML_USE_STL
+		{
+			//////////////////////////////////////////////////////
+			cout << "\n** Streaming. **\n";
+
+			// Round trip check: stream in, then stream back out to verify. The stream
+			// out has already been checked, above. We use the output
+
+			istringstream inputStringStream( outputStream.str() );
+			XmlDocument document0;
+
+			inputStringStream >> document0;
+
+			ostringstream outputStream0( ostringstream::out );
+			outputStream0 << document0;
+
+			XmlTest( "Stream round trip correct.",	string( demoEnd ).c_str(), 
+													outputStream0.str().c_str(), true );
+
+			std::string str;
+			str << document0;
+
+			XmlTest( "String printing correct.", string( demoEnd ).c_str(), 
+												 str.c_str(), true );
+		}
+	#endif
+	}
+	
+	{
+		const char* str = "<doc attr0='1' attr1='2.0' attr2='foo' />";
+
+		XmlDocument doc;
+		doc.Parse( str );
+
+		XmlElement* ele = doc.FirstChildElement();
+
+		int iVal, result;
+		double dVal;
+
+		result = ele->QueryDoubleAttribute( "attr0", &dVal );
+		XmlTest( "Query attribute: int as double", result, TIXML_SUCCESS );
+		XmlTest( "Query attribute: int as double", (int)dVal, 1 );
+		result = ele->QueryDoubleAttribute( "attr1", &dVal );
+		XmlTest( "Query attribute: double as double", (int)dVal, 2 );
+		result = ele->QueryIntAttribute( "attr1", &iVal );
+		XmlTest( "Query attribute: double as int", result, TIXML_SUCCESS );
+		XmlTest( "Query attribute: double as int", iVal, 2 );
+		result = ele->QueryIntAttribute( "attr2", &iVal );
+		XmlTest( "Query attribute: not a number", result, TIXML_WRONG_TYPE );
+		result = ele->QueryIntAttribute( "bar", &iVal );
+		XmlTest( "Query attribute: does not exist", result, TIXML_NO_ATTRIBUTE );
+	}
+	
+	{
+		const char* str =	"\t<?xml version=\"1.0\" standalone=\"no\" ?>\t<room doors='2'>\n"
+							"</room>";
+
+		XmlDocument doc;
+		doc.SetTabSize( 8 );
+		doc.Parse( str );
+
+		XmlHandle docHandle( &doc );
+		XmlHandle roomHandle = docHandle.FirstChildElement( "room" );
+
+		assert( docHandle.Node() );
+		assert( roomHandle.Element() );
+
+		XmlElement* room = roomHandle.Element();
+		assert( room );
+		XmlAttribute* doors = room->FirstAttribute();
+		assert( doors );
+
+		XmlTest( "Location tracking: Tab 8: room row", room->Row(), 1 );
+		XmlTest( "Location tracking: Tab 8: room col", room->Column(), 49 );
+		XmlTest( "Location tracking: Tab 8: doors row", doors->Row(), 1 );
+		XmlTest( "Location tracking: Tab 8: doors col", doors->Column(), 55 );
+	}
+	
+	{
+		const char* str =	"\t<?xml version=\"1.0\" standalone=\"no\" ?>\t<room doors='2'>\n"
+							"  <!-- Silly example -->\n"
+							"    <door wall='north'>A great door!</door>\n"
+							"\t<door wall='east'/>"
+							"</room>";
+
+		XmlDocument doc;
+		doc.Parse( str );
+
+		XmlHandle docHandle( &doc );
+		XmlHandle roomHandle = docHandle.FirstChildElement( "room" );
+		XmlHandle commentHandle = docHandle.FirstChildElement( "room" ).FirstChild();
+		XmlHandle textHandle = docHandle.FirstChildElement( "room" ).ChildElement( "door", 0 ).FirstChild();
+		XmlHandle door0Handle = docHandle.FirstChildElement( "room" ).ChildElement( 0 );
+		XmlHandle door1Handle = docHandle.FirstChildElement( "room" ).ChildElement( 1 );
+
+		assert( docHandle.Node() );
+		assert( roomHandle.Element() );
+		assert( commentHandle.Node() );
+		assert( textHandle.Text() );
+		assert( door0Handle.Element() );
+		assert( door1Handle.Element() );
+
+		XmlDeclaration* declaration = doc.FirstChild()->ToDeclaration();
+		assert( declaration );
+		XmlElement* room = roomHandle.Element();
+		assert( room );
+		XmlAttribute* doors = room->FirstAttribute();
+		assert( doors );
+		XmlText* text = textHandle.Text();
+		XmlComment* comment = commentHandle.Node()->ToComment();
+		assert( comment );
+		XmlElement* door0 = door0Handle.Element();
+		XmlElement* door1 = door1Handle.Element();
+
+		XmlTest( "Location tracking: Declaration row", declaration->Row(), 1 );
+		XmlTest( "Location tracking: Declaration col", declaration->Column(), 5 );
+		XmlTest( "Location tracking: room row", room->Row(), 1 );
+		XmlTest( "Location tracking: room col", room->Column(), 45 );
+		XmlTest( "Location tracking: doors row", doors->Row(), 1 );
+		XmlTest( "Location tracking: doors col", doors->Column(), 51 );
+		XmlTest( "Location tracking: Comment row", comment->Row(), 2 );
+		XmlTest( "Location tracking: Comment col", comment->Column(), 3 );
+		XmlTest( "Location tracking: text row", text->Row(), 3 ); 
+		XmlTest( "Location tracking: text col", text->Column(), 24 );
+		XmlTest( "Location tracking: door0 row", door0->Row(), 3 );
+		XmlTest( "Location tracking: door0 col", door0->Column(), 5 );
+		XmlTest( "Location tracking: door1 row", door1->Row(), 4 );
+		XmlTest( "Location tracking: door1 col", door1->Column(), 5 );
+	}
+
+
+	// --------------------------------------------------------
+	// UTF-8 testing. It is important to test:
+	//	1. Making sure name, value, and text read correctly
+	//	2. Row, Col functionality
+	//	3. Correct output
+	// --------------------------------------------------------
+	printf ("\n** UTF-8 **\n");
+	{
+		XmlDocument doc( "utf8test.xml" );
+		doc.LoadFile();
+		if ( doc.Error() && doc.ErrorId() == XmlBase::TIXML_ERROR_OPENING_FILE ) {
+			printf( "WARNING: File 'utf8test.xml' not found.\n"
+					"(Are you running the test from the wrong directory?)\n"
+				    "Could not test UTF-8 functionality.\n" );
+		}
+		else
+		{
+			XmlHandle docH( &doc );
+			// Get the attribute "value" from the "Russian" element and check it.
+			XmlElement* element = docH.FirstChildElement( "document" ).FirstChildElement( "Russian" ).Element();
+			const unsigned char correctValue[] = {	0xd1U, 0x86U, 0xd0U, 0xb5U, 0xd0U, 0xbdU, 0xd0U, 0xbdU, 
+													0xd0U, 0xbeU, 0xd1U, 0x81U, 0xd1U, 0x82U, 0xd1U, 0x8cU, 0 };
+
+			XmlTest( "UTF-8: Russian value.", (const char*)correctValue, element->Attribute( "value" ), true );
+			XmlTest( "UTF-8: Russian value row.", 4, element->Row() );
+			XmlTest( "UTF-8: Russian value column.", 5, element->Column() );
+
+			const unsigned char russianElementName[] = {	0xd0U, 0xa0U, 0xd1U, 0x83U,
+															0xd1U, 0x81U, 0xd1U, 0x81U,
+															0xd0U, 0xbaU, 0xd0U, 0xb8U,
+															0xd0U, 0xb9U, 0 };
+			const char russianText[] = "<\xD0\xB8\xD0\xBC\xD0\xB5\xD0\xB5\xD1\x82>";
+
+			XmlText* text = docH.FirstChildElement( "document" ).FirstChildElement( (const char*) russianElementName ).Child( 0 ).Text();
+			XmlTest( "UTF-8: Browsing russian element name.",
+					 russianText,
+					 text->Value(),
+					 true );
+			XmlTest( "UTF-8: Russian element name row.", 7, text->Row() );
+			XmlTest( "UTF-8: Russian element name column.", 47, text->Column() );
+
+			XmlDeclaration* dec = docH.Child( 0 ).Node()->ToDeclaration();
+			XmlTest( "UTF-8: Declaration column.", 1, dec->Column() );
+			XmlTest( "UTF-8: Document column.", 1, doc.Column() );
+
+			// Now try for a round trip.
+			doc.SaveFile( "utf8testout.xml" );
+
+			// Check the round trip.
+			char savedBuf[256];
+			char verifyBuf[256];
+			int okay = 1;
+
+			FILE* saved  = fopen( "utf8testout.xml", "r" );
+			FILE* verify = fopen( "utf8testverify.xml", "r" );
+			if ( saved && verify )
+			{
+				while ( fgets( verifyBuf, 256, verify ) )
+				{
+					fgets( savedBuf, 256, saved );
+					if ( strcmp( verifyBuf, savedBuf ) )
+					{
+						okay = 0;
+						break;
+					}
+				}
+				fclose( saved );
+				fclose( verify );
+			}
+			XmlTest( "UTF-8: Verified multi-language round trip.", 1, okay );
+
+			// On most Western machines, this is an element that contains
+			// the word "resume" with the correct accents, in a latin encoding.
+			// It will be something else completely on non-wester machines,
+			// which is why TinyXml is switching to UTF-8.
+			const char latin[] = "<element>r\x82sum\x82</element>";
+
+			XmlDocument latinDoc;
+			latinDoc.Parse( latin, 0, TIXML_ENCODING_LEGACY );
+
+			text = latinDoc.FirstChildElement()->FirstChild()->ToText();
+			XmlTest( "Legacy encoding: Verify text element.", "r\x82sum\x82", text->Value() );
+		}
+	}		
+
+	//////////////////////
+	// Copy and assignment
+	//////////////////////
+	printf ("\n** Copy and Assignment **\n");
+	{
+		XmlElement element( "foo" );
+		element.Parse( "<element name='value' />", 0, TIXML_ENCODING_UNKNOWN );
+
+		XmlElement elementCopy( element );
+		XmlElement elementAssign( "foo" );
+		elementAssign.Parse( "<incorrect foo='bar'/>", 0, TIXML_ENCODING_UNKNOWN );
+		elementAssign = element;
+
+		XmlTest( "Copy/Assign: element copy #1.", "element", elementCopy.Value() );
+		XmlTest( "Copy/Assign: element copy #2.", "value", elementCopy.Attribute( "name" ) );
+		XmlTest( "Copy/Assign: element assign #1.", "element", elementAssign.Value() );
+		XmlTest( "Copy/Assign: element assign #2.", "value", elementAssign.Attribute( "name" ) );
+		XmlTest( "Copy/Assign: element assign #3.", true, ( 0 == elementAssign.Attribute( "foo" )) );
+
+		XmlComment comment;
+		comment.Parse( "<!--comment-->", 0, TIXML_ENCODING_UNKNOWN );
+		XmlComment commentCopy( comment );
+		XmlComment commentAssign;
+		commentAssign = commentCopy;
+		XmlTest( "Copy/Assign: comment copy.", "comment", commentCopy.Value() );
+		XmlTest( "Copy/Assign: comment assign.", "comment", commentAssign.Value() );
+
+		XmlUnknown unknown;
+		unknown.Parse( "<[unknown]>", 0, TIXML_ENCODING_UNKNOWN );
+		XmlUnknown unknownCopy( unknown );
+		XmlUnknown unknownAssign;
+		unknownAssign.Parse( "incorrect", 0, TIXML_ENCODING_UNKNOWN );
+		unknownAssign = unknownCopy;
+		XmlTest( "Copy/Assign: unknown copy.", "[unknown]", unknownCopy.Value() );
+		XmlTest( "Copy/Assign: unknown assign.", "[unknown]", unknownAssign.Value() );
+		
+		XmlText text( "TextNode" );
+		XmlText textCopy( text );
+		XmlText textAssign( "incorrect" );
+		textAssign = text;
+		XmlTest( "Copy/Assign: text copy.", "TextNode", textCopy.Value() );
+		XmlTest( "Copy/Assign: text assign.", "TextNode", textAssign.Value() );
+
+		XmlDeclaration dec;
+		dec.Parse( "<?xml version='1.0' encoding='UTF-8'?>", 0, TIXML_ENCODING_UNKNOWN );
+		XmlDeclaration decCopy( dec );
+		XmlDeclaration decAssign;
+		decAssign = dec;
+
+		XmlTest( "Copy/Assign: declaration copy.", "UTF-8", decCopy.Encoding() );
+		XmlTest( "Copy/Assign: text assign.", "UTF-8", decAssign.Encoding() );
+
+		XmlDocument doc;
+		elementCopy.InsertEndChild( textCopy );
+		doc.InsertEndChild( decAssign );
+		doc.InsertEndChild( elementCopy );
+		doc.InsertEndChild( unknownAssign );
+
+		XmlDocument docCopy( doc );
+		XmlDocument docAssign;
+		docAssign = docCopy;
+
+		#ifdef TIXML_USE_STL
+		std::string original, copy, assign;
+		original << doc;
+		copy << docCopy;
+		assign << docAssign;
+		XmlTest( "Copy/Assign: document copy.", original.c_str(), copy.c_str(), true );
+		XmlTest( "Copy/Assign: document assign.", original.c_str(), assign.c_str(), true );
+
+		#endif
+	}	
+
+	//////////////////////////////////////////////////////
+#ifdef TIXML_USE_STL
+	printf ("\n** Parsing, no Condense Whitespace **\n");
+	XmlBase::SetCondenseWhiteSpace( false );
+	{
+		istringstream parse1( "<start>This  is    \ntext</start>" );
+		XmlElement text1( "text" );
+		parse1 >> text1;
+
+		XmlTest ( "Condense white space OFF.", "This  is    \ntext",
+					text1.FirstChild()->Value(),
+					true );
+	}
+	XmlBase::SetCondenseWhiteSpace( true );
+#endif
+
+	//////////////////////////////////////////////////////
+	// GetText();
+	{
+		const char* str = "<foo>This is text</foo>";
+		XmlDocument doc;
+		doc.Parse( str );
+		const XmlElement* element = doc.RootElement();
+
+		XmlTest( "GetText() normal use.", "This is text", element->GetText() );
+
+		str = "<foo><b>This is text</b></foo>";
+		doc.Clear();
+		doc.Parse( str );
+		element = doc.RootElement();
+
+		XmlTest( "GetText() contained element.", element->GetText() == 0, true );
+
+		str = "<foo>This is <b>text</b></foo>";
+		doc.Clear();
+		XmlBase::SetCondenseWhiteSpace( false );
+		doc.Parse( str );
+		XmlBase::SetCondenseWhiteSpace( true );
+		element = doc.RootElement();
+
+		XmlTest( "GetText() partial.", "This is ", element->GetText() );
+	}
+
+
+	//////////////////////////////////////////////////////
+	// CDATA
+	{
+		const char* str =	"<xmlElement>"
+								"<![CDATA["
+									"I am > the rules!\n"
+									"...since I make symbolic puns"
+								"]]>"
+							"</xmlElement>";
+		XmlDocument doc;
+		doc.Parse( str );
+		doc.Print();
+
+		XmlTest( "CDATA parse.", doc.FirstChildElement()->FirstChild()->Value(), 
+								 "I am > the rules!\n...since I make symbolic puns",
+								 true );
+
+		#ifdef TIXML_USE_STL
+		//cout << doc << '\n';
+
+		doc.Clear();
+
+		istringstream parse0( str );
+		parse0 >> doc;
+		//cout << doc << '\n';
+
+		XmlTest( "CDATA stream.", doc.FirstChildElement()->FirstChild()->Value(), 
+								 "I am > the rules!\n...since I make symbolic puns",
+								 true );
+		#endif
+
+		XmlDocument doc1 = doc;
+		//doc.Print();
+
+		XmlTest( "CDATA copy.", doc1.FirstChildElement()->FirstChild()->Value(), 
+								 "I am > the rules!\n...since I make symbolic puns",
+								 true );
+	}
+	{
+		// [ 1482728 ] Wrong wide char parsing
+		char buf[256];
+		buf[255] = 0;
+		for( int i=0; i<255; ++i ) {
+			buf[i] = (char)((i>=32) ? i : 32);
+		}
+		std::string str( "<xmlElement><![CDATA[" );
+		str += buf;
+		str += "]]></xmlElement>";
+
+		XmlDocument doc;
+		doc.Parse( str.c_str() );
+
+		XmlPrinter printer;
+		printer.SetStreamPrinting();
+		doc.Accept( &printer );
+
+		XmlTest( "CDATA with all bytes #1.", str.c_str(), printer.CStr(), true );
+
+		#ifdef TIXML_USE_STL
+		doc.Clear();
+		istringstream iss( printer.Str() );
+		iss >> doc;
+		std::string out;
+		out << doc;
+		XmlTest( "CDATA with all bytes #2.", out.c_str(), printer.CStr(), true );
+		#endif
+	}
+	{
+		// [ 1480107 ] Bug-fix for STL-streaming of CDATA that contains tags
+		// CDATA streaming had a couple of bugs, that this tests for.
+		const char* str =	"<xmlElement>"
+								"<![CDATA["
+									"<b>I am > the rules!</b>\n"
+									"...since I make symbolic puns"
+								"]]>"
+							"</xmlElement>";
+		XmlDocument doc;
+		doc.Parse( str );
+		doc.Print();
+
+		XmlTest( "CDATA parse. [ 1480107 ]", doc.FirstChildElement()->FirstChild()->Value(), 
+								 "<b>I am > the rules!</b>\n...since I make symbolic puns",
+								 true );
+
+		#ifdef TIXML_USE_STL
+
+		doc.Clear();
+
+		istringstream parse0( str );
+		parse0 >> doc;
+
+		XmlTest( "CDATA stream. [ 1480107 ]", doc.FirstChildElement()->FirstChild()->Value(), 
+								 "<b>I am > the rules!</b>\n...since I make symbolic puns",
+								 true );
+		#endif
+
+		XmlDocument doc1 = doc;
+		//doc.Print();
+
+		XmlTest( "CDATA copy. [ 1480107 ]", doc1.FirstChildElement()->FirstChild()->Value(), 
+								 "<b>I am > the rules!</b>\n...since I make symbolic puns",
+								 true );
+	}
+	//////////////////////////////////////////////////////
+	// Visit()
+
+
+
+	//////////////////////////////////////////////////////
+	printf( "\n** Fuzzing... **\n" );
+
+	const int FUZZ_ITERATION = 300;
+
+	// The only goal is not to crash on bad input.
+	int len = (int) strlen( demoStart );
+	for( int i=0; i<FUZZ_ITERATION; ++i ) 
+	{
+		char* demoCopy = new char[ len+1 ];
+		strcpy( demoCopy, demoStart );
+
+		demoCopy[ i%len ] = (char)((i+1)*3);
+		demoCopy[ (i*7)%len ] = '>';
+		demoCopy[ (i*11)%len ] = '<';
+
+		XmlDocument xml;
+		xml.Parse( demoCopy );
+
+		delete[](demoCopy);
+	}
+	printf( "** Fuzzing Complete. **\n" );
+	
+	//////////////////////////////////////////////////////
+	printf ("\n** Bug regression tests **\n");
+
+	// InsertBeforeChild and InsertAfterChild causes crash.
+	{
+		XmlElement parent( "Parent" );
+		XmlElement childText0( "childText0" );
+		XmlElement childText1( "childText1" );
+		XmlNode* childNode0 = parent.InsertEndChild( childText0 );
+		XmlNode* childNode1 = parent.InsertBeforeChild( childNode0, childText1 );
+
+		XmlTest( "Test InsertBeforeChild on empty node.", ( childNode1 == parent.FirstChild() ), true );
+	}
+
+	{
+		// InsertBeforeChild and InsertAfterChild causes crash.
+		XmlElement parent( "Parent" );
+		XmlElement childText0( "childText0" );
+		XmlElement childText1( "childText1" );
+		XmlNode* childNode0 = parent.InsertEndChild( childText0 );
+		XmlNode* childNode1 = parent.InsertAfterChild( childNode0, childText1 );
+
+		XmlTest( "Test InsertAfterChild on empty node. ", ( childNode1 == parent.LastChild() ), true );
+	}
+
+	// Reports of missing constructors, irregular string problems.
+	{
+		// Missing constructor implementation. No test -- just compiles.
+		XmlText text( "Missing" );
+
+		#ifdef TIXML_USE_STL
+			// Missing implementation:
+			XmlDocument doc;
+			string name = "missing";
+			doc.LoadFile( name );
+
+			XmlText textSTL( name );
+		#else
+			// verifying some basic string functions:
+			XmlString a;
+			XmlString b( "Hello" );
+			XmlString c( "ooga" );
+
+			c = " World!";
+			a = b;
+			a += c;
+			a = a;
+
+			XmlTest( "Basic XmlString test. ", "Hello World!", a.c_str() );
+		#endif
+ 	}
+
+	// Long filenames crashing STL version
+	{
+		XmlDocument doc( "midsummerNightsDreamWithAVeryLongFilenameToConfuseTheStringHandlingRoutines.xml" );
+		bool loadOkay = doc.LoadFile();
+		loadOkay = true;	// get rid of compiler warning.
+		// Won't pass on non-dev systems. Just a "no crash" check.
+		//XmlTest( "Long filename. ", true, loadOkay );
+	}
+
+	{
+		// Entities not being written correctly.
+		// From Lynn Allen
+
+		const char* passages =
+			"<?xml version=\"1.0\" standalone=\"no\" ?>"
+			"<passages count=\"006\" formatversion=\"20020620\">"
+				"<psg context=\"Line 5 has &quot;quotation marks&quot; and &apos;apostrophe marks&apos;."
+				" It also has &lt;, &gt;, and &amp;, as well as a fake copyright &#xA9;.\"> </psg>"
+			"</passages>";
+
+		XmlDocument doc( "passages.xml" );
+		doc.Parse( passages );
+		XmlElement* psg = doc.RootElement()->FirstChildElement();
+		const char* context = psg->Attribute( "context" );
+		const char* expected = "Line 5 has \"quotation marks\" and 'apostrophe marks'. It also has <, >, and &, as well as a fake copyright \xC2\xA9.";
+
+		XmlTest( "Entity transformation: read. ", expected, context, true );
+
+		FILE* textfile = fopen( "textfile.txt", "w" );
+		if ( textfile )
+		{
+			psg->Print( textfile, 0 );
+			fclose( textfile );
+		}
+		textfile = fopen( "textfile.txt", "r" );
+		assert( textfile );
+		if ( textfile )
+		{
+			char buf[ 1024 ];
+			fgets( buf, 1024, textfile );
+			XmlTest( "Entity transformation: write. ",
+					 "<psg context=\'Line 5 has &quot;quotation marks&quot; and &apos;apostrophe marks&apos;."
+					 " It also has &lt;, &gt;, and &amp;, as well as a fake copyright \xC2\xA9.' />",
+					 buf,
+					 true );
+		}
+		fclose( textfile );
+	}
+
+    {
+		FILE* textfile = fopen( "test5.xml", "w" );
+		if ( textfile )
+		{
+            fputs("<?xml version='1.0'?><a.elem xmi.version='2.0'/>", textfile);
+            fclose(textfile);
+
+			XmlDocument doc;
+            doc.LoadFile( "test5.xml" );
+            XmlTest( "dot in element attributes and names", doc.Error(), 0);
+		}
+    }
+
+	{
+		FILE* textfile = fopen( "test6.xml", "w" );
+		if ( textfile )
+		{
+            fputs("<element><Name>1.1 Start easy ignore fin thickness&#xA;</Name></element>", textfile );
+            fclose(textfile);
+
+            XmlDocument doc;
+            bool result = doc.LoadFile( "test6.xml" );
+            XmlTest( "Entity with one digit.", result, true );
+
+			XmlText* text = doc.FirstChildElement()->FirstChildElement()->FirstChild()->ToText();
+			XmlTest( "Entity with one digit.",
+						text->Value(), "1.1 Start easy ignore fin thickness\n" );
+		}
+    }
+
+	{
+		// DOCTYPE not preserved (950171)
+		// 
+		const char* doctype =
+			"<?xml version=\"1.0\" ?>"
+			"<!DOCTYPE PLAY SYSTEM 'play.dtd'>"
+			"<!ELEMENT title (#PCDATA)>"
+			"<!ELEMENT books (title,authors)>"
+			"<element />";
+
+		XmlDocument doc;
+		doc.Parse( doctype );
+		doc.SaveFile( "test7.xml" );
+		doc.Clear();
+		doc.LoadFile( "test7.xml" );
+		
+		XmlHandle docH( &doc );
+		XmlUnknown* unknown = docH.Child( 1 ).Unknown();
+		XmlTest( "Correct value of unknown.", "!DOCTYPE PLAY SYSTEM 'play.dtd'", unknown->Value() );
+		#ifdef TIXML_USE_STL
+		XmlNode* node = docH.Child( 2 ).Node();
+		std::string str;
+		str << (*node);
+		XmlTest( "Correct streaming of unknown.", "<!ELEMENT title (#PCDATA)>", str.c_str() );
+		#endif
+	}
+
+	{
+		// [ 791411 ] Formatting bug
+		// Comments do not stream out correctly.
+		const char* doctype = 
+			"<!-- Somewhat<evil> -->";
+		XmlDocument doc;
+		doc.Parse( doctype );
+
+		XmlHandle docH( &doc );
+		XmlComment* comment = docH.Child( 0 ).Node()->ToComment();
+
+		XmlTest( "Comment formatting.", " Somewhat<evil> ", comment->Value() );
+		#ifdef TIXML_USE_STL
+		std::string str;
+		str << (*comment);
+		XmlTest( "Comment streaming.", "<!-- Somewhat<evil> -->", str.c_str() );
+		#endif
+	}
+
+	{
+		// [ 870502 ] White space issues
+		XmlDocument doc;
+		XmlText* text;
+		XmlHandle docH( &doc );
+	
+		const char* doctype0 = "<element> This has leading and trailing space </element>";
+		const char* doctype1 = "<element>This has  internal space</element>";
+		const char* doctype2 = "<element> This has leading, trailing, and  internal space </element>";
+
+		XmlBase::SetCondenseWhiteSpace( false );
+		doc.Clear();
+		doc.Parse( doctype0 );
+		text = docH.FirstChildElement( "element" ).Child( 0 ).Text();
+		XmlTest( "White space kept.", " This has leading and trailing space ", text->Value() );
+
+		doc.Clear();
+		doc.Parse( doctype1 );
+		text = docH.FirstChildElement( "element" ).Child( 0 ).Text();
+		XmlTest( "White space kept.", "This has  internal space", text->Value() );
+
+		doc.Clear();
+		doc.Parse( doctype2 );
+		text = docH.FirstChildElement( "element" ).Child( 0 ).Text();
+		XmlTest( "White space kept.", " This has leading, trailing, and  internal space ", text->Value() );
+
+		XmlBase::SetCondenseWhiteSpace( true );
+		doc.Clear();
+		doc.Parse( doctype0 );
+		text = docH.FirstChildElement( "element" ).Child( 0 ).Text();
+		XmlTest( "White space condensed.", "This has leading and trailing space", text->Value() );
+
+		doc.Clear();
+		doc.Parse( doctype1 );
+		text = docH.FirstChildElement( "element" ).Child( 0 ).Text();
+		XmlTest( "White space condensed.", "This has internal space", text->Value() );
+
+		doc.Clear();
+		doc.Parse( doctype2 );
+		text = docH.FirstChildElement( "element" ).Child( 0 ).Text();
+		XmlTest( "White space condensed.", "This has leading, trailing, and internal space", text->Value() );
+	}
+
+	{
+		// Double attributes
+		const char* doctype = "<element attr='red' attr='blue' />";
+
+		XmlDocument doc;
+		doc.Parse( doctype );
+		
+		XmlTest( "Parsing repeated attributes.", 0, (int)doc.Error() );	// not an  error to tinyxml
+		XmlTest( "Parsing repeated attributes.", "blue", doc.FirstChildElement( "element" )->Attribute( "attr" ) );
+	}
+
+	{
+		// Embedded null in stream.
+		const char* doctype = "<element att\0r='red' attr='blue' />";
+
+		XmlDocument doc;
+		doc.Parse( doctype );
+		XmlTest( "Embedded null throws error.", true, doc.Error() );
+
+		#ifdef TIXML_USE_STL
+		istringstream strm( doctype );
+		doc.Clear();
+		doc.ClearError();
+		strm >> doc;
+		XmlTest( "Embedded null throws error.", true, doc.Error() );
+		#endif
+	}
+
+    {
+            // Legacy mode test. (This test may only pass on a western system)
+            const char* str =
+                        "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>"
+                        "<?"
+                        "C鰊t鋘t咪鳇闹?
+                        "</?";
+
+            XmlDocument doc;
+            doc.Parse( str );
+
+            XmlHandle docHandle( &doc );
+            XmlHandle aHandle = docHandle.FirstChildElement( "? );
+            XmlHandle tHandle = aHandle.Child( 0 );
+            assert( aHandle.Element() );
+            assert( tHandle.Text() );
+            XmlTest( "ISO-8859-1 Parsing.", "C鰊t鋘t咪鳇闹?, tHandle.Text()->Value() );
+    }
+
+	{
+		// Empty documents should return TIXML_ERROR_PARSING_EMPTY, bug 1070717
+		const char* str = "    ";
+		XmlDocument doc;
+		doc.Parse( str );
+		XmlTest( "Empty document error TIXML_ERROR_DOCUMENT_EMPTY", XmlBase::TIXML_ERROR_DOCUMENT_EMPTY, doc.ErrorId() );
+	}
+	#ifndef TIXML_USE_STL
+	{
+		// String equality. [ 1006409 ] string operator==/!= no worky in all cases
+		XmlString temp;
+		XmlTest( "Empty tinyxml string compare equal", ( temp == "" ), true );
+
+		XmlString    foo;
+		XmlString    bar( "" );
+		XmlTest( "Empty tinyxml string compare equal", ( foo == bar ), true );
+	}
+
+	#endif
+	{
+		// Bug [ 1195696 ] from marlonism
+		XmlBase::SetCondenseWhiteSpace(false); 
+		XmlDocument xml; 
+		xml.Parse("<text><break/>This hangs</text>"); 
+		XmlTest( "Test safe error return.", xml.Error(), false );
+	}
+
+	{
+		// Bug [ 1243992 ] - another infinite loop
+		XmlDocument doc;
+		doc.SetCondenseWhiteSpace(false);
+		doc.Parse("<p><pb></pb>test</p>");
+	} 
+	{
+		// Low entities
+		XmlDocument xml;
+		xml.Parse( "<test>&#x0e;</test>" );
+		const char result[] = { 0x0e, 0 };
+		XmlTest( "Low entities.", xml.FirstChildElement()->GetText(), result );
+		xml.Print();
+	}
+	{
+		// Bug [ 1451649 ] Attribute values with trailing quotes not handled correctly
+		XmlDocument xml;
+		xml.Parse( "<foo attribute=bar\" />" );
+		XmlTest( "Throw error with bad end quotes.", xml.Error(), true );
+	}
+	#ifdef TIXML_USE_STL
+	{
+		// Bug [ 1449463 ] Consider generic query
+		XmlDocument xml;
+		xml.Parse( "<foo bar='3' barStr='a string'/>" );
+
+		XmlElement* ele = xml.FirstChildElement();
+		double d;
+		int i;
+		float f;
+		bool b;
+		//std::string str;
+
+		XmlTest( "QueryValueAttribute", ele->QueryValueAttribute( "bar", &d ), TIXML_SUCCESS );
+		XmlTest( "QueryValueAttribute", ele->QueryValueAttribute( "bar", &i ), TIXML_SUCCESS );
+		XmlTest( "QueryValueAttribute", ele->QueryValueAttribute( "bar", &f ), TIXML_SUCCESS );
+		XmlTest( "QueryValueAttribute", ele->QueryValueAttribute( "bar", &b ), TIXML_WRONG_TYPE );
+		XmlTest( "QueryValueAttribute", ele->QueryValueAttribute( "nobar", &b ), TIXML_NO_ATTRIBUTE );
+		//XmlTest( "QueryValueAttribute", ele->QueryValueAttribute( "barStr", &str ), TIXML_SUCCESS );
+
+		XmlTest( "QueryValueAttribute", (d==3.0), true );
+		XmlTest( "QueryValueAttribute", (i==3), true );
+		XmlTest( "QueryValueAttribute", (f==3.0f), true );
+		//XmlTest( "QueryValueAttribute", (str==std::string( "a string" )), true );
+	}
+	#endif
+
+	#ifdef TIXML_USE_STL
+	{
+		// [ 1505267 ] redundant malloc in XmlElement::Attribute
+		XmlDocument xml;
+		xml.Parse( "<foo bar='3' />" );
+		XmlElement* ele = xml.FirstChildElement();
+		double d;
+		int i;
+
+		std::string bar = "bar";
+
+		const std::string* atrrib = ele->Attribute( bar );
+		ele->Attribute( bar, &d );
+		ele->Attribute( bar, &i );
+
+		XmlTest( "Attribute", atrrib->empty(), false );
+		XmlTest( "Attribute", (d==3.0), true );
+		XmlTest( "Attribute", (i==3), true );
+	}
+	#endif
+
+	{
+		// [ 1356059 ] Allow TiXMLDocument to only be at the top level
+		XmlDocument xml, xml2;
+		xml.InsertEndChild( xml2 );
+		XmlTest( "Document only at top level.", xml.Error(), true );
+		XmlTest( "Document only at top level.", xml.ErrorId(), XmlBase::TIXML_ERROR_DOCUMENT_TOP_ONLY );
+	}
+
+	{
+		// [ 1663758 ] Failure to report error on bad XML
+		XmlDocument xml;
+		xml.Parse("<x>");
+		XmlTest("Missing end tag at end of input", xml.Error(), true);
+		xml.Parse("<x> ");
+		XmlTest("Missing end tag with trailing whitespace", xml.Error(), true);
+	} 
+
+	{
+		// [ 1635701 ] fail to parse files with a tag separated into two lines
+		// I'm not sure this is a bug. Marked 'pending' for feedback.
+		XmlDocument xml;
+		xml.Parse( "<title><p>text</p\n><title>" );
+		//xml.Print();
+		//XmlTest( "Tag split by newline", xml.Error(), false );
+	}
+
+	#ifdef TIXML_USE_STL
+	{
+		// [ 1475201 ] TinyXML parses entities in comments
+		XmlDocument xml;
+		istringstream parse1( "<!-- declarations for <head> & <body> -->"
+						      "<!-- far &amp; away -->" );
+		parse1 >> xml;
+
+		XmlNode* e0 = xml.FirstChild();
+		XmlNode* e1 = e0->NextSibling();
+		XmlComment* c0 = e0->ToComment();
+		XmlComment* c1 = e1->ToComment();
+
+		XmlTest( "Comments ignore entities.", " declarations for <head> & <body> ", c0->Value(), true );
+		XmlTest( "Comments ignore entities.", " far &amp; away ", c1->Value(), true );
+	}
+	#endif
+
+	{
+		// [ 1475201 ] TinyXML parses entities in comments
+		XmlDocument xml;
+		xml.Parse("<!-- declarations for <head> & <body> -->"
+				  "<!-- far &amp; away -->" );
+
+		XmlNode* e0 = xml.FirstChild();
+		XmlNode* e1 = e0->NextSibling();
+		XmlComment* c0 = e0->ToComment();
+		XmlComment* c1 = e1->ToComment();
+
+		XmlTest( "Comments ignore entities.", " declarations for <head> & <body> ", c0->Value(), true );
+		XmlTest( "Comments ignore entities.", " far &amp; away ", c1->Value(), true );
+	}
+	/*
+	{
+		XmlDocument xml;
+		xml.Parse( "<tag>/</tag>" );
+		xml.Print();
+		xml.FirstChild()->Print( stdout, 0 );
+		xml.FirstChild()->Type();
+	}
+	*/
+	
+	/*  1417717 experiment
+	{
+		XmlDocument xml;
+		xml.Parse("<text>Dan & Tracie</text>");
+		xml.Print(stdout);
+	}
+	{
+		XmlDocument xml;
+		xml.Parse("<text>Dan &foo; Tracie</text>");
+		xml.Print(stdout);
+	}
+	*/
+	#if defined( WIN32 ) && defined( TUNE )
+	_CrtMemCheckpoint( &endMemState );
+	//_CrtMemDumpStatistics( &endMemState );
+
+	_CrtMemState diffMemState;
+	_CrtMemDifference( &diffMemState, &startMemState, &endMemState );
+	_CrtMemDumpStatistics( &diffMemState );
+	#endif
+
+	printf ("\nPass %d, Fail %d\n", gPass, gFail);
+	return gFail;
+}
+
+
+
+
+
+
+
+

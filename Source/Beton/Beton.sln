@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Beton", "Beton.vcproj", "{6C6BDA44-0D75-4D12-B05E-74E387188B84}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA} = {B976C603-FAD7-416E-9E47-B74FD5AA2EAA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vEngine", "..\vEngine\vEngine.vcproj", "{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Debug|Win32.Build.0 = Debug|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Release|Win32.ActiveCfg = Release|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Release|Win32.Build.0 = Release|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Debug|Win32.Build.0 = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Release|Win32.ActiveCfg = Release|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

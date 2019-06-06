@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<fation id="0" AppearanceFactor="1" ReinPct="0" ReinVal="0" SavvyPct="0" SavvyVal="0" FortunePct="0" FortuneVal1="0" FortuneVal2="0"/>
+	<fation id="1" AppearanceFactor="1.5" ReinPct="0" ReinVal="0" SavvyPct="0" SavvyVal="0" FortunePct="0" FortuneVal1="0" FortuneVal2="0"/>
+	<fation id="2" AppearanceFactor="2" ReinPct="2000" ReinVal="2.5" SavvyPct="1000" SavvyVal="15" FortunePct="200" FortuneVal1="8" FortuneVal2="30"/>
+	<fation id="3" AppearanceFactor="2.5" ReinPct="3000" ReinVal="1.5" SavvyPct="1000" SavvyVal="10" FortunePct="500" FortuneVal1="10" FortuneVal2="30"/>
+	<fation id="4" AppearanceFactor="4" ReinPct="4000" ReinVal="1.25" SavvyPct="1000" SavvyVal="5" FortunePct="1000" FortuneVal1="20" FortuneVal2="30"/>
+	<fation id="5" AppearanceFactor="6" ReinPct="4000" ReinVal="1.25" SavvyPct="1000" SavvyVal="5" FortunePct="1000" FortuneVal1="20" FortuneVal2="30"/>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- id TypeID  -->
+<!-- step 阶 -->
+<!-- grade 等 -->
+<!-- type 类型 -->
+<!-- unique_same_type是否同类唯一 -->
+<!-- unique 是否唯一 -->
+<!-- att1 宠物属性1 -->
+<!-- mod1 宠物属性修改值1 -->
+
+<root>
+  <PetEquip id="" step="" grade="" type="" unique_same_type="" unique="" att1="" mod1="" att2="" mod2="" att3="" mod3=""/>
+  <PetEquip id="" step="" grade="" type="" unique_same_type="" unique="" att1="" mod1="" att2="" mod2="" att3="" mod3=""/>
+</root>

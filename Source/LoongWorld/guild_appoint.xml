@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 帮派任职权限xml映射 -->
+<root>
+    <GuildAppoint name="" id="" BangZhong="" JingYing="" BangZhu="" FuBangZhu="" HongHuFa="" ZiHuFa="" QingLongTang="" QingLongXiang="" QingLongZhong="" ZhuQueTang="" ZhuQueXiang="" ZhuQueZhong="" BaiHuTang="" BaiHuXiang="" BaiHuZhong="" XuanWuTang="" XuanWuXiang="" XuanWuZhong=""/>
+    <GuildAppoint name="" id="" BangZhong="" JingYing="" BangZhu="" FuBangZhu="" HongHuFa="" ZiHuFa="" QingLongTang="" QingLongXiang="" QingLongZhong="" ZhuQueTang="" ZhuQueXiang="" ZhuQueZhong="" BaiHuTang="" BaiHuXiang="" BaiHuZhong="" XuanWuTang="" XuanWuXiang="" XuanWuZhong=""/>
+</root>
+
+<!-- 注：
+1.id帮派职位枚举值
+2.name帮派职位名称，程序中不使用该字段
+3.默认权限为0
+-->
+

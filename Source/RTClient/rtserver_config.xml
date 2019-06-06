@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Config>
+	<RTServer>
+	     <!-- RTServer IP -->
+		 <IP>172.17.3.24</IP>
+	     <!-- RTServer port -->
+		 <Port>7100</Port>
+	</RTServer>
+</Config>

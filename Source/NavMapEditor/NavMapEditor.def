@@ -1,0 +1,6 @@
+; NavMapEditor.def : Declares the module parameters for the DLL.
+
+LIBRARY      "NavMapEditor"
+
+EXPORTS
+    ; Explicit exports can go here

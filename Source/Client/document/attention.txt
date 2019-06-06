@@ -1,0 +1,73 @@
+
+此文档主要说明编写客户端需要注意的地方
+
+[vEngine/VUI的使用]
+首先请仔细阅读vEngine中的Document目录下的各个文档。
+不要私下对vEngine进行修改，因为：你的修改未必是通用的修改，特别是当你修改的模块是一个公用模块时，
+你的修改可能能够使你自己的功能能够正常实现，但是别处用到此模块的地方很可能不能继续正常工作。
+特别是接口函数，更不能轻易修改。如果确属有修改需求，请通知vEngine的编写人员，让编写人员统一规划
+并修改。
+
+
+[判断指针是否有效] 
+使用P_VALID()宏,例如: if( !P_VALID(m_pPointer) )... 
+
+
+[判断句柄是否有效]
+使用GT_VALID()宏,例如: if( GT_VALID(dwID) )..
+
+
+[程序启动默认路径]
+程序启动时，vEngine会将程序的默认初始路径设置为EXE执行文件的上一层目录，也就是我们的Game目录。
+如果程序任何地方需要修改当前路径，请不要忘记用vEngine::SetDefaultDir()函数将路径恢复。
+同时可通过vEngine中的默认变量管理器访问到这个默认路径的字符串描述。
+形如： LPCTSTR szPath = TObjRef<VarContainer>()->GetString(_T("DIRECTORY"));
+
+
+[如何获得程序窗口句柄]
+HWND hwnd = (HWND)TObjRef<VarContainer>()->GetDword(_T("HWND"));
+
+
+[如何计算字符串的CRC值]
+DWORD dwCRC = TObjRef<Util>()->Crc32(szString);
+既可以计算普通字符串CRC也可以计算Unicode字符串的CRC
+
+
+[delete的注意事项]
+为了vEngine中的MemMap能够发挥最大功效，请使用 delete(p)的格式，不要使用delete p，即确保有括号。
+MemMap: 主要记录运行时内存的使用状态。并可以在程序运行时察看。
+
+
+[TObjRef的使用方式]
+TObjRef是vEngine中最常用的一种工具，几乎在任何情况下都可以替代指向对象的指针。
+例如VUIEditor中的一个函数需要指向VUI系统的指针：BOOL GUIEditor::Init(GUISystem* pSystem, BOOL bInGame=FALSE);
+可以这样使用：
+TObjRef<GUISystem> pDefaultGUISystem;
+GUIEditor::Init(pDefaultGUISystem, TRUE); 这是合法的
+从效率上考虑，如果经常使用的对象，应该将TObjRef声明为类成员变量。例如 TObjRef<Util>
+具体使用请参考vEngine中attention.txt文档
+
+
+[VarContainer变量管理器的使用]
+VarContainer用于存储一组变量,通过一个字符串键值来访问,一般用于代替程序中的各种全局函数以及配置参数.
+例如: TObjRef<VarContainer>()->Add(szPath, _T("DIRECTORY")); 是将szPath这个变量存在全局变量管理器.
+其他使用的例子:
+// 创建一个新的名为GameConfig的变量管理器
+CreateObj("GameConfig", "VarContainer"); 
+// 将config.xml中的所有变量信息读入到刚创建的这个变量管理器
+TObjRef<VarContainer>("GameConfig")->Load(NULL, _T("config.xml"));
+// 将GameConfig变量管理器的所有内容存入另一个XML文件
+TObjRef<VarContainer>("GameConfig")->Save(_T("config2.xml"));
+// 销毁GameConfig变量管理器
+KillObj("GameConfig");
+
+
+[界面系统渲染注意事项]
+客户端往往需要写不少新的界面控件。在写这些控件的时候需要主要，尽量不要在控件的Render函数中绕过
+GUIRender接口，直接调用2D或者3D绘图函数,因为这样可能打破主循环中安排好的绘制顺序，可能造成无法
+正确绘制。假设GUIRender中的接口不能完全满足渲染需求，请找GUIRender的编写人员，添加新的接口
+
+
+
+[程序中绝对不要出现中文]
+

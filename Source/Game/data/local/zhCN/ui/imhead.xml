@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="imhead_win" ClassName="CGUIWindow" LogicPos_x="2" LogicPos_y="327" Size_x="194" Size_y="64" AlignControl="\desktop\imname_win" AlignType="OuterTopLeft" PopupSound="window_popup">
+        <UIControl Name="head2" ClassName="CGUIStatic" LogicPos_x="65" Size_x="64" Size_y="64" AlignControl="\desktop\imhead_win" Font="小三楷体" TextRect_right="64" TextRect_bottom="64" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+        <UIControl Name="head1" ClassName="CGUIStatic" Size_x="64" Size_y="64" AlignControl="\desktop\imhead_win" Font="小三楷体" TextRect_right="64" TextRect_bottom="64" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+        <UIControl Name="head3" ClassName="CGUIStatic" LogicPos_x="130" Size_x="64" Size_y="64" AlignControl="\desktop\imhead_win" Font="小三楷体" TextRect_right="64" TextRect_bottom="64" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+    </UIControl>
+</desktop>

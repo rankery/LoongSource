@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 状态名称表xml映射 -->
+<root>
+    <Buff id="" name="" desc="" action_model="" effect_model="" icon="" adj_model="" self_model="" count_down_text="" />
+    <Buff id="" name="" desc="" action_model="" effect_model="" icon="" adj_model="" self_model="" count_down_text="" />
+</root>

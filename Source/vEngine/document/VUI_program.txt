@@ -1,0 +1,80 @@
+
+此文档详细叙述Engine中VUI的原理及使用方法,主要面向程序员
+
+[VUI相对于XUI的几个重要改进]
+1 XUI使用固定大小的内存区域存储控件信息,导致扩展比较困难,新控件的设计受到限制,VUI使用"属性注册的机制",只有注册过的属性才存盘.
+而且VUI使用XML格式文件来存储控件信息, 天然具有XML的优势,例如控件如果新增属性或者删除属性,原先的控件布局文件照样能读.
+
+2 XUI要求桌面上所有控件名称都不能重名,VUI采用了类似磁盘文件的方式,只规定同一层级下的控件不能重名,这样减少了为控件命名的麻烦,
+不过在VUI中访问控件,得到控件指针,一般都需要给出全名(包含路径),例如GUIsystem的成员函数: GetWnd(_T("desktop\\window\\button"))
+
+3 VUI支持Unicode,方便以后各种语言的版本制作,而且VUI普遍使用STL string做为属性,代替以前的定长字符串,没有了以前的长度限制
+
+4 VUI直接使用Windows消息作为控件消息,避免了没有太大用处的转换. VUI对消息的处理模式也比XUI更加精炼 
+
+5 使用RenderTarget来加速渲染,当控件不更新的时候,不重绘,加快渲染速度,由RenderTarget引入了画布机制
+
+6 由于原先写XUI编辑器的人并非是XUI系统的开发人员,对XUI本身理解不够透彻,所以以前的编辑器有各种问题和限制.新的VUI将VUIEditor整合
+进了VUI系统,由VUI本身来实现VUIEditor,功能十分完善
+
+7 相比于XUI,对各种字体的支援更加好
+
+
+[VUI基本原理]
+无论XUI还是VUI系统,其基本原理就是相当于一个过滤器,将用户的操作消息(Msg)转换成程序内部的事件(Event).
+VUI直接使用的是Windows消息, 外部将Windows消息传给VUI系统(GUISystem::OnWindowsMsg),VUI系统直接将消息传给Active控件(当前激活的焦
+点控件),如果是WM_MOUSEMOVE消息的话,同时也传给当前鼠标指向的控件.
+各个控件处理完发给自己的消息后,可能会产生一些事件,例如按钮控件被按下,会引发EGUIE_Click事件,控件应该通过SendEvent函数将事件向上
+发送,也就是向父窗口发送,可参考gui_button.cpp.注意:处理其他控件发过来的事件,应该在OnEvent函数中处理,而子控件发过来的事件会自动往
+上一级父控件发送,所以应该在SendEvent中处理.
+VUI统一规定对于控件处理过的按键消息,控件应该直接返回TRUE,而不是调用基类的OnInputMessage, 这样就能避免一个按键消息被多个控件处理
+
+
+[界面系统的两种写法]
+在功夫世界客户端的各种界面中,采用的最多是: 将各种逻辑写在一个继承于XUIWnd的类中,然后将这个类视为一种控件,通过XUI注册,创建的机制,
+创建一个这种类的实例.实现各种逻辑.还有一种写法是,通过一个与UI无继承关系的类,创建界面,然后注册一个事件处理函数,来处理各种界面事件,
+可以参考vEngine中的console_gui.cpp.
+这两种写法,各有各的优势,第一种由于采用继承控件的方式,灵活性很高,几乎无所不能,
+
+
+[创建界面]
+一种方式是直接使用GUISystem::CreateFromFile,另一种是先读入XML,再创建,第二种方法可以在读入XML后,修改指定控件的制定属性,提供了更大
+的灵活性,例如:
+	XmlElement element;
+	m_pGUI->LoadXml(&element, NULL, _T("ui\\login.xml"));
+	m_pGUI->ChangeXml(&element, "login\\panel\\quit", "Text", "QUIT");	// 修改某个控件的文字为QUIT
+	m_pWnd = m_pGUI->CreateWnd(_T("\\desktop"), &element);
+
+
+[删除界面]
+一种方式是直接立即删除,调用GUISystem::DestroyWnd, 但是由于很多控件需要自己删除自己,或者删除自己的父控件,所以不能采用这种方式,
+应该使用GUISystem::AddToDestroyList,这样控件不会立即删除,而是等到下一次程序update时,VUI系统才删除此控件
+
+
+[控件属性注册]
+在XUI中,由于采用了同一的tagXUIData数据结构来存储所有控件的属性,造成为各种各样的控件添加属性时巨大的困扰.
+现在VUI,在控件中,只有需要存盘的属性才需要注册,方式是调用m_pVarMgr->Register,其中VarMgr支持INT/DWORD/FLOAT/TSTRING/tagPoint/tagRect
+这几种类型,尽量不要在程序中使用其他类型,这几种类型基本能满足需要,bool型可以使用BOOL型代替(也就是INT),枚举型采用INT型代替.可参考VUI
+系统中各种内置控件的属性注册方式
+注意:当调用m_pVarMgr->Register的时候,此函数会同时将注册的变量置0或置空,如果不希望变量的初始值为空,可以在注册以后手动修改变量值,
+具体可以参考各种内部控件的构造函数
+
+
+[渲染刷新以及画布使用]
+当控件需要刷新自己本身的区域时,使用SetRefresh(),例如更新控件内部文字的时候.当需要刷新除自己以外的画面区域,使用SetRefresh(TRUE),
+例如移动控件的时候.
+对于RenderTarget的支持和使用,在GUIWindow类中,这也表示,只有使用了以GUIWindow类作为底板的控件组,才能享受到RenderTarget带来的所有优势
+
+
+[IGUIRender接口使用方法]
+所有控件的绘图都应该使用IGUIRender,请注意IGUIRender接口的每个函数的注释说明
+
+
+[内部控件的继承关系]
+所有控件都从GUIWnd派生, GUIStatic类包含了基本的文字和底图处理(包括读取,创建,渲染,销毁),请仔细读一遍他们的代码, 所有包含文字以及
+底图的控件都从 GUIStatic 派生(其他新写的控件类请也遵守此规范)
+
+
+[tagGUIImage 与 tagGUIImageHandle]
+tagGUIImage是供控件使用的，用来渲染时指定贴图，贴图位置等信息。
+tagGUIImageHandle是GUIRender内部使用的，用来管理贴图资源数据。

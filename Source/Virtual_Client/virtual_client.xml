@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 机器人账号信息 -->
+<root>
+  <Account id="" type="" user="" pwd="" wayPoint="" sendTime=""/>
+  <Account id="" type="" user="" pwd="" wayPoint="" sendTime=""/>
+</root>

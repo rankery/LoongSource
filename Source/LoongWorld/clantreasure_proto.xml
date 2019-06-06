@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 氏族珍宝proto列表 -->
+<root>
+  <treasure id="" itemid="" act_clancon_need="" clantype="" mapid="" npcid=""/>
+  <treasure id="" itemid="" act_clancon_need="" clantype="" mapid="" npcid=""/>
+</root>
+<!-- id 为typeid -->
+
+

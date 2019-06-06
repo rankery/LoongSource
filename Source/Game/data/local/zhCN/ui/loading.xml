@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="panel" ClassName="CGUIStatic" MoveFather="yes" TopMost="yes" Size_x="1023" Size_y="682" AlignControl="desktop" Font="小三隶书" FontWeight="1000" TextRect_right="1023" TextRect_bottom="682" TextColor="0xFFFAFAFA" ShadeColor="0xF0F0F" TextAlign="Center" PicColor="0xFFFDFDFD" AlphaWrite="Write">
+        <UIControl Name="progress" ClassName="CGUIProgress" LogicPos_x="660" LogicPos_y="611" Size_x="264" Size_y="56" AlignControl="\desktop\panel" AlignType="InnerRightBottom" AlignOffset_x="-99" AlignOffset_y="-15" Font="小三隶书" TextRect_right="264" TextRect_bottom="56" TextColor="0xFFFFFFFF" ShadeColor="0xFF290404" PicFileName="data\ui\loading\l_loading-jindu.bmp" PicColor="0xFFFFFFFF" AlphaWrite="Write" Horizon="yes" ForePicFileName="data\ui\loading\l_loading-jindu-a.bmp" ForePicColor="0xFFFFFFFF" />
+        <UIControl Name="text" ClassName="CGUIStatic" LogicPos_x="563" LogicPos_y="586" Size_x="458" Size_y="25" AlignControl="\desktop\panel\progress" AlignType="OuterTop" Font="小白雅黑" FontHeight="18" TextRect_right="458" TextRect_bottom="25" TextColor="0xFFFFFFFF" ShadeColor="0x290404" TextAlign="Center" PicColor="0xFFFFFF" />
+    </UIControl>
+</desktop>

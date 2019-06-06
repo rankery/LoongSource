@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <ChineseZodiac id="1" name="子鼠" />
+    <ChineseZodiac id="2" name="丑牛" />
+    <ChineseZodiac id="3" name="寅虎" />
+    <ChineseZodiac id="4" name="卯兔" />
+    <ChineseZodiac id="5" name="辰龙" />
+    <ChineseZodiac id="6" name="巳蛇" />
+    <ChineseZodiac id="7" name="午马" />
+    <ChineseZodiac id="8" name="未羊" />
+    <ChineseZodiac id="9" name="申猴" />
+    <ChineseZodiac id="10" name="酉鸡" />
+    <ChineseZodiac id="11" name="戌狗" />
+    <ChineseZodiac id="12" name="亥猪" />
+    <ChineseZodiac id="13" name="保密" />
+</root>

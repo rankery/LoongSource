@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 掉落物品集合表xml映射 -->
+<root>
+	<loot_item_set id=""  item_1_id="" item_1_num=""  item_2_id=""  item_2_num="" item_3_id="" item_3_num=""  item_4_id="" item_4_num="" item_5_id="" item_5_num="" item_6_id="" item_6_num="" item_7_id="" item_7_num="" item_8_id="" item_8_num="" item_9_id="" item_9_num="" item_10_id="" item_10_num="" item_11_id="" item_11_num="" item_12_id="" item_12_num=""  item_13_id="" item_13_num="" item_14_id="" item_14_num="" item_15_id="" item_15_num=""  item_16_id="" item_16_num=""  item_17_id="" item_17_num="" item_18_id="" item_18_num=""  item_19_id="" item_19_num="" item_20_id="" item_20_num=""  />
+	<loot_item_set id=""  item_1_id="" item_1_num=""  item_2_id=""  item_2_num="" item_3_id="" item_3_num=""  item_4_id="" item_4_num="" item_5_id="" item_5_num="" item_6_id="" item_6_num="" item_7_id="" item_7_num="" item_8_id="" item_8_num="" item_9_id="" item_9_num="" item_10_id="" item_10_num="" item_11_id="" item_11_num="" item_12_id="" item_12_num=""  item_13_id="" item_13_num="" item_14_id="" item_14_num="" item_15_id="" item_15_num=""  item_16_id="" item_16_num=""  item_17_id="" item_17_num="" item_18_id="" item_18_num=""  item_19_id="" item_19_num="" item_20_id="" item_20_num=""  />
+</root>

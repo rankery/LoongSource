@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="headfloat" ClassName="CGUIStatic" Resizable="yes" Movable="yes" CanMoveOutOfFather="yes" LogicPos_x="417" LogicPos_y="94" Size_x="50" Size_y="20" AlignControl="\desktop" Font="小白雅黑" FontHeight="18" TextRect_right="50" TextRect_bottom="20" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" TextAlign="LeftCenter" PicColor="0xFFFFFF" />
+</desktop>

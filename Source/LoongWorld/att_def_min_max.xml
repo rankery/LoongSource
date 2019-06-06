@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 属性默认值、最小最大值 -->
+<root>
+    <Att id="" name="" def_role="" def_creature="" min="" max="" />
+    <Att id="" name="" def_role="" def_creature="" min="" max="" />
+</root>

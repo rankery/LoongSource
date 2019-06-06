@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<GoldEgg id="1" general_consum="1" special_consum="2" egg_item1="2000004" egg_item2="2000214" egg_item3="2000009" egg_item4="2000019" egg_item5="2000204" egg_item6="2000219" egg_item7="2000014" egg_item8="2000209" egg_item9="2000024" egg_item10="2000224"/>
+	<GoldEgg id="2" general_consum="2" special_consum="4" egg_item1="6010001" egg_item2="6010101" egg_item3="6010807" egg_item4="6010867" egg_item5="6010866" egg_item6="1360202" egg_item7="1350022" egg_item8="6000224" egg_item9="2220401" egg_item10="6010868"/>
+	<GoldEgg id="3" general_consum="4" special_consum="8" egg_item1="3200462" egg_item2="1340010" egg_item3="2005207" egg_item4="8600018" egg_item5="2000025" egg_item6="2000225" egg_item7="6011001" egg_item8="3304163" egg_item9="6030001" egg_item10="6030002"/>
+	<GoldEgg id="4" general_consum="8" special_consum="28" egg_item1="1425007" egg_item2="1501046" egg_item3="1501047" egg_item4="1501048" egg_item5="1501049" egg_item6="1501050" egg_item7="1425009" egg_item8="1501052" egg_item9="1501053" egg_item10="1425008"/>
+	<GoldEgg id="5" general_consum="16" special_consum="288" egg_item1="8907401" egg_item2="8907402" egg_item3="8907403" egg_item4="8907404" egg_item5="8907405" egg_item6="8907406" egg_item7="8907407" egg_item8="8907408" egg_item9="8907409" egg_item10="8907410"/>
+	<GoldEgg id="6" general_consum="32" special_consum="888" egg_item1="1420513" egg_item2="1420533" egg_item3="1420553" egg_item4="1421563" egg_item5="2220403" egg_item6="6011003" egg_item7="2220405" egg_item8="6030004" egg_item9="2220407" egg_item10="2220408"/>
+	<GoldEgg id="7" general_consum="64" special_consum="1888" egg_item1="4000026" egg_item2="4000027" egg_item3="4005316" egg_item4="6010016" egg_item5="6010116" egg_item6="6010812" egg_item7="4600004" egg_item8="8971016" egg_item9="8971017" egg_item10="3304165"/>
+</root>

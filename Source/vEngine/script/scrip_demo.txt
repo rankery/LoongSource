@@ -1,0 +1,83 @@
+----------------------------------------------------------------------
+globe_list.lua 
+
+Gamelib = {}
+local function Loop(index)
+    local nG = 0 
+    for key in pairs(_G) do 
+        nG=nG+1 
+        if nG == index then
+            vEngine.Print(key)
+            return
+        end
+    end
+    n = -1
+end
+
+function Gamelib.EnumGlobe()
+    vEngine.Print("-----start-----")
+    n=1
+    while(n>0) do
+        vEngine.WaitSec(0)
+        Loop(n)
+        n=n+1
+    end
+    vEngine.Print("-----end------")
+end
+
+----------------------------------------------------------------------
+test.lua
+
+local function Print(n)
+    vEngine.WaitSec(0)
+    vEngine.Print(n)
+end
+
+
+local function Test(n)
+    local a = {[1]=1, [2]=2}
+    local min = "test-"    
+    Print(min..n)
+end
+
+
+function main()
+    local n=0
+    while(n<2000) do
+        n=n+1
+        Test(n)
+        --Test2(n)
+    end
+end
+
+----------------------------------------------------------------------
+test2.lua
+
+function Test2(n)
+    local min = "test2-"    
+    vEngine.WaitSec(0)
+    vEngine.Print(min..n)
+end
+
+
+--local n=0
+--while(n<10000) do
+--    n=n+1
+--    Test(n)
+--end
+
+
+
+--lib1 = {[1]=0, ["1"]="wow"}
+--function lib1.Loop(index)
+--	local nG = 0 
+--	for key in pairs(_G) do 
+--		nG=nG+1 
+--		if nG == index then
+--			vEngine.Print(key)
+--			return
+--		end
+--	end
+--	n = 0
+--end
+

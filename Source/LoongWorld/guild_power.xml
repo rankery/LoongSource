@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 帮派权限xml映射 -->
+<root>
+    <GuildPower name="" id="" DismissGuild="" InviteJoin="" TurnoverLeader="" LeaveGuild="" DemissPostion="" ModifyTenet="" ModifySgin="" SetWareRights="" Upgrade="" Commerce="" SetCommend="" Affair="" SetSkill="" AdvSkill=""/>
+    <GuildPower name="" id="" DismissGuild="" InviteJoin="" TurnoverLeader="" LeaveGuild="" DemissPostion="" ModifyTenet="" ModifySgin="" SetWareRights="" Upgrade="" Commerce="" SetCommend="" Affair="" SetSkill="" AdvSkill=""/>
+</root>
+
+<!-- 注：
+1.id帮派职位枚举值
+2.name帮派职位名称，程序中不使用该字段
+3.默认值为0，即没有权限
+-->
+

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 铭纹表xml映射 -->
+<root>
+	<posy id="" name="" att="" times="" success_rate="" produce_time="" potval_consume="" money_consume="" coefficientA="" coefficientB="" coefficientC="" stuff1_id="" stuff1_type="" stuff1_num="" stuff2_id="" stuff2_type="" stuff2_num=""  stuff3_id="" stuff3_type="" stuff3_num="" stuff4_id="" stuff4_type="" stuff4_num="" stuff5_id="" stuff5_type="" stuff5_num="" stuff6_id="" stuff6_type="" stuff6_num="" />
+	<posy id="" name="" att="" times="" success_rate="" produce_time="" potval_consume="" money_consume="" coefficientA="" coefficientB="" coefficientC="" stuff1_id="" stuff1_type="" stuff1_num="" stuff2_id="" stuff2_type="" stuff2_num=""  stuff3_id="" stuff3_type="" stuff3_num="" stuff4_id="" stuff4_type="" stuff4_num="" stuff5_id="" stuff5_type="" stuff5_num="" stuff6_id="" stuff6_type="" stuff6_num="" />
+</root>

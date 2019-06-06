@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Skill id="1" rate="10000" cost="100000" />
+    <Skill id="2" rate="9000" cost="150000" />
+    <Skill id="3" rate="8000" cost="200000" />
+    <Skill id="4" rate="7000" cost="250000" />
+    <Skill id="5" rate="6000" cost="300000" />
+    <Skill id="6" rate="4000" cost="350000" />
+    <Skill id="7" rate="2000" cost="400000" />
+</root>

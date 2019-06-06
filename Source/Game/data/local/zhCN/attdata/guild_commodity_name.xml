@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<commodity id="1001" name="端砚" icon="TBWP118_3" display_type="普通商货" desc="帮派跑商的商货。产于玄天龙城。"/>
+	<commodity id="1002" name="金镶玉环" icon="TBJZ03" display_type="普通商货" desc="帮派跑商的商货。产于玄天龙城。"/>
+	<commodity id="1003" name="朱雀灯" icon="TJY38" display_type="普通商货" desc="帮派跑商的商货。产于玄天龙城。"/>
+	<commodity id="1011" name="弁服" icon="TBBY05" display_type="普通商货" desc="帮派跑商的商货。产于凤翔。"/>
+	<commodity id="1012" name="檀香扇" icon="TBF05" display_type="普通商货" desc="帮派跑商的商货。产于凤翔。"/>
+	<commodity id="1013" name="夜明珠" icon="TBWP068_1" display_type="普通商货" desc="帮派跑商的商货。产于凤翔。"/>
+	<commodity id="1021" name="宣纸" icon="TBWP118_2" display_type="普通商货" desc="帮派跑商的商货。产于涿鹿。"/>
+	<commodity id="1022" name="漆木墨匣" icon="TBWP005" display_type="普通商货" desc="帮派跑商的商货。产于涿鹿。"/>
+	<commodity id="1023" name="和氏璧" icon="TBF04" display_type="普通商货" desc="帮派跑商的商货。产于涿鹿。"/>
+	<commodity id="1031" name="徽墨" icon="TBWP118_1" display_type="普通商货" desc="帮派跑商的商货。产于巫水。"/>
+	<commodity id="1032" name="玉谷纹圭" icon="TBWP104_1" display_type="普通商货" desc="帮派跑商的商货。产于巫水。"/>
+	<commodity id="1033" name="碧玺链坠" icon="TBYS04" display_type="普通商货" desc="帮派跑商的商货。产于巫水。"/>
+	<commodity id="1041" name="湖笔" icon="TBWP118" display_type="普通商货" desc="帮派跑商的商货。产于武夷。"/>
+	<commodity id="1042" name="竹丝扇" icon="TBQ07" display_type="普通商货" desc="帮派跑商的商货。产于武夷。"/>
+	<commodity id="1043" name="龙眼木雕" icon="TBWP080" display_type="普通商货" desc="帮派跑商的商货。产于武夷。"/>
+	<commodity id="1051" name="白玉墨床" icon="TBWP005_1" display_type="普通商货" desc="帮派跑商的商货。产于昆仑。"/>
+	<commodity id="1052" name="水晶杯" icon="TBWP051" display_type="普通商货" desc="帮派跑商的商货。产于昆仑。"/>
+	<commodity id="1053" name="舍利子" icon="TBWP042_4" display_type="普通商货" desc="帮派跑商的商货。产于昆仑。"/>
+	<commodity id="1101" name="琉璃三彩" icon="TBB05" display_type="特产商货" desc="帮派跑商的商货。凤翔之特产。"/>
+	<commodity id="1102" name="蓝田玉雕" icon="TJY35" display_type="特产商货" desc="帮派跑商的商货。凤翔之特产。"/>
+	<commodity id="1111" name="金丝挂毯" icon="TBPF08" display_type="特产商货" desc="帮派跑商的商货。涿鹿之特产。"/>
+	<commodity id="1112" name="黄帝内经" icon="TBWP053_1" display_type="特产商货" desc="帮派跑商的商货。涿鹿之特产。"/>
+	<commodity id="1121" name="蜀绣" icon="TBWP016_1" display_type="特产商货" desc="帮派跑商的商货。巫水之特产。"/>
+	<commodity id="1122" name="楠木船棺" icon="TBWP089_2" display_type="特产商货" desc="帮派跑商的商货。巫水之特产。"/>
+	<commodity id="1131" name="武夷岩茶" icon="TBWP013" display_type="特产商货" desc="帮派跑商的商货。武夷之特产。"/>
+	<commodity id="1132" name="宝石金钗" icon="TBYS03B" display_type="特产商货" desc="帮派跑商的商货。武夷之特产。"/>
+	<commodity id="1141" name="昆仑彩石" icon="TBWP002_1" display_type="特产商货" desc="帮派跑商的商货。昆仑之特产。"/>
+	<commodity id="1142" name="和田羊脂玉" icon="TBWP004_2" display_type="特产商货" desc="帮派跑商的商货。昆仑之特产。"/>
+	<commodity id="1201" name="刀剑" icon="TBD08" display_type="黑市商货" desc="帮派跑商的商货。产于玄天龙城。"/>
+	<commodity id="1211" name="火药" icon="TBWP132_1" display_type="黑市商货" desc="帮派跑商的商货。产于凤翔。"/>
+	<commodity id="1221" name="铠甲" icon="TBJY07" display_type="黑市商货" desc="帮派跑商的商货。产于涿鹿。"/>
+	<commodity id="1231" name="砒霜" icon="TBWP049_1" display_type="黑市商货" desc="帮派跑商的商货。产于巫水。"/>
+	<commodity id="1241" name="暗器" icon="TBWP073" display_type="黑市商货" desc="帮派跑商的商货。产于武夷。"/>
+	<commodity id="1251" name="天山雪莲" icon="TBWP115_3" display_type="黑市商货" desc="帮派跑商的商货。产于昆仑。"/>
+</root>

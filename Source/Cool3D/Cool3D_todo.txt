@@ -1,0 +1,51 @@
+.[小平]res的读盘是每个成员变量读一次，这样比一次读入所有成员要慢很多；
+.[小平]res map的key从string改为crc；
+.镜头光晕和灯光光晕是否作为Effect
+.Sky,Cloud渲染,要处理晨昏昼夜,要有太阳,要有镜头光晕.要效果,更要注意效率
+.QuadTreeBuilder需要建立完全的Leaf Tree
+.RenderSys中增加一个PostProcess处理class体系,每种PostProcess效果可以挂载到任何的RenderSys,这样Fixed Render也可以实现Glow等特效.
+.SceneNode的update需要加一个参数,pSceneGraph,见SGDynamicProjector
+.static node的静态阴影生成到terrain的shadow map中.shadow map指存储shadow,terrain仍需计算实时光照.(通过shadow map的uv缩放和旋转是否可以使影子符合实时光照??)
+.ani ctrl需要支持lod,即如果对象的lod小于一个值则不update动画,除非这个动画是第一次update,因为没有update的ani可能彻底显示不出来.
+.max输出的indexed mesh可以尝试优化成triangle strip,如果一个tri list优化后变成n个strip,则可以不使用strip
+
+
+//--
+[已经完成11:01 2005-1-31].Key frame ani(.fak文件)需要增加tagNode的支持（输出指定节点的变换）,static mesh也有tagnode,可以做刀光的时候使用
+[已经完成17:13 2004-11-10].max材质输出speclular map
+[已经完成17:44 2004-10-29].如果max mtl的opcity值不为100则使用这个值作为alpha ref来做alpha透空(以替代alpha透明)
+
+
+记得关闭测试代码:DynamicMesh.cpp,pDev->SetCullMode(ECull_None);//test
+
+目前未解决的问题:
+.Projector Mesh如何创建更准确?
+.Max mirrored bone输出有问题
+.大片的湖泊,长长的河流如何编辑?如何渲染才能保证效率???如何整合到现有的架构
+
+[修改]Ani的InvalidateRenderData()原来在RenderSys中调用,现在改为在SceneNode中调用.
+	因为例如SGAvatarAttachment需要Avatar先计算好,然后在计算自己.
+	
+1,MSkin,MStatic,MKeyFrame 的UpdateMtl函数 延后
+2,关键帧计算加lod? 延后
+3,高光实验?
+5,四叉树是否做成full leaf?
+6,max插件用unicode
+7.草相关类的名称修改
+8,shader skin，远处的角色可以少传送一些bone matrix给shader
+10,水面的编辑和渲染机制大改
+11,地形高亮：远处地块没有高亮，跟近处地块亮度不一致，交界处很明显
+12,刀光不圆滑
+13,SkeletonAniCtrl和AniCtrl因上下身分开需要整理一下架构，KeyFrameAniCtrl可能也需要修改
+
+
+1,lightmap的阴影计算采用shadowmap技术，以加快计算速度
+2,计算lightmap每个entitynode的光照时，需要逐个submesh进行render，因为每个submesh的材质可能不一样
+
+1,松散四叉树，划分大型地物时会有明显的裁剪误差，原因：地物的中心和边缘距离过大，不够精确
+2,build地图对象时，把旧的fsg文件删除
+3,build“Lightmap”时，把临时文件全部清空
+
+
+4,渲染系统代码整理:包括RenderSysFixedCache和RenderSysFixed
+

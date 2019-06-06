@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 物品名称表xml映射 -->
+<root>
+    <item id="" name="" display_type="" desc="" male_icon="" female_icon="" action_model="" source_effect="" dest_effect=""  prepare_action="" male_model="" female_model="" drop_model="" action_blend=""/>
+    <item id="" name="" display_type="" desc="" male_icon="" female_icon="" action_model="" source_effect="" dest_effect="" prepare_action="" male_model="" female_model="" drop_model="" action_blend=""/>
+</root>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 触发器表xml映射 -->
+<root>
+    <Trigger id="" event_type="" event_misc1="" event_misc2="" prop="" state_type="" state_misc1="" state_misc2="" />
+    <Trigger id="" event_type="" event_misc1="" event_misc2="" prop="" state_type="" state_misc1="" state_misc2="" />
+</root>

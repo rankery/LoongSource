@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <washing_proto id="1" level="1" costitemid="6000225" costitemnum="1" />
+    <washing_proto id="2" level="2" costitemid="6000225" costitemnum="3" />
+    <washing_proto id="3" level="3" costitemid="6000225" costitemnum="8" />
+    <washing_proto id="4" level="4" costitemid="6000225" costitemnum="20" />
+    <washing_proto id="5" level="5" costitemid="6000225" costitemnum="50" />
+    <washing_proto id="6" level="6" costitemid="6000225" costitemnum="100" />
+    <washing_proto id="7" level="7" costitemid="6000225" costitemnum="150" />
+    <washing_proto id="8" level="1" costitemid="4800072" costitemnum="1" />
+    <washing_proto id="9" level="2" costitemid="4800072" costitemnum="3" />
+    <washing_proto id="10" level="3" costitemid="4800072" costitemnum="8" />
+    <washing_proto id="11" level="4" costitemid="4800072" costitemnum="20" />
+    <washing_proto id="12" level="5" costitemid="4800072" costitemnum="50" />
+    <washing_proto id="13" level="6" costitemid="4800072" costitemnum="100" />
+    <washing_proto id="14" level="7" costitemid="4800072" costitemnum="150" />
+</root>

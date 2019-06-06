@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="net_msg_lw_define">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="base_define">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="net_msg_dw_define">
+      <UniqueIdentifier>{a74294e7-01c0-4848-8aff-803be49e9cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net_msg_rt_define">
+      <UniqueIdentifier>{582a013c-97b5-4bc4-8e83-525fc96c5af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net_msg_gm_tool_define">
+      <UniqueIdentifier>{1e3a35d9-f88c-45ad-b4cf-49b53b8aef8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net_msg_bill_define">
+      <UniqueIdentifier>{c56cef41-69c6-47f6-a1c7-2ccb7f6bc072}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="login_issue.h">
+      <Filter>net_msg_lw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="activity_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="att_res_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="base_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="clandata_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="consolidate_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="famehall_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="instance_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="item_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="log_cmdid_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="login_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCTeam_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_skill_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="role_data_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="rt_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="sspawnpoint_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="strength_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="title_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="vip_netbar_define.h">
+      <Filter>base_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_common.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_famehall.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_fatigue.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_guild.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_item.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_leftmsg.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_log.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_mall.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_marriage.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_pet.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_quest.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_sexternal_links.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_skill.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_title.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_vcard.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_vip_netbar.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_vipstall.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_yuanbao.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="role_data.h">
+      <Filter>net_msg_dw_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_rt_c.h">
+      <Filter>net_msg_rt_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_rt_errorcode.h">
+      <Filter>net_msg_rt_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_rt_s.h">
+      <Filter>net_msg_rt_define</Filter>
+    </ClInclude>
+    <ClInclude Include="gm_tool_define.h">
+      <Filter>net_msg_gm_tool_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_gm_tool_c.h">
+      <Filter>net_msg_gm_tool_define</Filter>
+    </ClInclude>
+    <ClInclude Include="bill_define.h">
+      <Filter>net_msg_bill_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_bill_c.h">
+      <Filter>net_msg_bill_define</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_bill_s.h">
+      <Filter>net_msg_bill_define</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base_define.cpp">
+      <Filter>base_define</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

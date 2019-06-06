@@ -1,0 +1,89 @@
+
+此文档主要说明使用引擎需要注意的地方
+
+[判断指针是否有效] 
+使用P_VALID()宏,例如: if( !P_VALID(m_pPointer) )... 
+
+
+[判断句柄是否有效]
+使用GT_VALID()宏,例如: if( GT_VALID(dwID) )...
+
+
+[程序启动默认路径]
+程序启动时，vEngine会将程序的默认初始路径设置为EXE执行文件的上一层目录，也就是我们的Game目录。
+如果程序任何地方需要修改当前路径，请不要忘记用vEngine::SetDefaultDir()函数将路径恢复。
+同时可通过vEngine中的默认变量管理器访问到这个默认路径的字符串描述。
+形如： LPCTSTR szPath = TObjRef<VarContainer>()->GetString(_T("DIRECTORY"));
+
+
+[如何获得程序窗口句柄]
+HWND hwnd = (HWND)TObjRef<VarContainer>()->GetDword(_T("HWND"));
+
+
+[如何计算字符串的CRC值]
+DWORD dwCRC = TObjRef<Util>()->Crc32(szString);
+既可以计算普通字符串CRC也可以计算Unicode字符串的CRC
+
+
+[delete的注意事项]
+为了vEngine中的MemMap能够发挥最大功效，请使用 delete(p)的格式，不要使用delete p，即确保有括号。
+MemMap: 主要记录运行时内存的使用状态。并可以在程序运行时察看。
+
+
+[TObjRef的使用]
+vEngine实际是一堆工具的集合,在运行时期,就是一组对象的集,这些对象由vEngine::ObjMgr来统一管理.
+可以从vEngine::ObjMgr,通过对象的字符串名字索引到所有对象.
+任何类都可以通过注册,注册到vEngine::ObjMgr, 然后可以通过注册时给出名字进行访问.
+
+注意这个过程:注册的是类,通过注册名Get的是类的一个对象实体.在ObjMgr内部,注册时并不马上直接生成
+类的实体,而是第一次通过注册名Get时,才生成实体,这个实体我们称之为默认实体或默认对象
+
+可以通过注册名创建其他不同名,但同类的实体:ObjMgr->Create(新名字,注册名),这样就创建了一个类型
+与注册名实体一样的对象,这个对象只是与注册名实体同类,他们的实际内容并不一定相同.
+
+
+上面所说到的Get的过程,都可以通过,并且应该通过TObjRef这个工具来实现.
+例如TObjRef<Util>("MyUtil"),得到名字为"MyUtil"的对象指针
+TObjRef<Util>(),得到注册名的默认实体
+
+ObjRef是vEngine中最常用的一种工具，几乎在任何情况下都可以替代指向对象的指针。
+例如VUIEditor中的一个函数需要指向VUI系统的指针：BOOL GUIEditor::Init(GUISystem* pSystem, BOOL bInGame=FALSE);
+可以这样使用：
+TObjRef<GUISystem> pDefaultGUISystem;
+GUIEditor::Init(pDefaultGUISystem, TRUE); 这是合法的
+
+
+在不严格要求速度的场合下,可以直接按上面的方式使用TObjRef,如果指针被频繁引用,建议将
+TObjRef<..>作为类的成员变量
+
+一个具体的示范: 
+vEngine在Init的时候就注册了很多类型,相当于为每种类创建了一个默认对象(当然实际上是在第一
+次Get时真正创建C++对象),有很多时候我们还需要创建别的同类对象,下面的语句,另创建了两套VFS对象:
+CreateObj("VFS_System", "VirtualFileSys");
+CreateObj("VFS_Map", "VirtualFileSys");
+这两条语句执行后,vEngine中实际管理了3个VFS对象,分别叫"VirtualFileSys"/"VFS_System"/"VFS_Map",
+现在就能通过下面的语句来索引到这三个对象的指针:
+TObjRef<VirtualFileSys>("VirtualFileSys")->...
+TObjRef<VirtualFileSys>("VFS_System")->...
+TObjRef<VirtualFileSys>("VFS_Map")->...
+其中第一句因为得到的是默认对象,可以省略为 TObjRef<VirtualFileSys>()->...
+
+
+[TObjRef作为成员变量来使用]
+当一个类中含有TObjRef成员,例如类声明了: TObjRef<Util> m_pUtil;
+那么m_pUtil不需要任何初始化,就已经指向了Util的默认对象,如果需要让m_pUtil指向其他的Util对象,可以
+写例如(一般建议在类的构造函数中写) m_pUtil = "My Util";
+
+
+[VarContainer变量管理器的使用]
+VarContainer用于存储一组变量,通过一个字符串键值来访问,一般用于代替程序中的各种全局函数以及配置参数.
+例如: TObjRef<VarContainer>()->Add(szPath, _T("DIRECTORY")); 是将szPath这个变量存在全局变量管理器.
+其他使用的例子:
+// 创建一个新的名为GameConfig的变量管理器
+CreateObj("GameConfig", "VarContainer"); 
+// 将config.xml中的所有变量信息读入到刚创建的这个变量管理器
+TObjRef<VarContainer>("GameConfig")->Load(NULL, _T("config.xml"));
+// 将GameConfig变量管理器的所有内容存入另一个XML文件
+TObjRef<VarContainer>("GameConfig")->Save(_T("config2.xml"));
+// 销毁GameConfig变量管理器
+KillObj("GameConfig");

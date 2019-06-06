@@ -1,0 +1,16 @@
+﻿  StdAfx.cpp
+d:\other\loongrework\sourcev2\external\include\dmerror.h(12): warning C4005: 'FACILITY_DIRECTMUSIC': macro redefinition
+  d:\windows kits\10\include\10.0.17763.0\shared\winerror.h(176): note: see previous definition of 'FACILITY_DIRECTMUSIC'
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(1524): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared
+d:\other\loongrework\sourcev2\source\vengine\debug\dbghelp.h(3040): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared
+  Database.cpp
+  Field.cpp
+  MysqlStream.cpp
+  QueryResult.cpp
+  SafeStreamQueue.cpp
+  StreamPool.cpp
+     Creating library ..\vsout\Beton\Release\Beton.lib and object ..\vsout\Beton\Release\Beton.exp
+  Generating code
+  All 700 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Beton.vcxproj -> D:\other\LoongRework\Sourcev2\Source\Beton\..\Game\Release\Beton.dll

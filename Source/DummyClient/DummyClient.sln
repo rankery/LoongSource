@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DummyClient2", "DummyClient2.vcproj", "{4050B002-ED6A-419C-9AD6-227D41B55F12}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Client_Debug = Client_Debug
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4050B002-ED6A-419C-9AD6-227D41B55F12}.Client_Debug.ActiveCfg = Client_Debug|Win32
+		{4050B002-ED6A-419C-9AD6-227D41B55F12}.Client_Debug.Build.0 = Client_Debug|Win32
+		{4050B002-ED6A-419C-9AD6-227D41B55F12}.Debug.ActiveCfg = Debug|Win32
+		{4050B002-ED6A-419C-9AD6-227D41B55F12}.Debug.Build.0 = Debug|Win32
+		{4050B002-ED6A-419C-9AD6-227D41B55F12}.Release.ActiveCfg = Release|Win32
+		{4050B002-ED6A-419C-9AD6-227D41B55F12}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

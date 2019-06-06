@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 物品静态属性xml映射 -->
+<root>
+    <ItemProto id="" Type="" TypeEx="" TypeReserved="" StuffType="" SpecFunc="" SpecFuncVal1="" SpecFuncVal2="" moveable="" Level="" Quality="" BindType="" QuestID="" BasePrice="" TimeLimit="" MaxUseTimes="" MaxLapNum="" MaxHoldNum="" Enmity="" NeedBroadcast="" CanSell="" ZoneRepType="" ZoneRepVal="" OtherRepType="" OtherRepVal="" TriggerID0="" BuffID0="" TriggerID1="" BuffID1="" CooldownTime="" TransTriggerID="" TransID="" OpType="" OpDist="" OpRaduis="" InterruptMove="" InterruptSkillOrdRate="" PrepareTime="" SexLimit="" MinUseLevel="" MaxUseLevel="" TargetLimit="" BuffLimitID="" StateLimit="" DeadLoot=""/>
+    <ItemProto id="" Type="" TypeEx="" TypeReserved="" StuffType="" SpecFunc="" SpecFuncVal1="" SpecFuncVal2="" moveable="" Level="" Quality="" BindType="" QuestID="" BasePrice="" TimeLimit="" MaxUseTimes="" MaxLapNum="" MaxHoldNum="" Enmity="" NeedBroadcast="" CanSell="" ZoneRepType="" ZoneRepVal="" OtherRepType="" OtherRepVal="" TriggerID0="" BuffID0="" TriggerID1="" BuffID1="" CooldownTime="" TransTriggerID="" TransID="" OpType="" OpDist="" OpRaduis="" InterruptMove="" InterruptSkillOrdRate="" PrepareTime="" SexLimit="" MinUseLevel="" MaxUseLevel="" TargetLimit="" BuffLimitID="" StateLimit="" DeadLoot=""/>
+</root>
+
+<!-- 注：
+1.id中记录的是物品TypeID；
+-->
+

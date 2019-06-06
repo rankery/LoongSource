@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <SpawnPoint id="201" CreatureID1="4000101" CreatureID2="4000103" CreatureID3="4000201" CreatureID4="4000201" CreatureID5="4000402" CreatureID6="4000403" />
+    <SpawnPoint id="202" CreatureID1="4000106" CreatureID2="4000108" CreatureID3="4000206" CreatureID4="4000206" CreatureID5="4000407" CreatureID6="4000408" />
+    <SpawnPoint id="211" CreatureID1="4000303" CreatureID2="4000305" />
+    <SpawnPoint id="212" CreatureID1="4000308" CreatureID2="4000310" />
+    <SpawnPoint id="301" CreatureID1="4000101" CreatureID2="4000103" CreatureID3="4000201" CreatureID4="4000201" CreatureID5="4000402" CreatureID6="4000403" />
+    <SpawnPoint id="302" CreatureID1="4000106" CreatureID2="4000108" CreatureID3="4000206" CreatureID4="4000206" CreatureID5="4000407" CreatureID6="4000408" />
+    <SpawnPoint id="303" CreatureID1="4000102" CreatureID2="4000104" CreatureID3="4000202" CreatureID4="4000202" CreatureID5="4000401" CreatureID6="4000404" />
+    <SpawnPoint id="311" CreatureID1="4000303" CreatureID2="4000305" />
+    <SpawnPoint id="312" CreatureID1="4000308" CreatureID2="4000310" />
+    <SpawnPoint id="401" CreatureID1="4000101" CreatureID2="4000103" CreatureID3="4000202" CreatureID4="4000202" CreatureID5="4000402" CreatureID6="4000403" />
+    <SpawnPoint id="402" CreatureID1="4000106" CreatureID2="4000108" CreatureID3="4000207" CreatureID4="4000207" CreatureID5="4000407" CreatureID6="4000408" />
+    <SpawnPoint id="403" CreatureID1="4000102" CreatureID2="4000104" CreatureID3="4000202" CreatureID4="4000202" CreatureID5="4000401" CreatureID6="4000404" />
+    <SpawnPoint id="411" CreatureID1="4000303" CreatureID2="4000305" />
+    <SpawnPoint id="412" CreatureID1="4000308" CreatureID2="4000310" />
+    <SpawnPoint id="501" CreatureID1="4000101" CreatureID2="4000103" CreatureID3="4000202" CreatureID4="4000202" CreatureID5="4000402" CreatureID6="4000403" />
+    <SpawnPoint id="502" CreatureID1="4000106" CreatureID2="4000108" CreatureID3="4000207" CreatureID4="4000207" CreatureID5="4000407" CreatureID6="4000408" />
+    <SpawnPoint id="503" CreatureID1="4000102" CreatureID2="4000104" CreatureID3="4000203" CreatureID4="4000203" CreatureID5="4000401" CreatureID6="4000404" />
+    <SpawnPoint id="511" CreatureID1="4000303" CreatureID2="4000305" />
+    <SpawnPoint id="512" CreatureID1="4000308" CreatureID2="4000310" />
+    <SpawnPoint id="601" CreatureID1="4000101" CreatureID2="4000103" CreatureID3="4000203" CreatureID4="4000203" CreatureID5="4000402" CreatureID6="4000403" />
+    <SpawnPoint id="602" CreatureID1="4000106" CreatureID2="4000108" CreatureID3="4000208" CreatureID4="4000208" CreatureID5="4000407" CreatureID6="4000408" />
+    <SpawnPoint id="603" CreatureID1="4000102" CreatureID2="4000104" CreatureID3="4000203" CreatureID4="4000203" CreatureID5="4000401" CreatureID6="4000404" />
+    <SpawnPoint id="604" CreatureID1="4000105" CreatureID2="4000405" />
+    <SpawnPoint id="611" CreatureID1="4000303" CreatureID2="4000305" />
+    <SpawnPoint id="612" CreatureID1="4000308" CreatureID2="4000310" />
+    <SpawnPoint id="614" CreatureID1="4000304" />
+    <SpawnPoint id="701" CreatureID1="4000101" CreatureID2="4000103" CreatureID3="4000204" CreatureID4="4000204" CreatureID5="4000402" CreatureID6="4000403" />
+    <SpawnPoint id="702" CreatureID1="4000106" CreatureID2="4000108" CreatureID3="4000209" CreatureID4="4000209" CreatureID5="4000407" CreatureID6="4000408" />
+    <SpawnPoint id="703" CreatureID1="4000102" CreatureID2="4000104" CreatureID3="4000204" CreatureID4="4000204" CreatureID5="4000401" CreatureID6="4000404" />
+    <SpawnPoint id="704" CreatureID1="4000105" CreatureID2="4000405" />
+    <SpawnPoint id="711" CreatureID1="4000303" CreatureID2="4000305" />
+    <SpawnPoint id="712" CreatureID1="4000308" CreatureID2="4000310" />
+    <SpawnPoint id="714" CreatureID1="4000304" />
+    <SpawnPoint id="1001" CreatureID1="4000111" CreatureID2="4000113" CreatureID3="4000211" CreatureID4="4000412" CreatureID5="4000413" CreatureID6="4000901" CreatureID7="4000991" />
+    <SpawnPoint id="1002" CreatureID1="4000111" CreatureID2="4000113" CreatureID3="4000211" CreatureID4="4000412" CreatureID5="4000413" CreatureID6="4000902" CreatureID7="4000991" />
+    <SpawnPoint id="1003" CreatureID1="4000111" CreatureID2="4000113" CreatureID3="4000212" CreatureID4="4000412" CreatureID5="4000413" CreatureID6="4000903" CreatureID7="4000991" />
+    <SpawnPoint id="1004" CreatureID1="4000111" CreatureID2="4000113" CreatureID3="4000212" CreatureID4="4000412" CreatureID5="4000413" CreatureID6="4000904" CreatureID7="4000991" />
+    <SpawnPoint id="1005" CreatureID1="4000111" CreatureID2="4000113" CreatureID3="4000213" CreatureID4="4000412" CreatureID5="4000413" CreatureID6="4000905" CreatureID7="4000991" />
+    <SpawnPoint id="1006" CreatureID1="4000111" CreatureID2="4000113" CreatureID3="4000213" CreatureID4="4000412" CreatureID5="4000413" CreatureID6="4000905" CreatureID7="4000991" />
+</root>

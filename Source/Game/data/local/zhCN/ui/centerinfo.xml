@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="centerback" ClassName="CGUIStatic" TopMost="yes" LogicPos_x="193" LogicPos_y="153" Size_x="1024" Size_y="52" AlignControl="\desktop\targetwin" AlignType="OuterBottom" Font="小白雅黑" FontHeight="19" TextRect_right="1024" TextRect_bottom="52" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFF" AlphaWrite="Write">
+        <UIControl Name="centerinfo3" ClassName="CGUIStatic" Resizable="yes" LogicPos_x="462" LogicPos_y="36" Size_x="100" Size_y="16" AlignControl="\desktop\centerback" AlignType="InnerBottom" Font="小黑雅黑" FontHeight="21" TextRect_right="100" TextRect_bottom="16" TextColor="0xFFFFFFFF" ShadeColor="0xFF36006C" TextAlign="Center" PicFileName="data\ui\sys\l_diban-a.bmp" PicColor="0xFFFFFF" />
+        <UIControl Name="centerinfo2" ClassName="CGUIStatic" Resizable="yes" LogicPos_x="462" LogicPos_y="18" Size_x="100" Size_y="16" AlignControl="\desktop\centerback" AlignType="Center" Font="小黑雅黑" FontHeight="21" TextRect_right="100" TextRect_bottom="16" TextColor="0xFFFFFFFF" ShadeColor="0xFF36006C" TextAlign="Center" PicFileName="data\ui\sys\l_diban-a.bmp" PicColor="0xFFFFFF" />
+        <UIControl Name="centerinfo1" ClassName="CGUIStatic" Resizable="yes" LogicPos_x="462" Size_x="100" Size_y="16" AlignControl="\desktop\centerback" AlignType="InnerTop" Font="小黑雅黑" FontHeight="21" TextRect_right="100" TextRect_bottom="16" TextColor="0xFFFFFFFF" ShadeColor="0xFF36006C" TextAlign="Center" PicFileName="data\ui\sys\l_diban-a.bmp" PicColor="0xFFFFFF" />
+    </UIControl>
+</desktop>

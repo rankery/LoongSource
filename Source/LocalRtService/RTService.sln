@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTService", "RTService.vcproj", "{8C099B14-BA7E-4274-A499-96C13B86F5DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB} = {354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA} = {B976C603-FAD7-416E-9E47-B74FD5AA2EAA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vEngine", "..\vEngine\vEngine.vcproj", "{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB} = {354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lua", "..\Lua\Lua.vcproj", "{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Lib_debug|Win32 = Lib_debug|Win32
+		Release|Win32 = Release|Win32
+		StaticDebug|Win32 = StaticDebug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.Debug|Win32.Build.0 = Debug|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.Lib_debug|Win32.ActiveCfg = Release|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.Lib_debug|Win32.Build.0 = Release|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.Release|Win32.ActiveCfg = Release|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.Release|Win32.Build.0 = Release|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.StaticDebug|Win32.ActiveCfg = Debug|Win32
+		{8C099B14-BA7E-4274-A499-96C13B86F5DD}.StaticDebug|Win32.Build.0 = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Debug|Win32.Build.0 = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Lib_debug|Win32.ActiveCfg = Lib_debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Lib_debug|Win32.Build.0 = Lib_debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Release|Win32.ActiveCfg = Release|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Release|Win32.Build.0 = Release|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.StaticDebug|Win32.ActiveCfg = StaticDebug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.StaticDebug|Win32.Build.0 = StaticDebug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Debug|Win32.Build.0 = Debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Lib_debug|Win32.ActiveCfg = Lib_debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Lib_debug|Win32.Build.0 = Lib_debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Release|Win32.ActiveCfg = Release|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Release|Win32.Build.0 = Release|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.StaticDebug|Win32.ActiveCfg = StaticDebug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.StaticDebug|Win32.Build.0 = StaticDebug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

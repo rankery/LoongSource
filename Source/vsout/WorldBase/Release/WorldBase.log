@@ -1,0 +1,97 @@
+﻿  stdafx.cpp
+  CreatureDataReader.cpp
+  GameMapEditor.cpp
+  MapObjEdit.cpp
+  GameMap.cpp
+  NavMapEditor.cpp
+  NavMapEditorUtil.cpp
+  AreaMap.cpp
+  AStarPathFinder.cpp
+  HalfByteMap.cpp
+  NavAsyncResIO.cpp
+  NavBaseCollider.cpp
+  NavBintreeCollider.cpp
+  NavBintreeNode.cpp
+  NavCarrierNode.cpp
+  NavCollider.cpp
+  NavColliderCache.cpp
+  NavColliderDataGen.cpp
+  NavCollider_HitFly.cpp
+  NavCollider_Jump.cpp
+  NavCollider_Move.cpp
+  Generating Code...
+  Compiling...
+  NavCollider_MoveOnCarrier.cpp
+  NavCollider_NPCMove.cpp
+  NavCollider_Slide.cpp
+  NavCollider_Swim.cpp
+  NavEntityNode.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ]
+  d:\other\loongrework\sourcev2\source\worldbase\navmap\naventitynode.cpp(196): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\worldbase\navmap\naventitynode.cpp(196): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  NavGenBuilder.cpp
+  NavGenNode.cpp
+  NavGenNodeBuilder.cpp
+  NavHeightmap.cpp
+  NavKernel.cpp
+  NavMap.cpp
+  NavMovePath.cpp
+  NavNullSceneGraph.cpp
+  NavOctreeCollider.cpp
+  NavOctreeNode.cpp
+  NavQuadTreeData.cpp
+  NavQuadTreeDataBuilder.cpp
+  NavQuadTreeSG.cpp
+d:\other\loongrework\sourcev2\source\worldbase\navmap\navquadtreesg.cpp(24): warning C4474: '_swprintf' : too many arguments passed for format string
+  d:\other\loongrework\sourcev2\source\worldbase\navmap\navquadtreesg.cpp(24): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  NavResBase.cpp
+  NavResBitMap.cpp
+  Generating Code...
+  Compiling...
+  NavResHeightmap.cpp
+  NavResMgr.cpp
+  NavResRequestQueueTS.cpp
+  NavResSceneMesh.cpp
+  NavSceneGraph.cpp
+  NavSceneNode.cpp
+  NavSGQuadTreeNode.cpp
+  NPCNavGraph.cpp
+  NPCNavGraphGen.cpp
+  NPCNavMap.cpp
+  NPCNavMapDoors.cpp
+  NPCNavMapGen.cpp
+  OutlinePathFinder.cpp
+  PathFinderByMap.cpp
+  PathFinderByPatch.cpp
+  PathFinderByPatchDataGen.cpp
+  PathFinderByTile.cpp
+  PathPointDistMap.cpp
+  PathPointOctree.cpp
+  PathPointOctreeBuilder.cpp
+  Generating Code...
+  Compiling...
+  PathPointOctreeNode.cpp
+  PlayerCangoMapGen.cpp
+  PlayerNavMap.cpp
+  WorldBase.cpp
+  Generating Code...
+     Creating library ..\vsout\WorldBase\Release\WorldBase.lib and object ..\vsout\WorldBase\Release\WorldBase.exp
+  WorldBase.vcxproj -> D:\other\LoongRework\Sourcev2\Source\WorldBase\..\Game\Release\WorldBase.dll

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 时装属性品质影响xml映射 -->
+<root>
+    <fashion_color id="" WhitePct="" YellowPct="" GreenPct="" BluePct="" OrangePct=""/>
+    <fashion_color id="" WhitePct="" YellowPct="" GreenPct="" BluePct="" OrangePct=""/>
+</root>
+
+<!-- 注：
+颜色枚举值	白色几率	黄色几率	绿色几率	蓝色几率	橙色几率
+id	        WhitePct	YellowPct	GreenPct	BluePct	  OrangePct
+-->

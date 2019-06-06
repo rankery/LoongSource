@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <province id="11" name="北京" areaid="1" />
+    <province id="12" name="天津" areaid="1" />
+    <province id="13" name="河北" areaid="1" />
+    <province id="14" name="山西" areaid="1" />
+    <province id="15" name="内蒙古" areaid="1" />
+    <province id="21" name="辽宁" areaid="2" />
+    <province id="22" name="吉林" areaid="2" />
+    <province id="23" name="黑龙江" areaid="2" />
+    <province id="31" name="上海" areaid="3" />
+    <province id="32" name="江苏" areaid="3" />
+    <province id="33" name="浙江" areaid="3" />
+    <province id="34" name="安徽" areaid="3" />
+    <province id="35" name="福建" areaid="3" />
+    <province id="36" name="江西" areaid="3" />
+    <province id="37" name="山东" areaid="3" />
+    <province id="41" name="河南" areaid="4" />
+    <province id="42" name="湖北" areaid="4" />
+    <province id="43" name="湖南" areaid="4" />
+    <province id="44" name="广东" areaid="4" />
+    <province id="45" name="广西" areaid="4" />
+    <province id="46" name="海南" areaid="4" />
+    <province id="51" name="重庆" areaid="5" />
+    <province id="52" name="四川" areaid="5" />
+    <province id="53" name="贵州" areaid="5" />
+    <province id="54" name="云南" areaid="5" />
+    <province id="55" name="西藏" areaid="5" />
+    <province id="61" name="陕西" areaid="6" />
+    <province id="62" name="甘肃" areaid="6" />
+    <province id="63" name="青海" areaid="6" />
+    <province id="64" name="宁夏" areaid="6" />
+    <province id="65" name="新疆" areaid="6" />
+    <province id="71" name="香港" areaid="7" />
+    <province id="72" name="澳门" areaid="7" />
+    <province id="73" name="台湾" areaid="7" />
+    <province id="81" name="海外" areaid="8" />
+    <province id="91" name="保密" areaid="9" />
+</root>

@@ -1,0 +1,405 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TerrainEditor.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TerrainEditor.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "TerrainEditor.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_HEIGHTMAP DIALOGEX 0, 0, 298, 238
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "高度图"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "导入高度图",IDC_ImportHightmap,70,51,48,14
+    PUSHBUTTON      "新建",IDC_Create,15,51,48,14
+    GROUPBOX        "创建工具",IDC_STATIC,4,41,289,44
+    GROUPBOX        "编辑工具",IDC_STATIC,3,92,289,74
+    LISTBOX         IDC_EditTools,15,103,110,59,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "静态",IDC_Info,132,103,150,59,SS_SUNKEN
+    GROUPBOX        "渲染选项",IDC_STATIC,4,170,289,46
+    CONTROL         "线框模式",IDC_Wireframe,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,181,49,13
+    CONTROL         "显示Patch边框",IDC_ShowPatchEdge,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,181,67,13
+    LTEXT           "名称:",IDC_STATIC,15,15,26,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_Name,51,15,88,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "存盘",IDC_Save,155,15,42,14
+    PUSHBUTTON      "读盘",IDC_Load,205,15,42,14
+    GROUPBOX        "地形编辑器",IDC_STATIC,4,4,289,30
+    LTEXT           "Build路径:",IDC_STATIC,15,69,42,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_BuildPath,63,69,117,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Build",IDC_Build,125,51,48,14
+    LTEXT           "显示范围:",IDC_STATIC,9,198,40,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_ShowDist,52,198,51,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "修改属性",IDC_Mod,180,51,48,14
+    PUSHBUTTON      "编辑UV集合",IDC_EditUVSet,235,51,48,14
+    PUSHBUTTON      "导出高度图",IDC_ExportHightmap,235,69,48,14
+    PUSHBUTTON      "撤销",IDC_Undo,4,219,50,14
+    PUSHBUTTON      "重做",IDC_Redo,59,219,50,14
+    LTEXT           "编辑范围:",IDC_STATIC,112,198,40,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EditDist,155,198,51,13,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PROPPAGE_LAYER DIALOGEX 0, 0, 296, 238
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "图层"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LayerList,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,0,206,156
+    PUSHBUTTON      "新增...",IDC_AddLayer,219,139,34,15
+    PUSHBUTTON      "删除",IDC_DelLayer,260,139,34,15
+    PUSHBUTTON      "上移",IDC_LayerUp,219,161,34,15
+    PUSHBUTTON      "下移",IDC_LayerDown,260,161,34,15
+    LISTBOX         IDC_EditTools,217,87,76,35,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "清空",IDC_Clear,132,161,34,15
+    PUSHBUTTON      "重设定",IDC_Reset,173,161,34,15,WS_DISABLED
+    PUSHBUTTON      "统计",IDC_CheckLayer,5,163,38,14
+    GROUPBOX        "渲染选项",IDC_STATIC,3,186,289,33
+    CONTROL         "显示图层数",IDC_ShowLayerCount,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,200,67,13
+    CONTROL         "显示子块边框",IDC_ShowSubPatchEdge,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,199,67,13
+END
+
+IDD_PROPPAGE_DECO DIALOGEX 0, 0, 302, 217
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "装饰物层"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "层列表",IDC_STATIC,1,1,116,197
+    GROUPBOX        "层属性",IDC_STATIC,125,1,177,197
+    PUSHBUTTON      "Add",IDC_BtnAdd,10,176,28,15
+    PUSHBUTTON      "Remove",IDC_BtnRemove,42,176,28,15
+    LISTBOX         IDC_LayerList,9,14,100,155,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LayerProp,134,14,158,155,LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Apply",IDC_BtnApply,199,176,38,15
+    PUSHBUTTON      "导入",IDC_BtnImportMap,80,176,28,15
+    CONTROL         "Noise",IDC_EnableNoise,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,181,37,10
+    LTEXT           "显示范围:",IDC_STATIC,6,201,40,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_ShowSize,54,201,51,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "刷新显示",IDC_RefreshView,110,200,42,13
+END
+
+IDD_BRUSH DIALOGEX 0, 0, 280, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "笔刷设置"
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    RTEXT           "Inner(内径,单位:格子):",IDC_STATIC,7,9,98,15,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Outer(外径,单位:格子):",IDC_STATIC,7,31,98,15,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Str(强度,BYTE):",IDC_STATIC,7,51,98,15,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_Inner,110,7,59,16,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Outer,110,29,59,16,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Str,110,51,59,16,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "锁定比例",IDC_LOCK,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,177,29,59,15,WS_EX_STATICEDGE
+    COMBOBOX        IDC_LerpType,177,7,59,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "噪音设置",IDC_STATIC,7,71,266,32
+    RTEXT           "频率:",IDC_STATIC,7,81,32,15,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_Freq,43,81,59,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "重新生成",IDC_ReNoise,114,81,50,16
+    COMBOBOX        IDC_ShapeType,177,51,59,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_IMPORT DIALOGEX 0, 0, 282, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入高度图..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_File,71,7,154,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览...",IDC_FileDlg,239,7,36,14
+    EDITTEXT        IDC_XScale,71,24,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZScale,71,41,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HScale,71,58,77,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,84,114,50,14
+    PUSHBUTTON      "取消",IDCANCEL,146,114,50,14
+    RTEXT           "文件名:",IDC_STATIC,7,7,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "格子的X大小:",IDC_STATIC,7,24,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "格子的Z大小:",IDC_STATIC,7,41,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "高度缩放:",IDC_STATIC,7,58,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_uScale,71,75,77,14,ES_AUTOHSCROLL
+    RTEXT           "图素大小U:",IDC_STATIC,7,75,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_vScale,71,92,77,14,ES_AUTOHSCROLL
+    RTEXT           "图素大小V:",IDC_STATIC,7,92,59,14,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_Create DIALOGEX 0, 0, 267, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建 ..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,78,98,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,98,50,14
+    EDITTEXT        IDC_XScale,71,25,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZScale,207,26,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HScale,71,43,53,14,ES_AUTOHSCROLL
+    RTEXT           "格子的X大小:",IDC_STATIC,7,25,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "格子的Z大小:",IDC_STATIC,143,26,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "高度缩放:",IDC_STATIC,7,43,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_Width,71,7,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Height,207,7,53,14,ES_AUTOHSCROLL
+    RTEXT           "宽(单位:格子):",IDC_STATIC,7,7,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "高(单位:格子):",IDC_STATIC,143,7,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_InitVal,207,45,53,14,ES_AUTOHSCROLL
+    RTEXT           "初始值(BYTE):",IDC_STATIC,143,45,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "产生随机高度",IDC_Noise,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,81,59,14
+    EDITTEXT        IDC_uScale,71,61,53,14,ES_AUTOHSCROLL
+    RTEXT           "默认图素大小U:",IDC_STATIC,7,61,59,14,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_vScale,207,61,53,14,ES_AUTOHSCROLL
+    RTEXT           "默认图素大小V:",IDC_STATIC,143,61,59,14,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_LayerAtt DIALOGEX 0, 0, 211, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_LEFTSCROLLBAR
+CAPTION "Layer属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,51,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,111,73,50,14
+    RTEXT           "名称:",IDC_STATIC,39,7,36,13,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "贴图:",IDC_STATIC,39,23,36,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_Name,80,7,84,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Tex,80,23,84,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_FileDlg,179,23,21,11
+    RTEXT           "UV序号:",IDC_STATIC,39,39,36,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_UVSetIndex,80,39,84,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "地表类型:",IDC_STATIC,40,55,36,13,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_SURFACETYPE,79,54,84,124,CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_Water DIALOGEX 0, 0, 288, 201
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "水面"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+END
+
+IDD_PROPPAGE_VIS DIALOGEX 0, 0, 256, 207
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "地形材质"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "环境光:",IDC_STATIC,15,31,35,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "漫反射:",IDC_STATIC,15,16,35,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "ambient",IDC_Ambient,55,31,47,13
+    PUSHBUTTON      "diffuse",IDC_Diffuse,55,16,47,13
+    LTEXT           "镜面光:",IDC_STATIC,15,46,35,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Specular",IDC_Specular,55,46,47,13
+    LTEXT           "镜面指数:",IDC_STATIC,15,60,35,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_TerrainPow,56,60,46,13,ES_AUTOHSCROLL
+END
+
+IDD_PROPPAGE_River DIALOGEX 0, 0, 302, 223
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "河流"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_Height,47,143,46,13,ES_AUTOHSCROLL
+    LTEXT           "水面高度:",IDC_STATIC,7,143,40,13,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "材质属性",IDC_STATIC,102,7,192,169
+    LISTBOX         IDC_Mtl,110,21,176,134,LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "应用",IDC_ApplyMtl,109,159,50,14
+    GROUPBOX        "河流列表",IDC_STATIC,8,7,85,131
+    LISTBOX         IDC_LIST1,17,20,67,99,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "新建",IDC_NewRiver,19,122,27,13
+    PUSHBUTTON      "删除",IDC_DelRiver,57,122,27,13
+    LISTBOX         IDC_EditTools,8,161,85,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "渲染选项",IDC_STATIC,104,183,189,32
+    LTEXT           "显示范围:",IDC_STATIC,117,195,37,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_ShowDist,154,195,77,14,ES_AUTOHSCROLL
+END
+
+IDD_UVSet DIALOGEX 0, 0, 174, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UV集合"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,30,157,50,14
+    PUSHBUTTON      "取消",IDCANCEL,93,157,50,14
+    LISTBOX         IDC_UVSet,7,7,160,146,LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPPAGE_HEIGHTMAP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_PROPPAGE_LAYER, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_PROPPAGE_DECO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_BRUSH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_Create, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_LayerAtt, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_UVSet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TerrainEditor.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

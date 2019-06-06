@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <posy_pos id="1" right_hand="0" head="1" body="0" leg="0" wrist="0" feet="0" back="1" face="1" neck="1" finger1="0" waist="1" />
+    <posy_pos id="2" right_hand="0" head="1" body="0" leg="0" wrist="0" feet="0" back="1" face="1" neck="1" finger1="0" waist="1" />
+    <posy_pos id="3" right_hand="1" head="0" body="0" leg="0" wrist="0" feet="0" back="0" face="0" neck="0" finger1="1" waist="0" />
+    <posy_pos id="4" right_hand="1" head="0" body="0" leg="0" wrist="0" feet="0" back="0" face="0" neck="0" finger1="1" waist="0" />
+    <posy_pos id="5" right_hand="0" head="0" body="1" leg="1" wrist="1" feet="1" back="0" face="0" neck="0" finger1="0" waist="0" />
+    <posy_pos id="6" right_hand="0" head="0" body="1" leg="1" wrist="1" feet="1" back="0" face="0" neck="0" finger1="0" waist="0" />
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<Act id="1" command1="/招手" command2="/wave" action1="zh01" type="1"/>
+	<Act id="2" command1="/鞠躬" command2="/salute" action1="zh02" type="0"/>
+	<Act id="3" command1="/生气" command2="/angry" action1="zh03" type="1"/>
+	<Act id="4" command1="/高兴" command2="/happy" action1="zh04" type="1"/>
+	<Act id="5" command1="/哭泣" command2="/cry" action1="zh05" type="1"/>
+	<Act id="6" command1="/大笑" command2="/laugh" action1="zh06" type="1"/>
+	<Act id="7" command1="/行礼" command2="/gesture" action1="zh07" type="0"/>
+	<Act id="8" command1="/坐下" command2="/sit" action1="zh08" action2="zh09" action3="zh10" type="2"/>
+	<Act id="9" command1="/躺下" command2="/liedown" action1="zh11" action2="zh12" action3="zh13" type="2"/>
+	<Act id="10" command1="/挑衅" command2="/defy" action1="zh14" type="1"/>
+	<Act id="11" command1="/自信" command2="/confident" action1="zh15" type="1"/>
+	<Act id="12" command1="/胜利" command2="/victory" action1="zh16" type="1"/>
+	<Act id="13" command1="/酷秀" command2="/dance" action1="zh17" type="0"/>
+	<Act id="14" command1="/亲吻" command2="/kiss" action1="zh18" action2="zh19" action3="zh20" type="2"/>
+	<Act id="15" command1="/依偎" command2="/cuddle" action1="zh21" action2="zh22" action3="zh23" type="2"/>
+	<Act id="16" command1="/拥抱" command2="/hug" action1="zh24" action2="zh25" action3="zh26" type="2"/>
+	<Act id="17" command1="/亲密" command2="/closeness" action1="zh27" action2="zh28" action3="zh29" type="2"/>
+	<Act id="18" command1="/共枕" command2="/sleep" action1="zh30" action2="zh31" action3="zh32" type="2"/>
+	<Act id="19" command1="/缠绵" command2="/love" action1="zh33" action2="zh34" action3="zh35" type="2"/>
+	<Act id="20" command1="/依靠" command2="/lean" action1="zh36" action2="zh37" action3="zh38" type="2"/>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 商货信息表xml映射 -->
+<root>
+  <commodity id="" holder="" low_price="" high_price="" refresh_num=""/>
+  <commodity id="" holder="" low_price="" high_price="" refresh_num=""/>
+</root>
+
+<!-- 注：
+holder为所属商会的ID
+-->

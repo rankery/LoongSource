@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <title id="0" name="龙之传人" visible="1" bpicture="0" desc="完成龙隐村教学任务后获得。\n佩戴可提升20点体力上限。" desc2="完成龙隐村教学任务后获得。\n佩戴可提升20点体力上限。" />
+    <title id="1" name="龙城探秀" visible="1" bpicture="0" desc="完成龙城前期的教学任务后获得。\n佩戴可提升20点护甲值。" desc2="完成龙城前期的教学任务后获得。\n佩戴可提升20点护甲值。" />
+    <title id="2" name="臭皮匠" visible="1" bpicture="0" desc="完成百行百业任务后获得。\n佩戴可提升10点活力值上限。" desc2="完成百行百业任务后获得。\n佩戴可提升10点活力值上限。" />
+    <title id="3" name="安良使" visible="1" bpicture="0" desc="五次击败阴魄神君后获得。\n佩戴可增加武魂5点。" desc2="五次击败阴魄神君后获得。\n佩戴可增加武魂5点。" />
+    <title id="4" name="除暴使" visible="1" bpicture="0" desc="五次击败阳幻神君后获得。\n佩戴可增加武器伤害5点。" desc2="五次击败阳幻神君后获得。\n佩戴可增加武器伤害5点。" />
+    <title id="5" name="龙城侠士" visible="1" bpicture="0" desc="完成共工妖魂任务后获得。\n佩戴可增加额外伤害3点。" desc2="完成共工妖魂任务后获得。\n佩戴可增加额外伤害3点。" />
+    <title id="6" name="胸怀天下" visible="1" bpicture="0" desc="向凤紫珍请教天下八大氏族的大势后获得。\n佩戴可提升1点所有一级属性。" desc2="向凤紫珍请教天下八大氏族的大势后获得。\n佩戴可提升1点所有一级属性。" />
+    <title id="7" name="三关闯将" visible="1" bpicture="0" desc="解决凤翔的媚儿给你的三个难题后获得。\n佩戴可提升悟性5点。" desc2="解决凤翔的媚儿给你的三个难题后获得。\n佩戴可提升悟性5点。" />
+    <title id="8" name="匿怨寻仇 " visible="1" bpicture="0" desc="替凤翔的公山休报了家人大仇后获得。\n佩戴可提升3%致命量加成。" desc2="替凤翔的公山休报了家人大仇后获得。\n佩戴可提升3%致命量加成。" />
+    <title id="9" name="斩妖将" visible="1" bpicture="0" desc="诛杀碧潭娘娘，为凤翔百姓除去大害后获得。\n佩戴后可提升1%近战躲避率。" desc2="诛杀碧潭娘娘，为凤翔百姓除去大害后获得。\n佩戴后可提升1%近战躲避率。" />
+    <title id="10" name="情花使者" visible="1" bpicture="0" desc="帮助伍晴采下悬崖上的芭迷花后可获得。\n佩戴后可使你看上去更有魅力。" desc2="帮助伍晴采下悬崖上的芭迷花后可获得。\n佩戴后可使你看上去更有魅力。" />
+    <title id="11" name="如虎猛士" visible="1" bpicture="0" desc="诛杀凶兽朱厌后获得。\n佩戴后可提升10点致命。" desc2="诛杀凶兽朱厌后获得。\n佩戴后可提升10点致命。" />
+    <title id="12" name="上善若水" visible="1" bpicture="0" desc="完成任务“此消彼长”后获得。\n佩戴后可提升闪避36点。" desc2="完成任务“此消彼长”后获得。\n佩戴后可提升闪避36点。" />
+    <title id="13" name="左右逢源" visible="1" bpicture="0" desc="替涿鹿刘元隐瞒实情后可获得。\n佩戴后可提升远程躲避率和近战躲避率各0.01%。\n“诚信才是王道。”" desc2="替涿鹿刘元隐瞒实情后可获得。\n佩戴后可提升远程躲避率和近战躲避率各0.01%。\n“诚信才是王道。”" />
+    <title id="14" name="勇冠三军" visible="1" bpicture="0" desc="完成任务“血腥之气喂傲因”后可获得。佩戴后可提升外功攻击和内功攻击各23点。" desc2="完成任务“血腥之气喂傲因”后可获得。佩戴后可提升外功攻击和内功攻击各23点。" />
+    <title id="15" name="三镇妖仙" visible="1" bpicture="0" desc="帮助帝瑞完成三次镇妖后获得。\n佩戴后可提升外功防御和内功防御各28点。" desc2="帮助帝瑞完成三次镇妖后获得。\n佩戴后可提升外功防御和内功防御各28点。" />
+    <title id="16" name="至诚之人" visible="1" bpicture="0" desc="击杀鬼王灵影，通过良心的试炼后获得。\n佩戴后可提升混乱抗性5点。" desc2="击杀鬼王灵影，通过良心的试炼后获得。\n佩戴后可提升混乱抗性5点。" />
+    <title id="17" name="热心信使" visible="1" bpicture="0" desc="找到富贵滩全部四个瓶子并交给相应的人后获得。\n佩戴后可提升4%游泳速度以及移动速度。" desc2="找到富贵滩全部四个瓶子并交给相应的人后获得。\n佩戴后可提升4%游泳速度以及移动速度。" />
+    <title id="18" name="成人之美" visible="1" bpicture="0" desc="完成任务“命中注定-贰”后获得。\n佩戴后可使你看上去更有魅力。" desc2="完成任务“命中注定-贰”后获得。\n佩戴后可使你看上去更有魅力。" />
+    <title id="19" name="蛊毒医师" visible="1" bpicture="0" desc="完成任务“九幽残余”后获得。\n佩戴后可提升3点额外伤害以及7点气力值。" desc2="完成任务“九幽残余”后获得。\n佩戴后可提升3点额外伤害以及7点气力值。" />
+    <title id="20" name="三峡诗人" visible="1" bpicture="0" desc="完成任务“离思”后获得。\n佩戴后可提升20点活力值上限。" desc2="完成任务“离思”后获得。\n佩戴后可提升20点活力值上限。" />
+    <title id="21" name="降妖罗汉" visible="1" bpicture="0" desc="歼灭巫水盘阳妖祖后获得。\n佩戴后可提升额外伤害5点。" desc2="歼灭巫水盘阳妖祖后获得。\n佩戴后可提升额外伤害5点。" />
+    <title id="22" name="镇压！无回洞穴" visible="1" bpicture="0" desc="完成“无回洞穴”副本后获得。\n佩戴后可提升统御值5点。" desc2="完成“无回洞穴”副本后获得。\n佩戴后可提升统御值5点。" />
+    <title id="23" name="镇压！裕祥山麓" visible="1" bpicture="0" desc="完成“裕祥山麓”副本后获得。\n佩戴后可提升统御值10点。" desc2="完成“裕祥山麓”副本后获得。\n佩戴后可提升统御值10点。" />
+    <title id="24" name="镇压！枭吴祭坛" visible="1" bpicture="0" desc="完成“枭吴祭坛”副本后获得。佩戴后可提升统御值15点。" desc2="完成“枭吴祭坛”副本后获得。佩戴后可提升统御值15点。" />
+    <title id="25" name="镇压！冰封魔窟" visible="1" bpicture="0" desc="完成“冰封魔窟”副本后获得。佩戴后可提升统御值20点。" desc2="完成“冰封魔窟”副本后获得。佩戴后可提升统御值20点。" />
+    <title id="26" name="镇压！礼天殿前" visible="1" bpicture="0" desc="完成“礼天殿前”副本后获得。佩戴后可提升统御值20点。" desc2="完成“礼天殿前”副本后获得。佩戴后可提升统御值20点。" />
+    <title id="27" name="镇压！礼天殿后" visible="1" bpicture="0" desc="完成“礼天殿后”副本后获得。佩戴后可提升统御值25点。" desc2="完成“礼天殿后”副本后获得。佩戴后可提升统御值25点。" />
+    <title id="28" name="镇压！嫘祖之谷" visible="1" bpicture="0" desc="完成“嫘祖之谷”副本后获得。佩戴后可提升统御值30点。" desc2="完成“嫘祖之谷”副本后获得。佩戴后可提升统御值30点。" />
+    <title id="29" name="龙城遍览" visible="1" bpicture="0" desc="遍历玄天龙城四大美景后获得。佩戴可提升5%跳跃高度。" desc2="遍历玄天龙城四大美景后获得。佩戴可提升5%跳跃高度。" />
+    <title id="30" name="凤翔遍览" visible="1" bpicture="0" desc="遍历凤翔四大美景后获得。\n佩戴可提升5%移动速度。" desc2="遍历凤翔四大美景后获得。\n佩戴可提升5%移动速度。" />
+    <title id="31" name="涿鹿遍览" visible="1" bpicture="0" desc="遍历涿鹿四大美景后获得。\n佩戴可提升5%骑乘速度。" desc2="遍历涿鹿四大美景后获得。\n佩戴可提升5%骑乘速度。" />
+    <title id="32" name="巫水遍览" visible="1" bpicture="0" desc="遍历巫水四大美景后获得。\n佩戴可提升5%游泳速度。" desc2="遍历巫水四大美景后获得。\n佩戴可提升5%游泳速度。" />
+    <title id="33" name="拯救大兵" visible="1" bpicture="0" desc="成功营救18名“龙城被俘勇士”后获得。\n佩戴后可提升气力值10点。" desc2="成功营救18名“龙城被俘勇士”后获得。\n佩戴后可提升气力值10点。" />
+    <title id="34" name="凌蝶仙眷" visible="1" bpicture="0" desc="完成凤姬·凌蝶的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" desc2="完成凤姬·凌蝶的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" />
+    <title id="35" name="听烟仙眷" visible="1" bpicture="0" desc="完成凤姬·听烟的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" desc2="完成凤姬·听烟的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" />
+    <title id="36" name="盼云仙眷" visible="1" bpicture="0" desc="完成凤姬·盼云的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" desc2="完成凤姬·盼云的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" />
+    <title id="37" name="思夏仙眷" visible="1" bpicture="0" desc="完成凤姬·思夏的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" desc2="完成凤姬·思夏的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" />
+    <title id="38" name="芷春仙眷" visible="1" bpicture="0" desc="完成凤姬·芷春的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" desc2="完成凤姬·芷春的兑换任务10次后获得。\n佩戴后可提升仪容值4点。" />
+    <title id="39" name="凝霜仙眷" visible="1" bpicture="0" desc="为凰姬·凝霜焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为凝霜焚香乞福。”" desc2="为凰姬·凝霜焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为凝霜焚香乞福。”" />
+    <title id="40" name="痴雪仙眷" visible="1" bpicture="0" desc="为凰姬·痴雪焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为痴雪焚香乞福。”" desc2="为凰姬·痴雪焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为痴雪焚香乞福。”" />
+    <title id="41" name="恋瑶仙眷" visible="1" bpicture="0" desc="为凰姬·恋瑶焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为恋瑶焚香乞福。”" desc2="为凰姬·恋瑶焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为恋瑶焚香乞福。”" />
+    <title id="42" name="语竹仙眷" visible="1" bpicture="0" desc="为凰姬·语竹焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为语竹焚香乞福。”" desc2="为凰姬·语竹焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为语竹焚香乞福。”" />
+    <title id="43" name="含若仙眷" visible="1" bpicture="0" desc="为凰姬·含若焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为含若焚香乞福。”" desc2="为凰姬·含若焚香十遍后获得。\n佩戴后可提升仪容值6点。\n“请继续为含若焚香乞福。”" />
+    <title id="44" name="女娲传人" visible="1" bpicture="0" desc="击杀“七彩元神”8次后获得。\n佩戴后可提升额外伤害吸收5点。" desc2="击杀“七彩元神”8次后获得。\n佩戴后可提升额外伤害吸收5点。" />
+    <title id="45" name="饱读诗书" visible="1" bpicture="0" desc="正确回答酆都西门有才所有问题后获得。\n佩戴可提升悟性8点。" desc2="正确回答酆都西门有才所有问题后获得。\n佩戴可提升悟性8点。" />
+    <title id="46" name="捉鬼师" visible="1" bpicture="0" desc="完成酆都魂祭司处捉鬼任务后获得。\n佩戴可提升2%远程躲避率。" desc2="完成酆都魂祭司处捉鬼任务后获得。\n佩戴可提升2%远程躲避率。" />
+    <title id="47" name="天下侠客" visible="1" bpicture="1" pic_title="L_pictitle38" desc="“英雄乱武”活动侠客组第一名，实力的证明！" desc2="“英雄乱武”活动侠客组第一名，实力的证明！" />
+    <title id="48" name="天下豪杰" visible="1" bpicture="1" pic_title="L_pictitle39" desc="“英雄乱武”活动豪杰组第一名，实力的证明！" desc2="“英雄乱武”活动豪杰组第一名，实力的证明！" />
+    <title id="49" name="天下英雄" visible="1" bpicture="1" pic_title="L_pictitle40" desc="“英雄乱武”活动英雄组第一名，实力的证明！" desc2="“英雄乱武”活动英雄组第一名，实力的证明！" />
+    <title id="50" name="天下第一" visible="1" bpicture="1" pic_title="L_pictitle41" desc="“英雄乱武”活动天下组第一名，实力的证明！" desc2="“英雄乱武”活动天下组第一名，实力的证明！" />
+    <title id="51" name="侠客之队" visible="1" bpicture="0" desc="“群雄逐鹿”活动侠客组第一名，实力的证明！" desc2="“群雄逐鹿”活动侠客组第一名，实力的证明！" />
+    <title id="52" name="豪杰之队" visible="1" bpicture="0" desc="“群雄逐鹿”活动豪杰组第一名，实力的证明！" desc2="“群雄逐鹿”活动豪杰组第一名，实力的证明！" />
+    <title id="53" name="英雄之队" visible="1" bpicture="0" desc="“群雄逐鹿”活动英雄组第一名，实力的证明！" desc2="“群雄逐鹿”活动英雄组第一名，实力的证明！" />
+    <title id="54" name="天下之队" visible="1" bpicture="0" desc="“群雄逐鹿”活动天下组第一名，实力的证明！" desc2="“群雄逐鹿”活动天下组第一名，实力的证明！" />
+    <title id="55" name="文曲状元" visible="1" bpicture="0" desc="“文曲夺星”活动第一名，智慧的证明！" desc2="“文曲夺星”活动第一名，智慧的证明！" />
+    <title id="56" name="文曲榜眼" visible="1" bpicture="0" desc="“文曲夺星”活动第二名，智慧的证明！" desc2="“文曲夺星”活动第二名，智慧的证明！" />
+    <title id="57" name="文曲探花" visible="1" bpicture="0" desc="“文曲夺星”活动第三名，智慧的证明！" desc2="“文曲夺星”活动第三名，智慧的证明！" />
+    <title id="58" name="文曲下凡" visible="1" bpicture="0" desc="五夺“文曲夺星”状元！真乃文曲下凡，神仙转世也！" desc2="五夺“文曲夺星”状元！真乃文曲下凡，神仙转世也！" />
+    <title id="59" name="武夷遍览" visible="1" bpicture="0" desc="遍历武夷四大美景后获得。\n佩戴后可提升8%移动速度。" desc2="遍历武夷四大美景后获得。\n佩戴后可提升8%移动速度。" />
+    <title id="60" name="镇压！通冥鬼域" visible="1" bpicture="0" desc="完成“通冥鬼域”副本后获得。\n佩戴后可提升统御值30点。" desc2="完成“通冥鬼域”副本后获得。\n佩戴后可提升统御值30点。" />
+    <title id="61" name="镇压！桃源秘境" visible="1" bpicture="0" desc="完成“桃源秘境”副本后获得。\n佩戴后可提升统御值35点。" desc2="完成“桃源秘境”副本后获得。\n佩戴后可提升统御值35点。" />
+    <title id="62" name="镇压！魔王殿壹" visible="1" bpicture="0" desc="完成“魔王殿壹”副本后获得。\n佩戴后可提升统御值40点。" desc2="完成“魔王殿壹”副本后获得。\n佩戴后可提升统御值40点。" />
+    <title id="63" name="镇压！魔王殿贰" visible="1" bpicture="0" desc="完成“魔王殿贰”副本后获得。\n佩戴后可提升统御值40点。" desc2="完成“魔王殿贰”副本后获得。\n佩戴后可提升统御值40点。" />
+    <title id="64" name="镇压！魔王殿叁" visible="1" bpicture="0" desc="完成“魔王殿叁”副本后获得。\n佩戴后可提升统御值40点。" desc2="完成“魔王殿叁”副本后获得。\n佩戴后可提升统御值40点。" />
+    <title id="65" name="17173龙耀天下" visible="0" bpicture="0" desc="享有17173龙耀天下的你，拥有着门户大腕的闪亮光环，让你在《龙》的世界中独步武林，笑傲江湖。\n佩戴后可提升筋骨、元气5点" desc2="享有17173龙耀天下的你，拥有着门户大腕的闪亮光环，让你在《龙》的世界中独步武林，笑傲江湖。\n佩戴后可提升筋骨、元气5点" />
+    <title id="66" name="17173记者团" visible="0" bpicture="0" desc="17173龙记者站优秀记者的专属称号。只有那些拥有敏锐的新闻嗅觉，动人的文笔并且积极热情的玩家才能获得。\n佩戴后可提升最大体力、最大真气50点" desc2="17173龙记者站优秀记者的专属称号。只有那些拥有敏锐的新闻嗅觉，动人的文笔并且积极热情的玩家才能获得。\n佩戴后可提升最大体力、最大真气50点" />
+    <title id="67" name="新浪非著名玩家" visible="0" bpicture="0" desc="这年头，能做到不虚伪、不浮躁、静得下心来玩游戏的人不多。新浪非著名玩家，微笑游《龙》，君子大隐于市。低调，才是真正的拉风。\n佩戴后可提升最大体力、最大真气50点" desc2="这年头，能做到不虚伪、不浮躁、静得下心来玩游戏的人不多。新浪非著名玩家，微笑游《龙》，君子大隐于市。低调，才是真正的拉风。\n佩戴后可提升最大体力、最大真气50点" />
+    <title id="68" name="QQ军团" visible="0" bpicture="0" desc="这里不需要横扫一切，也不需要无敌天下，在QQ军团里，Q哥Q妹们有的是无尽的友情和温馨。\n佩戴后可提升最大体力、最大真气50点" desc2="这里不需要横扫一切，也不需要无敌天下，在QQ军团里，Q哥Q妹们有的是无尽的友情和温馨。\n佩戴后可提升最大体力、最大真气50点" />
+    <title id="69" name="巴士猥皮族" visible="0" bpicture="0" desc="备受推崇的时尚E族，融合超前多变的时尚元素，最具创意的DIY机器人拼装玩具大礼包，更有机会获得神秘大礼的时尚网络群体。\n佩戴后可提升最大体力、最大真气50点" desc2="备受推崇的时尚E族，融合超前多变的时尚元素，最具创意的DIY机器人拼装玩具大礼包，更有机会获得神秘大礼的时尚网络群体。\n佩戴后可提升最大体力、最大真气50点" />
+    <title id="70" name="官方记者团" visible="0" bpicture="0" desc="由精锐玩家团体组成的官方记者团，具有敏锐的洞察力，天马行空的才情与独具匠心的创意，只有最出色的记者，才能享有此称号。\n佩戴后可提升筋骨、元气5点" desc2="由精锐玩家团体组成的官方记者团，具有敏锐的洞察力，天马行空的才情与独具匠心的创意，只有最出色的记者，才能享有此称号。\n佩戴后可提升筋骨、元气5点" />
+    <title id="71" name="幸运星·2010" visible="0" bpicture="0" desc="贰零壹零龙行天下，最闪耀的幸运之星就是你！\n佩戴后增加福缘5点。" desc2="贰零壹零龙行天下，最闪耀的幸运之星就是你！\n佩戴后增加福缘5点。" />
+    <title id="72" name="比翼双飞" visible="1" bpicture="0" desc="夫妻友好度达到1070获得。\n佩戴后增加活力最大值5点，增加福缘2点。" desc2="夫妻友好度达到1070获得。\n佩戴后增加活力最大值5点，增加福缘2点。" />
+    <title id="73" name="耳鬓厮磨" visible="1" bpicture="0" desc="夫妻友好度达到1820获得。\n佩戴后增加活力最大值10点，增加福缘4点。" desc2="夫妻友好度达到1820获得。\n佩戴后增加活力最大值10点，增加福缘4点。" />
+    <title id="74" name="天作之合" visible="1" bpicture="0" desc="夫妻友好度达到2770获得。\n佩戴后增加活力最大值15点，增加福缘6点。" desc2="夫妻友好度达到2770获得。\n佩戴后增加活力最大值15点，增加福缘6点。" />
+    <title id="75" name="白头偕老" visible="1" bpicture="0" desc="夫妻友好度达到3920获得。\n佩戴后增加活力最大值20点，增加福缘8点。" desc2="夫妻友好度达到3920获得。\n佩戴后增加活力最大值20点，增加福缘8点。" />
+    <title id="76" name="永结同心" visible="1" bpicture="0" desc="夫妻友好度达到5270获得。\n佩戴后增加活力最大值25点，增加福缘10点。" desc2="夫妻友好度达到5270获得。\n佩戴后增加活力最大值25点，增加福缘10点。" />
+    <title id="77" name="青龙级VIP" visible="0" bpicture="0" desc="VIP用户专属称号！\n佩戴后可提升体力、真气恢复速度各15点，最大体力、最大真气各888点。" desc2="VIP用户专属称号！\n佩戴后可提升体力、真气恢复速度各15点，最大体力、最大真气各888点。" />
+    <title id="78" name="银龙级VIP" visible="0" bpicture="0" desc="VIP用户专属称号！\n佩戴后可提升体力、真气恢复速度各30点，最大体力、最大真气各888点。" desc2="VIP用户专属称号！\n佩戴后可提升体力、真气恢复速度各30点，最大体力、最大真气各888点。" />
+    <title id="79" name="神龙级VIP" visible="0" bpicture="0" desc="VIP用户专属称号！\n佩戴后可提升体力、真气恢复速度各40点，最大体力、最大真气各888点。" desc2="VIP用户专属称号！\n佩戴后可提升体力、真气恢复速度各40点，最大体力、最大真气各888点。" />
+    <title id="80" name="大慈大悲" visible="1" bpicture="0" desc="累计完成100次超度亡魂任务后获得。\n佩戴后可提升灵感5点。" desc2="累计完成100次超度亡魂任务后获得。\n佩戴后可提升灵感5点。" />
+    <title id="81" name="慈航普度" visible="1" bpicture="0" desc="累计完成500次超度亡魂任务后获得。\n佩戴后可提升灵感10点。" desc2="累计完成500次超度亡魂任务后获得。\n佩戴后可提升灵感10点。" />
+    <title id="82" name="千里婵娟" visible="1" bpicture="0" desc="完成焚香许愿任务后获得。\n佩戴后可提升仪容2点。" desc2="完成焚香许愿任务后获得。\n佩戴后可提升仪容2点。" />
+    <title id="83" name="昆仑遍览" visible="1" bpicture="0" desc="遍历昆仑四大美景后获得。\n佩戴后可提升8%移动速度。" desc2="遍历昆仑四大美景后获得。\n佩戴后可提升8%移动速度。" />
+    <title id="84" name="玉虚仙魅" visible="1" bpicture="0" desc="完成鲜血之引任务后获得。\n佩戴后可提升护甲30点。" desc2="完成鲜血之引任务后获得。\n佩戴后可提升护甲30点。" />
+    <title id="85" name="天地无患" visible="1" bpicture="0" desc="完成天之患任务后获得。\n佩戴后可提升体力30点。" desc2="完成天之患任务后获得。\n佩戴后可提升体力30点。" />
+    <title id="86" name="镇压！玉虚峰" visible="1" bpicture="0" desc="完成“玉虚峰”副本后获得。\n佩戴后可提升统御50点。" desc2="完成“玉虚峰”副本后获得。\n佩戴后可提升统御50点。" />
+    <title id="87" name="镇压！天墉地宫" visible="1" bpicture="0" desc="完成“天墉地宫”副本后获得。\n佩戴后可提升统御50点。" desc2="完成“天墉地宫”副本后获得。\n佩戴后可提升统御50点。" />
+    <title id="88" name="镇压！昆仑密道" visible="1" bpicture="0" desc="完成“昆仑密道”副本后获得。\n佩戴后可提升统御50点。" desc2="完成“昆仑密道”副本后获得。\n佩戴后可提升统御50点。" />
+    <title id="89" name="镇压！青绝洞府" visible="1" bpicture="0" desc="完成“青绝洞府”副本后获得。\n佩戴后可提升统御50点。" desc2="完成“青绝洞府”副本后获得。\n佩戴后可提升统御50点。" />
+    <title id="90" name="威震凤翔" visible="1" bpicture="0" desc="击杀凤翔呈天府守护神后获得。\n佩戴后可提升所有一级属性3点。" desc2="击杀凤翔呈天府守护神后获得。\n佩戴后可提升所有一级属性3点。" />
+    <title id="91" name="威震涿鹿" visible="1" bpicture="0" desc="击杀黄帝真龙城守护神后获得。\n佩戴后可提升所有一级属性3点。" desc2="击杀黄帝真龙城守护神后获得。\n佩戴后可提升所有一级属性3点。" />
+    <title id="92" name="威震巫水" visible="1" bpicture="0" desc="击杀酆百鬼都守护神后获得。\n佩戴后可提升所有一级属性3点。" desc2="击杀酆百鬼都守护神后获得。\n佩戴后可提升所有一级属性3点。" />
+    <title id="93" name="威震武夷" visible="1" bpicture="0" desc="击杀武夷千幽宫守护神后获得。\n佩戴后可提升所有一级属性3点。" desc2="击杀武夷千幽宫守护神后获得。\n佩戴后可提升所有一级属性3点。" />
+    <title id="94" name="威震昆仑" visible="1" bpicture="0" desc="击杀昆仑幻月宫守护神后获得。\n佩戴后可提升所有一级属性3点。" desc2="击杀昆仑幻月宫守护神后获得。\n佩戴后可提升所有一级属性3点。" />
+    <title id="95" name="第一滴血" visible="1" bpicture="0" desc="击杀1名玩家后获得。\n佩戴后可提升武器伤害和武魂1点。" desc2="击杀1名玩家后获得。\n佩戴后可提升武器伤害和武魂1点。" />
+    <title id="96" name="如狼似虎" visible="1" bpicture="0" desc="击杀20名玩家后获得。\n佩戴后可提升武器伤害和武魂2点。" desc2="击杀20名玩家后获得。\n佩戴后可提升武器伤害和武魂2点。" />
+    <title id="97" name="心狠手辣" visible="1" bpicture="0" desc="击杀200名玩家后获得。\n佩戴后可提升武器伤害和武魂3点。" desc2="击杀200名玩家后获得。\n佩戴后可提升武器伤害和武魂3点。" />
+    <title id="98" name="追魂夺命" visible="1" bpicture="0" desc="击杀2000名玩家后获得。\n佩戴后可提升武器伤害和武魂4点。" desc2="击杀2000名玩家后获得。\n佩戴后可提升武器伤害和武魂4点。" />
+    <title id="99" name="犹如魔神" visible="1" bpicture="0" desc="击杀5000名玩家后获得。\n佩戴后可提升武器伤害和武魂5点。" desc2="击杀5000名玩家后获得。\n佩戴后可提升武器伤害和武魂5点。" />
+    <title id="100" name="魔神降临" visible="1" bpicture="0" desc="击杀10000名玩家后获得。\n佩戴后可提升武器伤害和武魂6点。" desc2="击杀10000名玩家后获得。\n佩戴后可提升武器伤害和武魂6点。" />
+    <title id="101" name="圆满一百级！" visible="1" bpicture="0" desc="人物等级达到100级后获得。\n佩戴后可提升统御45点。" desc2="人物等级达到100级后获得。\n佩戴后可提升统御45点。" />
+    <title id="102" name="红光满面" visible="1" bpicture="0" desc="角色筋骨达到200后获得。\n佩戴后可提升筋骨8点。" desc2="角色筋骨达到200后获得。\n佩戴后可提升筋骨8点。" />
+    <title id="103" name="金身不坏" visible="1" bpicture="0" desc="角色元气达到200后获得。\n佩戴后可提升元气8点。" desc2="角色元气达到200后获得。\n佩戴后可提升元气8点。" />
+    <title id="104" name="九牛神力" visible="1" bpicture="0" desc="角色劲力达到200后获得。\n佩戴后可提升劲力8点。" desc2="角色劲力达到200后获得。\n佩戴后可提升劲力8点。" />
+    <title id="105" name="无懈可击" visible="1" bpicture="0" desc="角色身法达到200后获得。\n佩戴后可提升身法8点。" desc2="角色身法达到200后获得。\n佩戴后可提升身法8点。" />
+    <title id="106" name="精神奥妙" visible="1" bpicture="0" desc="角色内力达到200后获得。\n佩戴后可提升内力8点。" desc2="角色内力达到200后获得。\n佩戴后可提升内力8点。" />
+    <title id="107" name="神乎其技" visible="1" bpicture="0" desc="角色技力达到200后获得。\n佩戴后可提升技力8点。" desc2="角色技力达到200后获得。\n佩戴后可提升技力8点。" />
+    <title id="108" name="固若金汤" visible="1" bpicture="0" desc="角色筋骨达到1500后获得。\n佩戴后可提升筋骨60点。" desc2="角色筋骨达到1500后获得。\n佩戴后可提升筋骨60点。" />
+    <title id="109" name="返璞归真" visible="1" bpicture="0" desc="角色元气达到1500后获得。\n佩戴后可提升元气60点。" desc2="角色元气达到1500后获得。\n佩戴后可提升元气60点。" />
+    <title id="110" name="无坚不摧" visible="1" bpicture="0" desc="角色劲力达到1500后获得。\n佩戴后可提升劲力60点。" desc2="角色劲力达到1500后获得。\n佩戴后可提升劲力60点。" />
+    <title id="111" name="神行无踪" visible="1" bpicture="0" desc="角色身法达到1500后获得。\n佩戴后可提升身法60点。" desc2="角色身法达到1500后获得。\n佩戴后可提升身法60点。" />
+    <title id="112" name="出神入化" visible="1" bpicture="0" desc="角色内力达到1500后获得。\n佩戴后可提升内力60点。" desc2="角色内力达到1500后获得。\n佩戴后可提升内力60点。" />
+    <title id="113" name="百发百中" visible="1" bpicture="0" desc="角色技力达到1500后获得。\n佩戴后可提升技力60点。" desc2="角色技力达到1500后获得。\n佩戴后可提升技力60点。" />
+    <title id="114" name="鸿运当头" visible="1" bpicture="0" desc="鉴定出10次蓝色或蓝色以上品级的装备后获得。\n佩戴后可提升福缘1点。" desc2="鉴定出10次蓝色或蓝色以上品级的装备后获得。\n佩戴后可提升福缘1点。" />
+    <title id="115" name="天降洪福" visible="1" bpicture="0" desc="鉴定出50次蓝色或蓝色以上品级的装备后获得。\n佩戴后可提升福缘3点。" desc2="鉴定出50次蓝色或蓝色以上品级的装备后获得。\n佩戴后可提升福缘3点。" />
+    <title id="116" name="洪福齐天" visible="1" bpicture="0" desc="鉴定出200次蓝色或蓝色以上品级的装备后获得。\n佩戴后可提升福缘5点。" desc2="鉴定出200次蓝色或蓝色以上品级的装备后获得。\n佩戴后可提升福缘5点。" />
+    <title id="117" name="披荆斩棘" visible="1" bpicture="0" desc="采集或收获500次资源后获得。\n佩戴后活力每4分钟恢复1%。" desc2="采集或收获500次资源后获得。\n佩戴后活力每4分钟恢复1%。" />
+    <title id="118" name="果实累累" visible="1" bpicture="0" desc="采集或收获2000次资源后获得。\n佩戴后活力每4分钟恢复2%。" desc2="采集或收获2000次资源后获得。\n佩戴后活力每4分钟恢复2%。" />
+    <title id="119" name="疾风劲草" visible="1" bpicture="0" desc="采集或收获5000次资源后获得。\n佩戴后活力每4分钟恢复3%。" desc2="采集或收获5000次资源后获得。\n佩戴后活力每4分钟恢复3%。" />
+    <title id="120" name="孜孜不倦" visible="1" bpicture="0" desc="采集或收获10000次资源后获得。\n佩戴后活力每4分钟恢复4%。" desc2="采集或收获10000次资源后获得。\n佩戴后活力每4分钟恢复4%。" />
+    <title id="121" name="好聚好散" visible="1" bpicture="0" desc="离婚1次后获得。\n佩戴后可提升持久力最大值20点。" desc2="离婚1次后获得。\n佩戴后可提升持久力最大值20点。" />
+    <title id="122" name="再接再厉" visible="1" bpicture="0" desc="离婚10次后获得。\n佩戴后可提升持久力最大值50点。" desc2="离婚10次后获得。\n佩戴后可提升持久力最大值50点。" />
+    <title id="123" name="怨满天下" visible="1" bpicture="0" desc="离婚50次后获得。\n佩戴后可提升持久力最大值100点。" desc2="离婚50次后获得。\n佩戴后可提升持久力最大值100点。" />
+    <title id="124" name="幸福成双" visible="1" bpicture="0" desc="结婚1次后获得。\n佩戴后可提升活力最大值20点。" desc2="结婚1次后获得。\n佩戴后可提升活力最大值20点。" />
+    <title id="125" name="春光无限" visible="1" bpicture="0" desc="结婚10次后获得。\n佩戴后可提升活力最大值50点。" desc2="结婚10次后获得。\n佩戴后可提升活力最大值50点。" />
+    <title id="126" name="情满天下" visible="1" bpicture="0" desc="结婚50次后获得。\n佩戴后可提升活力最大值100点。" desc2="结婚50次后获得。\n佩戴后可提升活力最大值100点。" />
+    <title id="127" name="人生贵相知" visible="1" bpicture="0" desc="结交10个好友后获得。\n佩戴后可提升统御5点。" desc2="结交10个好友后获得。\n佩戴后可提升统御5点。" />
+    <title id="128" name="知音世所稀" visible="1" bpicture="0" desc="结交50个好友后获得。\n佩戴后可提升统御10点。" desc2="结交50个好友后获得。\n佩戴后可提升统御10点。" />
+    <title id="129" name="谁人不识君" visible="1" bpicture="0" desc="结交100个好友后获得。\n佩戴后可提升统御25点。" desc2="结交100个好友后获得。\n佩戴后可提升统御25点。" />
+    <title id="130" name="酒中仙" visible="1" bpicture="0" desc="累计饮用99坛天雷酒后获得。\n佩戴后可提升致命率0.5%。" desc2="累计饮用99坛天雷酒后获得。\n佩戴后可提升致命率0.5%。" />
+    <title id="131" name="顺风而呼" visible="1" bpicture="0" desc="使用传音频道达到5次后获得。\n佩戴后可提升怪物金钱掉落量1%。" desc2="使用传音频道达到5次后获得。\n佩戴后可提升怪物金钱掉落量1%。" />
+    <title id="132" name="穿云裂石" visible="1" bpicture="0" desc="使用传音频道达到200次后获得。\n佩戴后可提升怪物金钱掉落量40%。" desc2="使用传音频道达到200次后获得。\n佩戴后可提升怪物金钱掉落量40%。" />
+    <title id="133" name="震天动地" visible="1" bpicture="0" desc="使用传音频道达到500次后获得。\n佩戴后可提升怪物金钱掉落量100%。" desc2="使用传音频道达到500次后获得。\n佩戴后可提升怪物金钱掉落量100%。" />
+    <title id="134" name="一剑封喉" visible="1" bpicture="0" desc="累计使用剑客技能：“避邪”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用剑客技能：“避邪”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="135" name="一刀夺命" visible="1" bpicture="0" desc="累计使用刀客技能：“日月乾坤刀”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用刀客技能：“日月乾坤刀”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="136" name="一柱擎天" visible="1" bpicture="0" desc="累计使用神兵技能：“天昭”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用神兵技能：“天昭”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="137" name="一箭双雕" visible="1" bpicture="0" desc="累计使用弦羽技能：“追星赶月”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用弦羽技能：“追星赶月”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="138" name="一气浑成" visible="1" bpicture="0" desc="累计使用玄师技能：“龙降”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用玄师技能：“龙降”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="139" name="一语夺命" visible="1" bpicture="0" desc="累计使用冥师技能：“九阴”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用冥师技能：“九阴”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="140" name="一世名医" visible="1" bpicture="0" desc="累计使用药师技能：“毒砂”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用药师技能：“毒砂”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="141" name="一曲千金" visible="1" bpicture="0" desc="累计使用乐师技能：“律·广陵散”100次后获得。\n佩戴后可提升悟性5点。" desc2="累计使用乐师技能：“律·广陵散”100次后获得。\n佩戴后可提升悟性5点。" />
+    <title id="142" name="能工巧匠" visible="1" bpicture="0" desc="累计合成成功100次后获得。\n佩戴后可提升福缘10点。" desc2="累计合成成功100次后获得。\n佩戴后可提升福缘10点。" />
+    <title id="143" name="独运匠心" visible="1" bpicture="0" desc="累计合成成功500次后获得。\n佩戴后可提升福缘20点。" desc2="累计合成成功500次后获得。\n佩戴后可提升福缘20点。" />
+    <title id="144" name="鬼斧神工" visible="1" bpicture="0" desc="累计合成成功1000次后获得。\n佩戴后可提升福缘30点。" desc2="累计合成成功1000次后获得。\n佩戴后可提升福缘30点。" />
+    <title id="145" name="江湖新秀" visible="1" bpicture="0" desc="累计在线3小时后获得。" desc2="累计在线3小时后获得。" />
+    <title id="146" name="江湖少侠" visible="1" bpicture="0" desc="累计在线10小时后获得。" desc2="累计在线10小时后获得。" />
+    <title id="147" name="江湖大侠" visible="1" bpicture="0" desc="累计在线100小时后获得。" desc2="累计在线100小时后获得。" />
+    <title id="148" name="江湖豪侠" visible="1" bpicture="0" desc="累计在线500小时后获得。" desc2="累计在线500小时后获得。" />
+    <title id="149" name="江湖侠圣" visible="1" bpicture="0" desc="累计在线1000小时后获得。\n佩戴后体力恢复速度提升1%/3秒。" desc2="累计在线1000小时后获得。\n佩戴后体力恢复速度提升1%/3秒。" />
+    <title id="150" name="一代宗师" visible="1" bpicture="0" desc="累计在线5000小时后获得。\n佩戴后体力恢复速度提升2%/3秒。" desc2="累计在线5000小时后获得。\n佩戴后体力恢复速度提升2%/3秒。" />
+    <title id="151" name="百折不挠" visible="1" bpicture="0" desc="累计完成100环卫道任务后获得。\n佩戴后可提升移动速度1%。" desc2="累计完成100环卫道任务后获得。\n佩戴后可提升移动速度1%。" />
+    <title id="152" name="千折不挠" visible="1" bpicture="0" desc="累计完成200环卫道任务后获得。\n佩戴后可提升移动速度2%。" desc2="累计完成200环卫道任务后获得。\n佩戴后可提升移动速度2%。" />
+    <title id="153" name="万折不挠" visible="1" bpicture="0" desc="累计完成300环卫道任务后获得。\n佩戴后可提升移动速度3%。" desc2="累计完成300环卫道任务后获得。\n佩戴后可提升移动速度3%。" />
+    <title id="154" name="勤学苦练" visible="1" bpicture="0" desc="累计进入1次修炼场后获得。\n佩戴后可提升获得经验1%。" desc2="累计进入1次修炼场后获得。\n佩戴后可提升获得经验1%。" />
+    <title id="155" name="磨砺自强" visible="1" bpicture="0" desc="累计进入20次修炼场后获得。\n佩戴后可提升获得经验3%。" desc2="累计进入20次修炼场后获得。\n佩戴后可提升获得经验3%。" />
+    <title id="156" name="十年一剑" visible="1" bpicture="0" desc="累计进入50次修炼场后获得。\n佩戴后可提升获得经验5%。" desc2="累计进入50次修炼场后获得。\n佩戴后可提升获得经验5%。" />
+    <title id="157" name="属性钻研" visible="1" bpicture="0" desc="累计重置10次自由属性点后获得。" desc2="累计重置10次自由属性点后获得。" />
+    <title id="158" name="属性高人" visible="1" bpicture="0" desc="累计重置50次自由属性点后获得。\n佩戴后可提升所有一级属性1点。" desc2="累计重置50次自由属性点后获得。\n佩戴后可提升所有一级属性1点。" />
+    <title id="159" name="属性大神" visible="1" bpicture="0" desc="累计重置100次自由属性点后获得。\n佩戴后可提升所有一级属性3点。" desc2="累计重置100次自由属性点后获得。\n佩戴后可提升所有一级属性3点。" />
+    <title id="160" name="天资钻研" visible="1" bpicture="0" desc="累计重置10次天资点后获得。\n佩戴后可提升额外伤害5点，额外伤害吸收5点。" desc2="累计重置10次天资点后获得。\n佩戴后可提升额外伤害5点，额外伤害吸收5点。" />
+    <title id="161" name="天资高人" visible="1" bpicture="0" desc="累计重置50次天资点后获得。\n佩戴后可提升额外伤害10点，额外伤害吸收10点。" desc2="累计重置50次天资点后获得。\n佩戴后可提升额外伤害10点，额外伤害吸收10点。" />
+    <title id="162" name="天资大神" visible="1" bpicture="0" desc="累计重置100次天资点后获得。\n佩戴后可提升额外伤害20点，额外伤害吸收20点。" desc2="累计重置100次天资点后获得。\n佩戴后可提升额外伤害20点，额外伤害吸收20点。" />
+    <title id="163" name="花枝招展" visible="1" bpicture="0" desc="累计10次时装染色后获得。\n佩戴后可提升仪容5点。" desc2="累计10次时装染色后获得。\n佩戴后可提升仪容5点。" />
+    <title id="164" name="流光异彩" visible="1" bpicture="0" desc="累计50次时装染色后获得。\n佩戴后可提升仪容10点。" desc2="累计50次时装染色后获得。\n佩戴后可提升仪容10点。" />
+    <title id="165" name="万紫千红" visible="1" bpicture="0" desc="累计100次时装染色后获得。\n佩戴后可提升仪容20点。" desc2="累计100次时装染色后获得。\n佩戴后可提升仪容20点。" />
+    <title id="166" name="铭纹巧手" visible="1" bpicture="0" desc="累计铭纹100次后获得。\n佩戴后可提升福缘10点。" desc2="累计铭纹100次后获得。\n佩戴后可提升福缘10点。" />
+    <title id="167" name="铭纹妙手" visible="1" bpicture="0" desc="累计铭纹500次后获得。\n佩戴后可提升福缘20点。" desc2="累计铭纹500次后获得。\n佩戴后可提升福缘20点。" />
+    <title id="168" name="铭纹圣手" visible="1" bpicture="0" desc="累计铭纹1000次后获得。\n佩戴后可提升福缘30点。" desc2="累计铭纹1000次后获得。\n佩戴后可提升福缘30点。" />
+    <title id="169" name="凿木雕虎" visible="1" bpicture="0" desc="累计镌刻100次后获得。\n佩戴后可提升福缘10点。" desc2="累计镌刻100次后获得。\n佩戴后可提升福缘10点。" />
+    <title id="170" name="凿石雕凤" visible="1" bpicture="0" desc="累计镌刻500次后获得。\n佩戴后可提升福缘20点。" desc2="累计镌刻500次后获得。\n佩戴后可提升福缘20点。" />
+    <title id="171" name="凿玉雕龙" visible="1" bpicture="0" desc="累计镌刻1000次后获得。\n佩戴后可提升福缘30点。" desc2="累计镌刻1000次后获得。\n佩戴后可提升福缘30点。" />
+    <title id="172" name="镶嵌凡工" visible="1" bpicture="0" desc="累计镶嵌100次宝石后获得。\n佩戴后可提升福缘10点。" desc2="累计镶嵌100次宝石后获得。\n佩戴后可提升福缘10点。" />
+    <title id="173" name="镶嵌鬼工" visible="1" bpicture="0" desc="累计镶嵌500次宝石后获得。\n佩戴后可提升福缘20点。" desc2="累计镶嵌500次宝石后获得。\n佩戴后可提升福缘20点。" />
+    <title id="174" name="镶嵌天工" visible="1" bpicture="0" desc="累计镶嵌1000次宝石后获得。\n佩戴后可提升福缘30点。" desc2="累计镶嵌1000次宝石后获得。\n佩戴后可提升福缘30点。" />
+    <title id="175" name="琢孔大师" visible="1" bpicture="0" desc="累计开凿100次宝石孔后获得。\n佩戴后可提升福缘10点。" desc2="累计开凿100次宝石孔后获得。\n佩戴后可提升福缘10点。" />
+    <title id="176" name="琢孔名师" visible="1" bpicture="0" desc="累计开凿500次宝石孔后获得。\n佩戴后可提升福缘20点。" desc2="累计开凿500次宝石孔后获得。\n佩戴后可提升福缘20点。" />
+    <title id="177" name="琢孔天师" visible="1" bpicture="0" desc="累计开凿1000次宝石孔后获得。\n佩戴后可提升福缘30点。" desc2="累计开凿1000次宝石孔后获得。\n佩戴后可提升福缘30点。" />
+    <title id="178" name="一拳三百磅" visible="0" bpicture="0" desc="使用巴哈姆特糖果后获得。\n佩戴后可提升获得经验6%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用巴哈姆特糖果后获得。\n佩戴后可提升获得经验6%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="179" name="一拳三百磅" visible="0" bpicture="0" desc="使用游戏基地饼干后获得。\n佩戴后可提升掉宝率6%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用游戏基地饼干后获得。\n佩戴后可提升掉宝率6%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="180" name="北部有为青年" visible="0" bpicture="0" desc="使用网咖卷轴后获得。\n佩戴后可提升移动速度10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用网咖卷轴后获得。\n佩戴后可提升移动速度10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="181" name="中台湾扛把子" visible="0" bpicture="0" desc="使用网咖令牌后获得。\n佩戴后可提升跳跃速度10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用网咖令牌后获得。\n佩戴后可提升跳跃速度10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="182" name="南台湾的春天" visible="0" bpicture="0" desc="使用网咖比基尼后获得。\n佩戴后可提升游泳速度10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用网咖比基尼后获得。\n佩戴后可提升游泳速度10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="183" name="尊龙测试英雄" visible="0" bpicture="0" desc="使用易吉网召集令（一）后获得。\n佩戴后可提升获得经验6%、掉宝率6%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用易吉网召集令（一）后获得。\n佩戴后可提升获得经验6%、掉宝率6%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="184" name="衣食再生父母" visible="0" bpicture="0" desc="使用易吉网召集令（二）后获得。\n佩戴后可提升金钱掉率10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用易吉网召集令（二）后获得。\n佩戴后可提升金钱掉率10%。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="185" name="叫你第一名" visible="0" bpicture="0" desc="使用易吉网召集令（三）后获得。\n佩戴后可提升活力最大值30。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="使用易吉网召集令（三）后获得。\n佩戴后可提升活力最大值30。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="186" name="嗜血战神" visible="1" bpicture="0" desc="比武切磋中连续击败100个对手后获得。" desc2="比武切磋中击败100个对手后获得。\n佩戴后可提升额外伤害4点" />
+    <title id="187" name="战神终结者" visible="1" bpicture="0" desc="比武切磋中击败拥有“嗜血战神”称号的玩家后获得。" desc2="比武切磋中击败拥有“嗜血战神”称号的玩家后获得。\n佩戴后可提升额外伤害吸收4点" />
+    <title id="188" name="消灾授福" visible="1" bpicture="0" desc="将天宫火种放入元宵篝火中获得。" desc2="将天宫火种放入元宵篝火中获得。" />
+    <title id="189" name="五彩呈祥" visible="1" bpicture="0" desc="使用5次元宵花灯后获得。" desc2="使用元宵花灯后获得。" />
+    <title id="190" name="才高八斗" visible="1" bpicture="0" desc="在新春答题中答对全部20道题目即可获得。" desc2="在新春答题中答对全部20道题目即可获得。" />
+    <title id="191" name="YY浣熊党" visible="0" bpicture="0" desc="不要迷恋哥！哥只是个传说！如果要找哥！上YY跟哥说！\n佩戴后可提升体力最大值50点，真气最大值50点，体型5%，但是跳跃高度降低5%" desc2="不要迷恋哥！哥只是个传说！如果要找哥！上YY跟哥说！\n佩戴后可提升体力最大值50点，真气最大值50点，体型5%，但是跳跃高度降低5%" />
+    <title id="192" name="为人师表" visible="1" bpicture="0" desc="完成师傅的资格任务后获得。" desc2="完成师傅的资格任务后获得。" />
+    <title id="193" name="王者" visible="0" bpicture="0" desc="每周实力排行第一名获得。&lt;color=0xff05ff00&gt;\n该称号有效期为一周，到期后称号效果消失，再次获得后，称号效果可被重新激活。" desc2="每周实力排行第一名获得。" />
+    <title id="194" name="枭雄" visible="0" bpicture="0" desc="每周实力排行第二名、第三名获得。&lt;color=0xff05ff00&gt;\n该称号有效期为一周，到期后称号效果消失，再次获得后，称号效果可被重新激活。" desc2="每周实力排行第二名、第三名获得。" />
+    <title id="195" name="英才" visible="0" bpicture="0" desc="每周实力排行第四名、第五名、第六名获得。&lt;color=0xff05ff00&gt;\n该称号有效期为一周，到期后称号效果消失，再次获得后，称号效果可被重新激活。" desc2="每周实力排行第四名、第五名、第六名获得。" />
+    <title id="196" name="[时]龙之战神" visible="0" bpicture="1" pic_title="L_pictitle22" desc="跨服PVP活动第一名专属称号！&lt;color=0xff05ff00&gt;\n该称号有效期为一周，到期后称号效果消失，再次获得后，称号效果可被重新激活。\n佩戴后可获得以下属性提升：\n体力、真气上限+1500\n额外伤害+50\n全部伤害减免+150\n所有一级属性+30" desc2="跨服PVP活动第一名专属称号！\n佩戴后可获得以下属性提升：\n体力、真气上限+1500\n额外伤害+50\n全部伤害减免+150\n所有一级属性+30" />
+    <title id="197" name="新手大师" visible="0" bpicture="0" desc="&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="198" name="群龙誓师首长" visible="0" bpicture="0" desc="&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="199" name="绝代佳人" visible="0" bpicture="1" pic_title="L_pictitle27" desc="提高自身最大体力与真气1000点,同时，40米范围内所有队友单位（包括自身），经验获得、金钱获得、物品掉落几率提高10%，体力、真气恢复速度提高10点,全部伤害减免提高100点" desc2='使用道具&lt;color=0xffffae00&gt;&quot;封号：绝代佳人&quot;&lt;color=0xfffff7e0&gt;后获得' />
+    <title id="200" name="倾国倾城" visible="0" bpicture="1" pic_title="L_pictitle28" desc="提高自身最大体力与真气500点，同时，40米范围内所有队友单位（包括自身），经验获得、金钱获得、物品掉落几率提高5%,体力、真气恢复速度提高5点,全部伤害减免提高50点" desc2='使用道具&lt;color=0xffffae00&gt;&quot;封号：倾国倾城&quot;&lt;color=0xfffff7e0&gt;后获得' />
+    <title id="201" name="千娇百媚" visible="0" bpicture="1" pic_title="L_pictitle29" desc="提高自身最大体力与真气200点，同时，40米范围内所有队友单位（包括自身），经验获得、金钱获得、物品掉落几率提高2%,体力、真气恢复速度提高2点,全部伤害减免提高20点" desc2='使用道具&lt;color=0xffffae00&gt;&quot;封号：千娇百媚&quot;&lt;color=0xfffff7e0&gt;后获得' />
+    <title id="202" name="天使宝贝" visible="0" bpicture="1" pic_title="L_pictitle30" desc="自身体力、真气最大值提高500点" desc2='使用道具&lt;color=0xffffae00&gt;&quot;封号：天使宝贝&quot;&lt;color=0xfffff7e0&gt;后获得\n该称号在使用时附带有小翅膀特效！' />
+    <title id="203" name="沉鱼落雁" visible="0" bpicture="1" pic_title="L_pictitle31" desc="自身气力值提高25点,每3秒恢复15点真气" desc2='使用道具&lt;color=0xff05ff00&gt;&quot;封号：沉鱼落雁&quot;&lt;color=0xfffff7e0&gt;后获得' />
+    <title id="204" name="闭月羞花" visible="0" bpicture="1" pic_title="L_pictitle32" desc="自身气力值提高125点,每3秒恢复3点真气" desc2='使用道具&lt;color=0xff05ff00&gt;&quot;封号：闭月羞花&quot;&lt;color=0xfffff7e0&gt;后获得' />
+    <title id="205" name="怜香惜玉" visible="0" bpicture="1" pic_title="L_pictitle33" desc="提高自身最大体力与真气500点，同时，40米范围内所有队友单位（包括自身），经验获得、金钱获得、物品掉落几率提高5%,体力、真气恢复速度提高5点,全部伤害减免提高50点" desc2='使用道具&lt;color=0xffffae00&gt;&quot;封号：怜香惜玉&quot;&lt;color=0xfffff7e0&gt;后获得' />
+    <title id="206" name="护花使者" visible="0" bpicture="0" desc="提高自身最大体力与真气100点，同时，40米范围内所有队友单位（包括自身），体力、真气恢复速度提高1点" desc2='完成5次&quot;向众女请安&quot;任务后获得' />
+    <title id="207" name="曾为王者" visible="0" bpicture="0" desc="曾经获得王者称号。" desc2="曾经获得王者称号。" />
+    <title id="208" name="曾为枭雄" visible="0" bpicture="0" desc="曾经获得枭雄称号。" desc2="曾经获得枭雄称号。" />
+    <title id="209" name="曾为英才" visible="0" bpicture="0" desc="曾经获得英才称号。" desc2="曾经获得英才称号。" />
+    <title id="210" name="模范大师" visible="0" bpicture="0" desc="新手大师拥有的特殊称号！\n佩戴后可提升10点福缘。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="新手大师拥有的特殊称号！\n佩戴后可提升10点福缘。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="211" name="精英大师" visible="0" bpicture="0" desc="新手大师拥有的特殊称号！\n佩戴后可提升10点福缘。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="新手大师拥有的特殊称号！\n佩戴后可提升10点福缘。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="212" name="用美丽改变武林" visible="0" bpicture="0" desc="和纪妍美眉一同用美丽改变武林！\n佩戴后可提升20点仪容。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="和纪妍美眉一同用美丽改变武林！\n佩戴后可提升20点仪容。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="213" name="为心爱武林一战" visible="0" bpicture="0" desc="一起为心爱的武林奋战吧！\n佩戴后可提升20点统御。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="一起为心爱的武林奋战吧！\n佩戴后可提升20点统御。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="214" name="泰山北斗猛如龙" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升30点命中。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升30点命中。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="215" name="至尊无上中神通" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升30点闪避。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升30点闪避。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="216" name="无坚不摧南霸天" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升100点护甲。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升100点护甲。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="217" name="一江春水向东流" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升30点持久力最大值。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升30点持久力最大值。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="218" name="法力无边如来佛" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升6点活力恢复速度。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升6点活力恢复速度。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="219" name="你金将有影厉害" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升10点武器伤害。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升10点武器伤害。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="220" name="一尾活龙尚盖勇" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升5%移动速度和游泳速度。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升5%移动速度和游泳速度。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="221" name="金系系网咖之霸" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升5点所有一级属性。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升5点所有一级属性。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="222" name="水当当网咖之星" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升5点所有伤害减免。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升5点所有伤害减免。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="223" name="五根手指一拳头" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升5%经验获得加成。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升5%经验获得加成。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="224" name="意义是三小" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升10%金钱掉落量加成。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升10%金钱掉落量加成。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="225" name="临北丢系尚义气" visible="0" bpicture="0" desc="特殊活动称号。\n佩戴后可提升6%骑乘速度。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" desc2="特殊活动称号。\n佩戴后可提升6%骑乘速度。\n&lt;color=0xff00a2ff&gt;台湾地区专用称号&lt;color=0xfffff7e0&gt;" />
+    <title id="226" name="军士" visible="0" bpicture="1" pic_title="L_pictitle19" desc="帮派功勋值及称号获得：\n1～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n1～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="227" name="步兵校尉" visible="0" bpicture="1" pic_title="L_pictitle18" desc="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="228" name="偏将军" visible="0" bpicture="1" pic_title="L_pictitle15" desc="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="229" name="中郎将" visible="0" bpicture="1" pic_title="L_pictitle17" desc="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="230" name="骠骑将军" visible="0" bpicture="1" pic_title="L_pictitle11" desc="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="231" name="大元帅" visible="0" bpicture="1" pic_title="L_pictitle12" desc="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="232" name="天威中郎将" visible="0" bpicture="1" pic_title="L_pictitle26" desc="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" desc2="帮派功勋值及称号获得：\n0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将" />
+    <title id="233" name="天威骠骑将军" visible="0" bpicture="1" pic_title="L_pictitle25" desc="帮派功勋值及称号获得：0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将\n340200～453599：天威骠骑将军\n453600或以上：天威大元帅" desc2="当帮派功勋值为340200～453599时获得" />
+    <title id="234" name="天威大元帅" visible="0" bpicture="1" pic_title="L_pictitle24" desc="帮派功勋值及称号获得：0～359：军士\n360～1079：步兵校尉\n1080～3239：偏将军\n3240～16199：中郎将\n16200～113399：骠骑将军\n113400～226799：大元帅\n226800～340199：天威中郎将\n340200～453599：天威骠骑将军\n453600或以上：天威大元帅" desc2="当帮派功勋值为453600或以上时获得" />
+    <title id="235" name="[时]时限称号1" visible="0" bpicture="1" desc="时限制称号，使用后可增加########，持续时间为2小时。\n&lt;color=0xff05ff00&gt;称号有效时间在未使用或者下线后不计时。&lt;color=0xfffff7e0&gt;" desc2="持续2小时，杀9991068获得" />
+    <title id="236" name="[时]图片式时限称号2" visible="0" bpicture="1" pic_title="title0" desc="时限制称号，使用后可增加########，持续时间为25小时。\n&lt;color=0xff05ff00&gt;称号有效时间在未使用或者下线后不计时。&lt;color=0xfffff7e0&gt;" desc2="持续24小时，杀9991069获得" />
+    <title id="237" name="三等侍卫" visible="0" bpicture="1" pic_title="L_pictitle04" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="238" name="二等侍卫" visible="0" bpicture="1" pic_title="L_pictitle05" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="239" name="一等侍卫" visible="0" bpicture="1" pic_title="L_pictitle06" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="240" name="三等禁军侍卫" visible="0" bpicture="1" pic_title="L_pictitle01" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="241" name="二等禁军侍卫" visible="0" bpicture="1" pic_title="L_pictitle02" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="242" name="一等禁军侍卫" visible="0" bpicture="1" pic_title="L_pictitle03" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="243" name="三等御前侍卫" visible="0" bpicture="1" pic_title="L_pictitle07" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="244" name="二等御前侍卫" visible="0" bpicture="1" pic_title="L_pictitle08" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="245" name="一等御前侍卫" visible="0" bpicture="1" pic_title="L_pictitle09" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="246" name="御前侍卫长" visible="0" bpicture="1" pic_title="L_pictitle10" desc="竞技场武勋值达到对应值后获得：\n三等侍卫：0~39\n二等侍卫：40~199\n一等侍卫：200~499\n三等禁军侍卫：500~999\n二等禁军侍卫：1000~1999\n一等禁军侍卫：2000~2999\n三等御前侍卫：3000~5999\n二等御前侍卫：6000~9999\n一等御前侍卫：10000~14999\n御前侍卫长：15000以上" />
+    <title id="247" name="龙之战神" visible="0" bpicture="1" pic_title="L_pictitle22" desc="跨服PVP活动第一名专属称号！&lt;color=0xff05ff00&gt;\n佩戴后可获得以下属性提升：\n体力、真气上限+1500\n额外伤害+50\n全部伤害减免+150\n所有一级属性+30" desc2="跨服PVP活动第一名专属称号！\n佩戴后可获得以下属性提升：\n体力、真气上限+1500\n额外伤害+50\n全部伤害减免+150\n所有一级属性+30" />
+    <title id="248" name="窈窕淑女" visible="0" bpicture="0" desc="小龙女周冠军获得，增加16点筋骨" />
+    <title id="249" name="天姿国色" visible="0" bpicture="0" desc="小龙女月冠军获得，增加20点筋骨" />
+    <title id="250" name="小龙女" visible="0" bpicture="0" desc="小龙女总冠军获得，增加15点所有属性" />
+    <title id="251" name="龙卫士" visible="0" bpicture="0" desc="玩家参与周冠军获得，增加16点筋骨" />
+    <title id="252" name="世博活动达人" visible="0" bpicture="0" desc="佩戴后可提升自身活力上限100点、活力恢复速度提高3点、仪容提高10、福缘提高10" />
+    <title id="253" name="博览天下" visible="0" bpicture="0" desc="佩戴后可提升自身活力上限300点、活力恢复速度提高8点、仪容提高20、福缘提高20" />
+    <title id="254" name="巴士龙族精兵" visible="0" bpicture="1" pic_title="L_pictitle34" desc="巴士龙族，穿越时空的精英空降兵，神秘符咒与幸运并重、潜力无极限；将是龙族世界里最具潜质的攻城英雄！\n佩戴后可提升额外伤害15点" desc2="穿越时空的精英空降兵，神秘符咒与幸运并重、潜力无极限；将是龙族世界里最具潜质的攻城英雄！" />
+    <title id="255" name="新浪铁杆玩家" visible="0" bpicture="1" pic_title="L_pictitle35" desc="新浪铁杆玩家开心玩游戏，对待他人和自己都很有爱，热衷寻找《龙》里的各种乐趣，力挺把《龙》打造成真正的国民网游！\n佩戴后可提升额外伤害吸收15点" desc2="新浪铁杆玩家开心玩游戏，对待他人和自己都很有爱，热衷寻找《龙》里的各种乐趣，力挺把《龙》打造成真正的国民网游！" />
+    <title id="256" name="17173虎跃龙腾" visible="0" bpicture="1" pic_title="L_pictitle36" desc="17173虎跃龙腾，虎年专属称号。江湖流传：打练筋骨，不若虎跃，修养气力，难及龙腾。\n佩戴后可提升筋骨10点，气力10点" desc2="17173虎跃龙腾，虎年专属称号。江湖流传：打练筋骨，不若虎跃，修养气力，难及龙腾。" />
+    <title id="257" name="178威震天" visible="0" bpicture="1" pic_title="L_pictitle37" desc="178虎年专属称号。江湖流传：众人PK，万兽之王，一技之长，虎威震天。\n佩戴后可提升统御80点" desc2="虎年专属称号。江湖流传：众人PK，万兽之王，一技之长，虎威震天。" />
+    <title id="258" name="十步杀一人" visible="1" bpicture="1" pic_title="L_pictitle23" desc="在战场结束时，积分排名第一的玩家获得。\n佩戴后提升所有一级属性15点，体力最大值500点" />
+    <title id="259" name="千里不留行" visible="1" bpicture="1" pic_title="L_pictitle13" desc="在战场结束时，积分排名第二和第三的玩家获得。\n佩戴后提升所有一级属性10点，体力最大值200点" />
+    <title id="260" name="事了拂衣去" visible="1" bpicture="1" pic_title="L_pictitle14" desc="在战场结束时，积分排名第四到第十的玩家获得。\n佩戴后提升所有一级属性5点，体力最大值100点" />
+    <title id="261" name="深藏身与名" visible="1" bpicture="1" pic_title="L_pictitle16" desc="在战场结束时，积分排名第十一到第二十的玩家获得。\n佩戴后提升所有一级属性2点，体力最大值50点" />
+    <title id="262" name="凤翔城主" visible="0" bpicture="1" pic_title="L_pictitle20" desc="凤翔城主的象征！\n佩戴后提升所有一级属性25点，体力最大值500点，致命率2%，气力500点" />
+    <title id="263" name="我真的很担心" visible="0" bpicture="0" desc="佩戴后可提升跳跃速度10%" desc2="佩戴后可提升跳跃速度10%" />
+    <title id="264" name="我混的是友情" visible="0" bpicture="0" desc="佩戴后可提升游泳速度100%" desc2="佩戴后可提升游泳速度100%" />
+    <title id="265" name="旱鸭子" visible="0" bpicture="0" desc="佩戴后会降低游泳速度50%" desc2="佩戴后会降低游泳速度50%" />
+    <title id="266" name="下等人才用枪" visible="0" bpicture="0" desc="佩戴后可提升冲击伤害减免50" desc2="佩戴后可提升冲击伤害减免50" />
+    <title id="267" name="凛北只知道霸气" visible="0" bpicture="0" desc="佩戴后可提升统御30" desc2="佩戴后可提升统御30" />
+    <title id="268" name="赤膊上阵" visible="0" bpicture="1" desc="每周装备实力排名前3名获得。&lt;color=0xff05ff00&gt;\n下次实力排行奖励发放前有效，失效后称号消失。" desc2="每周装备实力排名前3名获得。" />
+    <title id="269" name="灵兽不如" visible="0" bpicture="1" desc="每周灵兽实力排名前3名获得。&lt;color=0xff05ff00&gt;\n下次实力排行奖励发放前有效，失效后称号消失。" desc2="每周灵兽实力排名前3名获得。" />
+    <title id="270" name="各族通吃" visible="0" bpicture="1" desc="每周氏族声望实力排名前3名获得。&lt;color=0xff05ff00&gt;\n下次实力排行奖励发放前有效，失效后称号消失。" desc2="每周氏族声望实力排名前3名获得。" />
+    <title id="271" name="[时]独孤求败" visible="0" bpicture="1" pic_title="L_pictitle45" desc="\n佩戴后，自身原始内功攻击提高5000点" desc2="\n佩戴后，自身原始内功攻击提高5000点" />
+    <title id="272" name="[时]谁与争锋" visible="0" bpicture="1" pic_title="L_pictitle46" desc="\n佩戴后，自身原始外功攻击提高5000点" desc2="\n佩戴后，自身原始外功攻击提高5000点" />
+    <title id="273" name="[时]神龙降世" visible="0" bpicture="1" pic_title="L_pictitle47" desc="\n佩戴后，自身原始内功攻击提高2500点" desc2="\n佩戴后，自身原始内功攻击提高2500点" />
+    <title id="274" name="[时]神灵附体" visible="0" bpicture="1" pic_title="L_pictitle48" desc="\n佩戴后，自身原始外功攻击提高2500点" desc2="\n佩戴后，自身原始外功攻击提高2500点" />
+    <title id="275" name="[时]复仇者" visible="0" bpicture="1" pic_title="L_pictitle49" desc="\n佩戴后，自身致命率增加15%，致命量增加15%" desc2="\n佩戴后，自身致命率增加15%，致命量增加15%" />
+    <title id="276" name="[时]水媚妖姬" visible="0" bpicture="1" pic_title="L_pictitle50" desc="\n佩戴后，自身最大体力值增加5000点，闪避增加200点" desc2="\n佩戴后，自身最大体力值增加5000点，闪避增加200点" />
+    <title id="277" name="[时]哥很寂寞" visible="0" bpicture="1" pic_title="L_pictitle51" desc="\n佩戴后，自身内功伤害减免提高300点" desc2="\n佩戴后，自身内功伤害减免提高300点" />
+    <title id="278" name="[时]非诚勿扰" visible="0" bpicture="1" pic_title="L_pictitle52" desc="\n佩戴后，自身外功伤害减免提高300点" desc2="\n佩戴后，自身外功伤害减免提高300点" />
+    <title id="279" name="[时]绝代人妖" visible="0" bpicture="1" pic_title="L_pictitle53" desc="\n佩戴后，增加自身额外伤害200点，额外伤害吸收200点，气力值300点" desc2="\n佩戴后，增加自身额外伤害200点，额外伤害吸收200点，气力值300点" />
+    <title id="280" name="[时]犀利哥" visible="0" bpicture="1" pic_title="L_pictitle54" desc="\n佩戴后，自身最大体力值增加3000，最大持久力增加200点，每3秒回复50点体力" desc2="\n佩戴后，自身最大体力值增加3000，最大持久力增加200点，每3秒回复50点体力" />
+    <title id="281" name="人体烧肉粽" visible="0" bpicture="0" desc="\n佩戴后，自身体力及真气恢复速度增加3点" desc2="\n佩戴后，自身体力及真气恢复速度增加3点" />
+    <title id="282" name="得道成仙" visible="1" bpicture="1" pic_title="L_pictitle56" desc="\n飞升的象征！" desc2="\n飞升的象征！" />
+    <title id="283" name="[时]藐视众生" visible="1" bpicture="1" pic_title="L_pictitle55" desc="\n佩戴后，自身致命率增加10%，致命量增加20%" desc2="\n佩戴后，自身致命率增加10%，致命量增加20%" />
+    <title id="284" name="红颜知己" visible="1" bpicture="1" pic_title="L_pictitle57" desc="\n佩戴后，增加10点仪容值" desc2="\n佩戴后，增加10点仪容值\n完成仙子画像任务后获得" />
+    <title id="285" name="龙之霸主" visible="1" bpicture="1" pic_title="L_pictitle58" desc="\n击杀神龙后获得，荣耀的象征！" desc2="\n击杀神龙后获得，荣耀的象征！" />
+    <title id="286" name="相约鹊桥" visible="1" bpicture="1" pic_title="L_pictitle59" desc="\n提高自身最大体力与真气1200点，经验获得、金钱获得提高10%，体力、真气恢复速度提高10点,全部伤害减免提高120点" desc2="\n七夕活动获得" />
+    <title id="287" name="[时]东游一条龙" visible="0" bpicture="1" pic_title="L_pictitle60" desc="\n自身体型增大50%，移动速度提高100%" desc2="\n自身体型增大50%，移动速度提高100%" />
+    <title id="288" name="[时]天选之人" visible="0" bpicture="1" pic_title="L_pictitle61" desc="\n佩戴后，天选之人所在小队40米范围内所有成员韧性增加500点" desc2="\n中秋活动获得" />
+    <title id="289" name="[时]天选之人" visible="0" bpicture="1" pic_title="L_pictitle61" desc="\n佩戴后，天选之人所在小队40米范围内所有成员韧性增加500点" desc2="\n中秋活动获得" />
+    <title id="290" name="[时]天选之人" visible="0" bpicture="1" pic_title="L_pictitle61" desc="\n佩戴后，天选之人所在小队40米范围内所有成员韧性增加500点" desc2="\n中秋活动获得" />
+    <title id="291" name="飞龙在天" visible="0" bpicture="0" desc="佩戴后，自身移动速度+100%，跳跃高度+100%" desc2="佩戴后，自身移动速度+100%，跳跃高度+100%" />
+    <title id="292" name="战龙在野" visible="0" bpicture="0" desc="佩戴后，自身武器伤害+200，武魂+200" desc2="佩戴后，自身武器伤害+200，武魂+200" />
+    <title id="293" name="神龙摆尾" visible="0" bpicture="0" desc="佩戴后，自身韧性+200，体力及真气恢复速度提高25点" desc2="佩戴后，自身韧性+200，体力及真气恢复速度提高25点" />
+    <title id="294" name="时乘六龙" visible="0" bpicture="0" desc="佩戴后，自身骑乘速度提升100%" desc2="佩戴后，自身骑乘速度提升100%" />
+    <title id="295" name="双龙取水" visible="0" bpicture="0" desc="佩戴后，自身活力值恢复速度提高20点" desc2="佩戴后，自身活力值恢复速度提高20点" />
+    <title id="296" name="狂龙乱舞" visible="0" bpicture="0" desc="佩戴后，自身增加所有一级属性50点" desc2="佩戴后，自身增加所有一级属性50点" />
+    <title id="297" name="潜龙勿用" visible="0" bpicture="0" desc="佩戴后，自身原始体力及原始真气上限+20%" desc2="佩戴后，自身原始体力及原始真气上限+20%" />
+    <title id="298" name="姐很寂寞" visible="0" bpicture="1" pic_title="L_pictitle62" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="299" name="哥很淡定" visible="0" bpicture="1" pic_title="L_pictitle63" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="300" name="求包养" visible="0" bpicture="1" pic_title="L_pictitle64" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="301" name="今晚有空" visible="0" bpicture="1" pic_title="L_pictitle65" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="302" name="单身贵族" visible="0" bpicture="1" pic_title="L_pictitle66" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="303" name="名花有主" visible="0" bpicture="1" pic_title="L_pictitle67" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="304" name="幸福成双" visible="0" bpicture="1" pic_title="L_pictitle68" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="305" name="求GM解决光棍问题" visible="0" bpicture="1" pic_title="L_pictitle69" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="306" name="居里剩女" visible="0" bpicture="1" pic_title="L_pictitle70" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="307" name="Loong Veteran" visible="0" bpicture="0" desc="\n佩戴后可提升体力30点。" desc2="\n佩戴后可提升体力30点。" />
+    <title id="308" name="Game Master" visible="0" bpicture="1" pic_title="L_pictitle77" desc="GM的标志" desc2="GM的标志" />
+    <title id="309" name="鼠标拿开" visible="0" bpicture="1" pic_title="L_pictitle71" desc="愚人节活动称号。" desc2="愚人节活动称号，与“就不”为一对" />
+    <title id="310" name="就不" visible="0" bpicture="1" pic_title="L_pictitle72" desc="愚人节活动称号。" desc2="愚人节活动称号，与“鼠标拿开”为一对" />
+    <title id="311" name="影响市容" visible="0" bpicture="1" pic_title="L_pictitle73" desc="愚人节活动称号。" desc2="愚人节活动称号，与“奇丑无比”为一对" />
+    <title id="312" name="奇丑无比" visible="0" bpicture="1" pic_title="L_pictitle74" desc="愚人节活动称号。" desc2="愚人节活动称号，与“影响市容”为一对" />
+    <title id="313" name="你是坏人" visible="0" bpicture="1" pic_title="L_pictitle75" desc="愚人节活动称号。" desc2="愚人节活动称号，与“竟然是人”为一对" />
+    <title id="314" name="竟然是人" visible="0" bpicture="1" pic_title="L_pictitle76" desc="愚人节活动称号。" desc2="愚人节活动称号，与“你是坏人”为一对" />
+    <title id="315" name="新浪部落族" visible="0" bpicture="0" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="316" name="YY浣熊党" visible="0" bpicture="0" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="317" name="迅雷至尊VIP" visible="0" bpicture="0" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="318" name="万宇陪你打酱油" visible="0" bpicture="0" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="319" name="我爱PK" visible="0" bpicture="0" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="320" name="傲雪星枫" visible="0" bpicture="1" pic_title="L_pictitle78" desc="\n佩戴后可提升20点活力值上限。" desc2="\n佩戴后可提升20点活力值上限。" />
+    <title id="321" name="夏日风情" visible="0" bpicture="1" pic_title="L_pictitle82" desc="佩戴后，自身增加所有一级属性50点" desc2="佩戴后，自身增加所有一级属性50点" />
+    <title id="322" name="风流倜傥" visible="0" bpicture="1" pic_title="L_pictitle83" desc="佩戴后，自身原始体力及原始真气上限+20%" desc2="佩戴后，自身原始体力及原始真气上限+20%" />
+    <title id="323" name="风情万种" visible="0" bpicture="1" pic_title="L_pictitle84" desc="佩戴后，自身原始体力及原始真气上限+20%" desc2="佩戴后，自身原始体力及原始真气上限+20%" />
+    <title id="324" name="阳神使者" visible="0" bpicture="1" pic_title="L_pictitle79" desc="佩戴后，自身使用技能起手时间减少15%" desc2="佩戴后，自身使用技能起手时间减少15%" />
+    <title id="325" name="阴神使者" visible="0" bpicture="1" pic_title="L_pictitle80" desc="佩戴后，自身体力每15秒恢复150点" desc2="佩戴后，自身体力每15秒恢复150点" />
+    <title id="326" name="第一帮会" visible="0" bpicture="0" desc="佩戴后，提高100点所有属性。" desc2="佩戴后，提高100点所有属性。" />
+    <title id="327" name="龙女的祝福" visible="0" bpicture="0" desc="佩戴后，提高自身20点所有属性,经验获得、金钱获得、物品掉落几率提高100%,全部伤害减免1000点." desc2="佩戴后，提高自身20点所有属性,经验获得、金钱获得、物品掉落几率提高100%,全部伤害减免1000点." />
+    <title id="328" name="阴神使者" visible="0" bpicture="1" pic_title="L_pictitle80" desc="佩戴后，自身体力每5秒恢复800点" desc2="佩戴后，自身体力每5秒恢复800点" />
+    <title id="329" name="爱我中华" visible="0" bpicture="1" pic_title="L_pictitle85" desc="佩戴后，自身一级属性提高35点" desc2="佩戴后，自身一级属性提高35点" />
+    <title id="330" name="特急厨师" visible="0" bpicture="1" pic_title="L_pictitle86" desc="佩戴后，自身移动速度增加50%" desc2="佩戴后，自身移动速度增加50%" />
+    <title id="331" name="情义无价" visible="0" bpicture="1" pic_title="L_pictitle87" desc="佩戴后，自身原始体力及原始真气上限+20%\n友情就是最大的财富!" desc2="佩戴后，自身原始体力及原始真气上限+20%\n友情就是最大的财富!" />
+    <title id="332" name="盛世龙腾" visible="0" bpicture="1" pic_title="L_pictitle88" desc="盛世龙腾迎新年！\n祝大家新年快乐！" desc2="盛世龙腾迎新年！\n祝大家新年快乐！" />
+    <title id="333" name="环保大使" visible="0" bpicture="1" pic_title="L_pictitle89" desc="低碳生活！" desc2="植树造林！" />
+    <title id="334" name="龙珠守卫犬" visible="0" bpicture="1" pic_title="L_pictitle90" desc="守卫龙珠入门级称号\n佩戴后，武器伤害+10%，武魂+10%，自身原始体力及原始真气上限+10%，自身移动速度+30%" desc2="守卫龙珠入门级称号，简单难度通关后自动获得\n佩戴后，武器伤害+10%，武魂+10%，自身原始体力及原始真气上限+10%，自身移动速度+30%" />
+    <title id="335" name="龙珠守卫者" visible="0" bpicture="1" pic_title="L_pictitle91" desc="守卫龙珠进阶级称号\n佩戴后，武器伤害+20%，武魂+20%，自身原始体力及原始真气上限+20%，自身移动速度+40%，致命率+10%，致命量+10%" desc2="守卫龙珠进阶级称号，普通难度通关后自动获得\n佩戴后，武器伤害+20%，武魂+20%，自身原始体力及原始真气上限+20%，自身移动速度+40%，致命率+10%，致命量+10%" />
+    <title id="336" name="龙珠守卫大师" visible="0" bpicture="1" pic_title="L_pictitle92" desc="守卫龙珠大师级称号\n佩戴后，武器伤害+30%，武魂+30%，自身原始体力及原始真气上限+30%，自身移动速度+50%，致命率+15%，致命量+15%，自身原始内外功攻击+30%" desc2="守卫龙珠大师级称号，困难难度通关后自动获得\n佩戴后，武器伤害+30%，武魂+30%，自身原始体力及原始真气上限+30%，自身移动速度+50%，致命率+15%，致命量+15%，自身原始内外功攻击+30%" />
+    <title id="337" name="Facebook粉丝团" visible="0" bpicture="1" pic_title="L_pictitle93" desc="Facebook粉丝团" desc2="使用道具获得：Facebook粉丝团" />
+    <title id="338" name="米跌价" visible="0" bpicture="1" pic_title="L_pictitle94" desc="米跌价" desc2="使用道具获得：米跌价" />
+    <title id="339" name="屠妖快乐" visible="0" bpicture="1" pic_title="L_pictitle95" desc="屠妖快乐" desc2="使用道具获得：屠妖快乐" />
+    <title id="340" name="吃汤圆很满足" visible="0" bpicture="1" pic_title="L_pictitle96" desc="吃汤圆很满足" desc2="使用道具获得：吃汤圆很满足" />
+    <title id="341" name="thanksgiving" visible="0" bpicture="1" pic_title="L_pictitle97" desc="thanksgiving" desc2="使用道具获得：thanksgiving" />
+    <title id="342" name="开斋咯" visible="0" bpicture="1" pic_title="L_pictitle98" desc="开斋咯" desc2="使用道具获得：开斋咯" />
+    <title id="343" name="家好月圆" visible="0" bpicture="1" pic_title="L_pictitle99" desc="家好月圆" desc2="使用道具获得：家好月圆" />
+    <title id="344" name="别吓我" visible="0" bpicture="1" pic_title="L_pictitle100" desc="别吓我" desc2="使用道具获得：别吓我" />
+    <title id="345" name="冲装王" visible="0" bpicture="1" pic_title="L_pictitle101" desc="冲装王" desc2="使用道具获得：冲装王" />
+    <title id="346" name="高手高手高高手" visible="0" bpicture="1" pic_title="L_pictitle102" desc="高手高手高高手" desc2="使用道具获得：高手高手高高手" />
+    <title id="347" name="圣诞老人" visible="0" bpicture="1" pic_title="L_pictitle103" desc="圣诞老人" desc2="使用道具获得：圣诞老人" />
+    <title id="348" name="财神到" visible="0" bpicture="1" pic_title="L_pictitle104" desc="财神到" desc2="使用道具获得：财神到" />
+    <title id="349" name="夏季PVP冠军" visible="0" bpicture="1" pic_title="L_pictitle105" desc="夏季PVP冠军" desc2="使用道具获得：夏季PVP冠军。\n每5秒回复人物当前HP、MP最大值的6%" />
+    <title id="350" name="雨季PVP冠军" visible="0" bpicture="1" pic_title="L_pictitle106" desc="雨季PVP冠军" desc2="使用道具获得：雨季PVP冠军。\n每5秒回复人物当前HP、MP最大值的6%" />
+    <title id="351" name="冬季PVP冠军" visible="0" bpicture="1" pic_title="L_pictitle107" desc="冬季PVP冠军" desc2="使用道具获得：冬季PVP冠军。\n每5秒回复人物当前HP、MP最大值的6%" />
+    <title id="352" name="奥运之星" visible="0" bpicture="1" pic_title="L_pictitle108" desc="奥运之星\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：奥运之星称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="353" name="奥运之星（12小时）" visible="0" bpicture="1" pic_title="L_pictitle108" desc="奥运之星\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：奥运之星称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="354" name="奥运之星（3天）" visible="0" bpicture="1" pic_title="L_pictitle108" desc="奥运之星\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：奥运之星称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="355" name="奥运之星（7天）" visible="0" bpicture="1" pic_title="L_pictitle108" desc="奥运之星\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：奥运之星称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="356" name="江南style" visible="0" bpicture="1" pic_title="L_pictitle109" desc="江南style\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：江南style称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="357" name="江南style（12小时）" visible="0" bpicture="1" pic_title="L_pictitle109" desc="江南style\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：江南style称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="358" name="江南style（3天）" visible="0" bpicture="1" pic_title="L_pictitle109" desc="江南style\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：江南style称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+    <title id="359" name="江南style（7天）" visible="0" bpicture="1" pic_title="L_pictitle109" desc="江南style\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中,，提高50000体力值上限" desc2="使用道具获得：江南style称号\n佩戴后增加人物30%的移动速度，同时增加致命率10%、致命量20%以及3000命中，提高50000体力值上限" />
+</root>

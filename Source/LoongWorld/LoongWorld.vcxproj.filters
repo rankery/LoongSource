@@ -1,0 +1,1076 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="system">
+      <UniqueIdentifier>{620f1faa-9918-4397-af83-9c284c18e575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core">
+      <UniqueIdentifier>{e74d53a1-9bc1-48fd-adde-a4a0b5f6b556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\role">
+      <UniqueIdentifier>{e17ab244-0433-4b21-95be-151f881a4698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\attres">
+      <UniqueIdentifier>{b63af76b-f5e1-42f1-828e-18946721abb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\pet">
+      <UniqueIdentifier>{90c1b83e-0df7-40ba-aac4-24543b5e2efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\guild">
+      <UniqueIdentifier>{3c7a92ab-cb5a-4bae-925f-374227e824a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\reputation">
+      <UniqueIdentifier>{1fa1c939-ed37-40e4-a832-9c68a48aab61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\loot">
+      <UniqueIdentifier>{7ea10c6e-7976-46d5-a166-3927f87f02ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\vocation">
+      <UniqueIdentifier>{6b3d7c16-4d5d-4d5d-8579-45124a164d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\marriage">
+      <UniqueIdentifier>{c111a287-e147-4fea-aa53-c30ba253060e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_core\chat">
+      <UniqueIdentifier>{682bb731-7450-4960-b69f-47ac023722a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_doc">
+      <UniqueIdentifier>{b5a8cc55-f84b-4587-b447-ee3b51f29434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_sub">
+      <UniqueIdentifier>{60635990-6979-4005-814f-a1a5da0bdc5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_handler">
+      <UniqueIdentifier>{9bdb926b-5d5b-4e6d-b1cd-af4f5edd8fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_test">
+      <UniqueIdentifier>{e95d0e73-6122-4f53-acde-daf0dc1ea1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world_handler">
+      <UniqueIdentifier>{eba39359-1667-4756-be68-a0cdb1e37808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other">
+      <UniqueIdentifier>{c6d4340c-2b8f-4309-bfd0-dca551b46e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other\fatigue_guarder">
+      <UniqueIdentifier>{2fda1bd0-c50b-4909-8096-03eb7e26444a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other\game_guarder">
+      <UniqueIdentifier>{b954b890-9a6d-4e4c-b183-47edafb4c40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other\pserver_guarder">
+      <UniqueIdentifier>{ea558d0a-af20-4af5-a792-717553e78a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other\gm_policy">
+      <UniqueIdentifier>{9b30f8ef-6eaa-42f5-b504-8458386b34c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other\creature_order">
+      <UniqueIdentifier>{956b04c8-b73e-4a66-92ee-780dc29ef3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_other\vip_netbar">
+      <UniqueIdentifier>{e211d0f8-ebb5-413d-8955-bb7aff5c0eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_ini">
+      <UniqueIdentifier>{b1abf22f-fe29-4cce-9d18-1f0c715081a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assitor">
+      <UniqueIdentifier>{bd5f7bf1-533f-4285-bebd-ffe4d4249c2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bill_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="db_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="gm_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="login_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="player_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="world_session.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="activity_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="ai_transition.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="ai_trigger.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="buff.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="buff_effect.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="combat_handler.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="container.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="creature.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="creature_ai.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="currency.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="exchange.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="group_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="item_creator.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="item_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="longhun.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="mall.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map_creator.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map_instance.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map_instance_script.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map_instance_stable.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="map_restrict.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="move_data.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgInfoMgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCTeam.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCTeam_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="path_finder.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="quest.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="quest_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="shop.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="skill.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="skill_buff.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="skill_trigger.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="social_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="stall.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="suit.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="team.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="title_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeYuanBao.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="TreasureChest_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="unit.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="vcard.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="vip_stall.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="world_event_mgr.cpp">
+      <Filter>game_core</Filter>
+    </ClCompile>
+    <ClCompile Include="role.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_consolidate.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_container.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_exchange.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_func_npc.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_init.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_mall.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_marriage.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_mgr.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_save.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="role_shop.cpp">
+      <Filter>game_core\role</Filter>
+    </ClCompile>
+    <ClCompile Include="att_res.cpp">
+      <Filter>game_core\attres</Filter>
+    </ClCompile>
+    <ClCompile Include="pet.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_att.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_equip.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_exchange.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_exchange_handler.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_pocket.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_skill.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_soul.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_tracker.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="role_pet_exchange.cpp">
+      <Filter>game_core\pet</Filter>
+    </ClCompile>
+    <ClCompile Include="guild.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_affair.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_CofC.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_commerce.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_commodity.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_member.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_mgr.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_pos.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_purchase.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_skill.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_tang.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_upgrade.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_warehouse.cpp">
+      <Filter>game_core\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="clan_treasury.cpp">
+      <Filter>game_core\reputation</Filter>
+    </ClCompile>
+    <ClCompile Include="clandata.cpp">
+      <Filter>game_core\reputation</Filter>
+    </ClCompile>
+    <ClCompile Include="famehall.cpp">
+      <Filter>game_core\reputation</Filter>
+    </ClCompile>
+    <ClCompile Include="famehall_part.cpp">
+      <Filter>game_core\reputation</Filter>
+    </ClCompile>
+    <ClCompile Include="loot_mgr.cpp">
+      <Filter>game_core\loot</Filter>
+    </ClCompile>
+    <ClCompile Include="vocation.cpp">
+      <Filter>game_core\vocation</Filter>
+    </ClCompile>
+    <ClCompile Include="marriage.cpp">
+      <Filter>game_core\marriage</Filter>
+    </ClCompile>
+    <ClCompile Include="channel_mgr.cpp">
+      <Filter>game_core\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_data.cpp">
+      <Filter>game_core\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_logger.cpp">
+      <Filter>game_core\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_mgr.cpp">
+      <Filter>game_core\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="gm_net_cmd_mgr.cpp">
+      <Filter>game_sub</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_function.cpp">
+      <Filter>game_sub</Filter>
+    </ClCompile>
+    <ClCompile Include="player_net_cmd_mgr.cpp">
+      <Filter>game_sub</Filter>
+    </ClCompile>
+    <ClCompile Include="script_mgr.cpp">
+      <Filter>game_sub</Filter>
+    </ClCompile>
+    <ClCompile Include="world_net_cmd_mgr.cpp">
+      <Filter>game_sub</Filter>
+    </ClCompile>
+    <ClCompile Include="baibao_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="character_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="class_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="combat_hander.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="consolidate_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="exchange_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="exit_game_handle.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="famehall_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="fatigue_guarder_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="func_npc_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="game_guarder_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="gm_cmd_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="item_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="map_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="marriage_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="move_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="npc_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="pk_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="quest_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="reputation_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="return_roleselect_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="roleatt_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="shop_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="social_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="stall_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="strength_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="talent_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="title_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="treasure_chest_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="vcard_handler.cpp">
+      <Filter>game_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="netcmd_viewer.cpp">
+      <Filter>game_test</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeChecker.cpp">
+      <Filter>game_test</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_handler.cpp">
+      <Filter>world_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="mall_handler.cpp">
+      <Filter>world_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="fatigue_guarder.cpp">
+      <Filter>game_other\fatigue_guarder</Filter>
+    </ClCompile>
+    <ClCompile Include="ApexProxy.cpp">
+      <Filter>game_other\game_guarder</Filter>
+    </ClCompile>
+    <ClCompile Include="game_guarder.cpp">
+      <Filter>game_other\game_guarder</Filter>
+    </ClCompile>
+    <ClCompile Include="ps_bomb.cpp">
+      <Filter>game_other\pserver_guarder</Filter>
+    </ClCompile>
+    <ClCompile Include="ps_ipchecker.cpp">
+      <Filter>game_other\pserver_guarder</Filter>
+    </ClCompile>
+    <ClCompile Include="gm_policy.cpp">
+      <Filter>game_other\gm_policy</Filter>
+    </ClCompile>
+    <ClCompile Include="creature_order.cpp">
+      <Filter>game_other\creature_order</Filter>
+    </ClCompile>
+    <ClCompile Include="vip_netbar.cpp">
+      <Filter>game_other\vip_netbar</Filter>
+    </ClCompile>
+    <ClCompile Include="vip_netbar_handler.cpp">
+      <Filter>game_other\vip_netbar</Filter>
+    </ClCompile>
+    <ClCompile Include="external_links.cpp">
+      <Filter>assitor</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="strength.cpp" />
+    <ClCompile Include="WorldRankings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bill_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="db_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="gm_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="login_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="player_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="rt_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="world_session.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="activity_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="ai_transition.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="ai_trigger.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="buff.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="buff_effect.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="combat_handler.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="container.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="container_restrict.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="container_template.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="creature.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="creature_ai.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="currency.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="exchange.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="group_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="item_creator.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="item_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="longhun.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_functions.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="mall.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_creator.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_instance.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_instance_script.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_instance_stable.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="map_restrict.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="move_data.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgInfoMgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCTeam.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCTeam_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="path_finder.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="quest.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="quest_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="shop.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="skill.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_buff.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_trigger.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="social_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="stall.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="suit.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="team.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="title_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeYuanBao.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="TreasureChest_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="unit.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="vcard.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="vip_stall.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="world_event_mgr.h">
+      <Filter>game_core</Filter>
+    </ClInclude>
+    <ClInclude Include="role.h">
+      <Filter>game_core\role</Filter>
+    </ClInclude>
+    <ClInclude Include="role_mgr.h">
+      <Filter>game_core\role</Filter>
+    </ClInclude>
+    <ClInclude Include="att_res.h">
+      <Filter>game_core\attres</Filter>
+    </ClInclude>
+    <ClInclude Include="pet.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_att.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_define.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_equip.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_exchange.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_pocket.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_skill.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_soul.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_tracker.h">
+      <Filter>game_core\pet</Filter>
+    </ClInclude>
+    <ClInclude Include="guild.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_affair.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_CofC.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_commerce.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_commodity.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_member.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_mgr.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_pos.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_purchase.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_skill.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_tang.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_upgrade.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_warehouse.h">
+      <Filter>game_core\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="clan_treasury.h">
+      <Filter>game_core\reputation</Filter>
+    </ClInclude>
+    <ClInclude Include="clandata.h">
+      <Filter>game_core\reputation</Filter>
+    </ClInclude>
+    <ClInclude Include="famehall.h">
+      <Filter>game_core\reputation</Filter>
+    </ClInclude>
+    <ClInclude Include="famehall_part.h">
+      <Filter>game_core\reputation</Filter>
+    </ClInclude>
+    <ClInclude Include="loot_mgr.h">
+      <Filter>game_core\loot</Filter>
+    </ClInclude>
+    <ClInclude Include="vocation.h">
+      <Filter>game_core\vocation</Filter>
+    </ClInclude>
+    <ClInclude Include="marriage.h">
+      <Filter>game_core\marriage</Filter>
+    </ClInclude>
+    <ClInclude Include="channel_mgr.h">
+      <Filter>game_core\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat_data.h">
+      <Filter>game_core\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat_logger.h">
+      <Filter>game_core\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat_mgr.h">
+      <Filter>game_core\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="event_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="gm_net_cmd_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="mutex.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="player_net_cmd_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="script_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="state_count_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="state_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="time_limit_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="world_net_cmd_mgr.h">
+      <Filter>game_sub</Filter>
+    </ClInclude>
+    <ClInclude Include="create_db_record.h">
+      <Filter>game_test</Filter>
+    </ClInclude>
+    <ClInclude Include="loong_db_test.h">
+      <Filter>game_test</Filter>
+    </ClInclude>
+    <ClInclude Include="netcmd_viewer.h">
+      <Filter>game_test</Filter>
+    </ClInclude>
+    <ClInclude Include="register_test_func.h">
+      <Filter>game_test</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeChecker.h">
+      <Filter>game_test</Filter>
+    </ClInclude>
+    <ClInclude Include="fatigue_guarder.h">
+      <Filter>game_other\fatigue_guarder</Filter>
+    </ClInclude>
+    <ClInclude Include="ApexProxy.h">
+      <Filter>game_other\game_guarder</Filter>
+    </ClInclude>
+    <ClInclude Include="game_guarder.h">
+      <Filter>game_other\game_guarder</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_bomb.h">
+      <Filter>game_other\pserver_guarder</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_ipchecker.h">
+      <Filter>game_other\pserver_guarder</Filter>
+    </ClInclude>
+    <ClInclude Include="gm_policy.h">
+      <Filter>game_other\gm_policy</Filter>
+    </ClInclude>
+    <ClInclude Include="gm_policy_part.h">
+      <Filter>game_other\gm_policy</Filter>
+    </ClInclude>
+    <ClInclude Include="creature_order.h">
+      <Filter>game_other\creature_order</Filter>
+    </ClInclude>
+    <ClInclude Include="vip_netbar.h">
+      <Filter>game_other\vip_netbar</Filter>
+    </ClInclude>
+    <ClInclude Include="external_links.h">
+      <Filter>assitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mini_tool.h">
+      <Filter>assitor</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Strength.h" />
+    <ClInclude Include="WorldRankings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pet_att_def_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_equip_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_gather_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_levelup_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_lvlup_item_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_skill_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="pet_wuxing_proto.xml">
+      <Filter>game_core\pet</Filter>
+    </None>
+    <None Include="activity_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="att_def_min_max.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="buff_name.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="buff_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="clantreasure_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="creature_ai.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="creature_name.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="creature_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="engrave_pos.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="engrave_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="equip_suit.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="EquipProto_映射.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="EquipQltyEffect_映射.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="EquipQltyPct_映射.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="fashion_color_pct.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="fashion_qlty_effect.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="guild_facilities.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="instance_item.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="instance_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="instance_skill.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="item_name.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="ItemProto_映射.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="level_mapping.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="longhun_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="mall_item_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="mall_pack_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="map_logic_name.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="map_logic_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="map_switch_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="monsterSay_table.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="motion_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="posy_pos.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="posy_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="role_title_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="RoleAttLevelUp_映射.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="shop_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="shop_proto_rare.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="skill_name.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="skill_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="spawn_point.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="sspawnpoint_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="todo_list.txt">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="trigger_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="vip_stall_proto.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="配置文件结构.xml">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="重要.txt">
+      <Filter>game_doc</Filter>
+    </None>
+    <None Include="vip_netbar.xml">
+      <Filter>game_other\vip_netbar</Filter>
+    </None>
+    <None Include="vip_netbar_equip_proto.xml">
+      <Filter>game_other\vip_netbar</Filter>
+    </None>
+    <None Include="vip_netbar_gift_proto.xml">
+      <Filter>game_other\vip_netbar</Filter>
+    </None>
+    <None Include="map_list.ini">
+      <Filter>game_ini</Filter>
+    </None>
+    <None Include="world.ini">
+      <Filter>game_ini</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<PetEquip id="1010001" step="0" grade="1" type="1" unique_same_type="1" unique="0" att1="16" mod1="2000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010002" step="0" grade="1" type="1" unique_same_type="1" unique="0" att1="16" mod1="5000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010003" step="0" grade="1" type="1" unique_same_type="1" unique="0" att1="16" mod1="10000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010004" step="0" grade="1" type="2" unique_same_type="1" unique="0" att1="19" mod1="2000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010005" step="0" grade="1" type="2" unique_same_type="1" unique="0" att1="19" mod1="4000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010006" step="0" grade="1" type="2" unique_same_type="1" unique="0" att1="19" mod1="6000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010007" step="0" grade="1" type="3" unique_same_type="1" unique="0" att1="21" mod1="2000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010008" step="0" grade="1" type="3" unique_same_type="1" unique="0" att1="21" mod1="4000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010009" step="0" grade="1" type="3" unique_same_type="1" unique="0" att1="21" mod1="6000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010010" step="0" grade="1" type="4" unique_same_type="1" unique="0" att1="15" mod1="-1500" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010011" step="0" grade="1" type="4" unique_same_type="1" unique="0" att1="15" mod1="-3000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010012" step="0" grade="1" type="4" unique_same_type="1" unique="0" att1="15" mod1="-10000" att2="-1" mod2="" att3="-1" mod3=""/>
+	<PetEquip id="1010013" step="0" grade="1" type="4" unique_same_type="1" unique="0" att1="15" mod1="-9000" att2="-1" mod2="" att3="-1" mod3=""/>
+</root>

@@ -1,0 +1,30 @@
+1. vEngine中TMap轮询的三种情况及对应的使用方式
+
+（1）单线程轮询
+a. 调用ResetIterator()
+b. 在循环中调用PeekNext(ValueType& value)和PeekNext(KeyType& key, ValueType& value)即可
+
+该情况使用于只有一个线程能对该map进行轮询，客户端大部分属于此种情况
+
+（2）只读map，多线程轮询
+a. 调用Begin()获得map头部
+b. 在循环中调用PeekNext(TMapIterator& it, ValueType& value)和PeekNext(TMapIterator& it, KeyType& key, ValueType& value)，it是第一步获得的头部
+
+该情况适用于多个线程对一个只读的map进行轮询，或者是一个非只读map，但是在对map进行更改的时候，其它线程均处于休眠状态。
+第一种的例子为：龙项目服务器内各种静态属性map的轮询
+第二种的例子为：龙项目服务器内角色管理器中当前在线角色列表map
+
+（3）非只读map，多线程轮询
+a. 外部加锁
+b. 调用ResetIterator()
+c. 在循环中调用PeekNext(ValueType& value)和PeekNext(KeyType& key, ValueType& value)
+d. 外部解锁
+
+该情况适用于任何多线程环境下非只读map的操作，如果map不需要轮询功能，可直接使用TSafeMap，如果需要，则使用TMap，通过外部加锁解锁完成轮询操作
+
+服务器端在开发过程中，记住一个宗旨：
+1. 尽量使用单线程轮询
+2. 如果必须多线程轮询，对待非只读map尽量将其设计成上面的第二种方式，如角色管理器中的角色map；对待只读map，则可直接使用第二种方式
+3. 万不得已的情况下，使用第三种方式
+
+

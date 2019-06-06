@@ -1,0 +1,185 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\NavMapEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NavMapEditor.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "NavMapEditor.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 319
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 173, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导航图编辑器"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "笔刷",IDC_STATIC,5,25,162,68
+    GROUPBOX        "渲染选项",IDC_STATIC,5,287,162,29
+    PUSHBUTTON      "存盘",IDC_SAVE,7,5,44,14
+    PUSHBUTTON      "读盘",IDC_LOAD,57,5,44,14
+    PUSHBUTTON      "清空",IDC_CLEAR,17,115,44,14
+    RTEXT           "显示范围:",IDC_STATIC,11,299,70,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_ShowDist,86,299,65,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "内径,单位:格子",IDC_STATIC,11,37,68,13,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "外径,单位:格子",IDC_STATIC,11,55,68,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_INNER,85,37,64,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_OUTER,85,55,64,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "形状:",IDC_STATIC,11,73,68,13,SS_CENTERIMAGE | SS_SUNKEN
+    COMBOBOX        IDC_BRUSHSHAPE,85,73,64,101,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "不可行走区域",IDC_STATIC,5,99,162,36
+    GROUPBOX        "非碰撞型NPC格子导航图预览",IDC_STATIC,5,182,162,32
+    PUSHBUTTON      "加载",IDC_BUTTON1_NPCNavLoad,17,194,44,14
+    CONTROL         "预览",IDC_CHECK_NPCNavPreLook,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,196,32,10
+    GROUPBOX        "玩家寻路导航图预览",IDC_STATIC,5,218,162,30
+    PUSHBUTTON      "加载",IDC_BUTTON2_PlayerNavLoad,17,229,44,14
+    CONTROL         "预览",IDC_CHECK_PlayerNavPreLook,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,230,32,10
+    CONTROL         "预览",IDC_CHECK_PreLook,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,122,32,10
+    PUSHBUTTON      "图片",IDC_BUTTON_NPCNavLook,70,194,44,14
+    PUSHBUTTON      "图片",IDC_BUTTON_PlayerNavLook,70,229,44,14
+    GROUPBOX        "玩家寻路道路区域编辑",IDC_STATIC,5,141,162,36
+    PUSHBUTTON      "清空",IDC_ClearManualPlayerNav,17,155,44,14
+    CONTROL         "编辑",IDC_Edit,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,108,32,10
+    CONTROL         "编辑",IDC_EditManualPlayerNav,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,149,32,10
+    CONTROL         "预览",IDC_CHECK_PreLook_ManualPlayerNav,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,163,32,10
+    GROUPBOX        "碰撞型NPC寻路导航点预览",IDC_STATIC,5,253,162,30
+    PUSHBUTTON      "加载",IDC_BUTTON_NPCWayPointLoad,17,265,44,14
+    CONTROL         "预览",IDC_CHECK_PreLook_NPCWayPoint,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,265,32,10
+    PUSHBUTTON      "图片",IDC_BUTTON_RoadLook,70,155,44,14
+    PUSHBUTTON      "图片",IDC_BUTTON_CangoLook,69,115,44,14
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\NavMapEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

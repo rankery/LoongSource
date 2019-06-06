@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<item Id="1" MinLevel="1" MaxLevel="30" Item1="1360202" Item2="4600004" Item3="3400103" Item4="1352013" Item5="1352011" Item6="1360123" Item7="1350022" Item8="2220401" Item9="3304012" Item10="1360132"/>
+	<item Id="2" MinLevel="31" MaxLevel="50" Item1="1360202" Item2="4600004" Item3="3400103" Item4="1352013" Item5="1352011" Item6="1360123" Item7="1350022" Item8="2220401" Item9="3304012" Item10="1360132"/>
+	<item Id="3" MinLevel="51" MaxLevel="120" Item1="1360202" Item2="4600004" Item3="3400103" Item4="1352013" Item5="1352011" Item6="1360123" Item7="1350022" Item8="2220401" Item9="3304012" Item10="1360132"/>
+  <item Id="4" MinLevel="121" MaxLevel="130" Item1="1360202" Item2="4600004" Item3="3400103" Item4="1352013" Item5="1352011" Item6="1360123" Item7="1350022" Item8="2220401" Item9="3304012" Item10="1360132"/>
+</root>

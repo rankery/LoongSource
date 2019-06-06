@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quest>
+    <property>
+        <entry ID="13807" />
+        <entry PrevQuestID="0" />
+        <entry PrevQuest2ID="0" />
+        <entry PrevQuestRelation="0" />
+        <entry NextQuestID="0" />
+        <entry UncmpleteQuestID="0" />
+        <entry AutoAddQuest="0" />
+        <entry ShowQuestDialog="0" />
+        <entry NoDelete="0" />
+        <entry QuestPlayerAccept="1" />
+        <entry QuestSystemRelease="0" />
+        <entry QuestItemAccept="0" />
+        <entry QuestType="5" />
+        <entry TargetMode="0" />
+        <entry SuggestedPlayers="0" />
+        <entry LimitTime="0" />
+        <entry DoQuestTimes="0" />
+        <entry Periodic="0" />
+        <entry QuestPeriodic="0" />
+        <entry Week="0" />
+        <entry Repeatable="0" />
+        <entry AcceptQuestNPCID1="3040607" />
+        <entry AcceptQuestNPCID2="0" />
+        <entry AcceptQuestNPCID3="0" />
+        <entry AcceptQuestNPCID4="0" />
+        <entry AcceptQuestNPCID5="0" />
+        <entry AcceptQuestNPCID6="0" />
+        <entry CompleteQuestNPCID1="3040607" />
+        <entry CompleteQuestNPCID2="0" />
+        <entry CompleteQuestNPCID3="0" />
+        <entry CompleteQuestNPCID4="0" />
+        <entry CompleteQuestNPCID5="0" />
+        <entry CompleteQuestNPCID6="0" />
+        <entry InvestigateObjectID1="0" />
+        <entry InvestigateObjectID2="0" />
+        <entry InvestigateObjectID3="0" />
+        <entry InvestigateObjectID4="0" />
+        <entry InvestigateObjectID5="0" />
+        <entry InvestigateObjectID6="0" />
+        <entry InvestigateObjectID7="0" />
+        <entry InvestigateObjectID8="0" />
+        <entry SrcItemID="0" value="0" />
+        <entry Destination_X="70" />
+        <entry Destination_Y="0" />
+        <entry Destination_Z="0" />
+    </property>
+    <accept-conditions>
+        <entry GetQuestRequiredMaxLevel="0" />
+        <entry GetQuestRequiredMinLevel="70" />
+        <entry GetQuestRequiredRep1="0" max="0" min="0" />
+        <entry GetQuestRequiredRep2="0" max="0" min="0" />
+        <entry GetQuestRequiredRep3="0" max="0" min="0" />
+        <entry GetQuestRequiredRep4="0" max="0" min="0" />
+        <entry GetQuestRequiredSex="0" />
+        <entry GetQuestRequiredClass="0" />
+        <entry GetQuestRequiredMapID="0" />
+        <entry GetQuestRequiredSkill1="0" value="0" />
+        <entry GetQuestRequiredSkill2="0" value="0" />
+        <entry GetQuestRequiredSkill3="0" value="0" />
+        <entry GetQuestRequiredSkill4="0" value="0" />
+        <entry GetQuestRequiredItemID1="0" value="0" />
+        <entry GetQuestRequiredItemID2="0" value="0" />
+        <entry GetQuestRequiredItemID3="0" value="0" />
+        <entry GetQuestRequiredItemID4="0" value="0" />
+        <entry GetQuestRequiredItemID5="0" value="0" />
+        <entry GetQuestRequiredItemID6="0" value="0" />
+        <entry GetQuestRequiredItemID7="0" value="0" />
+        <entry GetQuestRequiredItemID8="0" value="0" />
+        <entry DelRestrictedItem="0" />
+        <entry GetQuestRequiredAtt1="0" value="0" />
+        <entry GetQuestRequiredAtt2="0" value="0" />
+        <entry GetQuestRequiredAtt3="0" value="0" />
+        <entry GetQuestRequiredAtt4="0" value="0" />
+        <entry GetQuestReqTriggersID1="0" />
+        <entry GetQuestReqTriggersID2="0" />
+        <entry GetQuestReqTriggersID3="0" />
+        <entry GetQuestReqTriggersID4="0" />
+        <entry GetQuestReqTriggersID5="0" />
+        <entry GetQuestReqTriggersID6="0" />
+        <entry GetQuestReqTriggersID7="0" />
+        <entry GetQuestReqTriggersID8="0" />
+        <entry GetQuestReqMarried="0" />
+        <entry GetQuestReqLoverNum="0" />
+        <entry GetQuestReqMoneyNum="0" />
+        <entry GetQuestDelMoneyNum="0" />
+    </accept-conditions>
+    <complete-conditions>
+        <entry CompleteQuestRequiredItemID1="0" value="0" />
+        <entry CompleteQuestRequiredItemID2="0" value="0" />
+        <entry CompleteQuestRequiredItemID3="0" value="0" />
+        <entry CompleteQuestRequiredItemID4="0" value="0" />
+        <entry CompleteQuestRequiredItemID5="0" value="0" />
+        <entry CompleteQuestRequiredItemID6="0" value="0" />
+        <entry CompleteQuestRequiredItemID7="0" value="0" />
+        <entry CompleteQuestRequiredItemID8="0" value="0" />
+        <entry RequiredOnlyOneItem="0" />
+        <entry DeleteItem="0" />
+        <entry CompleteQuestRequiredCreatureID1="1006612" id2="0" id3="0" value="1" />
+        <entry CompleteQuestRequiredCreatureID2="1006613" id2="0" id3="0" value="1" />
+        <entry CompleteQuestRequiredCreatureID3="1006614" id2="0" id3="0" value="1" />
+        <entry CompleteQuestRequiredCreatureID4="0" id2="0" id3="0" value="0" />
+        <entry CompleteQuestRequiredCreatureID5="0" id2="0" id3="0" value="0" />
+        <entry CompleteQuestRequiredCreatureID6="0" id2="0" id3="0" value="0" />
+        <entry RequiredCreatureLevel="0" />
+        <entry RequiredOnlyOneCreature="0" />
+        <entry CompleteQuestRequiredNPC1="3040608" />
+        <entry CompleteQuestRequiredNPC2="3040609" />
+        <entry CompleteQuestRequiredNPC3="3040610" />
+        <entry CompleteQuestRequiredNPC4="0" />
+        <entry CompleteQuestRequiredNPC5="0" />
+        <entry CompleteQuestRequiredNPC6="0" />
+        <entry CompleteQuestRequiredNPC7="0" />
+        <entry CompleteQuestRequiredNPC8="0" />
+        <entry RequiredOnlyInOrder="0" />
+        <entry RequiredOnlyOneNPC="0" />
+        <entry CompleteQuestReqTriggersID1="0" />
+        <entry CompleteQuestReqTriggersID2="0" />
+        <entry CompleteQuestReqTriggersID3="0" />
+        <entry CompleteQuestReqTriggersID4="0" />
+        <entry CompleteQuestReqTriggersID5="0" />
+        <entry CompleteQuestReqTriggersID6="0" />
+        <entry CompleteQuestReqTriggersID7="0" />
+        <entry CompleteQuestReqTriggersID8="0" />
+        <entry RequiredOnlyOneTrigger="0" />
+        <entry CompleteQuestRequiredMoney="0" />
+        <entry CompleteQuestDelMoney="0" />
+        <entry CompleteQuestRequiredFriends="0" />
+        <entry CompleteQuestRequiredTeammates="0" />
+        <entry CompleteQuestEventType="0" />
+        <entry UseItemEvent_Item_ID="0" />
+        <entry UseSkillEvent_Skill_ID="0" />
+        <entry RequiredOnlyOneCondition="0" />
+        <entry CompleteQuestReqMarried="0" />
+        <entry CompleteQuestReqLoverNum="0" />
+        <entry CompleteQuestReqLevel="0" />
+    </complete-conditions>
+    <reward>
+        <entry RewMoney="0" />
+        <entry RewXP="38340" />
+        <entry RewRequiredRep1="0" value="0" />
+        <entry RewRequiredRep2="0" value="0" />
+        <entry RewRequiredRep3="0" value="0" />
+        <entry RewRequiredRep4="0" value="0" />
+        <entry RewRequiredContribution1="0" value="0" />
+        <entry RewRequiredContribution2="0" value="0" />
+        <entry RewRequiredContribution3="0" value="0" />
+        <entry RewRequiredContribution4="0" value="0" />
+        <entry RewItemID1="0" value="0" quality="0" />
+        <entry RewItemID2="0" value="0" quality="0" />
+        <entry RewItemID3="0" value="0" quality="0" />
+        <entry RewItemID4="0" value="0" quality="0" />
+        <entry RewItemID5="0" value="0" quality="0" />
+        <entry RewChoicesItemID1="0" value="0" quality="0" />
+        <entry RewChoicesItemID2="0" value="0" quality="0" />
+        <entry RewChoicesItemID3="0" value="0" quality="0" />
+        <entry RewChoicesItemID4="0" value="0" quality="0" />
+        <entry RewChoicesItemID5="0" value="0" quality="0" />
+        <entry RewAtt1="0" value="0" />
+        <entry RewAtt2="0" value="0" />
+        <entry RewAtt3="0" value="0" />
+        <entry RewAtt4="0" value="0" />
+        <entry RewSkill1="0" value="0" />
+        <entry RewSkill2="0" value="0" />
+        <entry RewSkill3="0" value="0" />
+        <entry RewSkill4="0" value="0" />
+        <entry RewBuff1="0" />
+        <entry RewBuff2="0" />
+        <entry RewBuff3="0" />
+        <entry RewBuff4="0" />
+    </reward>
+</quest>

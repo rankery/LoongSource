@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<NPC id="M01_a1"/>
+	<NPC id="M01_a2"/>
+	<NPC id="M01_a3"/>
+	<NPC id="M01_b1"/>
+	<NPC id="M01_b2"/>
+	<NPC id="M01_b3"/>
+	<NPC id="M02_a1" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M02_a2" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M02_b1" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M02_b2" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M02_b3" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M03_a1" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 HeadNub" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M03_a2" tag_Face="Bip01 HeadNub" tag_Hat="Bip01 HeadNub" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M03_b1"/>
+	<NPC id="M03_b2"/>
+	<NPC id="M04_a1" tag_Face="Bip03 Head" tag_Hat="Bip03 Head" tag_Back="Bip03 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M04_a2" tag_Face="Bip03 Head" tag_Hat="Bip03 Head" tag_Back="Bip03 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M04_b1" tag_Face="Bip03 Head" tag_Hat="Bip03 Head" tag_Back="Bip03 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M04_b2" tag_Face="Bip03 Head" tag_Hat="Bip03 Head" tag_Back="Bip03 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M04_c1"/>
+	<NPC id="M04_c2"/>
+	<NPC id="M05_a1" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone01" tag_RHd="Bone04" tag_LHd="Bone04"/>
+	<NPC id="M05_a2" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone01" tag_RHd="Bone04" tag_LHd="Bone04"/>
+	<NPC id="M05_a3" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone01" tag_RHd="Bone04" tag_LHd="Bone04"/>
+	<NPC id="M05_b1" tag_Face="Bone07" tag_Hat="Bone07" tag_Back="Bone01" tag_RHd="Bone06" tag_LHd="Bone06"/>
+	<NPC id="M05_b2" tag_Face="Bone07" tag_Hat="Bone07" tag_Back="Bone01" tag_RHd="Bone06" tag_LHd="Bone06"/>
+	<NPC id="M05_b3" tag_Face="Bone07" tag_Hat="Bone07" tag_Back="Bone01" tag_RHd="Bone06" tag_LHd="Bone06"/>
+	<NPC id="M06_a1" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone03" tag_RHd="Bone43" tag_LHd="Bone49"/>
+	<NPC id="M06_a2"/>
+	<NPC id="M06_a3" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone03" tag_RHd="Bone43" tag_LHd="Bone49"/>
+	<NPC id="M06_b1" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone03" tag_RHd="Bone43" tag_LHd="Bone49"/>
+	<NPC id="M06_b2" tag_Face="Bone02" tag_Hat="Bone01" tag_Back="Bone03" tag_RHd="Bone43" tag_LHd="Bone49"/>
+	<NPC id="M07_a1"/>
+	<NPC id="M07_a2"/>
+	<NPC id="M07_b1" tag_Face="Bone13" tag_Hat="Bone13" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M07_b2" tag_Face="Bone13" tag_Hat="Bone13" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M07_c1" tag_Face="Bone13" tag_Hat="Bone13" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M07_c2" tag_Face="Bone13" tag_Hat="Bone13" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M07_d1" tag_Face="Bone13" tag_Hat="Bone13" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M07_d2" tag_Face="Bone13" tag_Hat="Bone13" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M07_e1"/>
+	<NPC id="M08_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M08_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M08_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M08_b2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M08_c1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M09_a1" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M09_a2" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M09_b1" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M09_b2" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M10_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M10_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M10_b1"/>
+	<NPC id="M10_b2"/>
+	<NPC id="M11_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M11_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M11_b1"/>
+	<NPC id="M11_b2"/>
+	<NPC id="M11_b3"/>
+	<NPC id="M12_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M12_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M12_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M12_c1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M12_c2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M12_d1"/>
+	<NPC id="M12_e1"/>
+	<NPC id="M12_e2"/>
+	<NPC id="M12_f1"/>
+	<NPC id="M12_g1"/>
+	<NPC id="M12_h1"/>
+	<NPC id="M13_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M13_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M13_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M13_b2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M13_c1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_b2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_c1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_c2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_d1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_d2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M14_e1"/>
+	<NPC id="M14_f1"/>
+	<NPC id="M15_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M15_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M15_b1"/>
+	<NPC id="M15_b2"/>
+	<NPC id="M15_c1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M15_c2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M15_d1"/>
+	<NPC id="M15_d2"/>
+	<NPC id="M16_a1" tag_Face="Bip01 toubu" tag_Hat="Bip01 toubu" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M16_a2" tag_Face="Bip01 toubu" tag_Hat="Bip01 toubu" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M16_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M16_b2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M17_a1"/>
+	<NPC id="M17_a2"/>
+	<NPC id="M17_b1"/>
+	<NPC id="M17_b2"/>
+	<NPC id="M18_a1" tag_Face="Bone15" tag_Hat="Bip01 toubu" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M18_a2" tag_Face="Bone15" tag_Hat="Bip01 toubu" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M18_a3" tag_Face="Bone15" tag_Hat="Bip01 toubu" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M18_a4" tag_Face="Bone15" tag_Hat="Bip01 toubu" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M19_a1" tag_Face="Bone03" tag_Hat="Bone03" tag_Back="Bone02" tag_RSld="Bone71" tag_LSld="Bone48" tag_RHd="Bone74" tag_LHd="Bone51"/>
+	<NPC id="M19_a2" tag_Face="Bone03" tag_Hat="Bone03" tag_Back="Bone02" tag_RSld="Bone71" tag_LSld="Bone48" tag_RHd="Bone74" tag_LHd="Bone51"/>
+	<NPC id="M19_a3" tag_Face="Bone03" tag_Hat="Bone03" tag_Back="Bone02" tag_RSld="Bone71" tag_LSld="Bone48" tag_RHd="Bone74" tag_LHd="Bone51"/>
+	<NPC id="M19_b1" tag_Face="Bone03" tag_Hat="Bone03" tag_Back="Bone02" tag_RSld="Bone35" tag_LSld="Bone58" tag_RHd="Bone38" tag_LHd="Bone61"/>
+	<NPC id="M19_b2" tag_Face="Bone03" tag_Hat="Bone03" tag_Back="Bone02" tag_RSld="Bone35" tag_LSld="Bone58" tag_RHd="Bone38" tag_LHd="Bone61"/>
+	<NPC id="M19_b3" tag_Face="Bone03" tag_Hat="Bone03" tag_Back="Bone02" tag_RSld="Bone35" tag_LSld="Bone58" tag_RHd="Bone38" tag_LHd="Bone61"/>
+	<NPC id="M20_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_b2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_c1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_c2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_d1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M20_d2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M21_a1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Finger1" tag_LHd="Bip01 L Finger1"/>
+	<NPC id="M21_a2" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Finger1" tag_LHd="Bip01 L Finger1"/>
+	<NPC id="M21_a3" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Finger1" tag_LHd="Bip01 L Finger1"/>
+	<NPC id="M21_a4" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Finger1" tag_LHd="Bip01 L Finger1"/>
+	<NPC id="M21_b1"/>
+	<NPC id="M21_b2"/>
+	<NPC id="M21_b3"/>
+	<NPC id="M21_b4"/>
+	<NPC id="M22_a1"/>
+	<NPC id="M22_a2"/>
+	<NPC id="M22_a3"/>
+	<NPC id="M22_b1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Finger1" tag_LHd="Bip01 L Finger1"/>
+	<NPC id="M22_b2"/>
+	<NPC id="M22_b3"/>
+	<NPC id="M23"/>
+	<NPC id="M24"/>
+	<NPC id="M25"/>
+	<NPC id="M26_a1"/>
+	<NPC id="M26_b1"/>
+	<NPC id="M27_a1"/>
+	<NPC id="M28_a1"/>
+	<NPC id="M28_b1"/>
+	<NPC id="M29_a1"/>
+	<NPC id="M29_b1"/>
+	<NPC id="M30_a1"/>
+	<NPC id="M30_b1"/>
+	<NPC id="M31_a1"/>
+	<NPC id="M31_b1"/>
+	<NPC id="M32_a1"/>
+	<NPC id="M32_b1"/>
+	<NPC id="M33_a1"/>
+	<NPC id="M33_b1"/>
+	<NPC id="M34_a1"/>
+	<NPC id="M35_b1"/>
+	<NPC id="M36_a1"/>
+	<NPC id="N01" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N02" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N02_1" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N03" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N04" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N05" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N06" tag_Face="Bip01 HD" tag_Hat="Bip01 HD" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N06_1" tag_Face="Bip01 HD" tag_Hat="Bip01 HD" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N06_2" tag_Face="Bip01 HD" tag_Hat="Bip01 HD" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N06_3" tag_Face="Bip01 HD" tag_Hat="Bip01 HD" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N07" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N07_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N08" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N09" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N10" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N10_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N11" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N12" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N13" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N14" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N14_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N15" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N15_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N16" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N16_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N17" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N17_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N18" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N18_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N19"/>
+	<NPC id="N20" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N20_1" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N21"/>
+	<NPC id="N22" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N23" tag_Face="Bip01 Head" tag_Hat="Bip01 HeadNub" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N31"/>
+	<NPC id="N32"/>
+	<NPC id="N33"/>
+	<NPC id="N34" tag_Face="Bip01 tb" tag_Hat="Bip01 tb" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="N35"/>
+	<NPC id="N36"/>
+	<NPC id="N37"/>
+	<NPC id="N43"/>
+	<NPC id="N44"/>
+	<NPC id="N45"/>
+	<NPC id="N46"/>
+	<NPC id="N47"/>
+	<NPC id="N48"/>
+	<NPC id="N49"/>
+	<NPC id="N50"/>
+	<NPC id="M101" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine4" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M102"/>
+	<NPC id="M103"/>
+	<NPC id="M104"/>
+	<NPC id="M105"/>
+	<NPC id="M106" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M107"/>
+	<NPC id="M108" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine1" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M109"/>
+	<NPC id="M110"/>
+	<NPC id="M111" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Head" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle"/>
+	<NPC id="M112" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine3" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M113"/>
+	<NPC id="M114" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M115" tag_Face="Bone12" tag_Hat="Bone12" tag_Back="Bone01" tag_RSld="Bone23" tag_LSld="Bone74" tag_RHd="Bone50" tag_LHd="Bone61"/>
+	<NPC id="M116" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M117" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bip01 Spine2" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+	<NPC id="M118" tag_Face="Bip01 Head" tag_Hat="Bip01 Head" tag_Back="Bone60" tag_RSld="Bip01 R Clavicle" tag_LSld="Bip01 L Clavicle" tag_RHd="Bip01 R Hand" tag_LHd="Bip01 L Hand"/>
+</root>

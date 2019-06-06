@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- id 宠物TypeID  -->
+<!-- type3 宠物类型 -->
+<!-- mountable 是否可骑乘-->
+<!-- summon_model 召唤模型-->
+<!-- mount_model 骑乘模型-->
+
+<root>
+  <Pet id="" type3="" rolelvl="" mountable="" mountspeed="" aptitude1_min="" aptitude1_max="" aptitude2_min="" aptitude2_max="" aptitude3_min="" aptitude3_max="" aptitude4_min="" aptitude4_max="" aptitude5_min="" aptitude5_max="" box_x="" box_y="" box_z="" scale="" bind=""/>
+  <Pet id="" type3="" rolelvl="" mountable="" mountspeed="" aptitude1_min="" aptitude1_max="" aptitude2_min="" aptitude2_max="" aptitude3_min="" aptitude3_max="" aptitude4_min="" aptitude4_max="" aptitude5_min="" aptitude5_max="" box_x="" box_y="" box_z="" scale="" bind=""/>
+</root>

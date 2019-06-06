@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+   <deliver id="1" msgid="2775" mapid="3017299663" pos_x="2090" pos_y="18339" pos_z="2705"/>
+   <deliver id="2" msgid="2776" mapid="3017299919" pos_x="1010" pos_y="20140" pos_z="970"/>
+   <deliver id="3" msgid="2777" mapid="3017299151" pos_x="2030" pos_y="6365" pos_z="1795"/>
+   <deliver id="4" msgid="2778" mapid="3017299407" pos_x="1810" pos_y="14024" pos_z="2285"/>
+   <deliver id="5" msgid="3176" mapid="3017299407" pos_x="1599" pos_y="14024" pos_z="1870"/>
+   <deliver id="6" msgid="3180" mapid="3017299407" pos_x="1599" pos_y="14024" pos_z="1870"/>
+</root>
+

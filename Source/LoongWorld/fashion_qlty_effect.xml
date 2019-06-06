@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 时装属性品质影响xml映射 -->
+<root>
+    <fashion id="" AppearanceFactor="" ReinPct="" ReinVal="" SavvyPct="" SavvyVal="" FortunePct="" FortuneVal1="" FortuneVal2=""/>
+    <fashion id="" AppearanceFactor="" ReinPct="" ReinVal="" SavvyPct="" SavvyVal="" FortunePct="" FortuneVal1="" FortuneVal2=""/>
+</root>
+
+<!-- 注：
+1.装备品级				黄色                            id=2
+2.仪容属性			  原始编辑值×1.5                 AppearanceFactor=1.5
+3.统御属性加成	  10%几率出现                     ReinPct=1000
+                  值=物品等级÷5[取整]            ReinVal=5
+4.悟性属性加成    10%几率出现                     SavvyPct=1000
+                  值=物品等级÷20[取整]           SavvyVal=20
+5.福缘属性加成		1%几率出现                      FortunePct=100
+                  值=5（上下浮动20%）+装备品级/30 FortuneVal1=5, FortuneVal2=30
+-->

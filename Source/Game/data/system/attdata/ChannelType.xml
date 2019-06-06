@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<type id="1" name="[城战]" color="0xFFfea5a0" priority="1"/>
+	<type id="2" name="[帮派]" color="0xFF8080ff" priority="1"/>
+	<type id="3" name="[公告]" color="0xFFffbb47" priority="2"/>
+	<type id="4" name="[特殊]" color="0xFF80ffff" priority="2"/>
+	<type id="5" name="[活动]" color="0xFF80ff80" priority="3"/>
+</root>

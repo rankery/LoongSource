@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <PetR id="1" item1SpecFunc="59" num1="30" item2SpecFunc="60" num2="1" item3SpecFunc="61" num3="1" petid1="2004101" petid2="2004201" petid3="2004301" petid4="2004401"/>
+    <PetR id="2" item1SpecFunc="59" num1="60" item2SpecFunc="60" num2="2" item3SpecFunc="61" num3="3" petid1="2004501" petid2="2004601" petid3="2004701" petid4="2004801"/>
+    <PetR id="3" item1SpecFunc="59" num1="90" item2SpecFunc="60" num2="3" item3SpecFunc="61" num3="9" petid1="2004901" petid2="2005001" petid3="2005101" petid4="2005201"/>
+</root>

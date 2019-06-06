@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="hintinfo" ClassName="CGUIStatic" LogicPos_x="420" LogicPos_y="487" Size_x="1079" Size_y="55" AlignControl="\desktop" AlignType="Center" Font="小白雅黑" FontHeight="28" TextRect_right="1079" TextRect_bottom="55" TextColor="0xFFFF8000" ShadeColor="0xFF240012" TextAlign="Center" PicFileName="data\ui\common\l-common.bmp" PicRect_left="332" PicRect_right="344" PicRect_bottom="66" PicColor="0xFFFFFF" />
+</desktop>

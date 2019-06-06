@@ -1,0 +1,313 @@
+
+此文档记录一些技术点
+
+//-----------------------------------------------------------------------------
+// Debug Versions of Heap Functions
+//-----------------------------------------------------------------------------
+The Debug versions of the heap functions call the standard or base versions 
+used in Release builds. When you request a memory block, the debug heap manager 
+allocates from the base heap a slightly larger block of memory than requested 
+and returns a pointer to your portion of that block. For example, suppose your 
+application contains the call: malloc( 10 ). In a Release build, malloc would
+call the base heap allocation routine requesting an allocation of 10 bytes. 
+In a Debug build, however, malloc would call _malloc_dbg, which would then call 
+the base heap allocation routine requesting an allocation of 10 bytes plus 
+approximately 36 bytes of additional memory. All the resulting memory blocks 
+in the debug heap are connected in a single linked list, ordered according to 
+when they were allocated.
+
+The additional memory allocated by the debug heap routines is used for bookkeeping 
+information, for pointers that link debug memory blocks together, and for small 
+buffers on either side of your data to catch overwrites of the allocated region.
+
+Currently, the block header structure used to store the debug heap's bookkeeping 
+information is declared as follows in the DBGINT.H header file:
+
+typedef struct _CrtMemBlockHeader
+{
+// Pointer to the block allocated just before this one:
+   struct _CrtMemBlockHeader *pBlockHeaderNext;
+// Pointer to the block allocated just after this one:
+   struct _CrtMemBlockHeader *pBlockHeaderPrev;
+   char *szFileName;    // File name
+   int nLine;           // Line number
+   size_t nDataSize;    // Size of user block
+   int nBlockUse;       // Type of block
+   long lRequest;       // Allocation number
+// Buffer just before (lower than) the user's memory:
+   unsigned char gap[nNoMansLandSize];
+} _CrtMemBlockHeader;
+
+/* In an actual memory block in the debug heap,
+ * this structure is followed by:
+ *   unsigned char data[nDataSize];
+ *   unsigned char anotherGap[nNoMansLandSize];
+ */
+The NoMansLand buffers on either side of the user data area of the block are 
+currently 4 bytes in size, and are filled with a known byte value used by the 
+debug heap routines to verify that the limits of the user's memory block have not 
+been overwritten. The debug heap also fills new memory blocks with a known value. 
+If you elect to keep freed blocks in the heap's linked list as explained below, 
+these freed blocks are also filled with a known value. Currently, the actual byte 
+values used are as follows: 
+
+NoMansLand (0xFD) 
+The "NoMansLand" buffers on either side of the memory used by an application 
+are currently filled with 0xFD. 
+
+Freed blocks (0xDD) 
+The freed blocks kept unused in the debug heap's linked list when the 
+"_CRTDBG_DELAY_FREE_MEM_DF" flag is set are currently filled with 0xDD. 
+
+New objects (0xCD) 
+New objects are filled with 0xCD when they are allocated. 
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// half-life2的图形系统研究心得
+// 金点时空 2003.12
+// tiamo
+// http://www.gpgame.net 
+//-----------------------------------------------------------------------------
+小T一边作自己的3D引擎,一边研究half-life2的图形引擎,留下点心得,
+
+整体上half-life2给小T的感觉一是庞大,二就是难读,com方式组织引擎,小T也不敢妄加评价,
+只是小T觉得整个引擎非常的难读.小T只有借助调试器才勉强对half-life2的图形引擎有个大
+致的了解.至于怎么编译half-life2,怎么运行,以及怎样调试,小T就不详细的描述了,到网上随
+便一搜索就能找到一大堆.这里只是简单的看看他的图形系统.
+
+当前的3D环境,想要提高渲染速度,一个最基本的方法就是要减少硬件的渲染状态的切换,今天
+小T就是讲hl2的渲染状态管理部分的.在hl2里面,渲染状态主要被放在了一个叫ShadowState_t
+的结构里面,这个结构对应了大多数的硬件渲染状态,渲染系统维护多个ShadowState_t结构,在
+必要的时候把ShadowState_t的内容真正的设置到硬件上面,从而减少硬件的状态切换.当然实
+际上却没有这么简单,上面只是个简单的介绍,下面开始详细的解释hl2怎么进行硬件状态管理. 
+
+hl2里面渲染状态管理的一个比较重要的类就是CTransitionTable,从名字上面看,这个类描述
+的是一种转换,他其实就是描述了,渲染过程中硬件渲染状态的转换流程,hl2把硬件状态的管理
+也放在了这个里面,举个例子来说可能比较清楚.
+
+比如:整个场景里面有2个物品,第一个物品使用一组渲染状态,第二个物品使用另外一组渲染
+状态,我们先渲染第一个物品,设置成第一个物品的渲染状态,接着渲染第二个物品,设置第二
+个物品的渲染状态.这个就是正常的操作方式,如果第一个物品和第二个物品的渲染状态有相
+同的,那么有些设置renderstate的函数就不用调用.我们可以把渲染状态看作是一种状态机,
+从第一种状态转换到第二种状态,我们要作一些事情,如果我们能建立一张行动表,表里面记录
+状态转换的时候要执行的动作,那么我们就可以简化这种状态管理模型,这个就是
+CTransitionTable类完成的工作.
+
+对于场景里面的每个materila(顺便说一句,hl2也是按照material的方式组织渲染动作的),都
+对应了一种渲染状态,这些渲染状态都被CTransitionTable类记录下来,每一个渲染状态对应
+一个唯一的id,那么material只用记录他对应的渲染状态id就能完成自己的渲染了.比如我们要
+渲染一个物品,我们告诉渲染系统我们使用的渲染状态id,渲染系统自动完成渲染状态的设置,
+自动完成渲染状态切换的最小化任务,然后我们调用一个drawprimitive就ok.实际上的操作也
+没有这么简单.我们再看看实际一点的东西.
+
+hl2里面的渲染状态操作都被封装到了ShaderRenderState_t类里面 
+struct ShaderRenderState_t 
+{
+	//代表了一种渲染方式,缓冲4种渲染方式0=默认,1=带color数据,2=带alpha数据,3=color+alpha
+	RenderPassList_tm_Snapshots[4]; 
+
+int m_Flags;// 标志,
+VertexFormat_t m_VertexFormat;// 顶点格式
+int m_VertexUsage; 
+};
+
+struct RenderPassList_t 
+{ 
+int m_nPassCount; // 渲染pass的数目
+	
+	// 实际是一个short形式,就是渲染状态id
+StateSnapshot_t m_Snapshot[MAX_RENDER_PASSES];  
+};
+
+解释下RenderPass这个东西,一个material在hl2里面渲染方式分成了4种,每种都对应了一个
+RenderPassList_t的类,而ShaderRenderState_t把这4种渲染方式都缓存了,嗯,举个例子,比如
+我现在想要按照默认的方式渲染一种material,我传递一个ShaderRenderState_t的结构给渲染
+系统,渲染系统根据我要求的渲染方式索引到正确的RenderPassList_t元素,使用里面记录的
+StateSnapshot_t数组里面的某个正确的id来获取到正确的渲染状态.
+
+我们已经知道了渲染系统的客户端怎样要求渲染系统完成自己的渲染状态设置了,接下来看看渲
+染系统本身怎样完成这个工作.当渲染系统得到一个渲染状态id以后,就应该要获取到与之对应
+的渲染状态,并且正确的设置好这个状态,换句话说也就是要完成当前状态到新状态的切换,首先
+看看渲染系统怎么去找到正确的渲染状态.这就落在了IShaderAPI和CTransitionTable身上了.
+小T使用的是DX9的ShaderApi,所以这个任务是由CShaderAPIDX8这个类来完成了,在CShaderAPIDX8
+类里面有一个CTransitionTable类的数据成员m_TransitionTable,每当要获取到一个渲染状态id
+以后,ShaderApi就告诉m_TransitionTable要使用新的渲染状态了,并且传递新状态的id.到这里
+先停一下,一直小T都使用渲染状态这几个字在描述,那究竟hl2使用什么样子的数据结构来表示
+实际的渲染状态呢?ShadowState_t对应的是硬件状态,而还有一个东西对应了vs,ps的状态,他也
+是要在状态转换的时候进行设置的,渲染状态id对应的其实是SnapshotShaderState_t 结构.
+
+struct SnapshotShaderState_t 
+{ 
+ShadowShaderState_t m_ShaderState;
+ShadowStateId_t m_ShadowStateId; 
+};
+
+struct ShadowShaderState_t
+ { 
+// The vertex + pixel shader group to use... 
+VertexShader_t m_VertexShader; 
+PixelShader_t m_PixelShader; 
+// The static vertex + pixel shader indices 
+int m_nStaticVshIndex; 
+int m_nStaticPshIndex; 
+};
+
+ShaderApi获得了新的渲染状态id以后,和当前的渲染状态id比较,如果不相同,则获取到
+ShadowStateId,如果也不相同,那就要设置新的ShadowState了,这个操作下面讲解.然后,
+ShaderApi保存当前的渲染状态id,保存ShadowStateId,同时设置ShadowShaderState.这些都设置
+完成了,硬件的渲染状态也就设置完成了,然后的任务就是调用DrawPrimitive等等函数完成绘制
+的时候了,这个绘制是由各个vs,ps完成的,关于这个部分,小T留到下次讲解.
+
+现在我们来看看shaderapi怎么设置新的ShadowState,基本的方式就是获得两个状态之间的转
+换表,执行表里面规定的动作,而实际上也是这样进行的.那现在的重点就落在了转换表上面.
+
+CTransitionTable保存了当前渲染过程中所有可能的ShadowState(关于这些是怎么保存起来
+的,这些信息是怎么获取到了,下面讲解),然后再这些状态中间拉了一张网,每两个状态之间总
+有一个弧,同时保存了两个状态进行切换的时候要执行的操作.CTransitionTable的主要数据成
+员如下:
+
+// 全部的ShadowState_t的vector,ShadowState的id作为这个vector的下标
+CUtlVector< ShadowState_t > m_ShadowStateList ;  
+
+// 状态转换表,TransitionList_t就代表了状态转换的操作.
+CUtlVector< CUtlVector< TransitionList_t > > m_TransitionTable; 
+
+struct TransitionList_t 
+{ 
+unsigned short m_FirstOperation; 
+unsigned char m_NumOperations; 
+unsigned char m_nOpCountInStateBlock; 
+IDirect3DStateBlock9 *m_pStateBlock; 
+}; 
+
+struct TransitionOp_t 
+{ 
+ApplyStateFunc_t m_Op; 
+int m_Argument; 
+};
+
+TransitionOp_t也放到了一个vector里面,而TransitionList_t的第一个和第二个成员能在这个
+vector里面寻址,从而定位到实际的操作,而TransitionOp_t定义的就是实际的操作,第一个成员
+是一个函数指针,执行操作就是调用那个函数指针,并且传递两个参数,一个是新的ShadowState_t,
+一个就是结构里面的另外一个成员.
+
+总结下,CTransitionTable保存了全部的ShadowState_t,保存全部的TransitionOp,都是使
+用下表作为索引访问,再全部的ShadowState_t之间建立TransitionList,当要进行状态切换的时
+候执行状态之间定义的TransitionOp就完成了状态的切换了.那ShaderApi是怎么建立
+ShadowState_t表格和TransitionOP表格的呢?
+
+ShadowState_t的表格是在material创建的时候完成创建的,创建了一个新的ShadowState_t了以
+后就会向转换表里面加入新的节点,并且设置好转换操作.,而这动作却是借助Draw动作完成了.
+
+下面结合源代码看看上面这些功能的具体实现.
+
+先看看draw的流程,最常用操作就是建立一个DynamicMesh,然后使用一个MeshBuilder修改刚刚建
+立的DynamicMesh,然后调用mesh的Draw函数,我们就从这里开始.
+
+void CDynamicMeshDX8::Draw( int firstIndex, int numIndices )
+CBaseMeshDX8::DrawMesh();   // 调用自己类的函数,实际上是从父类继承来的
+ShaderAPI()->DrawMesh( this );  // 调用CShaderAPIDX8的函数
+m_pMaterial->DrawMesh( m_pRenderMesh );  // 转调用CMaterial的DrawMesh函数
+ShaderSystem()->DrawElements( m_pShader, m_pShaderParams, &m_ShaderRenderState );//调用CShaderSystem函数
+// 计算当前这次绘制操作的方式：普通?color?alpha?alpha+color?
+int mod = pShader->ComputeModulationFlags( params );
+g_pShaderAPI->SetDefaultState(); // 调用CShaderAPIDX8的函数
+ShaderUtil()->SetDefaultState(); // 实际上回到了CMaterialSystem:SetDefaultState()
+// 一系列的CShaderAPIDX8的函数,这些函数只是比较纪录,并不真正的修改硬件的状态
+// 准备渲染，纪录当前的渲染操作，接下来的CurrentStateSnapshot()函数返回的就是当前渲染的状态id
+PrepForShaderDraw( pShader, params, pRenderState, mod ); 
+// 调用CShaderAPIDX8的函数,纪录当前要渲染的状态ID
+g_pShaderAPI->BeginPass( CurrentStateSnapshot() );
+// 真正的渲染操作,一般是调用到CBaseShader::DrawElements函数
+pShader->DrawElements( params, mod, 0, g_pShaderAPI );
+// 这里根据第三个参数的有无进行不同的操作,如果0就实际的渲染,否则是要生成ShadowState,
+OnDrawElements( ppParams, pShaderShadow, pShaderAPI );
+// 这个函数调用的地方就不好说了，他是和你当前material使用的shader相关联的,这个函数开始的时候
+// 完成些设置操作以后,调用Draw函数,回到CBaseShader
+         CBaseShader::Draw();
+ // 如果是设置ShadowState,
+ GetShaderSystem()->TakeSnapshot();
+ // 否则是渲染,都是调用到CShaderSystem的函数
+ GetShaderSystem()->DrawSnapshot();
+     // 获取到RenderPass
+      RenderPassList_t& snapshotList = m_pRenderState->m_Snapshots[m_nModulation];
+      // 渲染这个pass
+      g_pShaderAPI->RenderPass();
+          // 设置这个渲染状态
+          m_TransitionTable.UseSnapshot( m_nCurrentSnapshot );
+              // ShadowStateId
+              ShadowStateId_t id = m_SnapshotList[snapshotId].m_ShadowStateId;
+              if (m_CurrentSnapshotId != snapshotId)
+              {
+                  if ( m_CurrentShadowId != id )  
+                  {
+                  TransitionList_t& transition = m_TransitionTable[id][m_CurrentShadowId];
+                  ApplyTransition( transition, id );
+                        ApplyTransitionList( snapshot, nFirstOp, nOpCount );
+                            ShadowState_t& shadowState = m_ShadowStateList[snapshot]; 
+                            TransitionOp_t* pTransitionOp = &m_TransitionOps[nFirstOp];  
+                            for (int i = 0; i < nOpCount; ++i )  
+                            {
+                           (*pTransitionOp->m_Op)(shadowState, pTransitionOp->m_Argument); 
+                            ++pTransitionOp;
+                            }
+                   }
+                   m_CurrentSnapshotId = snapshotId;  
+              }
+      // 渲染这个mesh,这个函数就会调用到IDERICET3DDEVICE9::DrawPrimitiveIndex
+      m_pRenderMesh->RenderPass();
+                  DoneWithShaderDraw();
+
+接着说GetShaderSystem()->TakeSnapshot();分支
+GetShaderSystem()->TakeSnapshot();
+    g_pShaderAPI->TakeSnapshot();
+        m_TransitionTable.TakeSnapshot(); // CTransitionTable:TakeSnapshot();
+            ShaderShadow()->ComputeAggregateShadowState(); // 计算最后的结果CShaderShadowDX8函数
+            shadowStateId = FindShadowState();// 查找,如果不存在就创建
+            if(shadowStateId == -1)
+            {
+                shadowStateId = CreateShadowState();// 创建
+                    // 创建一个空的连接到以前的所有状态  
+                    for ( i = 0; i < newShaderState; ++i )  
+                    {
+                        int newElem = m_TransitionTable[i].AddToTail();  
+                        m_TransitionTable[i][newElem].m_FirstOperation = INVALID_TRANSITION_OP;  
+                        m_TransitionTable[i][newElem].m_NumOperations = 0;  
+                        m_TransitionTable[i][newElem].m_nOpCountInStateBlock = 0;  
+                        m_TransitionTable[i][newElem].m_pStateBlock = NULL;  
+                    }
+                    // 以前有的状态都创建一个空的连接到新的状态
+                    for ( i = 0; i <= newShaderState; ++i )  
+                    {
+                        int newElem = m_TransitionTable[newShaderState].AddToTail(); 
+                        m_TransitionTable[newShaderState][newElem].m_FirstOperation = INVALID_TRANSITION_OP;
+                        m_TransitionTable[newShaderState][newElem].m_NumOperations = 0;  
+                        m_TransitionTable[newShaderState][newElem].m_nOpCountInStateBlock = 0;  
+                        m_TransitionTable[newShaderState][newElem].m_pStateBlock = NULL;  
+                    }
+            }
+            // 新加入的状态,和原来的状态连接到一起
+            for (int to = 0; to < shadowStateId; ++to)  
+            {  
+                CreateTransitionTableEntry( to, shadowStateId );  
+            }  
+            for (int from = 0; from < shadowStateId; ++from)  
+            {  
+                CreateTransitionTableEntry( shadowStateId, from );
+                // 这个函数就有点复杂了,不再这里列举了,就是根据两个状态的不同设置转
+				换的操作
+            }
+
+到这里,小T要罗索的就全部完了,剩下的就要去看源代码了.小T再列几个注意的地方就结束.
+
+很多的类之间的通讯方式是靠类成员,全局变量完成的,多注意那些准备函数,结束函数,对理解参
+数的传递有帮组.
+
+多使用调试器,留意那些指针变量的地址,很多的指针都是指向同一个东西的.
+
+
+

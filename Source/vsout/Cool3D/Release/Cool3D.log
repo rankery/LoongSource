@@ -1,0 +1,512 @@
+﻿  stdafx.cpp
+  AniCloth_SW.cpp
+  AnimationCtrl.cpp
+  AnimationMixer.cpp
+  AnimationState.cpp
+  AnimationTrack.cpp
+  AniSkin_SW.cpp
+  KeyFrame.cpp
+  AudioSystem.cpp
+  AudioSystemMember.cpp
+  Cool3D.cpp
+  Cool3DOption.cpp
+  DrawX.cpp
+  DX9DepthFont.cpp
+  DX9Device.cpp
+  DX9Font.cpp
+  DX9IB.cpp
+  DX9Init.cpp
+  DX9PS.cpp
+  DX9RenderCubeTex.cpp
+  DX9RenderTex.cpp
+  DX9RenderToEnvMap.cpp
+  DX9Tex.cpp
+  DX9VB.cpp
+  DX9VertDecl.cpp
+  DX9VizQuery.cpp
+  DX9VS.cpp
+  IDepthFont.cpp
+  IDevCubeMap.cpp
+  IDevice.cpp
+  IDeviceTex.cpp
+  IDeviceVizQuery.cpp
+  IFont.cpp
+  IIndexBuffer.cpp
+  IPixelShader.cpp
+  IRenderCubeTexture.cpp
+  IRenderTexture.cpp
+  IRenderToEnvMap.cpp
+  IStreamDefine.cpp
+  IVertBuffer.cpp
+  IVertShader.cpp
+  Light.cpp
+  RenderStatus.cpp
+  RenderTexChain.cpp
+  StateBlock.cpp
+  AviPlayer.cpp
+  Draw2DImp.cpp
+  IDraw2D.cpp
+  PicFont.cpp
+  AmbientOcclusion.cpp
+  BrushOPRecorder.cpp
+  EditorDecoFile.cpp
+  ISGVisitorCallBack.cpp
+  IUICallBack .cpp
+  LightMapBlur.cpp
+  LightMapping.cpp
+  LightMapTempGen.cpp
+  Radiosity.cpp
+  ResDynaAlphaMap.cpp
+  SceneEditor.cpp
+  SGVisitor.cpp
+  SimpleView.cpp
+  TEditorMtl.cpp
+  TEditorPatch.cpp
+  TEditorPatchProxy.cpp
+  TerrainEditor.cpp
+d:\other\loongrework\sourcev2\source\cool3d\editorsupport\teditorpatch.cpp(545): warning C4474: '_swprintf' : too many arguments passed for format string
+  d:\other\loongrework\sourcev2\source\cool3d\editorsupport\teditorpatch.cpp(545): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  TMtlEditor.cpp
+  TQuadTreeTriangulation.cpp
+  TRiverEditor.cpp
+  TRiverEditorMtl.cpp
+  TRiverPatchProxy.cpp
+  TRiverRealPatch.cpp
+  Image.cpp
+  Image32Blender.cpp
+  ImageGDI.cpp
+  ImageTGA.cpp
+  Kernel.cpp
+  ArcBall.cpp
+  CameraBase.cpp
+  CameraEuler.cpp
+  Frustum.cpp
+  GeomDefine.cpp
+  math.cpp
+  Noise.cpp
+  perlin.cpp
+  Ray.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file Math\Ray.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\math\ray.cpp(13): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\math\ray.cpp(13): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  Transform.cpp
+  MeshTopo.cpp
+  PMesh.cpp
+  PostProcess.cpp
+  PostProcessBlur.cpp
+  PostProcessHeatHaze.cpp
+  IMaterial.cpp
+  IMtlModifier.cpp
+  IRenderMtl.cpp
+  MBitmap.cpp
+  MBitmapFrames.cpp
+  MColorTex.cpp
+  MConstColor.cpp
+  MDyeTex.cpp
+  MGeneral.cpp
+  MKeyFrame.cpp
+  MMAlphaMask.cpp
+  MMColor.cpp
+  MMColorWriteControl.cpp
+  MMDepthFrame.cpp
+  MMFrameBlend.cpp
+  MMTransparent.cpp
+  MMUsingMtlColor.cpp
+  MMUVPage.cpp
+  MMUVTrans.cpp
+  MPreCombineBitmap.cpp
+  MRenderTex.cpp
+  MSEMTex.cpp
+  MSkin.cpp
+  MSky.cpp
+  MStatic.cpp
+  MtlCombiner.cpp
+  MTwoLayers.cpp
+  MWater.cpp
+  MWaterReflect.cpp
+  MWaterRefract.cpp
+  DevPixelStageFixed.cpp
+  DynamicMesh.cpp
+  DynamicMeshIndexed.cpp
+  IRenderCallBack.cpp
+  MtlRenderCache.cpp
+  MtlRenderCacheFixed.cpp
+  RBillboards.cpp
+  RCloth.cpp
+  RenderNode.cpp
+  RenderSubMesh.cpp
+  RenderSys.cpp
+  RenderSysFixed.cpp
+  RenderSysPS_20.cpp
+  RKeyFrame.cpp
+  RLensFlare.cpp
+  RPointSprites.cpp
+  RSkin.cpp
+  RSkyBox.cpp
+  RStatic.cpp
+  RStaticMesh.cpp
+  RVizQuery.cpp
+  SortByMtlAndZVal.cpp
+  StaticMeshIndexed.cpp
+  WaterReflectMapRender.cpp
+  WaterRefractMapRender.cpp
+  WaterRender.cpp
+  AABBTreeCollider.cpp
+  ActTimeTable.cpp
+  AniMsgTable.cpp
+  AsyncResIO.cpp
+  ResBase.cpp
+  ResCloth.cpp
+  ResKeyFrame.cpp
+  ResMgr.cpp
+  ResPixelShader.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file ResSys\ResCloth.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\rescloth.cpp(278): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\rescloth.cpp(278): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  ResRenderable.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file ResSys\ResKeyFrame.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\reskeyframe.cpp(407): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\reskeyframe.cpp(407): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  ResRequestQueueTS.cpp
+  ResSceneMesh.cpp
+  ResSkeleton.cpp
+  ResSkeletonAction.cpp
+  ResSkin.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file ResSys\ResSkin.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\resskin.cpp(239): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\resskin.cpp(239): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  ResSpecialEffect.cpp
+  ResStaticMesh.cpp
+  ResTexture.cpp
+  ResVertShader.cpp
+  UserResMgr.cpp
+  VertStream.cpp
+  AvatarNode.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file ResSys\ResStaticMesh.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\resstaticmesh.cpp(297): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\ressys\resstaticmesh.cpp(297): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  EntityNode.cpp
+  HugeQuadTreeSG.cpp
+  ISGNodeVisableCallBack.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file SceneGraph\HugeQuadTreeSG.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\hugequadtreesg.cpp(292): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\hugequadtreesg.cpp(292): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file SceneGraph\AvatarNode.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\avatarnode.cpp(172): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\avatarnode.cpp(172): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file SceneGraph\EntityNode.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\entitynode.cpp(196): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\entitynode.cpp(196): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  NullSceneGraph.cpp
+  Occluder.cpp
+  OcclusionCull.cpp
+  OCQuad.cpp
+  QuadTreeData.cpp
+  QuadTreeDataBuilder.cpp
+  SceneDecal.cpp
+  SceneEffect.cpp
+  SceneGraph.cpp
+  SceneNode.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file SceneGraph\SceneNode.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\scenenode.cpp(113): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\scenenode.cpp(113): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  SceneProjector.cpp
+  SGAvatarAttachment.cpp
+  SGBladeFlare.cpp
+  SGBladeGlow.cpp
+  SGClothNode.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file SceneGraph\SGClothNode.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\sgclothnode.cpp(250): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\sgclothnode.cpp(250): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  SGLensFlare.cpp
+  SGLightFlare.cpp
+  SGLightNode.cpp
+  SGQuadTreeNode.cpp
+  SGRoleGlow.cpp
+  SGSkinNode.cpp
+  SGSkyBox.cpp
+  SGSkyNode.cpp
+d:\programms\vs\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ] (compiling source file SceneGraph\SGSkinNode.cpp)
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\sgskinnode.cpp(259): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  d:\other\loongrework\sourcev2\source\cool3d\scenegraph\sgskinnode.cpp(259): note: see reference to function template instantiation 'std::pair<bool,float>::pair<bool,int,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=bool,
+              _Other2=int
+          ]
+  SGStaticProjector.cpp
+  SGSunFlare.cpp
+  SGSunNode.cpp
+  EffectBase.cpp
+  EffectBeam.cpp
+  EffectBladeFlare.cpp
+  EffectCamera.cpp
+  EffectCross.cpp
+  EffectCylinder.cpp
+  EffectExplosive.cpp
+  EffectGrid.cpp
+  EffectMesh.cpp
+  EffectMotion.cpp
+  EffectMsg.cpp
+  EffectParticleEmitter.cpp
+  EffectPathCtrl.cpp
+  EffectQuad.cpp
+  EffectSceneDecal.cpp
+  EffectSound.cpp
+  EffectSphere.cpp
+  EffectTarget.cpp
+  EftQuadDef.cpp
+  SGAttachableEffectNode.cpp
+  SGEffectNode.cpp
+  BitMap.cpp
+  GrassPatch.cpp
+  Heightmap.cpp
+d:\other\loongrework\sourcev2\source\cool3d\terrain\heightmap.cpp(104): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+  ResGrass.cpp
+  ResRiver.cpp
+  ResRiverPatch.cpp
+  RRiverPatch.cpp
+  RSimpleTerrain.cpp
+  RSimpleTerrainPatch.cpp
+  SGGrassPatch.cpp
+  SGRiverPatch.cpp
+  SGSimpleTerrain.cpp
+d:\other\loongrework\sourcev2\source\cool3d\terrain\sggrasspatch.cpp(82): warning C4267: 'argument': conversion from 'size_t' to 'WORD', possible loss of data
+  SGSimpleTerrainPatch.cpp
+  SGTrnDecoPatch.cpp
+  SimpleTerrainMtl.cpp
+  TerrainMtlMultiLayers.cpp
+  TerrainMtlPrecombine.cpp
+  TerrainMtlTwoLayers.cpp
+  TerrainMultiLayersRender.cpp
+  TerrainPatch.cpp
+  TerrainPatchRender.cpp
+  TerrainPatchRenderGroupsRes.cpp
+  TerrainPatchRes.cpp
+  TerrainRes.cpp
+  TPatchLodTable.cpp
+  TPatchTriangulationDynamic.cpp
+  TPatchTriangulationStatic.cpp
+  TRiverPatchTriangulationDynamic.cpp
+  CmdDispatch.cpp
+  CmdTarget.cpp
+  ConfigFile.cpp
+  CSVFile.cpp
+d:\other\loongrework\sourcev2\source\cool3d\util\configfile.h(20): warning C4251: 'Cool3D::ConfigFile::m_szFileName': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of class 'Cool3D::ConfigFile' (compiling source file Util\ConfigFile.cpp)
+  d:\programms\vs\vc\tools\msvc\14.16.27023\include\xstring(4374): note: see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' (compiling source file Util\ConfigFile.cpp)
+  DebugMisc.cpp
+  Exception.cpp
+  FArchive.cpp
+  FileUtil.cpp
+d:\other\loongrework\sourcev2\source\cool3d\util\debugmisc.cpp(37): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'time_t'
+  d:\other\loongrework\sourcev2\source\cool3d\util\debugmisc.cpp(37): note: consider using '%lld' in the format string
+  d:\other\loongrework\sourcev2\source\cool3d\util\debugmisc.cpp(37): note: consider using '%I64d' in the format string
+c:\program files (x86)\windows kits\8.1\include\um\imagehlp.h(1873): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-hdBase>' when no variable is declared (compiling source file Util\Exception.cpp)
+c:\program files (x86)\windows kits\8.1\include\um\imagehlp.h(3519): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-sfImage>' when no variable is declared (compiling source file Util\Exception.cpp)
+  FMemory.cpp
+  PlugIn.cpp
+  RefObj.cpp
+  RTTInfo.cpp
+  RTTIObj.cpp
+  SpeedAnalyser.cpp
+  Timer.cpp
+  IFS.cpp
+  MemFS.cpp
+  StdFS.cpp
+     Creating library ..\vsout\Cool3D\Release\Cool3D.lib and object ..\vsout\Cool3D\Release\Cool3D.exp
+dxerr9.lib(dxerr9.obj) : error LNK2019: unresolved external symbol __vsnprintf referenced in function "long __stdcall StringVPrintfWorkerA(char *,unsigned int,char const *,char *)" (?StringVPrintfWorkerA@@YGJPADIPBD0@Z)
+dxerr9.lib(dxerr9.obj) : error LNK2019: unresolved external symbol __vsnwprintf referenced in function "long __stdcall StringVPrintfWorkerW(unsigned short *,unsigned int,unsigned short const *,char *)" (?StringVPrintfWorkerW@@YGJPAGIPBGPAD@Z)
+..\Game\Release\Cool3D.dll : fatal error LNK1120: 2 unresolved externals

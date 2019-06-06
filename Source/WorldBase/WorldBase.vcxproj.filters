@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameMap">
+      <UniqueIdentifier>{fda50f7f-b371-49d7-bffd-fb3f6d88c113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameMapEditor">
+      <UniqueIdentifier>{29f5062c-ec2a-4d1e-80fa-f1df152bdb24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMap">
+      <UniqueIdentifier>{7d729850-ead8-4ed2-beef-c8e2a2bc784d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMap\Base">
+      <UniqueIdentifier>{34ae2702-ca90-474a-af95-5e2d777bf9f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMap\Collider">
+      <UniqueIdentifier>{0f2b4a8f-aaeb-4fd2-9056-b4ce757bf504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMap\NPCNavMap">
+      <UniqueIdentifier>{21b55e76-4b5c-444a-9ac3-78eb9c494fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMap\PlayerNavMap">
+      <UniqueIdentifier>{357a006c-457d-493b-95a6-72d1c9f0a49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMap\NPCNavGraph">
+      <UniqueIdentifier>{d57ef7a0-ebee-418c-8223-c505945efff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMapEditor">
+      <UniqueIdentifier>{fbc3f769-8885-4141-aa6b-02ec289511c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMapEditor\NavGenerator">
+      <UniqueIdentifier>{c61a1c00-e0db-453e-b6a5-bb6213ebcc0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{a08a0e85-af84-4264-a6f2-c5413a09616a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameMap\GameMap.cpp">
+      <Filter>GameMap</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMapEditor\CreatureDataReader.cpp">
+      <Filter>GameMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMapEditor\GameMapEditor.cpp">
+      <Filter>GameMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMapEditor\MapObjEdit.cpp">
+      <Filter>GameMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavKernel.cpp">
+      <Filter>NavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavMap.cpp">
+      <Filter>NavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavResMgr.cpp">
+      <Filter>NavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\HalfByteMap.cpp">
+      <Filter>NavMap\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavAsyncResIO.cpp">
+      <Filter>NavMap\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavResBase.cpp">
+      <Filter>NavMap\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavResRequestQueueTS.cpp">
+      <Filter>NavMap\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavBaseCollider.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavBintreeCollider.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavBintreeNode.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCarrierNode.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_HitFly.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_Jump.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_Move.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_MoveOnCarrier.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_NPCMove.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_Slide.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavCollider_Swim.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavColliderCache.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavEntityNode.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavHeightmap.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavMovePath.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavNullSceneGraph.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavOctreeCollider.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavOctreeNode.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavQuadTreeData.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavQuadTreeDataBuilder.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavQuadTreeSG.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavResBitMap.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavResHeightmap.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavResSceneMesh.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavSceneGraph.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavSceneNode.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavSGQuadTreeNode.cpp">
+      <Filter>NavMap\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NPCNavMap.cpp">
+      <Filter>NavMap\NPCNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NPCNavMapDoors.cpp">
+      <Filter>NavMap\NPCNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\OutlinePathFinder.cpp">
+      <Filter>NavMap\NPCNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\AreaMap.cpp">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\AStarPathFinder.cpp">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathFinderByMap.cpp">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathFinderByPatch.cpp">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathFinderByTile.cpp">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PlayerNavMap.cpp">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NPCNavGraph.cpp">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathPointDistMap.cpp">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathPointOctree.cpp">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathPointOctreeBuilder.cpp">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathPointOctreeNode.cpp">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavColliderDataGen.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMapEditor\NavMapEditor.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMapEditor\NavMapEditorUtil.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NPCNavGraphGen.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NPCNavMapGen.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PathFinderByPatchDataGen.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\PlayerCangoMapGen.cpp">
+      <Filter>NavMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavGenBuilder.cpp">
+      <Filter>NavMapEditor\NavGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavGenNode.cpp">
+      <Filter>NavMapEditor\NavGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMap\NavGenNodeBuilder.cpp">
+      <Filter>NavMapEditor\NavGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="WorldBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameMap\GameMap.h">
+      <Filter>GameMap</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMapEditor\CreatureDataReader.h">
+      <Filter>GameMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMapEditor\GameMapEditor.h">
+      <Filter>GameMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMapEditor\MapObjEdit.h">
+      <Filter>GameMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavKernel.h">
+      <Filter>NavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavMap.h">
+      <Filter>NavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResMgr.h">
+      <Filter>NavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\HalfByteMap.h">
+      <Filter>NavMap\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavAsyncResIO.h">
+      <Filter>NavMap\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResBase.h">
+      <Filter>NavMap\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResPool.h">
+      <Filter>NavMap\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResRequestQueueTS.h">
+      <Filter>NavMap\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavBaseCollider.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavBintreeCollider.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavBintreeNode.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCarrierNode.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_HitFly.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_Jump.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_Move.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_MoveOnCarrier.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_NPCMove.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_Slide.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavCollider_Swim.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavColliderCache.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavColliderPrivateDef.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavColliderPublicDef.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavEntityNode.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavHeightmap.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavMovePath.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavNullSceneGraph.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavOctreeCollider.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavOctreeNode.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavQuadTreeData.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavQuadTreeDataBuilder.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavQuadTreeSG.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResBitMap.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResHeightmap.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavResSceneMesh.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavSceneGraph.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavSceneNode.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavSGQuadTreeNode.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavSurface.h">
+      <Filter>NavMap\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NPCNavMap.h">
+      <Filter>NavMap\NPCNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NPCNavMapDoors.h">
+      <Filter>NavMap\NPCNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\OutlinePathFinder.h">
+      <Filter>NavMap\NPCNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\AreaMap.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\AStarHeap.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\AStarPathFinder.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathFinderByMap.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathFinderByPatch.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathFinderByTile.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PlayerNavMap.h">
+      <Filter>NavMap\PlayerNavMap</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NPCNavGraph.h">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathPointDistMap.h">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathPointOctree.h">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathPointOctreeBuilder.h">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathPointOctreeNode.h">
+      <Filter>NavMap\NPCNavGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavColliderDataGen.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMapEditor\NavMapEditor.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMapEditor\NavMapEditorUtil.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NPCNavGraphGen.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NPCNavMapGen.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PathFinderByPatchDataGen.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\PlayerCangoMapGen.h">
+      <Filter>NavMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavGenBuilder.h">
+      <Filter>NavMapEditor\NavGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavGenNode.h">
+      <Filter>NavMapEditor\NavGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMap\NavGenNodeBuilder.h">
+      <Filter>NavMapEditor\NavGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ObjectSpace.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="WorldBase.h" />
+    <ClInclude Include="WorldBaseDefine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="todo.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}</ProjectGuid>
+    <RootNamespace>ServerDefine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\vsout\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\vsout\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\External\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\External\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="login_issue.h" />
+    <ClInclude Include="activity_define.h" />
+    <ClInclude Include="att_res_define.h" />
+    <ClInclude Include="base_define.h" />
+    <ClInclude Include="clandata_define.h" />
+    <ClInclude Include="consolidate_define.h" />
+    <ClInclude Include="famehall_define.h" />
+    <ClInclude Include="guild_define.h" />
+    <ClInclude Include="instance_define.h" />
+    <ClInclude Include="item_define.h" />
+    <ClInclude Include="log_cmdid_define.h" />
+    <ClInclude Include="login_define.h" />
+    <ClInclude Include="NPCTeam_define.h" />
+    <ClInclude Include="pet_define.h" />
+    <ClInclude Include="pet_skill_define.h" />
+    <ClInclude Include="role_data_define.h" />
+    <ClInclude Include="rt_define.h" />
+    <ClInclude Include="sspawnpoint_define.h" />
+    <ClInclude Include="strength_define.h" />
+    <ClInclude Include="title_define.h" />
+    <ClInclude Include="vip_netbar_define.h" />
+    <ClInclude Include="msg_common.h" />
+    <ClInclude Include="msg_famehall.h" />
+    <ClInclude Include="msg_fatigue.h" />
+    <ClInclude Include="msg_guild.h" />
+    <ClInclude Include="msg_item.h" />
+    <ClInclude Include="msg_leftmsg.h" />
+    <ClInclude Include="msg_log.h" />
+    <ClInclude Include="msg_mall.h" />
+    <ClInclude Include="msg_marriage.h" />
+    <ClInclude Include="msg_pet.h" />
+    <ClInclude Include="msg_quest.h" />
+    <ClInclude Include="msg_sexternal_links.h" />
+    <ClInclude Include="msg_skill.h" />
+    <ClInclude Include="msg_title.h" />
+    <ClInclude Include="msg_vcard.h" />
+    <ClInclude Include="msg_vip_netbar.h" />
+    <ClInclude Include="msg_vipstall.h" />
+    <ClInclude Include="msg_yuanbao.h" />
+    <ClInclude Include="role_data.h" />
+    <ClInclude Include="msg_rt_c.h" />
+    <ClInclude Include="msg_rt_errorcode.h" />
+    <ClInclude Include="msg_rt_s.h" />
+    <ClInclude Include="gm_tool_define.h" />
+    <ClInclude Include="msg_gm_tool_c.h" />
+    <ClInclude Include="bill_define.h" />
+    <ClInclude Include="msg_bill_c.h" />
+    <ClInclude Include="msg_bill_s.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base_define.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vEngine\vEngine.vcxproj">
+      <Project>{b976c603-fad7-416e-9e47-b74fd5aa2eaa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

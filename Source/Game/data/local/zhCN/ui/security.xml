@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="security_showback" ClassName="CGUIStatic" LogicPos_x="301" LogicPos_y="327" Size_x="238" Size_y="160" AlignControl="\desktop" Font="小三楷体" TextRect_right="238" TextRect_bottom="160" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicColor="0xFFFFFF">
+        <UIControl Name="word1" ClassName="CGUIStatic" MoveFather="yes" Size_x="227" Size_y="88" AlignControl="\desktop\security_showback" Text="请依照下面的位置提示，输入密码保护卡上的动态数字密码\n\n点击数字按钮输入密码" Font="小三楷体" FontHeight="16" TextRect_right="227" TextRect_bottom="88" TextColor="0xFF000000" ShadeColor="0xFFFFFFF" TextWriteAlpha="yes" PicColor="0xFFFFFF" />
+        <UIControl Name="num" ClassName="CGUIStatic" MoveFather="yes" LogicPos_x="84" LogicPos_y="91" Size_x="79" Size_y="69" AlignControl="\desktop\security_showback" Font="微软雅黑" FontHeight="26" TextRect_right="79" TextRect_bottom="69" TextColor="0xFF000000" ShadeColor="0xFFFFFFF" TextAlign="Center" PicFileName="data\ui\login\l-login01.bmp" PicRect_top="408" PicRect_right="80" PicRect_bottom="476" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+    </UIControl>
+</desktop>

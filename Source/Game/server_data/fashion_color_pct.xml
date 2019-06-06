@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<fashion_color id="0" WhitePct="2000" YellowPct="1500" GreenPct="1000" BluePct="500" OrangePct="0"/>
+	<fashion_color id="1" WhitePct="2000" YellowPct="1500" GreenPct="1000" BluePct="500" OrangePct="0"/>
+	<fashion_color id="2" WhitePct="2000" YellowPct="1500" GreenPct="1000" BluePct="500" OrangePct="0"/>
+	<fashion_color id="3" WhitePct="2000" YellowPct="1500" GreenPct="1000" BluePct="500" OrangePct="0"/>
+	<fashion_color id="4" WhitePct="500" YellowPct="1000" GreenPct="1200" BluePct="1200" OrangePct="1000"/>
+	<fashion_color id="5" WhitePct="500" YellowPct="1000" GreenPct="1200" BluePct="1200" OrangePct="1000"/>
+	<fashion_color id="6" WhitePct="500" YellowPct="1000" GreenPct="1200" BluePct="1200" OrangePct="1000"/>
+	<fashion_color id="7" WhitePct="500" YellowPct="1000" GreenPct="1200" BluePct="1200" OrangePct="1000"/>
+	<fashion_color id="8" WhitePct="0" YellowPct="0" GreenPct="500" BluePct="1200" OrangePct="1500"/>
+	<fashion_color id="9" WhitePct="0" YellowPct="0" GreenPct="500" BluePct="1200" OrangePct="1500"/>
+	<fashion_color id="10" WhitePct="0" YellowPct="0" GreenPct="100" BluePct="400" OrangePct="1500"/>
+	<fashion_color id="11" WhitePct="0" YellowPct="0" GreenPct="100" BluePct="400" OrangePct="1500"/>
+</root>

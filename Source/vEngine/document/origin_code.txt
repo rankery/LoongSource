@@ -1,0 +1,2526 @@
+
+
+此文档保留一些古老的代码,用于以后参考
+
+
+
+
+//-----------------------------------------------------------------------------
+// File: dd_interface
+// Desc: ddraw interface
+// Auth: Lyp
+// Date: 2003/11/13
+// Last: 2004/12/14
+//-----------------------------------------------------------------------------
+#pragma once
+namespace vEngine {
+//-----------------------------------------------------------------------------
+// interface for microsoft direct draw 
+//-----------------------------------------------------------------------------
+class CDDrawInterface : public CDisplay
+{
+public:
+
+	virtual BOOL	Init(INT nWidth, INT nHeight, BOOL bFullScreen);
+	virtual VOID	Destroy();
+
+	virtual DWORD	CreateSurface(INT nWidth, INT nHeight, BOOL bVidMem, BOOL bAlpha);
+	virtual DWORD	CreateSurfaceFromDDSD(LPVOID pDDSData);
+	virtual VOID	ReleaseSurface(DWORD dwSurfaceHandle);
+
+	//!\param dwSurfaceHandle=0代表要取得后台缓冲的HDC
+	virtual DWORD	GetDC(DWORD dwSurface);
+	virtual VOID	ReleaseDC(DWORD dwSurface, DWORD dwDC);
+	virtual VOID	Draw(DWORD dwSurface, INT nX, INT nY);
+	virtual VOID	Draw(DWORD dwSurfaceHandle, PRECT prcDest, PRECT prcSrc, DWORD dwColor);
+	virtual VOID	Draw(DWORD dwDestSurfaceHandle, DWORD dwSrcSurfaceHandle, PRECT prcDest, PRECT prcSrc);
+
+	// 将屏幕坐标转换为窗口view坐标(view坐标为逻辑坐标)
+	virtual VOID	ScreenToView(POINT& pt);
+	// 将窗口client坐标转换为窗口view坐标(view坐标为逻辑坐标)
+	virtual VOID	ClientToView(POINT& pt);
+
+
+	virtual BOOL	Render();
+	virtual VOID	UpdateWindowPos();
+
+	virtual VOID	Clear(RECT* pRC, DWORD dwFillColor, DWORD dwSurfaceHandle);
+	virtual VOID	DrawText(INT nX, INT nY, LPCTSTR szString);
+	virtual VOID	DrawText(LPCTSTR szString, PRECT lpRect, DWORD dwStyle, DWORD dwColor, \
+								BOOL bTransparent, DWORD dwBkColor);
+	
+	// 特殊接口
+	virtual VOID	GetTextSize(LPCTSTR szText, DWORD dwFont, SIZE& size){}
+	virtual LPVOID	GetDeviceD3D7() { return NULL; }
+
+	CDDrawInterface();
+	~CDDrawInterface();
+
+private:
+
+	LPDIRECTDRAW			m_pDD;
+	LPDIRECTDRAWSURFACE		m_pddsFrontBuffer;
+	LPDIRECTDRAWSURFACE		m_pddsFrontBuffer2;
+	LPDIRECTDRAWSURFACE		m_pddsBackBuffer;
+	DDBLTFX					m_ddbfxClear;
+
+	// 颜色格式的转化
+	__forceinline DWORD	ARGB2GDI(DWORD dwColor32)
+	{
+		// GDI : 0x00bbggrr
+		return (dwColor32 & 0x00ff00)		// green
+			| ((dwColor32&0xff0000)>>16)	// red
+			| ((dwColor32 & 0xff) << 16);	// blue
+	}
+
+};
+
+
+}	// namespace vEngine {
+
+
+
+
+//-----------------------------------------------------------------------------
+// File: dd_interface
+// Desc: ddraw interface
+// Auth: Lyp
+// Date: 2003/11/13
+// Last: 2004/03/17
+//-----------------------------------------------------------------------------
+#include "..\stdafx.h"
+#include "display.h"	// 基类
+#include "dd_interface.h"
+
+// 使用其它部件
+#include "..\variable\var_container.h"
+
+namespace vEngine {
+//-----------------------------------------------------------------------------
+// construction / destruction
+//-----------------------------------------------------------------------------
+CDDrawInterface::CDDrawInterface()
+{
+	m_pDD = NULL;
+	m_pddsFrontBuffer = NULL;
+	m_pddsBackBuffer = NULL;
+	ZeroMemory( &m_ddbfxClear, sizeof(m_ddbfxClear) );
+	m_ddbfxClear.dwSize = sizeof(m_ddbfxClear);
+}
+
+CDDrawInterface::~CDDrawInterface()
+{
+	this->Destroy();
+}
+
+
+//-----------------------------------------------------------------------------
+// init direct draw
+//-----------------------------------------------------------------------------
+BOOL CDDrawInterface::Init(INT nWidth, INT nHeight, BOOL bFullScreen)
+{
+	m_nWidth = nWidth;
+	m_nHeight = nHeight;
+	m_bFullScreen = bFullScreen;
+
+	// create ddraw obj
+	HRESULT hr = DirectDrawCreate( NULL, &m_pDD, NULL );
+	if( FAILED(hr) )
+	{
+		ERR( _T("Error Create DirectDraw\n") );
+		return FALSE;
+	}
+
+	// get handle of main window
+	HWND hWnd = (HWND)m_pGlobeVar->GetDword(_T("HWND"));
+	
+	DDSURFACEDESC ddsd;
+	ZeroMemory( &ddsd, sizeof(ddsd) );
+	ddsd.dwSize = sizeof(ddsd);
+	ddsd.dwFlags = DDSD_CAPS;
+	ddsd.ddsCaps.dwCaps = DDSCAPS_PRIMARYSURFACE;
+
+	if( m_bFullScreen )
+	{
+		m_pDD->SetCooperativeLevel( hWnd, DDSCL_EXCLUSIVE | DDSCL_FULLSCREEN );
+		if( FAILED(m_pDD->SetDisplayMode( nWidth, nHeight, 16 )) )
+		{
+			ERR( _T("Error SetDiaplayMode\n") );
+			return FALSE;
+		}
+
+		m_rcWindow.left = 0;
+		m_rcWindow.top = 0;
+		m_rcWindow.right = nWidth;
+		m_rcWindow.bottom = nHeight;
+
+		ddsd.dwFlags |= DDSD_BACKBUFFERCOUNT;
+		ddsd.dwBackBufferCount = 1;
+		ddsd.ddsCaps.dwCaps |= DDSCAPS_FLIP | DDSCAPS_COMPLEX;
+	}
+	else
+	{
+		m_pDD->SetCooperativeLevel( hWnd, DDSCL_NORMAL );
+	}
+
+	// 建立前台表面
+	hr = m_pDD->CreateSurface( &ddsd, &m_pddsFrontBuffer, NULL );
+	if( FAILED(hr) )
+	{
+		ERR( _T("Error Create Front Buffer\n") );
+		return FALSE;
+	}
+
+	// create clipper
+	LPDIRECTDRAWCLIPPER pClipper = NULL; 
+	m_pDD->CreateClipper(0, &pClipper, NULL);
+	if( pClipper )
+	{
+		pClipper->SetHWnd(0, hWnd);
+		m_pddsFrontBuffer->SetClipper(pClipper);
+		pClipper->Release();
+	}
+
+	// 显式建立后台表面
+	m_pddsBackBuffer = (LPDIRECTDRAWSURFACE)CreateSurface(nWidth, nHeight, TRUE, FALSE);
+	if( (INT)m_pddsBackBuffer == GT_INVALID )
+		m_pddsBackBuffer = NULL;
+
+	if( m_pddsBackBuffer )
+	{
+		// 确定色彩格式
+		ddsd.dwSize = sizeof(ddsd);
+		m_pddsBackBuffer->GetSurfaceDesc( &ddsd );
+		if( 32 == ddsd.ddpfPixelFormat.dwRGBBitCount )
+		{
+			m_ePixelFormat = EPF_888;
+		}
+		else
+		{
+			if( 0x7e0 == ddsd.ddpfPixelFormat.dwGBitMask )
+				m_ePixelFormat = EPF_565;
+			else
+				m_ePixelFormat = EPF_555;
+		}
+	}
+
+	if( m_bFullScreen )
+	{
+		SetWindowLong( hWnd, GWL_STYLE,
+			WS_CHILD|WS_CLIPSIBLINGS|WS_CLIPCHILDREN|WS_VISIBLE );
+		// SetWindowLong(hWnd, GWL_STYLE, WS_POPUP| WS_VISIBLE);
+		SetWindowPos(hWnd,HWND_TOP,0,0,0,0,SWP_FRAMECHANGED|SWP_NOMOVE|SWP_NOSIZE);
+	}
+	else
+	{
+		// 调节窗口客户区为要求的大小
+		RECT rcInt;	// rcInt相当于rcClient
+		RECT rcExt;	// rcExt相当于rcWindow
+
+		// 计算边框的大小
+		::GetWindowRect(hWnd, &rcExt);
+		::GetClientRect(hWnd, &rcInt);
+		INT x = (rcExt.right-rcExt.left) - (rcInt.right-rcInt.left);
+		INT y = (rcExt.bottom-rcExt.top) - (rcInt.bottom-rcInt.top);
+
+		// 新的窗口大小
+		SetWindowPos(hWnd, HWND_TOP, 0, 0, nWidth+x, nHeight+y, SWP_SHOWWINDOW);
+
+		// 得到窗口显示区的实际坐标
+		::GetClientRect(hWnd, &m_rcWindow);
+		::ClientToScreen(hWnd, (LPPOINT)&m_rcWindow);
+		::ClientToScreen(hWnd, (LPPOINT)&m_rcWindow + 1);
+	}
+	
+	return TRUE;
+}
+
+
+//-----------------------------------------------------------------------------
+// destroy
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::Destroy()
+{
+	if( !m_bFullScreen )
+		SAFE_RELEASE(m_pddsBackBuffer);
+
+	SAFE_RELEASE(m_pddsFrontBuffer);
+
+	if( m_pDD )
+	{
+		// get handle of main window
+		HWND hWnd = (HWND)m_pGlobeVar->GetDword(_T("HWND"));
+		m_pDD->SetCooperativeLevel(hWnd, DDSCL_NORMAL);
+		m_pDD->RestoreDisplayMode();
+	}
+
+	SAFE_RELEASE(m_pDD);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// render
+//-----------------------------------------------------------------------------
+BOOL CDDrawInterface::Render()
+{
+	static DWORD dwLastTick = timeGetTime();
+	static INT nFrameCounter = 0;
+	static TCHAR sFpsBuf[64]={0};
+
+	if( m_bShowFPS )
+	{
+		++nFrameCounter;
+		DWORD dwCurrentTick = timeGetTime();
+		if( dwCurrentTick - dwLastTick >= 200 )	// 200 毫秒刷新1次
+		{
+			nFrameCounter = nFrameCounter * 1000 / (dwCurrentTick - dwLastTick);
+			wsprintf( sFpsBuf, _T("fps%d"), nFrameCounter );
+			nFrameCounter = 0;
+			dwLastTick = dwCurrentTick;
+		}
+			
+		HDC hdc;
+		if( m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+		{
+			SetBkMode( hdc, OPAQUE );
+			SetTextColor( hdc, RGB(0,0,0) );
+			TextOut( hdc, 0, 0, sFpsBuf, lstrlen(sFpsBuf) );
+			m_pddsBackBuffer->ReleaseDC( hdc );
+		}
+	}
+
+	
+	// 把等待垂直回扫注释掉了
+	// this->m_pDD->WaitForVerticalBlank(DDWAITVB_BLOCKBEGIN, 0);
+	HRESULT hr = m_pddsFrontBuffer->Blt( &m_rcWindow, m_pddsBackBuffer,
+		NULL, DDBLT_DONOTWAIT, NULL );
+
+	if( hr == DDERR_SURFACELOST )
+	{
+		m_pddsFrontBuffer->Restore();
+		m_pddsBackBuffer->Restore();
+		return FALSE;
+	}
+
+	return TRUE;
+}
+
+
+//-----------------------------------------------------------------------------
+// UpdateWindowPos
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::UpdateWindowPos()
+{
+	if( m_bFullScreen )
+		return;
+
+	HWND hWnd = (HWND)m_pGlobeVar->GetDword(_T("HWND"));
+	if( hWnd )
+	{
+		::GetClientRect(hWnd, &m_rcWindow);
+		::ClientToScreen(hWnd, (LPPOINT)&m_rcWindow);
+		::ClientToScreen(hWnd, (LPPOINT)&m_rcWindow + 1 );
+	}
+
+	m_pddsFrontBuffer->Blt( &m_rcWindow, m_pddsBackBuffer,
+		NULL, DDBLT_WAIT, NULL );
+}
+
+
+
+//-----------------------------------------------------------------------------
+// CreateSurface
+//-----------------------------------------------------------------------------
+DWORD CDDrawInterface::CreateSurface(INT nWidth, INT nHeight, BOOL bVidMem, BOOL bAlpha)
+{
+	DDSURFACEDESC ddsd;
+	ZeroMemory( &ddsd, sizeof(ddsd) );
+	ddsd.dwSize = sizeof(ddsd);
+	ddsd.dwFlags = DDSD_CAPS | DDSD_WIDTH | DDSD_HEIGHT;
+	if( bVidMem )
+		ddsd.ddsCaps.dwCaps = DDSCAPS_OFFSCREENPLAIN | DDSCAPS_LOCALVIDMEM
+			| DDSCAPS_VIDEOMEMORY;
+	else
+		ddsd.ddsCaps.dwCaps = DDSCAPS_OFFSCREENPLAIN | DDSCAPS_SYSTEMMEMORY;
+	ddsd.dwWidth = nWidth;
+	ddsd.dwHeight = nHeight;
+
+	LPDIRECTDRAWSURFACE pdds;
+	HRESULT nRet = m_pDD->CreateSurface( &ddsd, &pdds, NULL );
+	ASSERT( nRet == DD_OK );
+	if( DD_OK != nRet )
+		return GT_INVALID;
+
+	return (DWORD)pdds; 
+}
+
+
+//-----------------------------------------------------------------------------
+// CreateSurface from direct draw surface description
+//-----------------------------------------------------------------------------
+DWORD CDDrawInterface::CreateSurfaceFromDDSD(LPVOID pDDSData)
+{
+	DDSURFACEDESC ddsd;
+	ZeroMemory( &ddsd, sizeof(ddsd) );
+	ddsd.dwSize = sizeof(ddsd);
+	ddsd.dwFlags = DDSD_CAPS | DDSD_WIDTH | DDSD_HEIGHT;
+
+	LPDIRECTDRAWSURFACE pdds;
+	if( FAILED(m_pDD->CreateSurface( &ddsd, &pdds, NULL )) )
+		return GT_INVALID;
+
+	return (DWORD)pdds;
+}
+
+
+
+//-----------------------------------------------------------------------------
+// release surface
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::ReleaseSurface(DWORD dwSurfaceHandle)
+{
+	LPDIRECTDRAWSURFACE pdds = (LPDIRECTDRAWSURFACE)dwSurfaceHandle;
+	SAFE_RELEASE(pdds);
+}
+
+
+
+//-----------------------------------------------------------------------------
+//param dwSurfaceHandle=0代表要取得后台缓冲的HDC
+//-----------------------------------------------------------------------------
+DWORD CDDrawInterface::GetDC(DWORD dwSurfaceHandle)
+{
+	ASSERT(GT_INVALID != dwSurfaceHandle);
+	HDC hdc = 0;
+
+	if( 0 == dwSurfaceHandle )
+	{
+		if( DD_OK == m_pddsBackBuffer->GetDC(&hdc) )
+			return (DWORD)hdc;
+		else
+			return GT_INVALID;
+	}
+	
+	if( DD_OK == ((LPDIRECTDRAWSURFACE)dwSurfaceHandle)->GetDC(&hdc) )
+		return (DWORD)hdc; 
+	else 
+		return GT_INVALID;	
+}
+
+
+//-----------------------------------------------------------------------------
+// release dc
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::ReleaseDC(DWORD dwSurfaceHandle, DWORD dwDC)
+{
+	ASSERT(dwDC);
+	ASSERT(GT_INVALID != dwSurfaceHandle);
+	ASSERT(GT_INVALID != dwDC);
+
+	if( 0 == dwSurfaceHandle )
+	{
+		m_pddsBackBuffer->ReleaseDC((HDC)dwDC);
+		return;
+	}
+
+	((LPDIRECTDRAWSURFACE)dwSurfaceHandle)->ReleaseDC((HDC)dwDC);
+}
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::Draw(DWORD dwSurface, INT x, INT y)
+{
+	DDSURFACEDESC		ddsd;
+	LPDIRECTDRAWSURFACE	pdds=(LPDIRECTDRAWSURFACE)dwSurface;
+	INT                 x1=x, y1=y;
+   
+	if( x >= m_nWidth || y >= m_nHeight ) 
+		return;
+
+	ASSERT( 0 != dwSurface || NULL != m_pddsBackBuffer );
+   
+	ddsd.dwSize = sizeof(ddsd);
+	pdds->GetSurfaceDesc( &ddsd );
+
+	tagRect	rc(0, 0, ddsd.dwWidth, ddsd.dwHeight);
+   
+	if( x<0 ) 
+	{
+		if( (x+ddsd.dwWidth)<0 ) 
+			return; 
+		else 
+		{
+			x1 = 0; rc.left = -x;
+		}
+	}
+
+	if( y<0 )
+	{
+		if( (y+ddsd.dwHeight)<0 ) 
+			return;  
+		else
+		{
+			y1 = 0; rc.top = -y;
+		}
+	}
+
+   if( x+(INT)ddsd.dwWidth > m_nWidth )
+	   rc.right  = m_nWidth - x;
+
+   if( y+(INT)ddsd.dwHeight > m_nHeight) 
+	   rc.bottom = m_nHeight - y;
+   
+	m_pddsBackBuffer->BltFast(x1, y1, pdds, (RECT*)&rc, DDBLTFAST_NOCOLORKEY);
+}
+
+
+VOID CDDrawInterface::Draw(DWORD dwDestSurfaceHandle, DWORD dwSrcSurfaceHandle, 
+		PRECT prcDest, PRECT prcSrc)
+{
+	LPDIRECTDRAWSURFACE	pdds=(LPDIRECTDRAWSURFACE)dwSrcSurfaceHandle;
+	LPDIRECTDRAWSURFACE	dest_pdds=(LPDIRECTDRAWSURFACE)dwDestSurfaceHandle;
+	RECT                rcSrc, rcDest;
+
+	if( 0 == dwDestSurfaceHandle || GT_INVALID == dwDestSurfaceHandle )
+		dest_pdds = m_pddsBackBuffer;
+	if( 0 == dwSrcSurfaceHandle || GT_INVALID == dwSrcSurfaceHandle )
+		pdds = m_pddsBackBuffer;
+
+	DDSURFACEDESC		dest_ddsd;
+	dest_ddsd.dwSize = sizeof(dest_ddsd);
+	dest_pdds->GetSurfaceDesc( &dest_ddsd );
+
+	if( NULL == prcSrc )
+	{
+		DDSURFACEDESC		ddsd;
+		ddsd.dwSize = sizeof(ddsd);
+		pdds->GetSurfaceDesc( &ddsd );
+
+		rcSrc.left	= 0;
+		rcSrc.top	= 0;
+		rcSrc.right = ddsd.dwWidth;
+		rcSrc.bottom= ddsd.dwHeight;
+	}
+	else
+	{
+		rcSrc.left = prcSrc->left;
+		rcSrc.right = prcSrc->right;
+		rcSrc.top = prcSrc->top;
+		rcSrc.bottom = prcSrc->bottom;
+	}
+
+	rcDest.left = prcDest->left;
+	rcDest.right = prcDest->right;
+	rcDest.top = prcDest->top;
+	rcDest.bottom = prcDest->bottom;
+   
+	FLOAT fRatioX = (FLOAT)(rcSrc.right - rcSrc.left) 
+		/ (rcDest.right - rcDest.left);
+	FLOAT fRatioY = (FLOAT)(rcSrc.bottom - rcSrc.top) 
+		/ (rcDest.bottom - rcDest.top);
+
+	// 图片是否完全在后台缓冲范围外
+	if( rcDest.left >= (INT)dest_ddsd.dwWidth || rcDest.top >= (INT)dest_ddsd.dwHeight 
+		|| rcDest.right < 0 || rcDest.bottom < 0 ) 
+		return;
+  
+	if( rcDest.left<0 ) 
+	{
+		rcSrc.left -= (LONG)(rcDest.left * fRatioX);
+		if( rcSrc.left >= rcSrc.right )
+			rcSrc.left = rcSrc.right - 1;
+		rcDest.left = 0;
+	}
+	if( rcDest.top<0 ) 
+	{
+		rcSrc.top -= (LONG)(rcDest.top * fRatioY);
+		if( rcSrc.top >= rcSrc.bottom )
+			rcSrc.top = rcSrc.bottom - 1;
+		rcDest.top = 0;
+	}
+	
+	if( rcDest.right > (INT)dest_ddsd.dwWidth )
+	{
+		rcSrc.right -= (LONG)(fRatioX * (rcDest.right - (INT)dest_ddsd.dwWidth));
+		if( rcSrc.right <= 0 )
+			rcSrc.right = 1;
+		rcDest.right = (INT)dest_ddsd.dwWidth;
+	}
+	if( rcDest.bottom > m_nHeight )
+	{
+		rcSrc.bottom -= (LONG)(fRatioY * (rcDest.bottom - (INT)dest_ddsd.dwHeight));
+		if( rcSrc.bottom <= 0 )
+			rcSrc.bottom = 1;
+		rcDest.bottom = (INT)dest_ddsd.dwHeight;
+	}
+
+	dest_pdds->Blt(&rcDest, pdds, &rcSrc, DDBLT_DONOTWAIT, 0);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::Draw(DWORD dwSurfaceHandle, PRECT prcDest, PRECT prcSrc, DWORD dwColor)
+{
+	LPDIRECTDRAWSURFACE	pdds=(LPDIRECTDRAWSURFACE)dwSurfaceHandle;
+	RECT                rcSrc, rcDest;
+
+	if( 0 == dwSurfaceHandle || GT_INVALID == dwSurfaceHandle )
+		pdds = m_pddsBackBuffer;
+
+	if( NULL == prcSrc )
+	{
+		DDSURFACEDESC		ddsd;
+		ddsd.dwSize = sizeof(ddsd);
+		pdds->GetSurfaceDesc( &ddsd );
+
+		rcSrc.left	= 0;
+		rcSrc.top	= 0;
+		rcSrc.right = ddsd.dwWidth;
+		rcSrc.bottom= ddsd.dwHeight;
+	}
+	else
+	{
+		rcSrc.left = prcSrc->left;
+		rcSrc.right = prcSrc->right;
+		rcSrc.top = prcSrc->top;
+		rcSrc.bottom = prcSrc->bottom;
+	}
+
+	rcDest.left = prcDest->left;
+	rcDest.right = prcDest->right;
+	rcDest.top = prcDest->top;
+	rcDest.bottom = prcDest->bottom;
+   
+	FLOAT fRatioX = (FLOAT)(rcSrc.right - rcSrc.left) 
+		/ (rcDest.right - rcDest.left);
+	FLOAT fRatioY = (FLOAT)(rcSrc.bottom - rcSrc.top) 
+		/ (rcDest.bottom - rcDest.top);
+
+	// 图片是否完全在后台缓冲范围外
+	if( rcDest.left >= m_nWidth || rcDest.top >= m_nHeight 
+		|| rcDest.right < 0 || rcDest.bottom < 0 ) 
+		return;
+  
+	if( rcDest.left<0 ) 
+	{
+		rcSrc.left -= (LONG)(rcDest.left * fRatioX);
+		if( rcSrc.left >= rcSrc.right )
+			rcSrc.left = rcSrc.right - 1;
+		rcDest.left = 0;
+	}
+	if( rcDest.top<0 ) 
+	{
+		rcSrc.top -= (LONG)(rcDest.top * fRatioY);
+		if( rcSrc.top >= rcSrc.bottom )
+			rcSrc.top = rcSrc.bottom - 1;
+		rcDest.top = 0;
+	}
+	
+	if( rcDest.right > m_nWidth )
+	{
+		rcSrc.right -= (LONG)(fRatioX * (rcDest.right - m_nWidth));
+		if( rcSrc.right <= 0 )
+			rcSrc.right = 1;
+		rcDest.right = m_nWidth;
+	}
+	if( rcDest.bottom > m_nHeight )
+	{
+		rcSrc.bottom -= (LONG)(fRatioY * (rcDest.bottom - m_nHeight));
+		if( rcSrc.bottom <= 0 )
+			rcSrc.bottom = 1;
+		rcDest.bottom = m_nHeight;
+	}
+
+	m_pddsBackBuffer->Blt(&rcDest, pdds, &rcSrc, DDBLT_DONOTWAIT, 0);
+}
+
+
+//-----------------------------------------------------------------------------
+// 使用指定颜色清除一块区域
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::Clear(RECT* pRC, DWORD dwFillColor, DWORD dwSurfaceHandle)
+{
+
+	LPDIRECTDRAWSURFACE	pdds = m_pddsBackBuffer;
+	if( GT_INVALID != dwSurfaceHandle ) 
+		pdds=(LPDIRECTDRAWSURFACE)dwSurfaceHandle;
+
+	switch( m_ePixelFormat )
+	{
+	case EPF_565:
+		dwFillColor = RGB565(dwFillColor);
+		break;
+	case EPF_555:
+		dwFillColor = RGB555(dwFillColor);
+		break;
+	}
+
+	m_ddbfxClear.dwFillColor = dwFillColor;
+
+	if( NULL != pRC )
+	{
+		RECT rc;
+		rc.left = pRC->left < 0 ? 0 : pRC->left;
+		rc.top = pRC->top < 0 ? 0 : pRC->top;
+		rc.right = pRC->right >= m_nWidth ? m_nWidth : pRC->right;
+		rc.bottom = pRC->bottom >= m_nHeight ? m_nHeight : pRC->bottom;
+
+		if( rc.right <= 0 || rc.bottom <= 0 )
+			return;
+
+		pdds->Blt(&rc, NULL, NULL, DDBLT_COLORFILL | DDBLT_DONOTWAIT, 
+			&m_ddbfxClear);
+	}
+	else
+	{
+		pdds->Blt(NULL, NULL, NULL, DDBLT_COLORFILL | DDBLT_DONOTWAIT, 
+			&m_ddbfxClear);
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 输出文字
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::DrawText(INT nX, INT nY, LPCTSTR szString)
+{
+	HDC hdc;
+	if( m_pddsBackBuffer && m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+	{
+		SetBkMode( hdc, TRANSPARENT );
+		SetTextColor( hdc, RGB(210,210,210) );
+		TextOut( hdc, nX, nY, szString, lstrlen(szString) );
+		m_pddsBackBuffer->ReleaseDC( hdc );
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 调用::DrawTtext
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::DrawText(LPCTSTR szString, PRECT lpRect, DWORD dwStyle, 
+							   DWORD dwColor, BOOL bTransparent, DWORD dwBkColor)
+{
+	HDC hdc;
+	ASSERT(NULL != lpRect);
+	if( m_pddsBackBuffer && m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+	{
+
+		if( FALSE == bTransparent )
+		{
+			SetBkMode(hdc, OPAQUE);
+			dwBkColor = ARGB2GDI(dwBkColor);	
+			SetBkColor(hdc, (COLORREF)dwBkColor);
+		}
+		else
+		{
+			SetBkMode( hdc, TRANSPARENT );
+		}
+
+		dwColor = ARGB2GDI(dwColor);
+		SetTextColor( hdc, dwColor );
+
+		::DrawText( hdc, szString, -1, lpRect, dwStyle );
+		m_pddsBackBuffer->ReleaseDC( hdc );
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 将屏幕坐标转换为窗口view坐标
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::ScreenToView(POINT& pt)
+{
+	pt.x -= m_rcWindow.left;
+	pt.y -= m_rcWindow.top;
+
+	ClientToView(pt);
+}
+
+
+//-----------------------------------------------------------------------------
+// 将窗口client坐标转换为窗口view坐标(view坐标为逻辑坐标)
+//-----------------------------------------------------------------------------
+VOID CDDrawInterface::ClientToView(POINT& pt)
+{
+	if( ( m_rcWindow.right == m_rcWindow.left )
+		|| ( m_rcWindow.bottom == m_rcWindow.top ) )
+		return;	// 防止被0除
+
+	pt.x = pt.x * m_nWidth / (m_rcWindow.right - m_rcWindow.left);
+	pt.y = pt.y * m_nHeight / (m_rcWindow.bottom - m_rcWindow.top);
+}
+
+
+
+
+}	// namespace vEngine {
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+//!\file d3d_interface.h
+//!\author Lyp
+//!
+//!\date 2002-03-08
+//! last 2005-11-18
+//!
+//!\brief d3d interface
+//-----------------------------------------------------------------------------
+#pragma once
+namespace vEngine {
+//-----------------------------------------------------------------------------
+// Name: struct tagHWCAPS
+// Desc: 硬件能力结构
+//-----------------------------------------------------------------------------
+struct tagHWCAPS
+{
+	bool bHardware;
+	bool bRenderTarget;
+	bool bTexture24;
+	bool bTexture32;
+	bool bTextureDXT1;
+	bool bZBuffer;
+	bool bLargeTexture;
+	bool bPow2Texture;
+	bool bSquareTexture;
+	bool bTextureOpModule;
+	bool bBlendInvSrcColor;
+	bool bAlphaGroundBlend;
+};
+
+
+
+//-------------------------------------------------------------------------
+// 匹配纹理搜索结构
+//-------------------------------------------------------------------------
+struct TEXTURESEARCHINFO
+{
+	DWORD dwDesiredBPP;   // Input for texture format search
+	bool  bUseAlpha;
+	DWORD dwAlphaBitMask;
+	bool  bUsePalette;
+	bool  bFoundGoodFormat;
+	bool  bCompression;
+	DWORD CompressionFromat; // D3DFMT_DXT1 - D3DFMT_DXT5
+	
+	DDPIXELFORMAT* pddpf; // Output of texture format search
+};
+
+
+
+#define LPSURFACE LPDIRECTDRAWSURFACE7
+#define LPTEXTURE LPDIRECTDRAWSURFACE7
+//-----------------------------------------------------------------------------
+//!\brief d3d interface
+//!	Surface :	一般指离屏表面
+//!	Buffer	: 	指专用表面缓冲区
+//-----------------------------------------------------------------------------
+class CD3DInterface : public CDisplay
+{
+public:
+	virtual BOOL	Init(INT nWidth, INT nHeight, BOOL bFullScreen);
+	virtual VOID	Destroy();
+
+	virtual DWORD	CreateSurface(INT nWidth, INT nHeight, BOOL bVidMem, BOOL bAlpha);
+	virtual VOID	ReleaseSurface(DWORD dwSurfaceHandle);
+
+	//!\param dwSurfaceHandle=0代表要取得后台缓冲的HDC
+	virtual DWORD	GetDC(DWORD dwSurface);
+	virtual VOID	ReleaseDC(DWORD dwSurface, DWORD dwDC);
+	virtual VOID	Draw(DWORD dwSurface, INT nX, INT nY);
+	virtual VOID	Draw(DWORD dwSurfaceHandle, PRECT prcDest, PRECT prcSrc, DWORD dwColor);
+	virtual VOID	Draw(DWORD dwDestSurfaceHandle, DWORD dwSrcSurfaceHandle, PRECT prcDest, PRECT prcSrc);
+
+	// 将屏幕坐标转换为窗口view坐标(view坐标为逻辑坐标)
+	virtual VOID	ScreenToView(POINT& pt);
+	// 将窗口client坐标转换为窗口view坐标(view坐标为逻辑坐标)
+	virtual VOID	ClientToView(POINT& pt);
+
+
+	virtual BOOL	Render();
+	virtual VOID	UpdateWindowPos();
+
+	virtual VOID	Clear(RECT* pRC, DWORD dwFillColor, DWORD dwSurfaceHandle);
+	virtual VOID	DrawText(INT nX, INT nY, LPCTSTR szString);
+	virtual VOID	DrawText(LPCTSTR szString, PRECT lpRect, DWORD dwStyle, 
+		DWORD dwColor, BOOL bTransparent, DWORD dwBkColor);
+
+
+    CD3DInterface();
+	~CD3DInterface();
+
+private:
+	GUID				m_GUIDDevice;			// 设备的GUID
+
+    LPDIRECTDRAW7		m_pDD;					// 主显示对象
+ 	LPDIRECT3D7			m_pD3D;					// 三维显示对象
+    LPDIRECT3DDEVICE7	m_pd3dDevice;			// 三维显示设备
+
+	LPSURFACE			m_pddsFrontBuffer;		// 前台缓冲区指针
+    LPSURFACE			m_pddsBackBuffer;		// 后台缓冲区指针
+	DDBLTFX				m_ddbfxClear;
+							
+	DDPIXELFORMAT		m_PixelFormat;			// 基本纹理格式(ARGB1555)
+	DDPIXELFORMAT		m_PixelFormat32;		// 32位纹理格式
+	DDPIXELFORMAT		m_PixelFormatDXT1;		// DXT1压缩纹理格式
+
+	D3DDEVICEDESC7		m_D3DDesc;				// 三维硬件信息
+   
+    HWND				m_hWnd;
+	HFONT				m_hFont;				// 字体
+	tagHWCAPS			m_Caps;					// 硬件能力
+   
+
+	HRESULT	CreateFullScreenDisplay(INT nWidth, INT nHeight, INT nBPP);
+	HRESULT	CreateWindowedDisplay(INT nWidth, INT nHeight);
+
+	// 调整纹理大小
+	VOID	AdjustTextureSize(DDSURFACEDESC2& ddsd, INT nWidth, INT nHeight);
+	VOID	SetD3DState();	// 设置三维Rander/Texture状态
+
+  
+	HRESULT	GetCaps(bool bRunTest);	// 得到硬件设备能力
+	// 纹理枚举回调
+	static HRESULT CALLBACK TextureSearchCallback(DDPIXELFORMAT* pddpf,VOID* param);
+
+	// GetBitMaskInfo
+	__forceinline VOID GetBitMaskInfo(DWORD dwBitMask, DWORD& dwShift, DWORD& dwBits)
+	{
+		if (dwBitMask) 	while ((dwBitMask & 1) == 0) {dwShift++; dwBitMask >>= 1;}
+		while ((dwBitMask & 1) != 0) {dwBits++;	dwBitMask >>= 1;}
+	}
+
+	// 颜色格式的转化
+	__forceinline DWORD	ARGB2GDI(DWORD dwColor32)
+	{
+		// GDI : 0x00bbggrr
+		return (dwColor32 & 0x00ff00)		// green
+			| ((dwColor32&0xff0000)>>16)	// red
+			| ((dwColor32 & 0xff) << 16);	// blue
+	}
+
+};
+
+
+
+
+__forceinline void SetTLVertex(D3DTLVERTEX *pVertex, D3DVALUE sx,  D3DVALUE sy,    
+							   D3DVALUE sz, D3DVALUE rhw, D3DCOLOR color, 
+							   D3DCOLOR specular, D3DVALUE tu,  D3DVALUE tv)
+{
+	pVertex->sx  = sx;
+	pVertex->sy  = sy;
+	pVertex->sz  = sz;
+	pVertex->rhw = rhw;
+	pVertex->color    = color;
+	pVertex->specular = specular;
+	pVertex->tu = tu;
+	pVertex->tv = tv;
+}
+
+
+__forceinline void SetTLVertexUV(D3DTLVERTEX *pTLVertex, D3DVALUE tu, D3DVALUE tv)
+{
+	pTLVertex->tu = tu;
+	pTLVertex->tv = tv;
+}
+
+
+__forceinline void SetTLVertexXY(D3DTLVERTEX *pTLVertex, D3DVALUE x, D3DVALUE y)
+{
+	pTLVertex->sx = x;
+    pTLVertex->sy = y;
+}
+
+__forceinline void SetTLVertexXYColor(D3DTLVERTEX *pTLVertex, D3DVALUE x, 
+									  D3DVALUE y, D3DCOLOR color)
+{
+	pTLVertex->sx = x;
+    pTLVertex->sy = y;
+    pTLVertex->color = color;
+    pTLVertex->specular = color;
+}
+
+
+__forceinline void SetTLVertexZ(D3DTLVERTEX *pTLVertex, D3DVALUE z)
+{
+	pTLVertex->sz = z;
+}
+
+
+__forceinline void SetTLVertexColor(D3DTLVERTEX *pTLVertex, D3DCOLOR color)
+{
+	pTLVertex->dcColor = color;
+}
+
+__forceinline void SetTLVertexUVColor(D3DTLVERTEX *pTLVertex, D3DVALUE tu, 
+									  D3DVALUE tv, D3DCOLOR color)
+{																
+	pTLVertex->tu = tu;
+	pTLVertex->tv = tv;
+	pTLVertex->dcColor = color;
+}
+
+__forceinline void SetTLVertex(D3DTLVERTEX *pTLVertex, D3DVALUE x, D3DVALUE y, 
+							   D3DVALUE tu, D3DVALUE tv, D3DCOLOR color)
+{																
+	pTLVertex->sx = x;
+    pTLVertex->sy = y;
+    pTLVertex->tu = tu;
+	pTLVertex->tv = tv;
+	pTLVertex->dcColor = color;
+}
+
+
+
+} // namespace vEngine {
+
+
+//-----------------------------------------------------------------------------
+//!\file d3d_interface.cpp
+//!\author Lyp
+//!
+//!\date 2002-03-08
+//! last 2005-11-18
+//!
+//!\brief d3d interface
+//-----------------------------------------------------------------------------
+#include "..\stdafx.h"
+#include "display.h"	// 基类
+#include "d3d_interface.h"
+#include "..\console\simple_console.h"
+
+// 使用其它部件
+#include "..\variable\var_container.h"
+
+namespace vEngine {
+// for short
+#define LPSURFACE LPDIRECTDRAWSURFACE7
+#define LPTEXTURE LPDIRECTDRAWSURFACE7
+
+// rgb16: specify a red, green, blue color data structrue to a 16bit variable.
+#define RGB16(R, G, B)    ((WORD)(((WORD)(B) >> 3) | ((WORD)(G) >> 2 << 5) \
+						  | ((WORD)(R) >> 3 << 11)))
+
+// RGB16TO32: specify 16bit color to 32bit color
+#define RGB16TO32(color)  (RGB( ((WORD)color >> 11) * 0xff / 0x1f, \
+                          ((WORD)(color << 5) >> 10) * 0xff / 0x3f, \
+						  ((WORD)(color << 11) >> 11) * 0xff / 0x1f))
+
+
+//-----------------------------------------------------------------------------
+// Construction/distruction
+//-----------------------------------------------------------------------------
+CD3DInterface::CD3DInterface() 
+{
+	m_hWnd               = 0L;
+	m_pDD                = NULL;
+	m_pD3D               = NULL;
+    m_pd3dDevice         = NULL;
+    
+    m_pddsFrontBuffer    = NULL;
+    m_pddsBackBuffer     = NULL;
+
+	ZeroMemory( &m_ddbfxClear, sizeof(m_ddbfxClear) );
+	m_ddbfxClear.dwSize = sizeof(m_ddbfxClear);
+
+	ZeroMemory(&m_Caps, sizeof(tagHWCAPS));
+	ZeroMemory(&m_PixelFormat, sizeof(DDPIXELFORMAT));
+	ZeroMemory(&m_PixelFormat32, sizeof(DDPIXELFORMAT));
+	ZeroMemory(&m_PixelFormatDXT1, sizeof(DDPIXELFORMAT));
+	ZeroMemory(&m_D3DDesc, sizeof(DDPIXELFORMAT));
+	ZeroMemory(&m_rcWindow, sizeof(RECT));
+
+	m_hFont = 0;
+}
+
+CD3DInterface::~CD3DInterface() 
+{
+	Destroy();
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 建立显示器, pGUID 指向Driver的 GUID
+//-----------------------------------------------------------------------------
+BOOL CD3DInterface::Init(INT nWidth, INT nHeight, BOOL bFullScreen)
+{
+	m_GUIDDevice     = IID_IDirect3DTnLHalDevice;
+
+    // DDraw stuff begins here
+    HRESULT hr = DirectDrawCreateEx(NULL, (VOID**)&m_pDD, IID_IDirectDraw7, NULL);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not create DirectDraw object"));
+		return FALSE;
+	}
+
+	m_hWnd		= (HWND)m_pGlobeVar->GetDword(_T("HWND"));
+	m_nWidth	= nWidth;
+	m_nHeight	= nHeight;
+
+	if( bFullScreen ) // 全屏方式
+	{
+		hr = CreateFullScreenDisplay(nWidth, nHeight, 32);
+	}
+	else // 窗口方式
+	{
+		hr = CreateWindowedDisplay(nWidth, nHeight);
+	}
+
+	if( FAILED(hr) )
+	{
+		IMSG(_T("could not create Display"));
+		return FALSE;
+	}
+
+	return TRUE;
+}
+
+//-----------------------------------------------------------------------------
+// 清除部件
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::Destroy()
+{
+	
+	SAFE_RELEASE(m_pd3dDevice);
+	SAFE_RELEASE(m_pD3D);
+	SAFE_RELEASE(m_pddsBackBuffer);
+	SAFE_RELEASE(m_pddsFrontBuffer);
+	
+	if( m_pDD )
+	{
+		m_pDD->SetCooperativeLevel(m_hWnd, DDSCL_NORMAL);
+		m_pDD->RestoreDisplayMode();
+	}
+
+	if( m_hFont )
+		DeleteObject(m_hFont);
+
+
+	SAFE_RELEASE(m_pDD);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// 建立全屏显示
+//-----------------------------------------------------------------------------
+HRESULT CD3DInterface::CreateFullScreenDisplay(INT nWidth, INT nHeight, INT nBPP)
+{
+	// Set cooperative level
+	HRESULT hr = m_pDD->SetCooperativeLevel(m_hWnd, DDSCL_EXCLUSIVE|DDSCL_FULLSCREEN);
+    if( FAILED(hr) ) 
+		IMSG(_T("could not set cooperative level to exclusive"));
+
+    // Set the display mode
+    hr = m_pDD->SetDisplayMode((DWORD)nWidth, (DWORD)nHeight, (DWORD)nBPP, 0, 0);
+    if( FAILED(hr) ) 
+	{
+		IMSG(_T("could not set %d X %d X %d display mode"), nWidth, nHeight, nBPP);
+		return hr;
+	}
+	
+    // Create primary surface (with backbuffer attached)
+    DDSURFACEDESC2 ddsd;
+    ZeroMemory(&ddsd, sizeof (ddsd));
+    
+	ddsd.dwSize            = sizeof( ddsd );
+    ddsd.dwFlags           = DDSD_CAPS | DDSD_BACKBUFFERCOUNT;
+    ddsd.ddsCaps.dwCaps    = DDSCAPS_PRIMARYSURFACE | DDSCAPS_FLIP | DDSCAPS_COMPLEX  | DDSCAPS_3DDEVICE;
+	ddsd.dwBackBufferCount = 1;
+
+	// Set the front buffer
+    hr = m_pDD->CreateSurface(&ddsd, &m_pddsFrontBuffer, NULL);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not create front buffer"), hr);
+		return hr;
+	}
+	
+    // Get a pointer to the back buffer
+    DDSCAPS2 ddscaps;
+    ZeroMemory (&ddscaps, sizeof (ddscaps));
+    ddscaps.dwCaps = DDSCAPS_BACKBUFFER;
+    
+    hr = m_pddsFrontBuffer->GetAttachedSurface(&ddscaps, &m_pddsBackBuffer);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not attach back buffer to front"));
+		return hr;
+	}
+		
+    m_pddsBackBuffer->AddRef();
+
+	if( m_pddsBackBuffer )
+	{
+		// 确定色彩格式
+		ddsd.dwSize = sizeof(ddsd);
+		m_pddsBackBuffer->GetSurfaceDesc( &ddsd );
+		if( 32 == ddsd.ddpfPixelFormat.dwRGBBitCount )
+		{
+			m_ePixelFormat = EPF_888;
+		}
+		else
+		{
+			if( 0x7e0 == ddsd.ddpfPixelFormat.dwGBitMask )
+				m_ePixelFormat = EPF_565;
+			else
+				m_ePixelFormat = EPF_555;
+		}
+	}
+	
+	// 设置Clipper以便正确显示输入法窗口
+	LPDIRECTDRAWCLIPPER pcClipper;
+	hr = m_pDD->CreateClipper(0, &pcClipper, NULL);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("Could not create clipper object"));
+		return hr;
+	}
+	hr = pcClipper->SetHWnd (0, m_hWnd);
+    if( FAILED(hr) ) 
+	{
+		pcClipper->Release();
+		IMSG(_T("could not set HWnd for clipper object"));
+		return hr;
+    }
+	hr = m_pddsFrontBuffer->SetClipper(pcClipper);
+    if( FAILED(hr) )
+    {
+		pcClipper->Release();
+		IMSG(_T("could not set clipper to front buffer"));
+		return hr;
+    }
+	// Done with clipper
+    pcClipper->Release();
+
+	ddsd.dwSize = sizeof(DDSURFACEDESC2);
+    m_pDD->GetDisplayMode( &ddsd );
+    if( ddsd.ddpfPixelFormat.dwRGBBitCount <= 8 )
+	{
+		IMSG(_T("wrong display mode"));
+		return DDERR_INVALIDMODE;
+	}
+
+    hr = m_pDD->QueryInterface(IID_IDirect3D7, (VOID**)&m_pD3D);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not find IID_IDirect3D7 interface"));
+		return hr;
+	}
+    
+	// 这里我们不建立 Z 缓冲
+	// this->CreateZBuffer();
+	    
+	// Create the device. The device is created off of our back buffer, which
+    // becomes the render target for the newly created device. Note that the
+    // z-buffer must be created BEFORE the device
+	hr = m_pD3D->CreateDevice(m_GUIDDevice, m_pddsBackBuffer, &m_pd3dDevice);
+	
+	if (FAILED(hr))
+    {
+        // This call could fail for many reasons. The most likely cause is
+        // that we specifically requested a hardware device, without knowing
+        // whether there is even a 3D card installed in the system. Another
+        // possibility is the hardware is incompatible with the current display
+        // mode (the correct implementation would use enumeration for this.)
+		IMSG(_T("could not find 3D hardware"));
+		return hr;
+	}
+
+	m_Caps.bHardware = true;
+    
+    hr = m_pd3dDevice->SetRenderTarget(m_pddsBackBuffer, 0L);
+	if( FAILED(hr) ) 
+	{
+		IMSG(_T("could not set render target"));
+		return hr;
+	}
+
+	this->Clear(0, 0, (DWORD)m_pddsBackBuffer);
+
+	m_Caps.bRenderTarget = true;
+
+	hr = this->GetCaps(true);
+	if( FAILED(hr) )
+	{
+		IMSG(_T("could not get hardware ability information"));
+		return hr;
+	}
+ 
+	// 设置基本的 State
+	SetD3DState();
+
+	SetWindowLong( m_hWnd, GWL_STYLE,
+		WS_CHILD|WS_CLIPSIBLINGS|WS_CLIPCHILDREN|WS_VISIBLE );
+	SetWindowPos(m_hWnd,HWND_TOP,0,0,0,0,SWP_FRAMECHANGED|SWP_NOMOVE|SWP_NOSIZE);
+	
+	return S_OK;
+}
+    
+
+
+
+//-----------------------------------------------------------------------------
+// 建立窗口显示方式
+//-----------------------------------------------------------------------------
+HRESULT CD3DInterface::CreateWindowedDisplay(INT nWidth, INT nHeight)
+{
+    // Set cooperative level
+    HRESULT hr = m_pDD->SetCooperativeLevel(m_hWnd, DDSCL_NORMAL);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not set cooperative level to normal"));
+		return hr;
+	}
+
+	LPDIRECTDRAWCLIPPER pcClipper;
+    
+    // Create the primary surface
+    DDSURFACEDESC2 ddsd;
+    ZeroMemory (&ddsd, sizeof (ddsd));
+    ddsd.dwSize         = sizeof (ddsd);
+    ddsd.dwFlags        = DDSD_CAPS;
+    ddsd.ddsCaps.dwCaps = DDSCAPS_PRIMARYSURFACE;
+
+	hr = m_pDD->CreateSurface(&ddsd, &m_pddsFrontBuffer, NULL);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not create front buffer"));
+		return hr;
+	}
+
+    // Create the backbuffer surface
+    ddsd.dwFlags        = DDSD_CAPS | DDSD_WIDTH | DDSD_HEIGHT;    
+    ddsd.ddsCaps.dwCaps = DDSCAPS_OFFSCREENPLAIN | DDSCAPS_3DDEVICE;
+    ddsd.dwWidth        = (DWORD)nWidth;
+    ddsd.dwHeight       = (DWORD)nHeight;
+
+	hr = m_pDD->CreateSurface( &ddsd, &m_pddsBackBuffer, NULL );
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not create back buffer"));
+		return hr;
+	}
+
+	if( m_pddsBackBuffer )
+	{
+		// 确定色彩格式
+		ddsd.dwSize = sizeof(ddsd);
+		m_pddsBackBuffer->GetSurfaceDesc( &ddsd );
+		if( 32 == ddsd.ddpfPixelFormat.dwRGBBitCount )
+		{
+			m_ePixelFormat = EPF_888;
+		}
+		else
+		{
+			if( 0x7e0 == ddsd.ddpfPixelFormat.dwGBitMask )
+				m_ePixelFormat = EPF_565;
+			else
+				m_ePixelFormat = EPF_555;
+		}
+	}
+    
+	hr = m_pDD->CreateClipper (0, &pcClipper, NULL);
+	if( FAILED(hr) )
+	{
+		IMSG(_T("could not create clipper object"));
+		return hr;
+	}
+    
+	hr = pcClipper->SetHWnd(0, m_hWnd);
+    if( FAILED (hr) )
+    {
+        pcClipper->Release();
+        IMSG(_T("could not set HWnd for clipper object"));
+		return hr;
+    }
+
+	hr = m_pddsFrontBuffer->SetClipper(pcClipper);
+    if (FAILED (hr))
+    {
+        pcClipper->Release();
+        IMSG(_T("could not attach clipper to front buffer"));
+		return hr;
+    }
+
+    // Done with clipper
+    pcClipper->Release();
+
+	hr = m_pDD->QueryInterface(IID_IDirect3D7, (VOID**)&m_pD3D);
+    if( FAILED(hr) )
+	{
+		IMSG(_T("could not find IID_IDirect3D7 interface"));
+		return hr;
+	}
+        
+	// Create the device. The device is created off of our back buffer, which
+    // becomes the render target for the newly created device. Note that the
+    // z-buffer must be created BEFORE the device
+	hr = m_pD3D->CreateDevice (m_GUIDDevice, m_pddsBackBuffer, &m_pd3dDevice);
+	if (FAILED(hr))
+    {
+        // This call could fail for many reasons. The most likely cause is
+        // that we specifically requested a hardware device, without knowing
+        // whether there is even a 3D card installed in the system. Another
+        // possibility is the hardware is incompatible with the current display
+        // mode (the correct implementation would use enumeration for this.)
+		IMSG(_T("could not find 3D hardware"));
+		return hr;
+    }
+    
+    hr = m_pd3dDevice->SetRenderTarget(m_pddsBackBuffer, 0L);
+	if( FAILED(hr) )
+	{
+		IMSG(_T("could not set render render target"));
+		return hr;
+	}
+
+	HDC hdc;
+	if( m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+	{
+		m_hFont = CreateFont(12,6,0,0,FW_NORMAL,0,0,0,GB2312_CHARSET,OUT_DEFAULT_PRECIS,
+			CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY,DEFAULT_PITCH, _T("宋体"));
+		if( m_hFont )
+			SelectObject(hdc, m_hFont);
+
+		m_pddsBackBuffer->ReleaseDC( hdc );
+	}
+
+
+	this->Clear(0, 0, (DWORD)m_pddsBackBuffer);
+
+	hr = this->GetCaps(true);
+	if( FAILED(hr) )
+	{
+		IMSG(_T("could not get hardware ability information"));
+		return hr;
+	}
+
+	// 设置基本的 State
+    SetD3DState();
+	
+	// 调节窗口客户区为要求的大小
+	RECT rcInt;	// rcInt相当于rcClient
+	RECT rcExt;	// rcExt相当于rcWindow
+
+	// 计算边框的大小
+	::GetWindowRect(m_hWnd, &rcExt);
+	::GetClientRect(m_hWnd, &rcInt);
+	INT x = (rcExt.right-rcExt.left) - (rcInt.right-rcInt.left);
+	INT y = (rcExt.bottom-rcExt.top) - (rcInt.bottom-rcInt.top);
+
+	// 新的窗口大小
+	SetWindowPos(m_hWnd, HWND_TOP, 0, 0, nWidth+x, nHeight+y, SWP_SHOWWINDOW);
+
+	// 得到窗口显示区的实际坐标
+	::GetClientRect(m_hWnd, &m_rcWindow);
+	::ClientToScreen(m_hWnd, (LPPOINT)&m_rcWindow);
+	::ClientToScreen(m_hWnd, (LPPOINT)&m_rcWindow + 1);
+
+    return S_OK;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// 建立各种DirectDraw空表面
+//-----------------------------------------------------------------------------
+DWORD CD3DInterface::CreateSurface(INT nWidth, INT nHeight, BOOL bVidMem, BOOL bAlpha)
+{
+	if (m_pDD == NULL)
+		return FALSE;
+
+    DDSURFACEDESC2 ddsd;    
+	ZeroMemory (&ddsd, sizeof(ddsd));
+    ddsd.dwSize          = sizeof(ddsd);
+	ddsd.dwFlags         = DDSD_CAPS | DDSD_HEIGHT | DDSD_WIDTH | 
+		                   DDSD_PIXELFORMAT|DDSD_TEXTURESTAGE;
+    ddsd.ddsCaps.dwCaps  = DDSCAPS_TEXTURE;
+	ddsd.ddsCaps.dwCaps2 = DDSCAPS2_TEXTUREMANAGE;
+	
+	if( bAlpha )
+		ddsd.ddpfPixelFormat = m_PixelFormat32;
+	else
+		ddsd.ddpfPixelFormat = m_PixelFormat;
+
+    ddsd.dwWidth         = (DWORD)nWidth;
+    ddsd.dwHeight        = (DWORD)nHeight;
+	AdjustTextureSize(ddsd, nWidth, nHeight);
+    
+	DWORD dwReturn = 0;
+	HRESULT hr = m_pDD->CreateSurface(&ddsd, (LPDIRECTDRAWSURFACE7*)&dwReturn, NULL);
+    if( FAILED(hr) )
+		return GT_INVALID;
+
+	return dwReturn;
+}
+
+
+
+//-----------------------------------------------------------------------------
+// release surface
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::ReleaseSurface(DWORD dwSurfaceHandle)
+{
+	LPDIRECTDRAWSURFACE7 pdds = (LPDIRECTDRAWSURFACE7)dwSurfaceHandle;
+	SAFE_RELEASE(pdds);
+}
+
+
+
+//-----------------------------------------------------------------------------
+//param dwSurfaceHandle=0代表要取得后台缓冲的HDC
+//-----------------------------------------------------------------------------
+DWORD CD3DInterface::GetDC(DWORD dwSurfaceHandle)
+{
+	ASSERT(GT_INVALID != dwSurfaceHandle);
+	HDC hdc = 0;
+	if( 0 == dwSurfaceHandle )
+	{
+		if( DD_OK == m_pddsBackBuffer->GetDC(&hdc) )
+		{
+			if( m_hFont )
+				SelectObject(hdc, m_hFont);
+
+			return (DWORD)hdc;
+		}
+		else
+			return GT_INVALID;
+	}
+	
+	if( DD_OK == ((LPDIRECTDRAWSURFACE7)dwSurfaceHandle)->GetDC(&hdc) )
+	{
+		if( m_hFont )
+			SelectObject(hdc, m_hFont);
+
+		return (DWORD)hdc; 
+	}
+	else 
+		return GT_INVALID;	
+}
+
+
+//-----------------------------------------------------------------------------
+// release dc
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::ReleaseDC(DWORD dwSurfaceHandle, DWORD dwDC)
+{
+	ASSERT(dwDC);
+	ASSERT(GT_INVALID != dwSurfaceHandle);
+	ASSERT(GT_INVALID != dwDC);
+
+	if( 0 == dwSurfaceHandle )
+	{
+		m_pddsBackBuffer->ReleaseDC((HDC)dwDC);
+		return;
+	}
+
+	((LPDIRECTDRAWSURFACE7)dwSurfaceHandle)->ReleaseDC((HDC)dwDC);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// 使用指定颜色清除一块区域
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::Clear(RECT* pRC, DWORD dwFillColor, DWORD dwSurfaceHandle)
+{
+	if( NULL == pRC && GT_INVALID == dwSurfaceHandle )
+	{
+		m_pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET, 0, 1.0f, 0L);
+		m_pd3dDevice->BeginScene();
+		return;
+	}
+
+	LPDIRECTDRAWSURFACE7 pdds = m_pddsBackBuffer;
+	if( GT_INVALID != dwSurfaceHandle ) 
+		pdds=(LPDIRECTDRAWSURFACE7)dwSurfaceHandle;
+
+	switch( m_ePixelFormat )
+	{
+	case EPF_565:
+		dwFillColor = RGB565(dwFillColor);
+		break;
+	case EPF_555:
+		dwFillColor = RGB555(dwFillColor);
+		break;
+	}
+
+	m_ddbfxClear.dwFillColor = dwFillColor;
+
+	if( NULL != pRC )
+	{
+		RECT rc;
+		rc.left = pRC->left < 0 ? 0 : pRC->left;
+		rc.top = pRC->top < 0 ? 0 : pRC->top;
+		rc.right = pRC->right >= m_nWidth ? m_nWidth : pRC->right;
+		rc.bottom = pRC->bottom >= m_nHeight ? m_nHeight : pRC->bottom;
+
+		if( rc.right <= 0 || rc.bottom <= 0 )
+			return;
+
+		pdds->Blt(&rc, NULL, NULL, DDBLT_COLORFILL | DDBLT_DONOTWAIT, 
+			&m_ddbfxClear);
+	}
+	else
+	{
+		pdds->Blt(NULL, NULL, NULL, DDBLT_COLORFILL | DDBLT_DONOTWAIT, 
+			&m_ddbfxClear);
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 输出文字
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::DrawText(INT nX, INT nY, LPCTSTR szString)
+{
+	HDC hdc;
+	if( m_pddsBackBuffer && m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+	{
+		SetBkMode( hdc, TRANSPARENT );
+		SetTextColor( hdc, RGB(210,210,210) );
+		TextOut( hdc, nX, nY, szString, lstrlen(szString) );
+		m_pddsBackBuffer->ReleaseDC( hdc );
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 调用::DrawTtext
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::DrawText(LPCTSTR szString, PRECT lpRect, DWORD dwStyle, 
+							   DWORD dwColor, BOOL bTransparent, DWORD dwBkColor)
+{
+	HDC hdc;
+	ASSERT(NULL != lpRect);
+	if( m_pddsBackBuffer && m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+	{
+		if( m_hFont )
+			SelectObject(hdc, m_hFont);
+
+		if( FALSE == bTransparent )
+		{
+			SetBkMode(hdc, OPAQUE);
+			dwBkColor = ARGB2GDI(dwBkColor);	
+			SetBkColor(hdc, (COLORREF)dwBkColor);
+		}
+		else
+		{
+			SetBkMode( hdc, TRANSPARENT );
+		}
+
+		dwColor = ARGB2GDI(dwColor);
+		SetTextColor( hdc, dwColor );
+
+		::DrawText( hdc, szString, -1, lpRect, dwStyle );
+		m_pddsBackBuffer->ReleaseDC( hdc );
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 将屏幕坐标转换为窗口view坐标
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::ScreenToView(POINT& pt)
+{
+	pt.x -= m_rcWindow.left;
+	pt.y -= m_rcWindow.top;
+
+	ClientToView(pt);
+}
+
+
+//-----------------------------------------------------------------------------
+// 将窗口client坐标转换为窗口view坐标(view坐标为逻辑坐标)
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::ClientToView(POINT& pt)
+{
+	if( ( m_rcWindow.right == m_rcWindow.left )
+		|| ( m_rcWindow.bottom == m_rcWindow.top ) )
+		return;	// 防止被0除
+
+	pt.x = pt.x * m_nWidth / (m_rcWindow.right - m_rcWindow.left);
+	pt.y = pt.y * m_nHeight / (m_rcWindow.bottom - m_rcWindow.top);
+}
+
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::Draw(DWORD dwSurface, INT x, INT y)
+{
+	D3DTLVERTEX Mesh4[4];
+	LPDIRECTDRAWSURFACE7	pdds=(LPDIRECTDRAWSURFACE7)dwSurface;
+
+	DDSURFACEDESC2 ddsd;
+	ddsd.dwSize = sizeof(ddsd);
+	pdds->GetSurfaceDesc( &ddsd );
+
+	float x1 = (float)x-0.5f; 
+	float y1 = (float)y-0.5f;
+	float x2 = x1 + (float)ddsd.dwWidth-0.5f;
+	float y2 = y1 + (float)ddsd.dwHeight-0.5f;
+
+	// 建立临时三维网格
+	SetTLVertex(&Mesh4[0], x1, y1, 0, 0, 0xdfffffff);
+	SetTLVertex(&Mesh4[1], x2, y1, 1, 0, 0xdfffffff);
+	SetTLVertex(&Mesh4[2], x1, y2, 0, 1, 0xdfffffff);
+	SetTLVertex(&Mesh4[3], x2, y2, 1, 1, 0xdfffffff);	
+
+	// 作图
+	m_pd3dDevice->SetTexture (0, pdds);
+	m_pd3dDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP, D3DFVF_TLVERTEX, Mesh4, 4, NULL);
+}
+
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::Draw(DWORD dwDestSurfaceHandle, DWORD dwSrcSurfaceHandle, 
+		PRECT prcDest, PRECT prcSrc)
+{
+	LPDIRECTDRAWSURFACE7 pdds=(LPDIRECTDRAWSURFACE7)dwSrcSurfaceHandle;
+	LPDIRECTDRAWSURFACE7 dest_pdds=(LPDIRECTDRAWSURFACE7)dwDestSurfaceHandle;
+	RECT                rcSrc, rcDest;
+
+	if( 0 == dwDestSurfaceHandle || GT_INVALID == dwDestSurfaceHandle )
+		dest_pdds = m_pddsBackBuffer;
+	if( 0 == dwSrcSurfaceHandle || GT_INVALID == dwSrcSurfaceHandle )
+		pdds = m_pddsBackBuffer;
+
+	DDSURFACEDESC2		dest_ddsd;
+	dest_ddsd.dwSize = sizeof(dest_ddsd);
+	dest_pdds->GetSurfaceDesc( &dest_ddsd );
+
+	if( NULL == prcSrc )
+	{
+		DDSURFACEDESC2		ddsd;
+		ddsd.dwSize = sizeof(ddsd);
+		pdds->GetSurfaceDesc( &ddsd );
+
+		rcSrc.left	= 0;
+		rcSrc.top	= 0;
+		rcSrc.right = ddsd.dwWidth;
+		rcSrc.bottom= ddsd.dwHeight;
+	}
+	else
+	{
+		rcSrc.left = prcSrc->left;
+		rcSrc.right = prcSrc->right;
+		rcSrc.top = prcSrc->top;
+		rcSrc.bottom = prcSrc->bottom;
+	}
+
+	rcDest.left = prcDest->left;
+	rcDest.right = prcDest->right;
+	rcDest.top = prcDest->top;
+	rcDest.bottom = prcDest->bottom;
+   
+	FLOAT fRatioX = (FLOAT)(rcSrc.right - rcSrc.left) 
+		/ (rcDest.right - rcDest.left);
+	FLOAT fRatioY = (FLOAT)(rcSrc.bottom - rcSrc.top) 
+		/ (rcDest.bottom - rcDest.top);
+
+	// 图片是否完全在后台缓冲范围外
+	if( rcDest.left >= (INT)dest_ddsd.dwWidth || rcDest.top >= (INT)dest_ddsd.dwHeight 
+		|| rcDest.right < 0 || rcDest.bottom < 0 ) 
+		return;
+  
+	if( rcDest.left<0 ) 
+	{
+		rcSrc.left -= (LONG)(rcDest.left * fRatioX);
+		if( rcSrc.left >= rcSrc.right )
+			rcSrc.left = rcSrc.right - 1;
+		rcDest.left = 0;
+	}
+	if( rcDest.top<0 ) 
+	{
+		rcSrc.top -= (LONG)(rcDest.top * fRatioY);
+		if( rcSrc.top >= rcSrc.bottom )
+			rcSrc.top = rcSrc.bottom - 1;
+		rcDest.top = 0;
+	}
+	
+	if( rcDest.right > (INT)dest_ddsd.dwWidth )
+	{
+		rcSrc.right -= (LONG)(fRatioX * (rcDest.right - (INT)dest_ddsd.dwWidth));
+		if( rcSrc.right <= 0 )
+			rcSrc.right = 1;
+		rcDest.right = (INT)dest_ddsd.dwWidth;
+	}
+	if( rcDest.bottom > m_nHeight )
+	{
+		rcSrc.bottom -= (LONG)(fRatioY * (rcDest.bottom - (INT)dest_ddsd.dwHeight));
+		if( rcSrc.bottom <= 0 )
+			rcSrc.bottom = 1;
+		rcDest.bottom = (INT)dest_ddsd.dwHeight;
+	}
+
+	dest_pdds->Blt(&rcDest, pdds, &rcSrc, DDBLT_DONOTWAIT, 0);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::Draw(DWORD dwSurfaceHandle, PRECT prcDest, PRECT prcSrc, DWORD dwColor)
+{
+	D3DTLVERTEX Mesh4[4];
+	LPDIRECTDRAWSURFACE7 pdds=(LPDIRECTDRAWSURFACE7)dwSurfaceHandle;
+
+	if( 0 == dwSurfaceHandle || GT_INVALID == dwSurfaceHandle )
+		pdds = m_pddsBackBuffer;
+
+	DDSURFACEDESC2		ddsd;
+	ddsd.dwSize = sizeof(ddsd);
+	pdds->GetSurfaceDesc( &ddsd );
+
+	float u1, u2, v1, v2;
+	if( NULL == prcSrc )
+	{
+		u1 = 0.0f, u2 = 1.0f, v1 = 0.0f, v2 = 1.0f;
+	}
+	else
+	{
+		
+		u1 = (float)prcSrc->left / ddsd.dwWidth;
+		u2 = (float)prcSrc->right / ddsd.dwWidth;
+		v1 = (float)prcSrc->top / ddsd.dwHeight;
+		v2 = (float)prcSrc->bottom / ddsd.dwHeight;
+	}
+
+	float x1, x2, y1, y2;
+	if( NULL == prcDest )
+	{
+		x1 = -0.5f, y1 = -0.5f, x2 = (float)m_nWidth-0.5f, y2 = (float)m_nHeight-0.5f;
+	}
+	else
+	{
+		x1 = (float)prcDest->left-0.5f; 
+		y1 = (float)prcDest->top-0.5f;
+		x2 = (float)prcDest->right-0.5f; 
+		y2 = (float)prcDest->bottom-0.5f;
+	}
+
+	// 建立临时三维网格
+	SetTLVertex(&Mesh4[0], x1, y1, u1, v1, dwColor);
+	SetTLVertex(&Mesh4[1], x2, y1, u2, v1, dwColor);
+	SetTLVertex(&Mesh4[2], x1, y2, u1, v2, dwColor);
+	SetTLVertex(&Mesh4[3], x2, y2, u2, v2, dwColor);	
+
+	// 临时顶点中不需改动的值
+	for( int n=0; n<4; n++)
+	{
+		Mesh4[n].sz = Mesh4[n].rhw = .5f;
+		Mesh4[n].specular = 0xffffffff;
+	}
+
+	// 作图
+	m_pd3dDevice->SetTexture(0, pdds);
+	m_pd3dDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP, D3DFVF_TLVERTEX, Mesh4, 4, NULL);
+}
+
+
+
+//-----------------------------------------------------------------------------
+// 更新屏幕
+//-----------------------------------------------------------------------------
+BOOL CD3DInterface::Render()
+{
+	static DWORD dwLastTick = timeGetTime();
+	static INT nFrameCounter = 0;
+	static TCHAR sFpsBuf[64]={0};
+
+	m_pd3dDevice->EndScene();
+
+	if( m_bShowFPS )
+	{
+		++nFrameCounter;
+		DWORD dwCurrentTick = timeGetTime();
+		if( dwCurrentTick - dwLastTick >= 200 )	// 200 毫秒刷新1次
+		{
+			nFrameCounter = nFrameCounter * 1000 / (dwCurrentTick - dwLastTick);
+			wsprintf( sFpsBuf, _T("fps%d"), nFrameCounter );
+			nFrameCounter = 0;
+			dwLastTick = dwCurrentTick;
+		}
+			
+		HDC hdc;
+		if( m_pddsBackBuffer->GetDC(&hdc) == DD_OK )
+		{
+			SetBkMode( hdc, OPAQUE );
+			SetTextColor( hdc, RGB(0,0,0) );
+			TextOut( hdc, 0, 0, sFpsBuf, lstrlen(sFpsBuf) );
+			m_pddsBackBuffer->ReleaseDC( hdc );
+		}
+	}
+
+
+	//m_pd3dDevice->Present( NULL, NULL, NULL, NULL );
+	
+	// 把等待垂直回扫注释掉了
+	// this->m_pDD->WaitForVerticalBlank(DDWAITVB_BLOCKBEGIN, 0);
+	HRESULT hr = m_pddsFrontBuffer->Blt( &m_rcWindow, m_pddsBackBuffer,
+		NULL, DDBLT_DONOTWAIT, NULL );
+
+	if( hr == DDERR_SURFACELOST )
+	{
+		m_pddsFrontBuffer->Restore();
+		m_pddsBackBuffer->Restore();
+		return FALSE;
+	}
+
+	return TRUE;
+}
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// UpdateWindowPos
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::UpdateWindowPos()
+{
+	if( m_bFullScreen )
+		return;
+
+	HWND hWnd = (HWND)m_pGlobeVar->GetDword(_T("HWND"));
+	if( hWnd )
+	{
+		::GetClientRect(hWnd, &m_rcWindow);
+		::ClientToScreen(hWnd, (LPPOINT)&m_rcWindow);
+		::ClientToScreen(hWnd, (LPPOINT)&m_rcWindow + 1 );
+	}
+
+	if( m_pddsFrontBuffer )
+		m_pddsFrontBuffer->Blt( &m_rcWindow, m_pddsBackBuffer, NULL, DDBLT_WAIT, NULL );
+}
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// 获取硬件支援信息， 并记录纹理格式
+//-----------------------------------------------------------------------------
+HRESULT CD3DInterface::GetCaps(bool bRunTest)
+{
+	HRESULT hr=S_OK;
+
+	if (bRunTest)
+	{
+		hr = m_pd3dDevice->GetCaps (&m_D3DDesc);
+		if( FAILED (hr) )
+			return hr;
+		
+		// 寻找合适的16位色格式
+		TEXTURESEARCHINFO tsi;
+		tsi.bFoundGoodFormat	= false;
+		tsi.pddpf				= &m_PixelFormat;
+		tsi.dwDesiredBPP		= 32L;
+		tsi.bUsePalette			= false;
+		tsi.bUseAlpha			= false;
+		tsi.bCompression		= false;
+		tsi.dwAlphaBitMask		= 0x000000000;
+		hr = m_pd3dDevice->EnumTextureFormats(TextureSearchCallback, &tsi);
+		if( FAILED(hr) )
+			return hr;
+		m_Caps.bTexture24		= tsi.bFoundGoodFormat;
+
+		// 检查是否支持32位色纹理
+		tsi.bFoundGoodFormat	= false;
+		tsi.pddpf				= &m_PixelFormat32;
+		tsi.dwDesiredBPP		= 32L;
+		tsi.bUsePalette			= false;
+		tsi.bUseAlpha			= true;
+		tsi.bCompression		= false;
+		tsi.dwAlphaBitMask		= 0xff000000;
+		hr = m_pd3dDevice->EnumTextureFormats (TextureSearchCallback, &tsi);
+		m_Caps.bTexture32		= tsi.bFoundGoodFormat;
+	
+			
+		// 检查是否支持DXT1压缩方式纹理
+		tsi.bFoundGoodFormat	= false;
+		tsi.pddpf				= &m_PixelFormatDXT1;
+		tsi.dwDesiredBPP		= 0L;
+		tsi.bUsePalette			= false;
+		tsi.bUseAlpha			= false;
+		tsi.dwAlphaBitMask		= 0L;
+		tsi.bCompression		= true;
+		tsi.CompressionFromat	= MAKEFOURCC('D', 'X', 'T', '1');
+		hr = m_pd3dDevice->EnumTextureFormats (TextureSearchCallback, &tsi);
+		m_Caps.bTextureDXT1  = tsi.bFoundGoodFormat;
+
+		// 纹理大小是否只能是2的整数次幂
+		m_Caps.bPow2Texture = 
+			(m_D3DDesc.dpcTriCaps.dwTextureCaps & D3DPTEXTURECAPS_POW2) > 0;
+
+		// 不是2的整数次幂也行
+		if( m_D3DDesc.dpcTriCaps.dwTextureCaps & D3DPTEXTURECAPS_NONPOW2CONDITIONAL )
+			m_Caps.bPow2Texture = false;
+
+		// 是否只支持方形纹理
+		m_Caps.bSquareTexture = 
+			(m_D3DDesc.dpcTriCaps.dwTextureCaps & D3DPTEXTURECAPS_SQUAREONLY) > 0;
+
+		// 是否支持大纹理
+		if (m_D3DDesc.dwMaxTextureWidth>=512&&m_D3DDesc.dwMaxTextureHeight>=512)
+			m_Caps.bLargeTexture = true;
+
+		if (m_D3DDesc.dwTextureOpCaps & D3DTEXOPCAPS_MODULATE)
+			m_Caps.bTextureOpModule = true;
+		
+		if ((m_D3DDesc.dpcTriCaps.dwSrcBlendCaps & D3DPBLENDCAPS_INVSRCALPHA)
+			 && (m_D3DDesc.dpcTriCaps.dwDestBlendCaps & D3DPBLENDCAPS_INVSRCALPHA))
+		 m_Caps.bBlendInvSrcColor = true;
+		 
+		if (m_D3DDesc.dpcTriCaps.dwShadeCaps & D3DPSHADECAPS_ALPHAGOURAUDBLEND)
+			m_Caps.bAlphaGroundBlend = true;
+	}
+
+	return hr;
+}
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// Adjust width and height, if the driver requires it
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::AdjustTextureSize(DDSURFACEDESC2& ddsd, int nWidth, int nHeight)
+{
+	if( nWidth<0 || nHeight<0 )
+		return;
+ 
+	DWORD &width = ddsd.dwWidth;
+	DWORD &height = ddsd.dwHeight;
+
+	if (nWidth == 0 || nHeight == 0)
+		nWidth = nHeight = 1;
+	
+	// 多数硬件只支持２的整数次幂长宽的纹理
+	if( m_Caps.bPow2Texture )
+    {
+		for	(width=1; (DWORD)nWidth>width; width<<=1);
+		for	(height=1; (DWORD)nHeight>height; height<<=1);
+    }
+	else
+	{
+		width  = (DWORD)nWidth;
+		height = (DWORD)nHeight;
+	}
+
+	// 某些硬件只支持正方形纹理
+	if (m_Caps.bSquareTexture)
+	   if (width > height) height = width; else width = height;
+}
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// 设置常用的纹理以及渲染状态
+//-----------------------------------------------------------------------------
+VOID CD3DInterface::SetD3DState()
+{
+	// 设置基本的 State
+	m_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_MODULATE);
+	m_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE);
+	m_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE);
+	m_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_MODULATE);
+    m_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE);
+    m_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_DIFFUSE);
+
+	// 线形过滤参数
+    m_pd3dDevice->SetTextureStageState(0, D3DTSS_MAGFILTER, D3DTFG_LINEAR);
+	m_pd3dDevice->SetTextureStageState(0, D3DTSS_MINFILTER, D3DTFG_LINEAR);
+	m_pd3dDevice->SetRenderState(D3DRENDERSTATE_DITHERENABLE, TRUE);
+    
+	// 关闭纹理透视纠正
+	m_pd3dDevice->SetRenderState(D3DRENDERSTATE_TEXTUREPERSPECTIVE, FALSE);
+    
+	// 关闭 Z 缓冲
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_ZENABLE, D3DZB_FALSE);
+       
+    // Set diffuse blending for alpha set in vertices. 
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_ALPHABLENDENABLE, TRUE);
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_SRCBLEND, D3DBLEND_SRCALPHA);
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_DESTBLEND, D3DBLEND_INVSRCALPHA);
+
+	// 关闭硬件光源支持
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_LIGHTING, FALSE);
+
+	// 打开Alpha测试(avoids drawing pixels with less than a certain	alpha)
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_ALPHATESTENABLE, true);
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_ALPHAREF, 0x08);
+    m_pd3dDevice->SetRenderState(D3DRENDERSTATE_ALPHAFUNC, D3DCMP_GREATEREQUAL);
+}
+
+
+
+//-----------------------------------------------------------------------------
+// Name: TextureSearchCallback()
+// Desc: 纹理列举回调函数
+//-----------------------------------------------------------------------------
+HRESULT CALLBACK CD3DInterface::TextureSearchCallback(DDPIXELFORMAT* pddpf,VOID* param)
+{
+	if( NULL==pddpf || NULL==param )	
+		return DDENUMRET_OK;
+
+    TEXTURESEARCHINFO* ptsi = (TEXTURESEARCHINFO*)param;
+
+    // Skip any funky modes
+    if(pddpf->dwFlags & (DDPF_LUMINANCE|DDPF_BUMPLUMINANCE|DDPF_BUMPDUDV)) 
+		return DDENUMRET_OK;
+
+    // 如果需要调色盘格式
+	if( ptsi->bUsePalette )
+    {
+		// 如果不是则返回
+        if( !(pddpf->dwFlags & DDPF_PALETTEINDEXED8) )
+			return DDENUMRET_OK;
+
+        // Accept the first 8-bit palettized format we get
+        memcpy( ptsi->pddpf, pddpf, sizeof(DDPIXELFORMAT) );
+        ptsi->bFoundGoodFormat = true;
+        return DDENUMRET_CANCEL;
+    }
+	
+    // 如果需要纹理压缩格式
+    if( ptsi->bCompression )
+	{
+		// 如果不是我们要的纹理压缩格式
+		if( pddpf->dwFourCC != ptsi->CompressionFromat ) 
+			return DDENUMRET_OK;
+	
+		memcpy( ptsi->pddpf, pddpf, sizeof(DDPIXELFORMAT) );
+		ptsi->bFoundGoodFormat = true;
+		return DDENUMRET_CANCEL;
+	}
+	
+
+	// Check if we found a good match
+    if (pddpf->dwRGBBitCount == ptsi->dwDesiredBPP)
+    {
+		if (ptsi->dwAlphaBitMask == pddpf->dwRGBAlphaBitMask)
+		{
+			memcpy( ptsi->pddpf, pddpf, sizeof(DDPIXELFORMAT) );
+			ptsi->bFoundGoodFormat = true;
+			return DDENUMRET_CANCEL;
+		}
+    }
+
+    return DDENUMRET_OK;
+}
+
+
+
+
+
+
+
+} // namespace vEngine {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// File: gdi_interface
+// Desc: gdi interface
+// Auth: Lyp
+// Date: 2007/1/30
+// Last: 2007/1/30
+//-----------------------------------------------------------------------------
+#include "..\stdafx.h"
+#include "render.h"	// 基类
+#include "gdi_interface.h"
+
+// 使用其它部件
+#include "..\variable\var_container.h"
+
+namespace vEngine {
+//-----------------------------------------------------------------------------
+// construction / destruction
+//-----------------------------------------------------------------------------
+CGDIRender::CGDIRender()
+{
+	m_hWnd = 0;
+	m_hdcBackBuff = 0;
+	m_hbmpBackBuff = 0;
+	m_nBitsPerPel = 32;
+}
+
+CGDIRender::~CGDIRender()
+{
+	this->Destroy();
+}
+
+
+//-----------------------------------------------------------------------------
+// init direct draw
+//-----------------------------------------------------------------------------
+BOOL CGDIRender::Init(INT nWidth, INT nHeight)
+{
+	m_nWidth = nWidth;
+	m_nHeight = nHeight;
+
+	// get handle of main window
+	m_hWnd = (HWND)m_pGlobeVar->GetDword(_T("HWND"));
+
+	if( m_bFullScreen )
+	{
+		m_rcWindow.left = 0;
+		m_rcWindow.top = 0;
+		m_rcWindow.right = nWidth;
+		m_rcWindow.bottom = nHeight;
+
+		
+		SetWindowLong(m_hWnd,GWL_STYLE,WS_CHILD|WS_CLIPSIBLINGS|WS_CLIPCHILDREN|WS_VISIBLE);
+		SetWindowPos(m_hWnd,HWND_TOP,0,0,0,0,SWP_FRAMECHANGED|SWP_NOMOVE|SWP_NOSIZE);
+		SetWindowPos(m_hWnd, HWND_TOP, 0, 0, nWidth, nHeight, SWP_SHOWWINDOW);
+	}
+	else
+	{
+		// 调节窗口客户区为要求的大小
+		RECT rcInt;	// rcInt相当于rcClient
+		RECT rcExt;	// rcExt相当于rcWindow
+
+		// 计算边框的大小
+		::GetWindowRect(m_hWnd, &rcExt);
+		::GetClientRect(m_hWnd, &rcInt);
+		INT x = (rcExt.right-rcExt.left) - (rcInt.right-rcInt.left);
+		INT y = (rcExt.bottom-rcExt.top) - (rcInt.bottom-rcInt.top);
+
+		// 新的窗口大小
+		SetWindowPos(m_hWnd, HWND_TOP, 0, 0, nWidth+x, nHeight+y, SWP_SHOWWINDOW);
+
+		// 得到窗口显示区的实际坐标
+		::GetClientRect(m_hWnd, &m_rcWindow);
+		::ClientToScreen(m_hWnd, (LPPOINT)&m_rcWindow);
+		::ClientToScreen(m_hWnd, (LPPOINT)&m_rcWindow + 1);
+	}
+
+
+	m_hdcBackBuff = CreateCompatibleDC(0); 
+ 
+	// Create a compatible bitmap for hdcScreen. 
+	m_hbmpBackBuff = CreateBitmap(nWidth, nHeight, 1, m_nBitsPerPel, NULL); 
+	if( !SelectObject(m_hdcBackBuff, m_hbmpBackBuff) )
+	{
+		DeleteObject(m_hbmpBackBuff);
+		m_nBitsPerPel = 16;
+		m_hbmpBackBuff = CreateBitmap(nWidth, nHeight, 1, m_nBitsPerPel, NULL); 
+		if( !SelectObject(m_hdcBackBuff, m_hbmpBackBuff) )
+		{
+			DeleteObject(m_hbmpBackBuff);
+			m_nBitsPerPel = 8;
+			m_hbmpBackBuff = CreateBitmap(nWidth, nHeight, 1, m_nBitsPerPel, NULL); 
+			if( !SelectObject(m_hdcBackBuff, m_hbmpBackBuff) )
+			{
+				ERR( _T("Error in bitmap selection\n") );
+				return FALSE;
+			}
+		}
+	}
+
+	SetBitmapDimensionEx(m_hbmpBackBuff, nWidth, nHeight, NULL);
+	SetBkColor( m_hdcBackBuff, RGB(0,0,0) );
+	return TRUE;
+}
+
+
+//-----------------------------------------------------------------------------
+// destroy
+//-----------------------------------------------------------------------------
+VOID CGDIRender::Destroy()
+{
+	::DeleteObject(m_hbmpBackBuff);
+	::DeleteDC(m_hdcBackBuff);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// render
+//-----------------------------------------------------------------------------
+BOOL CGDIRender::Render()
+{
+	static DWORD dwLastTick = timeGetTime();
+	static INT nFrameCounter = 0;
+	static TCHAR sFpsBuf[64]={0};
+
+	if( m_bShowFPS )
+	{
+		++nFrameCounter;
+		DWORD dwCurrentTick = timeGetTime();
+		if( dwCurrentTick - dwLastTick >= 200 )	// 200 毫秒刷新1次
+		{
+			nFrameCounter = nFrameCounter * 1000 / (dwCurrentTick - dwLastTick);
+			wsprintf( sFpsBuf, _T("fps%d"), nFrameCounter );
+			nFrameCounter = 0;
+			dwLastTick = dwCurrentTick;
+		}
+
+		SetBkMode( m_hdcBackBuff, OPAQUE );
+		SetBkColor( m_hdcBackBuff, RGB(255,255,255));
+		SetTextColor( m_hdcBackBuff, RGB(0,0,0) );
+		TextOut( m_hdcBackBuff, 0, 0, sFpsBuf, lstrlen(sFpsBuf) );
+	}
+
+	HDC hdc = ::GetDC(m_hWnd);
+	if( hdc )
+	{
+		StretchBlt( hdc, 0, 0, m_rcWindow.right - m_rcWindow.left, m_rcWindow.bottom - m_rcWindow.top,
+			m_hdcBackBuff, 0, 0, m_nWidth, m_nHeight, SRCCOPY);
+		::ReleaseDC(m_hWnd, hdc);
+	}
+
+	return TRUE;
+}
+
+
+//-----------------------------------------------------------------------------
+// UpdateWindowPos
+//-----------------------------------------------------------------------------
+VOID CGDIRender::UpdateWindowPos()
+{
+	if( m_bFullScreen )
+		return;
+
+	if( m_hWnd )
+	{
+		::GetClientRect(m_hWnd, &m_rcWindow);
+		::ClientToScreen(m_hWnd, (LPPOINT)&m_rcWindow);
+		::ClientToScreen(m_hWnd, (LPPOINT)&m_rcWindow + 1 );
+	}
+
+	HDC hdc = ::GetDC(m_hWnd);
+	if( hdc )
+	{
+		StretchBlt( hdc, 0, 0, m_rcWindow.right - m_rcWindow.left, m_rcWindow.bottom - m_rcWindow.top,
+			m_hdcBackBuff, 0, 0, m_nWidth, m_nHeight, SRCCOPY);
+		::ReleaseDC(m_hWnd, hdc);
+	}
+}
+
+
+
+//-----------------------------------------------------------------------------
+// CreateSurface
+//-----------------------------------------------------------------------------
+DWORD CGDIRender::CreateSurface(INT nWidth, INT nHeight, BOOL bVidMem, BOOL bAlpha)
+{
+	HDC hdcScreen = CreateDC(_T("DISPLAY"), NULL, NULL, NULL); 
+	HDC hdc = CreateCompatibleDC(hdcScreen); 
+ 
+
+	// Create a compatible bitmap for hdcScreen. 
+	HBITMAP hbmp = CreateBitmap(nWidth, nHeight, 1, m_nBitsPerPel, NULL); 
+	if( hbmp == 0 )
+		return GT_INVALID;
+ 
+	// Select the bitmaps into the compatible DC. 
+	if( !SelectObject(hdc, hbmp) )
+	{
+		DeleteObject(hbmp);
+		return GT_INVALID;
+	}
+
+	SetBitmapDimensionEx(hbmp, nWidth, nHeight, NULL);
+	SetTextColor( hdc, RGB(255,255,255) );
+	SetBkColor( hdc, RGB(0,0,0) );
+
+	return (DWORD)hdc; 
+}
+
+
+//-----------------------------------------------------------------------------
+// CreateSurface from direct draw surface description
+//-----------------------------------------------------------------------------
+DWORD CGDIRender::CreateSurfaceFromDDSD(LPVOID pDDSData)
+{
+	// 暂不支持
+	return 0;
+}
+
+
+
+//-----------------------------------------------------------------------------
+// release surface
+//-----------------------------------------------------------------------------
+VOID CGDIRender::ReleaseSurface(DWORD dwSurfaceHandle)
+{
+	HGDIOBJ hbmp = ::GetCurrentObject((HDC)dwSurfaceHandle, OBJ_BITMAP);
+
+	::DeleteObject(hbmp);
+	::DeleteDC((HDC)dwSurfaceHandle);
+}
+
+
+
+//-----------------------------------------------------------------------------
+//param dwSurfaceHandle=0代表要取得后台缓冲的HDC
+//-----------------------------------------------------------------------------
+DWORD CGDIRender::GetDC(DWORD dwSurfaceHandle)
+{
+	if( 0 == dwSurfaceHandle )
+		return (DWORD)m_hdcBackBuff;
+	
+	return dwSurfaceHandle;	
+}
+
+
+//-----------------------------------------------------------------------------
+// release dc
+//-----------------------------------------------------------------------------
+VOID CGDIRender::ReleaseDC(DWORD dwSurfaceHandle, DWORD dwDC)
+{
+	// 不需要此函数
+	return;
+}
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CGDIRender::Draw(DWORD dwSurface, INT x, INT y)
+{
+	if( dwSurface == 0 )
+		dwSurface = (DWORD)m_hdcBackBuff;
+
+	BitBlt( m_hdcBackBuff, x, y, m_rcWindow.right - m_rcWindow.left, 
+		m_rcWindow.bottom - m_rcWindow.top,
+		(HDC)dwSurface, 0, 0, SRCCOPY);
+}
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CGDIRender::Draw(DWORD dwDestSurfaceHandle, DWORD dwSrcSurfaceHandle, 
+		PRECT prcDest, PRECT prcSrc)
+{
+	if( dwSrcSurfaceHandle == 0 )
+		dwSrcSurfaceHandle = (DWORD)m_hdcBackBuff;
+	if( dwDestSurfaceHandle == 0 )
+		dwDestSurfaceHandle = (DWORD)m_hdcBackBuff;
+
+	StretchBlt( (HDC)dwDestSurfaceHandle, prcDest->left, prcDest->top, 
+		prcDest->right-prcDest->left, prcDest->bottom-prcDest->top,
+		(HDC)dwSrcSurfaceHandle, prcSrc->left, prcSrc->top, 
+		prcSrc->right-prcSrc->left, prcSrc->bottom-prcSrc->top, SRCCOPY );
+}
+
+
+//-----------------------------------------------------------------------------
+// draw
+//-----------------------------------------------------------------------------
+VOID CGDIRender::Draw(DWORD dwSurfaceHandle, PRECT prcDest, PRECT prcSrc, DWORD dwColor)
+{
+	if( dwSurfaceHandle == 0 )
+		dwSurfaceHandle = (DWORD)m_hdcBackBuff;
+
+	StretchBlt( m_hdcBackBuff, prcDest->left, prcDest->top, 
+		prcDest->right-prcDest->left, prcDest->bottom-prcDest->top,
+		(HDC)dwSurfaceHandle, prcSrc->left, prcSrc->top, 
+		prcSrc->right-prcSrc->left, prcSrc->bottom-prcSrc->top, SRCCOPY );
+
+}
+
+
+//-----------------------------------------------------------------------------
+// 使用指定颜色清除一块区域
+//-----------------------------------------------------------------------------
+VOID CGDIRender::Clear(DWORD dwSurfaceHandle, RECT* pRC, DWORD dwFillColor, )
+{
+	dwFillColor = ARGB2GDI(dwFillColor);
+
+	HBRUSH hBrush = CreateSolidBrush(dwFillColor);
+	HDC hdc = (HDC)dwSurfaceHandle;
+	if( !hdc || GT_INVALID == dwSurfaceHandle )
+		hdc = m_hdcBackBuff;
+	
+	if( NULL != pRC )
+	{
+		HRGN hRgn = ::CreateRectRgn(pRC->left, pRC->top, pRC->right, pRC->bottom);
+		FillRgn(hdc, hRgn, hBrush);
+		DeleteObject(hRgn);
+	}
+	else
+	{
+		SIZE size;
+		HGDIOBJ bmp = ::GetCurrentObject(hdc, OBJ_BITMAP);
+		GetBitmapDimensionEx((HBITMAP)bmp, &size);
+		HRGN hRgn = CreateRectRgn(0, 0, size.cx, size.cy);
+		FillRgn(hdc, hRgn, hBrush);
+		DeleteObject(hRgn);
+	}
+	
+	DeleteObject(hBrush);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+// 将窗口client坐标转换为窗口view坐标(view坐标为逻辑坐标)
+//-----------------------------------------------------------------------------
+VOID CGDIRender::ClientToView(tagPoint& pt)
+{
+	if( ( m_rcWindow.right == m_rcWindow.left )
+		|| ( m_rcWindow.bottom == m_rcWindow.top ) )
+		return;	// 防止被0除
+
+	pt.x = pt.x * m_nWidth / (m_rcWindow.right - m_rcWindow.left);
+	pt.y = pt.y * m_nHeight / (m_rcWindow.bottom - m_rcWindow.top);
+}
+
+
+
+
+}	// namespace vEngine {

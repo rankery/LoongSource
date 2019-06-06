@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<Set effect_id="set001" effect_model0="txfss01_a" tag_effect_model0="tag_Back" effect_model1="txfss01_b" tag_effect_model1="tag_RHd" effect_model2="txfss01_b" tag_effect_model2="tag_LHd"/>
+	<Set effect_id="set002" effect_model0="txfss02_a" tag_effect_model0="tag_Back" effect_model1="txfss02_b" tag_effect_model1="tag_RHd" effect_model2="txfss02_b" tag_effect_model2="tag_LHd" effect_model3="txfss02_c" tag_effect_model3="-1"/>
+	<Set effect_id="set003" effect_model0="txfss03_a" tag_effect_model0="tag_Back" effect_model1="txfss03_b" tag_effect_model1="tag_RHd" effect_model2="txfss03_b" tag_effect_model2="tag_LHd" effect_model3="txfss03_c" tag_effect_model3="-1"/>
+	<Set effect_id="set004" effect_model0="txfss04_a" tag_effect_model0="tag_Back" effect_model1="txfss04_b" tag_effect_model1="tag_RHd" effect_model2="txfss04_b" tag_effect_model2="tag_LHd"/>
+	<Set effect_id="set005" effect_model0="txfss05_a" tag_effect_model0="tag_Back" effect_model1="txfss05_b" tag_effect_model1="tag_RHd" effect_model2="txfss05_b" tag_effect_model2="tag_LHd" effect_model3="txfss05_c" tag_effect_model3="-1"/>
+	<Set effect_id="set006" effect_model0="txfss06_a" tag_effect_model0="tag_Back" effect_model1="txfss06_b" tag_effect_model1="tag_RHd" effect_model2="txfss06_b" tag_effect_model2="tag_LHd" effect_model3="txfss06_c" tag_effect_model3="-1"/>
+	<Set effect_id="set007" effect_model0="txfss07_a" tag_effect_model0="tag_Back" effect_model1="txfss07_b" tag_effect_model1="tag_RHd" effect_model2="txfss07_b" tag_effect_model2="tag_LHd"/>
+	<Set effect_id="set008" effect_model0="txfss08_a" tag_effect_model0="tag_Back" effect_model1="txfss08_b" tag_effect_model1="tag_RHd" effect_model2="txfss08_b" tag_effect_model2="tag_LHd" effect_model3="txfss08_c" tag_effect_model3="-1"/>
+	<Set effect_id="set009" effect_model0="txfss09_a" tag_effect_model0="tag_Back" effect_model1="txfss09_b" tag_effect_model1="tag_RHd" effect_model2="txfss09_b" tag_effect_model2="tag_LHd" effect_model3="txfss09_c" tag_effect_model3="-1"/>
+	<Set effect_id="set010" effect_model0="txfss10_a" tag_effect_model0="tag_Back" effect_model1="txfss10_b" tag_effect_model1="tag_RHd" effect_model2="txfss10_b" tag_effect_model2="tag_LHd"/>
+	<Set effect_id="set011" effect_model0="txfss11_a" tag_effect_model0="tag_Back" effect_model1="txfss11_b" tag_effect_model1="tag_RHd" effect_model2="txfss11_b" tag_effect_model2="tag_LHd" effect_model3="txfss11_c" tag_effect_model3="-1"/>
+	<Set effect_id="set012" effect_model0="txfss12_a" tag_effect_model0="tag_Back" effect_model1="txfss12_b" tag_effect_model1="tag_RHd" effect_model2="txfss12_b" tag_effect_model2="tag_LHd" effect_model3="txfss12_c" tag_effect_model3="-1"/>
+	<Set effect_id="set013" effect_model0="txzt36" tag_effect_model0="tag_LHd" effect_model1="txzt36" tag_effect_model1="tag_RHd" effect_model2="Txzt10_3" tag_effect_model2="-1"/>
+	<Set effect_id="set014" effect_model0="Txch14_a" tag_effect_model0="tag_Back" effect_model1="Txch14_b" tag_effect_model1="-1"/>
+	<Set effect_id="set015" effect_model0="txbj07" tag_effect_model0="tag_Back" effect_model1="txbj07_1" tag_effect_model1="-1"/>
+	<Set effect_id="set016" effect_model0="txbj08" tag_effect_model0="tag_Back" effect_model1="txbj08_1" tag_effect_model1="-1"/>
+	<Set effect_id="set017" effect_model0="txbj09" tag_effect_model0="tag_Back" effect_model1="txbj09_1" tag_effect_model1="-1"/>
+	<Set effect_id="set018" effect_model0="txbj10" tag_effect_model0="tag_Back" effect_model1="txbj10_1" tag_effect_model1="-1"/>
+	<Set effect_id="set019" effect_model0="txkj07" tag_effect_model0="tag_Back" effect_model1="txkj07_1" tag_effect_model1="-1"/>
+	<Set effect_id="set020" effect_model0="txkj08" tag_effect_model0="tag_Back" effect_model1="txkj08_1" tag_effect_model1="-1"/>
+	<Set effect_id="set021" effect_model0="txkj09" tag_effect_model0="tag_Back" effect_model1="txkj09_1" tag_effect_model1="-1"/>
+	<Set effect_id="set022" effect_model0="txkj10" tag_effect_model0="tag_Back" effect_model1="txkj10_1" tag_effect_model1="-1"/>
+	<Set effect_id="set023" effect_model0="txfss013_a" tag_effect_model0="tag_LSld" effect_model1="txfss013_a" tag_effect_model1="tag_RSld" effect_model2="txfss013_b" tag_effect_model2="-1"/>
+	<Set effect_id="set024" effect_model0="txbj01" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set025" effect_model0="txbj02" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set026" effect_model0="txbj03" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set027" effect_model0="txbj04" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set028" effect_model0="txbj05" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set029" effect_model0="txbj06" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set030" effect_model0="txkj01" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set031" effect_model0="txkj02" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set032" effect_model0="txkj03" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set033" effect_model0="txkj04" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set034" effect_model0="txkj05" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set035" effect_model0="txkj06" tag_effect_model0="tag_Back"/>
+	<Set effect_id="set036" effect_model0="Txjn01_4" tag_effect_model0="tag_Back" effect_model1="Txjn01_5" tag_effect_model1="tag_LHd" effect_model2="Txjn01_5" tag_effect_model2="tag_RHd"/>
+</root>

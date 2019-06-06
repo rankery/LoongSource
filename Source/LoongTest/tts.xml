@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<action>
+  <停止键盘行走 name="NS_StopKeyboardWalk">
+    <当前坐标 type="Vector3"></当前坐标>
+    </停止键盘行走>
+  <服务器端行走 name="NS_SyncWalk">
+    <角色ID type="DWORD"></角色ID>
+    <开始坐标 type="Vector3"></开始坐标>
+    <结束坐标 type="Vector3"></结束坐标>
+    <当前时间 type="FLOAT"></当前时间>
+    <速度 type="FLOAT"></速度>
+    </服务器端行走>
+  <跳跃 name="NS_SyncJump">
+  <角色ID type="DWORD"></角色ID>
+  <开始坐标 type="Vector3"></开始坐标>
+  <结束坐标 type="Vector3"></结束坐标>
+  <当前时间 type="FLOAT"></当前时间>
+  <XZ速度 type="FLOAT"></XZ速度>
+  <Y速度 type="FLOAT"></Y速度>
+  </跳跃>
+  <掉落 name="NS_SyncDrop">
+    <角色ID type="DWORD"></角色ID>
+    <结束坐标 type="Vector3"></结束坐标>
+    <方向 type="Vector3"></方向>
+    <当前时间 type="FLOAT"></当前时间>
+    <XZ速度 type="FLOAT"></XZ速度>
+  </掉落>
+  <垂直掉落 name="NS_SyncVDrop">
+    <角色ID type="DWORD"></角色ID>
+    <结束坐标 type="Vector3"></结束坐标>
+    <当前时间 type="FLOAT"></当前时间>
+  </垂直掉落>
+  <滑落 name="NS_SyncSlide">
+    <角色ID type="DWORD"></角色ID>
+    <结束坐标 type="Vector3"></结束坐标>
+    <当前时间 type="FLOAT"></当前时间>
+    <XZ速度 type="FLOAT"></XZ速度>
+  </滑落>
+  <站立同步 name="NS_SyncStand">
+    <角色ID type="DWORD"></角色ID>
+    <当前坐标 type="Vector3"></当前坐标>
+    <朝向 type="Vector3"></朝向>
+  </站立同步>
+  <移动失败 name="NS_MoveFailed">
+    <当前坐标 type="Vector3"></当前坐标>
+    <朝向 type="Vector3"></朝向>
+  </移动失败>
+
+
+  <得到角色ID name="NS_RoleGetID">
+    <角色名字CRC type="DWORD"></角色名字CRC>
+    <请求目标玩家的roleid type="DWORD"></请求目标玩家的roleid>
+  </得到角色ID>
+
+  <返回某角色name name="NS_RoleGetName">
+    <成功与否 type="BOOL"></成功与否>
+    <目标玩家的roleid type="DWORD"></目标玩家的roleid>
+    <角色name type="TCHAR"></角色name>
+  </返回某角色name>
+
+  <返回角色列表 name="NS_EnumRole">
+    <错误码 type="DWORD"></错误码>
+    <数量 type="INT"></数量>
+    <简单信息 type="BYTE"></简单信息>
+  </返回角色列表>
+
+  <创建角色 name="NS_CreateRole">
+    <错误码 type="DWORD"></错误码>
+    <简单信息 type="BYTE"></简单信息> 
+  </创建角色>
+
+  <删除角色 name="NS_DeleteRole">
+    <错误码 type="DWORD"></错误码>
+    <角色ID type="DWORD"></角色ID>
+  </删除角色>
+
+  <选择角色 name="NS_SelectRole">
+    <错误码 type="DWORD"></错误码>
+    <角色ID type="DWORD"></角色ID>
+  </选择角色>
+
+  <删除 name="NS_RemoveRemote">
+    <角色ID type="DWORD"></角色ID>
+  </删除>
+
+  <进入新地图 name="NS_GotoNewMap">
+    <地图ID type="DWORD"></地图ID>
+    <位置 type="Vector3"></位置>
+    <朝向 type="Vector3"></朝向>   
+  </进入新地图>
+
+  <某人对你说话 name="NS_RoleChat">
+    <错误码 type="DWORD"></错误码>
+    <说话者 type="DWORD"></说话者>
+    <对谁说 type="DWORD"></对谁说>
+    <发言频道 type="BYTE"></发言频道>
+    <内容 type="TCHAR"></内容>
+  </某人对你说话>
+
+  <玩家初始结构 name="NS_GetRoleInitState">
+    <角色信息 type="tagRoleData"></角色信息>
+  </玩家初始结构>
+
+  <远程玩家当前属性 name="NS_GetRemoteRoleState">
+    <角色ID type="DWORD"></角色ID>
+    <角色信息 type="tagRemoteRoleData"></角色信息>
+  </远程玩家当前属性>
+
+  <返回装备结果 name="NS_Equip">
+    <错误码 type="DWORD"></错误码>
+    <装备64位序列号 type="INT64"></装备64位序列号>
+  </返回装备结果>
+
+  <放下装备结果 name="NS_Unequip">
+    <错误码 type="DWORD"></错误码>
+    <装备64位序列号 type="INT64"></装备64位序列号>
+  </放下装备结果>
+
+  <同一个容器内物品移动 name="NS_ItemPosChange">
+    <容器类型 type="EItemConType"></容器类型>
+    <移动位置的物品1 type="INT64"></移动位置的物品1>
+    <受影响物品2 type="INT64"></受影响物品2>
+    <物品1的目标位置 type="INT16"></物品1的目标位置>
+    <物品2的目标位置 type="INT16"></物品2的目标位置>
+  </同一个容器内物品移动>
+
+  <不同容器内物品移动 name="NS_ItemPosChangeEx">
+    <容器类型1 type="EItemConType"></容器类型1>
+    <容器类型2 type="EItemConType"></容器类型2>
+    <移动位置的物品1 type="INT64"></移动位置的物品1>
+    <移动位置的物品2 type="INT64"></移动位置的物品2>
+    <物品1的目标位置 type="INT16"></物品1的目标位置>
+    <物品2的目标位置 type="INT16"></物品2的目标位置>
+  </不同容器内物品移动>
+
+  <是否可以接取此任务 name="NS_CanTakeQuest">
+    <错误码 type="DWORD"></错误码>
+  </是否可以接取此任务>
+  <是否可以完成此任务 name="NS_CanCompleteQuest">
+    <错误码 type="DWORD"></错误码>
+  </是否可以完成此任务>
+
+  <玩家请求交换物品 name="NS_ExchangeReq">
+    <消息发起者ID type="DWORD"></消息发起者ID>
+  </玩家请求交换物品>
+
+  <目标玩家交易请求反馈 name="NS_ExchangeReqRes">
+    <错误码 type="DWORD"></错误码>
+    <消息发起者ID type="DWORD"></消息发起者ID>
+    <消息目标ID type="DWORD"></消息目标ID>
+  </目标玩家交易请求反馈>
+
+  <添加交易的物品装备2Src name="NS_ExchangeAdd_2Src">
+    <错误码 type="DWORD"></错误码>
+    <消息目标ID type="DWORD"></消息目标ID>
+    <序号 type="INT64"></序号>
+    <索引 type="INT32"></索引>
+  </添加交易的物品装备2Src>
+
+
+  <添加交易的物品装备2Dst name="NS_ExchangeAdd_2Dst">  
+    <消息目标ID type="DWORD"></消息目标ID>
+    <索引 type="INT32"></索引>
+    <物品或装备 type="BYTE[]"></物品或装备>
+  </添加交易的物品装备2Dst>
+
+
+
+
+
+  <取消交易的物品装备 name="NS_ExchangeDec">
+    <错误码 type="DWORD"></错误码>
+    <消息发起者ID type="DWORD"></消息发起者ID>
+    <消息目标ID type="DWORD"></消息目标ID>
+    <序号 type="INT64"></序号>
+  </取消交易的物品装备>
+
+  <金钱发生改变 name="NS_ExchangeMoney">
+    <错误码 type="DWORD"></错误码>
+    <金钱 type="INT64"></金钱>
+    <消息发起者ID type="DWORD"></消息发起者ID>
+  </金钱发生改变>
+
+  <锁定交易物品 name="NS_ExchangeLock">
+    <错误码 type="DWORD"></错误码>
+    <消息发起者ID type="DWORD"></消息发起者ID>
+  </锁定交易物品>
+
+  <取消交易 name="NS_ExchangeCancel">
+    <消息发起者ID type="DWORD"></消息发起者ID>
+  </取消交易>
+
+  <玩家确认交易 name="NS_ExchangeVerify">
+    <错误码 type="DWORD"></错误码>
+    <导致失败者ID type="DWORD"></导致失败者ID>
+  </玩家确认交易>
+
+
+  <已经完成的任务 name="NS_GetRoleInitState_CompleteQuest">
+    <完成的任务 type="tagQuestDoneSave"></完成的任务>
+  </已经完成的任务>
+
+
+  <没有完成的任务 name="NS_GetRoleInitState_IncompleteQuest">
+    <任务ID type="DWORD[]"></任务ID>
+    <接收任务的时间 type="DWORD[]"></接收任务的时间>
+  </没有完成的任务>
+  
+  
+  
+  
+  
+</action>

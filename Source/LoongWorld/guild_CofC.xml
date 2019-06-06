@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 商会信息表xml映射 -->
+<root>
+  <CofC id="" purchase_CofC="" origin_CofC="" profit=""/>
+  <CofC id="" purchase_CofC="" origin_CofC="" profit=""/>
+</root>
+
+<!-- 注：
+1.id为流水号(保证唯一即可)
+2.purchase_CofC为收购方商会ID,origin_CofC为商货来源的商会ID
+3.profit为当前商会收购收益率
+-->

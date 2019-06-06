@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="rfbstatic" ClassName="CGUIStatic" LogicPos_x="271" LogicPos_y="56" Size_x="67" Size_y="24" AlignControl="\desktop\characteratt" AlignType="OuterRight" Text="跑商中" Font="小白雅黑" FontHeight="24" FontWeight="800" TextRect_right="67" TextRect_bottom="24" TextColor="0xFFF28C31" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="Center" PicColor="0xFFFFFF" />
+</desktop>

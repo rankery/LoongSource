@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- id 技能编号  -->
+<!-- type1 类型   -->
+<!-- type2 类型2  -->
+<!-- type3 类型3  -->
+<!-- cast_type 施放类型  -->
+<!-- level 技能等级  -->
+<!-- cast_condition 施放状态  -->
+<!-- cooldown_time 恢复时间  -->
+<!-- work_time 工作时间  -->
+<!-- wuxing_cost 五行力增加  -->
+<!-- spirit_cost 灵力消耗  -->
+<!-- wuxing_add 五行力消耗  -->
+<!-- buffid 状态  -->
+<!-- learn_condition 学习条件  -->
+<!-- potential_cost 潜能消耗  -->
+<!-- learn_prob 学习几率  -->
+<!-- learn_step 学习阶  -->
+<!-- learn_grade 学习等  -->
+<!-- att1 属性1  -->
+<!-- mod1 数值1  -->
+<!-- pet_att 宠物属性  -->
+<!-- pet_mod 宠物数值  -->
+
+
+<root>
+  <PetSkill id="" type1="" type2="" type3="" cast_type="" level="" cast_condition="" cooldown_time="" work_time="" wuxing_cost="" spirit_cost="" wuxing_add="" buffid="" learn_condition="" potential_cost="" learn_prob="" learn_step="" learn_grade="" learn_rolelvl="" att1="" mod1="" att2="" mod2="" att3="" mod3="" att4="" mod4="" att5="" mod5="" att6="" mod6="" pet_att="" pet_mod=""/>
+  <PetSkill id="" type1="" type2="" type3="" cast_type="" level="" cast_condition="" cooldown_time="" work_time="" wuxing_cost="" spirit_cost="" wuxing_add="" buffid="" learn_condition="" potential_cost="" learn_prob="" learn_step="" learn_grade="" learn_rolelvl="" att1="" mod1="" att2="" mod2="" att3="" mod3="" att4="" mod4="" att5="" mod5="" att6="" mod6="" pet_att="" pet_mod=""/>
+</root>

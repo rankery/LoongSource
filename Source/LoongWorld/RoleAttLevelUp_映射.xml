@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 属性升级表xml映射 -->
+<root>
+    <RoleAtt id="" ExpLevelUp="" Physique="" Strength="" Pneuma="" InnerForce="" Agility="" Technique="" RoleAttAvail_e="" TalentAvail_e="" HP="" MP="" Vitality=""/>
+    <RoleAtt id="" ExpLevelUp="" Physique="" Strength="" Pneuma="" InnerForce="" Agility="" Technique="" RoleAttAvail_e="" TalentAvail_e="" HP="" MP="" Vitality=""/>
+</root>
+
+<!-- 注：
+1.id中记录的是等级；
+2.ExpLevelUp中记录的是升到下一等级的经验增量；
+3.其他为升到该等级得到相关点数；
+-->

@@ -1,0 +1,122 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by TerrainEditor.rc
+//
+#define IDD_PROPPAGE_HEIGHTMAP          106
+#define IDD_PROPPAGE_LAYER              107
+#define IDD_PROPPAGE_DECO               108
+#define IDD_DIALOG1                     1000
+#define IDC_ImportHightmap              1000
+#define IDC_Create                      1001
+#define IDC_Build                       1002
+#define IDD_DIALOG2                     1003
+#define IDD_BRUSH                       1003
+#define IDC_Inner                       1003
+#define IDC_Save                        1003
+#define IDC_Outer                       1004
+#define IDD_IMPORT                      1004
+#define IDC_Load                        1004
+#define IDC_Str                         1005
+#define IDD_Create                      1005
+#define IDC_Mod                         1005
+#define IDC_Freq                        1006
+#define IDC_EditUVSet                   1006
+#define IDC_LOCK                        1007
+#define IDD_LayerAtt                    1007
+#define IDC_ImportHightmap2             1007
+#define IDC_ExportHightmap              1007
+#define IDC_Ambient                     1007
+#define IDC_File                        1008
+#define IDD_PROPPAGE_Water              1008
+#define IDC_Diffuse                     1008
+#define IDC_FileDlg                     1009
+#define IDD_PROPPAGE_VIS                1009
+#define IDC_XScale                      1010
+#define IDC_EditTools                   1010
+#define IDD_PROPPAGE_River              1010
+#define IDC_Width                       1011
+#define IDD_UVSet                       1011
+#define IDC_ZScale                      1013
+#define IDC_Info                        1013
+#define IDC_HScale                      1014
+#define IDC_Height                      1015
+#define IDC_Shape                       1015
+#define IDC_LerpType                    1015
+#define IDC_InitVal                     1016
+#define IDC_LerpType2                   1016
+#define IDC_ShapeType                   1016
+#define IDC_Noise                       1017
+#define IDC_Specular                    1017
+#define IDC_Wireframe                   1018
+#define IDC_BruteForce                  1019
+#define IDC_ShowPatchEdge               1019
+#define IDC_LOD                         1020
+#define IDC_LayerList                   1021
+#define IDC_AddLayer                    1022
+#define IDC_DelLayer                    1023
+#define IDC_Name                        1023
+#define IDC_LayerUp                     1024
+#define IDC_Tex                         1024
+#define IDC_BuildPath                   1024
+#define IDC_LayerDown                   1025
+#define IDC_uScale                      1025
+#define IDC_ShowDist                    1025
+#define IDC_UVSetIndex                  1025
+#define IDC_vScale                      1026
+#define IDC_Clear                       1026
+#define IDC_ShowDist2                   1026
+#define IDC_EditDist                    1026
+#define IDC_Reset                       1027
+#define IDC_Transparency                1027
+#define IDC_HInfo                       1029
+#define IDC_OpenDetailMap               1030
+#define IDC_DetailMap                   1031
+#define IDC_ApplyDetailMap              1032
+#define IDC_BUTTON1                     1032
+#define IDC_ReNoise                     1032
+#define IDC_PropAply                    1032
+#define IDC_BtnAdd                      1032
+#define IDC_CheckLayer                  1032
+#define IDC_Undo                        1032
+#define IDC_AddPoint                    1033
+#define IDC_BtnRemove                   1033
+#define IDC_SelPoint                    1034
+#define IDC_BtnApply                    1034
+#define IDC_DelPoint                    1035
+#define IDC_BtnImportMap                1035
+#define IDC_EditPoint                   1036
+#define IDC_RefreshView                 1036
+#define IDC_ApplyMtl                    1039
+#define IDC_ApplyMtl2                   1040
+#define IDC_ApplyTrans                  1040
+#define IDC_LayerProp                   1041
+#define IDC_EnableNoise                 1042
+#define IDC_ShowSize                    1043
+#define IDC_LIST1                       1044
+#define IDC_NewRiver                    1045
+#define IDC_DelRiver                    1046
+#define IDC_UVSet                       1046
+#define IDC_ShowLayerCount              1048
+#define IDC_ShowLayerCount2             1049
+#define IDC_ShowSubPatchEdge            1049
+#define IDC_BUTTON2                     1050
+#define IDC_CalcFade                    1050
+#define IDC_Redo                        1050
+#define IDC_ModifyAlpha                 1051
+#define IDC_Del                         1053
+#define IDC_RemoveFade                  1053
+#define IDC_SURFACETYPE                 1058
+#define IDC_TerrainPow                  1059
+#define IDC_Point                       4010
+#define IDC_Mtl                         4011
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        1012
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1060
+#define _APS_NEXT_SYMED_VALUE           1008
+#endif
+#endif

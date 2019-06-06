@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoongDB", "LoongDB.vcxproj", "{C40C39F4-5CC2-489F-A392-73CBBBD82254}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vEngine", "..\vEngine\vEngine.vcxproj", "{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Beton", "..\Beton\Beton.vcxproj", "{6C6BDA44-0D75-4D12-B05E-74E387188B84}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WorldDefine", "..\WorldDefine\WorldDefine.vcxproj", "{00C176DA-FE8F-442B-BBAC-084D8E69E439}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerDefine", "..\ServerDefine\ServerDefine.vcxproj", "{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lua", "..\Lua\Lua.vcxproj", "{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Lib_debug|Win32 = Lib_debug|Win32
+		Release|Win32 = Release|Win32
+		StaticDebug|Win32 = StaticDebug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.Debug|Win32.Build.0 = Debug|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.Lib_debug|Win32.ActiveCfg = Release|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.Lib_debug|Win32.Build.0 = Release|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.Release|Win32.ActiveCfg = Release|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.Release|Win32.Build.0 = Release|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.StaticDebug|Win32.ActiveCfg = Debug|Win32
+		{C40C39F4-5CC2-489F-A392-73CBBBD82254}.StaticDebug|Win32.Build.0 = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Debug|Win32.Build.0 = Debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Lib_debug|Win32.ActiveCfg = Lib_debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Lib_debug|Win32.Build.0 = Lib_debug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Release|Win32.ActiveCfg = Release|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.Release|Win32.Build.0 = Release|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.StaticDebug|Win32.ActiveCfg = StaticDebug|Win32
+		{B976C603-FAD7-416E-9E47-B74FD5AA2EAA}.StaticDebug|Win32.Build.0 = StaticDebug|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Debug|Win32.Build.0 = Debug|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Lib_debug|Win32.ActiveCfg = Release|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Lib_debug|Win32.Build.0 = Release|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Release|Win32.ActiveCfg = Release|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.Release|Win32.Build.0 = Release|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.StaticDebug|Win32.ActiveCfg = Debug|Win32
+		{6C6BDA44-0D75-4D12-B05E-74E387188B84}.StaticDebug|Win32.Build.0 = Debug|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.Debug|Win32.Build.0 = Debug|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.Lib_debug|Win32.ActiveCfg = Release|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.Lib_debug|Win32.Build.0 = Release|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.Release|Win32.ActiveCfg = Release|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.Release|Win32.Build.0 = Release|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.StaticDebug|Win32.ActiveCfg = Debug|Win32
+		{00C176DA-FE8F-442B-BBAC-084D8E69E439}.StaticDebug|Win32.Build.0 = Debug|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.Debug|Win32.Build.0 = Debug|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.Lib_debug|Win32.ActiveCfg = Release|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.Lib_debug|Win32.Build.0 = Release|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.Release|Win32.ActiveCfg = Release|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.Release|Win32.Build.0 = Release|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.StaticDebug|Win32.ActiveCfg = Debug|Win32
+		{BD9531B8-6CAB-45EE-B087-CE3EDCD39A36}.StaticDebug|Win32.Build.0 = Debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Debug|Win32.Build.0 = Debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Lib_debug|Win32.ActiveCfg = Lib_debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Lib_debug|Win32.Build.0 = Lib_debug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Release|Win32.ActiveCfg = Release|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.Release|Win32.Build.0 = Release|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.StaticDebug|Win32.ActiveCfg = StaticDebug|Win32
+		{354CC39D-7E52-4F76-8F48-F7C7B46B4BCB}.StaticDebug|Win32.Build.0 = StaticDebug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

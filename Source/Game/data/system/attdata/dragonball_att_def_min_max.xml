@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Att id="0" name="ERA_Physique" def_role="10" def_creature="0" min="-999" max="9999" />
+    <Att id="1" name="ERA_Strength" def_role="10" def_creature="0" min="-999" max="9999" />
+    <Att id="2" name="ERA_Pneuma" def_role="10" def_creature="0" min="-999" max="9999" />
+    <Att id="3" name="ERA_InnerForce" def_role="10" def_creature="0" min="-999" max="9999" />
+    <Att id="4" name="ERA_Technique" def_role="10" def_creature="0" min="-999" max="9999" />
+    <Att id="5" name="ERA_Agility" def_role="10" def_creature="0" min="-999" max="9999" />
+    <Att id="8" name="ERA_MaxHP" def_role="100" def_creature="0" min="1" max="999999999" />
+    <Att id="9" name="ERA_HP " def_role="100" def_creature="0" min="0" max="999999999" />
+    <Att id="10" name="ERA_MaxMP" def_role="100" def_creature="0" min="0" max="999999999" />
+    <Att id="11" name="ERA_MP" def_role="100" def_creature="0" min="0" max="999999999" />
+    <Att id="12" name="ERA_ExAttack" def_role="50" def_creature="0" min="0" max="999999" />
+    <Att id="13" name="ERA_ExDefense" def_role="56" def_creature="0" min="0" max="999999" />
+    <Att id="14" name="ERA_InAttack" def_role="50" def_creature="0" min="0" max="999999" />
+    <Att id="15" name="ERA_InDefense" def_role="56" def_creature="0" min="0" max="999999" />
+    <Att id="16" name="ERA_AttackTec" def_role="20" def_creature="0" min="0" max="999999" />
+    <Att id="17" name="ERA_DefenseTec" def_role="20" def_creature="0" min="0" max="999999" />
+    <Att id="18" name="ERA_HitRate" def_role="70" def_creature="0" min="0" max="999999" />
+    <Att id="19" name="ERA_Dodge" def_role="70" def_creature="0" min="0" max="999999" />
+    <Att id="20" name="ERA_Endurance" def_role="300" def_creature="0" min="0" max="99999" />
+    <Att id="21" name="ERA_MaxEndurance" def_role="300" def_creature="0" min="0" max="99999" />
+    <Att id="22" name="ERA_HPRegainRate" def_role="0" def_creature="0" min="-9999" max="99999" />
+    <Att id="23" name="ERA_MPRegainRate" def_role="0" def_creature="0" min="-9999" max="99999" />
+    <Att id="24" name="ERA_Rage" def_role="0" def_creature="0" min="0" max="100" />
+    <Att id="25" name="ERA_Vitality" def_role="100" def_creature="0" min="0" max="999" />
+    <Att id="26" name="ERA_MaxVitality" def_role="100" def_creature="0" min="0" max="999" />
+    <Att id="27" name="ERA_VitalityRegainRate" def_role="1" def_creature="0" min="0" max="999" />
+    <Att id="28" name="ERA_Speed_XZ" def_role="10000" def_creature="0" min="2000" max="99999" />
+    <Att id="29" name="ERA_Speed_Y" def_role="10000" def_creature="0" min="2000" max="99999" />
+    <Att id="30" name="ERA_Speed_Swin" def_role="10000" def_creature="0" min="2000" max="99999" />
+    <Att id="31" name="ERA_Speed_Mount" def_role="10000" def_creature="0" min="2000" max="99999" />
+    <Att id="32" name="ERA_WeaponDmgMin" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="33" name="ERA_WeaponDmgMax" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="34" name="ERA_WeaponSoul" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="35" name="ERA_Armor" def_role="0" def_creature="0" min="0" max="9999" />
+    <Att id="36" name="ERA_Derate_Ordinary" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="37" name="ERA_Derate_Bleeding" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="38" name="ERA_Derate_Brunt" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="39" name="ERA_Derate_Bang" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="40" name="ERA_Derate_Poison" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="41" name="ERA_Derate_Thinker" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="42" name="ERA_Derate_Injury" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="43" name="ERA_Derate_Stunt" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="44" name="ERA_Derate_ExAttack" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="45" name="ERA_Derate_InAttack" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="46" name="ERA_Derate_ALL" def_role="0" def_creature="0" min="-1000" max="2000" />
+    <Att id="47" name="ERA_ExDamage" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="48" name="ERA_ExDamage_Absorb" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="49" name="ERA_Resist_Bleeding" def_role="0" def_creature="0" min="-200" max="200" />
+    <Att id="50" name="ERA_Resist_Weak" def_role="0" def_creature="0" min="-200" max="200" />
+    <Att id="51" name="ERA_Resist_Choas " def_role="0" def_creature="0" min="-200" max="200" />
+    <Att id="52" name="ERA_Resist_Special" def_role="0" def_creature="0" min="-200" max="200" />
+    <Att id="53" name="ERA_Regain_Addtion" def_role="0" def_creature="0" min="-9999" max="9999" />
+    <Att id="54" name="ERA_Attack_MissRate" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="55" name="ERA_CloseAttack_DodgeRate" def_role="0" def_creature="0" min="-10000" max="10000" />
+    <Att id="56" name="ERA_RemoteAttack_DodgeRate" def_role="0" def_creature="0" min="-10000" max="10000" />
+    <Att id="57" name="ERA_Crit_Rate" def_role="0" def_creature="0" min="-1000" max="1000" />
+    <Att id="58" name="ERA_Crit_Amount" def_role="0" def_creature="0" min="-10000" max="10000" />
+    <Att id="59" name="ERA_Block_Rate" def_role="0" def_creature="0" min="-10000" max="10000" />
+    <Att id="60" name="ERA_Inspiration " def_role="4" def_creature="0" min="-9999" max="9999" />
+    <Att id="61" name="ERA_Lurk" def_role="0" def_creature="0" min="-9999" max="9999" />
+    <Att id="62" name="ERA_Savvy" def_role="0" def_creature="0" min="0" max="100" />
+    <Att id="63" name="ERA_Morale" def_role="100" def_creature="100" min="0" max="200" />
+    <Att id="64" name="ERA_Injury" def_role="0" def_creature="0" min="0" max="100" />
+    <Att id="65" name="ERA_Enmity_Degree" def_role="0" def_creature="0" min="-9999" max="9999" />
+    <Att id="66" name="ERA_Shape" def_role="10000" def_creature="10000" min="1000" max="99999" />
+    <Att id="67" name="ERA_Exp_Add_Rate" def_role="0" def_creature="0" min="-10000" max="99999" />
+    <Att id="68" name="ERA_Money_Add_Rate" def_role="0" def_creature="0" min="-10000" max="99999" />
+    <Att id="69" name="ERA_Loot_Add_Rate" def_role="0" def_creature="0" min="-10000" max="99999" />
+    <Att id="70" name="ERA_Fortune" def_role="0" def_creature="0" min="0" max="200" />
+    <Att id="71" name="ERA_Appearance" def_role="0" def_creature="0" min="0" max="200" />
+    <Att id="72" name="ERA_Rein" def_role="0" def_creature="0" min="0" max="999" />
+    <Att id="73" name="ERA_Knowledge" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="74" name="ERA_Morality" def_role="0" def_creature="0" min="-9999" max="9999" />
+    <Att id="75" name="ERA_Culture" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="77" name="ERA_Spirit" def_role="300" def_creature="0" min="0" max="360" />
+    <Att id="78" name="ERA_Shili" def_role="0" def_creature="0" />
+    <Att id="79" name="ERA_WuXun" def_role="0" def_creature="0" />
+    <Att id="80" name="ERA_WuJi" def_role="0" def_creature="0" />
+    <Att id="81" name="ERA_Weary" def_role="0" def_creature="0" min="0" max="200" />
+    <Att id="82" name="ERA_Soar" def_role="0" def_creature="0" min="0" max="2" />
+    <Att id="83" name="ERA_Toughness" def_role="0" def_creature="0" min="0" max="100000" />
+    <Att id="84" name="ERA_Deepen_Ordinary" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="85" name="ERA_Deepen_Bleedingg" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="86" name="ERA_Deepen_Brunt" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="87" name="ERA_Deepen_Bang" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="88" name="ERA_Deepen_Poison" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="89" name="ERA_Deepen_Thinker" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="90" name="ERA_Deepen_Injury" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="91" name="ERA_Deepen_Stunt" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="92" name="ERA_Deepen_ExAttack" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="93" name="ERA_Deepen_InAttack" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="94" name="ERA_Deepen_ALL" def_role="0" def_creature="0" min="0" max="1000" />
+    <Att id="95" name="ERA_Neglect_Toughness" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="96" name="ERA_Neglect_Block" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="97" name="ERA_Neglect_Attack" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="98" name="ERA_Neglect_Buff" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="99" name="ERA_AirSea" def_role="0" def_creature="0" min="0" max="99999" />
+    <Att id="100" name="ERA_PresentMaxHp" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="101" name="ERA_VipLevel" def_role="0" def_creature="0" min="0" max="3" />
+    <Att id="102" name="ERA_Accurate" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="103" name="ERA_Smart" def_role="0" def_creature="0" min="0" max="10000" />
+    <Att id="104" name="ERA_Fatigue" />
+</root>

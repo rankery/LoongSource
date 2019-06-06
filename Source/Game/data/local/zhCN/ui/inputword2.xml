@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="inputback" ClassName="CGUIStatic" LogicPos_x="388" LogicPos_y="556" Size_x="192" Size_y="20" AlignControl="\desktop\inputpic" AlignType="OuterTop" Font="小白雅黑" FontHeight="20" TextRect_left="4" TextRect_right="192" TextRect_bottom="20" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicFileName="data\ui\chat\l-chat.bmp" PicRect_top="170" PicRect_right="226" PicRect_bottom="188" PicColor="0xFFFFFFFF" AlphaWrite="Write" />
+</desktop>

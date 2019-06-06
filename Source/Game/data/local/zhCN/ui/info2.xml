@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="info2_pic" ClassName="CGUIStatic" CanMoveOutOfFather="yes" TopMost="yes" LogicPos_x="97" LogicPos_y="316" Size_x="1024" Size_y="66" AlignControl="\desktop\centerback" AlignType="OuterBottom" Font="小白雅黑" FontHeight="24" FontWeight="800" TextRect_right="1024" TextRect_bottom="22" TextColor="0xFFFEAC01" ShadeColor="0xFF290404" TextWriteAlpha="yes" TextAlign="Center" PicColor="0xFFFFFF">
+        <UIControl Name="info3" ClassName="CGUIStaticEx" Resizable="yes" LogicPos_x="462" Size_x="100" Size_y="22" AlignControl="\desktop\info2_pic" AlignType="InnerTop" Font="小白雅黑" FontHeight="24" FontWeight="800" TextRect_right="100" TextRect_bottom="20" TextColor="0xFFFFBB44" ShadeColor="0xFF290404" TextAlign="Center" PicColor="0xFFFFFF" RowHeight="2" />
+        <UIControl Name="info2" ClassName="CGUIStaticEx" Resizable="yes" LogicPos_x="462" LogicPos_y="22" Size_x="100" Size_y="22" AlignControl="\desktop\info2_pic" AlignType="Center" Font="小白雅黑" FontHeight="24" FontWeight="800" TextRect_right="100" TextRect_bottom="20" TextColor="0xFFFFBB44" ShadeColor="0xFF290404" TextAlign="Center" PicColor="0xFFFFFF" RowHeight="2" />
+        <UIControl Name="info1" ClassName="CGUIStaticEx" Resizable="yes" LogicPos_x="462" LogicPos_y="44" Size_x="100" Size_y="22" AlignControl="\desktop\info2_pic" AlignType="InnerBottom" Font="小白雅黑" FontHeight="24" FontWeight="800" TextRect_right="100" TextRect_bottom="20" TextColor="0xFFFFBB44" ShadeColor="0xFF290404" TextAlign="Center" PicColor="0xFFFFFF" RowHeight="2" />
+    </UIControl>
+</desktop>

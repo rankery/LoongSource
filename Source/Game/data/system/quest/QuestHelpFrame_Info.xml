@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <QuestHelp QuestId="1" StartPicName="data\ui\help\tutorial\2.jpg" FinishPicName="data\ui\help\tutorial\1.jpg" StartPicPage="1" FinishPicPage="2" />
+    <QuestHelp QuestId="2" StartPicName="data\ui\help\tutorial\22.jpg" FinishPicName="" StartPicPage="3" FinishPicPage="" />
+    <QuestHelp QuestId="4" StartPicName="data\ui\help\tutorial\3.jpg" FinishPicName="" StartPicPage="4" FinishPicPage="" />
+    <QuestHelp QuestId="5" StartPicName="data\ui\help\tutorial\4.jpg" FinishPicName="" StartPicPage="5" FinishPicPage="" />
+    <QuestHelp QuestId="71" StartPicName="" FinishPicName="data\ui\help\tutorial\8.jpg" StartPicPage="" FinishPicPage="6" />
+    <QuestHelp QuestId="72" StartPicName="" FinishPicName="data\ui\help\tutorial\8.jpg" StartPicPage="" FinishPicPage="6" />
+    <QuestHelp QuestId="75" StartPicName="" FinishPicName="data\ui\help\tutorial\9.jpg" StartPicPage="" FinishPicPage="7" />
+    <QuestHelp QuestId="12" StartPicName="data\ui\help\tutorial\10.jpg" FinishPicName="" StartPicPage="8" FinishPicPage="" />
+    <QuestHelp QuestId="14" StartPicName="" FinishPicName="data\ui\help\tutorial\12.jpg" StartPicPage="" FinishPicPage="9" />
+    <QuestHelp QuestId="77" StartPicName="" FinishPicName="data\ui\help\tutorial\13.jpg" StartPicPage="" FinishPicPage="10" />
+    <QuestHelp QuestId="21" StartPicName="" FinishPicName="data\ui\help\tutorial\17.jpg" StartPicPage="" FinishPicPage="11" />
+    <QuestHelp QuestId="10002" StartPicName="" FinishPicName="data\ui\help\tutorial\18.jpg" StartPicPage="" FinishPicPage="12" />
+    <QuestHelp QuestId="10003" StartPicName="" FinishPicName="data\ui\help\tutorial\19.jpg" StartPicPage="" FinishPicPage="13" />
+    <QuestHelp QuestId="10024" StartPicName="data\ui\help\tutorial\20.jpg" FinishPicName="" StartPicPage="14" FinishPicPage="" />
+    <QuestHelp QuestId="10007" StartPicName="" FinishPicName="data\ui\help\tutorial\21.jpg" StartPicPage="" FinishPicPage="15" />
+
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<commerce id="20024" deposit="10000" beginning_tael="10000" purpose_tael="25000" max_tael="50000" exp="7580" contribution="5" exploit="0"/>
+	<commerce id="25029" deposit="10000" beginning_tael="10000" purpose_tael="25000" max_tael="50000" exp="10800" contribution="5" exploit="0"/>
+	<commerce id="30034" deposit="10000" beginning_tael="10000" purpose_tael="25000" max_tael="50000" exp="13550" contribution="5" exploit="0"/>
+	<commerce id="35039" deposit="10000" beginning_tael="10000" purpose_tael="25000" max_tael="50000" exp="21150" contribution="5" exploit="0"/>
+	<commerce id="40044" deposit="10000" beginning_tael="20000" purpose_tael="50000" max_tael="100000" exp="27630" contribution="5" exploit="0"/>
+	<commerce id="45049" deposit="10000" beginning_tael="20000" purpose_tael="50000" max_tael="100000" exp="47380" contribution="5" exploit="0"/>
+	<commerce id="50054" deposit="10000" beginning_tael="20000" purpose_tael="50000" max_tael="100000" exp="68570" contribution="5" exploit="0"/>
+	<commerce id="55059" deposit="10000" beginning_tael="20000" purpose_tael="50000" max_tael="100000" exp="95610" contribution="5" exploit="0"/>
+	<commerce id="60064" deposit="20000" beginning_tael="40000" purpose_tael="100000" max_tael="200000" exp="122620" contribution="5" exploit="0"/>
+	<commerce id="65069" deposit="20000" beginning_tael="40000" purpose_tael="100000" max_tael="200000" exp="136050" contribution="5" exploit="0"/>
+	<commerce id="70074" deposit="20000" beginning_tael="40000" purpose_tael="100000" max_tael="200000" exp="147890" contribution="5" exploit="0"/>
+	<commerce id="75079" deposit="20000" beginning_tael="40000" purpose_tael="100000" max_tael="200000" exp="158410" contribution="5" exploit="0"/>
+	<commerce id="80084" deposit="20000" beginning_tael="50000" purpose_tael="150000" max_tael="300000" exp="158410" contribution="5" exploit="0"/>
+	<commerce id="85089" deposit="20000" beginning_tael="50000" purpose_tael="150000" max_tael="300000" exp="158410" contribution="5" exploit="0"/>
+	<commerce id="90094" deposit="20000" beginning_tael="50000" purpose_tael="150000" max_tael="300000" exp="158410" contribution="5" exploit="0"/>
+	<commerce id="95099" deposit="20000" beginning_tael="50000" purpose_tael="150000" max_tael="300000" exp="158410" contribution="5" exploit="0"/>
+	<commerce id="100150" deposit="50000" beginning_tael="50000" purpose_tael="200000" max_tael="400000" exp="158410" contribution="5" exploit="0"/>
+</root>

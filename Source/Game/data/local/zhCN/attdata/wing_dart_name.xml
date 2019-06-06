@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <wing_dart_name id="1" dec="最大体力" />
+    <wing_dart_name id="2" dec="最大真气" />
+    <wing_dart_name id="3" dec="外功防御" />
+    <wing_dart_name id="4" dec="内功防御" />
+    <wing_dart_name id="5" dec="外功攻击" />
+    <wing_dart_name id="6" dec="内功攻击" />
+    <wing_dart_name id="7" dec="命中" />
+    <wing_dart_name id="8" dec="最大体力" />
+    <wing_dart_name id="9" dec="最大真气" />
+    <wing_dart_name id="10" dec="外功防御" />
+    <wing_dart_name id="11" dec="内功防御" />
+    <wing_dart_name id="12" dec="外功攻击" />
+    <wing_dart_name id="13" dec="内功攻击" />
+    <wing_dart_name id="14" dec="命中" />
+    <wing_dart_name id="15" dec="最大体力" />
+    <wing_dart_name id="16" dec="最大真气" />
+    <wing_dart_name id="17" dec="外功防御" />
+    <wing_dart_name id="18" dec="内功防御" />
+    <wing_dart_name id="19" dec="外功攻击" />
+    <wing_dart_name id="20" dec="内功攻击" />
+    <wing_dart_name id="21" dec="命中" />
+    <wing_dart_name id="22" dec="最大体力" />
+    <wing_dart_name id="23" dec="最大真气" />
+    <wing_dart_name id="24" dec="外功防御" />
+    <wing_dart_name id="25" dec="内功防御" />
+    <wing_dart_name id="26" dec="外功攻击" />
+    <wing_dart_name id="27" dec="内功攻击" />
+    <wing_dart_name id="28" dec="命中" />
+    <wing_dart_name id="29" dec="最大体力" />
+    <wing_dart_name id="30" dec="最大真气" />
+    <wing_dart_name id="31" dec="外功防御" />
+    <wing_dart_name id="32" dec="内功防御" />
+    <wing_dart_name id="33" dec="外功攻击" />
+    <wing_dart_name id="34" dec="内功攻击" />
+    <wing_dart_name id="35" dec="命中" />
+    <wing_dart_name id="36" dec="最大体力" />
+    <wing_dart_name id="37" dec="最大真气" />
+    <wing_dart_name id="38" dec="外功防御" />
+    <wing_dart_name id="39" dec="内功防御" />
+    <wing_dart_name id="40" dec="外功攻击" />
+    <wing_dart_name id="41" dec="内功攻击" />
+    <wing_dart_name id="42" dec="攻击技巧" />
+    <wing_dart_name id="43" dec="防御技巧" />
+    <wing_dart_name id="44" dec="命中" />
+    <wing_dart_name id="45" dec="最大体力" />
+    <wing_dart_name id="46" dec="最大真气" />
+    <wing_dart_name id="47" dec="外功防御" />
+    <wing_dart_name id="48" dec="内功防御" />
+    <wing_dart_name id="49" dec="外功攻击" />
+    <wing_dart_name id="50" dec="内功攻击" />
+    <wing_dart_name id="51" dec="攻击技巧" />
+    <wing_dart_name id="52" dec="防御技巧" />
+    <wing_dart_name id="53" dec="命中" />
+    <wing_dart_name id="54" dec="最大体力" />
+    <wing_dart_name id="55" dec="最大真气" />
+    <wing_dart_name id="56" dec="外功防御" />
+    <wing_dart_name id="57" dec="内功防御" />
+    <wing_dart_name id="58" dec="外功攻击" />
+    <wing_dart_name id="59" dec="内功攻击" />
+    <wing_dart_name id="60" dec="攻击技巧" />
+    <wing_dart_name id="61" dec="防御技巧" />
+    <wing_dart_name id="62" dec="命中" />
+    <wing_dart_name id="63" dec="最大体力" />
+    <wing_dart_name id="64" dec="最大真气" />
+    <wing_dart_name id="65" dec="外功防御" />
+    <wing_dart_name id="66" dec="内功防御" />
+    <wing_dart_name id="67" dec="外功攻击" />
+    <wing_dart_name id="68" dec="内功攻击" />
+    <wing_dart_name id="69" dec="攻击技巧" />
+    <wing_dart_name id="70" dec="防御技巧" />
+    <wing_dart_name id="71" dec="命中" />
+    <wing_dart_name id="72" dec="最大体力" />
+    <wing_dart_name id="73" dec="最大真气" />
+    <wing_dart_name id="74" dec="外功防御" />
+    <wing_dart_name id="75" dec="内功防御" />
+    <wing_dart_name id="76" dec="外功攻击" />
+    <wing_dart_name id="77" dec="内功攻击" />
+    <wing_dart_name id="78" dec="攻击技巧" />
+    <wing_dart_name id="79" dec="防御技巧" />
+    <wing_dart_name id="80" dec="命中" />
+    <wing_dart_name id="81" dec="最大体力" />
+    <wing_dart_name id="82" dec="最大真气" />
+    <wing_dart_name id="83" dec="外功防御" />
+    <wing_dart_name id="84" dec="内功防御" />
+    <wing_dart_name id="85" dec="外功攻击" />
+    <wing_dart_name id="86" dec="内功攻击" />
+    <wing_dart_name id="87" dec="攻击技巧" />
+    <wing_dart_name id="88" dec="防御技巧" />
+    <wing_dart_name id="89" dec="命中" />
+    <wing_dart_name id="90" dec="最大体力" />
+    <wing_dart_name id="91" dec="最大真气" />
+    <wing_dart_name id="92" dec="外功防御" />
+    <wing_dart_name id="93" dec="内功防御" />
+    <wing_dart_name id="94" dec="外功攻击" />
+    <wing_dart_name id="95" dec="内功攻击" />
+    <wing_dart_name id="96" dec="攻击技巧" />
+    <wing_dart_name id="97" dec="防御技巧" />
+    <wing_dart_name id="98" dec="命中" />
+    <wing_dart_name id="99" dec="最大体力" />
+    <wing_dart_name id="100" dec="最大真气" />
+    <wing_dart_name id="101" dec="外功防御" />
+    <wing_dart_name id="102" dec="内功防御" />
+    <wing_dart_name id="103" dec="外功攻击" />
+    <wing_dart_name id="104" dec="内功攻击" />
+    <wing_dart_name id="105" dec="攻击技巧" />
+    <wing_dart_name id="106" dec="防御技巧" />
+    <wing_dart_name id="107" dec="命中" />
+    <wing_dart_name id="108" dec="最大体力" />
+    <wing_dart_name id="109" dec="最大真气" />
+    <wing_dart_name id="110" dec="外功防御" />
+    <wing_dart_name id="111" dec="内功防御" />
+    <wing_dart_name id="112" dec="外功攻击" />
+    <wing_dart_name id="113" dec="内功攻击" />
+    <wing_dart_name id="114" dec="攻击技巧" />
+    <wing_dart_name id="115" dec="防御技巧" />
+    <wing_dart_name id="116" dec="命中" />
+    <wing_dart_name id="117" dec="最大体力" />
+    <wing_dart_name id="118" dec="最大真气" />
+    <wing_dart_name id="119" dec="外功防御" />
+    <wing_dart_name id="120" dec="内功防御" />
+    <wing_dart_name id="121" dec="外功攻击" />
+    <wing_dart_name id="122" dec="内功攻击" />
+    <wing_dart_name id="123" dec="攻击技巧" />
+    <wing_dart_name id="124" dec="防御技巧" />
+    <wing_dart_name id="125" dec="命中" />
+    <wing_dart_name id="126" dec="最大体力" />
+    <wing_dart_name id="127" dec="最大真气" />
+    <wing_dart_name id="128" dec="外功防御" />
+    <wing_dart_name id="129" dec="内功防御" />
+    <wing_dart_name id="130" dec="外功攻击" />
+    <wing_dart_name id="131" dec="内功攻击" />
+    <wing_dart_name id="132" dec="攻击技巧" />
+    <wing_dart_name id="133" dec="防御技巧" />
+    <wing_dart_name id="134" dec="命中" />
+    <wing_dart_name id="135" dec="外功伤害减免" />
+    <wing_dart_name id="136" dec="内功伤害减免" />
+    <wing_dart_name id="137" dec="最大体力" />
+    <wing_dart_name id="138" dec="最大真气" />
+    <wing_dart_name id="139" dec="外功防御" />
+    <wing_dart_name id="140" dec="内功防御" />
+    <wing_dart_name id="141" dec="外功攻击" />
+    <wing_dart_name id="142" dec="内功攻击" />
+    <wing_dart_name id="143" dec="攻击技巧" />
+    <wing_dart_name id="144" dec="防御技巧" />
+    <wing_dart_name id="145" dec="命中" />
+    <wing_dart_name id="146" dec="外功伤害减免" />
+    <wing_dart_name id="147" dec="内功伤害减免" />
+    <wing_dart_name id="148" dec="最大体力" sfx="txw13" />
+    <wing_dart_name id="149" dec="最大真气" sfx="txw13" />
+    <wing_dart_name id="150" dec="外功防御" sfx="txw13" />
+    <wing_dart_name id="151" dec="内功防御" sfx="txw13" />
+    <wing_dart_name id="152" dec="外功攻击" sfx="txw13" />
+    <wing_dart_name id="153" dec="内功攻击" sfx="txw13" />
+    <wing_dart_name id="154" dec="攻击技巧" sfx="txw13" />
+    <wing_dart_name id="155" dec="防御技巧" sfx="txw13" />
+    <wing_dart_name id="156" dec="命中" sfx="txw13" />
+    <wing_dart_name id="157" dec="外功伤害减免" sfx="txw13" />
+    <wing_dart_name id="158" dec="内功伤害减免" sfx="txw13" />
+    <wing_dart_name id="159" dec="最大体力" sfx="txw15" />
+    <wing_dart_name id="160" dec="最大真气" sfx="txw15" />
+    <wing_dart_name id="161" dec="外功防御" sfx="txw15" />
+    <wing_dart_name id="162" dec="内功防御" sfx="txw15" />
+    <wing_dart_name id="163" dec="外功攻击" sfx="txw15" />
+    <wing_dart_name id="164" dec="内功攻击" sfx="txw15" />
+    <wing_dart_name id="165" dec="攻击技巧" sfx="txw15" />
+    <wing_dart_name id="166" dec="防御技巧" sfx="txw15" />
+    <wing_dart_name id="167" dec="命中" sfx="txw15" />
+    <wing_dart_name id="168" dec="外功伤害减免" sfx="txw15" />
+    <wing_dart_name id="169" dec="内功伤害减免" sfx="txw15" />
+    <wing_dart_name id="170" dec="最大体力" sfx="txw17" />
+    <wing_dart_name id="171" dec="最大真气" sfx="txw17" />
+    <wing_dart_name id="172" dec="外功防御" sfx="txw17" />
+    <wing_dart_name id="173" dec="内功防御" sfx="txw17" />
+    <wing_dart_name id="174" dec="外功攻击" sfx="txw17" />
+    <wing_dart_name id="175" dec="内功攻击" sfx="txw17" />
+    <wing_dart_name id="176" dec="攻击技巧" sfx="txw17" />
+    <wing_dart_name id="177" dec="防御技巧" sfx="txw17" />
+    <wing_dart_name id="178" dec="命中" sfx="txw17" />
+    <wing_dart_name id="179" dec="外功伤害减免" sfx="txw17" />
+    <wing_dart_name id="180" dec="内功伤害减免" sfx="txw17" />
+    <wing_dart_name id="181" dec="最大体力" />
+    <wing_dart_name id="182" dec="最大真气" />
+    <wing_dart_name id="183" dec="外功防御" />
+    <wing_dart_name id="184" dec="内功防御" />
+    <wing_dart_name id="185" dec="外功攻击" />
+    <wing_dart_name id="186" dec="内功攻击" />
+    <wing_dart_name id="187" dec="攻击技巧" />
+    <wing_dart_name id="188" dec="防御技巧" />
+    <wing_dart_name id="189" dec="命中" />
+    <wing_dart_name id="190" dec="外功伤害减免" />
+    <wing_dart_name id="191" dec="内功伤害减免" />
+    <wing_dart_name id="192" dec="最大武器伤害" />
+    <wing_dart_name id="193" dec="武魂" />
+    <wing_dart_name id="194" dec="最大体力" />
+    <wing_dart_name id="195" dec="最大真气" />
+    <wing_dart_name id="196" dec="外功防御" />
+    <wing_dart_name id="197" dec="内功防御" />
+    <wing_dart_name id="198" dec="外功攻击" />
+    <wing_dart_name id="199" dec="内功攻击" />
+    <wing_dart_name id="200" dec="攻击技巧" />
+    <wing_dart_name id="201" dec="防御技巧" />
+    <wing_dart_name id="202" dec="命中" />
+    <wing_dart_name id="203" dec="外功伤害减免" />
+    <wing_dart_name id="204" dec="内功伤害减免" />
+    <wing_dart_name id="205" dec="最大武器伤害" />
+    <wing_dart_name id="206" dec="武魂" />
+    <wing_dart_name id="207" dec="最大体力" sfx="txw14" />
+    <wing_dart_name id="208" dec="最大真气" sfx="txw14" />
+    <wing_dart_name id="209" dec="外功防御" sfx="txw14" />
+    <wing_dart_name id="210" dec="内功防御" sfx="txw14" />
+    <wing_dart_name id="211" dec="外功攻击" sfx="txw14" />
+    <wing_dart_name id="212" dec="内功攻击" sfx="txw14" />
+    <wing_dart_name id="213" dec="攻击技巧" sfx="txw14" />
+    <wing_dart_name id="214" dec="防御技巧" sfx="txw14" />
+    <wing_dart_name id="215" dec="命中" sfx="txw14" />
+    <wing_dart_name id="216" dec="外功伤害减免" sfx="txw14" />
+    <wing_dart_name id="217" dec="内功伤害减免" sfx="txw14" />
+    <wing_dart_name id="218" dec="最大武器伤害" sfx="txw14" />
+    <wing_dart_name id="219" dec="武魂" sfx="txw14" />
+    <wing_dart_name id="220" dec="最大体力" sfx="txw16" />
+    <wing_dart_name id="221" dec="最大真气" sfx="txw16" />
+    <wing_dart_name id="222" dec="外功防御" sfx="txw16" />
+    <wing_dart_name id="223" dec="内功防御" sfx="txw16" />
+    <wing_dart_name id="224" dec="外功攻击" sfx="txw16" />
+    <wing_dart_name id="225" dec="内功攻击" sfx="txw16" />
+    <wing_dart_name id="226" dec="攻击技巧" sfx="txw16" />
+    <wing_dart_name id="227" dec="防御技巧" sfx="txw16" />
+    <wing_dart_name id="228" dec="命中" sfx="txw16" />
+    <wing_dart_name id="229" dec="外功伤害减免" sfx="txw16" />
+    <wing_dart_name id="230" dec="内功伤害减免" sfx="txw16" />
+    <wing_dart_name id="231" dec="最大武器伤害" sfx="txw16" />
+    <wing_dart_name id="232" dec="武魂" sfx="txw16" />
+    <wing_dart_name id="233" dec="最大体力" sfx="txw18" />
+    <wing_dart_name id="234" dec="最大真气" sfx="txw18" />
+    <wing_dart_name id="235" dec="外功防御" sfx="txw18" />
+    <wing_dart_name id="236" dec="内功防御" sfx="txw18" />
+    <wing_dart_name id="237" dec="外功攻击" sfx="txw18" />
+    <wing_dart_name id="238" dec="内功攻击" sfx="txw18" />
+    <wing_dart_name id="239" dec="攻击技巧" sfx="txw18" />
+    <wing_dart_name id="240" dec="防御技巧" sfx="txw18" />
+    <wing_dart_name id="241" dec="命中" sfx="txw18" />
+    <wing_dart_name id="242" dec="外功伤害减免" sfx="txw18" />
+    <wing_dart_name id="243" dec="内功伤害减免" sfx="txw18" />
+    <wing_dart_name id="244" dec="最大武器伤害" sfx="txw18" />
+    <wing_dart_name id="245" dec="武魂" sfx="txw18" />
+</root>

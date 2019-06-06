@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <SuitName id="1001" name="龙隐聚灵" spec_effect_mod="set024" />
+    <SuitName id="1002" name="玄龙隐士" spec_effect_mod="set024" />
+    <SuitName id="1003" name="玄龙名士" spec_effect_mod="set024" />
+    <SuitName id="1101" name="龙隐炼器" spec_effect_mod="set030" />
+    <SuitName id="1102" name="玄龙新兵" spec_effect_mod="set030" />
+    <SuitName id="1103" name="玄龙骑兵" spec_effect_mod="set030" />
+    <SuitName id="1303" name="[内]无回" spec_effect_mod="set025" />
+    <SuitName id="1304" name="[内]裕祥" spec_effect_mod="set026" />
+    <SuitName id="1305" name="[内]枭吴" spec_effect_mod="set027" />
+    <SuitName id="1306" name="[内]礼天前" spec_effect_mod="set028" />
+    <SuitName id="1307" name="[内]礼天后" spec_effect_mod="set029" />
+    <SuitName id="1308" name="[内]嫘祖" spec_effect_mod="set015" />
+    <SuitName id="1309" name="[内]魔殿" spec_effect_mod="set016" />
+    <SuitName id="1310" name="[内]凌霄" spec_effect_mod="set017" />
+    <SuitName id="1311" name="[内]天虚" spec_effect_mod="set018" />
+    <SuitName id="1403" name="[外]无回" spec_effect_mod="set031" />
+    <SuitName id="1404" name="[外]裕祥" spec_effect_mod="set032" />
+    <SuitName id="1405" name="[外]枭吴" spec_effect_mod="set033" />
+    <SuitName id="1406" name="[外]礼天前" spec_effect_mod="set034" />
+    <SuitName id="1407" name="[外]礼天后" spec_effect_mod="set035" />
+    <SuitName id="1408" name="[外]嫘祖" spec_effect_mod="set019" />
+    <SuitName id="1409" name="[外]魔殿" spec_effect_mod="set020" />
+    <SuitName id="1410" name="[外]凌霄" spec_effect_mod="set021" />
+    <SuitName id="1411" name="[外]天虚" spec_effect_mod="set022" />
+    <SuitName id="2001" name="仙姬" spec_effect_mod="set024" />
+    <SuitName id="2002" name="战姬" spec_effect_mod="set030" />
+    <SuitName id="2003" name="仙灵" />
+    <SuitName id="2004" name="神斩" />
+    <SuitName id="3001" name="玉灵清虚" spec_effect_mod="set015" />
+    <SuitName id="3002" name="天工开物" />
+    <SuitName id="3003" name="齐民要术" />
+    <SuitName id="3004" name="匠艺之王" />
+    <SuitName id="3005" name="倾国倾城 " />
+    <SuitName id="3006" name="新年快乐" spec_effect_mod="set028" />
+    <SuitName id="3007" name="碧娘" />
+    <SuitName id="3008" name="万毒" />
+    <SuitName id="3101" name="灵极" />
+    <SuitName id="3102" name="鬼极" />
+    <SuitName id="3103" name="妖极" />
+    <SuitName id="3104" name="仙极" />
+    <SuitName id="3105" name="魔极" />
+    <SuitName id="3106" name="神极" />
+    <SuitName id="3107" name="古仙·外" />
+    <SuitName id="3108" name="古仙·内" />
+    <SuitName id="3109" name="2012神龙" spec_effect_mod="txxn01" />
+    <SuitName id="3201" name="紫微" />
+    <SuitName id="3202" name="龙纹" />
+    <SuitName id="3203" name="霸王" />
+    <SuitName id="3204" name="血鳞" />
+    <SuitName id="3205" name="赤寒" />
+    <SuitName id="3206" name="御雷" />
+    <SuitName id="3207" name="青蛟" />
+    <SuitName id="3301" name="赤霓" />
+    <SuitName id="3302" name="碧光" />
+    <SuitName id="3303" name="真·赤霓" />
+    <SuitName id="3304" name="真·碧光" />
+    <SuitName id="3208" name="九天烈焰" />
+    <SuitName id="3209" name="龙卷寒冰" />
+    <SuitName id="3210" name="吉星魁鉞" />
+    <SuitName id="3211" name="吉星昌曲" />
+    <SuitName id="3212" name="天地花雨" />
+    <SuitName id="3213" name="天外乾坤" />
+    <SuitName id="3214" name="战狂" />
+    <SuitName id="3215" name="旷世缭音" />
+    <SuitName id="3216" name="恸世惊天" />
+    <SuitName id="3217" name="皇朝贵族" />
+    <SuitName id="3218" name="皇朝白金" />
+    <SuitName id="4001" name="华阳浮岳" />
+    <SuitName id="4002" name="玉珥星眸" />
+    <SuitName id="4003" name="彩蝶仙子" />
+    <SuitName id="4004" name="魔道涅磐" />
+    <SuitName id="4005" name="九天神女" />
+    <SuitName id="4006" name="扑朔金丝" />
+    <SuitName id="4007" name="鸾凤和鸣" />
+    <SuitName id="4008" name="莺燕啼翠" />
+    <SuitName id="4009" name="迷离玉缕" />
+    <SuitName id="4010" name="苗疆勇士" />
+    <SuitName id="4011" name="苗疆少女" />
+    <SuitName id="4012" name="傲雪寒梅" />
+    <SuitName id="4013" name="寒梅傲雪" />
+    <SuitName id="4014" name="风花雪月" />
+    <SuitName id="4015" name="雪月风花" />
+    <SuitName id="4016" name="抚水清逸" />
+    <SuitName id="4017" name="潇湘俊逸" />
+    <SuitName id="4018" name="大汉礼服" />
+    <SuitName id="4019" name="傲天玲珑" />
+    <SuitName id="4020" name="抚水柔媚" />
+    <SuitName id="4021" name="碧玉玲珑" />
+    <SuitName id="4022" name="娇柔汉服" />
+    <SuitName id="4023" name="洛香素环" />
+    <SuitName id="4024" name="冰肌无瑕" />
+    <SuitName id="4025" name="VIP之青龙" />
+    <SuitName id="4026" name="VIP之青龙" />
+    <SuitName id="4027" name="VIP之银龙" />
+    <SuitName id="4028" name="VIP之银龙" />
+    <SuitName id="4029" name="VIP之神龙" />
+    <SuitName id="4030" name="VIP之神龙" />
+    <SuitName id="4031" name="吉庆圣诞" />
+    <SuitName id="4032" name="喜庆圣诞" />
+    <SuitName id="4033" name="倾城玉灵" />
+    <SuitName id="4034" name="欢乐新年" />
+    <SuitName id="4035" name="快乐新年" />
+    <SuitName id="4036" name="郎情" spec_effect_mod="set031" />
+    <SuitName id="4037" name="妾意" spec_effect_mod="set032" />
+    <SuitName id="4038" name="行风浪子" />
+    <SuitName id="4039" name="明眸清泉" />
+    <SuitName id="4040" name="朗逸风扬" />
+    <SuitName id="4041" name="轻舞风扬" />
+    <SuitName id="4042" name="新春时装" />
+    <SuitName id="4043" name="情人节时装" />
+    <SuitName id="4044" name="城主之威" spec_effect_mod="set023" />
+    <SuitName id="4045" name="浪漫沙滩" />
+    <SuitName id="4046" name="大力神之辉" />
+    <SuitName id="4047" name="波斯风情" />
+    <SuitName id="4048" name="波斯奇侠" />
+    <SuitName id="4049" name="蓝色梦幻" />
+    <SuitName id="4050" name="蓝色传奇" />
+    <SuitName id="4051" name="ＰＰ俱乐部" spec_effect_mod="set006" />
+    <SuitName id="4052" name="登峰造极" spec_effect_mod="set006" />
+    <SuitName id="4053" name="万圣节" />
+    <SuitName id="4054" name="傲视雪山" />
+    <SuitName id="4055" name="豪气万丈" />
+    <SuitName id="4056" name="春节快乐" />
+    <SuitName id="4057" name="紫幻苍穹" />
+    <SuitName id="4058" name="火红贵族" />
+    <SuitName id="4059" name="我爱妈咪" />
+    <SuitName id="4060" name="优雅圣洁" />
+    <SuitName id="4061" name="我爱爹地" />
+    <SuitName id="4062" name="水灯之佑" />
+    <SuitName id="4063" name="阳·奥龙" />
+    <SuitName id="4064" name="阴·奥龙" />
+    <SuitName id="4065" name="阳·玄虎" />
+    <SuitName id="4066" name="阴·玄虎" />
+    <SuitName id="4067" name="2011圣诞" />
+    <SuitName id="4068" name="唐装" />
+    <SuitName id="4069" name="百事可乐" />
+    <SuitName id="4070" name="欧洲杯之耀" />
+    <SuitName id="4071" name="熊猫" />
+    <SuitName id="4072" name="恶魔猎人" />
+    <SuitName id="4101" name="勇猛之心★" spec_effect_mod="set001" />
+    <SuitName id="4102" name="勇猛之心★★" spec_effect_mod="set002" />
+    <SuitName id="4103" name="勇猛之心★★★" spec_effect_mod="set003" />
+    <SuitName id="4104" name="刚毅之躯★" spec_effect_mod="set004" />
+    <SuitName id="4105" name="刚毅之躯★★" spec_effect_mod="set005" />
+    <SuitName id="4106" name="刚毅之躯★★★" spec_effect_mod="set006" />
+    <SuitName id="4107" name="辉煌之气★" spec_effect_mod="set007" />
+    <SuitName id="4108" name="辉煌之气★★" spec_effect_mod="set008" />
+    <SuitName id="4109" name="辉煌之气★★★" spec_effect_mod="set009" />
+    <SuitName id="4110" name="纯洁之灵★" spec_effect_mod="set010" />
+    <SuitName id="4111" name="纯洁之灵★★" spec_effect_mod="set011" />
+    <SuitName id="4112" name="纯洁之灵★★★" spec_effect_mod="set012" />
+    <SuitName id="4113" name="魂之青龙" spec_effect_mod="set009" />
+    <SuitName id="4114" name="魂之银龙" spec_effect_mod="set009" />
+    <SuitName id="4115" name="魂之神龙" spec_effect_mod="set009" />
+    <SuitName id="4116" name="魔神" />
+    <SuitName id="4117" name="魔神" />
+    <SuitName id="4118" name="魔神" />
+    <SuitName id="5001" name="绞芒" />
+    <SuitName id="5002" name="水翠" />
+    <SuitName id="5003" name="裂魂" />
+    <SuitName id="5004" name="锦鳞" />
+    <SuitName id="5005" name="百雀" />
+    <SuitName id="5006" name="凤霞" />
+    <SuitName id="5007" name="兽煞" />
+    <SuitName id="5008" name="佩鸣" />
+</root>

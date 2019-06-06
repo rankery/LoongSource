@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 副本静态属性 -->
+<root>
+  <Instance id="" EndTime="" TimeLimit="" InstanceMode="" CreateMode="" AskEnter="" SelectHard="" SelectNormal="" SelectElite="" SelectDevil="" NoticeTeamate="" NumDownLimit="" NumUpLimit="" LevelDownLimit="" LevelUpLimit="" ExportMode="" ExportMapID="" x="" y="" z="" EnterX="" EnterY="" EnterZ="" TargetLimit="" IsCombat="" IsPK="" IsloseSafeGuard="" IsPKPenalty="" IsDeadPenalty="" IsMount="" IsTransmit="" RebornMode="" CompleteConditionNor="" CompleteValNor1="" CompleteValNor2="" CompleteConditionEli="" CompleteValEli1="" CompleteValEli2="" CompleteConditionDev="" CompleteValDev1="" CompleteValDev2="" CompleteEvent="" />
+  <Instance id="" EndTime="" TimeLimit="" InstanceMode="" CreateMode="" AskEnter="" SelectHard="" SelectNormal="" SelectElite="" SelectDevil="" NoticeTeamate="" NumDownLimit="" NumUpLimit="" LevelDownLimit="" LevelUpLimit="" ExportMode="" ExportMapID="" x="" y="" z="" EnterX="" EnterY="" EnterZ="" TargetLimit="" IsCombat="" IsPK="" IsloseSafeGuard="" IsPKPenalty="" IsDeadPenalty="" IsMount="" IsTransmit="" RebornMode="" CompleteConditionNor="" CompleteValNor1="" CompleteValNor2="" CompleteConditionEli="" CompleteValEli1="" CompleteValEli2="" CompleteConditionDev="" CompleteValDev1="" CompleteValDev2="" CompleteEvent="" />
+</root>

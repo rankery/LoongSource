@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Client_Debug|Win32">
+      <Configuration>Client_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DDD08AA-08AC-4989-9A73-4309F332E75D}</ProjectGuid>
+    <RootNamespace>GameFrame</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Client_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Game\$(Configuration)\</OutDir>
+    <IntDir>..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Game\$(Configuration)\</OutDir>
+    <IntDir>..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client_Debug|Win32'">
+    <OutDir>d:\Work\Bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;WORLD_BASE_EXPORTS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\External\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(IntDir)$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;WORLD_BASE_EXPORTS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\External\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(IntDir)$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client_Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GAMEFRAME_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)GameFrame.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>/work/bin/GameFrame.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)GameFrame.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameMapEditor\CreatureDataReader.cpp" />
+    <ClCompile Include="GameMapEditor\GameMapEditor.cpp" />
+    <ClCompile Include="GameMapEditor\MapObjEdit.cpp" />
+    <ClCompile Include="GameMap\GameMap.cpp" />
+    <ClCompile Include="NavMapEditor\NavMapEditor.cpp" />
+    <ClCompile Include="NavMapEditor\NavMapEditorUtil.cpp" />
+    <ClCompile Include="NavMap\AreaMap.cpp" />
+    <ClCompile Include="NavMap\AStarPathFinder.cpp" />
+    <ClCompile Include="NavMap\HalfByteMap.cpp" />
+    <ClCompile Include="NavMap\NavAsyncResIO.cpp" />
+    <ClCompile Include="NavMap\NavBaseCollider.cpp" />
+    <ClCompile Include="NavMap\NavBintreeCollider.cpp" />
+    <ClCompile Include="NavMap\NavBintreeNode.cpp" />
+    <ClCompile Include="NavMap\NavCarrierNode.cpp" />
+    <ClCompile Include="NavMap\NavCollider.cpp" />
+    <ClCompile Include="NavMap\NavColliderCache.cpp" />
+    <ClCompile Include="NavMap\NavColliderDataGen.cpp" />
+    <ClCompile Include="NavMap\NavCollider_HitFly.cpp" />
+    <ClCompile Include="NavMap\NavCollider_Jump.cpp" />
+    <ClCompile Include="NavMap\NavCollider_Move.cpp" />
+    <ClCompile Include="NavMap\NavCollider_MoveOnCarrier.cpp" />
+    <ClCompile Include="NavMap\NavCollider_NPCMove.cpp" />
+    <ClCompile Include="NavMap\NavCollider_Slide.cpp" />
+    <ClCompile Include="NavMap\NavCollider_Swim.cpp" />
+    <ClCompile Include="NavMap\NavEntityNode.cpp" />
+    <ClCompile Include="NavMap\NavGenBuilder.cpp" />
+    <ClCompile Include="NavMap\NavGenNode.cpp" />
+    <ClCompile Include="NavMap\NavGenNodeBuilder.cpp" />
+    <ClCompile Include="NavMap\NavHeightmap.cpp" />
+    <ClCompile Include="NavMap\NavKernel.cpp" />
+    <ClCompile Include="NavMap\NavMap.cpp" />
+    <ClCompile Include="NavMap\NavMovePath.cpp" />
+    <ClCompile Include="NavMap\NavNullSceneGraph.cpp" />
+    <ClCompile Include="NavMap\NavOctreeCollider.cpp" />
+    <ClCompile Include="NavMap\NavOctreeNode.cpp" />
+    <ClCompile Include="NavMap\NavQuadTreeData.cpp" />
+    <ClCompile Include="NavMap\NavQuadTreeDataBuilder.cpp" />
+    <ClCompile Include="NavMap\NavQuadTreeSG.cpp" />
+    <ClCompile Include="NavMap\NavResBase.cpp" />
+    <ClCompile Include="NavMap\NavResBitMap.cpp" />
+    <ClCompile Include="NavMap\NavResHeightmap.cpp" />
+    <ClCompile Include="NavMap\NavResMgr.cpp" />
+    <ClCompile Include="NavMap\NavResRequestQueueTS.cpp" />
+    <ClCompile Include="NavMap\NavResSceneMesh.cpp" />
+    <ClCompile Include="NavMap\NavSceneGraph.cpp" />
+    <ClCompile Include="NavMap\NavSceneNode.cpp" />
+    <ClCompile Include="NavMap\NavSGQuadTreeNode.cpp" />
+    <ClCompile Include="NavMap\NPCNavGraph.cpp" />
+    <ClCompile Include="NavMap\NPCNavGraphGen.cpp" />
+    <ClCompile Include="NavMap\NPCNavMap.cpp" />
+    <ClCompile Include="NavMap\NPCNavMapDoors.cpp" />
+    <ClCompile Include="NavMap\NPCNavMapGen.cpp" />
+    <ClCompile Include="NavMap\OutlinePathFinder.cpp" />
+    <ClCompile Include="NavMap\PathFinderByMap.cpp" />
+    <ClCompile Include="NavMap\PathFinderByPatch.cpp" />
+    <ClCompile Include="NavMap\PathFinderByPatchDataGen.cpp" />
+    <ClCompile Include="NavMap\PathFinderByTile.cpp" />
+    <ClCompile Include="NavMap\PathPointDistMap.cpp" />
+    <ClCompile Include="NavMap\PathPointOctree.cpp" />
+    <ClCompile Include="NavMap\PathPointOctreeBuilder.cpp" />
+    <ClCompile Include="NavMap\PathPointOctreeNode.cpp" />
+    <ClCompile Include="NavMap\PlayerCangoMapGen.cpp" />
+    <ClCompile Include="NavMap\PlayerNavMap.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Client_Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WorldBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\ObjectSpace.h" />
+    <ClInclude Include="GameMapEditor\CreatureDataReader.h" />
+    <ClInclude Include="GameMapEditor\GameMapEditor.h" />
+    <ClInclude Include="GameMapEditor\MapObjEdit.h" />
+    <ClInclude Include="GameMap\GameMap.h" />
+    <ClInclude Include="NavMapEditor\NavMapEditor.h" />
+    <ClInclude Include="NavMapEditor\NavMapEditorUtil.h" />
+    <ClInclude Include="NavMap\AreaMap.h" />
+    <ClInclude Include="NavMap\AStarHeap.h" />
+    <ClInclude Include="NavMap\AStarPathFinder.h" />
+    <ClInclude Include="NavMap\HalfByteMap.h" />
+    <ClInclude Include="NavMap\NavAsyncResIO.h" />
+    <ClInclude Include="NavMap\NavBaseCollider.h" />
+    <ClInclude Include="NavMap\NavBintreeCollider.h" />
+    <ClInclude Include="NavMap\NavBintreeNode.h" />
+    <ClInclude Include="NavMap\NavCarrierNode.h" />
+    <ClInclude Include="NavMap\NavCollider.h" />
+    <ClInclude Include="NavMap\NavColliderCache.h" />
+    <ClInclude Include="NavMap\NavColliderDataGen.h" />
+    <ClInclude Include="NavMap\NavColliderPrivateDef.h" />
+    <ClInclude Include="NavMap\NavColliderPublicDef.h" />
+    <ClInclude Include="NavMap\NavCollider_HitFly.h" />
+    <ClInclude Include="NavMap\NavCollider_Jump.h" />
+    <ClInclude Include="NavMap\NavCollider_Move.h" />
+    <ClInclude Include="NavMap\NavCollider_MoveOnCarrier.h" />
+    <ClInclude Include="NavMap\NavCollider_NPCMove.h" />
+    <ClInclude Include="NavMap\NavCollider_Slide.h" />
+    <ClInclude Include="NavMap\NavCollider_Swim.h" />
+    <ClInclude Include="NavMap\NavEntityNode.h" />
+    <ClInclude Include="NavMap\NavGenBuilder.h" />
+    <ClInclude Include="NavMap\NavGenNode.h" />
+    <ClInclude Include="NavMap\NavGenNodeBuilder.h" />
+    <ClInclude Include="NavMap\NavHeightmap.h" />
+    <ClInclude Include="NavMap\NavKernel.h" />
+    <ClInclude Include="NavMap\NavMap.h" />
+    <ClInclude Include="NavMap\NavMovePath.h" />
+    <ClInclude Include="NavMap\NavNullSceneGraph.h" />
+    <ClInclude Include="NavMap\NavOctreeCollider.h" />
+    <ClInclude Include="NavMap\NavOctreeNode.h" />
+    <ClInclude Include="NavMap\NavQuadTreeData.h" />
+    <ClInclude Include="NavMap\NavQuadTreeDataBuilder.h" />
+    <ClInclude Include="NavMap\NavQuadTreeSG.h" />
+    <ClInclude Include="NavMap\NavResBase.h" />
+    <ClInclude Include="NavMap\NavResBitMap.h" />
+    <ClInclude Include="NavMap\NavResHeightmap.h" />
+    <ClInclude Include="NavMap\NavResMgr.h" />
+    <ClInclude Include="NavMap\NavResPool.h" />
+    <ClInclude Include="NavMap\NavResRequestQueueTS.h" />
+    <ClInclude Include="NavMap\NavResSceneMesh.h" />
+    <ClInclude Include="NavMap\NavSceneGraph.h" />
+    <ClInclude Include="NavMap\NavSceneNode.h" />
+    <ClInclude Include="NavMap\NavSGQuadTreeNode.h" />
+    <ClInclude Include="NavMap\NavSurface.h" />
+    <ClInclude Include="NavMap\NPCNavGraph.h" />
+    <ClInclude Include="NavMap\NPCNavGraphGen.h" />
+    <ClInclude Include="NavMap\NPCNavMap.h" />
+    <ClInclude Include="NavMap\NPCNavMapDoors.h" />
+    <ClInclude Include="NavMap\NPCNavMapGen.h" />
+    <ClInclude Include="NavMap\OutlinePathFinder.h" />
+    <ClInclude Include="NavMap\PathFinderByMap.h" />
+    <ClInclude Include="NavMap\PathFinderByPatch.h" />
+    <ClInclude Include="NavMap\PathFinderByPatchDataGen.h" />
+    <ClInclude Include="NavMap\PathFinderByTile.h" />
+    <ClInclude Include="NavMap\PathPointDistMap.h" />
+    <ClInclude Include="NavMap\PathPointOctree.h" />
+    <ClInclude Include="NavMap\PathPointOctreeBuilder.h" />
+    <ClInclude Include="NavMap\PathPointOctreeNode.h" />
+    <ClInclude Include="NavMap\PlayerCangoMapGen.h" />
+    <ClInclude Include="NavMap\PlayerNavMap.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="WorldBase.h" />
+    <ClInclude Include="WorldBaseDefine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cool3D\Cool3D.vcxproj">
+      <Project>{b3cb1323-2921-47cf-abaf-ba0253c839b5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLReader\XMLReader.vcxproj">
+      <Project>{e0974098-c94f-4f97-b141-a292e3671248}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

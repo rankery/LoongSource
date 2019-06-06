@@ -1,0 +1,192 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "tengwu"
+            VALUE "FileDescription", "F3DMaxExp"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "F3DMaxExp"
+            VALUE "LegalCopyright", "Copyright ? 2004"
+            VALUE "OriginalFilename", "F3DMaxExp.dll"
+            VALUE "ProductName", "tengwu F3DMaxExp"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MtlDlg DIALOGEX 300, 200, 247, 200
+STYLE DS_SETFONT | WS_POPUP | WS_THICKFRAME
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确  定",IDOK,61,180,50,14
+    RTEXT           "基本路径:",IDC_STATIC,7,32,53,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "输出路径:",IDC_STATIC,7,51,53,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_BasePath,64,32,109,14,ES_LOWERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_OutPath,64,51,109,14,ES_LOWERCASE | ES_AUTOHSCROLL
+    CONTROL         "自动拷贝",IDC_AutoCopy,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,109,46,10
+    CONTROL         "使用模型路径",IDC_MdlPath,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,54,57,13
+    RTEXT           "贴图输出路径:",IDC_STATIC,7,70,53,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_FullPath,64,70,173,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "模型输出路径:",IDC_STATIC,7,89,53,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_ExpPath,64,89,173,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "取  消",IDCANCEL,130,180,50,14
+    CONTROL         "LightMap UV",IDC_ExportLightMapUV,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,123,59,10
+    CONTROL         "NormalMap UV",IDC_ExportNormalMapUV,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,138,66,10
+    CONTROL         "多遍渲染（使用半透明贴图时选择）",IDC_MultiPass,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,107,109,130,10
+    CONTROL         "导出镂空材质的碰撞盒",IDC_ExportOpcity,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,167,90,10
+    CONTROL         "导出碰撞盒",IDC_ExportBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,152,53,10
+    RTEXT           "中心点:",IDC_STATIC,7,13,53,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    EDITTEXT        IDC_Origin,63,13,109,14,ES_LOWERCASE | ES_AUTOHSCROLL
+    LTEXT           "LightMap大小",IDC_STATIC,137,124,48,8
+    EDITTEXT        IDC_LightMapSize,106,122,27,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CollideBoxSize,107,150,27,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(32,64,128,256,512)",IDC_STATIC,134,134,77,8
+    LTEXT           "碰撞盒大小(单位：cm)",IDC_STATIC,137,152,76,8
+END
+
+IDD_Ani DIALOG  0, 0, 154, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Track列表"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,45,32,10
+    LISTBOX         IDC_LIST,7,7,95,68,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_Del,115,25,32,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MtlDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_Ani, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00C176DA-FE8F-442B-BBAC-084D8E69E439}</ProjectGuid>
+    <RootNamespace>WorldDefine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Game\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Game\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\vsout\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>解析SVN版本</Message>
+      <Command>RevisionExtractor.exe</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(IntDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>解析SVN版本</Message>
+      <Command>RevisionExtractor.exe</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\External\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(IntDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="action.h" />
+    <ClInclude Include="all_msg_cmd.h" />
+    <ClInclude Include="chat.h" />
+    <ClInclude Include="login.h" />
+    <ClInclude Include="msg_activity.h" />
+    <ClInclude Include="msg_adventure.h" />
+    <ClInclude Include="msg_combat.h" />
+    <ClInclude Include="msg_common_errorcode.h" />
+    <ClInclude Include="msg_compose.h" />
+    <ClInclude Include="msg_currency.h" />
+    <ClInclude Include="msg_digbao.h" />
+    <ClInclude Include="msg_exchange.h" />
+    <ClInclude Include="msg_external_links.h" />
+    <ClInclude Include="msg_famehall.h" />
+    <ClInclude Include="msg_fatigue_guarder.h" />
+    <ClInclude Include="msg_fishing.h" />
+    <ClInclude Include="msg_func_npc.h" />
+    <ClInclude Include="msg_game_guarder.h" />
+    <ClInclude Include="msg_gm_cmd.h" />
+    <ClInclude Include="msg_group.h" />
+    <ClInclude Include="msg_guild.h" />
+    <ClInclude Include="msg_item.h" />
+    <ClInclude Include="msg_loot.h" />
+    <ClInclude Include="msg_mall.h" />
+    <ClInclude Include="msg_map.h" />
+    <ClInclude Include="msg_marriage.h" />
+    <ClInclude Include="msg_mingtie.h" />
+    <ClInclude Include="msg_motion.h" />
+    <ClInclude Include="msg_pet.h" />
+    <ClInclude Include="msg_pet_equip.h" />
+    <ClInclude Include="msg_pet_exchange.h" />
+    <ClInclude Include="msg_pet_skill.h" />
+    <ClInclude Include="msg_pk.h" />
+    <ClInclude Include="msg_player_preventlost.h" />
+    <ClInclude Include="msg_prison.h" />
+    <ClInclude Include="msg_reputation.h" />
+    <ClInclude Include="msg_return_roleselect.h" />
+    <ClInclude Include="msg_role_title.h" />
+    <ClInclude Include="msg_role_vcard.h" />
+    <ClInclude Include="msg_script.h" />
+    <ClInclude Include="msg_shop.h" />
+    <ClInclude Include="msg_show_item.h" />
+    <ClInclude Include="msg_social.h" />
+    <ClInclude Include="msg_stall.h" />
+    <ClInclude Include="msg_strength.h" />
+    <ClInclude Include="msg_talent.h" />
+    <ClInclude Include="msg_time.h" />
+    <ClInclude Include="msg_vip_netbar.h" />
+    <ClInclude Include="msg_virgin_online.h" />
+    <ClInclude Include="quest.h" />
+    <ClInclude Include="remote_role.h" />
+    <ClInclude Include="role_att.h" />
+    <ClInclude Include="role_info.h" />
+    <ClInclude Include="selectrole.h" />
+    <ClInclude Include="test.h" />
+    <ClInclude Include="AvatarAtt.h" />
+    <ClInclude Include="base_define.h" />
+    <ClInclude Include="buff_define.h" />
+    <ClInclude Include="chat_define.h" />
+    <ClInclude Include="compose_define.h" />
+    <ClInclude Include="container_define.h" />
+    <ClInclude Include="cost_type_define.h" />
+    <ClInclude Include="creature_define.h" />
+    <ClInclude Include="currency_define.h" />
+    <ClInclude Include="dword_flag.h" />
+    <ClInclude Include="exchange_define.h" />
+    <ClInclude Include="famehall_define.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="func_npc_define.h" />
+    <ClInclude Include="group_define.h" />
+    <ClInclude Include="guild_define.h" />
+    <ClInclude Include="ItemDefine.h" />
+    <ClInclude Include="longhun_define.h" />
+    <ClInclude Include="loot.h" />
+    <ClInclude Include="mall_define.h" />
+    <ClInclude Include="MapAttDefine.h" />
+    <ClInclude Include="mingtie.h" />
+    <ClInclude Include="motion_define.h" />
+    <ClInclude Include="move_define.h" />
+    <ClInclude Include="NetCmdViewer_Msg.h" />
+    <ClInclude Include="penalty_define.h" />
+    <ClInclude Include="pet_define.h" />
+    <ClInclude Include="pet_equip_define.h" />
+    <ClInclude Include="pet_skill_define.h" />
+    <ClInclude Include="pk_define.h" />
+    <ClInclude Include="QuestDef.h" />
+    <ClInclude Include="reputation.h" />
+    <ClInclude Include="RoleDefine.h" />
+    <ClInclude Include="script_data.h" />
+    <ClInclude Include="ScriptMsgInfo.h" />
+    <ClInclude Include="shop_define.h" />
+    <ClInclude Include="skill_define.h" />
+    <ClInclude Include="SocialDef.h" />
+    <ClInclude Include="specfunc_define.h" />
+    <ClInclude Include="stall_define.h" />
+    <ClInclude Include="suit_define.h" />
+    <ClInclude Include="talent_define.h" />
+    <ClInclude Include="time.h" />
+    <ClInclude Include="TreasureChest_define.h" />
+    <ClInclude Include="trigger_define.h" />
+    <ClInclude Include="variable_len.h" />
+    <ClInclude Include="vcard_define.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="filter.cpp" />
+    <ClCompile Include="time.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

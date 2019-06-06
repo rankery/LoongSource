@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Map id="m01" width="1280" height="1280" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m02" width="4096" height="4096" visdist="48" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m03" width="3072" height="3072" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m04" width="4096" height="4096" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m05" width="3072" height="3072" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m06" width="3072" height="3072" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m06_1" width="3072" height="3072" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m07" width="4096" height="4096" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m08" width="2048" height="2048" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m09" width="1536" height="1536" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m10" width="384" height="384" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m14" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="50" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m15" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="100" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m16" width="3072" height="3072" visdist="64" type="1" normal_map_type="0" instance_rank="4" instance_num_limit="50" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m17" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="200" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m18" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="100" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m19" width="2048" height="2048" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="50" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m20" width="3072" height="3072" visdist="32" type="2" normal_map_type="0" instance_rank="0" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m21" width="1792" height="1792" visdist="64" type="5" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m22" width="1792" height="1792" visdist="64" type="5" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m40" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m41" width="3072" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="4" instance_num_limit="50" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m42" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="100" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m43" width="768" height="768" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m44" width="1536" height="2048" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="100" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m45" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m46" width="1024" height="2048" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m47" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="1" reborn_waypoint="reborn" />
+    <Map id="m48" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="1" reborn_waypoint="reborn" />
+    <Map id="m49" width="1024" height="1536" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m50" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m51" width="256" height="256" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="1000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m52" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m53" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m54" width="768" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m55" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="3" instance_num_limit="150" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m101" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m102" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m103" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m104" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m105" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m106" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m107" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="m108" width="1024" height="1024" visdist="64" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q01" width="384" height="384" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q02" width="384" height="384" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q03" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q05" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q06" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q07" width="768" height="768" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q08" width="768" height="768" visdist="64" type="1" normal_map_type="0" instance_rank="1" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q09" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q10" width="384" height="384" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="q11" width="384" height="384" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="test01" width="384" height="384" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="test02" width="512" height="512" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="testai_lc" width="1024" height="1024" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a01" width="1024" height="1024" visdist="64" type="1" normal_map_type="0" instance_rank="2" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a02" width="512" height="512" visdist="64" type="1" normal_map_type="0" instance_rank="0" instance_num_limit="3000" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="c03" width="1536" height="1024" visdist="48" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a04" width="640" height="640" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a05" width="640" height="640" visdist="64" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a06" width="256" height="256" visdist="64" type="2" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a07" width="256" height="256" visdist="64" type="1" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a08" width="256" height="256" visdist="64" type="1" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a09" width="256" height="256" visdist="64" type="5" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a10" width="512" height="512" visdist="64" type="5" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="c04" width="1536" height="1536" visdist="48" type="0" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="c03_1" width="512" height="512" visdist="48" type="0" normal_map_type="4" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a11" width="512" height="512" visdist="64" type="5" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+    <Map id="a12" width="768" height="768" visdist="64" type="1" normal_map_type="0" instance_rank="0" soar_limit="0" reborn_waypoint="reborn" />
+</root>

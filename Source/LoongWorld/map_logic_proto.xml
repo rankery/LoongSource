@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 地图逻辑属性xml映射 -->
+<root>
+    <Map id="" width="" height="" visdist="" type="" normal_map_type="" instance_rank="" instance_num_limit="" reborn_waypoint=""/>
+    <Map id="" width="" height="" visdist="" type="" normal_map_type="" instance_rank="" instance_num_limit="" reborn_waypoint=""/>
+</root>

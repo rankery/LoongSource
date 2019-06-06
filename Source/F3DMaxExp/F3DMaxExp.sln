@@ -1,0 +1,61 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "F3DMaxExp", "F3DMaxExp.vcproj", "{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeshExporter", "..\MeshExporter\MeshExporter.vcproj", "{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD} = {FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSExport", "..\CSExport\CSExport.vcproj", "{14432B14-48B1-412D-8FC4-16B43174F351}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD} = {FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = F3DMaxExp.vcproj
+		SccProjectName0 = \u0022$/F3DMaxExp\u0022,\u0020OBAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ..\\MeshExporter\\MeshExporter.vcproj
+		SccProjectName1 = \u0022$/MeshExporter\u0022,\u0020DGAAAAAA
+		SccLocalPath1 = ..\\MeshExporter
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = ..\\CSExport\\CSExport.vcproj
+		SccProjectName2 = \u0022$/CSExport\u0022,\u0020WBAAAAAA
+		SccLocalPath2 = ..\\CSExport
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Hybrid = Hybrid
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}.Debug.ActiveCfg = Debug|Win32
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}.Debug.Build.0 = Debug|Win32
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}.Hybrid.ActiveCfg = Hybrid|Win32
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}.Hybrid.Build.0 = Hybrid|Win32
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}.Release.ActiveCfg = Release|Win32
+		{FF8711C1-09ED-4FF9-A07D-A96B0FEE70CD}.Release.Build.0 = Release|Win32
+		{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}.Debug.ActiveCfg = Debug|Win32
+		{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}.Debug.Build.0 = Debug|Win32
+		{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}.Hybrid.ActiveCfg = Hybrid|Win32
+		{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}.Hybrid.Build.0 = Hybrid|Win32
+		{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}.Release.ActiveCfg = Release|Win32
+		{4A3C76C5-99F8-49BA-81E6-8887BF6613BD}.Release.Build.0 = Release|Win32
+		{14432B14-48B1-412D-8FC4-16B43174F351}.Debug.ActiveCfg = Debug|Win32
+		{14432B14-48B1-412D-8FC4-16B43174F351}.Debug.Build.0 = Debug|Win32
+		{14432B14-48B1-412D-8FC4-16B43174F351}.Hybrid.ActiveCfg = Hybrid|Win32
+		{14432B14-48B1-412D-8FC4-16B43174F351}.Hybrid.Build.0 = Hybrid|Win32
+		{14432B14-48B1-412D-8FC4-16B43174F351}.Release.ActiveCfg = Release|Win32
+		{14432B14-48B1-412D-8FC4-16B43174F351}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

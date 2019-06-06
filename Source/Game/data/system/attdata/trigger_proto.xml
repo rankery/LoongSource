@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <Trigger id="1000101" event_type="0" prop="0" state_type="1" state_misc1="100500" />
+    <Trigger id="1000102" event_type="0" prop="0" state_type="1" state_misc1="101000" />
+    <Trigger id="1000103" event_type="0" prop="0" state_type="1" state_misc1="102000" />
+    <Trigger id="1010000" event_type="1" prop="10000" state_type="0" />
+    <Trigger id="1010080" event_type="1" prop="8000" state_type="0" />
+    <Trigger id="1010050" event_type="1" prop="5000" state_type="0" />
+    <Trigger id="1010025" event_type="1" prop="2500" state_type="0" />
+    <Trigger id="1010010" event_type="1" prop="1000" state_type="0" />
+    <Trigger id="1020000" event_type="2" prop="10000" state_type="0" />
+    <Trigger id="1030000" event_type="3" prop="10000" state_type="0" />
+    <Trigger id="1030005" event_type="3" prop="500" state_type="0" />
+    <Trigger id="1030003" event_type="3" prop="300" state_type="0" />
+    <Trigger id="1040002" event_type="4" prop="200" state_type="0" />
+    <Trigger id="1040005" event_type="4" prop="500" state_type="0" />
+    <Trigger id="1040010" event_type="4" prop="1000" state_type="0" />
+    <Trigger id="1040015" event_type="4" prop="1500" state_type="0" />
+    <Trigger id="1040020" event_type="4" prop="2000" state_type="0" />
+    <Trigger id="1040025" event_type="4" prop="2500" state_type="0" />
+    <Trigger id="1040050" event_type="4" prop="5000" state_type="0" />
+    <Trigger id="1040080" event_type="4" prop="8000" state_type="0" />
+    <Trigger id="1040075" event_type="4" prop="7500" state_type="0" />
+    <Trigger id="1040000" event_type="4" prop="10000" state_type="0" />
+    <Trigger id="1050000" event_type="5" prop="10000" state_type="0" />
+    <Trigger id="1050003" event_type="5" prop="300" state_type="0" />
+    <Trigger id="1050005" event_type="5" prop="500" state_type="0" />
+    <Trigger id="1050010" event_type="5" prop="1000" state_type="0" />
+    <Trigger id="1050015" event_type="5" prop="1500" state_type="0" />
+    <Trigger id="1050020" event_type="5" prop="2000" state_type="0" />
+    <Trigger id="1050050" event_type="5" prop="5000" state_type="0" />
+    <Trigger id="1070020" event_type="7" prop="2000" state_type="0" />
+    <Trigger id="1070030" event_type="7" prop="3000" state_type="0" />
+    <Trigger id="1070000" event_type="7" prop="10000" state_type="0" />
+    <Trigger id="1090020" event_type="9" prop="2000" state_type="0" />
+    <Trigger id="1090000" event_type="9" prop="10000" state_type="0" />
+    <Trigger id="1100008" event_type="10" prop="800" state_type="0" />
+    <Trigger id="1100010" event_type="10" prop="1000" state_type="0" />
+    <Trigger id="1100015" event_type="10" prop="1500" state_type="0" />
+    <Trigger id="1100020" event_type="10" prop="2000" state_type="0" />
+    <Trigger id="1100025" event_type="10" prop="2500" state_type="0" />
+    <Trigger id="1100030" event_type="10" prop="3000" state_type="0" />
+    <Trigger id="1100035" event_type="10" prop="3500" state_type="0" />
+    <Trigger id="1100040" event_type="10" prop="4000" state_type="0" />
+    <Trigger id="1100050" event_type="10" prop="5000" state_type="0" />
+    <Trigger id="1100000" event_type="10" prop="10000" state_type="0" />
+    <Trigger id="1190000" event_type="19" prop="10000" state_type="0" />
+    <Trigger id="1200000" event_type="20" event_misc1="25000" event_misc2="10" prop="10000" state_type="0" />
+    <Trigger id="1230002" event_type="23" prop="200" state_type="0" />
+    <Trigger id="1230005" event_type="23" prop="500" state_type="0" />
+    <Trigger id="1230008" event_type="23" prop="800" state_type="0" />
+    <Trigger id="1230010" event_type="23" prop="1000" state_type="0" />
+    <Trigger id="1230020" event_type="23" prop="2000" state_type="0" />
+    <Trigger id="1230050" event_type="23" prop="5000" state_type="0" />
+    <Trigger id="1230101" event_type="23" prop="5000" state_type="1" state_misc1="102000" />
+    <Trigger id="1230102" event_type="23" prop="3000" state_type="1" state_misc1="105000" />
+    <Trigger id="1230103" event_type="23" prop="2000" state_type="1" state_misc1="102000" />
+    <Trigger id="1230104" event_type="23" prop="2000" state_type="1" state_misc1="103000" />
+    <Trigger id="1230105" event_type="23" prop="2000" state_type="1" state_misc1="105000" />
+    <Trigger id="1240020" event_type="24" prop="2000" state_type="0" />
+    <Trigger id="1240050" event_type="24" prop="5000" state_type="0" />
+    <Trigger id="2010000" event_type="1" prop="10000" state_type="0" />
+    <Trigger id="2010010" event_type="1" prop="1000" state_type="0" />
+    <Trigger id="2010020" event_type="1" prop="2000" state_type="0" />
+    <Trigger id="2010030" event_type="1" prop="3000" state_type="0" />
+    <Trigger id="2010040" event_type="1" prop="4000" state_type="0" />
+    <Trigger id="2010050" event_type="1" prop="5000" state_type="0" />
+    <Trigger id="2010060" event_type="1" prop="6000" state_type="0" />
+    <Trigger id="2010301" event_type="1" prop="10000" state_type="3" state_misc1="101000" />
+    <Trigger id="2010302" event_type="1" prop="10000" state_type="3" state_misc1="101500" />
+    <Trigger id="2010303" event_type="1" prop="10000" state_type="3" state_misc1="102000" />
+    <Trigger id="2010304" event_type="1" prop="10000" state_type="3" state_misc1="102500" />
+    <Trigger id="2010305" event_type="1" prop="10000" state_type="3" state_misc1="103000" />
+    <Trigger id="2010306" event_type="1" prop="10000" state_type="3" state_misc1="103500" />
+    <Trigger id="2010307" event_type="1" prop="10000" state_type="3" state_misc1="104000" />
+    <Trigger id="2010308" event_type="1" prop="10000" state_type="3" state_misc1="104500" />
+    <Trigger id="2010309" event_type="1" prop="10000" state_type="3" state_misc1="105000" />
+    <Trigger id="2010310" event_type="1" prop="10000" state_type="3" state_misc1="105500" />
+    <Trigger id="2010311" event_type="1" prop="10000" state_type="3" state_misc1="106000" />
+    <Trigger id="2010312" event_type="1" prop="10000" state_type="3" state_misc1="106500" />
+    <Trigger id="2010313" event_type="1" prop="10000" state_type="3" state_misc1="107000" />
+    <Trigger id="2010314" event_type="1" prop="10000" state_type="3" state_misc1="107500" />
+    <Trigger id="2010315" event_type="1" prop="10000" state_type="3" state_misc1="108000" />
+    <Trigger id="2010316" event_type="1" prop="10000" state_type="3" state_misc1="108500" />
+    <Trigger id="2010317" event_type="1" prop="10000" state_type="3" state_misc1="109000" />
+    <Trigger id="2040000" event_type="4" prop="10000" state_type="0" />
+    <Trigger id="2040001" event_type="4" prop="100" state_type="0" />
+    <Trigger id="2040002" event_type="4" prop="200" state_type="0" />
+    <Trigger id="2040003" event_type="4" prop="300" state_type="0" />
+    <Trigger id="2040004" event_type="4" prop="400" state_type="0" />
+    <Trigger id="2040005" event_type="4" prop="500" state_type="0" />
+    <Trigger id="2040006" event_type="4" prop="600" state_type="0" />
+    <Trigger id="2040008" event_type="4" prop="800" state_type="0" />
+    <Trigger id="2040010" event_type="4" prop="1000" state_type="0" />
+    <Trigger id="2040012" event_type="4" prop="1200" state_type="0" />
+    <Trigger id="2040014" event_type="4" prop="1400" state_type="0" />
+    <Trigger id="2040015" event_type="4" prop="1500" state_type="0" />
+    <Trigger id="2040016" event_type="4" prop="1600" state_type="0" />
+    <Trigger id="2040018" event_type="4" prop="1800" state_type="0" />
+    <Trigger id="2040020" event_type="4" prop="2000" state_type="0" />
+    <Trigger id="2040021" event_type="4" prop="2100" state_type="0" />
+    <Trigger id="2040024" event_type="4" prop="2400" state_type="0" />
+    <Trigger id="2040025" event_type="4" prop="2500" state_type="0" />
+    <Trigger id="2040027" event_type="4" prop="2700" state_type="0" />
+    <Trigger id="2040030" event_type="4" prop="3000" state_type="0" />
+    <Trigger id="2040033" event_type="4" prop="3300" state_type="0" />
+    <Trigger id="2040035" event_type="4" prop="3500" state_type="0" />
+    <Trigger id="2040036" event_type="4" prop="3600" state_type="0" />
+    <Trigger id="2040040" event_type="4" prop="4000" state_type="0" />
+    <Trigger id="2040045" event_type="4" prop="4500" state_type="0" />
+    <Trigger id="2040050" event_type="4" prop="5000" state_type="0" />
+    <Trigger id="2040055" event_type="4" prop="5500" state_type="0" />
+    <Trigger id="2040060" event_type="4" prop="6000" state_type="0" />
+    <Trigger id="2040065" event_type="4" prop="6500" state_type="0" />
+    <Trigger id="2040070" event_type="4" prop="7000" state_type="0" />
+    <Trigger id="2040075" event_type="4" prop="7500" state_type="0" />
+    <Trigger id="2040080" event_type="4" prop="8000" state_type="0" />
+    <Trigger id="2040085" event_type="4" prop="8500" state_type="0" />
+    <Trigger id="2040090" event_type="4" prop="9000" state_type="0" />
+    <Trigger id="2040095" event_type="4" prop="9500" state_type="0" />
+    <Trigger id="2030000" event_type="3" prop="10000" state_type="0" />
+    <Trigger id="2030002" event_type="3" prop="200" state_type="0" />
+    <Trigger id="2030003" event_type="3" prop="300" state_type="0" />
+    <Trigger id="2030004" event_type="3" prop="400" state_type="0" />
+    <Trigger id="2030005" event_type="3" prop="500" state_type="0" />
+    <Trigger id="2030006" event_type="3" prop="600" state_type="0" />
+    <Trigger id="2030007" event_type="3" prop="700" state_type="0" />
+    <Trigger id="2040101" event_type="4" prop="10000" state_type="1" state_misc1="105000" />
+    <Trigger id="2040901" event_type="4" prop="10000" state_type="11" state_misc1="102000" />
+    <Trigger id="2049901" event_type="4" prop="500" state_type="0" />
+    <Trigger id="2049902" event_type="4" prop="2000" state_type="0" />
+    <Trigger id="2049903" event_type="4" prop="4000" state_type="0" />
+    <Trigger id="2050000" event_type="5" prop="10000" state_type="0" />
+    <Trigger id="2050001" event_type="5" prop="100" state_type="0" />
+    <Trigger id="2050002" event_type="5" prop="200" state_type="0" />
+    <Trigger id="2050003" event_type="5" prop="300" state_type="0" />
+    <Trigger id="2050004" event_type="5" prop="400" state_type="0" />
+    <Trigger id="2050005" event_type="5" prop="500" state_type="0" />
+    <Trigger id="2050020" event_type="5" prop="2000" state_type="0" />
+    <Trigger id="2050050" event_type="5" prop="5000" state_type="0" />
+    <Trigger id="2050055" event_type="5" prop="5500" state_type="0" />
+    <Trigger id="2050060" event_type="5" prop="6000" state_type="0" />
+    <Trigger id="2050065" event_type="5" prop="6500" state_type="0" />
+    <Trigger id="2050070" event_type="5" prop="7000" state_type="0" />
+    <Trigger id="2050075" event_type="5" prop="7500" state_type="0" />
+    <Trigger id="2060000" event_type="6" prop="10000" state_type="0" />
+    <Trigger id="2070000" event_type="7" prop="10000" state_type="0" />
+    <Trigger id="2090000" event_type="9" prop="10000" state_type="0" />
+    <Trigger id="2100001" event_type="10" prop="100" state_type="0" />
+    <Trigger id="2100002" event_type="10" prop="200" state_type="0" />
+    <Trigger id="2100003" event_type="10" prop="300" state_type="0" />
+    <Trigger id="2100004" event_type="10" prop="400" state_type="0" />
+    <Trigger id="2100005" event_type="10" prop="500" state_type="0" />
+    <Trigger id="2100006" event_type="10" prop="600" state_type="0" />
+    <Trigger id="2100008" event_type="10" prop="800" state_type="0" />
+    <Trigger id="2100010" event_type="10" prop="1000" state_type="0" />
+    <Trigger id="2100040" event_type="10" prop="4000" state_type="0" />
+    <Trigger id="2100045" event_type="10" prop="4500" state_type="0" />
+    <Trigger id="2100050" event_type="10" prop="5000" state_type="0" />
+    <Trigger id="2100055" event_type="10" prop="5500" state_type="0" />
+    <Trigger id="2100060" event_type="10" prop="6000" state_type="0" />
+    <Trigger id="2100065" event_type="10" prop="6500" state_type="0" />
+    <Trigger id="2100070" event_type="10" prop="7000" state_type="0" />
+    <Trigger id="2100075" event_type="10" prop="7500" state_type="0" />
+    <Trigger id="2100000" event_type="10" prop="10000" state_type="0" />
+    <Trigger id="2110010" event_type="11" prop="1000" state_type="0" />
+    <Trigger id="2110015" event_type="11" prop="1500" state_type="0" />
+    <Trigger id="2110020" event_type="11" prop="2000" state_type="0" />
+    <Trigger id="2110030" event_type="11" prop="3000" state_type="0" />
+    <Trigger id="2110050" event_type="11" prop="5000" state_type="0" />
+    <Trigger id="2110070" event_type="11" prop="7000" state_type="0" />
+    <Trigger id="2110080" event_type="11" prop="8000" state_type="0" />
+    <Trigger id="2110090" event_type="11" prop="9000" state_type="0" />
+    <Trigger id="2110000" event_type="11" prop="10000" state_type="0" />
+    <Trigger id="3030005" event_type="3" prop="500" state_type="0" />
+    <Trigger id="3030010" event_type="3" prop="1000" state_type="0" />
+    <Trigger id="3040002" event_type="4" prop="200" state_type="0" />
+    <Trigger id="3040005" event_type="4" prop="500" state_type="0" />
+    <Trigger id="3040010" event_type="4" prop="1000" state_type="0" />
+    <Trigger id="3050001" event_type="5" prop="100" state_type="0" />
+    <Trigger id="3050002" event_type="5" prop="200" state_type="0" />
+    <Trigger id="3050003" event_type="5" prop="300" state_type="0" />
+    <Trigger id="3050004" event_type="5" prop="400" state_type="0" />
+    <Trigger id="3050005" event_type="5" prop="500" state_type="0" />
+    <Trigger id="3050010" event_type="5" prop="1000" state_type="0" />
+    <Trigger id="3060020" event_type="6" prop="2000" state_type="0" />
+    <Trigger id="3060040" event_type="6" prop="4000" state_type="0" />
+    <Trigger id="3060301" event_type="6" prop="3000" state_type="3" state_misc1="100800" />
+    <Trigger id="3060302" event_type="6" prop="3000" state_type="3" state_misc1="101500" />
+    <Trigger id="3070020" event_type="7" prop="2000" state_type="0" />
+    <Trigger id="3070040" event_type="7" prop="4000" state_type="0" />
+    <Trigger id="3080020" event_type="8" prop="2000" state_type="0" />
+    <Trigger id="3080040" event_type="8" prop="4000" state_type="0" />
+    <Trigger id="3090020" event_type="9" prop="2000" state_type="0" />
+    <Trigger id="3090040" event_type="9" prop="4000" state_type="0" />
+    <Trigger id="3090101" event_type="9" prop="3000" state_type="1" state_misc1="102000" />
+    <Trigger id="3090102" event_type="9" prop="3000" state_type="1" state_misc1="103000" />
+    <Trigger id="3100020" event_type="10" prop="2000" state_type="0" />
+    <Trigger id="3100040" event_type="10" prop="4000" state_type="0" />
+    <Trigger id="3110101" event_type="11" prop="3000" state_type="1" state_misc1="102000" />
+    <Trigger id="3110102" event_type="11" prop="3000" state_type="1" state_misc1="104000" />
+    <Trigger id="3110001" event_type="11" prop="100" state_type="0" />
+    <Trigger id="3110002" event_type="11" prop="200" state_type="0" />
+    <Trigger id="3110003" event_type="11" prop="300" state_type="0" />
+    <Trigger id="3110005" event_type="11" prop="500" state_type="0" />
+    <Trigger id="3110006" event_type="11" prop="600" state_type="0" />
+    <Trigger id="3110008" event_type="11" prop="800" state_type="0" />
+    <Trigger id="3110010" event_type="11" prop="1000" state_type="0" />
+    <Trigger id="3110020" event_type="11" prop="2000" state_type="0" />
+    <Trigger id="3110040" event_type="11" prop="4000" state_type="0" />
+    <Trigger id="3120005" event_type="12" prop="500" state_type="0" />
+    <Trigger id="3240002" event_type="24" prop="200" state_type="0" />
+    <Trigger id="3240003" event_type="24" prop="300" state_type="0" />
+    <Trigger id="3240004" event_type="24" prop="400" state_type="0" />
+    <Trigger id="3240005" event_type="24" prop="500" state_type="0" />
+    <Trigger id="3240006" event_type="24" prop="600" state_type="0" />
+    <Trigger id="3240008" event_type="24" prop="800" state_type="0" />
+    <Trigger id="3010000" event_type="1" prop="10000" state_type="0" />
+    <Trigger id="3020000" event_type="2" prop="10000" state_type="0" />
+    <Trigger id="2000001" event_type="4" prop="7000" state_type="0" />
+    <Trigger id="2240000" event_type="24" prop="10000" state_type="0" />
+    <Trigger id="4180000" event_type="19" event_misc2="1" prop="10000" state_type="0" />
+    <Trigger id="4190001" event_type="20" event_misc2="1" prop="10000" state_type="0" />
+    <Trigger id="4190005" event_type="20" event_misc1="25" event_misc2="1" prop="10000" state_type="0" />
+    <Trigger id="4190010" event_type="20" event_misc1="50" event_misc2="1" prop="10000" state_type="0" />
+    <Trigger id="4200090" event_type="20" event_misc1="450" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200060" event_type="20" event_misc1="300" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200045" event_type="20" event_misc1="225" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200040" event_type="20" event_misc1="200" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200041" event_type="20" event_misc1="205" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200036" event_type="20" event_misc1="180" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200035" event_type="20" event_misc1="175" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200034" event_type="20" event_misc1="170" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200032" event_type="20" event_misc1="160" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200031" event_type="20" event_misc1="155" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200130" event_type="20" event_misc1="150" event_misc2="2" prop="10000" state_type="0" />
+    <Trigger id="4200030" event_type="20" event_misc1="150" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200028" event_type="20" event_misc1="140" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200026" event_type="20" event_misc1="130" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200125" event_type="20" event_misc1="125" event_misc2="4" prop="10000" state_type="0" />
+    <Trigger id="4200025" event_type="20" event_misc1="125" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200120" event_type="20" event_misc1="100" event_misc2="2" prop="10000" state_type="0" />
+    <Trigger id="4200020" event_type="20" event_misc1="100" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200021" event_type="20" event_misc1="105" event_misc2="50" prop="10000" state_type="0" />
+    <Trigger id="4200015" event_type="20" event_misc1="75" event_misc2="100" prop="10000" state_type="0" />
+    <Trigger id="4200013" event_type="20" event_misc1="20" event_misc2="100" prop="10000" state_type="0" />
+    <Trigger id="4200012" event_type="20" event_misc1="60" event_misc2="100" prop="10000" state_type="0" />
+    <Trigger id="4200010" event_type="20" event_misc1="50" event_misc2="100" prop="10000" state_type="0" />
+    <Trigger id="4000195" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="109500" />
+    <Trigger id="4000185" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="108500" />
+    <Trigger id="4000180" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="108000" />
+    <Trigger id="4000170" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="107000" />
+    <Trigger id="4000160" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="106000" />
+    <Trigger id="4000159" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="105900" />
+    <Trigger id="4000155" event_type="20" event_misc2="1" prop="8000" state_type="1" state_misc1="105500" />
+    <Trigger id="4000150" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="105000" />
+    <Trigger id="4000149" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="104900" />
+    <Trigger id="4000148" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="104800" />
+    <Trigger id="4000147" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="104700" />
+    <Trigger id="4000140" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="104000" />
+    <Trigger id="4000141" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="104100" />
+    <Trigger id="4000139" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="103900" />
+    <Trigger id="4000130" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="103000" />
+    <Trigger id="4000125" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="102500" />
+    <Trigger id="4000121" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="102100" />
+    <Trigger id="4000120" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="102000" />
+    <Trigger id="4000119" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="101900" />
+    <Trigger id="4000115" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="101500" />
+    <Trigger id="4000110" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="101000" />
+    <Trigger id="4000109" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="100900" />
+    <Trigger id="4000108" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="100800" />
+    <Trigger id="4000107" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="100700" />
+    <Trigger id="4000105" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="100500" />
+    <Trigger id="4000102" event_type="20" event_misc2="1" prop="10000" state_type="1" state_misc1="100200" />
+    <Trigger id="4010060" event_type="20" event_misc2="10" prop="10000" state_type="2" state_misc1="106000" />
+    <Trigger id="4010030" event_type="20" event_misc2="10" prop="10000" state_type="2" state_misc1="103000" />
+    <Trigger id="4100030" event_type="20" event_misc2="1" prop="10000" state_type="3" state_misc1="103000" />
+    <Trigger id="4100020" event_type="20" event_misc2="1" prop="10000" state_type="3" state_misc1="102000" />
+    <Trigger id="4110020" event_type="20" event_misc2="1" prop="10000" state_type="4" state_misc1="102000" />
+    <Trigger id="4230050" event_type="23" prop="5000" state_type="0" />
+    <Trigger id="4230030" event_type="23" prop="3000" state_type="0" />
+    <Trigger id="4230020" event_type="23" prop="2000" state_type="0" />
+    <Trigger id="4230015" event_type="23" prop="1500" state_type="0" />
+    <Trigger id="4230010" event_type="23" prop="1000" state_type="0" />
+    <Trigger id="4230005" event_type="23" prop="500" state_type="0" />
+    <Trigger id="4230003" event_type="23" prop="300" state_type="0" />
+    <Trigger id="4200750" event_type="20" event_misc2="1" prop="10000" state_type="7" state_misc1="105000" />
+    <Trigger id="4200740" event_type="20" event_misc2="1" prop="10000" state_type="7" state_misc1="104000" />
+    <Trigger id="4200739" event_type="20" event_misc2="1" prop="10000" state_type="7" state_misc1="103900" />
+    <Trigger id="4200730" event_type="20" event_misc2="1" prop="10000" state_type="7" state_misc1="103000" />
+    <Trigger id="4308050" event_type="23" prop="5000" state_type="1" state_misc1="108000" />
+    <Trigger id="4308025" event_type="23" prop="2500" state_type="1" state_misc1="108000" />
+    <Trigger id="4308020" event_type="23" prop="2000" state_type="1" state_misc1="108000" />
+    <Trigger id="4308015" event_type="23" prop="1500" state_type="1" state_misc1="108000" />
+    <Trigger id="4308010" event_type="23" prop="1000" state_type="1" state_misc1="108000" />
+    <Trigger id="4307025" event_type="23" prop="2500" state_type="1" state_misc1="107000" />
+    <Trigger id="4307010" event_type="23" prop="1000" state_type="1" state_misc1="107000" />
+    <Trigger id="4305080" event_type="23" prop="8000" state_type="1" state_misc1="105000" />
+    <Trigger id="4305050" event_type="23" prop="5000" state_type="1" state_misc1="105000" />
+    <Trigger id="4305030" event_type="23" prop="3000" state_type="1" state_misc1="105000" />
+    <Trigger id="4305025" event_type="23" prop="5000" state_type="1" state_misc1="102500" />
+    <Trigger id="4305010" event_type="23" prop="1000" state_type="1" state_misc1="105000" />
+    <Trigger id="4306050" event_type="23" prop="5000" state_type="1" state_misc1="106000" />
+    <Trigger id="4306020" event_type="23" prop="2000" state_type="1" state_misc1="106000" />
+    <Trigger id="4306010" event_type="23" prop="1000" state_type="1" state_misc1="106000" />
+    <Trigger id="4306005" event_type="23" prop="500" state_type="1" state_misc1="106000" />
+    <Trigger id="4304005" event_type="23" prop="500" state_type="1" state_misc1="104000" />
+    <Trigger id="4303050" event_type="23" prop="5000" state_type="1" state_misc1="103000" />
+    <Trigger id="4303025" event_type="23" prop="2500" state_type="1" state_misc1="103000" />
+    <Trigger id="4303010" event_type="23" prop="1000" state_type="1" state_misc1="103000" />
+    <Trigger id="4302015" event_type="23" prop="1500" state_type="1" state_misc1="102000" />
+    <Trigger id="4302010" event_type="23" prop="1000" state_type="1" state_misc1="102000" />
+    <Trigger id="4420001" event_type="20" event_misc2="1" prop="8000" state_type="13" state_misc1="20" state_misc2="40" />
+    <Trigger id="4420002" event_type="20" event_misc2="1" prop="1500" state_type="13" state_misc1="4" state_misc2="40" />
+    <Trigger id="4420003" event_type="20" event_misc2="1" prop="8000" state_type="13" state_misc1="0" state_misc2="4" />
+    <Trigger id="4433001" event_type="23" event_misc2="2" prop="1000" state_type="13" state_misc1="10" state_misc2="40" />
+    <Trigger id="4433002" event_type="23" event_misc2="2" prop="500" state_type="13" state_misc1="10" state_misc2="40" />
+    <Trigger id="4433003" event_type="23" event_misc2="3" prop="8000" state_type="13" state_misc1="10" state_misc2="30" />
+    <Trigger id="4433004" event_type="23" event_misc2="3" prop="1500" state_type="13" state_misc1="10" state_misc2="20" />
+    <Trigger id="4433005" event_type="23" event_misc2="3" prop="8000" state_type="13" state_misc1="0" state_misc2="8" />
+    <Trigger id="4433006" event_type="23" event_misc2="5" prop="500" state_type="13" state_misc1="0" state_misc2="8" />
+    <Trigger id="4433007" event_type="23" event_misc2="3" prop="1000" state_type="13" state_misc1="0" state_misc2="4" />
+    <Trigger id="4433008" event_type="23" event_misc2="2" prop="500" state_type="13" state_misc1="0" state_misc2="40" />
+    <Trigger id="4433009" event_type="23" event_misc2="2" prop="1000" state_type="13" state_misc1="0" state_misc2="40" />
+    <Trigger id="4433010" event_type="23" event_misc2="3" prop="1000" state_type="13" state_misc1="0" state_misc2="8" />
+</root>

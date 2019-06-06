@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <GuildPower name="BangZhong" id="0" />
+    <GuildPower name="JingYing" id="1" />
+    <GuildPower name="BangZhu" id="2" BangZhong="1" JingYing="1" FuBangZhu="1" HongHuFa="1" ZiHuFa="1" QingLongTang="1" QingLongXiang="1" QingLongZhong="1" ZhuQueTang="1" ZhuQueXiang="1" ZhuQueZhong="1" BaiHuTang="1" BaiHuXiang="1" BaiHuZhong="1" XuanWuTang="1" XuanWuXiang="1" XuanWuZhong="1" />
+    <GuildPower name="FuBangZhu" id="3" BangZhong="1" JingYing="1" HongHuFa="1" ZiHuFa="1" QingLongTang="1" QingLongXiang="1" QingLongZhong="1" ZhuQueTang="1" ZhuQueXiang="1" ZhuQueZhong="1" BaiHuTang="1" BaiHuXiang="1" BaiHuZhong="1" XuanWuTang="1" XuanWuXiang="1" XuanWuZhong="1" />
+    <GuildPower name="HongHuFa" id="4" />
+    <GuildPower name="ZiHuFa" id="5" />
+    <GuildPower name="QingLongTang" id="6" />
+    <GuildPower name="QingLongXiang" id="7" />
+    <GuildPower name="QingLongZhong" id="8" />
+    <GuildPower name="ZhuQueTang" id="9" />
+    <GuildPower name="ZhuQueXiang" id="10" />
+    <GuildPower name="ZhuQueZhong" id="11" />
+    <GuildPower name="BaiHuTang" id="12" />
+    <GuildPower name="BaiHuXiang" id="13" />
+    <GuildPower name="BaiHuZhong" id="14" />
+    <GuildPower name="XuanWuTang" id="15" />
+    <GuildPower name="XuanWuXiang" id="16" />
+    <GuildPower name="XuanWuZhong" id="17" />
+</root>

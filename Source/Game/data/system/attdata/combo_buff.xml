@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+    <combobuff id="1" name="风烈·壹" dec="迸发自身潜力，命中目标后，瞬间对目标怪物造成200点伤害，对头目、稀有及首领怪物无效，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗1枚&lt;color=0xff00a2ff&gt;风火石。&lt;color=0xfffff7e0&gt;" icon="TJLJ1_1" level="1" buffid="3740301" costitemid="3200464" costitemnum="1" levellimit="1" />
+    <combobuff id="2" name="风烈·贰" dec="迸发自身潜力，命中目标后，瞬间对目标怪物造成3000点伤害，对头目、稀有及首领怪物无效，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗2枚&lt;color=0xff00a2ff&gt;烈风火石。&lt;color=0xfffff7e0&gt;" icon="TJLJ1_2" level="2" buffid="3740302" costitemid="6000213" costitemnum="2" levellimit="30" />
+    <combobuff id="3" name="风烈·叁" dec="迸发自身潜力，命中目标后，瞬间令目标怪物体力减少20%，对头目、稀有及首领怪物无效，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗4枚&lt;color=0xff00a2ff&gt;烈风火石。&lt;color=0xfffff7e0&gt;" icon="TJLJ1_3" level="3" buffid="3740303" costitemid="6000213" costitemnum="4" levellimit="50" />
+    <combobuff id="4" name="火舞·壹" dec="迸发自身潜力，命中目标后，瞬间对目标玩家造成200点伤害，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗5枚&lt;color=0xff00a2ff&gt;风火石。&lt;color=0xfffff7e0&gt;" icon="TJLJ7_1" level="1" buffid="3740401" costitemid="3200464" costitemnum="5" levellimit="30" />
+    <combobuff id="5" name="火舞·贰" dec="迸发自身潜力，命中目标后，瞬间对目标玩家造成3000点伤害，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗4枚&lt;color=0xff00a2ff&gt;烈风火石。&lt;color=0xfffff7e0&gt;" icon="TJLJ7_2" level="2" buffid="3740402" costitemid="6000213" costitemnum="4" levellimit="50" />
+    <combobuff id="6" name="火舞·叁" dec="迸发自身潜力，命中目标后，瞬间令目标玩家体力减少20%，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗8枚&lt;color=0xff00a2ff&gt;烈风火石。&lt;color=0xfffff7e0&gt;" icon="TJLJ7_3" level="3" buffid="3740403" costitemid="6000213" costitemnum="8" levellimit="70" />
+    <combobuff id="7" name="暗溟" dec="迸发自身潜力，提升闪避值1000点，命中目标后，6%几率触发，瞬间降低目标怪物体力1%，持续30秒。&lt;color=0xff05ff00&gt;\n获得该状态需要消耗4枚&lt;color=0xff00a2ff&gt;烈风火石。&lt;color=0xfffff7e0&gt;" icon="TBP08" level="1" buffid="3730501" costitemid="6000213" costitemnum="4" levellimit="1" />
+</root>

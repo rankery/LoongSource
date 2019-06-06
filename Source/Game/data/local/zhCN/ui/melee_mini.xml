@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<desktop>
+    <UIControl Name="melee_mini_win" ClassName="CGUIWindow" LogicPos_x="1615" LogicPos_y="700" Size_x="25" Size_y="25" AlignControl="\desktop\systemback" AlignType="OuterLeft" AlignOffset_y="-28" PopupSound="window_popup">
+        <UIControl Name="melee_mini" ClassName="CGUIButton" Size_x="25" Size_y="25" Font="小白雅黑" TextRect_right="25" TextRect_bottom="25" TextColor="0xFFFFF2A4" ShadeColor="0xFF290404" PicFileName="data\ui\pk\l-vs.bmp" PicRect_left="357" PicRect_right="382" PicRect_bottom="25" PicColor="0xFFFFFFFF" AlphaWrite="Write" PushPicFileName="data\ui\pk\l-vs.bmp" PushPicRect_left="357" PushPicRect_top="54" PushPicRect_right="382" PushPicRect_bottom="79" PushPicColor="0xFFFFFFFF" PushTextColor="0xFFFFF2A4" PushShadeColor="0xFF290404" MovePicFileName="data\ui\pk\l-vs.bmp" MovePicRect_left="357" MovePicRect_top="27" MovePicRect_right="382" MovePicRect_bottom="52" MovePicColor="0xFFFFFFFF" MoveTextColor="0xFFFFF2A4" MoveShadeColor="0xFF290404" DisablePicFileName="data\ui\pk\l-vs.bmp" DisablePicRect_left="357" DisablePicRect_top="54" DisablePicRect_right="382" DisablePicRect_bottom="79" DisablePicColor="0xFFC0C0C0" DisableTextColor="0xFFFFF2A4" DisableShadeColor="0xFF290404" TopColor="0xFF000000" BottomColor="0xFFAFAFAF" />
+    </UIControl>
+</desktop>
